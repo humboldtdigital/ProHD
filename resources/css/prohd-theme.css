@@ -1,0 +1,148 @@
+
+.logo { background-image: none; }
+.splash { background-image: none; }
+
+body {
+    
+    --pb-splash-background-color: #008F8F;
+    --pb-logo-image-width: auto;
+    --pb-logo-image-height: auto;
+    --pb-menubar-background-color: #FFFFFF;
+    --pb-toolbar-background-color: #E2F4F1;
+    --pb-toolbar-color: #353831;
+    --pb-menubar-color: #353831;
+    --pb-color-primary: #353831;
+    --pb-color-inverse: #ffffff;
+    --pb-lang-input-color: #353831;
+    --pb-lang-label-color: #353831;
+    --pb-drawer-background-color: var(--pb-color-inverse);
+    --pb-base-font-family: "Montserrat", sans-serif;
+    --pb-base-font-weight: 300;
+    --pb-serif-font-family: "Roboto Slab";
+    --pb-link-color: #353831;
+    --iron-icon-fill-color: #353831;
+    --paper-font-common-base_-_font-family: "Montserrat";
+  
+}
+
+h1, h4, h5 {
+    font-family: var(--pb-serif-font-family);
+    font-weight: 400;
+    line-height: var(--pb-heading-line-height);
+}
+
+h2, h3, h6 {
+    font-family: var(--pb-base-font-family);
+    font-weight: 400;
+    line-height: var(--pb-heading-line-height);
+}
+
+.menubar a {
+    font-family: var(--pb-base-font-family);
+    font-weight: 400;
+}
+
+.menubar.logo {
+    margin: 8px 16px 0 0;
+}
+
+.toolbar a {
+    color: #353831;
+    text-decoration: none;
+}
+
+.splash {
+    background-color: #008F8F;
+}
+
+.splash img {
+    
+    margin: 0;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+  pb-drawer {
+             background-color: #E2F4F1;
+}
+
+footer {
+    background-color: #F2F0EB;
+}
+    
+#footerGray {
+    text-align: center;
+}
+
+#footerGray img {
+    display: inline-block;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: -2em;
+    margin-bottom: -1em;
+}
+
+#footerGray p {
+    font-style: Montserrat;
+    font-weight: 300;
+    font-size: 1em;
+    padding-top: 0.5em;
+}
+   
+#footerGreen {
+    height: 3em;
+    width: auto;
+    background-color: #008F8F;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.version {
+    text-align: left;
+    margin-left: 10em;
+}    
+  
+p.license,
+p.version {
+    font-family: Montserrat;
+    color: white;
+    font-weight: 300;
+    font-size: 0.8em;
+    
+}
+
+p.license span,
+p.version span  {
+    font-weight: 500;
+}
+
+.poweredBy {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    left: 0;
+}
+  
+.license {
+    position: absolute;
+    top: 25%;
+    bottom: auto;
+    right: 7.5%;
+    left: auto;
+}
+  
+.cc  {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    margin: 0.5em 0.5em 0 0;            
+}
+

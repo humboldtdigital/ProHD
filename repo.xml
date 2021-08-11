@@ -1,0 +1,13 @@
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Digitales Dossier: Alexander von Humboldt und Kuba (1800-1830)</description>
+    <author/>
+    <status>beta</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <prepare>pre-install.xql</prepare>
+    <finish>post-install.xql</finish>
+    <target>ProHD</target>
+    <permissions user="prohd" group="tei" mode="rw-r--r--"/>
+    <deployed>2021-05-05T11:13:23.632+02:00</deployed>
+</meta>
