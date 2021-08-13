@@ -74,6 +74,7 @@
             
             
             
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -81,6 +82,7 @@
                             display: block;
                             margin-right: 5px;
                             float: right;
+            
             
             
             
@@ -152,6 +154,7 @@
             
             
             
+            
                             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -159,6 +162,7 @@
                             display: block;
                             margin-right: 5px;
                             float: right;
+            
             
             
             
@@ -326,11 +330,13 @@
             
             
             
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
             
             
             
@@ -497,6 +503,7 @@
             
             
             
+            
                             
                             display: inline-block;
                             margin-top: .5em;
@@ -504,6 +511,7 @@
                             color: #CCC;
                             
                         
+            
             
             
             
@@ -579,6 +587,7 @@
             
             
             
+            
                             
                             display: inline-block;
                             margin-top: .5em;
@@ -621,10 +630,12 @@
             
             
             
+            
             </outputRendition>
         </model>
                     <model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
+            
             
             
             
@@ -700,6 +711,7 @@
             
             
             
+            
             </outputRendition>
         </model>
                     <model output="web" predicate="@type='catch' and $parameters?view='page'" behaviour="block">
@@ -739,8 +751,10 @@
             
             
             
+            
                             margin-left: 20em;
                             color: #A0A0A0;
+            
             
             
             
@@ -814,9 +828,6 @@
             <model behaviour="link" cssClass="header-short">
                 <param name="content" value="titleStmt/title[@type=&#34;main&#34;]"/>
                 <param name="uri" value="$parameters?doc"/>
-            </model>
-            <model behaviour="block" cssClass="header-short">
-                <param name="content" value="notesStmt/note[@type=&#34;editorial&#34;]/p"/>
             </model>
         </modelSequence>
                     <model behaviour="title">
@@ -1073,8 +1084,10 @@
             
             
             
+            
             text-decoration: line-through;
 color:red;
+            
             
             
             
@@ -1177,8 +1190,10 @@ color:red;
             
             
             
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
             
             
             
@@ -1367,8 +1382,10 @@ text-decoration-style: double;
             
             
             
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
             
             
             
@@ -1505,8 +1522,10 @@ text-decoration-style: double;
             
             
             
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
             
             
             
@@ -1567,9 +1586,11 @@ text-decoration-style: double;
             
             
             
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
             
             
             
