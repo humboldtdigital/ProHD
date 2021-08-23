@@ -267,6 +267,12 @@
             <app-drawer slot="drawer" align="right">
                 <div class="drawer-content">
                     <pb-media-query query="(max-width: 1023px)">
+                            <div style="padding-top:10px;">
+                                <a href="about.xml">Über das Projekt</a>
+                            </div>
+                                <div style="padding-top:10px; padding-bottom:10px;">
+                                <a href="team.xml">Das Team</a>
+                            </div>
                             <!-- language selector -->
                             <pb-lang name="lang" data-template="pages:languages"/>
                         </pb-media-query>
@@ -279,8 +285,8 @@
                             <img src="resources/images/logopositivo.svg"/>
                         </a> 
                         <pb-media-query query="(min-width: 1024px)">
-                            <a href="about.xml">Über das Projekt</a>
-                            <a href="team.xml">Das Team</a>
+                            <a href="${app}/about.xml" data-template="pages:parse-params">Über das Projekt</a>
+                            <a href="${app}/team.xml" data-template="pages:parse-params">Das Team</a>
                             <pb-restricted login="login" group="tei">
                                 <paper-menu-button>
                                     <a href="#" slot="dropdown-trigger">
@@ -353,22 +359,32 @@
                         </pb-restricted>
                     </section>
                 </main>
-                <footer>
-                        <div id="footerGray">
-                            <p>Gefördert von</p>
-                            <a href="https://www.auswaertiges-amt.de/"><img src="resources/images/aa.svg" class="funder1"/></a>
-                            <a href="https://www.fritz-thyssen-stiftung.de/"><img src="resources/images/thyssen.svg" class="funder2"/></a>
-                            <a href="https://www.gerda-henkel-stiftung.de/"><img src="resources/images/gerdahenkel.svg" class="funder3"/></a>
-                        </div>    
-                        <div id="footerGreen">
-                            <a href="https://e-editiones.org/"><img src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/></a>
-                            <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
+               <footer>
+                    <div id="footerGray">
+                        <p>Gefördert von</p>
+                        <a href="https://www.auswaertiges-amt.de/">
+                                <img src="resources/images/aa.svg" class="funder1"/>
+                            </a>
+                        <a href="https://www.fritz-thyssen-stiftung.de/">
+                                <img src="resources/images/thyssen.svg" class="funder2"/>
+                            </a>
+                        <a href="https://www.gerda-henkel-stiftung.de/">
+                                <img src="resources/images/gerdahenkel.svg" class="funder3"/>
+                            </a>
+                    </div>    
+                    <div id="footerGreen">
+                        <a href="https://e-editiones.org/">
+                                <img src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                            </a>
+                        <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
                             </p>
-                            <p class="license">This project is licensed under a <span>Creative Commons Attribution 4.0 International Public License</span>
+                        <p class="license">This project is licensed under a <span>Creative Commons Attribution 4.0 International Public License</span>
                             </p>
-                            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="resources/images/cc-by.svg" class="cc"/></a>
-                        </div>
-                   </footer>
+                        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                                <img src="resources/images/cc.svg" class="cc"/>
+                            </a>
+                    </div>
+                </footer>
             </app-header-layout>
         </app-drawer-layout>
         <paper-dialog id="downloadDialog">

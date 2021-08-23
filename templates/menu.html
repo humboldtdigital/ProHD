@@ -3,13 +3,14 @@
          <img src="resources/images/logopositivo.svg"/>
     </a>   
     <pb-media-query query="min-width: 1024px">
-        <a href="${app}/index.html" data-template="pages:parse-params">Start</a>
-        <a href="about.xml">Über das Projekt</a>
-        <a href="team.xml">Das Team</a>
-        <!-- <paper-menu-button>
+        <a href="${app}/about.xml" data-template="pages:parse-params">Über das Projekt</a>
+        <a href="${app}/team.xml" data-template="pages:parse-params">Das Team</a>
+        
+    <!-- deleted by ARC -->
+       <!-- <paper-menu-button>
             <a href="#" slot="dropdown-trigger" data-i18n="[title]menu.download.title" title="i18n(download)">
                 <pb-i18n key="menu.download.title">Download</pb-i18n>
-            </a>
+            </a> 
             <paper-listbox slot="dropdown-content">
                 <paper-item>
                     <pb-download type="tex" src="document1" dialog="downloadDialog" data-i18n="[title]menu.download.pdf-latex" title="i18n(pdf-latex)">
@@ -40,9 +41,11 @@
                     <pb-edit-xml src="document1" data-i18n="[title]menu.download.view-tei" title="view-tei">
                         XML
                     </pb-edit-xml>
-                </paper-item>-->
+                </paper-item>
             </paper-listbox>
         </paper-menu-button>
+        -->
+        
         <pb-restricted login="login">
             <paper-menu-button>
                 <a href="#" slot="dropdown-trigger">
