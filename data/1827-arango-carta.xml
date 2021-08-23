@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" type="letter" xml:id="H0018379" xml:lang="de">
     <teiHeader>
         <fileDesc>
@@ -19,8 +18,10 @@
                 <p>Primera edición de Proyecto Humboldt digital - ProHD (<date>2020</date>).</p>
             </editionStmt>
             <publicationStmt>
-                <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                        Wissenschaften (BBAW)</ref></publisher>
+                <publisher>
+                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                        Wissenschaften (BBAW)</ref>
+                </publisher>
                 <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -36,8 +37,7 @@
                         <idno>
                             <idno type="shelfmark">Caja pequeña 7b, no. 68</idno>
                             <idno type="uri">http://kalliope-verbund.info/DE-611-HS-1272345</idno>
-                            <idno type="URLImages"
-                                >http://resolver.staatsbibliothek-berlin.de/SBB00015CC500000000</idno>
+                            <idno type="URLImages">http://resolver.staatsbibliothek-berlin.de/SBB00015CC500000000</idno>
                         </idno>
                     </msIdentifier>
                     <physDesc>
@@ -82,39 +82,45 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="1r"/>
+            <pb n="1r" facs="787980595-0001"/>
             <fw type="folNum">68.</fw>
             <div type="writingSession">
                 <opener>
-                    <salute>Mi muy apreciable <unclear reason="illegible" cert="high"><choice>
-                                <abbr>ami<hi rendition="#sup">go</hi></abbr>
+                    <salute>Mi muy apreciable <unclear reason="illegible" cert="high">
+                            <choice>
+                                <abbr>ami<hi rendition="#sup">go</hi>
+                                </abbr>
                                 <expan>amigo</expan>
-                            </choice></unclear> y <unclear reason="illegible" cert="low"><choice>
-                                <abbr>s<hi rendition="#sup">eñ</hi></abbr>
+                            </choice>
+                        </unclear> y <unclear reason="illegible" cert="low">
+                            <choice>
+                                <abbr>s<hi rendition="#sup">eñ</hi>
+                                </abbr>
                                 <expan>señor</expan>
-                            </choice></unclear>:</salute>
+                            </choice>
+                        </unclear>:</salute>
                 </opener>
                 <p>encargué a mi primo <choice>
                         <abbr>q</abbr>
                         <expan>que</expan>
-                    </choice><lb/> anticipase a <choice>
+                    </choice>
+                    <lb/> anticipase a <choice>
                         <abbr>V.</abbr>
                         <expan>Usted</expan>
                     </choice>
-                    <unclear reason="illegible" cert="high">mi</unclear> expresión <unclear
-                        reason="illegible" cert="high">de</unclear> gracias <choice>
+                    <unclear reason="illegible" cert="high">mi</unclear> expresión <unclear reason="illegible" cert="high">de</unclear> gracias <choice>
                         <abbr>p</abbr>
                         <expan>por</expan>
                     </choice> el favor <choice>
                         <abbr>q</abbr>
                         <expan>que</expan>
-                    </choice> me hace<lb/> en su preciosísimo <bibl sameAs="zotero-667230-HWI3EAX7"
-                        >Ensayo sobre esta Isla</bibl>, y le añadí al propio ti<g ref="#typoHyphen"
-                        /><lb break="no"/>empo <choice>
+                    </choice> me hace<lb/> en su preciosísimo <bibl sameAs="zotero-667230-HWI3EAX7">Ensayo sobre esta Isla</bibl>, y le añadí al propio ti<g ref="#typoHyphen"/>
+                    <lb/>empo <choice>
                         <abbr>q</abbr>
                         <expan>que</expan>
                     </choice> le ofreciera de mi parte algunas observaciones <choice>
-                        <abbr>sob<hi rendition="#sup">e</hi></abbr>
+                        <abbr>sob<hi rendition="#sup">e</hi>
+                        </abbr>
                         <expan>sobre</expan>
                     </choice> los<lb/> principales hechos <choice>
                         <abbr>q</abbr>
@@ -122,7 +128,8 @@
                     </choice> se mientan en la obra<choice>
                         <orig>--</orig>
                         <reg>.</reg>
-                    </choice> Me la pres<g ref="#typoHyphen"/><lb break="no"/>taron por desgracia
+                    </choice> Me la pres<g ref="#typoHyphen"/>
+                    <lb/>taron por desgracia
                     con término muy angustiado, y en esa<lb/> precipitación, no sé si me habré
                     excedido, o si he dejado de decir<lb/> todo lo <choice>
                         <abbr>q</abbr>
@@ -130,26 +137,34 @@
                     </choice> podía<choice>
                         <orig>--</orig>
                         <reg>.</reg>
-                    </choice> De lo que estoy muy seguro es de mi buena<lb/> intención, y <choice>
+                    </choice> De lo <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> estoy muy seguro es de mi buena<lb/> intención, y <choice>
                         <abbr>q</abbr>
                         <expan>que</expan>
                     </choice> no he tenido otro estímulo <choice>
-                        <abbr>p<hi rendition="#sup">a</hi></abbr>
+                        <abbr>p<hi rendition="#sup">a</hi>
+                        </abbr>
                         <expan>para</expan>
-                    </choice> entender esos<lb/> y otros y enviar esos documentos, <choice>
+                    </choice> entender esas<lb/> notas y enviar esos documentos, <choice>
                         <abbr>q</abbr>
                         <expan>que</expan>
-                    </choice> el de mi eterna amis<g ref="#typoHyphen"/><lb break="no"/>tad y
+                    </choice> el de mi eterna amis<g ref="#typoHyphen"/>
+                    <lb/>tad y
                     sincera gratitud al filósofo viajero <choice>
                         <abbr>q</abbr>
                         <expan>que</expan>
-                    </choice> admi<unclear reason="illegible" cert="low">ran</unclear><lb/> todas
+                    </choice> admi<unclear reason="illegible" cert="low">ran</unclear>
+                    <lb/> todas
                     las naciones cultas, y tan de veras estima este<lb/> en <choice>
-                        <abbr>ap.<hi rendition="#sup">do</hi></abbr>
+                        <abbr>ap.<hi rendition="#sup">do</hi>
+                        </abbr>
                         <expan>apasionado</expan>
                     </choice>
                     <choice>
-                        <abbr>serv.<hi rendition="#sup">r</hi></abbr>
+                        <abbr>serv.<hi rendition="#sup">r</hi>
+                        </abbr>
                         <expan>servidor</expan>
                     </choice>
                     <choice>
@@ -167,21 +182,28 @@
                     <choice>
                         <abbr>b.</abbr>
                         <expan>besa.</expan>
-                    </choice></p>
+                    </choice>
+                </p>
                 <closer>
-                    <signed><choice>
-                            <abbr>Fran.<hi rendition="#sup">co</hi></abbr>
+                    <signed>
+                        <choice>
+                            <abbr>Fran.<hi rendition="#sup">co</hi>
+                            </abbr>
                             <expan>Francisco</expan>
                         </choice> de Arango</signed>
-                    <dateline><choice>
-                            <abbr>Hav.<hi rendition="#sup">a</hi></abbr>
+                    <dateline>
+                        <choice>
+                            <abbr>Hav.<hi rendition="#sup">a</hi>
+                            </abbr>
                             <expan>La Habana</expan>
                         </choice> 30 de julio de <supplied cert="high">18</supplied>27</dateline>
                 </closer>
             </div>
             <postscript>
-                <p><choice>
-                        <abbr>P.<hi rendition="#sup">a</hi></abbr>
+                <p>
+                    <choice>
+                        <abbr>P.<hi rendition="#sup">a</hi>
+                        </abbr>
                         <expan>Para</expan>
                     </choice> Barón von Humboldt</p>
             </postscript>
