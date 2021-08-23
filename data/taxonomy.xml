@@ -14,8 +14,8 @@
       <encodingDesc>
          <classDecl>
             <taxonomy xml:id="pb-taxonomy">
-               <!-- Added by ARC on 06.07.2021 
-                I deleted the hierachical estructure of genre -->
+            <!--Added by ARC on 06.07.2021
+            I deleted the hierachical estructure of genre-->
                <category xml:id="genre">
                   <catDesc>Genre of a text</catDesc>
                   <category xml:id="prose">
