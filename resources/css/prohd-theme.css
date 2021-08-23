@@ -23,8 +23,9 @@ body {
     --iron-icon-fill-color: #353831;
     --paper-checkbox-checked-color: #353831;
     --paper-font-common-base_-_font-family: "Montserrat";
-  
+    --paper-checkbox-checked-color: #353831;
 }
+
 
 h1, h4, h5 {
     font-family: var(--pb-serif-font-family);
@@ -37,6 +38,8 @@ h2, h3, h6 {
     font-weight: 400;
     line-height: var(--pb-heading-line-height);
 }
+}
+
 
 .menubar a {
     font-family: var(--pb-base-font-family);
@@ -51,6 +54,7 @@ h2, h3, h6 {
     color: #353831;
     text-decoration: none;
 }
+
 
 .splash {
     background-color: #008F8F;
@@ -165,9 +169,6 @@ p.version {
     }
   
     .cc  {
-        position: absolute;
-        top: 26%;
-        bottom: auto;
         width: 45px;
         height: auto;
     }
@@ -271,7 +272,7 @@ p.version {
 
     .version {
         position: absolute;
-        top: 20%; 
+        top: 15%; 
         bottom: auto;
         left: 13%;
         right: auto;
@@ -289,11 +290,6 @@ p.version {
         font-size: 16px;
     }
 
-    .poweredBy {
-        position: absolute;
-       
-    }
-    
     .license {
         position: absolute;
         top: 35%;
@@ -304,8 +300,6 @@ p.version {
 
     .version {
         position: absolute;
-        top: 16%; 
-        bottom: auto;
         left: 11%;
         bottom: auto;
     }
@@ -326,9 +320,6 @@ p.version {
         margin-right: 5em;
     }
     
-    #footerGray p {
-        font-size: 16px;
-    }
     
     #footerGreen {
         height: 3.8em;
@@ -353,50 +344,8 @@ p.version {
         height: auto;
     }
     
-    .license {
-        position: absolute;
-        top: 36%;
-        bottom: auto;
-        right: 8%;
-        left: auto;
-    }
-
-    .version {
-        position: absolute;
-        top: 15%;
-        bottom: auto;
-        left: 10%;
-        right: auto;
-    }
 }
 
-@media (min-width: 1600px) {
-   
-    .poweredBy {
-        position: absolute;
-        top: 13%;
-        bottom: auto;
-        width: 130px;
-        height: auto;
-    }
-  
-    .license {
-        position: absolute;
-        top: 35%;
-        bottom: auto;
-        right: 8%;
-        left: auto;
-    }
 
-    .version {
-        position: absolute;
-        top: 15%;
-        bottom: auto;
-        left: 11%;
-        right: auto;
-    }
-
-
-}
 
 
