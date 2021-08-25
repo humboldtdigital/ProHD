@@ -113,12 +113,6 @@ declare variable $config:facets := [
     },
     (: Added by ARC on 06.07.2021 :)
     (: To do: i18n the heading of this facet :)
-     map {
-        "dimension": "topic",
-        "heading": "Keyword",
-        "max": 5,
-        "hierarchical": false()
-    },
     map {
         "dimension": "genre",
         "heading": "facets.genre",
@@ -129,9 +123,16 @@ declare variable $config:facets := [
     (: To do: i18n the heading of this facet :)
     map {
         "dimension": "form",
-        "heading": "Form",
+        "heading": "facets.form",
         "max": 5,
         "hierarchical": false()
+    }
+    , 
+    map {
+        "dimension": "subject",
+        "heading": "facets.subject",
+        "max": 5,
+        "hierarchical": true()
     }
 ];
 

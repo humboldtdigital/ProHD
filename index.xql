@@ -62,9 +62,9 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 idx:get-form($header),
                 $root/dbk:info/dbk:keywordset[@vocab="#form"]/dbk:keyword
             ) 
-            case "topic" return (
-                idx:get-topic($header),
-                $root/dbk:info/dbk:keywordset[@vocab="#topic"]/dbk:keyword
+            case "subject" return (
+                idx:get-subject($header),
+                $root/dbk:info/dbk:keywordset[@vocab="#subject"]/dbk:keyword
             ) 
             default return
                 ()
@@ -85,8 +85,8 @@ declare function idx:get-form($header as element()?) {
         $category/ancestor-or-self::tei:category[parent::tei:category]/tei:catDesc
 };
 
-declare function idx:get-topic($header as element()?) {
-    for $target in $header//tei:textClass/tei:catRef[@scheme="#topic"]/@target
+declare function idx:get-subject($header as element()?) {
+    for $target in $header//tei:textClass/tei:catRef[@scheme="#subject"]/@target
     let $category := id(substring($target, 2), doc($idx:app-root || "/data/taxonomy.xml"))
     return
         $category/ancestor-or-self::tei:category[parent::tei:category]/tei:catDesc

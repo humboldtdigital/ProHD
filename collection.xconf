@@ -13,7 +13,7 @@
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 (: Added by ARC on 06.07.2021 :)
                 <facet dimension="form" expression="nav:get-metadata(ancestor::tei:TEI, 'form')"/>
-                <facet dimension="topic" expression="nav:get-metadata(ancestor::tei:TEI, 'topic')"/>
+                <facet dimension="subject" expression="nav:get-metadata(ancestor::tei:TEI, 'subject')"/>
             </text>
             <text qname="tei:head"/>
             <text match="//tei:titleStmt/tei:title"/>
@@ -26,7 +26,7 @@
                 <facet dimension="language" expression="nav:get-metadata(., 'language')"/>
                 (: Added by ARC on 06.07.2021 :)
                 <facet dimension="form" expression="nav:get-metadata(., 'form')"/>
-                <facet dimension="topic" expression="nav:get-metadata(., 'topic')"/>
+                <facet dimension="subject" expression="nav:get-metadata(., 'subject')"/>
             </text>
             <text qname="dbk:section">
                 <ignore qname="dbk:section"/>
@@ -34,7 +34,7 @@
                 <facet dimension="language" expression="nav:get-metadata(ancestor::dbk:article, 'language')"/>
                 (: Added by ARC on 06.07.2021 :)
                 <facet dimension="form" expression="nav:get-metadata(ancestor::dbk:article, 'form')"/>
-                <facet dimension="topic" expression="nav:get-metadata(ancestor::dbk:article, 'topic')"/>
+                <facet dimension="subject" expression="nav:get-metadata(ancestor::dbk:article, 'subject')"/>
             </text>
             <text qname="dbk:title"/>
         </lucene>
