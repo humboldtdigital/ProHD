@@ -1,0 +1,294 @@
+<?xml-model href="../schemata/prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0001">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Notizen zum Thema Sklaverei </title>
+                <editor>
+                    <persName>
+                        <surname>Kraller</surname>
+                        <forename>Kathrin</forename>
+                    </persName>
+                </editor>
+                <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
+                <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
+                <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
+            </titleStmt>
+            <editionStmt>
+                <p>Erste Ausgabe von Projekt Humboldt digital - ProHD (<date>2021</date>).</p>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                        Namensnennung 4.0 International (CC BY 4.0) </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc rend="manuscript">
+                    <msIdentifier>
+                        <institution>Staatsbibliothek zu Berlin Preußischer
+                            Kulturbesitz</institution>
+                        <collection>Nachlass Alexander von Humboldt</collection>
+                        <idno>
+                            <idno type="shelfmark">Nachl. Alexander von Humboldt, gr. Kasten 2,
+                                Mappe 3, Nr. 3</idno>
+                        </idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <persName>Humboldt, von Alexander</persName>
+            </creation>
+            <langUsage>
+                <language ident="fr">Französisch</language>
+            </langUsage>
+            <abstract xml:lang="de">
+                <p>Notizen Humboldts zum Thema Sklaverei. </p>
+            </abstract>
+            <abstract xml:lang="es">
+                <p>Noticias de Alexander von Humboldt sobre el tema de la esclavitud. </p>
+            </abstract>
+            <textClass>
+                <catRef scheme="#genre" target="#notebooks"/>
+                <catRef scheme="#form" target="#manuscript"/>
+                <catRef scheme="#subject" target="#slavery"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="pb-taxonomy">
+                    <category xml:id="genre">
+                        <catDesc xml:lang="en">Genre</catDesc>
+                        <catDesc xml:lang="es">Género</catDesc>
+                        <catDesc xml:lang="de">Genre</catDesc>
+                        <category xml:id="diaries">
+                            <catDesc xml:lang="en">Diaries</catDesc>
+                            <catDesc xml:lang="es">Diarios personales</catDesc>
+                            <catDesc xml:lang="de">Tagebücher</catDesc>
+                        </category>
+                        <category xml:id="essays">
+                            <catDesc xml:lang="en">Essays</catDesc>
+                            <catDesc xml:lang="es">Ensayos</catDesc>
+                            <catDesc xml:lang="de">Essays</catDesc>
+                        </category>
+                        <category xml:id="notebooks">
+                            <catDesc xml:lang="en">Notebooks</catDesc>
+                            <catDesc xml:lang="es">Notas personales</catDesc>
+                            <catDesc xml:lang="de">Notizen</catDesc>
+                        </category>
+                        <category xml:id="correspondence">
+                            <catDesc xml:lang="en">Personal Correspondence</catDesc>
+                            <catDesc xml:lang="es">Cartas</catDesc>
+                            <catDesc xml:lang="de">Briefe</catDesc>
+                        </category>
+                        <category xml:id="travelwriting">
+                            <catDesc xml:lang="en">Travel Writing</catDesc>
+                            <catDesc xml:lang="es">Narraciones de viajes</catDesc>
+                            <catDesc xml:lang="de">Reiseberichte</catDesc>
+                        </category>
+                    </category>
+                    <category xml:id="form">
+                        <catDesc xml:lang="en">Form</catDesc>
+                        <catDesc xml:lang="es">Forma</catDesc>
+                        <catDesc xml:lang="de">Publikationsform</catDesc>
+                        <category xml:id="manuscript">
+                            <catDesc xml:lang="en">Manuscript</catDesc>
+                            <catDesc xml:lang="es">Manuscritos</catDesc>
+                            <catDesc xml:lang="de">Handschriften</catDesc>
+                        </category>
+                        <category xml:id="print">
+                            <catDesc xml:lang="en">Print</catDesc>
+                            <catDesc xml:lang="es">Impresos</catDesc>
+                            <catDesc xml:lang="de">Drucke</catDesc>
+                        </category>
+                    </category>
+                    <category xml:id="subjects">
+                        <catDesc xml:lang="en">Subjects</catDesc>
+                        <catDesc xml:lang="es">Materias</catDesc>
+                        <catDesc xml:lang="de">Themen</catDesc>
+                        <category xml:id="climatology">
+                            <catDesc xml:lang="en">Climatology</catDesc>
+                            <catDesc xml:lang="es">Climatología</catDesc>
+                            <catDesc xml:lang="de">Klimatologie</catDesc>
+                        </category>
+                        <category xml:id="colonialism">
+                            <catDesc xml:lang="en">Colonialism</catDesc>
+                            <catDesc xml:lang="es">Colonialismo</catDesc>
+                            <catDesc xml:lang="de">Kolonialismus</catDesc>
+                        </category>
+                        <category xml:id="demography">
+                            <catDesc xml:lang="en">Demography</catDesc>
+                            <catDesc xml:lang="es">Demografía</catDesc>
+                            <catDesc xml:lang="de">Demografie</catDesc>
+                        </category>
+                        <category xml:id="economicconditions">
+                            <catDesc xml:lang="en">Economic conditions</catDesc>
+                            <catDesc xml:lang="es">Situación económica</catDesc>
+                            <catDesc xml:lang="de">Wirtschaftslage</catDesc>
+                        </category>
+                        <category xml:id="geography">
+                            <catDesc xml:lang="en">Geography</catDesc>
+                            <catDesc xml:lang="es">Geografía</catDesc>
+                            <catDesc xml:lang="de">Geografie</catDesc>
+                        </category>
+                        <category xml:id="history">
+                            <catDesc xml:lang="en">History</catDesc>
+                            <catDesc xml:lang="es">Historia</catDesc>
+                            <catDesc xml:lang="de">Geschichte</catDesc>
+                            <category xml:id="medicine">
+                                <catDesc xml:lang="en">Medicine</catDesc>
+                                <catDesc xml:lang="es">Medicina</catDesc>
+                                <catDesc xml:lang="de">Medizin</catDesc>
+                            </category>
+                            <category xml:id="science">
+                                <catDesc xml:lang="en">Science</catDesc>
+                                <catDesc xml:lang="es">Ciencia</catDesc>
+                                <catDesc xml:lang="de">Wissenschaft</catDesc>
+                            </category>
+                        </category>
+                    </category>
+                    <category xml:id="plantations">
+                        <catDesc xml:lang="en">Plantations</catDesc>
+                        <catDesc xml:lang="es">Plantaciones</catDesc>
+                        <catDesc xml:lang="de">Plantagen</catDesc>
+                        <category xml:id="coffee">
+                            <catDesc xml:lang="en">Coffee</catDesc>
+                            <catDesc xml:lang="es">Café</catDesc>
+                            <catDesc xml:lang="de">Kaffee</catDesc>
+                        </category>
+                        <category xml:id="sugar">
+                            <catDesc xml:lang="en">Sugar</catDesc>
+                            <catDesc xml:lang="es">Azúcar</catDesc>
+                            <catDesc xml:lang="de">Zucker</catDesc>
+                        </category>
+                    </category>
+                    <category xml:id="slavery">
+                        <catDesc xml:lang="en">Slavery</catDesc>
+                        <catDesc xml:lang="es">Esclavitud</catDesc>
+                        <catDesc xml:lang="de">Sklaverei</catDesc>
+                        <category xml:id="trade">
+                            <catDesc xml:lang="en">Trade</catDesc>
+                            <catDesc xml:lang="es">Comercio</catDesc>
+                            <catDesc xml:lang="de">Handel</catDesc>
+                        </category>
+                        <category xml:id="emancipation">
+                            <catDesc xml:lang="en">Emancipation</catDesc>
+                            <catDesc xml:lang="es">Emancipación</catDesc>
+                            <catDesc xml:lang="de">Emanzipation</catDesc>
+                        </category>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <p><pb n="1r"/>Esclaves</p>
+                <p>nous rét<add place="superlinear">r</add>ogradons comme partout<supplied cert="high">,</supplied><lb/>on ne veut plus en écrire <lb/><unclear reason="illegible" cert="high">ni</unclear> parler<supplied cert="high">,</supplied> les uns <choice>
+                        <orig>par <lb/>ce</orig>
+                        <reg>parce</reg>
+                    </choice> qu'ils craignent qu'on <lb/>les accuse de sensiblerie<supplied cert="high">,</supplied><lb/>d'autres <choice>
+                        <orig>par ce</orig>
+                        <reg>parce</reg>
+                    </choice> qu'on <lb/>agite des colonies, <hi rendition="#u"><choice>
+                            <sic>affligé</sic>
+                            <corr cert="high">afflige</corr>
+                        </choice></hi>
+                    <lb/>les colons</p>
+                <p>
+                    <gap unit="lines" quantity="2" reason="insignificant"/>
+                </p>
+                <p><pb n="1v"/>or!! <lb/>sur l'or des Îles <lb/>voyez <del rendition="#s"><gap unit="words" quantity="1" reason="illegible"/></del> Peter <lb/>Martyr
+                    1533 <choice>
+                        <abbr>p</abbr>
+                        <expan>page</expan>
+                    </choice> 24 D. <lb/>et register <hi rendition="#uu">aurum</hi></p>
+                <p>
+                    <pb n="2r"/>
+                    <hi rendition="#uu">Inquisition</hi>
+                </p>
+                <p><choice>
+                        <abbr>Mr</abbr>
+                        <expan>Monsieur</expan>
+                    </choice> de Maistre (Soirées de St. <choice>
+                        <abbr>Pétersb</abbr>
+                        <expan>Pétersbourg</expan>
+                    </choice>
+                    <lb/><choice>
+                        <abbr>T</abbr>
+                        <expan>Tome</expan>
+                    </choice> 2. <choice>
+                        <abbr>p</abbr>
+                        <expan>page</expan>
+                    </choice> 121) est irrité de ce que <lb/>"l'Angleterre reproche au Portugal
+                    <lb/>les arrêts de son inquisition <lb/><choice>
+                        <abbr>c.</abbr>
+                        <expan>c'est</expan>
+                    </choice> à <choice>
+                        <abbr>d.</abbr>
+                        <expan>dire</expan>
+                    </choice>
+                    <hi rendition="#u">quelques gouttes de <lb/>sang coupables</hi> versées de
+                    <lb/>loin en loin."</p>
+                <p>alle Welt ist <hi rendition="#u">toll</hi>!!</p>
+                <p>
+                    <pb n="2v"/>
+                </p>
+                <p><pb n="3r"/>Esclavage</p>
+                <p>Les colonies angloises en Amérique <lb/>ont vécu de 1680-1786 <lb/>en tout
+                    2,130000 nègres <lb/>enregistrés<supplied cert="high">,</supplied> probablement
+                    3 <choice>
+                        <sic>millio</sic>
+                        <corr cert="high">millions</corr>
+                    </choice>
+                </p>
+                <p>on croit 1810 qu'encore à <lb/>cause des <choice>
+                        <abbr>Espagn</abbr>
+                        <expan>Espagnols</expan>
+                    </choice><supplied cert="high">,</supplied>
+                    <choice>
+                        <abbr>Port.</abbr>
+                        <expan>Portugais</expan>
+                    </choice> et <lb/>François on extrait annuelle<lb break="no"/>ment de l'Afrique
+                    oc. 80,000 <lb/>nègres</p>
+                <p><choice>
+                        <sic>Le</sic>
+                        <corr cert="high">La</corr>
+                    </choice> Jamaïque<supplied cert="high">,</supplied> Cube a reçu <lb/>de
+                    1655-1787 .. 676276 <lb/>nègres.</p>
+                <p><note place="left" hand="#Humboldt, Alexander von">150<unclear reason="illegible" cert="low">0</unclear>
+                        <lb/>900000 <lb/>7000000</note>schon 1769 in House of <lb/>representatifes
+                    of Massachu<lb break="no"/>sets wurde gefragt (lange <lb/>vor Congress von Wien)
+                    <lb/>"the <choice>
+                        <sic>unatural</sic>
+                        <corr cert="high">unnatural</corr>
+                    </choice> and unwar<lb break="no"/>rantable custom of <lb/>enslaving
+                        mankind<supplied cert="high">"</supplied>
+                    <lb/>Walsh <choice>
+                        <sic>appel</sic>
+                        <corr cert="high">appeal</corr>
+                    </choice> of <lb/>the <choice>
+                        <abbr>Un</abbr>
+                        <expan>United</expan>
+                    </choice>
+                    <choice>
+                        <abbr>St</abbr>
+                        <expan>States</expan>
+                    </choice> 1819 <choice>
+                        <abbr>p</abbr>
+                        <expan>page</expan>
+                    </choice> 312 <lb/>abschaffung <del rendition="#s"><gap unit="words" quantity="1" reason="illegible"/></del> des Handels <lb/>Virginie 1778
+                        <lb/>Pensylvanie<lb/>Connecticut<note place="right" hand="#author">R.
+                            Wilber<lb break="no"/>force <lb/>Gallatin</note>
+                    <lb/>Danemark <lb/>Amérique</p>
+                <p>
+                    <pb n="3v"/>
+                    <gap unit="pages" quantity="1" reason="insignificant"/>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,216 @@
+<?xml-model href="../schemata/prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="letter" xml:id="prohd0003">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Brief von José María Queipo de Llano Ruiz de Saravía an Alexander
+                    von Humboldt</title>
+                <editor>
+                    <persName>
+                        <surname>Kraller</surname>
+                        <forename>Kathrin</forename>
+                    </persName>
+                </editor>
+                <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
+                <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
+                <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
+            </titleStmt>
+            <editionStmt>
+                <p>Erste Ausgabe von Projekt Humboldt digital - ProHD (<date>2021</date>).</p>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                        Namensnennung 4.0 International (CC BY 4.0) </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc rend="manuscript">
+                    <msIdentifier>
+                        <institution>Staatsbibliothek zu Berlin Preußischer
+                            Kulturbesitz</institution>
+                        <collection>Nachlass Alexander von Humboldt</collection>
+                        <idno>
+                            <idno type="shelfmark">Nachl. Alexander von Humboldt, gr. Kasten 2,
+                                Mappe 3, Nr. 2</idno>
+                        </idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fr">Französisch</language>
+            </langUsage>
+            <abstract xml:lang="de">
+                <p>Brief von José María Queipo de Llano Ruiz de Saravía an Alexander von
+                    Humboldt .</p>
+            </abstract>
+            <abstract xml:lang="es">
+                <p>Carta de José María Queipo de Llano Ruiz de Saravía a Alexander von Humboldt.</p>
+            </abstract>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>Queipo de Llano Ruiz de Saravía, José María</persName>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>Humboldt, Alexander von</persName>
+                </correspAction>
+            </correspDesc>
+            <textClass>
+                <catRef scheme="#genre" target="#correspondence"/>
+                <catRef scheme="#form" target="#manuscript"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="pb-taxonomy">
+                    <category xml:id="genre">
+                        <catDesc xml:lang="en">Genre</catDesc>
+                        <catDesc xml:lang="es">Género</catDesc>
+                        <catDesc xml:lang="de">Genre</catDesc>
+                        <category xml:id="diaries">
+                            <catDesc xml:lang="en">Diaries</catDesc>
+                            <catDesc xml:lang="es">Diarios personales</catDesc>
+                            <catDesc xml:lang="de">Tagebücher</catDesc>
+                        </category>
+                        <category xml:id="essays">
+                            <catDesc xml:lang="en">Essays</catDesc>
+                            <catDesc xml:lang="es">Ensayos</catDesc>
+                            <catDesc xml:lang="de">Essays</catDesc>
+                        </category>
+                        <category xml:id="notebooks">
+                            <catDesc xml:lang="en">Notebooks</catDesc>
+                            <catDesc xml:lang="es">Notas personales</catDesc>
+                            <catDesc xml:lang="de">Notizen</catDesc>
+                        </category>
+                        <category xml:id="correspondence">
+                            <catDesc xml:lang="en">Personal Correspondence</catDesc>
+                            <catDesc xml:lang="es">Cartas</catDesc>
+                            <catDesc xml:lang="de">Briefe</catDesc>
+                        </category>
+                        <category xml:id="travelwriting">
+                            <catDesc xml:lang="en">Travel Writing</catDesc>
+                            <catDesc xml:lang="es">Narraciones de viajes</catDesc>
+                            <catDesc xml:lang="de">Reiseberichte</catDesc>
+                        </category>
+                    </category>
+                    <category xml:id="form">
+                        <catDesc xml:lang="en">Form</catDesc>
+                        <catDesc xml:lang="es">Forma</catDesc>
+                        <catDesc xml:lang="de">Publikationsform</catDesc>
+                        <category xml:id="manuscript">
+                            <catDesc xml:lang="en">Manuscript</catDesc>
+                            <catDesc xml:lang="es">Manuscritos</catDesc>
+                            <catDesc xml:lang="de">Handschriften</catDesc>
+                        </category>
+                        <category xml:id="print">
+                            <catDesc xml:lang="en">Print</catDesc>
+                            <catDesc xml:lang="es">Impresos</catDesc>
+                            <catDesc xml:lang="de">Drucke</catDesc>
+                        </category>
+                    </category>
+                    <category xml:id="subjects">
+                        <catDesc xml:lang="en">Subjects</catDesc>
+                        <catDesc xml:lang="es">Materias</catDesc>
+                        <catDesc xml:lang="de">Themen</catDesc>
+                        <category xml:id="climatology">
+                            <catDesc xml:lang="en">Climatology</catDesc>
+                            <catDesc xml:lang="es">Climatología</catDesc>
+                            <catDesc xml:lang="de">Klimatologie</catDesc>
+                        </category>
+                        <category xml:id="colonialism">
+                            <catDesc xml:lang="en">Colonialism</catDesc>
+                            <catDesc xml:lang="es">Colonialismo</catDesc>
+                            <catDesc xml:lang="de">Kolonialismus</catDesc>
+                        </category>
+                        <category xml:id="demography">
+                            <catDesc xml:lang="en">Demography</catDesc>
+                            <catDesc xml:lang="es">Demografía</catDesc>
+                            <catDesc xml:lang="de">Demografie</catDesc>
+                        </category>
+                        <category xml:id="economicconditions">
+                            <catDesc xml:lang="en">Economic conditions</catDesc>
+                            <catDesc xml:lang="es">Situación económica</catDesc>
+                            <catDesc xml:lang="de">Wirtschaftslage</catDesc>
+                        </category>
+                        <category xml:id="geography">
+                            <catDesc xml:lang="en">Geography</catDesc>
+                            <catDesc xml:lang="es">Geografía</catDesc>
+                            <catDesc xml:lang="de">Geografie</catDesc>
+                        </category>
+                        <category xml:id="history">
+                            <catDesc xml:lang="en">History</catDesc>
+                            <catDesc xml:lang="es">Historia</catDesc>
+                            <catDesc xml:lang="de">Geschichte</catDesc>
+                            <category xml:id="medicine">
+                                <catDesc xml:lang="en">Medicine</catDesc>
+                                <catDesc xml:lang="es">Medicina</catDesc>
+                                <catDesc xml:lang="de">Medizin</catDesc>
+                            </category>
+                            <category xml:id="science">
+                                <catDesc xml:lang="en">Science</catDesc>
+                                <catDesc xml:lang="es">Ciencia</catDesc>
+                                <catDesc xml:lang="de">Wissenschaft</catDesc>
+                            </category>
+                        </category>
+                    </category>
+                    <category xml:id="plantations">
+                        <catDesc xml:lang="en">Plantations</catDesc>
+                        <catDesc xml:lang="es">Plantaciones</catDesc>
+                        <catDesc xml:lang="de">Plantagen</catDesc>
+                        <category xml:id="coffee">
+                            <catDesc xml:lang="en">Coffee</catDesc>
+                            <catDesc xml:lang="es">Café</catDesc>
+                            <catDesc xml:lang="de">Kaffee</catDesc>
+                        </category>
+                        <category xml:id="sugar">
+                            <catDesc xml:lang="en">Sugar</catDesc>
+                            <catDesc xml:lang="es">Azúcar</catDesc>
+                            <catDesc xml:lang="de">Zucker</catDesc>
+                        </category>
+                    </category>
+                    <category xml:id="slavery">
+                        <catDesc xml:lang="en">Slavery</catDesc>
+                        <catDesc xml:lang="es">Esclavitud</catDesc>
+                        <catDesc xml:lang="de">Sklaverei</catDesc>
+                        <category xml:id="trade">
+                            <catDesc xml:lang="en">Trade</catDesc>
+                            <catDesc xml:lang="es">Comercio</catDesc>
+                            <catDesc xml:lang="de">Handel</catDesc>
+                        </category>
+                        <category xml:id="emancipation">
+                            <catDesc xml:lang="en">Emancipation</catDesc>
+                            <catDesc xml:lang="es">Emancipación</catDesc>
+                            <catDesc xml:lang="de">Emanzipation</catDesc>
+                        </category>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="writingSession">
+                <p><pb n="1r"/>Si Monsieur Humboldt veut <lb/>avoir tout de suite <subst>
+                        <del rendition="#ow">de</del>
+                        <add place="across">les</add>
+                    </subst> renseignemens <lb/>qu'il désire sur l'île de Cuba, <lb/>il peut écrire
+                    au Général Don <lb/>José Zayas<supplied cert="high">,</supplied> député par
+                    cette île, <lb/>et je me charge avec beaucoup <lb/>de plaisir de lui faire
+                    passer cette <lb/>lettre par le <choice>
+                        <sic>courier</sic>
+                        <corr cert="high">courrier</corr>
+                    </choice> de Samedi <lb/>en l'engageant d'y donner une <lb/>réponse au
+                    plutôt.</p>
+                <p>Monsieur Humboldt doit <lb/>être persuadé que je saisirai <lb/>avec empressement
+                    toutes les occasions <lb/>de pouvoir lui témoigner mon désir <lb/>de lui être
+                    agréable, en lui renouvelant <lb/><pb n="1v"/>l'hommage de ma considération
+                    <lb/>la plus distinguée.</p>
+                <closer>
+                    <signed>Toreno</signed>
+                    <date>ce 6</date>.</closer>
+            </div>
+        </body>
+    </text>
+</TEI>
