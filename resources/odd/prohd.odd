@@ -60,6 +60,7 @@
             
             
             
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -67,6 +68,7 @@
                             display: block;
                             margin-right: 5px;
                             float: right;
+            
             
             
             
@@ -139,6 +141,7 @@
             
             
             
+            
                             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -146,6 +149,7 @@
                             display: block;
                             margin-right: 5px;
                             float: right;
+            
             
             
             
@@ -294,11 +298,13 @@
             
             
             
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
             
             
             
@@ -365,7 +371,7 @@
         <elementSpec ident="titleStmt" mode="change"><model behaviour="block">
             <param name="editor" value="editor"/>
             <pb:template xmlns="" xml:space="preserve"><div>
-  <h3>About this edition</h3>
+  <h3><pb-i18n key="document.edition"/></h3>
   <ul>[[editor]]</ul>
 </div></pb:template>
         </model><model output="latex" behaviour="meta">
@@ -443,6 +449,7 @@
             
             
             
+            
                             
                             display: inline-block;
                             margin-top: .5em;
@@ -450,6 +457,7 @@
                             color: #CCC;
                             
                         
+            
             
             
             
@@ -526,6 +534,7 @@
             
             
             
+            
                             
                             display: inline-block;
                             margin-top: .5em;
@@ -569,9 +578,11 @@
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
+            
             
             
             
@@ -649,6 +660,7 @@
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@type='catch' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
@@ -688,8 +700,10 @@
             
             
             
+            
                             margin-left: 20em;
                             color: #A0A0A0;
+            
             
             
             
@@ -818,7 +832,7 @@
             <param name="URLImages" value="msDesc/msIdentifier/idno/idno[@type=&#34;URLImages&#34;]"/>
             <param name="URLCatalogue" value="msDesc/msIdentifier/idno/idno[@type=&#34;URLCatalogue&#34;]"/>
             <param name="physDesc" value="msDesc/physDesc/p"/>
-            <pb:template xmlns="" xml:space="preserve"><div><h3>Source</h3>
+            <pb:template xmlns="" xml:space="preserve"><div><h3><pb-i18n key="document.source"/></h3>
   <ol>[[institution]]</ol>
   <ol>[[repository]]</ol>
   <ol>[[collection]]</ol>
@@ -881,7 +895,7 @@
             <param name="dateSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
             <param name="placeSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
             <pb:template xmlns="" xml:space="preserve"><div>
-  <h3>Creation</h3>
+  <h3><pb-i18n key="document.creation"/></h3>
   <ol>[[author]][[sender]]</ol>
   <ol>[[place]] [[placeSent]]</ol>
   <ol>[[date]] [[dateSent]]</ol>
@@ -956,8 +970,10 @@
             
             
             
+            
             text-decoration: line-through;
 color:red;
+            
             
             
             
@@ -1047,8 +1063,10 @@ color:red;
             
             
             
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
             
             
             
@@ -1206,8 +1224,10 @@ text-decoration-style: double;
             
             
             
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
             
             
             
@@ -1326,8 +1346,10 @@ text-decoration-style: double;
             
             
             
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
             
             
             
@@ -1388,9 +1410,11 @@ text-decoration-style: double;
             
             
             
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
             
             
             
