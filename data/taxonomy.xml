@@ -3,12 +3,13 @@
       <fileDesc>
          <titleStmt>
             <title>ProHD's Taxonomy</title>
+            <editor>Rojas Castro, Antonio</editor>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Proyecto Humboldt Digital</p>
          </publicationStmt>
          <sourceDesc>
-            <p/>
+            <p>Born Digital</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
@@ -68,6 +69,11 @@
                      <catDesc xml:lang="es">Climatología</catDesc>
                      <catDesc xml:lang="de">Klimatologie</catDesc>
                   </category>
+                  <category xml:id="coffee">
+                     <catDesc xml:lang="en">Coffee</catDesc>
+                     <catDesc xml:lang="es">Café</catDesc>
+                     <catDesc xml:lang="de">Kaffee</catDesc>
+                  </category>
                   <category xml:id="colonialism">
                      <catDesc xml:lang="en">Colonialism</catDesc>
                      <catDesc xml:lang="es">Colonialismo</catDesc>
@@ -83,55 +89,45 @@
                      <catDesc xml:lang="es">Situación económica</catDesc>
                      <catDesc xml:lang="de">Wirtschaftslage</catDesc>
                   </category>
+                  <category xml:id="emancipation">
+                     <catDesc xml:lang="en">Emancipation</catDesc>
+                     <catDesc xml:lang="es">Emancipación</catDesc>
+                     <catDesc xml:lang="de">Emanzipation</catDesc>
+                  </category>
                   <category xml:id="geography">
                      <catDesc xml:lang="en">Geography</catDesc>
                      <catDesc xml:lang="es">Geografía</catDesc>
                      <catDesc xml:lang="de">Geografie</catDesc>
                   </category>
-                  <category xml:id="history">
-                     <catDesc xml:lang="en">History</catDesc>
-                     <catDesc xml:lang="es">Historia</catDesc>
-                     <catDesc xml:lang="de">Geschichte</catDesc>
-                     <category xml:id="medicine">
-                        <catDesc xml:lang="en">Medicine</catDesc>
-                        <catDesc xml:lang="es">Medicina</catDesc>
-                        <catDesc xml:lang="de">Medizin</catDesc>
-                     </category>
-                     <category xml:id="science">
-                        <catDesc xml:lang="en">Science</catDesc>
-                        <catDesc xml:lang="es">Ciencia</catDesc>
-                        <catDesc xml:lang="de">Wissenschaft</catDesc>
-                     </category>
+                  <category xml:id="medicine">
+                     <catDesc xml:lang="en">Medicine</catDesc>
+                     <catDesc xml:lang="es">Medicina</catDesc>
+                     <catDesc xml:lang="de">Medizin</catDesc>
                   </category>
-               </category>
-               <category xml:id="plantations">
-                  <catDesc xml:lang="en">Plantations</catDesc>
-                  <catDesc xml:lang="es">Plantaciones</catDesc>
-                  <catDesc xml:lang="de">Plantagen</catDesc>
-                  <category xml:id="coffee">
-                     <catDesc xml:lang="en">Coffee</catDesc>
-                     <catDesc xml:lang="es">Café</catDesc>
-                     <catDesc xml:lang="de">Kaffee</catDesc>
+                  <category xml:id="plantations">
+                     <catDesc xml:lang="en">Plantations</catDesc>
+                     <catDesc xml:lang="es">Plantaciones</catDesc>
+                     <catDesc xml:lang="de">Plantagen</catDesc>
+                  </category>
+                  <category xml:id="science">
+                     <catDesc xml:lang="en">Science</catDesc>
+                     <catDesc xml:lang="es">Ciencia</catDesc>
+                     <catDesc xml:lang="de">Wissenschaft</catDesc>
+                  </category>
+                  <category xml:id="slavery">
+                     <catDesc xml:lang="en">Slavery</catDesc>
+                     <catDesc xml:lang="es">Esclavitud</catDesc>
+                     <catDesc xml:lang="de">Sklaverei</catDesc>
                   </category>
                   <category xml:id="sugar">
                      <catDesc xml:lang="en">Sugar</catDesc>
                      <catDesc xml:lang="es">Azúcar</catDesc>
                      <catDesc xml:lang="de">Zucker</catDesc>
                   </category>
-               </category>
-               <category xml:id="slavery">
-                  <catDesc xml:lang="en">Slavery</catDesc>
-                  <catDesc xml:lang="es">Esclavitud</catDesc>
-                  <catDesc xml:lang="de">Sklaverei</catDesc>
                   <category xml:id="trade">
                      <catDesc xml:lang="en">Trade</catDesc>
                      <catDesc xml:lang="es">Comercio</catDesc>
                      <catDesc xml:lang="de">Handel</catDesc>
-                  </category>
-                  <category xml:id="emancipation">
-                     <catDesc xml:lang="en">Emancipation</catDesc>
-                     <catDesc xml:lang="es">Emancipación</catDesc>
-                     <catDesc xml:lang="de">Emanzipation</catDesc>
                   </category>
                </category>
             </taxonomy>
