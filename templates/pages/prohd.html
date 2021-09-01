@@ -59,7 +59,7 @@
 
     <body unresolved="unresolved">
     
-        <pb-page data-template="pages:pb-page" unresolved="unresolved">
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
         
             <pb-document id="document1" data-template="pages:pb-document"/>
             
@@ -76,18 +76,18 @@
                         <!-- Overwrite toolbar to add metadata toggle -->
                         <app-toolbar class="toolbar" sticky="sticky">
                             <paper-button id="tocToggle" class="toc-toggle" raised="raised">
-                                <iron-icon icon="icons:info-outline"/>Metadata
+                                <iron-icon icon="icons:info-outline"/><pb-i18n key="document.metadata"/>
                             </paper-button>
                             
                         <!-- pass a parameter 'mode'. pb-view will forward this to the ODD as a user-defined parameter-->
                         
                         <!-- this pb-i18n is not working -->
                         <pb-toggle-feature name="mode" on="diplomatic" off="norm">
-                                <pb-i18n key="document.view-diplomatic">Diplomatic View</pb-i18n>
+                                <pb-i18n key="document.view-diplomatic"/>
                             </pb-toggle-feature>
                         
                         <!-- directly change properties of the pb-view -->
-                        <pb-toggle-feature name="view" on="page" off="single" default="on">Page View</pb-toggle-feature>
+                        <pb-toggle-feature name="view" on="page" off="single" default="on"><pb-i18n key="document.page-view"/></pb-toggle-feature>
                         
                         <!-- Navigate to previous page -->
                         <pb-navigation direction="backward" keyboard="left">
@@ -165,7 +165,7 @@
                     </main>
                     <footer>
                         <div id="footerGray">
-                            <p>Gefördert von</p>
+                            <p><pb-i18n key="footer.funded"/></p>
                             <a href="https://www.auswaertiges-amt.de/">
                                 <img src="resources/images/aa.svg" class="funder1"/>
                             </a>
@@ -182,8 +182,7 @@
                             </a>
                             <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
                             </p>
-                            <p class="license">This project is licensed under a <span>Creative Commons Attribution 4.0 International Public License</span>
-                            </p>
+                            <p class="license"><pb-i18n key="footer.license"/></p>
                             <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
                                 <img src="resources/images/cc.svg" class="cc"/>
                             </a>
