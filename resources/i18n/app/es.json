@@ -2,7 +2,8 @@
     "myapp": {
         "title": "Dossier digital: Alexander von Humboldt y Cuba (1800-1830)"
         "project": "Sobre el proyecto"
-        "team": "Equipo"
-        "form": "Forma"
+    },
+    "document":{
+    	"view-diplomatic": "Vista diplomática"
     }
 }
