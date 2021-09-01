@@ -7,7 +7,10 @@
     "document":{
     	"view-diplomatic": "Diplomatische Ansicht",
     	"metadata": "Metadaten",
-    	"page-view":"Seitenansicht"
+    	"page-view":"Seitenansicht",
+    	"edition": "Über diese Ausgabe",
+    	"source": "Quelle",
+    	"creation": "Erstellung"
     },
     "footer":{
     	"funded": "Gefördert von",

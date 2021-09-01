@@ -7,7 +7,10 @@
     "document":{
     	"view-diplomatic": "Diplomatic View",
     	"metadata": "Metadata",
-    	"page-view": "Page View"
+    	"page-view": "Page View",
+    	"edition": "About this edition",
+    	"source": "Source",
+    	"creation": "Creation"
     },
     "footer":{
     	"funded": "Funded by",
