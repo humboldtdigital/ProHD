@@ -1,6 +1,24 @@
 {
-    "myapp": {
-        "title": "Digitales Dossier: Alexander von Humboldt und Kuba (1800-1830)"
-        "project": "Über das Projekt"
+    "menu": {
+        "title": "Digitales Dossier: Alexander von Humboldt und Kuba (1800-1830)",
+        "about": "Über das Projekt",
+        "team": "Das Team"
+    },
+    "document":{
+    	"view-diplomatic": "Diplomatische Ansicht",
+    	"metadata": "Metadaten",
+    	"page-view":"Seitenansicht"
+    },
+    "footer":{
+    	"funded": "Gefördert von",
+    	"license": "Dieses Projekt ist lizenziert unter einer Creative Commons Attribution 4.0 International Public License"
+    },
+    "error":{
+    	"title":"Es ist ein Fehler aufgetreten...",
+    	"description": "Die Applikation hat einen Fehler erzeugt"
+    },
+    "facets":{
+    	"form":"Form",
+    	"subject": "Themen"
     }
 }

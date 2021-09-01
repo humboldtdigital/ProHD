@@ -1,9 +1,24 @@
 {
-    "myapp": {
-        "title": "Dossier digital: Alexander von Humboldt y Cuba (1800-1830)"
-        "project": "Sobre el proyecto"
+    "menu": {
+        "title": "Dossier Digital: Alexander von Humboldt y Cuba (1800-1830)",
+        "about": "Sobre el proyecto",
+        "team": "Equipo"
     },
     "document":{
-    	"view-diplomatic": "Vista diplomática"
+    	"view-diplomatic": "Vista diplomática",
+    	"metadata": "Metadatos",
+    	"page-view": "Vista por páginas"
+    },
+    "footer":{
+    	"funded": "Financiado por",
+    	"license": "Este proyecto se publica con una licencia Creative Commons Attribution 4.0 International Public"
+    },
+    "error":{
+    	"title":"Ha ocurrido un error...",
+    	"description": "La aplicación ha generado un error"
+    },
+    "facets":{
+    	"form":"Forma",
+    	"subject": "Materias"
     }
 }
