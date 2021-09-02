@@ -76,7 +76,8 @@
                         <!-- Overwrite toolbar to add metadata toggle -->
                         <app-toolbar class="toolbar" sticky="sticky">
                             <paper-button id="tocToggle" class="toc-toggle" raised="raised">
-                                <iron-icon icon="icons:info-outline"/><pb-i18n key="document.metadata"/>
+                                <iron-icon icon="icons:info-outline"/>
+                                <pb-i18n key="document.metadata"/>
                             </paper-button>
                             
                         <!-- pass a parameter 'mode'. pb-view will forward this to the ODD as a user-defined parameter-->
@@ -87,7 +88,9 @@
                             </pb-toggle-feature>
                         
                         <!-- directly change properties of the pb-view -->
-                        <pb-toggle-feature name="view" on="page" off="single" default="on"><pb-i18n key="document.page-view"/></pb-toggle-feature>
+                        <pb-toggle-feature name="view" on="page" off="single" default="on">
+                                <pb-i18n key="document.page-view"/>
+                            </pb-toggle-feature>
                         
                         <!-- Navigate to previous page -->
                         <pb-navigation direction="backward" keyboard="left">
@@ -165,7 +168,9 @@
                     </main>
                     <footer>
                         <div id="footerGray">
-                            <p><pb-i18n key="footer.funded"/></p>
+                            <p>
+                                <pb-i18n key="footer.funded"/>
+                            </p>
                             <a href="https://www.auswaertiges-amt.de/">
                                 <img src="resources/images/aa.svg" class="funder1"/>
                             </a>
@@ -182,7 +187,9 @@
                             </a>
                             <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
                             </p>
-                            <p class="license"><pb-i18n key="footer.license"/></p>
+                            <p class="license">
+                                <pb-i18n key="footer.license"/>
+                            </p>
                             <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
                                 <img src="resources/images/cc.svg" class="cc"/>
                             </a>
