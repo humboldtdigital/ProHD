@@ -18,7 +18,7 @@
     },
     "error":{
     	"title":"Ha ocurrido un error...",
-    	"description": "La aplicación ha generado un error"
+    	"description": "La aplicación ha generado un error."
     },
     "facets":{
     	"form":"Forma",
