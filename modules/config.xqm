@@ -132,7 +132,7 @@ declare variable $config:facets := [
         "dimension": "subject",
         "heading": "facets.subject",
         "max": 5,
-        "hierarchical": true()
+        "hierarchical": false()
     }
 ];
 
