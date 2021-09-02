@@ -18,7 +18,7 @@
     },
     "error":{
     	"title":"Es ist ein Fehler aufgetreten...",
-    	"description": "Die Applikation hat einen Fehler erzeugt"
+    	"description": "Die Anwendung hat einen Fehler erzeugt."
     },
     "facets":{
     	"form":"Form",
