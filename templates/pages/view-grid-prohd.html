@@ -69,7 +69,8 @@
     </head>
 
     <body>
-        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" 
+            locales="resources/i18n/{{ns}}/{{lng}}.json" require-language="require-language">
             <pb-document id="document1" data-template="pages:pb-document"/>
             <app-drawer-layout force-narrow="force-narrow">
                 <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
@@ -90,11 +91,12 @@
                                 </pb-load>
                             </div>
                         </pb-drawer>
-                        <pb-view class="breadcrumbs" src="document1" xpath="//teiHeader/fileDesc/titleStmt/title" view="single">
+                        <pb-view class="breadcrumbs" src="document1" xpath="//teiHeader/fileDesc/titleStmt/title" view="single" use-language="use-language" map="prohd-document-translation">
                             <pb-param name="header" value="short"/>
                         </pb-view>
                         
-                        <pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription"/>
+                        <pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription"
+                            use-language="use-language" map="prohd-document-translation"/>
                         <footer>
                             <pb-navigation direction="forward" keyboard="right" unit="page" emit="transcription" subscribe="transcription">
                                 <paper-button>
