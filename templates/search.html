@@ -84,6 +84,7 @@
 
             .hi {
                 display: block;
+                color: #008F8F;
             }
 
             #facets h3 {
@@ -108,11 +109,11 @@
     </head>
 
     <body>
-        <pb-page data-template="pages:pb-page" unresolved="unresolved">
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
             <app-header-layout>
                 <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
                     <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
-                    <app-toolbar>
+                    <app-toolbar class="toolbar" sticky="sticky">
                         <pb-paginate per-page="10" range="5" subscribe="results"/>
                         <pb-progress indeterminate="indeterminate" bottom-item="bottom-item"/>
                     </app-toolbar>
@@ -125,8 +126,8 @@
                             <div class="card-content">
                                 <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" submit-on-load="submit-on-load">
                                     <div class="targets">
-                                        <paper-checkbox name="field" value="text">Search sections</paper-checkbox>
-                                        <paper-checkbox name="field" value="head">Search headings</paper-checkbox>
+                                        <paper-checkbox name="field" value="text"><pb-i18n key="search.sections">Search sections</pb-i18n></paper-checkbox>
+                                        <paper-checkbox name="field" value="head"><pb-i18n key="search.headings">Search headings</pb-i18n></paper-checkbox>
                                     </div>
                                     <pb-custom-form id="facets" url="api/search/facets" subscribe="results" event="pb-results-received" emit="search"/>
                                 </pb-search>
@@ -134,6 +135,35 @@
                         </paper-card>
                     </div>
                 </main>
+                <footer>
+                    <div id="footerGray">
+                        <p>
+                                <pb-i18n key="footer.funded"/>
+                            </p>
+                        <a href="https://www.auswaertiges-amt.de/">
+                                <img src="resources/images/aa.svg" class="funder1"/>
+                            </a>
+                        <a href="https://www.fritz-thyssen-stiftung.de/">
+                                <img src="resources/images/thyssen.svg" class="funder2"/>
+                            </a>
+                        <a href="https://www.gerda-henkel-stiftung.de/">
+                                <img src="resources/images/gerdahenkel.svg" class="funder3"/>
+                            </a>
+                    </div>    
+                    <div id="footerGreen">
+                        <a href="https://e-editiones.org/">
+                                <img src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                            </a>
+                        <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
+                            </p>
+                        <p class="license">
+                                <pb-i18n key="footer.license"/>
+                            </p>
+                        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                                <img src="resources/images/cc.svg" class="cc"/>
+                            </a>
+                    </div>
+                </footer>
             </app-header-layout>
         </pb-page>
         <script>
