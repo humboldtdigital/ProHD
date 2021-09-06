@@ -23,5 +23,11 @@
     "facets":{
     	"form":"Form",
     	"subject": "Subjects"
+    },
+    "languages": {
+        "en": "English",
+        "es": "Spanish",
+        "de": "German",
+        "fr": "French"
     }
 }

@@ -23,5 +23,11 @@
     "facets":{
     	"form":"Forma",
     	"subject": "Materias"
+    },
+    "languages": {
+        "en": "Inglés",
+        "es": "Español",
+        "de": "Alemán",
+        "fr": "Francés"
     }
 }
