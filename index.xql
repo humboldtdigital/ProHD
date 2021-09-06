@@ -53,10 +53,9 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 $header//tei:fileDesc/tei:editionStmt/tei:edition/tei:date,
                 $header//tei:publicationStmt/tei:date
             ))
-            case "genre" return (
-                idx:get-genre($header),
-                $root/dbk:info/dbk:keywordset[@vocab="#genre"]/dbk:keyword
-            )
+            case "genre" return 
+            (: pass the genre id, will be resolved into correct label via i18n :)
+                substring($header//tei:textClass/tei:catRef[@scheme="#genre"]/@target, 2)
             (: Added by ARC on 06.07.2021 :)    
             case "form" return (
                 idx:get-form($header),

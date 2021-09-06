@@ -29,5 +29,12 @@
         "es": "Spanisch",
         "de": "Deutsch",
         "fr": "Französisch"
+    },
+    "genre": {
+        "diaries": "Tagebücher",
+        "essays": "Essays",
+        "notebooks": "Notizen",
+        "correspondence": "Briefe",
+        "travelwriting": "Reiseberichte"
     }
 }
