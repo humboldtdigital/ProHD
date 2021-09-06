@@ -36,5 +36,9 @@
         "notebooks": "Notebooks",
         "correspondence": "Personal Correspondence",
         "travelwriting": "Travel Writing"
-    }              
+    },
+    "form": {
+        "manuscript": "Manuscript",
+        "print": "Print"
+    }            
 }

@@ -36,5 +36,9 @@
         "notebooks": "Notizen",
         "correspondence": "Briefe",
         "travelwriting": "Reiseberichte"
-    }
+    },
+    "form": {
+        "manuscript": "Handschriften",
+        "print": "Drucke"
+    }         
 }

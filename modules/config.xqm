@@ -122,7 +122,10 @@ declare variable $config:facets := [
         "dimension": "form",
         "heading": "facets.form",
         "max": 5,
-        "hierarchical": false()
+        "hierarchical": false(),
+        "output": function($label) {
+            <pb-i18n key="form.{$label}">{$label}</pb-i18n>
+        }
     }
     , 
     map {

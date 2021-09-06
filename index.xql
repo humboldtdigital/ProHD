@@ -58,12 +58,10 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 substring($header//tei:textClass/tei:catRef[@scheme="#genre"]/@target, 2)
             (: Added by ARC on 06.07.2021 :)    
             case "form" return (
-                idx:get-form($header),
-                $root/dbk:info/dbk:keywordset[@vocab="#form"]/dbk:keyword
+                substring($header//tei:textClass/tei:catRef[@scheme="#form"]/@target, 2)
             ) 
             case "subject" return (
-                idx:get-subject($header),
-                $root/dbk:info/dbk:keywordset[@vocab="#subject"]/dbk:keyword
+                substring($header//tei:textClass/tei:catRef[@scheme="#subject"]/@target, 2)
             ) 
             default return
                 ()

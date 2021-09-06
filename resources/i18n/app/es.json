@@ -36,5 +36,9 @@
         "notebooks": "Notas personales",
         "correspondence": "Cartas",
         "travelwriting": "Narraciones de viajes"
-    }
+    },
+    "form": {
+        "manuscript": "Manuscritos",
+        "print": "Impresos"
+    }         
 }
