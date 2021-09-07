@@ -1,106 +1,129 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>De Proyecto</title>
+            <title>Sobre el proyecto</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p>Proyecto Humboldt Digital</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital</p>
          </sourceDesc>
       </fileDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <div>
-            <p>PROYECTO HUMBOLDT DIGITAL (ProHD) 
-               
-               lorem ipsum dolor sich amet in Spanish.</p>  
+            <head>Presentación</head>
+            <p>El <hi rend="bold">Proyecto Humboldt Digital (ProHD)</hi> es una iniciativa
+               internacional de formación continua en las humanidades digitales en dos lugares: La
+               Habana (Casa Museo Alejandro de Humboldt) y Berlín (Academia de Ciencias y
+               Humanidades de Berlín-Brandeburgo).</p>
+            <p>Como proyecto interdisciplinario e intercultural pionero, está dirigido a una nueva
+               generación de investigadores cubanos y alemanes que desean preservar, visibilizar e
+               investigar el patrimonio cultural escrito con la ayuda de las tecnologías y métodos
+               de las humanidades digitales. </p>
+            <p>El proyecto se centra en la cultura científica y literaria cubana de los siglos XVIII
+               y XIX, especialmente en hacer disponible las fuentes cubanas relevantes para el
+               tiempo en que Alejandro de Humboldt visitó y trabajó sobre la sociedad, economía y
+               cultura de Cuba (1800–1830).</p>
          </div>
          <div>
-            <head>Prioridades de investigación</head>
-            <p>Philologische Erschließung von <hi rend="bold">Umkreisquellen zu Alexander von Humboldts 
-               kubanischer Forschung</hi> im Zeitraum 1800-1830.</p>
+            <head>Líneas de investigación</head>
+            <p>Digitalización y descripción con metadatos de <hi rend="bold">fuentes relacionadas
+                  con la obra de Alexander von Humboldt y su investigación cubana</hi> durante el
+               período 1800-1830.</p>
             <p>
-                    <hi rend="bold">Kultur- und Wissenschaftsgeschichte Kubas</hi> unter besonderer Berücksichtigung 
-               der Entwicklungen im 19. Jahrhundert, insbesondere zum transatlantischen Sklavenhandel im Kontext 
-               der kubanischen Plantagenwirtschaft und zu deutsch-kubanischen Wissenschaftsbeziehungen.</p>
+               <hi rend="bold">Historia cultural y científica de Cuba</hi> con especial
+               consideración a los acontecimientos del siglo XIX, en particular sobre la trata
+               transatlántica de esclavos en el contexto de la la economía de las plantaciones
+               cubanas y en las relaciones científicas germano-cubanas.</p>
             <p>
-                    <hi rend="bold">Theorie und Methodologie digitaler Editionen</hi> und digitaler Kulturerbeforschung.</p>
+               <hi rend="bold">Teoría y metodología de las ediciones digitales</hi> e investigación
+               del patrimonio digital.</p>
          </div>
          <div>
-          <head>Colaborador</head>
-               <listOrg>
-                 <org>
-                    <orgName>Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</orgName>
-                    <note>Die <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                       Wissenschaften BBAW)</ref> ist die größte außeruniversitäre Einrichtung 
-                       geisteswissenschaftlicher Forschung in der Region Berlin-Brandenburg. 
-                       <hi rend="italic">Proyecto Humboldt Digital</hi> ist hier institutionell angesiedelt
-                       und kooperiert eng mit dem Akademienvorhaben <ref target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">
-                       <hi rend="italic">Alexander von Humboldt auf Reisen - Wissenschaft aus der Bewegung</hi>
-                            </ref>. 
-                       Die Vorhaben der Akademie werden von der <ref target="https://www.bbaw.de/en/bbaw-digital/telota">TELOTA-Initiative</ref> 
-                       unterstützt und beraten.</note>
-                 </org>
-                 <org> 
-                    <orgName>Oficina del Historiador de La Ciudad de La Habana (OHCH)</orgName>
-                    <note>La <ref target="http://www.habananuestra.cu">Oficina del Historiador de La
-                       Ciudad de La Habana (OHCH)</ref> .... <hi rend="italic">Proyecto Humboldt Digital</hi>.
-                    </note>
-                 </org>
-                 <org>
-                    <orgName>Casa Museo Alejandro de Humboldt (Casa Humboldt)</orgName>
-                    <note>Die Casa Museo Alejandro de Humboldt (Casa Humboldt) ist ein kubanisches Museum, 
-                          das sich mit dem Leben und Werk Alexander von Humboldts befasst. Es gehört
-                          zum Museumsnetzwerk der OHCH und befindet sich in Habana Vieja, der historischen 
-                          Altstadt von Havanna. Die Casa Humboldt ist der kubanische Standort von 
-                          <hi rend="italic">Proyecto Humboldt Digital</hi>.</note>
-                 </org>
-                 <org>
-                    <orgName>Academia de Ciencias de Cuba (ACC)</orgName>
-                    <note>Die <ref target="http://www.academiaciencias.cu">Academia de Ciencias 
-                       de Cuba (ACC)</ref> ist die kubanische Akademie der Wissenschaften. 
-                       Sie dient der Förderung der Wissenschaften sowie dem Aufbau und der Stärkung 
-                       internationaler akademischer Beziehungen und leistet wissenschaftliche Beratung. 
-                       Zwischen der ACC und der BBAW besteht seit 2016 ein Memorandum of Understanding.</note>
-                 </org> 
-                 <org>
-                    <orgName>Dirección de Patrimonio Documental (Oficina del Historiador de La 
-                       Ciudad de La Habana)</orgName>
-                    <note>Die Dirección de Patrimonio Documental ist eine der Abteilungen der OHCH. 
-                          Sie widmet sich dem Schutz und der Zugänglichmachung des schriftlichen 
-                          Kulturerbes und der ihr angehörenden Bibliotheken und Archive. Zu der 
-                          Abteilung gehört ein historisches Archiv, das wichtige Dokumente für die 
-                          Digitalisierungskampagne im Rahmen von <hi rend="italic">Proyecto Humboldt Digital</hi>
-                          beherbergt.</note>
-                 </org>
-                 <org> 
-                    <orgName>Archivo Nacional de Cuba (ANC)</orgName>
-                    <note>Das Archivo Nacional de Cuba (ANC) ist das Nationalarchivs Kubas. Es 
-                       beherbergt die wichtigsten Dokumente für die Digitalisierungskampagne im Rahmen 
-                       von <hi rend="italic">Proyecto Humboldt Digital</hi>.</note>
-                 </org>
-                 <org>
-                    <orgName>Universidad de las Ciencias Informáticas (UCI)</orgName>
-                    <note>Die <ref target="https://www.uci.cu">Universidad de las Ciencias 
-                       Informáticas (UCI)</ref> ist die führende kubanische Universität für Informatik
-                       mit Sitz in Havanna. Sie ist ein wichtiger Projektpartner und entwickelt 
-                       Softwarelösungen und Frontend-Design für die digitale Infrastruktur und 
-                       Sammlungspräsentation von <hi rend="italic">Proyecto Humboldt Digital</hi>.</note>
-                 </org>
-                 <org> 
-                    <orgName>Instituto de Literatura y Lingüística (ILL)</orgName>
-                    <note>Das <ref target="http://www.ill.cu">Instituto de Literatura y Lingüística (ILL)</ref>
-                          ist ein Institut, das das literarische und sprachliche Erbe Kubas erforscht und bewahrt. 
-                          Das ILL steht in der Tradition der <ref target="https://press.uchicago.edu/books/humboldt/1_3_networks.html">
-                          Sociedad Económica de Amigos del País</ref>, zu der auch Alexander von Humboldt während seines 
-                          zweiten Besuchs auf der Insel (1804) einen intensiven Kontakt pflegte.</note>
-                 </org>  
-               </listOrg>
+            <head>Instituciones cooperantes</head>
+            <listOrg>
+               <org>
+                  <orgName>Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</orgName>
+                  <note>Die <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                        Wissenschaften BBAW)</ref> ist die größte außeruniversitäre Einrichtung
+                     geisteswissenschaftlicher Forschung in der Region Berlin-Brandenburg. <hi
+                        rend="italic">Proyecto Humboldt Digital</hi> ist hier institutionell
+                     angesiedelt und kooperiert eng mit dem Akademienvorhaben <ref
+                        target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">
+                        <hi rend="italic">Alexander von Humboldt auf Reisen - Wissenschaft aus der
+                           Bewegung</hi>
+                     </ref>. Die Vorhaben der Akademie werden von der <ref
+                        target="https://www.bbaw.de/en/bbaw-digital/telota">TELOTA-Initiative</ref>
+                     unterstützt und beraten.</note>
+               </org>
+               <org>
+                  <orgName>Oficina del Historiador de La Ciudad de La Habana (OHCH)</orgName>
+                  <note>La <ref target="http://www.habananuestra.cu">Oficina del Historiador de La
+                        Ciudad de La Habana (OHCH)</ref> .... <hi rend="italic">Proyecto Humboldt
+                        Digital</hi>. </note>
+               </org>
+               <org>
+                  <orgName>Casa Museo Alejandro de Humboldt (Casa Humboldt)</orgName>
+                  <note>Die Casa Museo Alejandro de Humboldt (Casa Humboldt) ist ein kubanisches
+                     Museum, das sich mit dem Leben und Werk Alexander von Humboldts befasst. Es
+                     gehört zum Museumsnetzwerk der OHCH und befindet sich in Habana Vieja, der
+                     historischen Altstadt von Havanna. Die Casa Humboldt ist der kubanische
+                     Standort von <hi rend="italic">Proyecto Humboldt Digital</hi>.</note>
+               </org>
+               <org>
+                  <orgName>Academia de Ciencias de Cuba (ACC)</orgName>
+                  <note>Die <ref target="http://www.academiaciencias.cu">Academia de Ciencias de
+                        Cuba (ACC)</ref> ist die kubanische Akademie der Wissenschaften. Sie dient
+                     der Förderung der Wissenschaften sowie dem Aufbau und der Stärkung
+                     internationaler akademischer Beziehungen und leistet wissenschaftliche
+                     Beratung. Zwischen der ACC und der BBAW besteht seit 2016 ein Memorandum of
+                     Understanding.</note>
+               </org>
+               <org>
+                  <orgName>Dirección de Patrimonio Documental (Oficina del Historiador de La Ciudad
+                     de La Habana)</orgName>
+                  <note>Die Dirección de Patrimonio Documental ist eine der Abteilungen der OHCH.
+                     Sie widmet sich dem Schutz und der Zugänglichmachung des schriftlichen
+                     Kulturerbes und der ihr angehörenden Bibliotheken und Archive. Zu der Abteilung
+                     gehört ein historisches Archiv, das wichtige Dokumente für die
+                     Digitalisierungskampagne im Rahmen von <hi rend="italic">Proyecto Humboldt
+                        Digital</hi> beherbergt.</note>
+               </org>
+               <org>
+                  <orgName>Archivo Nacional de Cuba (ANC)</orgName>
+                  <note>Das Archivo Nacional de Cuba (ANC) ist das Nationalarchivs Kubas. Es
+                     beherbergt die wichtigsten Dokumente für die Digitalisierungskampagne im Rahmen
+                     von <hi rend="italic">Proyecto Humboldt Digital</hi>.</note>
+               </org>
+               <org>
+                  <orgName>Universidad de las Ciencias Informáticas (UCI)</orgName>
+                  <note>Die <ref target="https://www.uci.cu">Universidad de las Ciencias
+                        Informáticas (UCI)</ref> ist die führende kubanische Universität für
+                     Informatik mit Sitz in Havanna. Sie ist ein wichtiger Projektpartner und
+                     entwickelt Softwarelösungen und Frontend-Design für die digitale Infrastruktur
+                     und Sammlungspräsentation von <hi rend="italic">Proyecto Humboldt
+                     Digital</hi>.</note>
+               </org>
+               <org>
+                  <orgName>Instituto de Literatura y Lingüística (ILL)</orgName>
+                  <note>Das <ref target="http://www.ill.cu">Instituto de Literatura y Lingüística
+                        (ILL)</ref> ist ein Institut, das das literarische und sprachliche Erbe
+                     Kubas erforscht und bewahrt. Das ILL steht in der Tradition der <ref
+                        target="https://press.uchicago.edu/books/humboldt/1_3_networks.html">
+                        Sociedad Económica de Amigos del País</ref>, zu der auch Alexander von
+                     Humboldt während seines zweiten Besuchs auf der Insel (1804) einen intensiven
+                     Kontakt pflegte.</note>
+               </org>
+            </listOrg>
+         </div>
+         <div>
+            <head>Aspectos técnicos y legales</head>
+            <p>Lore ipsum...</p>
          </div>
       </body>
-  </text>
+   </text>
 </TEI>
