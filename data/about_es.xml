@@ -31,60 +31,120 @@
       <body>
          <div>
             <head>Presentación</head>
-            <p><hi rend="bold">Proyecto Humboldt Digital (ProHD)</hi> es una iniciativa
-               internacional de formación continua en las humanidades digitales en dos lugares: La
-               Habana (Casa Museo Alejandro de Humboldt) y Berlín (Academia de Ciencias y
-               Humanidades de Berlín-Brandeburgo).</p>
+            <p><hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> es una iniciativa
+               internacional de formación continua en las humanidades digitales que se realiza,
+               desde 2019 y hasta 2023, en dos lugares: La Habana (Casa Museo Alejandro de Humboldt)
+               y Berlín (Academia de Ciencias y Humanidades de Berlín-Brandeburgo).</p>
             <p>El proyecto se centra en la cultura científica y literaria cubana de los siglos XVIII
                y XIX, especialmente en hacer disponible las fuentes cubanas relevantes para el
                tiempo en que Alejandro de Humboldt visitó y trabajó sobre la sociedad, economía y
                cultura de Cuba (1800–1830).</p>
-            <p>Como proyecto interdisciplinario e intercultural pionero, está dirigido a una nueva
+            <p>Como proyecto interdisciplinario e intercultural pionero, se dirige a una nueva
                generación de investigadores cubanos y alemanes que desean preservar, visibilizar e
                investigar el patrimonio cultural escrito con la ayuda de las tecnologías y métodos
                de las humanidades digitales.</p>
          </div>
          <div>
             <head>Líneas de investigación</head>
-            <p>Digitalización y descripción con metadatos de <hi rend="bold">fuentes relacionadas
+            <p>Digitalización y descripción con metadatos de <hi rendition="#b">fuentes relacionadas
                   con la obra de Alexander von Humboldt y su investigación cubana</hi> durante el
                período 1800-1830.</p>
             <p>
-               <hi rend="bold">Historia cultural y científica de Cuba</hi> del siglo XIX, en
+               <hi rendition="#b">Historia cultural y científica de Cuba</hi> del siglo XIX, en
                particular la trata transatlántica de esclavos en el contexto de la la economía de
                las plantaciones cubanas y las relaciones científicas germano-cubanas.</p>
             <p>
-               <hi rend="bold">Teoría y metodología de las ediciones digitales</hi> e investigación
-               del patrimonio digital.</p>
-         </div>         
+               <hi rendition="#b">Teoría y metodología de las ediciones digitales</hi> e
+               investigación del patrimonio digital.</p>
+         </div>
          <div>
             <head>Criterios editoriales</head>
-            <head type="sub">Selección</head>
-            <p>Lore ipsum...</p>
-            <head type="sub">Transcripción</head>
-            <p>Lore ipsum...</p>
+            <p>Las fuentes textuales de las ediciones publicadas en el "Dossier Digital: Alexander
+               von Humboldt y Cuba (1800-1830)" proceden de bibliotecas y archivos situados en
+               Alemania, Cuba y Polonia; para más información sobre la procedencia, se recomienda
+               consultar la sección de metadatos de cada edición. El "Dossier Digital" contiene
+               documentos textuales, en formato manuscrito e impreso, en cuatro idiomas (alemán,
+               francés, español e inglés) relacionados temáticamente con el viaje de Humboldt a Cuba
+               y las cuestiones que el científico prusiano estudió en el <title>Essai politique sur
+                  l’île de Cuba</title>.</p>
+            <p>El texto de las ediciones se ofrece en doble presentación: por un lado, en la
+               transcripción semidiplomática se ha intentado retener las particularidades
+               ortográficas de la fuente, incluyendo las particularidades gráficas y fonéticas del
+               español americano, así como las abreviaturas y los espacios entre palabras; por el
+               otro lado, en el texto normalizado, se han resuelto las abreviaturas, se han
+               introducido espacios entre palabra para facilitar la lectura, se ha acentuado según
+               la norma actual y se han introducido signos de puntuación a fin de mejorar la
+               legibilidad del texto.</p>
          </div>
          <div>
             <head>Aspectos técnicos</head>
-            <p>Lore ipsum...</p>
+            <p>Los textos de las ediciones digitales del "Dossier Digital: Alexander von Humboldt y
+               Cuba (1800-1830)" han sido codificados en formato XML siguiendo las directrices de la
+                  <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P. 5). Para
+               facilitar la tarea de codificación, se ha adaptado el <foreign xml:lang="eng"
+                  >framework</foreign> de ediarum desarrollado por TELOTA dando lugar a <ref
+                  target="https://github.com/humboldtdigital/ediarum.PROHD.edit"
+                  >ediarum.PROHD.edit</ref>.</p>
+            <p>Se ha llevado a cabo una codificación que permita identificar la fuente de la que
+               deriva el texto, los responsables de la edición y, siempre que ha sido posible, la
+               autoría y otros datos relativos al proceso de creación. En cuanto a la codificación
+               del texto, se ha etiquetado la paginación de la fuente original, los encabezamientos
+               y párrafos, las divisiones lógicas de las cartas, los cambios de tipografía, las
+               intervenciones autoriales como tachados o adiciones, lecturas inciertas, lagunas,
+               palabras suplidas, etc. Para más información sobre la codificación en TEI, se
+               recomienda consultar la documentación de ediarum disopnible en <ref
+                  target="https://www.ediarum.org/docs/ediarum.BASE.manual/">alemán</ref> y <ref
+                  target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">español</ref>.</p>
+            <p>Esta aplicación web ha sido construida con <ref
+                  target="https://teipublisher.com/index.html">TEI Publisher</ref> v. 7.0.0. y <ref
+                  target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> v.
+               5.2.0. Se utiliza un ODD llamado prohd.xml para dar formato a las ediciones y las
+               páginas estáticas y dos plantillas principales llamadas prohd.html y
+               view-grid-prohd.html. Una copia de los ficheros que integran la aplicación web está
+               disponible en el <ref target="https://github.com/humboldtdigital/ProHD">repositorio
+                  de Github</ref> del proyecto. Tanto la aplicación web como los facsímiles están
+               alojados en servidores de la Oficina del Historiador de la Ciudad de La Habana; los
+               facsímiles utilizan la API de <ref target="https://iiif.io/">IIIF</ref>.</p>
+            <p>El desarrollo del <foreign xml:lang="eng">ediarum.PROHD.edit</foreign> y de esta
+               aplicación web ha sido realizado por Dr. Antonio Rojas Castro con la colaboración de
+               Violeta López; puede dirigir sus consultas técnicas a antonio.rojas-castro [at]
+               bbaw.de</p>
          </div>
          <div>
             <head>Aspecto legales</head>
-            <p>Lore ipsum... </p>
+            <p>Todos los contenidos del "Dossier Digital: Alexander se publican con una licencia
+                  <ref target="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons
+                  Atribución 4.0 Internacional (CC BY 4.0)</ref>. En consecuencia, se permite
+               compartir (copiar y redistribuir el material en cualquier medio o formato) y adaptar
+               (remezclar, transformar y construir a partir del material para cualquier propósito,
+               incluso comercialmente), a condición de dar crédito de manera adecuada, brindar un
+               enlace a la licencia e indicar si se han realizado cambios.</p>
          </div>
          <div>
             <head>Sugerencias de citación</head>
-            <p>El proyecto en su totalidad:</p>
-            <p>Datos</p>
-            <p>Ejemplo</p>
+            <p>El dossier digital en su totalidad:</p>
+            <p>Kraft, Tobias (dir.). <title>Dossier Digital: Alexander von Humboldt y Cuba
+                  (1800-1830)</title>, Berlin-Brandenburgische Akademie der Wissenschaften y
+               Oficinal del Historiador de la Ciudad de la Habana, 2021-2023.</p>
             <p>Una edición en concreto:</p>
-            <p>Datos</p>
-            <p>Ejemplo</p>
+            <p>Arango y Parreño, Francisco de. "Observaciones sobre el Ensayo politico con relacion
+               con la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Dossier
+                  Digital: Alexander von Humboldt y Cuba (1800-1830)</title>, Kathrin Kraller (ed.),
+               Berlin-Brandenburgische Akademie der Wissenschaften y Oficinal del Historiador de la
+               Ciudad de la Habana, 2021.</p>
          </div>
          <div>
             <head>Enlaces de interés</head>
             <list>
-               <item></item>
+               <item>
+                  <list>
+                     <item><ref target="https://habanaberlin.hypotheses.org/">Blog</ref></item>
+                     <item><ref target="https://www.ediarum.org/">ediarum</ref></item>
+                     <item><ref target="https://github.com/humboldtdigital">Github</ref></item>
+                     <item><ref target="https://prohd.ohc.cu/xmlui/">Repositorio
+                        digital</ref></item>
+                  </list>
+               </item>
             </list>
          </div>
       </body>
