@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -14,8 +14,10 @@
             <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
          </titleStmt>
          <publicationStmt>
-            <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                  Wissenschaften (BBAW)</ref></publisher>
+            <publisher>
+               <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der Wissenschaften
+                  (BBAW)</ref>
+            </publisher>
             <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -31,7 +33,8 @@
       <body>
          <div>
             <head>Presentación</head>
-            <p><hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> es una iniciativa
+            <p>
+               <hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> es una iniciativa
                internacional de formación continua en las humanidades digitales que se realiza,
                desde 2019 y hasta 2023, en dos lugares: La Habana (Casa Museo Alejandro de Humboldt)
                y Berlín (Academia de Ciencias y Humanidades de Berlín-Brandeburgo).</p>
@@ -105,10 +108,10 @@
                   de Github</ref> del proyecto. Tanto la aplicación web como los facsímiles están
                alojados en servidores de la Oficina del Historiador de la Ciudad de La Habana; los
                facsímiles utilizan la API de <ref target="https://iiif.io/">IIIF</ref>.</p>
-            <p>El desarrollo del <foreign xml:lang="eng">ediarum.PROHD.edit</foreign> y de esta
-               aplicación web ha sido realizado por Dr. Antonio Rojas Castro con la colaboración de
-               Violeta López; puede dirigir sus consultas técnicas a antonio.rojas-castro [at]
-               bbaw.de</p>
+            <p>El desarrollo del <foreign xml:lang="eng">framework</foreign> ediarum.PROHD.edit y de
+               esta aplicación web ha sido realizado por Dr. Antonio Rojas Castro con la
+               colaboración de Violeta López; puede dirigir sus consultas técnicas a
+               antonio.rojas-castro [at] bbaw.de</p>
          </div>
          <div>
             <head>Aspecto legales</head>
@@ -137,13 +140,16 @@
             <head>Enlaces de interés</head>
             <list>
                <item>
-                  <list>
-                     <item><ref target="https://habanaberlin.hypotheses.org/">Blog</ref></item>
-                     <item><ref target="https://www.ediarum.org/">ediarum</ref></item>
-                     <item><ref target="https://github.com/humboldtdigital">Github</ref></item>
-                     <item><ref target="https://prohd.ohc.cu/xmlui/">Repositorio
-                        digital</ref></item>
-                  </list>
+                  <ref target="https://habanaberlin.hypotheses.org/">Blog</ref>
+               </item>
+               <item>
+                  <ref target="https://www.ediarum.org/">ediarum</ref>
+               </item>
+               <item>
+                  <ref target="https://github.com/humboldtdigital">Github</ref>
+               </item>
+               <item>
+                  <ref target="https://prohd.ohc.cu/xmlui/">Repositorio digital</ref>
                </item>
             </list>
          </div>

@@ -1,6 +1,4 @@
-<?teipublisher template="view-grid-prohd.html" odd="prohd.odd" view="page"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -37,9 +35,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias"
-                                    >Dr. Tobias Kraft</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias">Dr. Tobias Kraft</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -49,9 +45,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/ette-ottmar"
-                                    >Prof. Dr. Ottmar Ette</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/ette-ottmar">Prof. Dr. Ottmar Ette</ref>
                             </hi>
                         </persName>
                         <affiliation>Universität Potsdam</affiliation>
@@ -62,9 +56,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraller-kathrin"
-                                    >Dr. Kathrin Kraller</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraller-kathrin">Dr. Kathrin Kraller</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -74,9 +66,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio"
-                                    >Dr. Antonio Rojas Castro</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio">Dr. Antonio Rojas Castro</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -165,12 +155,9 @@
                             no universitaria más grande en humanidades en la región de
                             Berlín-Brandeburgo. El <hi rendition="#i">Proyecto Humboldt Digital</hi>
                             está ubicado institucionalmente aquí y coopera estrechamente con el
-                            proyecto de la academia <ref
-                                target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung"
-                                >"Alexander von Humboldt de viaje – Ciencia del Movimiento"</ref>.
+                            proyecto de la academia <ref target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">"Alexander von Humboldt de viaje – Ciencia del Movimiento"</ref>.
                             Los proyectos de la Academia son apoyados y asesorados por la iniciativa
-                                <ref target="https://www.bbaw.de/en/bbaw-digital/telota"
-                                >TELOTA</ref>. </note>
+                                <ref target="https://www.bbaw.de/en/bbaw-digital/telota">TELOTA</ref>. </note>
                     </org>
                     <org>
                         <orgName>Oficina del Historiador de La Ciudad de La Habana (OHCH)</orgName>
@@ -179,8 +166,7 @@
                             institución cultural cubana fundada en 1938. Sobresale por una sostenida
                             y creciente gestión del patrimonio cultural que ha sido reconocida a
                             nivel internacional. Ha coordinado la ejecución de relevantes proyectos
-                            de cooperación internacional, entre los que se inserta el <hi
-                                rendition="#i">Proyecto Humboldt Digital</hi>, donde la OHCH es
+                            de cooperación internacional, entre los que se inserta el <hi rendition="#i">Proyecto Humboldt Digital</hi>, donde la OHCH es
                             responsable por la parte cubana, y donde participan tres de sus
                             instituciones más importantes: La Casa Humboldt, el Archivo Histórico y
                             la Biblioteca Histórica Cubana y Americana “Francisco González del
@@ -193,8 +179,7 @@
                             OHCH. Se dedica a la protección y accesibilidad del patrimonio
                             documental desde las bibliotecas y los archivos que la componen. La
                             Dirección incluye un archivo histórico que contiene documentos
-                            importantes para la campaña de digitalización del <hi rendition="#i"
-                                >Proyecto Humboldt Digital</hi>.</note>
+                            importantes para la campaña de digitalización del <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
                     </org>
                     <org>
                         <orgName>Casa Museo Alejandro de Humboldt (Casa Humboldt)</orgName>
@@ -216,8 +201,7 @@
                     <org>
                         <orgName>Archivo Nacional de Cuba (ANC)</orgName>
                         <note>El Archivo Nacional de Cuba (ANC) preserva los documentos más
-                            importantes para la campaña de digitalización del <hi rendition="#i"
-                                >Proyecto Humboldt Digital</hi>.</note>
+                            importantes para la campaña de digitalización del <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
                     </org>
                     <org>
                         <orgName>Universidad de las Ciencias Informáticas (UCI)</orgName>
@@ -225,17 +209,14 @@
                                 Informáticas (UCI)</ref> es la universidad cubana líder en
                             informática y tiene su sede en La Habana. Es un socio importante del
                             proyecto y desarrolla soluciones de software y diseño frontend para la
-                            infraestructura digital y la presentación de la colección del <hi
-                                rendition="#i">Proyecto Humboldt Digital</hi>.</note>
+                            infraestructura digital y la presentación de la colección del <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
                     </org>
                     <org>
                         <orgName>Instituto de Literatura y Lingüística (ILL)</orgName>
                         <note>El <ref target="http://www.ill.cu">Instituto de Literatura y
                                 Lingüística (ILL)</ref> es un instituto que se encarga de investigar
                             y preservar el patrimonio literario y lingüístico de Cuba. El ILL sigue
-                            la tradición de la <ref
-                                target="https://press.uchicago.edu/books/humboldt/1_3_networks.html"
-                                > Sociedad Económica de Amigos del País</ref>, con la que Alexander
+                            la tradición de la <ref target="https://press.uchicago.edu/books/humboldt/1_3_networks.html"> Sociedad Económica de Amigos del País</ref>, con la que Alexander
                             von Humboldt también mantuvo un contacto estrecho durante su segunda
                             visita a la isla en el año 1804.</note>
                     </org>
