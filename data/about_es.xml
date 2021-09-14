@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -114,7 +114,7 @@
                antonio.rojas-castro [at] bbaw.de</p>
          </div>
          <div>
-            <head>Aspecto legales</head>
+            <head>Aspectos legales</head>
             <p>Todos los contenidos del "Dossier Digital: Alexander se publican con una licencia
                   <ref target="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons
                   Atribución 4.0 Internacional (CC BY 4.0)</ref>. En consecuencia, se permite
