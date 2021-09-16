@@ -1,0 +1,240 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Team</title>
+                <editor>
+                    <persName ref="https://orcid.org/0000-0002-8916-4997">
+                        <surname>Rojas Castro</surname>
+                        <forename>Antonio</forename>
+                    </persName>
+                </editor>
+                <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
+                <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
+                <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                        Wissenschaften (BBAW)</ref></publisher>
+                <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                        Attribution International 4.0 (CC BY 4.0) </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <head>Berlin Team</head>
+                <listPerson>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">
+                                <ref
+                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias"
+                                    >Dr. Tobias Kraft</ref>
+                            </hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Original idea and supervision</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">
+                                <ref
+                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/ette-ottmar"
+                                    >Prof. Dr. Ottmar Ette</ref>
+                            </hi>
+                        </persName>
+                        <affiliation>Universität Potsdam</affiliation>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Co-solicitor</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">
+                                <ref
+                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraller-kathrin"
+                                    >Dr. Kathrin Kraller</ref>
+                            </hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Research assistant (coordination, editing)</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">
+                                <ref
+                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio"
+                                    >Dr. Antonio Rojas Castro</ref>
+                            </hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Research assistant (digital humanities, editing)</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Arrate Cano Martín-Lara</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student Assistant (until January 2021)</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Juliana Hutai</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student Assistant</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Violeta López</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student Assistant</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Alina Mendt</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student assistant (until September 2020)</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Zora Steiner</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student assistant (until December 2019)</occupation>
+                    </person>
+                </listPerson>
+            </div>
+            <div>
+                <head>Equipo habanero</head>
+                <listPerson>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Eritk Guerra</hi>
+                        </persName>
+                        <affiliation>Oficina del Historiador de La Ciudad de La Habana</affiliation>
+                        <occupation>Director of Information Technology</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Alaina Solernou Ferrer</hi>
+                        </persName>
+                        <affiliation>Oficina del Historiador de La Ciudad de La Habana - Patrimonio
+                            Documental</affiliation>
+                        <occupation>Management</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Dra. Grisel Terrón</hi>
+                        </persName>
+                        <affiliation>Oficina del Historiador de La Ciudad de La Habana - Patrimonio
+                            Documental</affiliation>
+                        <occupation>Director</occupation>
+                    </person>
+                </listPerson>
+            </div>
+            <div>
+                <head>Instituciones cooperantes</head>
+                <listOrg>
+                    <org>
+                        <orgName>Berlin-Brandenburgische Akademie der Wissenschaften
+                            (BBAW)</orgName>
+                        <note>The <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie
+                                der Wissenschaften</ref> (BBAW) is the largest non-university
+                            research institution in the humanities in the region. The <hi
+                                rendition="#i">Project Humboldt Digital</hi> is institutionally
+                            located here and cooperates closely with the <ref
+                                target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung"
+                                >"Alexander von Humboldt Travel - Science of Motion"</ref>. The
+                            academy projects are supported and advised by <ref
+                                target="https://www.bbaw.de/en/bbaw-digital/telota"
+                            >TELOTA</ref>.</note>
+                    </org>
+                    <org>
+                        <orgName>Oficina del Historiador de La Ciudad de La Habana (OHCH)</orgName>
+                        <note> The <ref target="http://www.habananuestra.cu">Oficina del Historiador
+                                de La Ciudad de La Habana</ref> is an emblematic Cuban cultural
+                            institution founded in 1938. It stands out for its sustained and growing
+                            cultural heritage management that has been recognized internationally.
+                            It has coordinated the execution of relevant international cooperation
+                            projects, among which is the <hi rendition="#i">Proyecto Humboldt
+                                Digital</hi>, for which the OHCH is responsible for the Cuban part,
+                            with the participation of three of its most important three of its most
+                            important institutions: Casa Humboldt, Archivo Histórico, and the Cuban
+                            and Biblioteca Histórica Cubana y Americana “Francisco González del
+                            Valle”.</note>
+                    </org>
+                    <org>
+                        <orgName>Dirección de Patrimonio Documental (Oficina del Historiador de La
+                            Ciudad de La Habana)</orgName>
+                        <note>Dirección de Patrimonio Documental is one of the entities of the OHCH.
+                            It is dedicated to the protection and accessibility of the documentary
+                            heritage from libraries and documentary heritage archives that are part
+                            of it. The Office includes a historical archive that contains documents
+                            important for the digitization campaign of the <hi rendition="#i"
+                                >Proyecto Humboldt Digital</hi>.</note>
+                    </org>
+                    <org>
+                        <orgName>Casa Museo Alejandro de Humboldt (Casa Humboldt)</orgName>
+                        <note>The Alexander von Humboldt House Museum is a Cuban museum dedicated to
+                            the life and work of Alexander von Humboldt. It is part of the network
+                            of museums of the OHCH and is located in Habana Vieja, the historical
+                            center of Havana. The Casa Humboldt is the site of the <hi
+                                rendition="#i">Proyecto Humboldt Digital</hi> in Cuba.</note>
+                    </org>
+                    <org>
+                        <orgName>Academia de Ciencias de Cuba (ACC)</orgName>
+                        <note>The <ref target="http://www.academiaciencias.cu">Academia de Ciencias
+                                de Cuba (ACC)</ref> is in charge of promoting science, as well as of
+                            building and strengthening international academic relations and provides
+                            scientific advice. Since 2016 there has been a memorandum of
+                            understanding between the ACC and the BBAW.</note>
+                    </org>
+                    <org>
+                        <orgName>Archivo Nacional de Cuba (ANC)</orgName>
+                        <note>The Arhivo Nacional de Cuba (ANC) preserves the most important
+                            documents for the important for the digitization campaign of the <hi
+                                rendition="#i">Proyecto Humboldt Digital</hi>.</note>
+                    </org>
+                    <org>
+                        <orgName>Universidad de las Ciencias Informáticas (UCI)</orgName>
+                        <note>The <ref target="https://www.uci.cu">Universidad de las Ciencias
+                                Informáticas (UCI)</ref> is Cuba's leading university in the field
+                            of computer science. It advices about software solutions and frontend
+                            design for the digital infrastructure of the <hi rendition="#i">Proyecto
+                                Humboldt Digital</hi>.</note>
+                    </org>
+                    <org>
+                        <orgName>Instituto de Literatura y Lingüística (ILL)</orgName>
+                        <note>The <ref target="http://www.ill.cu">Instituto de Literatura y
+                                Lingüística (ILL)</ref> is in charge of researching and preserving
+                            Cuba's literary and linguistic heritage. The ILL follows the tradition
+                            of the <ref
+                                target="https://press.uchicago.edu/books/humboldt/1_3_networks.html"
+                                > Sociedad Económica de Amigos del País</ref>, with which Alexander von
+                            Humboldt also maintained close contact with during his second visit to
+                            the island in 1804.</note>
+                    </org>
+                </listOrg>
+            </div>
+        </body>
+    </text>
+</TEI>
