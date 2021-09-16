@@ -15,8 +15,10 @@
             <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
          </titleStmt>
          <publicationStmt>
-            <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                  Wissenschaften (BBAW)</ref></publisher>
+            <publisher>
+                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                  Wissenschaften (BBAW)</ref>
+                </publisher>
             <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -32,7 +34,8 @@
       <body>
          <div>
             <head>Vorstellung</head>
-            <p><hi rendition="#b">Proyecto Humboldtl Digital (ProHD)</hi> ist eine internationale
+            <p>
+                    <hi rendition="#b">Proyecto Humboldtl Digital (ProHD)</hi> ist eine internationale
                Initiative zur Fortbildung in den Digitalen Geisteswissenschaften an den zwei
                Standorten La Habana (Casa Museo Alejandro de Humboldt) und Berlin
                (Berlin-Brandenburgische Akademie der Wissenschaften).</p>
@@ -69,14 +72,7 @@
                Spanisch), die in thematischem Zusammenhang mit Humboldts Reise nach Kuba und den
                Themen stehen, die der preußische Wissenschaftler in seinem <title>Essai politique
                   sur l'île de Cuba</title> untersucht hat.</p>
-            <p>Der Text der Ausgaben wird in doppelter Aufmachung angeboten: einerseits in die
-               diplomatische Transkription hat versucht, die Besonderheiten beizubehalten
-               Rechtschreibung der Schriftart, einschließlich der grafischen und phonetischen
-               Aspekte des Spanischen amerikanisch, sowie Abkürzungen und Leerzeichen zwischen
-               Wörtern; auf der anderen Seite, im Standardtext, Abkürzungen wurden aufgelöst,
-               eingeführt Leerzeichen zwischen den Wörtern, um das Lesen zu erleichtern, wurde gemäß
-               der Norm akzentuiert Strom- und Satzzeichen wurden eingeführt, um die Lesbarkeit der
-               Text.</p>
+            <p>Der Text der Ausgaben wird in einer doppelten Präsentation angeboten: Einerseits wurde in der diplomatischen Transkription versucht, die orthografischen Besonderheiten der Quelle beizubehalten, einschließlich der grafischen und phonetischen Aspekte des amerikanischen Spanisch sowie der Abkürzungen und Leerzeichen zwischen den Wörtern; andererseits wurden im standardisierten Text die Abkürzungen aufgelöst und Leerzeichen und Interpunktionszeichen eingeführt, um die Lesbarkeit des Textes zu verbessern. In beiden Fassungen wurden zur besseren Lesbarkeit des Textes und zur Wahrung der redaktionellen Traditionen, die sich in der BBAW für Humboldts Texte etabliert haben, Akzente nach dem heutigen Standard gesetzt.</p>
          </div>
          <div>
             <head>Technische Aspekte</head>
@@ -109,7 +105,7 @@
          </div>
          <div>
             <head>Rechtliche Aspekte und empfohlene Zitierweise</head>
-            <p>Alle Inhalte des "Digital Dossier: Alexander" werden unter einer Lizenz
+            <p>Alle Inhalte des "Digital Dossier" werden unter einer Lizenz
                veröffentlicht <ref target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   Creative Commons Namensnennung 4.0 International (CC BY 4.0) </ref>. Folglich ist
                es erlaubt teilen (das Material in jedem Medium oder Format kopieren und weitergeben)

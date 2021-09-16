@@ -40,7 +40,7 @@
                Ciencias y Humanidades de Berlín-Brandeburgo).</p>
             <p>Se centra en estudio de la cultura científica y literaria cubana de los siglos XVIII
                y XIX, especialmente en hacer disponibles en línea las fuentes cubanas relevantes
-               durante el período en que Alejandro de Humboldt visitó y trabajó sobre la sociedad,
+               para estudiar el período en que Alejandro de Humboldt visitó y trabajó sobre la sociedad,
                economía y cultura cubanas (1800–1830).</p>
             <p>El proyecto se inició en 2019 y está previsto que finalice en 2023. Ha sido
                financiado gracias a la generosa ayuda del Auswärtiges Amt, Fritz Thyssen Stiftung y
@@ -72,13 +72,7 @@
                español e inglés), relacionados temáticamente con el viaje de Humboldt a Cuba y las
                cuestiones que el científico prusiano estudió en el <title>Essai politique sur l’île
                   de Cuba</title>.</p>
-            <p>El texto de las ediciones se ofrece en doble presentación: por un lado, en la
-               transcripción diplomática se ha intentado retener las particularidades ortográficas
-               de la fuente, incluyendo los aspectos gráficos y fonéticos del español americano, así
-               como las abreviaturas y los espacios entre palabras; por el otro lado, en el texto
-               normalizado, se han resuelto las abreviaturas, se han introducido espacios entre
-               palabra para facilitar la lectura, se ha acentuado según la norma actual y se han
-               introducido signos de puntuación a fin de mejorar la legibilidad del texto.</p>
+            <p>El texto de las ediciones se ofrece en doble presentación: por un lado, en la transcripción diplomática se ha intentado retener las particularidades ortográficas de la fuente, incluyendo los aspectos gráficos y fonéticos del español americano, así como las abreviaturas y los espacios entre palabras; por el otro lado, en el texto normalizado, se han resuelto las abreviaturas y se han introducido espacios y signos de puntuación a fin de mejorar la legibilidad del texto. En las dos versiones, se ha acentuado según la norma actual para facilitar la lectura y para mantener la conformidad con las tradiciones editoriales establecidas en la BBAW para los textos de Humboldt.</p>
          </div>
          <div>
             <head>Aspectos técnicos</head>
@@ -92,7 +86,7 @@
                del texto, se ha etiquetado la paginación de la fuente original, los encabezamientos
                y párrafos, las divisiones lógicas de las cartas, los cambios de tipografía, las
                intervenciones autoriales como tachados o adiciones, lecturas inciertas, lagunas,
-               palabras suplidas, etc. Para más detalels sobre la codificación en TEI, se recomienda
+               palabras suplidas, etc. Para más detalles sobre la codificación en TEI, se recomienda
                consultar la documentación de ediarum disopnible en <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">alemán</ref> y <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">español</ref>.</p>
             <p>Esta aplicación web ha sido construida con <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) y
                   <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
@@ -110,7 +104,7 @@
          </div>
          <div>
             <head>Aspectos legales y citación recomendada</head>
-            <p>Todos los contenidos del "Dossier Digital: Alexander se publican con una licencia
+            <p>Todos los contenidos del "Dossier Digital" se publican con una licencia
                   <ref target="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons
                   Atribución 4.0 Internacional (CC BY 4.0)</ref>. En consecuencia, se permite
                compartir (copiar y redistribuir el material en cualquier medio o formato) y adaptar

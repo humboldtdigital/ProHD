@@ -39,11 +39,11 @@
                two locations: Havana (Casa Museo Alejandro de Humboldt) and Berlin
                (Berlin-Brandenburg Academy of Sciences and Humanities).</p>
             <p>It focuses on the study of the Cuban scientific and literary culture of the 18th and
-               19th centuries, especially on making relevant Cuban sources available online during
+               19th centuries, especially on making relevant Cuban sources available online to study
                the period when Alexander von Humboldt visited and worked on Cuban society, economy
                and culture (1800-1830).</p>
             <p>The project started in 2019 and is scheduled for completion in 2023. It has been
-               funded thanks to generous support from Auswärtiges Amt, Fritz Thyssen Stiftung and
+               funded thanks to generous support from the Auswärtiges Amt, Fritz Thyssen Stiftung and
                Gerda Henkel Stiftung.</p>
             <p>To learn more about the resources created by the project, see the following links
                links:</p>
@@ -72,12 +72,11 @@
                Spanish), thematically related to Humboldt's trip to Cuba and the questions that the
                Prussian scientist the Prussian scientist studied in the <title>Essai politique sur
                   l'île de Cuba</title>.</p>
-            <p>The text of the editions is offered in double presentation: on the one hand, in the diplomatic transcription an attempt has been made to retain the spelling peculiarities of the source, including the graphic and phonetic aspects of American Spanish, abbreviations and spaces between words; on the other hand, in the normalized text, abbreviations have been resolved, spaces have been inserted between word for ease of reading, words have been accentuated according to the current norm and punctuation marks have been introduced in order to improve the readability of the text.</p>
+            <p>The text of the editions is offered in double presentation: on the one hand, in the diplomatic transcription an attempt has been made to retain the spelling peculiarities of the source, including the graphic and phonetic aspects of American Spanish, abbreviations and spaces between words; on the other hand, in the normalized text, the abbreviations have been resolved and spaces and punctuation marks have been introduced in order to improve the readability of the text. In both versions, accents have been added according to the current norm to make the text easier to read and to maintain conformity with the editorial traditions established in the BBAW for Humboldt's texts.</p>
          </div>
          <div>
             <head>Technical Aspects</head>
-            <p>The texts of the digital editions of the "Digital Dossier: Alexander von Humboldt and
-               Cuba (1800-1830)" have been encoded in XML format following the <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P. 5) Guidelines. To
+            <p>The texts of the digital editions of the "Digital Dossier" have been encoded in XML format following the <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P. 5) Guidelines. To
                facilitate the encoding task, the framework ediarum developed by TELOTA has been
                adapted resulting in <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
             <p>The TEI markup has been carried out in order to identify the source from which the
@@ -103,7 +102,7 @@
          </div>
          <div>
             <head>Legal aspects and recommended citation</head>
-            <p>All contents of the "Digital Dossier: Alexander" are published under a license. <ref target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
+            <p>All contents of the "Digital Dossier" are published under a license. <ref target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
                   Attribution 4.0 International (CC BY 4.0)</ref>. Accordingly, it is permitted to
                share (copy and redistribute the material in any medium or format) and adapt (remix,
                transform, and build upon the material for any purpose, even commercially); please provide
