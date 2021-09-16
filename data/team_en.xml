@@ -35,9 +35,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias"
-                                    >Dr. Tobias Kraft</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias">Dr. Tobias Kraft</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -47,9 +45,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/ette-ottmar"
-                                    >Prof. Dr. Ottmar Ette</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/ette-ottmar">Prof. Dr. Ottmar Ette</ref>
                             </hi>
                         </persName>
                         <affiliation>Universität Potsdam</affiliation>
@@ -60,9 +56,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraller-kathrin"
-                                    >Dr. Kathrin Kraller</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraller-kathrin">Dr. Kathrin Kraller</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -72,9 +66,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio"
-                                    >Dr. Antonio Rojas Castro</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio">Dr. Antonio Rojas Castro</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -159,14 +151,9 @@
                             (BBAW)</orgName>
                         <note>The <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie
                                 der Wissenschaften</ref> (BBAW) is the largest non-university
-                            research institution in the humanities in the region. The <hi
-                                rendition="#i">Project Humboldt Digital</hi> is institutionally
-                            located here and cooperates closely with the <ref
-                                target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung"
-                                >"Alexander von Humboldt Travel - Science of Motion"</ref>. The
-                            academy projects are supported and advised by <ref
-                                target="https://www.bbaw.de/en/bbaw-digital/telota"
-                            >TELOTA</ref>.</note>
+                            research institution in the humanities in the region. The <hi rendition="#i">Project Humboldt Digital</hi> is institutionally
+                            located here and cooperates closely with the <ref target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">"Alexander von Humboldt Travel - Science of Motion"</ref>. The
+                            academy projects are supported and advised by <ref target="https://www.bbaw.de/en/bbaw-digital/telota">TELOTA</ref>.</note>
                     </org>
                     <org>
                         <orgName>Oficina del Historiador de La Ciudad de La Habana (OHCH)</orgName>
@@ -189,16 +176,14 @@
                             It is dedicated to the protection and accessibility of the documentary
                             heritage from libraries and documentary heritage archives that are part
                             of it. The Office includes a historical archive that contains documents
-                            important for the digitization campaign of the <hi rendition="#i"
-                                >Proyecto Humboldt Digital</hi>.</note>
+                            important for the digitization campaign of the <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
                     </org>
                     <org>
                         <orgName>Casa Museo Alejandro de Humboldt (Casa Humboldt)</orgName>
                         <note>The Alexander von Humboldt House Museum is a Cuban museum dedicated to
                             the life and work of Alexander von Humboldt. It is part of the network
                             of museums of the OHCH and is located in Habana Vieja, the historical
-                            center of Havana. The Casa Humboldt is the site of the <hi
-                                rendition="#i">Proyecto Humboldt Digital</hi> in Cuba.</note>
+                            center of Havana. The Casa Humboldt is the site of the <hi rendition="#i">Proyecto Humboldt Digital</hi> in Cuba.</note>
                     </org>
                     <org>
                         <orgName>Academia de Ciencias de Cuba (ACC)</orgName>
@@ -211,8 +196,7 @@
                     <org>
                         <orgName>Archivo Nacional de Cuba (ANC)</orgName>
                         <note>The Arhivo Nacional de Cuba (ANC) preserves the most important
-                            documents for the important for the digitization campaign of the <hi
-                                rendition="#i">Proyecto Humboldt Digital</hi>.</note>
+                            documents for the important for the digitization campaign of the <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
                     </org>
                     <org>
                         <orgName>Universidad de las Ciencias Informáticas (UCI)</orgName>
@@ -227,9 +211,7 @@
                         <note>The <ref target="http://www.ill.cu">Instituto de Literatura y
                                 Lingüística (ILL)</ref> is in charge of researching and preserving
                             Cuba's literary and linguistic heritage. The ILL follows the tradition
-                            of the <ref
-                                target="https://press.uchicago.edu/books/humboldt/1_3_networks.html"
-                                > Sociedad Económica de Amigos del País</ref>, with which Alexander von
+                            of the <ref target="https://press.uchicago.edu/books/humboldt/1_3_networks.html"> Sociedad Económica de Amigos del País</ref>, with which Alexander von
                             Humboldt also maintained close contact with during his second visit to
                             the island in 1804.</note>
                     </org>
