@@ -40,5 +40,21 @@
     "form": {
         "manuscript": "Handschriften",
         "print": "Drucke"
-    }         
+    }
+    ,
+    "subject":{
+        "climatology": "Klimatologie",
+        "coffee": "Kaffee",
+        "colonialism": "Kolonialismus",
+        "demography": "Demografie",
+        "economicconditions": "Wirtschaftslage",
+        "emancipation": "Emanzipation",
+        "geography": "Geografie",
+        "medicine": "Medizin",
+        "plantations": "Plantagen",
+        "science": "Wissenschaft",
+        "slavery": "Sklaverei",
+        "sugar": "Zucker",
+        "trade": "Handel"
+    }
 }

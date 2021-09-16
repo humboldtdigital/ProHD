@@ -40,5 +40,20 @@
     "form": {
         "manuscript": "Manuscript",
         "print": "Print"
-    }            
+    },
+    "subject":{
+        "climatology": "Climatology",
+        "coffee": "Coffee",
+        "colonialism": "Colonialism",
+        "demography": "Demography",
+        "economicconditions": "Economic conditions",
+        "emancipation": "Emancipation",
+        "geography": "Geography",
+        "medicine": "Medicine",
+        "plantations": "Plantations",
+        "science": "Science",
+        "slavery": "Slavery",
+        "sugar": "Sugar",
+        "trade": "Trade"
+    }
 }
