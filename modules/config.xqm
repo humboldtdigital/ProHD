@@ -105,8 +105,6 @@ declare variable $config:facets := [
             <pb-i18n key="languages.{$label}">{$label}</pb-i18n>
         }
     },
-    (: Added by ARC on 06.07.2021 :)
-    (: To do: i18n the heading of this facet :)
     map {
         "dimension": "genre",
         "heading": "facets.genre",
@@ -116,8 +114,6 @@ declare variable $config:facets := [
             <pb-i18n key="genre.{$label}">{$label}</pb-i18n>
         }
     },
-    (: Added by ARC on 06.07.2021 :)
-    (: To do: i18n the heading of this facet :)
     map {
         "dimension": "form",
         "heading": "facets.form",
@@ -132,7 +128,10 @@ declare variable $config:facets := [
         "dimension": "subject",
         "heading": "facets.subject",
         "max": 5,
-        "hierarchical": false()
+        "hierarchical": false(),
+        "output": function($label) {
+            <pb-i18n key="subject.{$label}">{$label}</pb-i18n>
+        }
     }
 ];
 
