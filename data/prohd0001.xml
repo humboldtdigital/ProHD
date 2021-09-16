@@ -2,7 +2,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Notizen zum Thema Sklaverei </title>
+                <title type="main">Notizen zum Thema Sklaverei</title>
                 <editor>
                     <persName>
                         <surname>Kraller</surname>
@@ -70,7 +70,7 @@
                         <category xml:id="manuscript"/>
                         <category xml:id="print"/>
                     </category>
-                    <category xml:id="subject">
+                    <category xml:id="subjects">
                         <category xml:id="climatology"/>
                         <category xml:id="colonialism"/>
                         <category xml:id="demography"/>
