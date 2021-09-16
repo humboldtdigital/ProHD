@@ -17,8 +17,9 @@
     	"license": "Dieses Projekt verwendet eine Creative Commons Namensnennung 4.0 International Public License"
     },
     "error":{
-    	"title":"Es ist ein Fehler aufgetreten...",
-    	"description": "Die Anwendung hat einen Fehler erzeugt."
+    	"title":"Ein Fehler ist aufgetreten...",
+    	"description": "Die von Ihnen gesuchte Seite konnte nicht gefunden werden.",
+    	"button": "Zurück zur Startseite"
     },
     "facets":{
     	"form":"Form",

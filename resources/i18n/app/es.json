@@ -18,7 +18,8 @@
     },
     "error":{
     	"title":"Ha ocurrido un error...",
-    	"description": "La aplicación ha generado un error."
+    	"description": "No hemos podido encontrar la página solicitada.",
+    	"button": "Volver a página de inicio"
     },
     "facets":{
     	"form":"Forma",
