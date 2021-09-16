@@ -64,14 +64,6 @@
          </div>
          <div>
             <head>Editing principles</head>
-            <p>Las fuentes textuales de las ediciones publicadas en el "Dossier Digital: Alexander
-               von Humboldt y Cuba (1800-1830)" proceden de bibliotecas y archivos de Alemania, Cuba
-               y Polonia; para más información sobre la procedencia, se recomienda consultar la
-               sección de metadatos de cada edición. El "Dossier Digital" contiene documentos
-               textuales, en formato manuscrito e impreso, en cuatro idiomas (alemán, francés,
-               español e inglés), relacionados temáticamente con el viaje de Humboldt a Cuba y las
-               cuestiones que el científico prusiano estudió en el <title>Essai politique sur l’île
-                  de Cuba</title>.</p>
             <p>The textual sources of the editions published in the "Digital Dossier: Alexander von
                Humboldt and Cuba (1800-1830)" stem from libraries and archives in Germany, Cuba,
                Cuba and Poland; for more information on the provenance, please consult the metadata
@@ -80,16 +72,14 @@
                Spanish), thematically related to Humboldt's trip to Cuba and the questions that the
                Prussian scientist the Prussian scientist studied in the <title>Essai politique sur
                   l'île de Cuba</title>.</p>
+            <p>The text of the editions is offered in double presentation: on the one hand, in the diplomatic transcription an attempt has been made to retain the spelling peculiarities of the source, including the graphic and phonetic aspects of American Spanish, abbreviations and spaces between words; on the other hand, in the normalized text, abbreviations have been resolved, spaces have been inserted between word for ease of reading, words have been accentuated according to the current norm and punctuation marks have been introduced in order to improve the readability of the text.</p>
          </div>
          <div>
             <head>Technical Aspects</head>
             <p>The texts of the digital editions of the "Digital Dossier: Alexander von Humboldt and
-               Cuba (1800-1830)" have been encoded in XML format following the <ref
-                  target="https://tei-c.org/">Text Encoding Initiative</ref> (P. 5) Guidelines. To
+               Cuba (1800-1830)" have been encoded in XML format following the <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P. 5) Guidelines. To
                facilitate the encoding task, the framework ediarum developed by TELOTA has been
-               adapted resulting in <ref
-                  target="https://github.com/humboldtdigital/ediarum.PROHD.edit"
-                  >ediarum.PROHD.edit</ref>.</p>
+               adapted resulting in <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
             <p>The TEI markup has been carried out in order to identify the source from which the
                text is derived, those responsible for the edition and, whenever possible, the
                authorship and other data related to the creation process. As for the encoding of the
@@ -97,29 +87,23 @@
                source, headings and paragraphs, divisions and logical divisions of letters, changes
                in typography, authorial interventions such as strikethroughs or additions, uncertain
                readings, gaps, supplied words, etc. For more details on our TEI markup, it is
-               recommended to consult the ediarum documentation available in <ref
-                  target="https://www.ediarum.org/docs/ediarum.BASE.manual/">German</ref> and <ref
-                  target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">Spanish</ref>.</p>
-            <p>This web application has been built with <ref
-                  target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) and
+               recommended to consult the ediarum documentation available in <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">German</ref> and <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">Spanish</ref>.</p>
+            <p>This web application has been built with <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) and
                   <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
                5.2.0.). An ODD called prohd.xml is used to style the editions and static pages and
                two templates called prohd.html and view-grid-prohd.html are used to build the
                graphical user interface with web components. A copy of the files that make up the
-               web application is available at the <ref
-                  target="https://github.com/humboldtdigital/ProHD">project's Github
+               web application is available at the <ref target="https://github.com/humboldtdigital/ProHD">project's Github
                   repository</ref>. Both the web application and the are hosted on servers of the
                Oficina del Historiador de la Ciudad de La Habana; the facsimiles are hosted on
-               servers in La Habana as well; the facsimiles use <ref target="https://iiif.io/"
-                  >IIIF</ref>'API.</p>
+               servers in La Habana as well; the facsimiles use <ref target="https://iiif.io/">IIIF</ref>'API.</p>
             <p>The development of the framework ediarum.PROHD.edit and of this web application has
                been carried out by Antonio Rojas Castro with the collaboration of Violeta López.
                Technical inquiries can be directed to antonio.rojas-castro [at] bbaw.de.</p>
          </div>
          <div>
             <head>Legal aspects and recommended citation</head>
-            <p>All contents of the "Digital Dossier: Alexander" are published under a license. <ref
-                  target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
+            <p>All contents of the "Digital Dossier: Alexander" are published under a license. <ref target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
                   Attribution 4.0 International (CC BY 4.0)</ref>. Accordingly, it is permitted to
                share (copy and redistribute the material in any medium or format) and adapt (remix,
                transform, and build upon the material for any purpose, even commercially); please provide
