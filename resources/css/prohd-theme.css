@@ -38,8 +38,6 @@ h2, h3, h6 {
     font-weight: 400;
     line-height: var(--pb-heading-line-height);
 }
-}
-
 
 .menubar a {
     font-family: var(--pb-base-font-family);
@@ -350,4 +348,8 @@ a {
     text-decoration: none;
 }
 
-
+/* Startpage (index.html) */
+/* upload panel */
+aside .upload {
+    margin: 1.5rem 0 0 0;
+}
