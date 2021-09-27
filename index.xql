@@ -55,13 +55,13 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             ))
             case "genre" return 
             (: pass the genre id, will be resolved into correct label via i18n :)
-                substring($header//tei:textClass/tei:catRef[@scheme="#genre"]/@target, 2)
+                for $i in $header//tei:textClass/tei:catRef[@scheme="#genre"]/@target return substring($i, 2)
             (: Added by ARC on 06.07.2021 :)    
             case "form" return (
-                substring($header//tei:textClass/tei:catRef[@scheme="#form"]/@target, 2)
+                for $i in $header//tei:textClass/tei:catRef[@scheme="#form"]/@target return substring($i, 2)
             ) 
             case "subject" return (
-                substring($header//tei:textClass/tei:catRef[@scheme="#subject"]/@target, 2)
+                for $i in $header//tei:textClass/tei:catRef[@scheme="#subject"]/@target return substring($i, 2)
             ) 
             default return
                 ()
