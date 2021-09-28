@@ -14,8 +14,10 @@
                 <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
             </titleStmt>
             <publicationStmt>
-                <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                        Wissenschaften (BBAW)</ref></publisher>
+                <publisher>
+                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                        Wissenschaften (BBAW)</ref>
+                </publisher>
                 <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
