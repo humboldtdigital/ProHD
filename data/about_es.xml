@@ -87,7 +87,7 @@
                y párrafos, las divisiones lógicas de las cartas, los cambios de tipografía, las
                intervenciones autoriales como tachados o adiciones, lecturas inciertas, lagunas,
                palabras suplidas, etc. Para más detalles sobre la codificación en TEI, se recomienda
-               consultar la documentación de ediarum disopnible en <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">alemán</ref> y <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">español</ref>.</p>
+               consultar la documentación de ediarum disponible en <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">alemán</ref> y <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">español</ref>.</p>
             <p>Esta aplicación web ha sido construida con <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) y
                   <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
                5.2.0.). Se utiliza un ODD llamado prohd.xml para dar formato a las ediciones y las
