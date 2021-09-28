@@ -14,8 +14,10 @@
                 <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
             </titleStmt>
             <publicationStmt>
-                <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                        Wissenschaften (BBAW)</ref></publisher>
+                <publisher>
+                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                        Wissenschaften (BBAW)</ref>
+                </publisher>
                 <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -30,7 +32,7 @@
     <text>
         <body>
             <div>
-                <head>Berlin Team</head>
+                <head>Team Berlin</head>
                 <listPerson>
                     <person>
                         <persName>
@@ -79,7 +81,7 @@
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
-                        <occupation>Student Assistant (until January 2021)</occupation>
+                        <occupation>Student assistant (until January 2021)</occupation>
                     </person>
                     <person>
                         <persName>
@@ -87,7 +89,7 @@
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
-                        <occupation>Student Assistant</occupation>
+                        <occupation>Student assistant</occupation>
                     </person>
                     <person>
                         <persName>
@@ -95,7 +97,7 @@
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
-                        <occupation>Student Assistant</occupation>
+                        <occupation>Student assistant</occupation>
                     </person>
                     <person>
                         <persName>
@@ -116,7 +118,7 @@
                 </listPerson>
             </div>
             <div>
-                <head>Equipo habanero</head>
+                <head>Team Havana</head>
                 <listPerson>
                     <person>
                         <persName>
@@ -163,10 +165,10 @@
                             cultural heritage management that has been recognized internationally.
                             It has coordinated the execution of relevant international cooperation
                             projects, among which is the <hi rendition="#i">Proyecto Humboldt
-                                Digital</hi>, for which the OHCH is responsible for the Cuban part,
-                            with the participation of three of its most important three of its most
-                            important institutions: Casa Humboldt, Archivo Histórico, and the Cuban
-                            and Biblioteca Histórica Cubana y Americana “Francisco González del
+                                Digital</hi> The OHCH is responsible for the Cuban part of the project,
+                            with the participation of three of its most
+                            important institutions: the Casa Humboldt, the Archivo Histórico, and the
+                            Biblioteca Histórica Cubana y Americana “Francisco González del
                             Valle”.</note>
                     </org>
                     <org>
@@ -174,16 +176,16 @@
                             Ciudad de La Habana)</orgName>
                         <note>Dirección de Patrimonio Documental is one of the entities of the OHCH.
                             It is dedicated to the protection and accessibility of the documentary
-                            heritage from libraries and documentary heritage archives that are part
-                            of it. The Office includes a historical archive that contains documents
-                            important for the digitization campaign of the <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
+                            heritage of the libraries and archives which constitute
+                            it. The Office includes a historical archive containing crucial documents
+                            for the digitization campaign of <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
                     </org>
                     <org>
                         <orgName>Casa Museo Alejandro de Humboldt (Casa Humboldt)</orgName>
                         <note>The Alexander von Humboldt House Museum is a Cuban museum dedicated to
                             the life and work of Alexander von Humboldt. It is part of the network
                             of museums of the OHCH and is located in Habana Vieja, the historical
-                            center of Havana. The Casa Humboldt is the site of the <hi rendition="#i">Proyecto Humboldt Digital</hi> in Cuba.</note>
+                            center of Havana. The Casa Humboldt is the site of <hi rendition="#i">Proyecto Humboldt Digital</hi> in Cuba.</note>
                     </org>
                     <org>
                         <orgName>Academia de Ciencias de Cuba (ACC)</orgName>
@@ -195,8 +197,8 @@
                     </org>
                     <org>
                         <orgName>Archivo Nacional de Cuba (ANC)</orgName>
-                        <note>The Arhivo Nacional de Cuba (ANC) preserves the most important
-                            documents for the important for the digitization campaign of the <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
+                        <note>The Archivo Nacional de Cuba (ANC) preserves the most important
+                            documents for <hi rendition="#i">Proyecto Humboldt Digital</hi>'s digitization campaign.</note>
                     </org>
                     <org>
                         <orgName>Universidad de las Ciencias Informáticas (UCI)</orgName>
@@ -212,7 +214,7 @@
                                 Lingüística (ILL)</ref> is in charge of researching and preserving
                             Cuba's literary and linguistic heritage. The ILL follows the tradition
                             of the <ref target="https://press.uchicago.edu/books/humboldt/1_3_networks.html"> Sociedad Económica de Amigos del País</ref>, with which Alexander von
-                            Humboldt also maintained close contact with during his second visit to
+                            Humboldt also maintained close contact during his second visit to
                             the island in 1804.</note>
                     </org>
                 </listOrg>
