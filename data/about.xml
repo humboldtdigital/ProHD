@@ -33,9 +33,9 @@
    <text>
       <body>
          <div>
-            <head>Vorstellung</head>
+            <head>Einführung</head>
             <p>
-                    <hi rendition="#b">Proyecto Humboldtl Digital (ProHD)</hi> ist eine internationale
+                    <hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> ist eine internationale
                Initiative zur Fortbildung in den Digitalen Geisteswissenschaften an den zwei
                Standorten La Habana (Casa Museo Alejandro de Humboldt) und Berlin
                (Berlin-Brandenburgische Akademie der Wissenschaften).</p>
@@ -63,64 +63,57 @@
             </list>
          </div>
          <div>
-            <head>Redaktionelle Kriterien</head>
+            <head>Editionsrichtlinien</head>
             <p>Die Textquellen für die im "Digitalen Dossier: Alexander von Humboldt und Kuba
                (1800-1830)" veröffentlichten Editionen stammen aus Bibliotheken und Archiven in
-               Deutschland, Kuba und Polen; weitere Informationen zur Herkunft finden Sie in den
+               Deutschland, Kuba und Polen; weitere Informationen zur Herkunft der Textquellen finden Sie in den
                Metadaten der einzelnen Ausgaben. Das "Digitale Dossier" enthält handschriftliche und
                gedruckte Textdokumente in vier Sprachen (Deutsch, Englisch, Französisch und
-               Spanisch), die in thematischem Zusammenhang mit Humboldts Reise nach Kuba und den
-               Themen stehen, die der preußische Wissenschaftler in seinem <title>Essai politique
+               Spanisch), die in thematisch mit Humboldts Kubareise sowie den
+               Fragen stehen, die der preußische Wissenschaftler in seinem <title>Essai politique
                   sur l'île de Cuba</title> untersucht hat.</p>
-            <p>Der Text der Ausgaben wird in einer doppelten Präsentation angeboten: Einerseits wurde in der diplomatischen Transkription versucht, die orthografischen Besonderheiten der Quelle beizubehalten, einschließlich der grafischen und phonetischen Aspekte des amerikanischen Spanisch sowie der Abkürzungen und Leerzeichen zwischen den Wörtern; andererseits wurden im standardisierten Text die Abkürzungen aufgelöst und Leerzeichen und Interpunktionszeichen eingeführt, um die Lesbarkeit des Textes zu verbessern. In beiden Fassungen wurden zur besseren Lesbarkeit des Textes und zur Wahrung der redaktionellen Traditionen, die sich in der BBAW für Humboldts Texte etabliert haben, Akzente nach dem heutigen Standard gesetzt.</p>
+            <p>Der Text der Ausgaben steht in zwei Fassungen zur Verfügung: In der diplomatischen Transkription wurde sich darum bemüht, die orthografischen Eigenheiten der Quelle zu wahren, einschließlich der grafischen und phonetischen Aspekte des amerikanischen Spanisch sowie der Abkürzungen und Leerräume. Im standardisierten Text wurden die Abkürzungen aufgelöst und Leerräume und Interpunktionszeichen eingeführt, um die Lesbarkeit des Textes zu verbessern. In beiden Fassungen wurden zur besseren Lesbarkeit des Textes und zur Wahrung der redaktionellen Traditionen, die sich in der BBAW für Humboldts Texte etabliert haben, Akzente nach dem heutigen Standard gesetzt.</p>
          </div>
          <div>
             <head>Technische Aspekte</head>
-            <p>Die Texte der digitalen Ausgaben des "Digital Dossier: Alexander von Humboldt and
-               Kuba (1800-1830)" wurden im XML-Format nach den Richtlinien der <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P. 5). Zum um die
-               Codierungsaufgabe zu erleichtern, wurde das von TELOTA entwickelte ediarum-Framework
+            <p>Die Texte der digitalen Ausgaben von "Digitales Dossier: Alexander von Humboldt und
+               Kuba (1800-1830)" wurden in XML-basiertem TEI nach den Richtlinien der <ref target="https://tei-c.org/">Text Encoding Initiative</ref> kodiert (P. 5). Um
+               die Kodierungsaufgabe zu erleichtern, wurde die von TELOTA entwickelte Arbeitsumgebung ediarum
                angepasst, wodurch <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit"> ediarum.PROHD.edit
                </ref> entstanden ist.</p>
-            <p>Es wurde eine Codierung vorgenommen, um die Quelle, aus der der Text stammt, die
-               Verantwortlichen für die Edition und, wenn möglich, die Urheberschaft und andere
-               Daten im Zusammenhang mit dem Entstehungsprozess zu identifizieren. In Bezug auf die
-               Codierung des Textes, die Paginierung der Originalquelle, die Überschriften und
-               Absätze, die logische Unterteilung des Briefe, die Änderungen in der Typografie, die
-               autoritären Eingriffe wie Durchstreichungen oder Ergänzungen, Lesartenunsicherheiten,
-               Lücken, ersetzte Wörter wurden gekennzeichnet., usw. Für weitere Details zur
-               Kodierung in TEI wird empfohlen, die in <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">deutscher</ref> und
-                  <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">spanischer</ref> Sprache verfügbare Ediarum-Dokumentation zu konsultieren.</p>
-            <p>Diese Webanwendung wurde mit <ref target="https://teipublisher.com/index.html">TEI
-                  Publisher</ref> (v. 7.0.0.) und <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
-               5.2.0.) erstellt. Ein ODD namens prohd.xml wird verwendet, um die statischen Seiten
-               und Editionen zu formatieren, und zwei Vorlagen namens prohd.html und
-               view-grid-prohd.html, die mit Webkomponenten erstellt wurden, werden verwendet, um
-               die grafische Benutzeroberfläche zu erstellen. Eine Kopie der Dateien, aus denen die
-               Webanwendung besteht, ist im <ref target="https://github.com/humboldtdigital/ProHD">Github-Repository</ref> des Projekts verfügbar. Sowohl die Webanwendung als auch
-               die Faksimiles werden auf Servern des Amtes des Historikers der Stadt Havanna
-               gehostet; Faksimiles verwenden die API von <ref target="https://iiif.io/">IIIF</ref>.</p>
-            <p>Die Entwicklung des Frameworkediarum.PROHD.edit und dieser Webanwendung wurde von
-               Antonio Rojas Castro in Zusammenarbeit mit Violeta López durchgeführt; Ihre
-               technischen Anfragen richten Sie bitte an antonio.rojas-castro [at] bbaw.de.</p>
+            <p>Durch die Kodierung ausgezeichnet wurden Metadaten wie die Textquelle, die
+               Verantwortlichen der Edition und, wenn möglich, die Urheberschaft und andere
+               Angaben zum Entstehungsprozess des Textes. Die Textkodierung macht die Paginierung der Originalquelle, die Überschriften und
+               Absätze, die logische Unterteilung der Briefe, die typografischen Änderungen, die
+               Textbearbeitungen des Autors wie Streichungen oder Ergänzungen, unsichere Lesarten,
+               Lücken, Ersetzungen wurden gekennzeichnet., usw. Weitere Informationen zur
+               TEI-Kodierung finden Sie in der in <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">deutscher</ref> und
+                  <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">spanischer</ref> Sprache verfügbaren Dokumentation von ediarum.</p>
+            <p>Die Webanwendung wurde mit <ref target="https://teipublisher.com/index.html">TEI
+                  Publisher</ref> (v. 7.0.0.) erstellt und basiert auf der XML-Datenbank <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> 
+                  (v.5.2.0.). Die Formatierung der statischen Seiten und Editionen erfolgt über das ODD namens prohd.xml und zur Erzeugung der grafischen Benutzeroberfläche werden die beiden auf Webkomponenten basierenden Vorlagen prohd.html und
+               view-grid-prohd.html verwendet. Eine Kopie der Dateien, aus denen die
+               Webanwendung besteht, ist im <ref target="https://github.com/humboldtdigital/ProHD">Github-Repositorium</ref> des Projekts verfügbar. Sowohl die Webanwendung als auch
+               die Faksimiles werden auf Servern der Oficina del Historiador de la ciudad de La Habana (OHCH)
+               gehostet; die Faksimiles verwenden die API von <ref target="https://iiif.io/">IIIF</ref>.</p>
+            <p>Die Entwicklung des Frameworks ediarum.PROHD.edit und dieser Webanwendung wurde von
+               Antonio Rojas Castro in Zusammenarbeit mit Violeta López durchgeführt. Ihre
+               technischen Fragen und Anmerkungen können Sie an antonio.rojas-castro [at] bbaw.de richten.</p>
          </div>
          <div>
             <head>Rechtliche Aspekte und empfohlene Zitierweise</head>
-            <p>Alle Inhalte des "Digital Dossier" werden unter einer Lizenz
-               veröffentlicht <ref target="https://creativecommons.org/licenses/by/4.0/deed.de">
-                  Creative Commons Namensnennung 4.0 International (CC BY 4.0) </ref>. Folglich ist
-               es erlaubt teilen (das Material in jedem Medium oder Format kopieren und weitergeben)
-               und anpassen (Remixen, Transformieren und darauf aufbauen und zwar für beliebige
-               Zwecke, sogar kommerziell), unter der Bedingung, dass ein angemessener Kredit
-               bereitgestellt wird, Link zur Lizenz und geben Sie an, ob Änderungen vorgenommen
-               wurden.</p>
-            <p>Sie können das digitale Dossier vollständig wie folgt zitieren:</p>
+            <p>Alle Inhalte des Digitalen Dossiers werden unter einer Creative Commons Namensnennung 4.0 International (CC BY 4.0) Lizenz
+               veröffentlicht <ref target="https://creativecommons.org/licenses/by/4.0/deed.de"/>. Folglich ist
+               das Teilen (das medien- und formatunabhängige Vervielfältigen und Weiterverbreiten)
+               und Bearbeiten (das Remixen, Verändern und Ausbauen des Materials für beliebige, auch kommerzielle Zwecke) erlaubt, sofern die Urheber und Rechte sowie eventuell vorgenommene Änderungen angemessen angegeben werden und ein Link der Lizenz beigefügt wird.</p>
+            <p>Sie können das Digitale Dossier vollständig wie folgt zitieren:</p>
             <p>Kraft, Tobias (Hrsg.). <title>Digitales Dossier: Alexander von Humboldt und Kuba
                   (1800-1830)</title>, Berlin-Brandenburgische Akademie der Wissenschaften und
-               Oficinal del Historiador de la Ciudad de la Habana, 2021-2023.</p>
+               Oficina del Historiador de la Ciudad de la Habana, 2021-2023.</p>
             <p>Oder eine bestimmte Einzelausgabe:</p>
             <p>Arango y Parreño, Francisco de. "Observaciones sobre el Ensayo politico con relacion
-               con la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Digitales Dossier: Alexander von Humboldt und Kuba (1800-1830)</title>, Kathrin Kraller (Ed.),
-               Berlin-Brandenburgische Akademie der Wissenschaften und Oficinal del Historiador de la
+               a la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Digitales Dossier: Alexander von Humboldt und Kuba (1800-1830)</title>, Kathrin Kraller (Ed.),
+               Berlin-Brandenburgische Akademie der Wissenschaften und Oficina del Historiador de la
                Ciudad de la Habana, 2021.</p>
          </div>
       </body>
