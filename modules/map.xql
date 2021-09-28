@@ -77,25 +77,17 @@ return
 declare function mapping:prohd-document-translation($root as element(), $userParams as map(*)) {
     let $language := ($userParams?language, 'de')[1]
     return
-        if ($language = "es") then
-            let $node-id :=  substring-after(util:node-id($root), '.')
-
-            let $doc := doc(util:collection-name($root) || "/" || replace(util:document-name($root), "^(.+)\.xml$", "$1") || "_es.xml")/tei:TEI
-            let $mapped-document-id := util:node-id($doc)
-            let $mapped := util:node-by-id($doc, $mapped-document-id || '.' || $node-id)
-            return
-                if ($mapped) then $mapped else $doc
-        else        
-         if ($language = "en") then
-            let $node-id :=  substring-after(util:node-id($root), '.')
-
-            let $doc := doc(util:collection-name($root) || "/" || replace(util:document-name($root), "^(.+)\.xml$", "$1") || "_en.xml")/tei:TEI
-            let $mapped-document-id := util:node-id($doc)
-            let $mapped := util:node-by-id($doc, $mapped-document-id || '.' || $node-id)
-            return
-                if ($mapped) then $mapped else $doc
-        else
+        if ($language = "de") then
             $root
+        else        
+         
+            let $node-id :=  substring-after(util:node-id($root), '.')
+
+            let $doc := doc(util:collection-name($root) || "/" || replace(util:document-name($root), "^(.+)\.xml$", "$1") || "_" || $language || ".xml")/tei:TEI
+            let $mapped-document-id := util:node-id($doc)
+            let $mapped := util:node-by-id($doc, $mapped-document-id || '.' || $node-id)
+            return
+                if ($mapped) then $mapped else $doc
 };
 
 
