@@ -15,8 +15,10 @@
             <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
          </titleStmt>
          <publicationStmt>
-            <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                  Wissenschaften (BBAW)</ref></publisher>
+            <publisher>
+                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                  Wissenschaften (BBAW)</ref>
+                </publisher>
             <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -110,22 +112,21 @@
             </listPerson>
          </div>
          <div>
-            <head>Team La Habana</head>
+            <head>Team Havanna</head>
             <listPerson>
                <person>
                   <persName>
                      <hi rendition="#b">Eritk Guerra</hi>
                   </persName>
                   <affiliation>Oficina del Historiador de La Ciudad de La Habana</affiliation>
-                  <occupation>Director de Informática</occupation>
+                  <occupation>Leiter des Bereichs Informatik</occupation>
                </person>
                <person>
                   <persName>
                      <hi rendition="#b">Alaina Solernou Ferrer</hi>
                   </persName>
 
-                  <affiliation>Oficina del Historiador de La Ciudad de La Habana - Patrimonio
-                     Documental</affiliation>
+                  <affiliation>Oficina del Historiador de La Ciudad de La Habana - Schriftliches Kulturerbe</affiliation>
                   <occupation>Especialista de Gestión</occupation>
                </person>
                <person>
@@ -133,9 +134,8 @@
                      <hi rendition="#b">Dra. Grisel Terrón</hi>
                   </persName>
 
-                  <affiliation>Oficina del Historiador de La Ciudad de La Habana - Patrimonio
-                     Documental</affiliation>
-                  <occupation>Directora</occupation>
+                  <affiliation>Oficina del Historiador de La Ciudad de La Habana - Schriftliches Kulturerbe</affiliation>
+                  <occupation>Leitung</occupation>
                </person>
             </listPerson>
          </div>
@@ -183,7 +183,7 @@
                      de La Habana)</orgName>
                   <note>Die Dirección de Patrimonio Documental ist eine der Abteilungen der OHCH.
                      Sie widmet sich dem Schutz und der Zugänglichmachung des schriftlichen
-                     Kulturerbes und der ihr angehörenden Bibliotheken und Archive. Zu der Abteilung
+                     Kulturerbes der ihr angehörenden Bibliotheken und Archive. Zu der Abteilung
                      gehört ein historisches Archiv, das wichtige Dokumente für die
                      Digitalisierungskampagne im Rahmen von <hi rendition="#i">Proyecto Humboldt
                         Digital</hi> beherbergt.</note>
