@@ -45,8 +45,7 @@
             <p>The project started in 2019 and is scheduled for completion in 2023. It has been
                funded thanks to generous support from the Auswärtiges Amt, Fritz Thyssen Stiftung and
                Gerda Henkel Stiftung.</p>
-            <p>To learn more about the resources created by the project, see the following links
-               links:</p>
+            <p>To learn more about the resources created by the project, see the following links:</p>
             <list>
                <item>
                   <ref target="https://habanaberlin.hypotheses.org/">Blog</ref>
@@ -70,9 +69,9 @@
                section of each edition. The "Digital Dossier" contains textual documents in
                manuscript and printed format, in four languages (English, French, German and
                Spanish), thematically related to Humboldt's trip to Cuba and the questions that the
-               Prussian scientist the Prussian scientist studied in the <title>Essai politique sur
+               Prussian scientist studied in the <title>Essai politique sur
                   l'île de Cuba</title>.</p>
-            <p>The text of the editions is offered in double presentation: on the one hand, in the diplomatic transcription an attempt has been made to retain the spelling peculiarities of the source, including the graphic and phonetic aspects of American Spanish, abbreviations and spaces between words; on the other hand, in the normalized text, the abbreviations have been resolved and spaces and punctuation marks have been introduced in order to improve the readability of the text. In both versions, accents have been added according to the current norm to make the text easier to read and to maintain conformity with the editorial traditions established in the BBAW for Humboldt's texts.</p>
+            <p>The text of each edition is offered in double presentation: on the one hand, in the diplomatic transcription an attempt has been made to retain the spelling peculiarities of the source, including the graphic and phonetic aspects of American Spanish, abbreviations and spaces between words; on the other hand, in the normalized text, the abbreviations have been resolved and spaces and punctuation marks have been introduced in order to improve the readability of the text. In both versions, accents have been added according to the current norm to make the text easier to read and to maintain conformity with the editorial traditions established in the BBAW for Humboldt's texts.</p>
          </div>
          <div>
             <head>Technical Aspects</head>
@@ -81,7 +80,7 @@
                adapted resulting in <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
             <p>The TEI markup has been carried out in order to identify the source from which the
                text is derived, those responsible for the edition and, whenever possible, the
-               authorship and other data related to the creation process. As for the encoding of the
+               authorship and other data related to the creation process. As for the
                text, the following phenomena have been encoded: the pagination of the original
                source, headings and paragraphs, divisions and logical divisions of letters, changes
                in typography, authorial interventions such as strikethroughs or additions, uncertain
@@ -93,29 +92,28 @@
                two templates called prohd.html and view-grid-prohd.html are used to build the
                graphical user interface with web components. A copy of the files that make up the
                web application is available at the <ref target="https://github.com/humboldtdigital/ProHD">project's Github
-                  repository</ref>. Both the web application and the are hosted on servers of the
-               Oficina del Historiador de la Ciudad de La Habana; the facsimiles are hosted on
-               servers in La Habana as well; the facsimiles use <ref target="https://iiif.io/">IIIF</ref>'API.</p>
+                  repository</ref>. Both the web application and the facsimiles are hosted on servers of the
+               Oficina del Historiador de la Ciudad de La Habana; the facsimiles use <ref target="https://iiif.io/">IIIF</ref>'s API.</p>
             <p>The development of the framework ediarum.PROHD.edit and of this web application has
                been carried out by Antonio Rojas Castro with the collaboration of Violeta López.
                Technical inquiries can be directed to antonio.rojas-castro [at] bbaw.de.</p>
          </div>
          <div>
             <head>Legal aspects and recommended citation</head>
-            <p>All contents of the "Digital Dossier" are published under a license. <ref target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
-                  Attribution 4.0 International (CC BY 4.0)</ref>. Accordingly, it is permitted to
+            <p>All contents of the "Digital Dossier" are published under a <ref target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
+                  license CC BY 4.0</ref>. Accordingly, it is permitted to
                share (copy and redistribute the material in any medium or format) and adapt (remix,
-               transform, and build upon the material for any purpose, even commercially); please provide
+               transform, and build upon the material for any purpose, even commercially); please give appropriate credit, provide
                a link to the license, and indicate if changes were made.</p>
             <p>You may cite the digital dossier in its entirety as follows:</p>
             <p>Kraft, Tobias (dir.). <title>Digital Dossier: Alexander von Humboldt and Cuba
                   (1800-1830)</title>, Berlin-Brandenburgische Akademie der Wissenschaften and
-               Oficinal del Historiador de la Ciudad de la Habana, 2021-2023.</p>
+               Oficina del Historiador de la Ciudad de la Habana, 2021-2023.</p>
             <p>Or a specific individual edition:</p>
             <p>Arango y Parreño, Francisco de. "Observaciones sobre el Ensayo politico con relacion
-               con la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Dossier
-                  Digital: Alexander von Humboldt y Cuba (1800-1830)</title>, Kathrin Kraller (ed.),
-               Berlin-Brandenburgische Akademie der Wissenschaften and Oficinal del Historiador de la
+               a la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Digital Dossier: 
+               Alexander von Humboldt and Cuba (1800-1830)</title>, Kathrin Kraller (ed.),
+               Berlin-Brandenburgische Akademie der Wissenschaften and Oficina del Historiador de la
                Ciudad de la Habana, 2021.</p>
          </div>
       </body>
