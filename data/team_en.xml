@@ -131,22 +131,20 @@
                         <persName>
                             <hi rendition="#b">Alaina Solernou Ferrer</hi>
                         </persName>
-                        <affiliation>Oficina del Historiador de La Ciudad de La Habana - Patrimonio
-                            Documental</affiliation>
+                        <affiliation>Oficina del Historiador de La Ciudad de La Habana - Documentary Heritage</affiliation>
                         <occupation>Management</occupation>
                     </person>
                     <person>
                         <persName>
                             <hi rendition="#b">Dra. Grisel Terrón</hi>
                         </persName>
-                        <affiliation>Oficina del Historiador de La Ciudad de La Habana - Patrimonio
-                            Documental</affiliation>
+                        <affiliation>Oficina del Historiador de La Ciudad de La Habana - Documentary Heritage</affiliation>
                         <occupation>Director</occupation>
                     </person>
                 </listPerson>
             </div>
             <div>
-                <head>Instituciones cooperantes</head>
+                <head>Cooperating Institutions</head>
                 <listOrg>
                     <org>
                         <orgName>Berlin-Brandenburgische Akademie der Wissenschaften
@@ -154,7 +152,8 @@
                         <note>The <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie
                                 der Wissenschaften</ref> (BBAW) is the largest non-university
                             research institution in the humanities in the region. The <hi rendition="#i">Project Humboldt Digital</hi> is institutionally
-                            located here and cooperates closely with the <ref target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">"Alexander von Humboldt Travel - Science of Motion"</ref>. The
+                            located here and cooperates closely with the <ref target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">"Travelling 
+                            Humboldt - Science on the Move"</ref>. The
                             academy projects are supported and advised by <ref target="https://www.bbaw.de/en/bbaw-digital/telota">TELOTA</ref>.</note>
                     </org>
                     <org>
@@ -165,7 +164,7 @@
                             cultural heritage management that has been recognized internationally.
                             It has coordinated the execution of relevant international cooperation
                             projects, among which is the <hi rendition="#i">Proyecto Humboldt
-                                Digital</hi> The OHCH is responsible for the Cuban part of the project,
+                                Digital</hi>. The OHCH is responsible for the Cuban part of the project,
                             with the participation of three of its most
                             important institutions: the Casa Humboldt, the Archivo Histórico, and the
                             Biblioteca Histórica Cubana y Americana “Francisco González del
@@ -174,15 +173,14 @@
                     <org>
                         <orgName>Dirección de Patrimonio Documental (Oficina del Historiador de La
                             Ciudad de La Habana)</orgName>
-                        <note>Dirección de Patrimonio Documental is one of the entities of the OHCH.
+                        <note>The Dirección de Patrimonio Documental is one of the departments of the OHCH.
                             It is dedicated to the protection and accessibility of the documentary
-                            heritage of the libraries and archives which constitute
-                            it. The Office includes a historical archive containing crucial documents
+                            heritage of its member libraries and archives. The Office includes a historical archive containing crucial documents
                             for the digitization campaign of <hi rendition="#i">Proyecto Humboldt Digital</hi>.</note>
                     </org>
                     <org>
                         <orgName>Casa Museo Alejandro de Humboldt (Casa Humboldt)</orgName>
-                        <note>The Alexander von Humboldt House Museum is a Cuban museum dedicated to
+                        <note>The Casa Museo Alejandro de Humboldt is a Cuban museum dedicated to
                             the life and work of Alexander von Humboldt. It is part of the network
                             of museums of the OHCH and is located in Habana Vieja, the historical
                             center of Havana. The Casa Humboldt is the site of <hi rendition="#i">Proyecto Humboldt Digital</hi> in Cuba.</note>
