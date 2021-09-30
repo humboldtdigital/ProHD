@@ -86,7 +86,7 @@
                         </pb-toggle-feature>
                         
                         <!-- directly change properties of the pb-view -->
-                        <pb-toggle-feature name="view" on="page" off="single" default="on" emit="transcription">
+                        <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
                             <pb-i18n key="document.page-view"/>
                         </pb-toggle-feature>
                         
