@@ -15,6 +15,10 @@
                 <facet dimension="form" expression="nav:get-metadata(ancestor::tei:TEI, 'form')"/>
                 <facet dimension="subject" expression="nav:get-metadata(ancestor::tei:TEI, 'subject')"/>
             </text>
+            <text qname="tei:div">
+                <ignore qname="tei:div"/>
+            </text>
+
             <text qname="tei:head"/>
             <text match="//tei:titleStmt/tei:title"/>
             <text match="//tei:msDesc/tei:head"/>
