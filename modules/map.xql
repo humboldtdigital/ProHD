@@ -82,12 +82,17 @@ declare function mapping:prohd-document-translation($root as element(), $userPar
         else        
          
             let $node-id :=  substring-after(util:node-id($root), '.')
-
             let $doc := doc(util:collection-name($root) || "/" || replace(util:document-name($root), "^(.+)\.xml$", "$1") || "_" || $language || ".xml")/tei:TEI
-            let $mapped-document-id := util:node-id($doc)
-            let $mapped := util:node-by-id($doc, $mapped-document-id || '.' || $node-id)
+
             return
-                if ($mapped) then $mapped else $doc
+
+            if ($doc) then
+                    let $mapped-document-id := util:node-id($doc)
+                    let $mapped := util:node-by-id($doc, $mapped-document-id || '.' || $node-id)
+                    return
+                            if ($mapped) then $mapped else $doc
+            else 
+                $root         
 };
 
 
