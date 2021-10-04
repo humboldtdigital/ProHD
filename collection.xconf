@@ -12,7 +12,6 @@
                 <field name="file" expression="util:document-name(.)"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
-                (: Added by ARC on 06.07.2021 :)
                 <facet dimension="form" expression="nav:get-metadata(ancestor::tei:TEI, 'form')"/>
                 <facet dimension="subject" expression="nav:get-metadata(ancestor::tei:TEI, 'subject')"/>
             </text>
@@ -28,7 +27,6 @@
                 <field name="file" expression="util:document-name(.)"/>
                 <facet dimension="genre" expression="nav:get-metadata(., 'genre')"/>
                 <facet dimension="language" expression="nav:get-metadata(., 'language')"/>
-                (: Added by ARC on 06.07.2021 :)
                 <facet dimension="form" expression="nav:get-metadata(., 'form')"/>
                 <facet dimension="subject" expression="nav:get-metadata(., 'subject')"/>
             </text>
@@ -36,7 +34,6 @@
                 <ignore qname="dbk:section"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::dbk:article, 'genre')"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::dbk:article, 'language')"/>
-                (: Added by ARC on 06.07.2021 :)
                 <facet dimension="form" expression="nav:get-metadata(ancestor::dbk:article, 'form')"/>
                 <facet dimension="subject" expression="nav:get-metadata(ancestor::dbk:article, 'subject')"/>
             </text>
