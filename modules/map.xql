@@ -94,5 +94,3 @@ declare function mapping:prohd-document-translation($root as element(), $userPar
             else 
                 $root         
 };
-
-
