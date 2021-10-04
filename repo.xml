@@ -1,5 +1,5 @@
 <meta xmlns="http://exist-db.org/xquery/repo">
-    <description>Dossier Digital: Alexander von Humboldt y Cuba (1800–1830)</description>
+    <description>Alexander von Humboldt y Cuba (1800-1830)</description>
     <author/>
     <status>beta</status>
     <license>GNU-LGPL</license>
@@ -10,4 +10,4 @@
     <target>ProHD</target>
     <permissions user="prohd" group="tei" mode="rw-r--r--"/>
     
-<deployed>2021-10-01T12:29:32.012+02:00</deployed></meta>
+<deployed>2021-10-04T09:14:10.169+02:00</deployed></meta>
