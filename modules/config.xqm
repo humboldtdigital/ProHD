@@ -313,8 +313,7 @@ declare variable $config:data-exclude := (
     doc($config:data-root || "/team_es.xml")/tei:TEI,
     doc($config:data-root || "/about_es.xml")/tei:TEI,
     doc($config:data-root || "/team_en.xml")/tei:TEI,
-    doc($config:data-root || "/about_en.xml")/tei:TEI,
-    doc($config:data-root || "/criterios.xml")/tei:TEI
+    doc($config:data-root || "/about_en.xml")/tei:TEI
 );
 
 (:~
