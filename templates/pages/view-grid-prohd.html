@@ -85,7 +85,7 @@
                                 <h3>
                                     <pb-i18n key="document.contents">Contents</pb-i18n>
                                 </h3>
-                                <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" auto="auto">
+                                <pb-load id="toc" url="api/document/{doc}/toc?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="transcription" auto="auto" use-language="use-language" >
                                     <pb-i18n key="dialogs.loading">Loading</pb-i18n>
                                 </pb-load>
                             </div>
