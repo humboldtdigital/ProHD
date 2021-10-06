@@ -15,14 +15,18 @@
             <surname>Cano</surname>
             <forename>Arrate</forename>
           </persName>
-          <resp><note type="remarkResponsibility">Colaboración</note></resp>
+          <resp>
+                        <note type="remarkResponsibility">Colaboración</note>
+                    </resp>
         </respStmt>
         <respStmt>
           <persName>
             <surname>Kirsten</surname>
             <forename>Linda</forename>
           </persName>
-          <resp><note type="remarkResponsibility">Colaboración</note></resp>
+          <resp>
+                        <note type="remarkResponsibility">Colaboración</note>
+                    </resp>
         </respStmt>
         <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
         <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
@@ -32,8 +36,10 @@
         <p>Primera edición de Proyecto Humboldt digital - ProHD (<date>2021</date>).</p>
       </editionStmt>
       <publicationStmt>
-        <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-            Wissenschaften (BBAW)</ref></publisher>
+        <publisher>
+                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+            Wissenschaften (BBAW)</ref>
+                </publisher>
         <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
         <availability status="free">
           <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Atribución
@@ -66,7 +72,8 @@
           <p>Cada vez más archivos y catálogos colectivos ofrecen URIs. En el mundo de habla
             alemana, el catálogo colectivo <quote rendition="#i">Kalliope</quote> asigna un URI con
             cada elemento de la lista. Este URI es denominado EAD-ID, <quote rendition="#i">Encoded
-              Archival Description-Identifier</quote>, p. ej.: <ref target="http://kalliope-verbund.info/DE-611-HS-2877719">http://kalliope-verbund.info/DE-611-HS-2877719</ref></p>
+              Archival Description-Identifier</quote>, p. ej.: <ref target="http://kalliope-verbund.info/DE-611-HS-2877719">http://kalliope-verbund.info/DE-611-HS-2877719</ref>
+                    </p>
           <table>
             <row role="label">
               <cell>
@@ -118,7 +125,7 @@
             instituciones. Para las referencias del catálogo <quote rendition="#i">Kalliope</quote>
             debe ser añadido el enlace que ellos llaman <quote rendition="#i">Digitalisat</quote>.</p>
           <p>Los facsímiles digitales que no están relacionados con la estructura de las páginas,
-            deben ser anotados en el elemento TEI/facsimile con elementos <seg type="code">graphic</seg>.</p>
+            deben ser anotados en el elemento TEI/facsimile con elementos <seg type="code">graphic</seg>:</p>
           <ab type="codeblock"> 
             &lt;facsimile&gt;
               &lt;graphic url="http://ejemplourl.com/image"&gt;
@@ -129,7 +136,7 @@
           <p>En la descripción del documento se expondrán las características del mismo, por
             ejemplo, papel, formato, número de páginas etc.</p>
           <p>La descripción del documento será anotada en el elemento <seg type="code">physDesc</seg> (<quote rendition="#i">physical description</quote>, en español:
-            descripción física). La descripción se da como texto en un elemento <seg type="code">p</seg>.</p>
+            descripción física). La descripción se da como texto en un elemento <seg type="code">p</seg>:</p>
           <ab type="codeblock">
             &lt;physDesc&gt;
               &lt;p&gt;La carta consiste en una hoja de papel blanco delgado en el formato …&lt;/p&gt; 
@@ -142,6 +149,7 @@
           <p>El testimonio impreso será etiquetado en un elemento <seg type="code">witness</seg>.
             Las referencias literarias deben ser anotadas en el elemento <seg type="code">bibl</seg>. El atributo <seg type="code">@type</seg> indica con el valor <seg type="code">print</seg> que se trata de un testimonio impreso (y no un manuscrito o
             algo similar).</p>
+            <p>Por ejemplo:</p>
           <ab type="codeblock">
             &lt;witness&gt;
                 &lt;bibl type="print"&gt;Humboldt, Alexander von: Geografía de la plantas, ó Quadro físico de los Andes Equinoxiales, y de los paises vecinos. 
@@ -205,7 +213,8 @@
                 <p>Tipo de base textual</p>
               </cell>
               <cell>
-                <p>Valor para <seg type="code">@rend</seg></p>
+                <p>Valor para <seg type="code">@rend</seg>
+                                </p>
               </cell>
             </row>
             <row>
@@ -259,6 +268,7 @@
               </cell>
             </row>
           </table>
+          <p>Por ejemplo:</p>
           <ab type="codeblock">&lt;msDesc rend="manuscript"&gt;</ab>
         </div>
         <div type="level2" xml:id="seleccionar-base-de-textos">
@@ -341,11 +351,11 @@
                 contenido de la carta o manuscrito, o al menos partes de la misma.</p>
             </item>
           </list>
-          <p><hi rendition="#i">Nota</hi>: En la filología a veces se distingue entre registro y
+          <p>
+                        <hi rendition="#i">Nota</hi>: En la filología a veces se distingue entre registro y
             resumen (más breve). Sin embargo, esto no se especifica explícitamente en el modelado de
             datos, ya que en ambos casos se trata de resúmenes.</p>
-          <p>El resumen será anotado en //profileDesc/abstract en un elemento <seg type="code">p</seg>. Es posible marcar nombres de personas. Las citas deben ser marcadas con <seg type="code">quote</seg> (véase <ref target="#citación-en-el-resumen-el-comentario-etc.">Citación en el resumen, el
-              comentario, etc.</ref>).</p>
+          <p>El resumen será anotado en //profileDesc/abstract en un elemento <seg type="code">p</seg>. Es posible marcar nombres de personas. Las citas deben ser marcadas con <seg type="code">quote</seg> (véase el siguiente apartado).</p>
           <ab type="codeblock">
             &lt;abstract xml:lang="es"&gt;&lt;p&gt;Anuncio de un retrato&lt;/p&gt;&lt;/abstract&gt;</ab>
         </div>
@@ -368,10 +378,12 @@
             nombre de la persona se especifica en el elemento hijo <seg type="code">persName</seg>.</p>
           <list type="unordered">
             <item>
-              <p>Apellido: <seg type="code">surname</seg></p>
+              <p>Apellido: <seg type="code">surname</seg>
+                            </p>
             </item>
             <item>
-              <p>Nombre: <seg type="code">forename</seg></p>
+              <p>Nombre: <seg type="code">forename</seg>
+                            </p>
             </item>
           </list>
           <p>En el atributo <seg type="code">@ref</seg> se anota la referencia a una base de datos
@@ -387,10 +399,12 @@
             – declaración de responsabilidad). La información personal se añade en el elemento <seg type="code">persName</seg>.</p>
           <list type="unordered">
             <item>
-              <p>Apellido: <seg type="code">surname</seg></p>
+              <p>Apellido: <seg type="code">surname</seg>
+                            </p>
             </item>
             <item>
-              <p>Nombre: <seg type="code">forename</seg></p>
+              <p>Nombre: <seg type="code">forename</seg>
+                            </p>
             </item>
           </list>
           <p>En el atributo <seg type="code">@ref</seg> se anota la referencia a una base de datos
@@ -433,7 +447,9 @@
               TEI.</p>
             <p>Si el salto de línea ocurre dentro de una palabra, éste debe ser marcado con el
               atributo <seg type="code">@break</seg> y el valor <seg type="code">no</seg>. En caso
-              de aparecer un separador, éste será codificado como <seg type="code"><g ref="#typoHyphen"/></seg>.</p>
+              de aparecer un separador, éste será codificado como <seg type="code">
+                                <g ref="#typoHyphen"/>
+                            </seg>.</p>
             <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za enorme de aguas detenidas</ab>
           </div>
           <div type="level3" xml:id="foliación-y-paginación">
@@ -583,7 +599,8 @@
               inserción (asterisco, número, etc.), debe utilizarse una marca de inserción
               generalizada (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
               indicar que el texto fue introducido por el autor y no por los editores.</p>
-            <p><hi rendition="#b">Se debe diferenciar entre las notas y las adiciones</hi>: las
+            <p>
+                            <hi rendition="#b">Se debe diferenciar entre las notas y las adiciones</hi>: las
               adiciones complementan el texto principal y se integran sintácticamente en él. Las
               notas son, como las notas a pie de página impresas, unidades de texto
               independientes</p>
@@ -764,7 +781,8 @@
                   <p>Tipo de subrayado</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rendition</seg></p>
+                  <p>Valor para <seg type="code">@rendition</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -798,6 +816,7 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente
               de esta colonia. Agosto de 800''&lt;/hi&gt;</ab>
             <p>En caso de que un párrafo completo esté destacado en el margen, éste debe ser marcado
@@ -825,7 +844,8 @@
                   <p>Tipo de eliminación</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rendition</seg></p>
+                  <p>Valor para <seg type="code">@rendition</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -859,6 +879,7 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">Conocen ya estos vecinos la esplendidez en la meza, las viviendas,
               muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</ab>
           </div>
@@ -882,7 +903,8 @@
                   <p>Tipo de eliminación</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rendition</seg></p>
+                  <p>Valor para <seg type="code">@rendition</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -924,7 +946,8 @@
                   <p>Tipo de adición</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@place</seg></p>
+                  <p>Valor para <seg type="code">@place</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -988,6 +1011,7 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">en donde manifies&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;t
               &lt;subst&gt;
                 &lt;del rendition="#ow"&gt;a&lt;/del&gt;
@@ -1095,6 +1119,7 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">[…] y logré para el Comercio con estranjeros, los &lt;add
               place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</ab>
             <p>Si hay una marca de inserción del autor en la fuente, será codificada por la <seg type="code">metamark/</seg> generalizada. La forma de la marca de inserción
@@ -1116,7 +1141,8 @@
                   <p>Razón de la lectura incierta</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@reason</seg></p>
+                  <p>Valor para <seg type="code">@reason</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1148,7 +1174,8 @@
                   <p>Probabilidad</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@cert</seg></p>
+                  <p>Valor para <seg type="code">@cert</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1172,6 +1199,7 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">&lt;unclear reason="illegible" cert="high"&gt;año&lt;/unclear&gt;</ab>
           </div>
           <div type="level3" xml:id="texto-ilegible">
@@ -1192,7 +1220,8 @@
                   <p>Razón de la ilegibilidad</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@reason</seg></p>
+                  <p>Valor para <seg type="code">@reason</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1235,7 +1264,8 @@
                   <p>Segmento ilegible</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@unit</seg></p>
+                  <p>Valor para <seg type="code">@unit</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1291,7 +1321,8 @@
             <p>Debe registrar las páginas destruidas o perdidas de una en una.</p>
             <ab type="codeblock">&lt;pb n="1r"/&gt;
               &lt;gap reason="lost" unit="pages" quantity="1"/&gt;</ab>
-            <p><hi rendition="#i">Nota</hi>: Tanto <ref target="#páginas-en-blanco">páginas en
+            <p>
+                            <hi rendition="#i">Nota</hi>: Tanto <ref target="#páginas-en-blanco">páginas en
                 blanco</ref>, como <ref target="#omisiones">omisiones hechas por los editores y
                 editoras</ref> serán marcadas también con <seg type="code">gap/</seg>.</p>
           </div>
@@ -1313,7 +1344,8 @@
                   <p>Segmento a omitir</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@unit</seg></p>
+                  <p>Valor para <seg type="code">@unit</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1367,7 +1399,8 @@
                   <p>Motivo de la laguna</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@reason</seg></p>
+                  <p>Valor para <seg type="code">@reason</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1452,6 +1485,7 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">
               Éstas&lt;supplied cert="high"&gt;,&lt;/supplied&gt; al fin&lt;supplied cert="high"&gt;,&lt;/supplied&gt; rompieron el malecón, y cayó aquel 
               torrente sobre los desgraciados Molinos&lt;supplied cert="high"&gt;,&lt;/supplied&gt;
@@ -1494,7 +1528,8 @@
                   <p>Probabilidad</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@cert</seg></p>
+                  <p>Valor para <seg type="code">@cert</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1597,7 +1632,8 @@
                   <p>Calendario</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@calendar</seg></p>
+                  <p>Valor para <seg type="code">@calendar</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1883,7 +1919,8 @@
                   <p>Idioma extranjero</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@xml:lang</seg></p>
+                  <p>Valor para <seg type="code">@xml:lang</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -1967,24 +2004,12 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">Das &lt;lb/&gt;2te und 3te &lt;foreign
               xml:lang="spa"&gt;vela&lt;/foreign&gt; Rufen machte sichtbar weniger Eindruk.</ab>
             <p>Además, el atributo <seg type="code">@xml:lang</seg> puede establecerse tanto a nivel
               de las estructuras de texto comunes (por ejemplo, párrafos) como para documentos
               completos (en el elemento raíz <seg type="code">TEI</seg>).</p>
-          </div>
-          <div type="level3" xml:id="marcar-pasajes-de-texto">
-            <head>Marcar pasajes de texto</head>
-            <p>Puede rodear los pasajes de texto con un elemento <seg type="code">index</seg> para
-              hacer referencia a una entrada de índice. El atributo <seg type="code">@spanTo</seg>
-              se introduce automáticamente cuando selecciona una entrada de la lista de entradas de
-              índice disponibles. El atributo <seg type="code">@indexName</seg> indica si la
-              referencia es al índice de personas (persons), al índice de lugares (places) o al
-              índice de obras (…).</p>
-            <ab type="codeblock">&lt;index spanTo="#ixkh_ysf_cy" indexName="persons"
-              corresp="pdrPo.001.004.000000520"&gt; &lt;term&gt;Bonaparte, Louis, comte de Saint-Leu
-              (1778-1846)&lt;/term&gt; &lt;/index&gt;[pasaje de texto] Bonaparte [pasaje de
-              texto]&lt;anchor type="index" xml:id="ixkh_ysf_cy"/&gt;</ab>
           </div>
           <div type="level3" xml:id="personas-lugares-y-organizaciones">
             <head>Personas, lugares y organizaciones</head>
@@ -1998,13 +2023,16 @@
               manuscrito o en un comentario editorial se marcan con los siguientes elementos:</p>
             <list type="unordered">
               <item>
-                <p>Persona: <seg type="code">persName</seg></p>
+                <p>Persona: <seg type="code">persName</seg>
+                                </p>
               </item>
               <item>
-                <p>Lugar: <seg type="code">placeName</seg></p>
+                <p>Lugar: <seg type="code">placeName</seg>
+                                </p>
               </item>
               <item>
-                <p>Organización: <seg type="code">orgName</seg></p>
+                <p>Organización: <seg type="code">orgName</seg>
+                                </p>
               </item>
             </list>
             <p>El ID de la entrada de registro vinculada se anota en la el atributo <seg type="code">@key</seg>.</p>
@@ -2174,7 +2202,8 @@
                   <p>Cierre de carta</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rend</seg></p>
+                  <p>Valor para <seg type="code">@rend</seg>
+                                    </p>
                 </cell>
               </row>
               <row>
@@ -2198,6 +2227,7 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">
               &lt;closer rend="paragraph"&gt;
                 &lt;salute&gt;Muchos saludos&lt;/salute&gt;
