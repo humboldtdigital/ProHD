@@ -40,7 +40,7 @@
                (Berlin-Brandenburg Academy of Sciences and Humanities).</p>
             <p>The project focuses on the study of Cuban scientific and literary culture of the 18th and
                19th centuries, especially on the exploration of sources relevant to Alexander von Humboldt's 
-               research on Cuba during the period of 1800-1830.</p>
+               research on Cuba during the period of 1800–1830.</p>
             <p>The project started in 2019 and is scheduled for completion in 2023. It has been
                funded thanks to generous support from the Auswärtiges Amt, Fritz Thyssen Stiftung and
                Gerda Henkel Stiftung.</p>
@@ -59,19 +59,19 @@
          </div>
          <div>
             <head>Editorial principles</head>
-            <p>The textual sources of the editions published in the "Digital Dossier: Alexander von
-               Humboldt and Cuba (1800-1830)" stem from libraries and archives in Germany,
-               Cuba and Poland. For more information on the documents' provenance, please consult the metadata
-               section of each edition. The "Digital Dossier" contains textual documents in
+            <p>The "Digital Dossier: Alexander von
+               Humboldt and Cuba (1800–1830)" contains transcriptions of textual documents in
                manuscript and printed format, in four languages (English, French, German and
                Spanish). They all relate to Humboldt's trip to Cuba and the questions the
                Prussian scientist studied in the <title>Essai politique sur
-                  l'île de Cuba</title>.</p>
+                  l'île de Cuba</title>. The textual sources of the editions published in the "Digital Dossier" stem from libraries and archives in Germany,
+               Cuba and Poland. For more information on the documents' provenance, please consult the metadata
+               section of each edition.</p> 
             <p>The text of each edition is offered in two versions: The diplomatic transcription attempts to retain the spelling peculiarities of the source, including the graphic and phonetic aspects of American Spanish, abbreviations and spacing between words. In the normalized version, abbreviations are resolved, spacing and punctuation marks introduced in order to improve the readability of the text. In both versions, accents have been added according to the current norm to make the text more readable and to maintain conformity with the editorial traditions established in the BBAW for Humboldt's texts.</p>
          </div>
          <div>
             <head>Technical Aspects</head>
-            <p>The texts of the digital editions of the "Digital Dossier" have been encoded in XML format following the <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P5) Guidelines. To
+            <p>All the texts and the corresponding metadata published in the "Digital Dossier" have been encoded in XML format following the <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P5) Guidelines. To
                facilitate the encoding task, the framework ediarum developed by TELOTA has been
                adapted resulting in <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
             <p>The TEI markup captures metadata about the documents, such as the 
