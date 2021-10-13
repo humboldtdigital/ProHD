@@ -464,7 +464,7 @@
               vacío <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
               contiene el número de página o folio.</p>
             <ab type="codeblock">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano</ab>
-            <p>La digitalización será marcada con el atributo<seg type="code">@facs</seg>
+            <p>La digitalización será marcada con el atributo <seg type="code">@facs</seg>
               (facsimile). Como regla general deben ser añadidos solo los enlaces permanentes de la
               institución que mantiene el inventario (archivo o biblioteca) o de servicios oficiales
               (por ejemplo, Gallica).</p>
@@ -1428,8 +1428,8 @@
               entonces de nuevo</ab>
             <p>También se marcan con <seg type="code">gap/</seg> los <ref target="#texto-ilegible">pasajes ilegibles o dañados</ref>, así como <ref target="#páginas-en-blanco">páginas en blanco</ref>.</p>
           </div>
-          <div type="level3" xml:id="letras-o-palabras-resueltas-por-el-editor">
-            <head>Letras o palabras resueltas por el editor</head>
+          <div type="level3" xml:id="abreviaturas-resueltas-por-el-editor">
+            <head>Abreviaturas resueltas por el editor</head>
             <p>En el manuscrito, los editores complementan las palabras abreviadas. Estos
               suplementos se identifican como tales.</p>
             <p>Las abreviaturas y su expansión se codifican utilizando <seg type="code">choice</seg>
@@ -1449,7 +1449,7 @@
               editores y editoras. Estos suplementos se marcan con <seg type="code">supplied</seg>.
               Se indica la probabilidad con la que se aplica este suplemento.</p>
             <p>La adición de las palabras o signos de puntuación que faltan se debe distinguir de la
-                <ref target="#letras-o-palabras-resueltas-por-el-editor">adición (también:
+                <ref target="#abreviaturas-resueltas-por-el-editor">adición (también:
                 expansión) de palabras abreviadas</ref>.</p>
             <p>Las adiciones de signos de puntuación o palabras completas faltantes se marcan con
                 <seg type="code">supplied</seg>.</p>
@@ -1515,7 +1515,7 @@
               considera necesario para la comprensión del texto, los editores y editoras pueden
               corregir estos errores utilizando los marcados que se indican a continuación.</p>
             <p>Relacionados con la corrección por parte del editor, pero bastante distinguibles, son
-                <ref target="#letras-o-palabras-resueltas-por-el-editor">las resoluciones de
+                <ref target="#abreviaturas-resueltas-por-el-editor">las resoluciones de
                 palabras abreviadas</ref>.</p>
             <p>En el texto editado, las correcciones de los errores del autor pueden anotarse
               utilizando el elemento <seg type="code">choice</seg>. La palabra original se anota en
