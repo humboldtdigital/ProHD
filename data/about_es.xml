@@ -52,9 +52,6 @@
                   <ref target="https://habanaberlin.hypotheses.org/">Blog</ref>
                </item>
                <item>
-                  <ref target="https://www.ediarum.org/">ediarum</ref>
-               </item>
-               <item>
                   <ref target="https://github.com/humboldtdigital">Github</ref>
                </item>
                <item>
@@ -78,7 +75,7 @@
             <head>Aspectos técnicos</head>
             <p>Los textos de las ediciones digitales del "Dossier Digital: Alexander von Humboldt y
                Cuba (1800-1830)" han sido codificados en formato XML siguiendo las directrices de la
-                  <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P. 5). Para
+                  <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P5). Para
                facilitar la tarea de codificación, se ha adaptado el <foreign xml:lang="eng">framework</foreign> de ediarum desarrollado por TELOTA dando lugar a <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
             <p>Se ha llevado a cabo una codificación que permita identificar la fuente de la que
                deriva el texto, los responsables de la edición y, siempre que ha sido posible, la

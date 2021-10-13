@@ -52,9 +52,6 @@
                   <ref target="https://habanaberlin.hypotheses.org/">Blog</ref>
                </item>
                <item>
-                  <ref target="https://www.ediarum.org/">ediarum</ref>
-               </item>
-               <item>
                   <ref target="https://github.com/humboldtdigital">Github</ref>
                </item>
                <item>
@@ -66,28 +63,28 @@
             <head>Editionsrichtlinien</head>
             <p>Die Textquellen der in "Digitales Dossier: Alexander von Humboldt und Kuba
                (1800-1830)" veröffentlichten Editionen stammen aus Bibliotheken und Archiven in
-               Deutschland, Kuba und Polen; weitere Informationen zur Herkunft der Textquellen finden Sie in den
-               Metadaten der einzelnen Ausgaben. Das "Digitale Dossier" enthält handschriftliche und
+               Deutschland, Kuba und Polen. Weitere Informationen zu deren Provenienz finden Sie in den
+               Metadaten der einzelnen Ausgaben. Das "Digitale Dossier" veröffentlicht handschriftliche und
                gedruckte Textdokumente in vier Sprachen (Deutsch, Englisch, Französisch und
                Spanisch), die thematisch mit Humboldts Kubareise zusammenhängen, wie auch mit den
                Fragen, die der preußische Wissenschaftler in seinem <title>Essai politique
                   sur l'île de Cuba</title> untersucht hat.</p>
-            <p>Der Text der Ausgaben steht in zwei Fassungen zur Verfügung: In der diplomatischen Transkription wurde sich darum bemüht, die orthografischen Eigenheiten der Quelle zu wahren, einschließlich der grafischen und phonetischen Aspekte des amerikanischen Spanisch sowie der Abkürzungen und Leerräume. Im standardisierten Text wurden die Abkürzungen aufgelöst und Leerräume und Interpunktionszeichen eingeführt, um die Lesbarkeit des Textes zu verbessern. In beiden Fassungen wurden zur besseren Lesbarkeit des Textes und zur Wahrung der redaktionellen Traditionen, die sich in der BBAW für Humboldts Texte etabliert haben, Akzente nach dem heutigen Standard gesetzt.</p>
+            <p>Die Texte der einzelnen Ausgaben werden in zwei Fassungen präsentiert: In der diplomatischen Transkription wurde sich darum bemüht, die orthografischen Eigenheiten der Quelle zu wahren, einschließlich der grafischen und phonetischen Aspekte des amerikanischen Spanisch sowie der Abkürzungen und Leerräume. Im standardisierten Text wurden die Abkürzungen aufgelöst und Leerräume und Interpunktionszeichen eingeführt, um die Lesbarkeit des Textes zu verbessern. In beiden Fassungen wurden zur besseren Lesbarkeit des Textes und zur Wahrung der redaktionellen Traditionen, die sich in der BBAW für Humboldts Texte etabliert haben, Akzente nach dem heutigen Standard gesetzt.</p>
          </div>
          <div>
-            <head>Technische Aspekte</head>
-            <p>Die Texte der digitalen Ausgaben von "Digitales Dossier: Alexander von Humboldt und
-               Kuba (1800-1830)" wurden in XML-basiertem TEI nach den Richtlinien der <ref target="https://tei-c.org/">Text Encoding Initiative</ref> kodiert (P. 5). Um
-               die Kodierungsaufgabe zu erleichtern, wurde die von TELOTA entwickelte Arbeitsumgebung ediarum
+            <head>Technische Realisierung</head>
+            <p>Die Metadaten und edierten Texte der digitalen Ausgaben von "Digitales Dossier: Alexander von Humboldt und
+               Kuba (1800-1830)" sind in XML nach den Richtlinien der <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P5) kodiert. Um
+               die Kodierungsaufgabe zu erleichtern, wurde die von TELOTA entwickelte digitale Arbeitsumgebung ediarum
                angepasst, wodurch <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit"> ediarum.PROHD.edit
                </ref> entstanden ist.</p>
-            <p>Durch TEI-XML ausgezeichnet wurden Metadaten wie die Textquelle, die
+            <p>Durch TEI-XML werden zum Einen die Metadaten der Datensätze wie die Textquelle, die
                Verantwortlichen der Edition und, wenn möglich, die Urheberschaft und andere
-               Angaben zum Entstehungsprozess des Textes. Die Textkodierung macht die Paginierung der Originalquelle, die Überschriften und
-               Absätze, die logische Unterteilung der Briefe, die typografischen Änderungen, die
-               Textbearbeitungen des Autors wie Streichungen oder Ergänzungen, unsichere Lesarten,
-               Lücken, Ersetzungen, usw. kenntlich. Weitere Informationen zur
-               TEI-Kodierung finden Sie in der Dokumentation von ediarum, die auf <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">deutsch</ref> und
+               Angaben zum Entstehungsprozess des Textes kodiert. Zum Anderen werden durch die TEI-Kodierung der edierten Texte die Paginierung der Originalquelle, Überschriften und
+               Absätze, die logische Unterteilung der Briefe, typografische Änderungen, die
+               Textbearbeitungen des Autors wie Streichungen oder Ergänzungen, mögliche unsichere Lesarten,
+               Lücken, Ersetzungen, usw. ausgezeichnet. Weitere Informationen zur
+               TEI-Kodierung finden Sie im ediarum-Benutzerhandbuch, das auf <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">deutsch</ref> und
                   <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">spanisch</ref> verfügbar ist.</p>
             <p>Die Webanwendung wurde mit <ref target="https://teipublisher.com/index.html">TEI
                   Publisher</ref> (v. 7.0.0.) erstellt und basiert auf der XML-Datenbank <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> 
@@ -100,7 +97,7 @@
                technischen Fragen und Anmerkungen können Sie an antonio.rojas-castro [at] bbaw.de richten.</p>
          </div>
          <div>
-            <head>Rechtliche Aspekte und empfohlene Zitierweise</head>
+            <head>Copyright und empfohlene Zitierweise</head>
             <p>Alle Inhalte des Digitalen Dossiers werden unter der <ref target="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons Lizenz CC BY 4.0</ref> veröffentlicht. 
                Folglich ist das Teilen (das medien- und formatunabhängige Vervielfältigen und Weiterverbreiten) und Bearbeiten 
                (das Remixen, Verändern und Ausbauen des Materials für beliebige, auch kommerzielle Zwecke) erlaubt, sofern die Urheber und Rechte sowie eventuell vorgenommene Änderungen angemessen
