@@ -27,138 +27,11 @@
             <pb:template xmlns="" xml:space="preserve">
                         <pb-facs-link facs="[[url]]" emit="transcription"/>
 					</pb:template>
-        </model><model output="web" predicate="@n and $parameters?view='page'" behaviour="inline">
-            <param name="content" value="@n"/>
-            <outputRendition xml:space="preserve">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            font-size: 16px;
-                            color: #888888;
-                            cursor: pointer;
-                            display: inline;
-                            display: block;
-                            margin-right: 5px;
-                            float: right;
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            </outputRendition>
         </model><model predicate="@facs" behaviour="webcomponent" cssClass="facs">
             <param name="name" value="'pb-facs-link'"/>
             <param name="content" value="@n"/>
             <param name="facs" value="replace(@facs, '^img:(.*)$', '$1')"/>
             <outputRendition xml:space="preserve">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
                             font-size: 16px;
                             color: #888888;
@@ -167,49 +40,20 @@
                             display: block;
                             margin-right: 5px;
                             float: right;
+     
+            </outputRendition>
+        </model><model output="web" predicate="@n and $parameters?view='page'" behaviour="inline">
+            <param name="content" value="@n"/>
+            <outputRendition xml:space="preserve">
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            font-size: 16px;
+                            color: #888888;
+                            cursor: pointer;
+                            display: inline;
+                            display: block;
+                            margin-right: 5px;
+                            float: right;
+
             </outputRendition>
         </model><model behaviour="omit">
             <param name="type" value="'page'"/>
@@ -344,11 +188,13 @@
             
             
             
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
             
             
             
@@ -507,6 +353,7 @@
             
             
             
+            
                             
                             display: inline-block;
                             margin-top: .5em;
@@ -514,6 +361,7 @@
                             color: #CCC;
                             
                         
+            
             
             
             
@@ -604,6 +452,7 @@
             
             
             
+            
                             
                             display: inline-block;
                             margin-top: .5em;
@@ -654,9 +503,11 @@
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
+            
             
             
             
@@ -748,6 +599,7 @@
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@type='catch' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
@@ -794,8 +646,10 @@
             
             
             
+            
                             margin-left: 20em;
                             color: #A0A0A0;
+            
             
             
             
@@ -1076,8 +930,10 @@
             
             
             
+            
             text-decoration: line-through;
 color:red;
+            
             
             
             
@@ -1185,8 +1041,10 @@ color:red;
             
             
             
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
             
             
             
@@ -1284,10 +1142,12 @@ text-decoration-style: double;
                 <elementSpec ident="table" mode="change"><model behaviour="table">
             <outputRendition xml:space="preserve">
             
+            
             font-size: smaller;
 display: block;
 border-collapse: collapse;
 padding: 10px;
+            
             
             </outputRendition>
         </model></elementSpec>
@@ -1363,8 +1223,10 @@ padding: 10px;
             
             
             
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
             
             
             
@@ -1497,8 +1359,10 @@ padding: 10px;
             
             
             
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
             
             
             
@@ -1573,9 +1437,11 @@ padding: 10px;
             
             
             
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
             
             
             
@@ -1638,21 +1504,25 @@ margin-bottom: 3em;
         </model></elementSpec>
             <elementSpec ident="ab" mode="change"><model behaviour="paragraph">
             <outputRendition xml:space="preserve">
+            
             background-color: #F2F0EB;
 font-family: monospace;
 border: 1px solid #999;
 display: block;
 padding: 10px;
 white-space: pre-wrap;
+            
             </outputRendition>
         </model></elementSpec><elementSpec ident="row" mode="change"><model predicate="@role='label'" behaviour="row">
             <outputRendition xml:space="preserve">
+            
             
             font-weight: bold;
 border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
             
             </outputRendition>
         </model><model behaviour="row">
@@ -1661,10 +1531,12 @@ padding: 10px;
             <desc>Insert table cell. </desc>
             <outputRendition xml:space="preserve">
             
+            
             border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
             
             </outputRendition>
         </model></elementSpec></schemaSpec>
