@@ -2090,7 +2090,7 @@
                 &lt;/correspAction&gt; 
               &lt;/correspDesc&gt;</ab>
           </div>
-          <div type="level3" xml:id="fechas-2">
+          <div type="level3" xml:id="fechas-cartas">
             <head>Fechas</head>
             <p>Las fechas se marcan con el elemento <seg type="code">date</seg> y se anotan en el
               formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg type="code">AAAA</seg>, dependiendo de la información disponible) en los atributos
