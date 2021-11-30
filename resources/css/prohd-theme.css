@@ -135,7 +135,7 @@ p.version {
     height: auto;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 374px) {
     
     #footerGray {
        height: 7.5em;
