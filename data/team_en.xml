@@ -32,8 +32,33 @@
     <text>
         <body>
             <div>
-                <head>Team Berlin</head>
+                <head>Team</head>
                 <listPerson>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Eritk Guerra</hi>
+                        </persName>
+                        <affiliation>Oficina del Historiador de La Ciudad de La Habana</affiliation>
+                        <occupation>Director of Information Technology</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Juliana Hutai</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student assistant</occupation>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda">Linda Kirsten</ref>
+                            </hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Research assistant (coordination, editing)</occupation>
+                    </person>
                     <person>
                         <persName>
                             <hi rendition="#b">
@@ -46,24 +71,11 @@
                     </person>
                     <person>
                         <persName>
-                            <hi rendition="#b">
-                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/ette-ottmar">Prof. Dr. Ottmar Ette</ref>
-                            </hi>
-                        </persName>
-                        <affiliation>Universität Potsdam</affiliation>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Co-solicitor</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">
-                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraller-kathrin">Dr. Kathrin Kraller</ref>
-                            </hi>
+                            <hi rendition="#b">Violeta López</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
-                        <occupation>Research assistant (coordination, editing)</occupation>
+                        <occupation>Student assistant</occupation>
                     </person>
                     <person>
                         <persName>
@@ -74,58 +86,6 @@
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
                         <occupation>Research assistant (digital humanities, editing)</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Arrate Cano Martín-Lara</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Student assistant (until January 2021)</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Juliana Hutai</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Student assistant</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Violeta López</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Student assistant</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Alina Mendt</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Student assistant (until September 2020)</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Zora Steiner</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Student assistant (until December 2019)</occupation>
-                    </person>
-                </listPerson>
-            </div>
-            <div>
-                <head>Team Havana</head>
-                <listPerson>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Eritk Guerra</hi>
-                        </persName>
-                        <affiliation>Oficina del Historiador de La Ciudad de La Habana</affiliation>
-                        <occupation>Director of Information Technology</occupation>
                     </person>
                     <person>
                         <persName>
@@ -140,6 +100,47 @@
                         </persName>
                         <affiliation>Oficina del Historiador de La Ciudad de La Habana - Documentary Heritage</affiliation>
                         <occupation>Director</occupation>
+                    </person>
+                </listPerson>
+            </div>
+            <div>
+                <head>Former members</head>
+                <listPerson>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Arrate Cano Martín-Lara</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student assistant</occupation>
+                        <note>June 2019 to January 2021</note>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Dr. Kathrin Kraller</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Research assistant (coordination, editing)</occupation>
+                        <note>June 2019 to November 2021</note>
+                    </person>
+                     <person>
+                        <persName>
+                            <hi rendition="#b">Alina Mendt</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student assistant</occupation>
+                        <note>December 2019 to September 2020</note>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Zora Steiner</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student assistant</occupation>
+                        <note>June 2019 to December 2019</note>
                     </person>
                 </listPerson>
             </div>
@@ -186,25 +187,9 @@
                             center of Havana. The Casa Humboldt is the site of <hi rendition="#i">Proyecto Humboldt Digital</hi> in Cuba.</note>
                     </org>
                     <org>
-                        <orgName>Academia de Ciencias de Cuba (ACC)</orgName>
-                        <note>The <ref target="http://www.academiaciencias.cu">Academia de Ciencias
-                                de Cuba (ACC)</ref> is in charge of promoting science, as well as of
-                            building and strengthening international academic relations and provides
-                            scientific advice. Since 2016 there has been a memorandum of
-                            understanding between the ACC and the BBAW.</note>
-                    </org>
-                    <org>
                         <orgName>Archivo Nacional de Cuba (ANC)</orgName>
                         <note>The Archivo Nacional de Cuba (ANC) preserves the most important
                             documents for <hi rendition="#i">Proyecto Humboldt Digital</hi>'s digitization campaign.</note>
-                    </org>
-                    <org>
-                        <orgName>Universidad de las Ciencias Informáticas (UCI)</orgName>
-                        <note>The <ref target="https://www.uci.cu">Universidad de las Ciencias
-                                Informáticas (UCI)</ref> is Cuba's leading university in the field
-                            of computer science. It advices about software solutions and frontend
-                            design for the digital infrastructure of the <hi rendition="#i">Proyecto
-                                Humboldt Digital</hi>.</note>
                     </org>
                     <org>
                         <orgName>Instituto de Literatura y Lingüística (ILL)</orgName>
