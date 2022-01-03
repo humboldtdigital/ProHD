@@ -12,24 +12,12 @@
             <forename>Antonio</forename>
           </persName>
         </editor>
-        <respStmt>
-          <persName>
-            <surname>Cano</surname>
-            <forename>Arrate</forename>
+        <editor>
+          <persName ref="https://orcid.org/0000-0002-8916-4997">
+            <surname>Kraft</surname>
+            <forename>Tobias</forename>
           </persName>
-          <resp>
-            <note type="remarkResponsibility">Colaboración</note>
-          </resp>
-        </respStmt>
-        <respStmt>
-          <persName>
-            <surname>Kirsten</surname>
-            <forename>Linda</forename>
-          </persName>
-          <resp>
-            <note type="remarkResponsibility">Colaboración</note>
-          </resp>
-        </respStmt>
+        </editor>
         <respStmt>
           <persName>
             <surname>López</surname>
@@ -68,8 +56,8 @@
         <head>Metadatos generales</head>
         <p>Los metadatos generales son de carácter descriptivo y ayudan a identificar la edición
           digital, los responsables de la publicación, la fuente de la que deriva el textos, las
-          condiciones relacionadas con la creación y el tipo de texto.</p>
-        <p>Son aplicables a todos los tipos de texto (documento, carta, etc.) del proyecto.</p>
+          condiciones relacionadas con la creación y el tipo de texto. Son aplicables a todos los
+          tipos de texto (documento, carta, etc.) del proyecto.</p>
         <div type="level2" xml:id="titulo">
           <head>Título</head>
           <p>Todas las ediciones deben identificarse con un título principal. El título debe ser
@@ -474,8 +462,7 @@
             intelectual del texto.</p>
           <p>El resumen se debe codificar en <seg type="code">//profileDesc/abstract</seg> en un
             elemento <seg type="code">p</seg> de la siguiente manera:</p>
-          <ab type="code"> &lt;abstract xml:lang="es"&gt; 
-            &lt;p&gt;Notas de Humboldt sobre la obra
+          <ab type="code"> &lt;abstract xml:lang="es"&gt; &lt;p&gt;Notas de Humboldt sobre la obra
             de Jean Nicolas Berthe "Précis Historique de la Maladie qui a régné dans l’Andalousie en
             1800". Humboldt resume las tesis del trabajo de Berthe en preparación de su tratado
             científico sobre la fiebre amarilla. La obra de Berthe fue publicada en 1802.&lt;/p&gt;
