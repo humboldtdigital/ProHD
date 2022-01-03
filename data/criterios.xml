@@ -400,26 +400,28 @@
         </div>
         <div type="level2" xml:id="autor-del-texto">
           <head>Autor del texto</head>
-          <p>La información sobre los autores debe ser anotada en el elemento <seg type="code"
-              >profileDesc</seg>. Allí, se crea un elemento <seg type="code">creation</seg> en el
-            cual se registran los datos sobre el origen: autor, lugar de escritura y fecha de
-            creación.</p>
-          <p>El nombre del autor debe ser marcado con el elemento <seg type="code">persName</seg>.
-            En caso de seleccionar el autor del registro de personas, el ID asociado se genera en el
+          <p>Si se conoce quién es autor del texto, esta información debe codificarse en el elemento
+              <seg type="code">profileDesc</seg>. Allí, debe crearse un elemento <seg type="code"
+              >creation</seg> en el cual se codifican los datos sobre la creación: autor, lugar de
+            escritura y fecha de creación.</p>
+          <p>El nombre del autor debe caso con el elemento <seg type="code">persName</seg>. En
+            caso de seleccionar el autor del registro de personas, el ID asociado se genera en el
             atributo <seg type="code">@key</seg>, creando un enlace al registro.</p>
           <ab type="codeblock"> &lt;profileDesc&gt; &lt;creation&gt;&lt;persName
             key="H0012682"&gt;Arango y Parreño, Francisco de
             (1765-1837)&lt;/persName&gt;…&lt;/creation&gt; &lt;/profileDesc&gt;</ab>
+          <p>Se escribirá siempre primero apellido y luego el nombre, separados por una coma. Si se conoce la fecha de nacimiento y fallecimiento, es posible incluirla seguida del nombre y entre paréntesis.</p>
         </div>
         <div type="level2" xml:id="lugar-de-escritura">
           <head>Lugar de escritura</head>
-          <p>Las anotaciones se realizan en el elemento <seg type="code">profileDesc</seg>. Allí, se
-            crea un elemento <seg type="code">creation</seg> en el que se anota información sobre el
-            origen: autor, lugar de escritura, fecha de creación.</p>
-          <p>Allí se crea el elemento <seg type="code">placeName</seg>, en el que se anota el nombre
+          <p>Si se conoce el lugar de escritura, se debe codificar también en el elemento <seg
+              type="code">profileDesc</seg>. Allí, si aún no existiera uno, se creará un elemento
+              <seg type="code">creation</seg> en el que se codificará la información sobre la creación: autor,
+            lugar de escritura, fecha de creación.</p>
+          <p>Dentro de este elemento, se utilizará <seg type="code">placeName</seg> para codificar el nombre
             del lugar. Si el lugar de escritura figura en el registro de lugares, el ID asociado se
             genera en el atributo <seg type="code">@key</seg>, creando un enlace al registro de
-            lugares.</p>
+            lugares. Por ejemplo:</p>
           <ab type="codeblock"> &lt;profileDesc&gt; &lt;creation&gt;&lt;placeName
             key="ed_wz2_shs_qx"&gt;Madrid&lt;/placeName&gt;…&lt;/creation&gt;
             &lt;/profileDesc&gt;</ab>
