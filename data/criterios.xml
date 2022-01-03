@@ -1,6 +1,7 @@
 <?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?>
 <?teipublisher template="view-grid-prohd.html" odd="prohd.odd" view="div"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -17,8 +18,8 @@
             <forename>Arrate</forename>
           </persName>
           <resp>
-                        <note type="remarkResponsibility">Colaboración</note>
-                    </resp>
+            <note type="remarkResponsibility">Colaboración</note>
+          </resp>
         </respStmt>
         <respStmt>
           <persName>
@@ -26,17 +27,17 @@
             <forename>Linda</forename>
           </persName>
           <resp>
-                        <note type="remarkResponsibility">Colaboración</note>
-                    </resp>
+            <note type="remarkResponsibility">Colaboración</note>
+          </resp>
         </respStmt>
-         <respStmt>
+        <respStmt>
           <persName>
             <surname>López</surname>
             <forename>Violeta</forename>
           </persName>
           <resp>
-                        <note type="remarkResponsibility">Colaboración</note>
-                    </resp>
+            <note type="remarkResponsibility">Colaboración</note>
+          </resp>
         </respStmt>
         <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
         <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
@@ -47,9 +48,9 @@
       </editionStmt>
       <publicationStmt>
         <publisher>
-                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-            Wissenschaften (BBAW)</ref>
-                </publisher>
+          <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der Wissenschaften
+            (BBAW)</ref>
+        </publisher>
         <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
         <availability status="free">
           <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Atribución
@@ -65,130 +66,114 @@
     <body>
       <div type="level1" xml:id="metadatos-generales">
         <head>Metadatos generales</head>
-        <p>Codificación de los metadatos de los textos editados. Los metadatos generales son
-          aplicables a todos los tipos de texto.</p>
-        <div type="level2" xml:id="uri-del-registro-archivístico">
-          <head>URI del registro archivístico</head>
-          <p>Los materiales de archivo se identifican tradicionalmente con una signatura. Dado que
-            las signaturas solo pueden ser identificados parcialmente por máquinas, en caso de
-            disponer de un URI, éste debe ser añadido. URI es un identificador de recursos uniforme
-            (del inglés <quote rendition="#i">Uniform Resource Identifier</quote>). El identificador
-            está estandarizado (<ref target="https://tools.ietf.org/html/rfc3986">RFC 3986</ref>) y
-            es legible por máquina, ya que unicamente se compone de ciertos símbolos (especialmente
-            los espacios en blanco no están permitidos). <ref target="https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme">El artículo
-              de la wikipedia acerca del URI</ref> ofrece un breve resumen de la syntaxis. (Para
-            información más detallada, lea <ref target="https://de.wikipedia.org/wiki/Uniform_Resource_Identifier#Aufbau">el articulo
-              en inglés</ref>)</p>
-          <p>Cada vez más archivos y catálogos colectivos ofrecen URIs. En el mundo de habla
-            alemana, el catálogo colectivo <quote rendition="#i">Kalliope</quote> asigna un URI con
-            cada elemento de la lista. Este URI es denominado EAD-ID, <quote rendition="#i">Encoded
-              Archival Description-Identifier</quote>, p. ej.: <ref target="http://kalliope-verbund.info/DE-611-HS-2877719">http://kalliope-verbund.info/DE-611-HS-2877719</ref>
-                    </p>
-          <table>
-            <row role="label">
-              <cell>
-                <p>Nombre del elemento</p>
-              </cell>
-              <cell>
-                <p>Punto de inserción</p>
-              </cell>
-              <cell>
-                <p>Atributo</p>
-              </cell>
-              <cell>
-                <p>Contenido del elemento</p>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <p>
-                  <seg type="code">idno</seg>
-                </p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">//msIdentifier/idno</seg>
-                </p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">@type="uri"</seg>
-                </p>
-              </cell>
-              <cell>
-                <p>[URI]</p>
-              </cell>
-            </row>
-          </table>
-          <p>Por ejemplo:</p>
-          <ab type="codeblock">&lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-2877719&lt;/idno&gt;</ab>
+        <p>Los metadatos generales son de carácter descriptivo y ayudan a identificar la edición
+          digital, los responsables de la publicación, la fuente de la que deriva el textos, las
+          condiciones relacionadas con la creación y el tipo de texto.</p>
+        <p>Son aplicables a todos los tipos de texto (documento, carta, etc.) del proyecto.</p>
+        <div type="level2" xml:id="titulo">
+          <head>Título</head>
+          <p>Todas las ediciones deben identificarse con un título principal. El título debe ser
+            descriptivo y breve.</p>
+          <p>La ortografía del título principal debe estar normalizada.</p>
+          <p>Además, tras el título principal, se puede incluir de manera opcional el título
+            principal en otro idioma o con la ortografía original; también es posible añadir un
+            subtítulo.</p>
+          <p>La codificación del título principal se realizará utilizando el elemento <seg
+              type="code">title</seg> y el atributo <seg type="code">type="main"</seg>. Por
+            ejemplo:</p>
+          <ab type="codeblock">&lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La
+            Habana&lt;/title&gt;</ab>
+          <p>Si se desea incluir un subtítulo o una título en otro idioma u ortografía, se puede
+            repetir el elemento <seg type="code">title</seg> debajo del título principal y usar el
+            atributo <seg type="code">type="sub"</seg>:</p>
+          <ab type="codeblock"> &lt;title type="main"&gt;Carta de Francisco de Arango y Parreño a
+            Alexander von Humboldt&lt;/title&gt; &lt;title type="sub" xml:lang="fr"&gt;À Monsieur
+            Mr. le Baron A. Humboldt&lt;/title&gt; </ab>
+          <p>Además, se puede usar de manera opcional el atributo <seg type="code"
+            >xml:lang</seg>.</p>
         </div>
-        <div type="level2" xml:id="facsímil-digital">
-          <head>Facsímil digital</head>
-          <p>Los facsímiles digitales ofrecidos por terceros, pueden ser enlazados de dos maneras:
-            por un lado por separado y unidos al cambio de página o folio. Por otro lado de manera
-            general y ligados al manuscrito completo. Es recomendable enlazar los facsímiles al
-            manuscrito completo y no por páginas, por ejemplo en caso de registros. En caso de ser
-            necesario enlazar el facsímil digital con una página concreta del manuscrito, se puede
-            hacer a través de los metadatos. A la hora de combinar un enlace externo con una copia
-            digital, debe hacerse utilizando el permalink que ofrecen las páginas web de las
-            instituciones. Para las referencias del catálogo <quote rendition="#i">Kalliope</quote>
-            debe ser añadido el enlace que ellos llaman <quote rendition="#i">Digitalisat</quote>.</p>
-          <p>Los facsímiles digitales que no están relacionados con la estructura de las páginas,
-            deben ser anotados en el elemento TEI/facsimile con elementos <seg type="code">graphic</seg>:</p>
-          <ab type="codeblock"> 
-            &lt;facsimile&gt;
-              &lt;graphic url="http://ejemplourl.com/image"&gt;
-            &lt;facsimile&gt;</ab>
+        <div type="level2" xml:id="editores-y-colaboradores">
+          <head>Editores y colaboradores</head>
+          <p>Los editores y las editoras se anotan en el elemento <seg type="code">editor</seg>. El
+            nombre de la persona se especifica en el elemento hijo <seg type="code"
+            >persName</seg>.</p>
+          <list type="unordered">
+            <item>
+              <p>Apellido: <seg type="code">surname</seg>
+              </p>
+            </item>
+            <item>
+              <p>Nombre: <seg type="code">forename</seg>
+              </p>
+            </item>
+          </list>
+          <p>En el atributo <seg type="code">@ref</seg> se anota la referencia a una base de datos
+            externa en forma de URI, VIAF etc.</p>
+          <ab type="codeblock"> &lt;editor&gt; &lt;persName ref="118763784"&gt;
+            &lt;surname&gt;[Apellido]&lt;/surname&gt; &lt;forename&gt;[Nombre]&lt;/forename&gt;
+            &lt;/persName&gt; &lt;/editor&gt;</ab>
+          <p>La información sobre los colaboradores y colaboradoras se anota en el elemento <seg
+              type="code">respStmt</seg> (<quote rendition="#i">statement of responsibility</quote>
+            – declaración de responsabilidad). La información personal se añade en el elemento <seg
+              type="code">persName</seg>.</p>
+          <list type="unordered">
+            <item>
+              <p>Apellido: <seg type="code">surname</seg>
+              </p>
+            </item>
+            <item>
+              <p>Nombre: <seg type="code">forename</seg>
+              </p>
+            </item>
+          </list>
+          <p>En el atributo <seg type="code">@ref</seg> se anota la referencia a una base de datos
+            externa en forma de URI, VIAF etc.</p>
+          <p>El tipo de colaboración será definido detalladamente en un elemento <seg type="code"
+              >resp</seg> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
+            elemento <seg type="code">note</seg> se identifica la contribución que puede ser de
+            distintos tipos: colaboración, colaboración editorial, transcripción, comentario y
+            registros.</p>
+          <ab type="codeblock">+ &lt;respStmt&gt; &lt;persName ref="118763784"&gt;
+            &lt;surname&gt;[Apellido]&lt;/surname&gt; &lt;forename&gt;[Nombre]&lt;/forename&gt;
+            &lt;/persName&gt; &lt;resp&gt; &lt;note
+            type="remarkResponsibility"&gt;colaboración&lt;/note&gt; &lt;/resp&gt;
+            &lt;/respStmt&gt;</ab>
         </div>
-        <div type="level2" xml:id="descripción-del-documento">
-          <head>Descripción del documento</head>
-          <p>En la descripción del documento se expondrán las características del mismo, por
-            ejemplo, papel, formato, número de páginas etc.</p>
-          <p>La descripción del documento será anotada en el elemento <seg type="code">physDesc</seg> (<quote rendition="#i">physical description</quote>, en español:
-            descripción física). La descripción se da como texto en un elemento <seg type="code">p</seg>:</p>
-          <ab type="codeblock">
-            &lt;physDesc&gt;
-              &lt;p&gt;La carta consiste en una hoja de papel blanco delgado en el formato …&lt;/p&gt; 
-            &lt;/physDesc&gt;</ab>
+        <div type="level2" xml:id="financiación"><!-- to do: funder --></div>
+        <div type="level2" xml:id="edicion"><!-- to do: edición --></div>
+        <div type="level2" xml:id="publicación-licencia"
+          ><!-- to do: publicación y licencia --></div>
+        <div type="level2" xml:id="tradición-manuscrita">
+          <head>Tradición manuscrita</head>
+          <p>En todas las ediciones del proyecto se debe codificar la fuente de la que deriva el
+            texto, el nombre de la institución en el que se conserva el documento y al menos un
+            identificador como una signatura. Si fuera necesario también se puede incluir la
+            colección.</p>
+          <p>La descripción de la fuente debe codificarse con el elemento <seg type="code"
+              >msDesc</seg> (manuscript description). La identificación de la fuente textaul se
+            deben codificar con el elemento <seg type="code">msIdentifier</seg>: la institución en
+            la que se conserva el documento se debe codificar con el elemento <seg type="code"
+              >insitution</seg> y la signatura con elemento <seg type="code">idno</seg>, que llevará
+            el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>.
+            Se pueden añadir opcionalmente la colección en el elemento <seg type="code"
+              >collection</seg>.</p>
+          <ab type="codeblock"> &lt;witness&gt; &lt;msDesc type="copy"&gt; &lt;msIdentifier&gt;
+            &lt;institution&gt;[institución]&lt;/institution&gt;
+            &lt;collection&gt;[colección]&lt;/collection&gt; &lt;idno&gt; &lt;idno
+            type="shelfmark"&gt;[signatura]&lt;/idno&gt; &lt;/idno&gt; &lt;/msIdentifier&gt;
+            &lt;/msDesc&gt; &lt;/witness&gt;</ab>
         </div>
         <div type="level2" xml:id="tradición-impresa">
           <head>Tradición impresa</head>
-          <p>La tradición impresa informa sobre la publicación de la que procede el testimonio
-            textual (impreso).</p>
-          <p>El testimonio impreso será etiquetado en un elemento <seg type="code">witness</seg>.
-            Las referencias literarias deben ser anotadas en el elemento <seg type="code">bibl</seg>. El atributo <seg type="code">@type</seg> indica con el valor <seg type="code">print</seg> que se trata de un testimonio impreso (y no un manuscrito o
-            algo similar).</p>
-            <p>Por ejemplo:</p>
-          <ab type="codeblock">
-            &lt;witness&gt;
-                &lt;bibl type="print"&gt;Humboldt, Alexander von: Geografía de la plantas, ó Quadro físico de los Andes Equinoxiales, y de los paises vecinos. 
-                Semanario del Nuevo Reyno de Granada, volumen 16-21, 1809.&lt;/bibl&gt;
-            &lt;/witness&gt;</ab>
-        </div>
-        <div type="level2" xml:id="tradición-manuscrita">
-          <head>Tradición manuscrita</head>
-          <p>Si la tradición manuscrita sólo está probado por un archivo y si se trata de una copia
-            o de un borrador, se debe dar información sobre la institución en la que se conserva. En
-            caso de estar disponibles se añadirán la colección y signatura correspondiente.</p>
-          <p>El testimonio textual debe ser anotado en un elemento <seg type="code">witness</seg>.
-            En el elemento <seg type="code">msDesc</seg> (manuscript description) y mediante el
-            atributo <seg type="code">@type</seg> se puede especificar si se trata de una copia
-              (<seg type="code">copy</seg>) o un borrador (<seg type="code">concept</seg>). Los
-            detalles del testimonio textual se anotan en el elemento <seg type="code">msIdentifier</seg>. La institución en la que se conserva el testimonio textual se
-            especifica en <seg type="code">insitution</seg> . Se pueden añadir opcionalmente la
-            colección en <seg type="code">collection</seg> y una signatura en <seg type="code">idno</seg> con el atributo <seg type="code">@type</seg> y el valor <seg type="code">shelfmark</seg>.</p>
-          <ab type="codeblock">
-            &lt;witness&gt;
-              &lt;msDesc type="copy"&gt;
-                &lt;msIdentifier&gt;
-                  &lt;institution&gt;[institución]&lt;/institution&gt;
-                  &lt;collection&gt;[colección]&lt;/collection&gt;
-                  &lt;idno&gt;
-                    &lt;idno type="shelfmark"&gt;[signatura]&lt;/idno&gt;
-                  &lt;/idno&gt;
-                &lt;/msIdentifier&gt;
-              &lt;/msDesc&gt;
+          <p>Cuando la fuente de la que deriva el texto es un documento impreso, se debe codificar
+            la información con el elemento <seg type="code">witness</seg>. Dentro se debe utilizar
+            un elemento <seg type="code">bibl</seg> para codificar una referencia bibliográfica. Se
+            debe utilizar el atributo <seg type="code">@type</seg> con el valor <seg type="code"
+              >print</seg> para distinguirlo de un manuscrito.</p>
+          <p>Por ejemplo:</p>
+          <ab type="codeblock">&lt;witness&gt; &lt;bibl type="print"&gt;Humboldt, Alexander von:
+            Geografía de la plantas, ó Quadro físico de los Andes Equinoxiales, y de los paises
+            vecinos. Semanario del Nuevo Reyno de Granada, volumen 16-21, 1809.&lt;/bibl&gt;
             &lt;/witness&gt;</ab>
         </div>
         <div type="level2" xml:id="tipo-de-base-textual">
@@ -209,7 +194,8 @@
               <p>Impreso</p>
             </item>
           </list>
-          <p>En algunos casos hay varias testimonios textuales, en este caso se debe escoger <hi rendition="#i">un único</hi> testimonio textual en el cual se basa la edición. Los
+          <p>En algunos casos hay varias testimonios textuales, en este caso se debe escoger <hi
+              rendition="#i">un único</hi> testimonio textual en el cual se basa la edición. Los
             demás testimonios textuales se mencionan explícitamente en la edición sólo en los puntos
             en que indican variantes, mediante un comentario editorial.</p>
           <p>Si la existencia y el contenido de un documento se han deducido con la ayuda de otros
@@ -224,7 +210,7 @@
               </cell>
               <cell>
                 <p>Valor para <seg type="code">@rend</seg>
-                                </p>
+                </p>
               </cell>
             </row>
             <row>
@@ -281,24 +267,93 @@
           <p>Por ejemplo:</p>
           <ab type="codeblock">&lt;msDesc rend="manuscript"&gt;</ab>
         </div>
-        <div type="level2" xml:id="seleccionar-base-de-textos">
-          <head>Seleccionar base de textos</head>
-          <p>La base textual se marca en el elemento <seg type="code">witness</seg> con el atributo
-              <seg type="code">@select</seg>. El atributo siempre tiene el valor <quote rendition="#i">#this</quote>.</p>
-          <ab type="codeblock">&lt;witness select="#this"&gt;</ab>
+        <div type="level2" xml:id="uri-del-registro-archivístico">
+          <head>URI del registro archivístico</head>
+          <p>Las fuentes documentales se identifican tradicionalmente con una signatura. Dado que
+            las signaturas solo pueden ser identificadas parcialmente por máquinas, en caso de
+            disponer de un URI, éste debe ser añadido. El URI es un identificador de recursos
+            uniforme (del inglés <quote rendition="#i">Uniform Resource Identifier</quote>). El
+            identificador está estandarizado (<ref target="https://tools.ietf.org/html/rfc3986">RFC
+              3986</ref>) y es legible por una máquina, ya que únicamente se compone de ciertos
+            símbolos (especialmente los espacios en blanco no están permitidos). <ref
+              target="https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme">El artículo
+              de la wikipedia acerca del URI</ref> ofrece un breve resumen de la sintaxis. (Para
+            información más detallada, lea <ref
+              target="https://de.wikipedia.org/wiki/Uniform_Resource_Identifier#Aufbau">el articulo
+              en inglés</ref>)</p>
+          <p>Cada vez más archivos, bibliotecas y catálogos colectivos ofrecen URIs. En el mundo de
+            habla alemana, el catálogo colectivo <quote rendition="#i">Kalliope</quote> asigna un
+            URI a cada elemento de la lista. Este URI es denominado EAD-ID, <quote rendition="#i"
+              >Encoded Archival Description-Identifier</quote>, p. ej.: <ref
+                target="http://kalliope-verbund.info/DE-611-HS-2877719"
+                >http://kalliope-verbund.info/DE-611-HS-2877719</ref>
+          </p>
+          <p>En todas las ediciones del proyecto debería haber una URI que conectar la edición con
+            el registro bibliográfico de un repositorio digital.</p>
+          <table>
+            <row role="label">
+              <cell>
+                <p>Nombre del elemento</p>
+              </cell>
+              <cell>
+                <p>Punto de inserción</p>
+              </cell>
+              <cell>
+                <p>Atributo</p>
+              </cell>
+              <cell>
+                <p>Contenido del elemento</p>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                <p>
+                  <seg type="code">idno</seg>
+                </p>
+              </cell>
+              <cell>
+                <p>
+                  <seg type="code">//msIdentifier/idno</seg>
+                </p>
+              </cell>
+              <cell>
+                <p>
+                  <seg type="code">@type="uri"</seg>
+                </p>
+              </cell>
+              <cell>
+                <p>[URI]</p>
+              </cell>
+            </row>
+          </table>
+          <p>Utiliza el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; de la
+            siguiente manera: </p>
+          <ab type="codeblock">&lt;idno
+            type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-2877719&lt;/idno&gt;</ab>
+        </div>
+        <div type="level2" xml:id="descripción-del-documento">
+          <head>Descripción del documento</head>
+          <p>En la descripción del documento se expondrán las características físicas del mismo:
+            papel, formato, número de páginas, etc.</p>
+          <p>La descripción del documento se debe codificar con el elemento <seg type="code"
+              >physDesc</seg> (<quote rendition="#i">physical description</quote>, en español:
+            descripción física). La descripción debe darse como texto en un elemento <seg
+              type="code">p</seg>:</p>
+          <ab type="codeblock">&lt;physDesc&gt; &lt;p&gt;La carta consiste en una hoja de papel
+            blanco delgado en el formato …&lt;/p&gt; &lt;/physDesc&gt;</ab>
         </div>
         <div type="level2" xml:id="autor-del-texto">
           <head>Autor del texto</head>
-          <p>La información sobre los autores debe ser anotada en el elemento <seg type="code">profileDesc</seg>. Allí, se crea un elemento <seg type="code">creation</seg> en el
+          <p>La información sobre los autores debe ser anotada en el elemento <seg type="code"
+              >profileDesc</seg>. Allí, se crea un elemento <seg type="code">creation</seg> en el
             cual se registran los datos sobre el origen: autor, lugar de escritura y fecha de
             creación.</p>
           <p>El nombre del autor debe ser marcado con el elemento <seg type="code">persName</seg>.
             En caso de seleccionar el autor del registro de personas, el ID asociado se genera en el
             atributo <seg type="code">@key</seg>, creando un enlace al registro.</p>
-          <ab type="codeblock">
-            &lt;profileDesc&gt; 
-              &lt;creation&gt;&lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;…&lt;/creation&gt;
-            &lt;/profileDesc&gt;</ab>
+          <ab type="codeblock"> &lt;profileDesc&gt; &lt;creation&gt;&lt;persName
+            key="H0012682"&gt;Arango y Parreño, Francisco de
+            (1765-1837)&lt;/persName&gt;…&lt;/creation&gt; &lt;/profileDesc&gt;</ab>
         </div>
         <div type="level2" xml:id="lugar-de-escritura">
           <head>Lugar de escritura</head>
@@ -309,15 +364,15 @@
             del lugar. Si el lugar de escritura figura en el registro de lugares, el ID asociado se
             genera en el atributo <seg type="code">@key</seg>, creando un enlace al registro de
             lugares.</p>
-          <ab type="codeblock">
-            &lt;profileDesc&gt;
-              &lt;creation&gt;&lt;placeName key="ed_wz2_shs_qx"&gt;Madrid&lt;/placeName&gt;…&lt;/creation&gt;
+          <ab type="codeblock"> &lt;profileDesc&gt; &lt;creation&gt;&lt;placeName
+            key="ed_wz2_shs_qx"&gt;Madrid&lt;/placeName&gt;…&lt;/creation&gt;
             &lt;/profileDesc&gt;</ab>
         </div>
         <div type="level2" xml:id="fechas">
           <head>Fechas</head>
           <p>Las fechas se marcan con el elemento <seg type="code">date</seg> y se anotan en el
-            formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg type="code">AAAA</seg>, dependiendo de la información disponible) en los atributos
+            formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg
+              type="code">AAAA</seg>, dependiendo de la información disponible) en los atributos
               <seg type="code">@when</seg>, <seg type="code">@from</seg>/<seg type="code">@to</seg>
             o <seg type="code">@notBefore</seg>/<seg type="code">@notAfter</seg>. Esto permite que
             el ordenador utilice estos datos más adelante, como por ejemplo para buscar información
@@ -329,23 +384,24 @@
               <p>Fecha exacta</p>
             </item>
           </list>
-          <ab type="codeblock">
-            &lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;</ab>
+          <ab type="codeblock"> &lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del
+            año 1772&lt;/date&gt;</ab>
           <list type="ordered:arabic">
             <item n="2">
               <p>Período de tiempo exacto</p>
             </item>
           </list>
-          <ab type="codeblock">
-            &lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731 al 11 de septiembre de 1741&lt;/date&gt;</ab>
+          <ab type="codeblock"> &lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
+            1731 al 11 de septiembre de 1741&lt;/date&gt;</ab>
           <list type="ordered:arabic">
             <item n="3">
               <p>Período aproximado</p>
             </item>
           </list>
-          <ab type="codeblock">
-            &lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</ab>
+          <ab type="codeblock"> &lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera
+            mitad de mayo de 1804&lt;/date&gt;</ab>
         </div>
+        <div type="level2" xml:id="idioma"><!-- to do: idioma --></div>
         <div type="level2" xml:id="resumen">
           <head>Resumen</head>
           <p>Para las cartas u otros manuscritos, en caso de ser necesario, se pueden anotar
@@ -362,77 +418,16 @@
             </item>
           </list>
           <p>
-                        <hi rendition="#i">Nota</hi>: En la filología a veces se distingue entre registro y
+            <hi rendition="#i">Nota</hi>: En la filología a veces se distingue entre registro y
             resumen (más breve). Sin embargo, esto no se especifica explícitamente en el modelado de
             datos, ya que en ambos casos se trata de resúmenes.</p>
-          <p>El resumen será anotado en //profileDesc/abstract en un elemento <seg type="code">p</seg>. Es posible marcar nombres de personas. Las citas deben ser marcadas con <seg type="code">quote</seg> (véase el siguiente apartado).</p>
-          <ab type="codeblock">
-            &lt;abstract xml:lang="es"&gt;&lt;p&gt;Anuncio de un retrato&lt;/p&gt;&lt;/abstract&gt;</ab>
+          <p>El resumen será anotado en //profileDesc/abstract en un elemento <seg type="code"
+              >p</seg>. Es posible marcar nombres de personas. Las citas deben ser marcadas con <seg
+              type="code">quote</seg> (véase el siguiente apartado).</p>
+          <ab type="codeblock"> &lt;abstract xml:lang="es"&gt;&lt;p&gt;Anuncio de un
+            retrato&lt;/p&gt;&lt;/abstract&gt;</ab>
         </div>
-        <div type="level2" xml:id="citación-en-el-resumen-el-comentario-etc.">
-          <head>Citación en el resumen, el comentario, etc.</head>
-          <p>En algunos casos, se utilizan citas de la fuente en el resumen o en el comentario
-            editorial.</p>
-          <p>El resumen será marcado con un elemento <seg type="code">abstract</seg>. El texto que
-            compone el resumen se anota en un elemento <seg type="code">p</seg>. Las citas dentro
-            del texto del resumen están marcadas con un elemento <seg type="code">quote</seg>.</p>
-          <p>El texto en el elemento <seg type="code">quote</seg> se considera una transcripción.
-            Fenómenos textuales tales como eliminaciones, correcciones, etc. pueden ser
-            marcados.</p>
-          <ab type="codeblock"> 
-            &lt;abstract xml:lang="es"&gt;&lt;p&gt;Anuncio de un retrato &lt;quote&gt;&lt;hi rendition="#u"&gt;pronto&lt;/hi&gt; recibirá un retrato&lt;quote/&gt;&lt;/p&gt;&lt;/abstract&gt;</ab>
-        </div>
-        <div type="level2" xml:id="editores-y-colaboradores">
-          <head>Editores y colaboradores</head>
-          <p>Los editores y las editoras se anotan en el elemento <seg type="code">editor</seg>. El
-            nombre de la persona se especifica en el elemento hijo <seg type="code">persName</seg>.</p>
-          <list type="unordered">
-            <item>
-              <p>Apellido: <seg type="code">surname</seg>
-                            </p>
-            </item>
-            <item>
-              <p>Nombre: <seg type="code">forename</seg>
-                            </p>
-            </item>
-          </list>
-          <p>En el atributo <seg type="code">@ref</seg> se anota la referencia a una base de datos
-            externa en forma de URI, VIAF etc.</p>
-          <ab type="codeblock">
-            &lt;editor&gt;
-              &lt;persName ref="118763784"&gt;
-                &lt;surname&gt;[Apellido]&lt;/surname&gt;
-                &lt;forename&gt;[Nombre]&lt;/forename&gt;
-               &lt;/persName&gt;
-            &lt;/editor&gt;</ab>
-          <p>La información sobre los colaboradores y colaboradoras se anota en el elemento <seg type="code">respStmt</seg> (<quote rendition="#i">statement of responsibility</quote>
-            – declaración de responsabilidad). La información personal se añade en el elemento <seg type="code">persName</seg>.</p>
-          <list type="unordered">
-            <item>
-              <p>Apellido: <seg type="code">surname</seg>
-                            </p>
-            </item>
-            <item>
-              <p>Nombre: <seg type="code">forename</seg>
-                            </p>
-            </item>
-          </list>
-          <p>En el atributo <seg type="code">@ref</seg> se anota la referencia a una base de datos
-            externa en forma de URI, VIAF etc.</p>
-          <p>El tipo de colaboración será definido detalladamente en un elemento <seg type="code">resp</seg> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
-            elemento <seg type="code">note</seg> se identifica la contribución que puede ser de
-            distintos tipos: colaboración, colaboración editorial, transcripción, comentario y
-            registros.</p>
-          <ab type="codeblock">+
-            &lt;respStmt&gt; 
-              &lt;persName ref="118763784"&gt;
-                &lt;surname&gt;[Apellido]&lt;/surname&gt; &lt;forename&gt;[Nombre]&lt;/forename&gt;
-              &lt;/persName&gt;
-              &lt;resp&gt;
-                &lt;note type="remarkResponsibility"&gt;colaboración&lt;/note&gt;
-              &lt;/resp&gt;
-            &lt;/respStmt&gt;</ab>
-        </div>
+        <div type="level2" xml:id="clase"><!-- to do: clase de texto --></div>
       </div>
       <div type="level1" xml:id="texto">
         <head>Texto</head>
@@ -450,39 +445,43 @@
           </div>
           <div type="level3" xml:id="ruptura-de-línea">
             <head>Ruptura de línea</head>
-            <p>Las rupturas de línea serán transcritas como en el original. Los separadores <hi rendition="#i">no deben introducirse manualmente, es decir, con la tecla
+            <p>Las rupturas de línea serán transcritas como en el original. Los separadores <hi
+                rendition="#i">no deben introducirse manualmente, es decir, con la tecla
                 correspondiente del teclado</hi>.</p>
-            <p>Un salto de línea en el original se codifica con un elemento (vacío) <seg type="code">lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se utiliza como
+            <p>Un salto de línea en el original se codifica con un elemento (vacío) <seg type="code"
+                >lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se utiliza como
               el <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
               TEI.</p>
             <p>Si el salto de línea ocurre dentro de una palabra, éste debe ser marcado con el
               atributo <seg type="code">@break</seg> y el valor <seg type="code">no</seg>. En caso
               de aparecer un separador, éste será codificado como <seg type="code">
-                                <g ref="#typoHyphen"/>
-                            </seg>.</p>
-            <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za enorme de aguas detenidas</ab>
+                <g ref="#typoHyphen"/>
+              </seg>.</p>
+            <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za
+              enorme de aguas detenidas</ab>
           </div>
           <div type="level3" xml:id="foliación-y-paginación">
             <head>Foliación y paginación</head>
-            <p>Se registra la foliación o paginación, es decir el cambio de folio o página en la
-              fuente. Siempre se marca el principio del folio o página, no el final. En caso de
-              estar disponible en la web, se puede establecer un enlace permanente a la
-              digitalización correspondiente del folio en cuestión. En caso de que el autor haya
-              empleado otro sistema para numerar las páginas en el texto original, ésto se anota
-              además de la foliación.</p>
-            <p>Un cambio de folio o salto de página en la fuente debe ser marcado con el elemento
-              vacío <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
-              contiene el número de página o folio.</p>
-            <ab type="codeblock">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano</ab>
-            <p>La digitalización será marcada con el atributo <seg type="code">@facs</seg>
-              (facsimile). Como regla general deben ser añadidos solo los enlaces permanentes de la
-              institución que mantiene el inventario (archivo o biblioteca) o de servicios oficiales
-              (por ejemplo, Gallica).</p>
-            <ab type="codeblock">&lt;pb n="50r" facs="http://resolver.staatsbibliothek-berlin.de/SBB0001527100000099"/&gt;</ab>
-            <p>Otra información sobre la numeración contenida en la fuente será codificada con el
-              elemento <seg type="code">fw</seg> (forme work) cuyo atributo <seg type="code">@type</seg> contiene el valor <seg type="code">folNum</seg>.</p>
+            <p>Se debe marcar siempre el inicio de la foliación o paginación, es decir, el lugar en
+              que se inicia un nuevo folio o página en la fuente. Siempre se marca el principio del
+              folio o página, no el final. En caso de que el autor haya empleado otro sistema para
+              numerar las páginas en el texto original, también se debería marcar, además de la
+              foliación del documento físico.</p>
+            <p>El inicio de folio o página de la fuente se debe marcar siempre con el elemento vacío
+                <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
+              contiene el número de página o folio (según la secuencia física del documento o del
+              autor).</p>
+            <ab type="codeblock">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente
+              Americano</ab>
+            <p>La digitalización del folio o página se debe marcar con el atributo <seg type="code"
+                >@facs</seg> (facsimile). Como regla general solo el nombre del fichero de la imagen
+              digital; el nombre del fichero debe corresponder a un URI, es decir, ser único. Por
+              ejemplo:</p>
+            <ab type="codeblock">&lt;n="1r" facs="787980595-0001"/&gt;</ab>
+            <p>Cualquier otra información sobre la numeración contenida en la fuente se debe
+              codificar con el elemento <seg type="code">fw</seg> (forme work), cuyo atributo <seg
+                type="code">@type</seg> será el valor <seg type="code">folNum</seg>.</p>
             <ab type="codeblock">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</ab>
-            <p>Todas las variantes de marcado son conformes al DTABf.</p>
           </div>
           <div type="level3" xml:id="páginas-en-blanco">
             <head>Páginas en blanco</head>
@@ -497,10 +496,13 @@
               blanco registrada.</p>
             <p>Las páginas en blanco se marcan con el elemento (vacío) <seg type="code">gap/</seg>.
               Este se coloca justo después del salto de página (<seg type="code">pb/</seg>)
-              anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg> del elemento <seg type="code">gap/</seg> se establecen con los
-              valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Varias
+              anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code"
+                >@quantity</seg> del elemento <seg type="code">gap/</seg> se establecen con los
+              valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg
+                type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Varias
               páginas vacías seguidas serán codificadas individualmente.</p>
-            <ab type="codeblock">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</ab>
+            <ab type="codeblock">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1"
+              reason="empty"/&gt;</ab>
             <p>Tanto <ref target="#texto-ilegible">partes del texto dañadas o ilegibles</ref>, como
                 <ref target="#omisiones">omisiones hechas por los editores y editoras</ref> serán
               marcadas también con <seg type="code">gap/</seg>.</p>
@@ -510,13 +512,18 @@
             <p>El espacio en blanco semánticamente significativo en la fuente, por ejemplo, las
               lagunas dejados por el autor en el texto para complementar el texto posteriormente,
               pueden ser marcados con el elemento vacío <seg type="code">space</seg>. La
-              reproducción de dichos vacíos en la transcripción debe distinguirse de las <ref target="#omisiones">omisiones</ref> realizadas por los editores, así como de las
-                <ref target="#páginas-en-blanco">páginas vacías</ref> o <ref target="#texto-ilegible">perdidas</ref>, cada una de las cuales será marcada como
+              reproducción de dichos vacíos en la transcripción debe distinguirse de las <ref
+                target="#omisiones">omisiones</ref> realizadas por los editores, así como de las
+                <ref target="#páginas-en-blanco">páginas vacías</ref> o <ref
+                target="#texto-ilegible">perdidas</ref>, cada una de las cuales será marcada como
                 <seg type="code">gap/</seg>.</p>
             <p>El espacio en blanco semánticamente significativo será codificado mediante el
-              elemento (vacío) <seg type="code">space/</seg>. El atributo <seg type="code">@dim</seg> indica si es un espacio en blanco horizontal o vertical. El alcance de
-              la omisión se indica mediante los valores correspondientes de los atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg>. Si el número de líneas
-                (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code">unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
+              elemento (vacío) <seg type="code">space/</seg>. El atributo <seg type="code"
+                >@dim</seg> indica si es un espacio en blanco horizontal o vertical. El alcance de
+              la omisión se indica mediante los valores correspondientes de los atributos <seg
+                type="code">@unit</seg> y <seg type="code">@quantity</seg>. Si el número de líneas
+                (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code"
+                >unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
               puede determinar de manera segura, se muestra el valor <seg type="code">1</seg> en
                 <seg type="code">@quantity</seg>.</p>
           </div>
@@ -526,25 +533,25 @@
               en el texto, cada interrupción debe ser marcada. Hay que diferenciar entre las
               interrupciones en el texto y <ref target="#espacio-en-blanco">el espacio
                 semanticamente relevante</ref>, ya que este fue dejado intencionadamente.</p>
-            <p>Para marcar una interrupción del acto de escritura se utiliza el elemento <seg type="code">sic</seg> con el atributo <seg type="code">@ana</seg> y el valor <seg type="code">#break-off</seg>.</p>
+            <p>Para marcar una interrupción del acto de escritura se utiliza el elemento <seg
+                type="code">sic</seg> con el atributo <seg type="code">@ana</seg> y el valor <seg
+                type="code">#break-off</seg>.</p>
             <ab type="codeblock">&lt;sic ana="#break-off"/&gt;</ab>
           </div>
           <div type="level3" xml:id="listas">
             <head>Listas</head>
             <p>Las estructuras de texto que tengan forma de lista, serán marcadas como tal.</p>
-            <p>Las listas en el documento original serán marcadas con el elemento <seg type="code">list</seg>. Los puntos o líneas individuales se transcriben en un elemento <seg type="code">item</seg>. Cualquier numeración existente (también con letras) no tiene
+            <p>Las listas en el documento original serán marcadas con el elemento <seg type="code"
+                >list</seg>. Los puntos o líneas individuales se transcriben en un elemento <seg
+                type="code">item</seg>. Cualquier numeración existente (también con letras) no tiene
               por qué ser marcada independientemente, sino que simplemente se transcribe dentro del
               elemento <seg type="code">item</seg>.</p>
-            <ab type="codeblock">
-              &lt;list&gt; 
-                &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt; 
-                &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;mais quand le
-                    Capucin est islado = 10750 mètres.&lt;/item&gt; &lt;item&gt;Orinoco près du Baraguan
-                    889 t.&lt;/item&gt; 
-                &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au
-                    delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I.
-                    vieja de Montica.&lt;/item&gt; 
-              &lt;/list&gt;</ab>
+            <ab type="codeblock"> &lt;list&gt; &lt;item&gt;Le Rio Apure près de S. Fernando 206
+              t.&lt;/item&gt; &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;mais quand le
+              Capucin est islado = 10750 mètres.&lt;/item&gt; &lt;item&gt;Orinoco près du Baraguan
+              889 t.&lt;/item&gt; &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au
+              delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I.
+              vieja de Montica.&lt;/item&gt; &lt;/list&gt;</ab>
           </div>
           <div type="level3" xml:id="tablas">
             <head>Tablas</head>
@@ -554,51 +561,35 @@
               contenidos. Se debe distinguir entre tablas y <ref target="#listas">enumeraciones que
                 se asemejan a listas</ref>.</p>
             <p>Las tablas se marcan con el elemento <seg type="code">table</seg>. A continuación, se
-              asigna a la primera fila de la tabla el papel del etiquetado: <seg type="code">@role="label"</seg>.</p>
-            <ab type="codeblock">
-              &lt;table rows="3" cols="2"&gt; 
-                &lt;head&gt;Tabla&lt;/head&gt;
-                  &lt;row role="label"&gt; 
-                      &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
-                      &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt;
-                  &lt;/row&gt; 
-                  &lt;row&gt;
-                      &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; 
-                      &lt;cell&gt;[Columna 2/ Fila 1]&lt;/cell&gt; 
-                  &lt;/row&gt; …     
-              &lt;/table&gt;</ab>
+              asigna a la primera fila de la tabla el papel del etiquetado: <seg type="code"
+                >@role="label"</seg>.</p>
+            <ab type="codeblock"> &lt;table rows="3" cols="2"&gt; &lt;head&gt;Tabla&lt;/head&gt;
+              &lt;row role="label"&gt; &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
+              &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt; &lt;/row&gt; &lt;row&gt;
+              &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; &lt;cell&gt;[Columna 2/ Fila
+              1]&lt;/cell&gt; &lt;/row&gt; … &lt;/table&gt;</ab>
           </div>
           <div type="level3" xml:id="alineación-de-texto">
             <head>Alineación de texto</head>
             <p>En las tablas y en el inicio de una carta, se puede especificar la alineación del
               texto. De este modo, las fechas o las celdas la tabla se alinean a la derecha.</p>
-            <p>El elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code">dateline</seg> se marca con un atributo <seg type="code">@rendition</seg> con el
+            <p>El elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code"
+                >dateline</seg> se marca con un atributo <seg type="code">@rendition</seg> con el
               valor <seg type="code">#right</seg>.</p>
-            <ab type="codeblock"> 
-              &lt;table cols="4" rows="20" rend="drawn"&gt; 
-                &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
-                  &lt;row role="label"&gt;
-                     &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
-                     &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell&gt;
-                      &lt;cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
-                        thermomètre de reaumur.&lt;/cell&gt; 
-                      &lt;cell&gt;température &lt;lb/&gt;de l’atmosphère.&lt;lb/&gt; 
-                      &lt;choice&gt;&lt;orig/&gt;&lt;reg&gt;thermomètre de
-                        reaumur.&lt;/reg&gt;
-                       &lt;/choice&gt;&lt;/cell&gt;
-                  &lt;/row&gt; 
-                  &lt;row&gt; 
-                    &lt;cell rendition="#right"&gt;43°. 29′&lt;/cell&gt; 
-                    &lt;cell rendition="#right"&gt;10°. 31′.″&lt;/cell&gt; 
-                    &lt;cell rendition="#right"&gt;12°.&lt;/cell&gt; 
-                    &lt;cell rendition="#right"&gt;18°.&lt;/cell&gt; 
-                  &lt;/row&gt; 
-                  &lt;row&gt;
-                    &lt;cell rendition="#right"&gt;39. 10.&lt;/cell&gt; 
-                    &lt;cell rendition="#right"&gt;16. 18. 30″&lt;/cell&gt;
-                    &lt;cell rendition="#right"&gt;12.&lt;/cell&gt; 
-                    &lt;cell rendition="#right"&gt;13.&lt;/cell&gt; 
-                  &lt;/row&gt; &lt;!--[…]--&gt; 
+            <ab type="codeblock"> &lt;table cols="4" rows="20" rend="drawn"&gt; &lt;head&gt;Océan
+              entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
+              &lt;row role="label"&gt; &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
+              &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell&gt;
+              &lt;cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
+              thermomètre de reaumur.&lt;/cell&gt; &lt;cell&gt;température &lt;lb/&gt;de
+              l’atmosphère.&lt;lb/&gt; &lt;choice&gt;&lt;orig/&gt;&lt;reg&gt;thermomètre de
+              reaumur.&lt;/reg&gt; &lt;/choice&gt;&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; &lt;cell
+              rendition="#right"&gt;43°. 29′&lt;/cell&gt; &lt;cell rendition="#right"&gt;10°.
+              31′.″&lt;/cell&gt; &lt;cell rendition="#right"&gt;12°.&lt;/cell&gt; &lt;cell
+              rendition="#right"&gt;18°.&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; &lt;cell
+              rendition="#right"&gt;39. 10.&lt;/cell&gt; &lt;cell rendition="#right"&gt;16. 18.
+              30″&lt;/cell&gt; &lt;cell rendition="#right"&gt;12.&lt;/cell&gt; &lt;cell
+              rendition="#right"&gt;13.&lt;/cell&gt; &lt;/row&gt; &lt;!--[…]--&gt;
               &lt;/table&gt;</ab>
           </div>
           <div type="level3" xml:id="nota-en-el-manuscrito">
@@ -610,15 +601,16 @@
               generalizada (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
               indicar que el texto fue introducido por el autor y no por los editores.</p>
             <p>
-                            <hi rendition="#b">Se debe diferenciar entre las notas y las adiciones</hi>: las
+              <hi rendition="#b">Se debe diferenciar entre las notas y las adiciones</hi>: las
               adiciones complementan el texto principal y se integran sintácticamente en él. Las
               notas son, como las notas a pie de página impresas, unidades de texto
               independientes</p>
-            <p>Las notas en el manuscrito se codifican en un elemento <seg type="code">note</seg>:</p>
-            <ab type="codeblock">En los partidos más remotos una caballería &lt;note
-              place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro
-              cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el
-              día a quinientos pesos fuertes al contado,[…]</ab>
+            <p>Las notas en el manuscrito se codifican en un elemento <seg type="code"
+              >note</seg>:</p>
+            <ab type="codeblock">En los partidos más remotos una caballería &lt;note place="mBottom"
+              hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta
+              y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos
+              pesos fuertes al contado,[…]</ab>
             <p>El autor de la nota se marca con el atributo <seg type="code">@hand</seg>. Existen
               los siguientes valores:</p>
             <table>
@@ -763,18 +755,19 @@
               </item>
             </list>
             <p>Los dibujos se capturan con el elemento <seg type="code">figure</seg>. La persona que
-              realizó el dibujo se indica con el atributo <seg type="code">@hand</seg>: <seg type="code">#author</seg>, <seg type="code">#addressee</seg>, <seg type="code">#unknown</seg> o una persona del registro de personas. En caso de que se disponga
+              realizó el dibujo se indica con el atributo <seg type="code">@hand</seg>: <seg
+                type="code">#author</seg>, <seg type="code">#addressee</seg>, <seg type="code"
+                >#unknown</seg> o una persona del registro de personas. En caso de que se disponga
               de un título en el documento original, éste debe ser registrado con el elemento
-              secundario <seg type="code">p</seg>. En el elemento hijo <seg type="code">figDesc</seg>, en cambio, la imagen es descrita por los editores y editoras. El
+              secundario <seg type="code">p</seg>. En el elemento hijo <seg type="code"
+                >figDesc</seg>, en cambio, la imagen es descrita por los editores y editoras. El
               nombre del archivo se anota con el atributo <seg type="code">@facs</seg>. Los
               comentarios editoriales que se refieren a la imagen en sí se registran en el elemento
               hijo <seg type="code">note</seg>.</p>
-            <ab type="codeblock">
-              &lt;figure facs="dibujo" hand="#addressee"&gt; 
-                &lt;p&gt;[Título de la figura]&lt;/p&gt;
-                &lt;figDesc&gt;[Descripción de la imagen por el editor]&lt;/figDesc&gt; 
-                &lt;note type="editorial"&gt;[Comentario editorial]&lt;/note&gt;
-              &lt;/figure&gt;</ab>
+            <ab type="codeblock"> &lt;figure facs="dibujo" hand="#addressee"&gt; &lt;p&gt;[Título de
+              la figura]&lt;/p&gt; &lt;figDesc&gt;[Descripción de la imagen por el
+              editor]&lt;/figDesc&gt; &lt;note type="editorial"&gt;[Comentario
+              editorial]&lt;/note&gt; &lt;/figure&gt;</ab>
           </div>
         </div>
         <div type="level2" xml:id="ediciones-textuales-por-el-autor">
@@ -784,7 +777,8 @@
             <p>Las marcas de subrayado y marcas en el borde del documento deben ser marcadas con una
               codificación específica para ello.</p>
             <p>Las palabras o partes de palabras subrayadas en el manuscrito serán marcadas con el
-              elemento <seg type="code">hi</seg> (highlighted). Con el atributo <seg type="code">@rendition</seg> se especifica de qué tipo de subrayado se trata:</p>
+              elemento <seg type="code">hi</seg> (highlighted). Con el atributo <seg type="code"
+                >@rendition</seg> se especifica de qué tipo de subrayado se trata:</p>
             <table>
               <row role="label">
                 <cell>
@@ -792,7 +786,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@rendition</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -830,14 +824,16 @@
             <ab type="codeblock">Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente
               de esta colonia. Agosto de 800''&lt;/hi&gt;</ab>
             <p>En caso de que un párrafo completo esté destacado en el margen, éste debe ser marcado
-              con el elemento <seg type="code">p</seg> y el atributo <seg type="code">@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
+              con el elemento <seg type="code">p</seg> y el atributo <seg type="code"
+                >@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
           </div>
           <div type="level3" xml:id="superscript">
             <head>Superscript</head>
             <p>Los números o letras superíndices en el manuscrito se marcan consecuentemente en la
               transcripción.</p>
             <p>Los números, letras o palabras enteras que aparecen en superíndice en el manuscrito
-              se indican con el elemento <seg type="code">hi</seg> (highlighted). El atributo <seg type="code">@rendition</seg> recibe el valor <seg type="code">#sup</seg>.</p>
+              se indican con el elemento <seg type="code">hi</seg> (highlighted). El atributo <seg
+                type="code">@rendition</seg> recibe el valor <seg type="code">#sup</seg>.</p>
             <ab type="codeblock">ap.&lt;hi rendition="#sup"&gt;do&lt;/hi&gt;</ab>
           </div>
           <div type="level3" xml:id="eliminaciones">
@@ -847,7 +843,8 @@
               normalizaciones y correcciones o adiciones del editor. La eliminación se marcará en
               consecuencia.</p>
             <p>Las palabras o partes de palabras eliminadas por el autor en el manuscrito se indican
-              con el elemento <seg type="code">del</seg> (deletion). El atributo <seg type="code">@rendition</seg> contiene más información sobre el tipo de eliminación.</p>
+              con el elemento <seg type="code">del</seg> (deletion). El atributo <seg type="code"
+                >@rendition</seg> contiene más información sobre el tipo de eliminación.</p>
             <table>
               <row role="label">
                 <cell>
@@ -855,7 +852,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@rendition</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -898,7 +895,8 @@
             <p>Las correcciones son eliminaciones con adiciones simultáneas, es decir, sustituciones
               realizadas por el propio autor o por editores contemporáneos. Todas estas correcciones
               se marcan.</p>
-            <p>Las correcciones en sentido amplio incluyen también las <ref target="#eliminaciones">eliminaciones</ref> y <ref target="#adiciones">adiciones</ref> (para más detalles,
+            <p>Las correcciones en sentido amplio incluyen también las <ref target="#eliminaciones"
+                >eliminaciones</ref> y <ref target="#adiciones">adiciones</ref> (para más detalles,
               véase allí). Las correcciones del autor que aquí se describen deben distinguirse de
                 <ref target="#correcciones-del-editor">las correciones por los editores y
                 editoras</ref>.</p>
@@ -906,7 +904,8 @@
               sustituye por una palabra añadida, estos dos fenómenos textuales se marcan juntos en
               un elemento <seg type="code">subst</seg> (substition).</p>
             <p>La palabra eliminada se especifica en el elemento <seg type="code">del</seg>
-              (deletion). El tipo de eliminación se especifica en el atributo <seg type="code">@rendition</seg>. Son posibles los siguientes valores:</p>
+              (deletion). El tipo de eliminación se especifica en el atributo <seg type="code"
+                >@rendition</seg>. Son posibles los siguientes valores:</p>
             <table>
               <row role="label">
                 <cell>
@@ -914,7 +913,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@rendition</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -949,7 +948,8 @@
               </row>
             </table>
             <p>La palabra (o palabras) de sustitución serán marcadas como <seg type="code">add</seg>
-              (addition). La ubicación de la adición se especifica con el atributo <seg type="code">@place</seg>:</p>
+              (addition). La ubicación de la adición se especifica con el atributo <seg type="code"
+                >@place</seg>:</p>
             <table>
               <row role="label">
                 <cell>
@@ -957,7 +957,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@place</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1022,11 +1022,9 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">en donde manifies&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;t
-              &lt;subst&gt;
-                &lt;del rendition="#ow"&gt;a&lt;/del&gt;
-                &lt;add place="across"&gt;o&lt;/add&gt;
-              &lt;/subst&gt; con la mayor claridad</ab>
+            <ab type="codeblock">en donde manifies&lt;g ref="#typoHyphen"/&gt;&lt;lb
+              break="no"/&gt;t &lt;subst&gt; &lt;del rendition="#ow"&gt;a&lt;/del&gt; &lt;add
+              place="across"&gt;o&lt;/add&gt; &lt;/subst&gt; con la mayor claridad</ab>
           </div>
           <div type="level3" xml:id="adiciones">
             <head>Adiciones</head>
@@ -1132,7 +1130,8 @@
             <p>Por ejemplo:</p>
             <ab type="codeblock">[…] y logré para el Comercio con estranjeros, los &lt;add
               place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</ab>
-            <p>Si hay una marca de inserción del autor en la fuente, será codificada por la <seg type="code">metamark/</seg> generalizada. La forma de la marca de inserción
+            <p>Si hay una marca de inserción del autor en la fuente, será codificada por la <seg
+                type="code">metamark/</seg> generalizada. La forma de la marca de inserción
               (asterisco, número, etc.) no se registra.</p>
           </div>
         </div>
@@ -1144,7 +1143,8 @@
               con certeza, estos deben ser marcados. Las lecturas inciertas deben distinguirse de
                 <ref target="#texto-ilegible">texto ilegible</ref>.</p>
             <p>Las palabras que los editores y editoras no pueden descifrar de forma cierta se
-              marcan con el elemento <seg type="code">unclear</seg>. El atributo <seg type="code">@reason</seg> especifica la razón de la lectura incierta:</p>
+              marcan con el elemento <seg type="code">unclear</seg>. El atributo <seg type="code"
+                >@reason</seg> especifica la razón de la lectura incierta:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1152,7 +1152,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@reason</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1185,7 +1185,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@cert</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1210,7 +1210,8 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">&lt;unclear reason="illegible" cert="high"&gt;año&lt;/unclear&gt;</ab>
+            <ab type="codeblock">&lt;unclear reason="illegible"
+              cert="high"&gt;año&lt;/unclear&gt;</ab>
           </div>
           <div type="level3" xml:id="texto-ilegible">
             <head>Texto ilegible</head>
@@ -1231,7 +1232,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@reason</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1275,7 +1276,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@unit</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1324,15 +1325,13 @@
             <ab type="codeblock">&lt;gap reason="illegible" unit="words" quantity="3"/&gt;</ab>
             <p>Si un carácter (o cadena de caracteres) está tachado y no se puede descifrar, se
               codificará tanto con <seg type="code">del</seg> como <seg type="code">gap/</seg>.</p>
-            <ab type="codeblock">
-              &lt;del rendition="#s"&gt;
-                &lt;gap reason="illegible" unit="chars" quantity="5"/&gt;
-              &lt;/del&gt;</ab>
+            <ab type="codeblock"> &lt;del rendition="#s"&gt; &lt;gap reason="illegible" unit="chars"
+              quantity="5"/&gt; &lt;/del&gt;</ab>
             <p>Debe registrar las páginas destruidas o perdidas de una en una.</p>
-            <ab type="codeblock">&lt;pb n="1r"/&gt;
-              &lt;gap reason="lost" unit="pages" quantity="1"/&gt;</ab>
+            <ab type="codeblock">&lt;pb n="1r"/&gt; &lt;gap reason="lost" unit="pages"
+              quantity="1"/&gt;</ab>
             <p>
-                            <hi rendition="#i">Nota</hi>: Tanto <ref target="#páginas-en-blanco">páginas en
+              <hi rendition="#i">Nota</hi>: Tanto <ref target="#páginas-en-blanco">páginas en
                 blanco</ref>, como <ref target="#omisiones">omisiones hechas por los editores y
                 editoras</ref> serán marcadas también con <seg type="code">gap/</seg>.</p>
           </div>
@@ -1346,7 +1345,8 @@
               especificar <quote rendition="#i">1</quote> como número para cada nueva página
               registrada.</p>
             <p>Las omisiones de caracteres, palabras, pasajes de texto o páginas enteras por parte
-              de los editores y editoras están marcadas con el elemento vacío <seg type="code">gap/</seg>. El atributo <seg type="code">@unit</seg> especifica el tipo de
+              de los editores y editoras están marcadas con el elemento vacío <seg type="code"
+                >gap/</seg>. El atributo <seg type="code">@unit</seg> especifica el tipo de
               segmento:</p>
             <table>
               <row role="label">
@@ -1355,7 +1355,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@unit</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1410,7 +1410,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@reason</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1436,7 +1436,9 @@
             </table>
             <ab type="codeblock">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt;
               entonces de nuevo</ab>
-            <p>También se marcan con <seg type="code">gap/</seg> los <ref target="#texto-ilegible">pasajes ilegibles o dañados</ref>, así como <ref target="#páginas-en-blanco">páginas en blanco</ref>.</p>
+            <p>También se marcan con <seg type="code">gap/</seg> los <ref target="#texto-ilegible"
+                >pasajes ilegibles o dañados</ref>, así como <ref target="#páginas-en-blanco"
+                >páginas en blanco</ref>.</p>
           </div>
           <div type="level3" xml:id="abreviaturas-resueltas-por-el-editor">
             <head>Abreviaturas resueltas por el editor</head>
@@ -1447,11 +1449,8 @@
               En el elemento <seg type="code">abbr</seg> la abreviatura se registra fiel al
               original, en el elemento <seg type="code">expan</seg> la adición de los editores y
               editoras.</p>
-            <ab type="codeblock">
-              &lt;choice&gt;
-                &lt;abbr&gt;q&lt;/abbr&gt;
-                &lt;expan&gt;que&lt;/expan&gt;
-              &lt;/choice&gt;</ab>
+            <ab type="codeblock"> &lt;choice&gt; &lt;abbr&gt;q&lt;/abbr&gt;
+              &lt;expan&gt;que&lt;/expan&gt; &lt;/choice&gt;</ab>
           </div>
           <div type="level3" xml:id="palabras-letras-o-signos-de-puntuación-suplidos-por-el-editor">
             <head>Palabras, letras o signos de puntuación suplidos por el editor</head>
@@ -1459,8 +1458,8 @@
               editores y editoras. Estos suplementos se marcan con <seg type="code">supplied</seg>.
               Se indica la probabilidad con la que se aplica este suplemento.</p>
             <p>La adición de las palabras o signos de puntuación que faltan se debe distinguir de la
-                <ref target="#abreviaturas-resueltas-por-el-editor">adición (también:
-                expansión) de palabras abreviadas</ref>.</p>
+                <ref target="#abreviaturas-resueltas-por-el-editor">adición (también: expansión) de
+                palabras abreviadas</ref>.</p>
             <p>Las adiciones de signos de puntuación o palabras completas faltantes se marcan con
                 <seg type="code">supplied</seg>.</p>
             <p>El valor del atributo <seg type="code">@cert</seg> (certainty) expresa la
@@ -1496,8 +1495,8 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">
-              Éstas&lt;supplied cert="high"&gt;,&lt;/supplied&gt; al fin&lt;supplied cert="high"&gt;,&lt;/supplied&gt; rompieron el malecón, y cayó aquel 
+            <ab type="codeblock"> Éstas&lt;supplied cert="high"&gt;,&lt;/supplied&gt; al
+              fin&lt;supplied cert="high"&gt;,&lt;/supplied&gt; rompieron el malecón, y cayó aquel
               torrente sobre los desgraciados Molinos&lt;supplied cert="high"&gt;,&lt;/supplied&gt;
               que están dos pasos de allí.</ab>
           </div>
@@ -1507,17 +1506,15 @@
               varias veces. Si esta palabra superflua o redundante complica la comprensión de una
               oración, los editores y editoras pueden eliminarla.</p>
             <p>La eliminación de una palabra (o palabras) por parte de los editores y editoras se
-              realiza en el elemento <seg type="code">choice</seg>. El elemento hijo <seg type="code">sic</seg> indica la palabra que se va a eliminar. La eliminación misma
+              realiza en el elemento <seg type="code">choice</seg>. El elemento hijo <seg
+                type="code">sic</seg> indica la palabra que se va a eliminar. La eliminación misma
               se indica mediante otro elemento hijo, <seg type="code">corr</seg> (correction), cuyo
               atributo <seg type="code">@type</seg> tiene el valor <seg type="code">deleted</seg>.
               Esto debería marcar explícitamente la codificación de que la palabra se ha eliminado y
               no se ha olvidado una corrección por el editor.</p>
-            <ab type="codeblock">
-              Es grande finura y brillantes de los 
-              &lt;choice&gt;
-                &lt;sic&gt;los&lt;/sic&gt;
-                &lt;corr type="deleted"/&gt;
-              &lt;/choice&gt; vestidos […]</ab>
+            <ab type="codeblock"> Es grande finura y brillantes de los &lt;choice&gt;
+              &lt;sic&gt;los&lt;/sic&gt; &lt;corr type="deleted"/&gt; &lt;/choice&gt; vestidos
+              […]</ab>
           </div>
           <div type="level3" xml:id="correcciones-del-editor">
             <head>Correcciones del editor</head>
@@ -1525,8 +1522,8 @@
               considera necesario para la comprensión del texto, los editores y editoras pueden
               corregir estos errores utilizando los marcados que se indican a continuación.</p>
             <p>Relacionados con la corrección por parte del editor, pero bastante distinguibles, son
-                <ref target="#abreviaturas-resueltas-por-el-editor">las resoluciones de
-                palabras abreviadas</ref>.</p>
+                <ref target="#abreviaturas-resueltas-por-el-editor">las resoluciones de palabras
+                abreviadas</ref>.</p>
             <p>En el texto editado, las correcciones de los errores del autor pueden anotarse
               utilizando el elemento <seg type="code">choice</seg>. La palabra original se anota en
                 <seg type="code">sic</seg>, la corrección en <seg type="code">corr</seg>. En el
@@ -1539,7 +1536,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@cert</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1573,10 +1570,9 @@
                 </cell>
               </row>
             </table>
-            <ab type="codeblock">[…] como lo prue&lt;choice&gt;
-                &lt;sic&gt;v&lt;/sic&gt;
-                &lt;corr cert="high"&gt;b&lt;/corr&gt;
-              &lt;/choice&gt;a el valor extraordinario de las tierras[…]</ab>
+            <ab type="codeblock">[…] como lo prue&lt;choice&gt; &lt;sic&gt;v&lt;/sic&gt; &lt;corr
+              cert="high"&gt;b&lt;/corr&gt; &lt;/choice&gt;a el valor extraordinario de las
+              tierras[…]</ab>
           </div>
           <div type="level3" xml:id="comentario-editorial">
             <head>Comentario editorial</head>
@@ -1587,14 +1583,15 @@
               ejemplo, una carta). Por otro lado, debe distinguirse de las indexaciones puramente
               identificativas de nombres y términos mencionados en el texto.</p>
             <p>Los comentarios editoriales se marcan con el elemento <seg type="code">seg</seg>
-              (arbitrary segment), que siempre contiene dos elementos hijos: por un lado, <seg type="code">orig</seg> para el pasaje de texto de la fuente que se anota. Por otro
-              lado, <seg type="code">note</seg> para el comentario editorial en sí. El atributo <seg type="code">@type</seg> en <seg type="code">seg</seg> especifica la codificación con
-              su valor <seg type="code">comment</seg>. El valor del atributo <seg type="code">@xml:id</seg> en el elemento <seg type="code">note</seg> sirve para fines técnicos
+              (arbitrary segment), que siempre contiene dos elementos hijos: por un lado, <seg
+                type="code">orig</seg> para el pasaje de texto de la fuente que se anota. Por otro
+              lado, <seg type="code">note</seg> para el comentario editorial en sí. El atributo <seg
+                type="code">@type</seg> en <seg type="code">seg</seg> especifica la codificación con
+              su valor <seg type="code">comment</seg>. El valor del atributo <seg type="code"
+                >@xml:id</seg> en el elemento <seg type="code">note</seg> sirve para fines técnicos
               y se genera automáticamente.</p>
-            <ab type="codeblock">
-              &lt;seg type="comment"&gt;
-                &lt;orig&gt;Discurso del héroe&lt;/orig&gt; 
-                &lt;note xml:id="nv1l_mxf_cy"&gt;Comentario irónico&lt;/note&gt;
+            <ab type="codeblock"> &lt;seg type="comment"&gt; &lt;orig&gt;Discurso del
+              héroe&lt;/orig&gt; &lt;note xml:id="nv1l_mxf_cy"&gt;Comentario irónico&lt;/note&gt;
               &lt;/seg&gt;</ab>
             <p>La codificación no es conforme al DTABf, pero permite comprobar más fácilmente si
               están presentes tanto el texto de referencia como el comentario editorial.</p>
@@ -1603,11 +1600,13 @@
             <head>Referencias</head>
             <p>Si es necesario, se puede hacer referencia a otras cartas, documentos y pasajes de
               texto en un comentario editorial.</p>
-            <p>Los destinos de referencia en el texto están marcados con dos elementos <seg type="code">anchor</seg>. En ambos elementos, el atributo <seg type="code">@xml:id</seg> lleva un ID que sólo se diferencia por el prefijo <quote rendition="#i">start</quote> o <quote rendition="#i">stop</quote>. Se puede hacer
+            <p>Los destinos de referencia en el texto están marcados con dos elementos <seg
+                type="code">anchor</seg>. En ambos elementos, el atributo <seg type="code"
+                >@xml:id</seg> lleva un ID que sólo se diferencia por el prefijo <quote
+                rendition="#i">start</quote> o <quote rendition="#i">stop</quote>. Se puede hacer
               referencia a este ID desde otros textos y documentos..</p>
-            <ab type="codeblock">
-              &lt;anchor type="target" xml:id="start_b3k_pyf_cy"/&gt;[un
-              destino de referencia]&lt;anchor type="target" xml:id="stop_b3k_pyf_cy"/&gt;</ab>
+            <ab type="codeblock"> &lt;anchor type="target" xml:id="start_b3k_pyf_cy"/&gt;[un destino
+              de referencia]&lt;anchor type="target" xml:id="stop_b3k_pyf_cy"/&gt;</ab>
             <p>La referencia real a una carta o a un pasaje de texto se codifica con el elemento
                 <seg type="code">ref</seg>, cuyo atributo <seg type="code">@target</seg> contiene el
               ID del pasaje de texto de destino.</p>
@@ -1616,11 +1615,9 @@
             <p>Además, <seg type="code">ref</seg> también puede utilizarse para hacer referencia a
               un sitio web externo desde un comentario editorial. En este caso, la URL completa del
               sitio web se anota en el atributo <seg type="code">@target</seg>.</p>
-            <ab type="codeblock">
-              &lt;seg type="comment"&gt;
-                &lt;orig&gt;el río&lt;/orig&gt;
-                &lt;note xml:id="nxlm_bhy_ny"&gt;&lt;ref target="http://www.kallilope.de/beispiel"/&gt;&lt;/note&gt;
-              &lt;/seg&gt;</ab>
+            <ab type="codeblock"> &lt;seg type="comment"&gt; &lt;orig&gt;el río&lt;/orig&gt;
+              &lt;note xml:id="nxlm_bhy_ny"&gt;&lt;ref
+              target="http://www.kallilope.de/beispiel"/&gt;&lt;/note&gt; &lt;/seg&gt;</ab>
           </div>
           <div type="level3" xml:id="fechas-1">
             <head>Fechas</head>
@@ -1630,7 +1627,8 @@
               especialmente. El registro de su información se realiza mediante una codificación
               adecuada en los metadatos.</p>
             <p>Las fechas se marcan con <seg type="code">date</seg>. La fecha legible por máquina se
-              especifica en el formato <seg type="code">AAAA-MM-DD</seg> en los atributos <seg type="code">@when</seg>, <seg type="code">@from</seg> y <seg type="code">@to</seg>,
+              especifica en el formato <seg type="code">AAAA-MM-DD</seg> en los atributos <seg
+                type="code">@when</seg>, <seg type="code">@from</seg> y <seg type="code">@to</seg>,
               así como <seg type="code">@notBefore</seg> y <seg type="code">@notAfter</seg>.</p>
             <p>Además, el atributo <seg type="code">@cert</seg> especifica la probabilidad de que la
               fecha sea correcta: <seg type="code">high</seg>, <seg type="code">low</seg>.</p>
@@ -1643,7 +1641,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@calendar</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -1672,8 +1670,8 @@
                 <p>Fecha exacta</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date when="1772-12-21"&gt;tres días antes de la 
-              Nochebuena del año 1772&lt;/date&gt;</ab>
+            <ab type="codeblock">&lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del
+              año 1772&lt;/date&gt;</ab>
             <list type="ordered:arabic">
               <item n="2">
                 <p>Período de tiempo exacto</p>
@@ -1922,7 +1920,8 @@
               solían estar escritas en letra alemana. Si el autor utilizaba una palabra extranjera,
               ésta se representaba en escritura latina.</p>
             <p>Las palabras y pasajes de texto individuales en idioma extranjera pueden marcarse con
-              un elemento <seg type="code">foreign</seg>. En el atributo <seg type="code">@xml:lang</seg> se indica la abreviatura del idioma extranjero correspondiente:</p>
+              un elemento <seg type="code">foreign</seg>. En el atributo <seg type="code"
+                >@xml:lang</seg> se indica la abreviatura del idioma extranjero correspondiente:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1930,7 +1929,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@xml:lang</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -2034,19 +2033,21 @@
             <list type="unordered">
               <item>
                 <p>Persona: <seg type="code">persName</seg>
-                                </p>
+                </p>
               </item>
               <item>
                 <p>Lugar: <seg type="code">placeName</seg>
-                                </p>
+                </p>
               </item>
               <item>
                 <p>Organización: <seg type="code">orgName</seg>
-                                </p>
+                </p>
               </item>
             </list>
-            <p>El ID de la entrada de registro vinculada se anota en la el atributo <seg type="code">@key</seg>.</p>
-            <ab type="codeblock">Mr. &lt;persName key="H0012737"&gt;James Arnold&lt;/persName&gt;</ab>
+            <p>El ID de la entrada de registro vinculada se anota en la el atributo <seg type="code"
+                >@key</seg>.</p>
+            <ab type="codeblock">Mr. &lt;persName key="H0012737"&gt;James
+              Arnold&lt;/persName&gt;</ab>
           </div>
         </div>
       </div>
@@ -2057,7 +2058,8 @@
           a algunos rasgos característicos y peculiaridades en cuanto a la estructura textual y los
           metadatos. Estas características se presentan en este capítulo. Todos los metadatos y
           fenómenos que también, pero no sólo, se aplican a las cartas se explican en los capítulos
-            <ref target="#metadatos-generales">Metadatos generales</ref> y <ref target="#texto">Texto</ref>.</p>
+            <ref target="#metadatos-generales">Metadatos generales</ref> y <ref target="#texto"
+            >Texto</ref>.</p>
         <div type="level2" xml:id="metadatos-de-cartas">
           <head>Metadatos de cartas</head>
           <div type="level3" xml:id="remitente-destinatario-lugar-y-fecha">
@@ -2074,39 +2076,43 @@
               posible en la edición digital de cartas. La especificación de una fecha de escritura o
               de recepción debe distinguirse de la explicación de la datación, que se anota por
               separado.</p>
-            <p>Los metadatos de correspondencia de una carta se especifican en el elemento <seg type="code">correspDesc</seg> (correspondence description). Se crea un elemento <seg type="code">correspAction</seg> (correspondence action) para el proceso de envío y
+            <p>Los metadatos de correspondencia de una carta se especifican en el elemento <seg
+                type="code">correspDesc</seg> (correspondence description). Se crea un elemento <seg
+                type="code">correspAction</seg> (correspondence action) para el proceso de envío y
               el de recepción respectivamente. El atributo <seg type="code">@type</seg> especifica
-              el tipo del acto de comunicación; los valores (<seg type="code">sent</seg>, <seg type="code">received</seg>) fueron tomados de las directrices de la TEI para <seg type="code">correspAction</seg>.</p>
-            <ab type="codeblock">
-              &lt;correspDesc&gt;
-                &lt;correspAction type="sent"&gt;[Información sobre el remitente]&lt;/correspAction&gt; 
-                &lt;correspAction type="received"&gt;[Información sobre el destinatario]&lt;/correspAction&gt;
+              el tipo del acto de comunicación; los valores (<seg type="code">sent</seg>, <seg
+                type="code">received</seg>) fueron tomados de las directrices de la TEI para <seg
+                type="code">correspAction</seg>.</p>
+            <ab type="codeblock"> &lt;correspDesc&gt; &lt;correspAction type="sent"&gt;[Información
+              sobre el remitente]&lt;/correspAction&gt; &lt;correspAction
+              type="received"&gt;[Información sobre el destinatario]&lt;/correspAction&gt;
               &lt;/correspDesc&gt;</ab>
             <p>Dentro del elemento <seg type="code">correspAction</seg>, se pueden utilizar los
-              elementos <seg type="code">persName</seg>, <seg type="code">orgName</seg>, <seg type="code">placeName</seg> y <seg type="code">date</seg>. La información sobre
+              elementos <seg type="code">persName</seg>, <seg type="code">orgName</seg>, <seg
+                type="code">placeName</seg> y <seg type="code">date</seg>. La información sobre
               personas, organizaciones y lugares se vincula con el ID de la entrada del registro
               correspondiente a través del atributo <seg type="code">@key</seg>.</p>
             <p>Esta información puede indicarse tanto para el remitente como para el
               destinatario.</p>
-            <ab type="codeblock">
-              &lt;correspDesc&gt; 
-                &lt;correspAction type="sent"&gt; 
-                    &lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
-                    &lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;
-                    &lt;date when="1827-07-30"&gt;30 de julio de 1827&lt;/date&gt;
-                &lt;/correspAction&gt;
-                &lt;correspAction type="received"&gt;
-                    &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
-                &lt;/correspAction&gt; 
+            <ab type="codeblock"> &lt;correspDesc&gt; &lt;correspAction type="sent"&gt; &lt;persName
+              key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
+              &lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt; &lt;date
+              when="1827-07-30"&gt;30 de julio de 1827&lt;/date&gt; &lt;/correspAction&gt;
+              &lt;correspAction type="received"&gt; &lt;persName key="H0012069"&gt;Humboldt,
+              Alexander von (1769-1859)&lt;/persName&gt; &lt;/correspAction&gt;
               &lt;/correspDesc&gt;</ab>
           </div>
           <div type="level3" xml:id="fechas-cartas">
             <head>Fechas</head>
             <p>Las fechas se marcan con el elemento <seg type="code">date</seg> y se anotan en el
-              formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg type="code">AAAA</seg>, dependiendo de la información disponible) en los atributos
-                <seg type="code">@when</seg>, <seg type="code">@from</seg>/<seg type="code">@to</seg> o <seg type="code">@notBefore</seg>/<seg type="code">@notAfter</seg>.
+              formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg
+                type="code">AAAA</seg>, dependiendo de la información disponible) en los atributos
+                <seg type="code">@when</seg>, <seg type="code">@from</seg>/<seg type="code"
+                >@to</seg> o <seg type="code">@notBefore</seg>/<seg type="code">@notAfter</seg>.
               Esto permite que el ordenador utilice estos datos más adelante, como por ejemplo para
-              buscar información en un periodo concreto de tiempo. Además, en el atributo <seg type="code">@cert</seg> los valores <seg type="code">high</seg> y <seg type="code">low</seg> indican la probabilidad de que la fecha sea correcta.</p>
+              buscar información en un periodo concreto de tiempo. Además, en el atributo <seg
+                type="code">@cert</seg> los valores <seg type="code">high</seg> y <seg type="code"
+                >low</seg> indican la probabilidad de que la fecha sea correcta.</p>
             <list type="ordered:arabic">
               <item>
                 <p>Fecha exacta</p>
@@ -2137,10 +2143,8 @@
               fuentes, notas sobre su testificación.</p>
             <p>Las notas a la carta se marcan en <seg type="code">correspDesc</seg> con el elemento
               hijo <seg type="code">note</seg>.</p>
-            <ab type="codeblock">
-              &lt;correspDesc&gt; … 
-                &lt;note&gt;No se puede determinar la fecha de recepción.&lt;/note&gt;
-              &lt;/correspDesc&gt;</ab>
+            <ab type="codeblock"> &lt;correspDesc&gt; … &lt;note&gt;No se puede determinar la fecha
+              de recepción.&lt;/note&gt; &lt;/correspDesc&gt;</ab>
           </div>
         </div>
         <div type="level2" xml:id="estructuras-textuales-de-cartas">
@@ -2152,13 +2156,10 @@
               se realiza a través de los metadatos de la carta.</p>
             <p>La dirección postal de una carta se anota en el <seg type="code">opener</seg> (inicio
               de la carta) o en el <seg type="code">closer</seg> (cierre de la carta). Consta del
-              elemento padre <seg type="code">address</seg> y uno o varios elementos hijos <seg type="code">addrLine</seg>.</p>
-            <ab type="codeblock">
-              &lt;opener&gt;
-                &lt;address&gt;
-                  &lt;addrLine&gt;Berlin, Kronenstraße 6&lt;/addrLine&gt;
-                &lt;/address&gt; 
-              &lt;/opener&gt;</ab>
+              elemento padre <seg type="code">address</seg> y uno o varios elementos hijos <seg
+                type="code">addrLine</seg>.</p>
+            <ab type="codeblock"> &lt;opener&gt; &lt;address&gt; &lt;addrLine&gt;Berlin,
+              Kronenstraße 6&lt;/addrLine&gt; &lt;/address&gt; &lt;/opener&gt;</ab>
           </div>
           <div type="level3" xml:id="inicio-de-la-carta">
             <head>Inicio de la carta</head>
@@ -2171,10 +2172,8 @@
               contener una fecha y un saludo. La fecha <seg type="code">dateline</seg> indica la
               alineación de texto de la línea de fecha en su atributo <seg type="code">@rend</seg>.
               El saludo se transcribe en el elemento <seg type="code">salute</seg>.</p>
-            <ab type="codeblock">
-              &lt;opener&gt;
-                &lt;dateline rend="align(right)"&gt;30 de julio de 1827&lt;/dateline&gt;
-                &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
+            <ab type="codeblock"> &lt;opener&gt; &lt;dateline rend="align(right)"&gt;30 de julio de
+              1827&lt;/dateline&gt; &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
               &lt;/opener&gt;</ab>
           </div>
           <div type="level3" xml:id="acto-de-escritura">
@@ -2185,15 +2184,12 @@
               adicional ) o por su contenido, deben marcarse en consecuencia. Hay que distinguir el
               acto de escritura de la posdata .</p>
             <p>Un acto de escritura se codifica mediante el elemento <seg type="code">div</seg> con
-              el atributo <seg type="code">@type</seg> y el valor <seg type="code">writingSession</seg>. El número de un acto de escritura se especifica en el
+              el atributo <seg type="code">@type</seg> y el valor <seg type="code"
+                >writingSession</seg>. El número de un acto de escritura se especifica en el
               atributo <seg type="code">@n</seg>.</p>
-            <ab type="codeblock">
-              &lt;div type="writingSession"&gt;
-                &lt;p&gt;[Primer acto de escritura]&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;div type="writingSession" n="2"&gt;
-                &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt;
-              &lt;/div&gt;</ab>
+            <ab type="codeblock"> &lt;div type="writingSession"&gt; &lt;p&gt;[Primer acto de
+              escritura]&lt;/p&gt; &lt;/div&gt; &lt;div type="writingSession" n="2"&gt;
+              &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt; &lt;/div&gt;</ab>
           </div>
           <div type="level3" xml:id="cierre-de-la-carta">
             <head>Cierre de la carta</head>
@@ -2213,7 +2209,7 @@
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@rend</seg>
-                                    </p>
+                  </p>
                 </cell>
               </row>
               <row>
@@ -2238,29 +2234,22 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">
-              &lt;closer rend="paragraph"&gt;
-                &lt;salute&gt;Muchos saludos&lt;/salute&gt;
-                &lt;signed&gt;F. E.&lt;/signed&gt;
-              &lt;/closer&gt;</ab>
+            <ab type="codeblock"> &lt;closer rend="paragraph"&gt; &lt;salute&gt;Muchos
+              saludos&lt;/salute&gt; &lt;signed&gt;F. E.&lt;/signed&gt; &lt;/closer&gt;</ab>
             <p>Una línea de fecha posiblemente existente en el cierre de la carta se anota dentro
               del elemento <seg type="code">closer</seg> como <seg type="code">dateline</seg>.</p>
-            <ab type="codeblock">
-              &lt;closer rend="paragraph"&gt;
-                &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt;
-                &lt;!-- […] --&gt; 
-              &lt;/closer&gt;</ab>
+            <ab type="codeblock"> &lt;closer rend="paragraph"&gt; &lt;dateline&gt;4 de enero de
+              1886&lt;/dateline&gt; &lt;!-- […] --&gt; &lt;/closer&gt;</ab>
           </div>
           <div type="level3" xml:id="posdata">
             <head>Posdata</head>
             <p>La posdata es una adenda a la carta, que suele encontrarse debajo de la firma, pero
               que también puede escribirse en el margen o en otro lugar. Debe distinguirse de un
               acto de escritura adicional si la carta se escribió a lo largo de varios días.</p>
-            <p>La posdata se anota después del <seg type="code">closer</seg> como un elemento <seg type="code">postcript</seg>. Conforme a las directrices de la TEI, siempre contiene
+            <p>La posdata se anota después del <seg type="code">closer</seg> como un elemento <seg
+                type="code">postcript</seg>. Conforme a las directrices de la TEI, siempre contiene
               al menos un párrafo (<seg type="code">p</seg>).</p>
-            <ab type="codeblock">
-              &lt;postscript&gt;
-                &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
+            <ab type="codeblock"> &lt;postscript&gt; &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
               &lt;/postscript&gt;</ab>
           </div>
         </div>
