@@ -69,14 +69,19 @@
           <p>Como parte del <seg type="code">//titleStmt</seg>, la codificación del título principal
             se realizará utilizando el elemento <seg type="code">title</seg> y el atributo <seg
               type="code">@type="main"</seg>. Por ejemplo:</p>
-          <ab type="codeblock"> &lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La
-            Habana&lt;/title&gt; </ab>
+          <ab type="codeblock">
+            &lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La
+            Habana&lt;/title&gt;
+          </ab>
           <p>Si se desea incluir un subtítulo o una título en otro idioma u ortografía, se puede
             repetir el elemento <seg type="code">title</seg> debajo del título principal y usar el
             atributo <seg type="code">@type="sub"</seg>:</p>
-          <ab type="codeblock"> &lt;title type="main"&gt;Carta de Francisco de Arango y Parreño a
-            Alexander von Humboldt&lt;/title&gt; &lt;title type="sub" xml:lang="fr"&gt;À Monsieur
-            Mr. le Baron A. Humboldt&lt;/title&gt; </ab>
+          <ab type="codeblock">
+            &lt;title type="main"&gt;Carta de Francisco de Arango y Parreño a
+            Alexander von Humboldt&lt;/title&gt; 
+            &lt;title type="sub" xml:lang="fr"&gt;À Monsieur
+            Mr. le Baron A. Humboldt&lt;/title&gt; 
+          </ab>
           <p>Además, se puede usar de manera opcional el atributo <seg type="code"
             >@xml:lang</seg>.</p>
         </div>
@@ -100,9 +105,13 @@
               >editor</seg>.</p>
           <p>Es posible codificar en el atributo <seg type="code">@ref</seg> la referencia a una
             base de datos externa en forma de URI, VIAF, etc.</p>
-          <ab type="codeblock"> &lt;editor&gt; &lt;persName ref="118763784"&gt;
-            &lt;surname&gt;[Apellido]&lt;/surname&gt; &lt;forename&gt;[Nombre]&lt;/forename&gt;
-            &lt;/persName&gt; &lt;/editor&gt;</ab>
+          <ab type="codeblock"> 
+            &lt;editor&gt; 
+            &lt;persName ref="118763784"&gt;
+              &lt;surname&gt;[Apellido]&lt;/surname&gt; 
+              &lt;forename&gt;[Nombre]&lt;/forename&gt;
+            &lt;/persName&gt; 
+            &lt;/editor&gt;</ab>
           <p>Si en la edición hubieran participado otras personas con tareas menores, es posible
             incluir el nombre de los colaboradores y colaboradoras con el elemento <seg type="code"
               >respStmt</seg> (<quote rendition="#i">statement of responsibility</quote> –
@@ -125,11 +134,17 @@
             elemento <seg type="code">note</seg> se identifica la contribución que puede ser de
             distintos tipos: colaboración, colaboración editorial, transcripción, comentario y
             registros.</p>
-          <ab type="codeblock">&lt;respStmt&gt; &lt;persName ref="118763784"&gt;
-            &lt;surname&gt;[Apellido]&lt;/surname&gt; &lt;forename&gt;[Nombre]&lt;/forename&gt;
-            &lt;/persName&gt; &lt;resp&gt; &lt;note
-            type="remarkResponsibility"&gt;colaboración&lt;/note&gt; &lt;/resp&gt;
-            &lt;/respStmt&gt;</ab>
+          <ab type="codeblock">
+            &lt;respStmt&gt; 
+              &lt;persName ref="118763784"&gt;
+               &lt;surname&gt;[Apellido]&lt;/surname&gt; 
+               &lt;forename&gt;[Nombre]&lt;/forename&gt;
+              &lt;/persName&gt; 
+            &lt;resp&gt; 
+            &lt;note type="remarkResponsibility"&gt;colaboración&lt;/note&gt; 
+            &lt;/resp&gt;
+            &lt;/respStmt&gt;
+          </ab>
         </div>
         <div type="level2" xml:id="financiación">
           <head>Financiación</head>
@@ -138,10 +153,14 @@
             Gerda Henkel Stiftung.</p>
           <p>Como parte del <seg type="code">//titleStmt</seg> es necesario utilzar el elemento <seg
               type="code">funder</seg> de la siguiente manera:</p>
-          <ab type="codeblock">&lt;funder ref="https://www.auswaertiges-amt.de/de/"&lt;Auswärtiges
-            Amt&lt;/funder&lt; &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&lt;Fritz
-            Thyssen Stiftung&lt;/funder&lt; &lt;funder
-            ref="https://www.gerda-henkel-stiftung.de/"&lt;Gerda Henkel Stiftung&lt;/funder&lt;</ab>
+          <ab type="codeblock">
+            &lt;funder ref="https://www.auswaertiges-amt.de/de/"&lt;Auswärtiges
+            Amt&lt;/funder&lt; 
+            &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&lt;Fritz
+            Thyssen Stiftung&lt;/funder&lt; 
+            &lt;funder
+            ref="https://www.gerda-henkel-stiftung.de/"&lt;Gerda Henkel Stiftung&lt;/funder&lt;
+          </ab>
           <p>El elemento <seg type="code">funder</seg> debe llevar el atributo <seg type="code"
               >@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras. </p>
         </div>
@@ -151,8 +170,11 @@
             documentar la fecha de edición correspondiente a la creación del documento TEI.</p>
           <p>Esta información sobre la edición, debe codificarse con un elemento <seg type="code"
               >editionStmt</seg> y <seg type="code">p</seg> de la siguiente manera:</p>
-          <ab type="codeblock"> &lt;editionStmt&lt; &lt;p&lt;Proyecto Humboldt digital
-            (&lt;date&lt;2021&lt;/date&lt;)&lt;/p&lt; &lt;/editionStmt&lt; </ab>
+          <ab type="codeblock"> 
+            &lt;editionStmt&lt; 
+             &lt;p&lt;Proyecto Humboldt digital (&lt;date&lt;2021&lt;/date&lt;)&lt;/p&lt; 
+            &lt;/editionStmt&lt;
+          </ab>
         </div>
         <div type="level2" xml:id="publicación-y-licencia">
           <head>Publicación y licencia</head>
@@ -164,13 +186,15 @@
               >publisher</seg> (entidad que publica la edición), <seg type="code">pubPlace</seg>
             (lugar de publicación)y <seg type="code">availability</seg> (disponibilidad). Por
             ejemplo:</p>
-          <ab type="codeblock"> &lt;publicationStmt&lt; &lt;publisher&lt;&lt;ref
-            target="http://www.bbaw.de"&lt;Berlin-Brandenburgische Akademie der Wissenschaften
-            (BBAW)&lt;/ref&lt;&lt;/publisher&lt; &lt;pubPlace
-            ref="http://www.geonames.org/2950159"&lt;Berlín&lt;/pubPlace&lt; &lt;availability
-            status="free"&lt; &lt;licence
-            target="http://creativecommons.org/licenses/by/4.0/"&lt;Creative Commons Atribución 4.0
-            Internacional (CC BY 4.0) &lt;/licence&lt; &lt;/availability&lt;
+          <ab type="codeblock"> 
+            &lt;publicationStmt&lt; 
+              &lt;publisher&lt;&lt;ref target="http://www.bbaw.de"&lt;Berlin-Brandenburgische Akademie der Wissenschaften
+            (BBAW)&lt;/ref&lt;&lt;/publisher&lt; 
+              &lt;pubPlace ref="http://www.geonames.org/2950159"&lt;Berlín&lt;/pubPlace&lt; 
+              &lt;availability status="free"&lt; 
+                &lt;licence target="http://creativecommons.org/licenses/by/4.0/"&lt;Creative Commons Atribución 4.0
+            Internacional (CC BY 4.0) &lt;/licence&lt; 
+              &lt;/availability&lt;
             &lt;/publicationStmt&lt; </ab>
           <p>De manera opcional, se puede enriquecer la información sobre la entidad responsable de
             la publicación mediante el elemento <seg type="code">ref</seg> para proporcionar el
@@ -202,11 +226,17 @@
             el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>.
             Se pueden añadir opcionalmente la colección en el elemento <seg type="code"
               >collection</seg>.</p>
-          <ab type="codeblock"> &lt;witness&gt; &lt;msDesc type="copy"&gt; &lt;msIdentifier&gt;
-            &lt;institution&gt;[institución]&lt;/institution&gt;
-            &lt;collection&gt;[colección]&lt;/collection&gt; &lt;idno&gt; &lt;idno
-            type="shelfmark"&gt;[signatura]&lt;/idno&gt; &lt;/idno&gt; &lt;/msIdentifier&gt;
-            &lt;/msDesc&gt; &lt;/witness&gt;</ab>
+          <ab type="codeblock"> 
+            &lt;msDesc type="copy"&gt; 
+              &lt;msIdentifier&gt;
+               &lt;institution&gt;[institución]&lt;/institution&gt;
+               &lt;collection&gt;[colección]&lt;/collection&gt; 
+               &lt;idno&gt; 
+                &lt;idno type="shelfmark"&gt;[signatura]&lt;/idno&gt; 
+               &lt;/idno&gt; 
+              &lt;/msIdentifier&gt;
+            &lt;/msDesc&gt; 
+          </ab>
         </div>
         <div type="level2" xml:id="tradición-impresa">
           <head>Tradición impresa</head>
@@ -216,10 +246,13 @@
             debe utilizar el atributo <seg type="code">@type</seg> con el valor <seg type="code"
               >print</seg> para distinguirlo de un manuscrito.</p>
           <p>Por ejemplo:</p>
-          <ab type="codeblock">&lt;witness&gt; &lt;bibl type="print"&gt;Humboldt, Alexander von:
+          <ab type="codeblock">
+            &lt;witness&gt; 
+            &lt;bibl type="print"&gt;Humboldt, Alexander von:
             Geografía de la plantas, ó Quadro físico de los Andes Equinoxiales, y de los paises
             vecinos. Semanario del Nuevo Reyno de Granada, volumen 16-21, 1809.&lt;/bibl&gt;
-            &lt;/witness&gt;</ab>
+            &lt;/witness&gt;
+          </ab>
         </div>
         <div type="level2" xml:id="tipo-de-base-textual">
           <head>Tipo de base textual</head>
@@ -373,8 +406,9 @@
           </table>
           <p>Utiliza el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; de la
             siguiente manera: </p>
-          <ab type="codeblock">&lt;idno
-            type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-2877719&lt;/idno&gt;</ab>
+          <ab type="codeblock">
+            &lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-2877719&lt;/idno&gt;
+          </ab>
         </div>
         <div type="level2" xml:id="descripción-del-documento">
           <head>Descripción del documento</head>
@@ -384,8 +418,10 @@
               >physDesc</seg> (<quote rendition="#i">physical description</quote>, en español:
             descripción física). La descripción debe darse como texto en un elemento <seg
               type="code">p</seg>:</p>
-          <ab type="codeblock">&lt;physDesc&gt; &lt;p&gt;La carta consiste en una hoja de papel
-            blanco delgado en el formato …&lt;/p&gt; &lt;/physDesc&gt;</ab>
+          <ab type="codeblock">
+            &lt;physDesc&gt; 
+                &lt;p&gt;La carta consiste en una hoja de papel blanco delgado en el formato …&lt;/p&gt; 
+            &lt;/physDesc&gt;</ab>
         </div>
         <div type="level2" xml:id="autor-del-texto">
           <head>Autor del texto</head>
@@ -396,9 +432,13 @@
           <p>El nombre del autor debe caso con el elemento <seg type="code">persName</seg>. En caso
             de seleccionar el autor del registro de personas, el ID asociado se genera en el
             atributo <seg type="code">@key</seg>, creando un enlace al registro.</p>
-          <ab type="codeblock"> &lt;profileDesc&gt; &lt;creation&gt;&lt;persName
-            key="H0012682"&gt;Arango y Parreño, Francisco de
-            (1765-1837)&lt;/persName&gt;…&lt;/creation&gt; &lt;/profileDesc&gt;</ab>
+          <ab type="codeblock">
+            &lt;profileDesc&gt; 
+             &lt;creation&gt;
+               &lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;…
+             &lt;/creation&gt; 
+            &lt;/profileDesc&gt;
+          </ab>
           <p>Se escribirá siempre primero apellido y luego el nombre, separados por una coma. Si se
             conoce la fecha de nacimiento y fallecimiento, es posible incluirla seguida del nombre y
             entre paréntesis.</p>
@@ -413,9 +453,13 @@
             el nombre del lugar. Si el lugar de escritura figura en el registro de lugares, el ID
             asociado se genera en el atributo <seg type="code">@key</seg>, creando un enlace al
             registro de lugares. Por ejemplo:</p>
-          <ab type="codeblock"> &lt;profileDesc&gt; &lt;creation&gt;&lt;placeName
-            key="ed_wz2_shs_qx"&gt;Madrid&lt;/placeName&gt;…&lt;/creation&gt;
-            &lt;/profileDesc&gt;</ab>
+          <ab type="codeblock">
+            &lt;profileDesc&gt; 
+              &lt;creation&gt;
+                &lt;placeName key="ed_wz2_shs_qx"&gt;Madrid&lt;/placeName&gt;…
+               &lt;/creation&gt;
+            &lt;/profileDesc&gt;
+          </ab>
         </div>
         <div type="level2" xml:id="fechas">
           <head>Fechas</head>
@@ -434,22 +478,27 @@
               <p>Fecha exacta</p>
             </item>
           </list>
-          <ab type="codeblock"> &lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del
-            año 1772&lt;/date&gt;</ab>
+          <ab type="codeblock">
+            &lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;
+          </ab>
           <list type="ordered:arabic">
             <item n="2">
               <p>Período de tiempo exacto</p>
             </item>
           </list>
-          <ab type="codeblock"> &lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
-            1731 al 11 de septiembre de 1741&lt;/date&gt;</ab>
+          <ab type="codeblock">
+            &lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
+            1731 al 11 de septiembre de 1741&lt;/date&gt;
+          </ab>
           <list type="ordered:arabic">
             <item n="3">
               <p>Período aproximado</p>
             </item>
           </list>
-          <ab type="codeblock"> &lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera
-            mitad de mayo de 1804&lt;/date&gt;</ab>
+          <ab type="codeblock">
+            &lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera
+            mitad de mayo de 1804&lt;/date&gt;
+          </ab>
         </div>
         <div type="level2" xml:id="idioma">
           <head>Idioma</head>
