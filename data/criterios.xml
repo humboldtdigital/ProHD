@@ -29,6 +29,15 @@
                         <note type="remarkResponsibility">Colaboración</note>
                     </resp>
         </respStmt>
+         <respStmt>
+          <persName>
+            <surname>López</surname>
+            <forename>Violeta</forename>
+          </persName>
+          <resp>
+                        <note type="remarkResponsibility">Colaboración</note>
+                    </resp>
+        </respStmt>
         <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
         <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
         <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
