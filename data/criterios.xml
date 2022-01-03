@@ -135,13 +135,13 @@
             distintos tipos: colaboración, colaboración editorial, transcripción, comentario y
             registros.</p>
           <ab type="codeblock">
-            &lt;respStmt&gt; 
+            &lt;respStmt&gt;  
               &lt;persName ref="118763784"&gt;
                &lt;surname&gt;[Apellido]&lt;/surname&gt; 
                &lt;forename&gt;[Nombre]&lt;/forename&gt;
               &lt;/persName&gt; 
             &lt;resp&gt; 
-            &lt;note type="remarkResponsibility"&gt;colaboración&lt;/note&gt; 
+              &lt;note type="remarkResponsibility"&gt;colaboración&lt;/note&gt; 
             &lt;/resp&gt;
             &lt;/respStmt&gt;
           </ab>
@@ -171,9 +171,9 @@
           <p>Esta información sobre la edición, debe codificarse con un elemento <seg type="code"
               >editionStmt</seg> y <seg type="code">p</seg> de la siguiente manera:</p>
           <ab type="codeblock"> 
-            &lt;editionStmt&lt; 
-             &lt;p&lt;Proyecto Humboldt digital (&lt;date&lt;2021&lt;/date&lt;)&lt;/p&lt; 
-            &lt;/editionStmt&lt;
+            &lt;editionStmt&gt;  
+            &lt;p&gt; Proyecto Humboldt digital (&lt;date&lt;2021&lt;/date&lt;)&lt;/p&gt;  
+            &lt;/editionStmt&gt; 
           </ab>
         </div>
         <div type="level2" xml:id="publicación-y-licencia">
@@ -187,15 +187,15 @@
             (lugar de publicación)y <seg type="code">availability</seg> (disponibilidad). Por
             ejemplo:</p>
           <ab type="codeblock"> 
-            &lt;publicationStmt&lt; 
-              &lt;publisher&lt;&lt;ref target="http://www.bbaw.de"&lt;Berlin-Brandenburgische Akademie der Wissenschaften
-            (BBAW)&lt;/ref&lt;&lt;/publisher&lt; 
-              &lt;pubPlace ref="http://www.geonames.org/2950159"&lt;Berlín&lt;/pubPlace&lt; 
-              &lt;availability status="free"&lt; 
+            &lt;publicationStmt&gt;  
+            &lt;publisher&gt; &lt;ref target="http://www.bbaw.de"&lt;Berlin-Brandenburgische Akademie der Wissenschaften
+            (BBAW)&lt;/ref&gt; &lt;/publisher&gt;  
+            &lt;pubPlace ref="http://www.geonames.org/2950159"&gt; Berlín&lt;/pubPlace&gt;  
+            &lt;availability status="free"&gt;  
                 &lt;licence target="http://creativecommons.org/licenses/by/4.0/"&lt;Creative Commons Atribución 4.0
-            Internacional (CC BY 4.0) &lt;/licence&lt; 
-              &lt;/availability&lt;
-            &lt;/publicationStmt&lt; </ab>
+                Internacional (CC BY 4.0) &lt;/licence&gt;  
+                &lt;/availability&gt; 
+                &lt;/publicationStmt&gt;  </ab>
           <p>De manera opcional, se puede enriquecer la información sobre la entidad responsable de
             la publicación mediante el elemento <seg type="code">ref</seg> para proporcionar el
             enlace a la web con el atributo <seg type="code">@target</seg>. Asimismo, también es
@@ -248,9 +248,8 @@
           <p>Por ejemplo:</p>
           <ab type="codeblock">
             &lt;witness&gt; 
-            &lt;bibl type="print"&gt;Humboldt, Alexander von:
-            Geografía de la plantas, ó Quadro físico de los Andes Equinoxiales, y de los paises
-            vecinos. Semanario del Nuevo Reyno de Granada, volumen 16-21, 1809.&lt;/bibl&gt;
+              &lt;bibl type="print"&gt;Humboldt, Alexander von: Geografía de la plantas, ó Quadro físico de los Andes Equinoxiales, y de los paises
+              vecinos. Semanario del Nuevo Reyno de Granada, volumen 16-21, 1809.&lt;/bibl&gt;
             &lt;/witness&gt;
           </ab>
         </div>
@@ -406,9 +405,7 @@
           </table>
           <p>Utiliza el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; de la
             siguiente manera: </p>
-          <ab type="codeblock">
-            &lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-2877719&lt;/idno&gt;
-          </ab>
+          <ab type="codeblock">&lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-2877719&lt;/idno&gt;</ab>
         </div>
         <div type="level2" xml:id="descripción-del-documento">
           <head>Descripción del documento</head>
@@ -506,7 +503,9 @@
             texto fue escrito. Dentro de <seg type="code">profileDesc</seg>, se utilizará el
             elemento <seg type="code">langUsage</seg>. Allí se anidará el elemento <seg type="code"
               >language</seg> para codificar el idioma o lengua. Por ejemplo:</p>
-          <ab type="code"> &lt;langUsage&gt; &lt;language ident="es"Español&lt;/language&gt;
+          <ab type="code">
+            &lt;langUsage&gt; 
+               &lt;language ident="es"Español&lt;/language&gt;
             &lt;/langUsage&gt; </ab>
           <p>Es necesario emplear el atributo <seg type="code">@ident</seg> para identificar con un
             código estandarizado el idioma: "es" para el español, "de" para el aleman, "en" para el
@@ -520,9 +519,9 @@
             intelectual del texto.</p>
           <p>El resumen se debe codificar en <seg type="code">//profileDesc/abstract</seg> en un
             elemento <seg type="code">p</seg> de la siguiente manera:</p>
-          <ab type="code"> &lt;abstract xml:lang="es"&gt; &lt;p&gt;Notas de Humboldt sobre la obra
-            de Jean Nicolas Berthe "Précis Historique de la Maladie qui a régné dans l’Andalousie en
-            1800". Humboldt resume las tesis del trabajo de Berthe en preparación de su tratado
+          <ab type="code">
+            &lt;abstract xml:lang="es"&gt; 
+               &lt;p&gt;Notas de Humboldt sobre la obra de Jean Nicolas Berthe "Précis Historique de la Maladie qui a régné dans l’Andalousie en 1800". Humboldt resume las tesis del trabajo de Berthe en preparación de su tratado
             científico sobre la fiebre amarilla. La obra de Berthe fue publicada en 1802.&lt;/p&gt;
             &lt;/abstract&gt; </ab>
           <p>Se proporcionará el resumen en español y en alemán. Para ello, es necesario repetir el
@@ -538,12 +537,14 @@
             el texto editado. Se aceptan tres tipos de categorías: género, forma y tema. Para ello,
             se utilizará el elemento <seg type="code">catRef</seg> con los atributos <seg
               type="code">@scheme</seg> y <seg type="code">@target</seg>. Por ejemplo:</p>
-          <ab type="code"> &lt;textClass&gt; &lt;catRef scheme="#genre" target="#notebooks"/&gt;
-            &lt;catRef scheme="#form" target="#manuscript"/&gt; &lt;catRef scheme="#subject"
-            target="#economicconditions"/&gt; &lt;catRef scheme="#subject" target="#slavery"/&gt;
-            &lt;catRef scheme="#subject" target="#geography"/&gt; &lt;catRef scheme="#subject"
-            target="#sugar"/&gt; &lt;catRef scheme="#subject" target="#trade"/&gt; &lt;catRef
-            scheme="#subject" target="#plantations"/&gt; &lt;/textClass&gt; </ab>
+          <ab type="code">
+            &lt;textClass&gt; 
+               &lt;catRef scheme="#genre" target="#notebooks"/&gt;
+               &lt;catRef scheme="#form" target="#manuscript"/&gt; 
+               &lt;catRef scheme="#subject" target="#slavery"/&gt;
+               &lt;catRef scheme="#subject" target="#geography"/&gt; 
+               &lt;catRef scheme="#subject" target="#sugar"/&gt;
+            &lt;/textClass&gt; </ab>
           <p>Las tres categorías son repetibles y opcionales, pero se recomienda usar una para el
             género y la forma y tantas como sean necesarias para clasificar el texto desde un punto
             de vista temático. Todas las categorías se deben definir previamente en la taxonomia del proyecto situada
