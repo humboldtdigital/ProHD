@@ -32,7 +32,7 @@
         <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
       </titleStmt>
       <editionStmt>
-        <p>Primera edición de Proyecto Humboldt digital - ProHD (<date>2021</date>).</p>
+        <p>Proyecto Humboldt digital - ProHD (<date>2021-2023</date>).</p>
       </editionStmt>
       <publicationStmt>
         <publisher>
@@ -473,7 +473,9 @@
           <p>De manera opcional, es posible marcar nombres de personas y citas con <seg type="code"
               >persName</seg> y <seg type="code">quote</seg>.</p>
         </div>
-        <div type="level2" xml:id="clase"><!-- to do: clase de texto --></div>
+        <div type="level2" xml:id="categorización">
+          <head>Categorización</head>
+        </div>
       </div>
       <div type="level1" xml:id="texto">
         <head>Texto</head>
