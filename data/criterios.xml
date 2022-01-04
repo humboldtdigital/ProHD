@@ -63,34 +63,28 @@
         <div type="level2" xml:id="titulo">
           <head>Título</head>
           <p>Todas las ediciones deben identificarse con un título principal. El título debe ser
-            descriptivo y breve.</p>
-          <p>La ortografía del título principal debe estar normalizada.</p>
-          <p>Además, tras el título principal, se puede incluir de manera opcional el título
-            principal en otro idioma o con la ortografía original; también es posible añadir un
-            subtítulo.</p>
+            descriptivo y breve, y debe normalizarse ortográficamente.</p>
           <p>Como parte del <seg type="code">//titleStmt</seg>, la codificación del título principal
             se realizará utilizando el elemento <seg type="code">title</seg> y el atributo <seg
               type="code">@type="main"</seg>. Por ejemplo:</p>
           <ab type="codeblock">
-            &lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La
-            Habana&lt;/title&gt;
+            &lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La Habana&lt;/title&gt;
           </ab>
-          <p>Si se desea incluir un subtítulo o una título en otro idioma u ortografía, se puede
-            repetir el elemento <seg type="code">title</seg> debajo del título principal y usar el
+          <p>Tras el título principal, se puede incluir de manera opcional el título en otro idioma, con la ortografía original o un título alternativo; también es posible añadir un
+            subtítulo, si el editor o editora así lo desea.</p>
+          <p>Con este fin se puede repetir el elemento <seg type="code">title</seg> debajo del título principal y usar el
             atributo <seg type="code">@type="sub"</seg>:</p>
           <ab type="codeblock">
-            &lt;title type="main"&gt;Carta de Francisco de Arango y Parreño a
-            Alexander von Humboldt&lt;/title&gt; 
-            &lt;title type="sub" xml:lang="fr"&gt;À Monsieur
-            Mr. le Baron A. Humboldt&lt;/title&gt; 
+            &lt;title type="main"&gt;Carta de Francisco de Arango y Parreño a Alexander von Humboldt&lt;/title&gt; 
+            &lt;title type="sub" xml:lang="fr"&gt;À Monsieur Mr. le Baron A. Humboldt&lt;/title&gt; 
           </ab>
-          <p>Además, se puede usar de manera opcional el atributo <seg type="code"
-            >@xml:lang</seg>.</p>
+          <p>También se puede usar de manera opcional el atributo <seg type="code"
+            >@xml:lang</seg> con un código estándar para indicar el idioma: "es" para el español, "fr" para el francés, "de" para el alemán, "en" para el inglés, etc.</p>
         </div>
         <div type="level2" xml:id="editores-y-colaboradores">
           <head>Editores y colaboradores</head>
-          <p>Tras el título, como parte del <seg type="code">//titleStmt</seg>, se debe identificar
-            de manera clara quiénes son los responsables de la edición con el elemento <seg
+          <p>Tras el título, como parte del elemento <seg type="code">//titleStmt</seg>, se debe identificar
+            de manera clara quiénes son los responsables de la edición con <seg
               type="code">editor</seg>. El nombre de la persona se debe codificar en el elemento
             hijo <seg type="code">persName</seg>.</p>
           <list type="unordered">
@@ -105,15 +99,16 @@
           </list>
           <p>Si hubiera más de un editora o editora, es posible repetir el elemento <seg type="code"
               >editor</seg>.</p>
-          <p>Es posible codificar en el atributo <seg type="code">@ref</seg> la referencia a una
-            base de datos externa en forma de URI, VIAF, etc.</p>
+          <p>También es posible codificar en el atributo <seg type="code">@ref</seg> la referencia a una
+            base de datos externa en forma de URI como, por ejemplo, VIAF u ORCID.</p>
           <ab type="codeblock"> 
             &lt;editor&gt; 
             &lt;persName ref="118763784"&gt;
               &lt;surname&gt;[Apellido]&lt;/surname&gt; 
               &lt;forename&gt;[Nombre]&lt;/forename&gt;
             &lt;/persName&gt; 
-            &lt;/editor&gt;</ab>
+            &lt;/editor&gt;
+          </ab>
           <p>Si en la edición hubieran participado otras personas con tareas menores, es posible
             incluir el nombre de los colaboradores y colaboradoras con el elemento <seg type="code"
               >respStmt</seg> (<quote rendition="#i">statement of responsibility</quote> –
