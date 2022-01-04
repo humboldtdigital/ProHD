@@ -112,7 +112,7 @@
           <p>Si en la edición hubieran participado otras personas con tareas menores, es posible
             incluir el nombre de los colaboradores y colaboradoras con el elemento <seg type="code"
               >respStmt</seg> (<quote rendition="#i">statement of responsibility</quote> –
-            declaración de responsabilidad). La información personal se añade en el elemento <seg
+            declaración de responsabilidad). Nuevamente, el nombre de la persona se añade en el elemento <seg
               type="code">persName</seg>.</p>
           <list type="unordered">
             <item>
@@ -125,11 +125,10 @@
             </item>
           </list>
           <p>En el atributo <seg type="code">@ref</seg> también se puede codificar la referencia a
-            una base de datos externa en forma de URI, VIAF, etc.</p>
+            una base de datos externa en forma de URI como VIAF u ORCID.</p>
           <p>El tipo de colaboración se debe definir detalladamente con el elemento <seg type="code"
               >resp</seg> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
-            elemento <seg type="code">note</seg> se identifica la contribución que puede ser de
-            distintos tipos: colaboración, colaboración editorial, transcripción, comentario y
+            elemento <seg type="code">note</seg> se debe identificar el tipo de contribución: colaboración, colaboración editorial, transcripción, comentario o
             registros.</p>
           <ab type="codeblock">
             &lt;respStmt&gt;  
@@ -151,12 +150,9 @@
           <p>Como parte del <seg type="code">//titleStmt</seg> es necesario utilzar el elemento <seg
               type="code">funder</seg> de la siguiente manera:</p>
           <ab type="codeblock">
-            &lt;funder ref="https://www.auswaertiges-amt.de/de/"&lt;Auswärtiges
-            Amt&lt;/funder&lt; 
-            &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&lt;Fritz
-            Thyssen Stiftung&lt;/funder&lt; 
-            &lt;funder
-            ref="https://www.gerda-henkel-stiftung.de/"&lt;Gerda Henkel Stiftung&lt;/funder&lt;
+            &lt;funder ref="https://www.auswaertiges-amt.de/de/"&lt;Auswärtiges Amt&lt;/funder&lt; 
+            &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&lt;Fritz Thyssen Stiftung&lt;/funder&lt; 
+            &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&lt;Gerda Henkel Stiftung&lt;/funder&lt;
           </ab>
           <p>El elemento <seg type="code">funder</seg> debe llevar el atributo <seg type="code"
               >@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras. </p>
