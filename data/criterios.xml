@@ -54,9 +54,9 @@
   </teiHeader>
   <text>
     <body>
-      <div type="level1" xml:id="metadatos-generales">
-        <head>Metadatos generales</head>
-        <p>Los metadatos generales son de carácter descriptivo y ayudan a identificar la edición
+      <div type="level1" xml:id="metadatos">
+        <head>Metadatos</head>
+        <p>Los metadatos son de carácter descriptivo y ayudan a identificar la edición
           digital, los responsables de la publicación, la fuente de la que deriva el texto, las
           condiciones relacionadas con la creación y la clase de texto mediante categorías. Son aplicables a todos los
           tipos de texto (documento, carta, etc.) del proyecto.</p>
@@ -534,14 +534,14 @@
         <div type="level2" xml:id="estructuras-textuales">
           <head>Estructuras textuales</head>
           <div type="level3" xml:id="párrafo">
-            <head>Párrafo</head>
+            <head>Párrafos</head>
             <p>En todas las ediciones del proyecto se deben codificar los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). Es posible codificar los
               párrafos sangrados si existe una sangría en el original y se considera como
               significativa.</p>
             <p>Los párrafos se codifican con el elemento <seg type="code">p</seg> (paragraph).</p>
           </div>
           <div type="level3" xml:id="ruptura-de-línea">
-            <head>Ruptura de línea</head>
+            <head>Rupturas de línea</head>
             <p>Las rupturas de línea se deben codificar de manera explícita siguiendo la fuente textual. Los separadores <hi
                 rendition="#i">no deben introducirse manualmente, es decir, con la tecla
                 correspondiente del teclado</hi>.</p>
@@ -602,8 +602,8 @@
               marcadas también con <seg type="code">gap/</seg>.</p>
           </div>
           <div type="level3" xml:id="espacio-en-blanco">
-            <head>Espacio en blanco</head>
-            <p>El espacio en blanco semánticamente significativo en la fuente, por ejemplo, las
+            <head>Espacios en blanco</head>
+            <p>El espacio en blanco semánticamente significativo en la fuente como,  por ejemplo, las
               lagunas dejadas por el autor en el texto para complementar el texto posteriormente,
               se deben codificar con el elemento vacío <seg type="code">space</seg>. La
               reproducción de dichos vacíos en la transcripción debe distinguirse de las <ref
