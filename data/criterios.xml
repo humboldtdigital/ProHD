@@ -530,30 +530,28 @@
       </div>
       <div type="level1" xml:id="texto">
         <head>Texto</head>
-        <p>Codificación de las ediciones y explicaciones textuales por los autores y autoras o las
-          editores y editoras.</p>
+        <p>Los textos editados como parte del proyecto deben codificarse desde un punto de vista estructural con el objetivo de capturar las divisiones internas del documento (secciones, párrafos, etc.) y la paginación o  foliación de la fuente. Asimismo, se deben codificar de manera explícita los cambios en la tipografía y las intervenciones del autor y del editor o editora. Por último, en la medida de lo posible, se deben codificar también las entidades nombradas en el cuerpo del texto.</p>
         <div type="level2" xml:id="estructuras-textuales">
           <head>Estructuras textuales</head>
           <div type="level3" xml:id="párrafo">
             <head>Párrafo</head>
-            <p>Los párrafos se marcan siguiendo el manuscrito. También es posible registrar los
+            <p>Los párrafos se marcan siguiendo la estructura y secuencia de la fuente textual (sea un manuscrito o un impreso). Es posible codificar los
               párrafos sangrados si existe una sangría en el original y se considera como
-              significativa según las directrices de edición respectivas y, por tanto, debe
-              codificarse.</p>
+              significativa.</p>
             <p>Los párrafos se codifican con el elemento <seg type="code">p</seg> (paragraph).</p>
           </div>
           <div type="level3" xml:id="ruptura-de-línea">
             <head>Ruptura de línea</head>
-            <p>Las rupturas de línea serán transcritas como en el original. Los separadores <hi
+            <p>Las rupturas de línea se deben codificar de manera explícita siguiendo la fuente textual. Los separadores <hi
                 rendition="#i">no deben introducirse manualmente, es decir, con la tecla
                 correspondiente del teclado</hi>.</p>
-            <p>Un salto de línea en el original se codifica con un elemento (vacío) <seg type="code"
+            <p>Las rupturas de línea se deben codificar con un elemento (vacío) <seg type="code"
                 >lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se utiliza como
               el <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
               TEI.</p>
-            <p>Si el salto de línea ocurre dentro de una palabra, éste debe ser marcado con el
+            <p>Si el salto de línea ocurre dentro de una palabra, debe codificarse con el
               atributo <seg type="code">@break</seg> y el valor <seg type="code">no</seg>. En caso
-              de aparecer un separador, éste será codificado como <seg type="code">
+              de aparecer un separador en la fuente original, debe codificarse como <seg type="code">
                 <g ref="#typoHyphen"/>
               </seg>.</p>
             <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za
@@ -561,20 +559,19 @@
           </div>
           <div type="level3" xml:id="foliación-y-paginación">
             <head>Foliación y paginación</head>
-            <p>Se debe marcar siempre el inicio de la foliación o paginación, es decir, el lugar en
+            <p>En todas las ediciones del proyecto se debe codificar el inicio de la foliación o paginación, es decir, el lugar en
               que se inicia un nuevo folio o página en la fuente. Siempre se marca el principio del
               folio o página, no el final. En caso de que el autor haya empleado otro sistema para
-              numerar las páginas en el texto original, también se debería marcar, además de la
-              foliación del documento físico.</p>
-            <p>El inicio de folio o página de la fuente se debe marcar siempre con el elemento vacío
+              numerar las páginas en la fuente textual, se recomienda codificar la foliciación o paginación del autor de manera adicional a la secuencia física del documento.</p>
+            <p>El inicio de folio o página se debe codificar siempre con el elemento vacío
                 <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
               contiene el número de página o folio (según la secuencia física del documento o del
               autor).</p>
             <ab type="codeblock">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente
               Americano</ab>
             <p>La digitalización del folio o página se debe marcar con el atributo <seg type="code"
-                >@facs</seg> (facsimile). Como regla general solo el nombre del fichero de la imagen
-              digital; el nombre del fichero debe corresponder a un URI, es decir, ser único. Por
+                >@facs</seg> (facsimile). Como regla general solo se debe codificar el nombre del fichero de la imagen
+              digital; el nombre del fichero debe corresponder a un URI, es decir, ser único y uniforme. Por
               ejemplo:</p>
             <ab type="codeblock">&lt;n="1r" facs="787980595-0001"/&gt;</ab>
             <p>Cualquier otra información sobre la numeración contenida en la fuente se debe
@@ -584,22 +581,19 @@
           </div>
           <div type="level3" xml:id="páginas-en-blanco">
             <head>Páginas en blanco</head>
-            <p>Las páginas en blanco del manuscrito pueden ser marcadas. Por un lado, estas deben
-              distinguirse de las <ref target="#texto-ilegible">páginas perdidas</ref>, y por otro
-              lado, se deben diferenciar también de los <ref target="#espacio-en-blanco">espacios en
-                blanco</ref> semánticamente significativos y las <ref target="#omisiones">omisiones
-                de los editores</ref> .</p>
-            <p>Para poder registrar y mostrar la foliación correctamente, debe registrar cada página
-              (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre debe
-              introducir <quote rendition="#i">1</quote> como número para cada nueva página en
-              blanco registrada.</p>
-            <p>Las páginas en blanco se marcan con el elemento (vacío) <seg type="code">gap/</seg>.
+            <p>En todas las ediciones del proyecto se deben codificar las páginas en blanco de la fuente textual. Además, se debe distinguir entre páginas en blanco, <ref target="#texto-ilegible">páginas perdidas</ref>, <ref target="#espacio-en-blanco">espacios en
+                blanco</ref> semánticamente significativos y <ref target="#omisiones">omisiones
+                de los editores</ref>.</p>
+            <p>Para poder registrar y mostrar la foliación correctamente, se debe registrar cada página
+              (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre se debe
+              introducir <quote rendition="#i">1</quote> un número para cada nueva página en
+              blanco codificada.</p>
+            <p>Las páginas en blanco se deben codificar con el elemento (vacío) <seg type="code">gap/</seg>.
               Este se coloca justo después del salto de página (<seg type="code">pb/</seg>)
               anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code"
                 >@quantity</seg> del elemento <seg type="code">gap/</seg> se establecen con los
               valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg
-                type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Varias
-              páginas vacías seguidas serán codificadas individualmente.</p>
+                type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando haya más de una página en blanco seguida, se deben codificar cada unan de ellas individualmente.</p>
             <ab type="codeblock">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1"
               reason="empty"/&gt;</ab>
             <p>Tanto <ref target="#texto-ilegible">partes del texto dañadas o ilegibles</ref>, como
@@ -609,17 +603,17 @@
           <div type="level3" xml:id="espacio-en-blanco">
             <head>Espacio en blanco</head>
             <p>El espacio en blanco semánticamente significativo en la fuente, por ejemplo, las
-              lagunas dejados por el autor en el texto para complementar el texto posteriormente,
-              pueden ser marcados con el elemento vacío <seg type="code">space</seg>. La
+              lagunas dejadas por el autor en el texto para complementar el texto posteriormente,
+              se deben codiciar con el elemento vacío <seg type="code">space</seg>. La
               reproducción de dichos vacíos en la transcripción debe distinguirse de las <ref
                 target="#omisiones">omisiones</ref> realizadas por los editores, así como de las
                 <ref target="#páginas-en-blanco">páginas vacías</ref> o <ref
-                target="#texto-ilegible">perdidas</ref>, cada una de las cuales será marcada como
+                target="#texto-ilegible">perdidas</ref>, cada una de las cuales debe codificarse como
                 <seg type="code">gap/</seg>.</p>
-            <p>El espacio en blanco semánticamente significativo será codificado mediante el
+            <p>El espacio en blanco semánticamente significativo debe codificarse con el
               elemento (vacío) <seg type="code">space/</seg>. El atributo <seg type="code"
                 >@dim</seg> indica si es un espacio en blanco horizontal o vertical. El alcance de
-              la omisión se indica mediante los valores correspondientes de los atributos <seg
+              la omisión se debe indicar mediante los valores correspondientes de los atributos <seg
                 type="code">@unit</seg> y <seg type="code">@quantity</seg>. Si el número de líneas
                 (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code"
                 >unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
