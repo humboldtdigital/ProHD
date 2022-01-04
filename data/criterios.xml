@@ -150,9 +150,9 @@
           <p>Como parte del <seg type="code">//titleStmt</seg> es necesario utilzar el elemento <seg
               type="code">funder</seg> de la siguiente manera:</p>
           <ab type="codeblock">
-            &lt;funder ref="https://www.auswaertiges-amt.de/de/"&lt;Auswärtiges Amt&lt;/funder&lt; 
-            &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&lt;Fritz Thyssen Stiftung&lt;/funder&lt; 
-            &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&lt;Gerda Henkel Stiftung&lt;/funder&lt;
+            &lt;funder ref="https://www.auswaertiges-amt.de/de/"&gt;Auswärtiges Amt&lt;/funder&gt; 
+            &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&gt;Fritz Thyssen Stiftung&lt;/funder&gt; 
+            &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&gt;Gerda Henkel Stiftung&lt;/funder&gt;
           </ab>
           <p>El elemento <seg type="code">funder</seg> debe llevar el atributo <seg type="code"
               >@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras.</p>
@@ -165,7 +165,7 @@
               >editionStmt</seg> y <seg type="code">p</seg> de la siguiente manera:</p>
           <ab type="codeblock"> 
             &lt;editionStmt&gt;  
-              &lt;p&gt; Proyecto Humboldt Digital (&lt;date&lt;2021&lt;/date&lt;)&lt;/p&gt;  
+              &lt;p&gt;Proyecto Humboldt Digital (&lt;date&gt;2021&lt;/date&gt;)&lt;/p&gt;  
             &lt;/editionStmt&gt; 
           </ab>
           <p>La fecha entre paréntesis debe corresponder al año de creación del documento TEI; es importante no confundir esta fecha con la fecha de creación de la fuente que se está editando.</p>
@@ -182,7 +182,8 @@
             ejemplo:</p>
           <ab type="codeblock"> 
             &lt;publicationStmt&gt;  
-             &lt;publisher&gt; &lt;ref target="http://www.bbaw.de"&lt;Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)&lt;/ref&gt; &lt;/publisher&gt;  
+             &lt;publisher&gt; &lt;ref target="http://www.bbaw.de"&gt;  Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)&lt;/ref&gt; 
+             &lt;/publisher&gt;  
              &lt;pubPlace ref="http://www.geonames.org/2950159"&gt; Berlín&lt;/pubPlace&gt;  
              &lt;availability status="free"&gt;  
                 &lt;licence target="http://creativecommons.org/licenses/by/4.0/"&lt;Creative Commons Atribución 4.0 Internacional (CC BY 4.0) &lt;/licence&gt;  
@@ -204,15 +205,15 @@
             Atribución 4.0 Internacional (CC BY 4.0)".</p>
         </div>
         <div type="level2" xml:id="tradición-manuscrita">
-          <head>Tradición manuscrita</head>
+          <head>Fuente textual</head>
           <p>En todas las ediciones del proyecto se debe codificar la fuente de la que deriva el
             texto, el nombre de la institución en la que se conserva el documento y al menos un
-            identificador como una signatura. Si fuera necesario también se puede incluir la
-            colección.</p>
+            identificador como una signatura.</p>
           <p>La descripción de la fuente debe codificarse con el elemento <seg type="code"
               >msDesc</seg> (manuscript description). Dentro se debe utilizar el elemento <seg type="code">msIdentifier</seg> y proporcionar información sobre la institución que conserva el documento con el elemento <seg type="code"
               >institution</seg> y la signatura con elemento <seg type="code">idno</seg>, que llevará
-            el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>. Es importante anidar el elemento <seg type="code">idno</seg> dentro de otro elemento <seg type="code">idno</seg>; de esta manera es posible repetir el elemento <seg type="code">idno</seg> tantas veces como sea necesario. Por ejemplo:</p>
+            el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>. Es importante anidar el elemento <seg type="code">idno</seg> dentro de otro elemento <seg type="code">idno</seg>; de esta manera es posible repetir el elemento <seg type="code">idno</seg> tantas veces como sea necesario. De manera opcional, es posible incluir información sobre la colección con el elemento <seg type="code"
+              >collection</seg>. Por ejemplo:</p>
           <ab type="codeblock"> 
             &lt;msDesc type="copy"&gt; 
               &lt;msIdentifier&gt;
@@ -224,13 +225,8 @@
               &lt;/msIdentifier&gt;
             &lt;/msDesc&gt; 
           </ab>
-          <p>De manera opcional, es posible incluir información sobre la colección con el elemento <seg type="code"
-              >collection</seg>.</p>
-        </div>
-        <div type="level2" xml:id="tradición-impresa">
-          <head>Tradición impresa</head>
-          <p>Cuando la fuente de la que deriva el texto es un documento impreso, se debe codificar
-            la información con el elemento <seg type="code">witness</seg>. Dentro se debe utilizar
+          <p>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado una edición impresa, se debe codificar
+            la información en <seg type="code">listWit</seg> y utilizar el elemento <seg type="code">witness</seg>. Dentro se debe utilizar
             un elemento <seg type="code">bibl</seg> para codificar una referencia bibliográfica. Se
             debe utilizar el atributo <seg type="code">@type</seg> con el valor <seg type="code"
               >print</seg> para distinguirlo de un manuscrito.</p>
@@ -243,7 +239,7 @@
           </ab>
         </div>
         <div type="level2" xml:id="tipo-de-base-textual">
-          <head>Tipo de base textual</head>
+          <head>Tipo de fuente textual</head>
           <p>La fuente de la edición siempre se basa en un texto que puede ser de diferentes
             tipos:</p>
           <list type="unordered">
@@ -260,13 +256,12 @@
               <p>Impreso</p>
             </item>
           </list>
-          <p>Cuando se utilizan más de una fuente textual, en este caso se debe escoger <hi
+          <p>Cuando se utilizan más de una fuente textual, se debe escoger <hi
               rendition="#i">un único</hi> documento como base textual. Los demás testimonios
             textuales se mencionan explícitamente en la edición sólo en los puntos en que indican
-            variantes, mediante un comentario editorial.</p>
+            variantes mediante un comentario editorial.</p>
           <p>Si la existencia y el contenido de un documento se han deducido con la ayuda de otros
-            documentos, no hay base textual.</p>
-          <p>En el elemento <seg type="code">msDesc</seg>, el tipo de base textual se marca con el
+            documentos, no hay base textual. En tal caso, en el elemento <seg type="code">msDesc</seg>, se debe marcar el tipo de fuente textual con el
             atributo <seg type="code">@rend</seg>. Para ello se puede escoger entre las siguientes
             valores:</p>
           <table>
