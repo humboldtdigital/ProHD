@@ -48,7 +48,7 @@
         </availability>
       </publicationStmt>
       <sourceDesc>
-        <p>Basado en ediarum</p>
+        <p>Originalmente basado en el manual de ediarum.</p>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
@@ -57,8 +57,8 @@
       <div type="level1" xml:id="metadatos-generales">
         <head>Metadatos generales</head>
         <p>Los metadatos generales son de carácter descriptivo y ayudan a identificar la edición
-          digital, los responsables de la publicación, la fuente de la que deriva el textos, las
-          condiciones relacionadas con la creación y el tipo de texto. Son aplicables a todos los
+          digital, los responsables de la publicación, la fuente de la que deriva el texto, las
+          condiciones relacionadas con la creación y la clase de texto mediante categorías. Son aplicables a todos los
           tipos de texto (documento, carta, etc.) del proyecto.</p>
         <div type="level2" xml:id="titulo">
           <head>Título</head>
