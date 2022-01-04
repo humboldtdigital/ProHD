@@ -172,8 +172,8 @@
         </div>
         <div type="level2" xml:id="publicación-y-licencia">
           <head>Publicación y licencia</head>
-          <p>Se debe codificar información sobre las organizaciones responsables de la distribucón y
-            publicación, lugar de publicación y licencia en todas las ediciones creadas en el marco
+          <p>En todas las ediciones se debe codificar información sobre las organizaciones responsables de la distribucón y
+            publicación de las ediciones, los lugares de publicación y la licencia en todas las ediciones creadas en el marco
             del proyecto.</p>
           <p>Para ello es necesario utilizar el elemento <seg type="code">publicationStmt</seg>.
             Dentro de este elemento, se deben utilizar tres elementos anidados: <seg type="code"
@@ -182,17 +182,14 @@
             ejemplo:</p>
           <ab type="codeblock"> 
             &lt;publicationStmt&gt;  
-            &lt;publisher&gt; &lt;ref target="http://www.bbaw.de"&lt;Berlin-Brandenburgische Akademie der Wissenschaften
-            (BBAW)&lt;/ref&gt; &lt;/publisher&gt;  
-            &lt;pubPlace ref="http://www.geonames.org/2950159"&gt; Berlín&lt;/pubPlace&gt;  
-            &lt;availability status="free"&gt;  
-                &lt;licence target="http://creativecommons.org/licenses/by/4.0/"&lt;Creative Commons Atribución 4.0
-                Internacional (CC BY 4.0) &lt;/licence&gt;  
-                &lt;/availability&gt; 
-                &lt;/publicationStmt&gt;  </ab>
+             &lt;publisher&gt; &lt;ref target="http://www.bbaw.de"&lt;Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)&lt;/ref&gt; &lt;/publisher&gt;  
+             &lt;pubPlace ref="http://www.geonames.org/2950159"&gt; Berlín&lt;/pubPlace&gt;  
+             &lt;availability status="free"&gt;  
+                &lt;licence target="http://creativecommons.org/licenses/by/4.0/"&lt;Creative Commons Atribución 4.0 Internacional (CC BY 4.0) &lt;/licence&gt;  
+             &lt;/availability&gt; 
+            &lt;/publicationStmt&gt;  </ab>
           <p>De manera opcional, se puede enriquecer la información sobre la entidad responsable de
-            la publicación mediante el elemento <seg type="code">ref</seg> para proporcionar el
-            enlace a la web con el atributo <seg type="code">@target</seg>. Asimismo, también es
+            la publicación mediante el elemento <seg type="code">ref</seg> para proporcionar un hipervínculo a la web con el atributo <seg type="code">@target</seg>. Asimismo, también es
             posible utilizar el atributo <seg type="code">@ref</seg> en el elemento <seg type="code"
               >pubPlace</seg> para identificar el lugar de publicación con un URI.</p>
           <p>Los elementos <seg type="code">publisher</seg> y <seg type="code">pubPlace</seg> son
