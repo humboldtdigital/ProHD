@@ -155,19 +155,20 @@
             &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&lt;Gerda Henkel Stiftung&lt;/funder&lt;
           </ab>
           <p>El elemento <seg type="code">funder</seg> debe llevar el atributo <seg type="code"
-              >@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras. </p>
+              >@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras.</p>
         </div>
         <div type="level2" xml:id="edición">
           <head>Edición</head>
-          <p>Todas las ediciones del proyecto, deben mencionar el Proyecto Humboldt Digital y
+          <p>Todas las ediciones del proyecto deben mencionar el Proyecto Humboldt Digital y
             documentar la fecha de edición correspondiente a la creación del documento TEI.</p>
-          <p>Esta información sobre la edición, debe codificarse con un elemento <seg type="code"
+          <p>Esta información sobre la edición, debe codificarse con los elementos <seg type="code"
               >editionStmt</seg> y <seg type="code">p</seg> de la siguiente manera:</p>
           <ab type="codeblock"> 
             &lt;editionStmt&gt;  
-            &lt;p&gt; Proyecto Humboldt digital (&lt;date&lt;2021&lt;/date&lt;)&lt;/p&gt;  
+              &lt;p&gt; Proyecto Humboldt Digital (&lt;date&lt;2021&lt;/date&lt;)&lt;/p&gt;  
             &lt;/editionStmt&gt; 
           </ab>
+          <p>La fecha entre paréntesis debe corresponder al año de creación del documento TEI; es importante no confundir esta fecha con la fecha de creación de la fuente que se está editando.</p>
         </div>
         <div type="level2" xml:id="publicación-y-licencia">
           <head>Publicación y licencia</head>
