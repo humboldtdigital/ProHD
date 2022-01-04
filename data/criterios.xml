@@ -649,64 +649,83 @@
           </div>
           <div type="level3" xml:id="tablas">
             <head>Tablas</head>
-            <p>Las tablas contenidas en la fuente se transcriben como tales, haciendo distinción
+            <p>Las tablas contenidas en la fuente se transcriben como tal, haciendo distinción
               entre tablas explícitas e implícitas. Hay tablas explícitas dibujadas por el autor,
               mientras que en las implícitas la tabla es reconocible sólo por la disposición de sus
               contenidos. Se debe distinguir entre tablas y <ref target="#listas">enumeraciones que
                 se asemejan a listas</ref>.</p>
-            <p>Las tablas se marcan con el elemento <seg type="code">table</seg>. A continuación, se
+            <p>Las tablas se deben codificar con el elemento <seg type="code">table</seg>. A continuación, se
               asigna a la primera fila de la tabla el papel del etiquetado: <seg type="code"
-                >@role="label"</seg>.</p>
-            <ab type="codeblock"> &lt;table rows="3" cols="2"&gt; &lt;head&gt;Tabla&lt;/head&gt;
-              &lt;row role="label"&gt; &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
-              &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt; &lt;/row&gt; &lt;row&gt;
-              &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; &lt;cell&gt;[Columna 2/ Fila
-              1]&lt;/cell&gt; &lt;/row&gt; … &lt;/table&gt;</ab>
+                >@role="label"</seg>. Por ejemplo:</p>
+            <ab type="codeblock">
+            &lt;table rows="3" cols="2"&gt; 
+              &lt;head&gt;Tabla&lt;/head&gt;
+              &lt;row role="label"&gt; 
+               &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
+               &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt; 
+              &lt;/row&gt; &lt;row&gt;
+               &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; 
+               &lt;cell&gt;[Columna 2/ Fila 1]&lt;/cell&gt; 
+              &lt;/row&gt; … 
+            &lt;/table&gt;</ab>
           </div>
           <div type="level3" xml:id="alineación-de-texto">
             <head>Alineación de texto</head>
             <p>En las tablas y en el inicio de una carta, se puede especificar la alineación del
-              texto. De este modo, las fechas o las celdas la tabla se alinean a la derecha.</p>
+              texto. De este modo, las fechas o las celdas de la tabla se alinean a la derecha.</p>
             <p>El elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code"
-                >dateline</seg> se marca con un atributo <seg type="code">@rendition</seg> con el
+                >dateline</seg> se debe codificar con un atributo <seg type="code">@rendition</seg> con el
               valor <seg type="code">#right</seg>.</p>
-            <ab type="codeblock"> &lt;table cols="4" rows="20" rend="drawn"&gt; &lt;head&gt;Océan
-              entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
-              &lt;row role="label"&gt; &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
+            <ab type="codeblock"> 
+            &lt;table cols="4" rows="20" rend="drawn"&gt; 
+             &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
+             &lt;row role="label"&gt; 
+              &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
               &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell&gt;
-              &lt;cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
-              thermomètre de reaumur.&lt;/cell&gt; &lt;cell&gt;température &lt;lb/&gt;de
+              cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
+              thermomètre de reaumur.&lt;/cell&gt; 
+              &lt;cell&gt;température &lt;lb/&gt;de
               l’atmosphère.&lt;lb/&gt; &lt;choice&gt;&lt;orig/&gt;&lt;reg&gt;thermomètre de
-              reaumur.&lt;/reg&gt; &lt;/choice&gt;&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; &lt;cell
-              rendition="#right"&gt;43°. 29′&lt;/cell&gt; &lt;cell rendition="#right"&gt;10°.
-              31′.″&lt;/cell&gt; &lt;cell rendition="#right"&gt;12°.&lt;/cell&gt; &lt;cell
-              rendition="#right"&gt;18°.&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; &lt;cell
-              rendition="#right"&gt;39. 10.&lt;/cell&gt; &lt;cell rendition="#right"&gt;16. 18.
-              30″&lt;/cell&gt; &lt;cell rendition="#right"&gt;12.&lt;/cell&gt; &lt;cell
-              rendition="#right"&gt;13.&lt;/cell&gt; &lt;/row&gt; &lt;!--[…]--&gt;
-              &lt;/table&gt;</ab>
+              reaumur.&lt;/reg&gt; &lt;/choice&gt;&lt;/cell&gt; 
+            &lt;/row&gt; &lt;row&gt; 
+             &lt;cell
+              rendition="#right"&gt;43°. 29′&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;10°.
+              31′.″&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;12°.&lt;/cell&gt; 
+              &lt;cell
+              rendition="#right"&gt;18°.&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; 
+              &lt;cell
+              rendition="#right"&gt;39. 10.&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;16. 18.
+              30″&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;12.&lt;/cell&gt; 
+              &lt;cell
+              rendition="#right"&gt;13.&lt;/cell&gt; 
+             &lt;/row&gt; 
+             &lt;!--[…]--&gt;
+            &lt;/table&gt;</ab>
           </div>
           <div type="level3" xml:id="nota-en-el-manuscrito">
-            <head>Nota en el manuscrito</head>
+            <head>Nota en la fuente textual</head>
             <p>Las notas del autor o de un editor contemporáneo no se insertan según su ubicación en
               el manuscrito, sino en el pasaje del texto al que la nota se refiere realmente (o que
               el editor supone razonablemente que se refiere). En caso de emplear una marca de
-              inserción (asterisco, número, etc.), debe utilizarse una marca de inserción
-              generalizada (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
+              inserción (asterisco, número, etc.), debe utilizarse una señal de inserción
+              general (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
               indicar que el texto fue introducido por el autor y no por los editores.</p>
             <p>
               <hi rendition="#b">Se debe diferenciar entre las notas y las adiciones</hi>: las
               adiciones complementan el texto principal y se integran sintácticamente en él. Las
               notas son, como las notas a pie de página impresas, unidades de texto
-              independientes</p>
-            <p>Las notas en el manuscrito se codifican en un elemento <seg type="code"
+              independientes.</p>
+            <p>Las notas en el manuscrito se deben codificar con un elemento <seg type="code"
               >note</seg>:</p>
-            <ab type="codeblock">En los partidos más remotos una caballería &lt;note place="mBottom"
-              hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta
-              y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos
-              pesos fuertes al contado,[…]</ab>
-            <p>El autor de la nota se marca con el atributo <seg type="code">@hand</seg>. Existen
-              los siguientes valores:</p>
+            <ab type="codeblock">
+            En los partidos más remotos una caballería &lt;note place="mBottom"
+              hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]
+              </ab>
+            <p>El autor de la nota se puede codificar con el atributo <seg type="code">@hand</seg>. Los siguientes valores están permitidos:</p>
             <table>
               <row role="label">
                 <cell>
@@ -757,7 +776,7 @@
                 </cell>
               </row>
             </table>
-            <p>El lugar de la nota será marcado con el atributo <seg type="code">@place</seg>:</p>
+            <p>El lugar de la nota se debe codificar con el atributo <seg type="code">@place</seg>:</p>
             <table>
               <row role="label">
                 <cell>
@@ -819,8 +838,8 @@
               </row>
             </table>
             <p>En caso de haber una marca de inserción del autor, ésta será codificada con el
-              elemento vacío <seg type="code">metamark/</seg>. La apariencia la marca de inserción
-              (asterisco, número, etc.) no será registrada.</p>
+              elemento vacío <seg type="code">metamark/</seg>. La apariencia de la marca de inserción
+              (asterisco, número, etc.) no debe hacerse explícita.</p>
           </div>
           <div type="level3" xml:id="dibujos-e-ilustraciones">
             <head>Dibujos e ilustraciones</head>
