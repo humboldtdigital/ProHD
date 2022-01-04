@@ -267,7 +267,7 @@
           <table>
             <row role="label">
               <cell>
-                <p>Tipo de base textual</p>
+                <p>Tipo de fuente textual</p>
               </cell>
               <cell>
                 <p>Valor para <seg type="code">@rend</seg>
@@ -329,28 +329,19 @@
           <ab type="codeblock">&lt;msDesc rend="manuscript"&gt;</ab>
         </div>
         <div type="level2" xml:id="uri-del-registro-archivístico">
-          <head>URI del registro archivístico</head>
+          <head>URI del registro bibliográfico</head>
           <p>Las fuentes documentales se identifican tradicionalmente con una signatura. Dado que
-            las signaturas solo pueden ser identificadas parcialmente por máquinas, en caso de
-            disponer de un URI, éste debe ser añadido. El URI es un identificador de recursos
+            las signaturas solo pueden ser identificadas parcialmente por máquinas, siempre que sea posible, es recomendable añadir un URI si se conoce o está disponible. El URI es un identificador de recursos
             uniforme (del inglés <quote rendition="#i">Uniform Resource Identifier</quote>). El
             identificador está estandarizado (<ref target="https://tools.ietf.org/html/rfc3986">RFC
               3986</ref>) y es legible por una máquina, ya que únicamente se compone de ciertos
             símbolos (especialmente los espacios en blanco no están permitidos). <ref
               target="https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme">El artículo
               de la wikipedia acerca del URI</ref> ofrece un breve resumen de la sintaxis. (Para
-            información más detallada, lea <ref
+            información más detallada, véase <ref
               target="https://de.wikipedia.org/wiki/Uniform_Resource_Identifier#Aufbau">el articulo
-              en inglés</ref>)</p>
-          <p>Cada vez más archivos, bibliotecas y catálogos colectivos ofrecen URIs. En el mundo de
-            habla alemana, el catálogo colectivo <quote rendition="#i">Kalliope</quote> asigna un
-            URI a cada elemento de la lista. Este URI es denominado EAD-ID, <quote rendition="#i"
-              >Encoded Archival Description-Identifier</quote>, p. ej.: <ref
-              target="http://kalliope-verbund.info/DE-611-HS-2877719"
-              >http://kalliope-verbund.info/DE-611-HS-2877719</ref>
-          </p>
-          <p>En todas las ediciones del proyecto debería haber una URI que conectar la edición con
-            el registro bibliográfico de un repositorio digital.</p>
+              en inglés</ref>).</p>
+          <p>En todas las ediciones del proyecto es recomendable utilizar un URI para conectar el texto editado con el registro bibliográfico de un repositorio digital.</p>
           <table>
             <row role="label">
               <cell>
@@ -374,7 +365,7 @@
               </cell>
               <cell>
                 <p>
-                  <seg type="code">//msIdentifier/idno</seg>
+                  <seg type="code">//msIdentifier/idno/idno</seg>
                 </p>
               </cell>
               <cell>
@@ -387,9 +378,14 @@
               </cell>
             </row>
           </table>
-          <p>Utiliza el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; de la
-            siguiente manera: </p>
-          <ab type="codeblock">&lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-2877719&lt;/idno&gt;</ab>
+          <p>Se debe utilizar el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> de la
+            siguiente manera:</p>
+          <ab type="codeblock">
+            &lt;idno&gt;
+                &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
+                &lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-1272345&lt;/idno&gt;
+            &lt;/idno> 
+          </ab>
         </div>
         <div type="level2" xml:id="descripción-del-documento">
           <head>Descripción del documento</head>
