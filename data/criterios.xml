@@ -389,7 +389,7 @@
         </div>
         <div type="level2" xml:id="descripción-del-documento">
           <head>Descripción del documento</head>
-          <p>En la descripción del documento se expondrán las características físicas del mismo:
+          <p>Es recomendable que se describan las características físicas de la fuente textual de la que deriva la edición:
             papel, formato, número de páginas, etc.</p>
           <p>La descripción del documento se debe codificar con el elemento <seg type="code"
               >physDesc</seg> (<quote rendition="#i">physical description</quote>, en español:
@@ -406,8 +406,8 @@
               <seg type="code">profileDesc</seg>. Allí, debe crearse un elemento <seg type="code"
               >creation</seg> en el cual se codifican los datos sobre la creación: autor, lugar de
             escritura y fecha de creación.</p>
-          <p>El nombre del autor debe caso con el elemento <seg type="code">persName</seg>. En caso
-            de seleccionar el autor del registro de personas, el ID asociado se genera en el
+          <p>El nombre del autor debe codificarse con el elemento <seg type="code">persName</seg>. En caso
+            de seleccionar el autor del registro de personas del proyecto, el ID asociado se genera en el
             atributo <seg type="code">@key</seg>, creando un enlace al registro.</p>
           <ab type="codeblock">
             &lt;profileDesc&gt; 
@@ -416,17 +416,16 @@
              &lt;/creation&gt; 
             &lt;/profileDesc&gt;
           </ab>
-          <p>Se escribirá siempre primero apellido y luego el nombre, separados por una coma. Si se
+          <p>Se debe respetar el siguiente orden: primero el apellido y luego el nombre, separados por una coma. Si se
             conoce la fecha de nacimiento y fallecimiento, es posible incluirla seguida del nombre y
-            entre paréntesis.</p>
+            entre paréntesis como se muestra en el ejemplo.</p>
         </div>
         <div type="level2" xml:id="lugar-de-escritura">
           <head>Lugar de escritura</head>
           <p>Si se conoce el lugar de escritura, se debe codificar también en el elemento <seg
               type="code">profileDesc</seg>. Allí, si aún no existiera uno, se creará un elemento
               <seg type="code">creation</seg> en el que se codificará la información sobre la
-            creación: autor, lugar de escritura, fecha de creación.</p>
-          <p>Dentro de este elemento, se utilizará <seg type="code">placeName</seg> para codificar
+            creación. Dentro de este elemento, se utilizará <seg type="code">placeName</seg> para codificar
             el nombre del lugar. Si el lugar de escritura figura en el registro de lugares, el ID
             asociado se genera en el atributo <seg type="code">@key</seg>, creando un enlace al
             registro de lugares. Por ejemplo:</p>
@@ -443,11 +442,11 @@
           <p>Si se conoce la fecha de creación, se debe codificar con el elemento <seg type="code"
               >date</seg> respetando el formato <seg type="code">AAAA-MM-DD</seg> (o <seg
               type="code">AA-MM</seg> o <seg type="code">AAAA</seg>, dependiendo de la información
-            disponible) en los atributos <seg type="code">@when</seg>, <seg type="code"
+            disponible) utilizando los atributos <seg type="code">@when</seg>, <seg type="code"
               >@from</seg>/<seg type="code">@to</seg> o <seg type="code">@notBefore</seg>/<seg
               type="code">@notAfter</seg>. Esto permite que el programa o aplicación web utilice
             estos datos más adelante, como por ejemplo para buscar información en un periodo
-            concreto de tiempo. Además, si se desea, es posible utilizar el atributo <seg
+            concreto de tiempo o filtrar los documentos a partir de la fecha estandarizada. Además, si se desea, es posible utilizar el atributo <seg
               type="code">@cert</seg> con los valores <seg type="code">high</seg> y <seg type="code"
               >low</seg> para codificar la probabilidad de que la fecha sea correcta.</p>
           <list type="ordered:arabic">
@@ -488,15 +487,15 @@
                &lt;language ident="es"Español&lt;/language&gt;
             &lt;/langUsage&gt; </ab>
           <p>Es necesario emplear el atributo <seg type="code">@ident</seg> para identificar con un
-            código estandarizado el idioma: "es" para el español, "de" para el aleman, "en" para el
+            código estandarizado el idioma: "es" para el español, "de" para el alemán, "en" para el
             inglés, "fr" para el francés. etc.</p>
           <p>Si el texto contiene partes sustanciales en otros idiomas, es posible repetir el
-            elemento <seg type="code">language</seg>.</p>
+            elemento <seg type="code">language</seg> tantas veces como se desee.</p>
         </div>
         <div type="level2" xml:id="resumen">
           <head>Resumen</head>
           <p>En todas las ediciones del proyecto, se debe proporcionar un resumen del contenido
-            intelectual del texto.</p>
+            intelectual del texto, los temas, las ideas discutidas, etc.</p>
           <p>El resumen se debe codificar en <seg type="code">//profileDesc/abstract</seg> en un
             elemento <seg type="code">p</seg> de la siguiente manera:</p>
           <ab type="code">
@@ -506,9 +505,7 @@
             &lt;/abstract&gt; </ab>
           <p>Se proporcionará el resumen en español y en alemán. Para ello, es necesario repetir el
             elemento <seg type="code">abstract</seg> y utilizar el atributo <seg type="code"
-              >@xml:lang</seg>.</p>
-          <p>De manera opcional, es posible marcar nombres de personas y citas con <seg type="code"
-              >persName</seg> y <seg type="code">quote</seg>.</p>
+              >@xml:lang</seg> utilizando un código estandarizado de dos caracteres: "es" para el español y "de" para el alemán.</p>
         </div>
         <div type="level2" xml:id="categorización">
           <head>Categorización</head>
@@ -527,7 +524,7 @@
             &lt;/textClass&gt; </ab>
           <p>Las tres categorías son repetibles y opcionales, pero se recomienda usar una para el
             género y la forma y tantas como sean necesarias para clasificar el texto desde un punto
-            de vista temático. Todas las categorías se deben definir previamente en la taxonomia del proyecto situada
+            de vista temático. Todas las categorías se deben definir previamente en la taxonomía del proyecto situada
             en el elemento <seg type="code">taxonomy</seg>.</p>
         </div>
       </div>
