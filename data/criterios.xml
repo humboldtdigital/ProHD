@@ -872,6 +872,7 @@
         </div>
         <div type="level2" xml:id="ediciones-textuales-por-el-autor">
           <head>Ediciones textuales por el autor</head>
+          <p>Todas las ediciones digitales del proyecto deben codificar los cambios de tipografía y las intervenciones autoriales de manera explícita.</p>
           <div type="level3" xml:id="subrayado-y-párrafo-al-margen-destacado">
             <head>Subrayado y párrafo al margen destacado</head>
             <p>Las marcas de subrayado y marcas en el borde del documento deben ser marcadas con una
@@ -1322,7 +1323,7 @@
               pueden transcribir con una <ref target="#lecturas-inciertas">lectura
               incierta</ref>.</p>
             <p>Los caracteres o cadenas de caracteres ilegibles en el manuscrito se marcan con el
-              elemento vacío <seg type="code">gap/</seg>. El segmento ilegibles se especifica con
+              elemento vacío <seg type="code">gap/</seg>. El segmento ilegible se especifica con
               más detalle en el atributo <seg type="code">@unit</seg>.</p>
             <p>El atributo <seg type="code">@reason</seg> indica la razón de la ilegibilidad:</p>
             <table>
@@ -2278,7 +2279,7 @@
           </div>
           <div type="level3" xml:id="acto-de-escritura">
             <head>Acto de escritura</head>
-            <p>En muchos casos, una carta se escribe en un solo paso . Sin embargo, una carta
+            <p>En muchos casos, una carta se escribe en un solo paso. Sin embargo, una carta
               también puede haber sido escrita durante varios días. Si se pueden identificar más de
               uno de estos actos por la estructura del texto (por ejemplo, una línea de fecha
               adicional ) o por su contenido, deben marcarse en consecuencia. Hay que distinguir el
