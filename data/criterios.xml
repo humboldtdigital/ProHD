@@ -1199,8 +1199,9 @@
             <p>Si hay una marca de inserción hecha por el autor en la fuente, se debe codificar con el elemento <seg type="code">metamark/</seg>. La forma de la marca de inserción (asterisco, número, etc.) no se debe especificar.</p>
           </div>
         </div>
-        <div type="level2" xml:id="marcados-textuales-por-el-editor">
-          <head>Marcados textuales por el editor</head>
+        <div type="level2" xml:id="intervenciones-editoriales">
+          <head>Intervenciones editoriales</head>
+          <p>En todas las ediciones digitales del proyecto se deben codificar las intervenciones editoriales de manera explícita, es decir, con etiquetado TEI.</p>
           <div type="level3" xml:id="lecturas-inciertas">
             <head>Lecturas inciertas</head>
             <p>Si hay palabras y/o pasajes que los editores y editoras no puedan leer
