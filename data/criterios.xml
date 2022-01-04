@@ -535,7 +535,7 @@
           <head>Estructuras textuales</head>
           <div type="level3" xml:id="párrafo">
             <head>Párrafo</head>
-            <p>Los párrafos se marcan siguiendo la estructura y secuencia de la fuente textual (sea un manuscrito o un impreso). Es posible codificar los
+            <p>En todas las ediciones del proyecto se deben codificar los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). Es posible codificar los
               párrafos sangrados si existe una sangría en el original y se considera como
               significativa.</p>
             <p>Los párrafos se codifican con el elemento <seg type="code">p</seg> (paragraph).</p>
@@ -567,8 +567,9 @@
                 <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
               contiene el número de página o folio (según la secuencia física del documento o del
               autor).</p>
-            <ab type="codeblock">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente
-              Americano</ab>
+            <ab type="codeblock">
+              distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano
+              </ab>
             <p>La digitalización del folio o página se debe marcar con el atributo <seg type="code"
                 >@facs</seg> (facsimile). Como regla general solo se debe codificar el nombre del fichero de la imagen
               digital; el nombre del fichero debe corresponder a un URI, es decir, ser único y uniforme. Por
@@ -594,8 +595,8 @@
                 >@quantity</seg> del elemento <seg type="code">gap/</seg> se establecen con los
               valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg
                 type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando haya más de una página en blanco seguida, se deben codificar cada unan de ellas individualmente.</p>
-            <ab type="codeblock">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1"
-              reason="empty"/&gt;</ab>
+            <ab type="codeblock">
+            &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</ab>
             <p>Tanto <ref target="#texto-ilegible">partes del texto dañadas o ilegibles</ref>, como
                 <ref target="#omisiones">omisiones hechas por los editores y editoras</ref> serán
               marcadas también con <seg type="code">gap/</seg>.</p>
@@ -604,7 +605,7 @@
             <head>Espacio en blanco</head>
             <p>El espacio en blanco semánticamente significativo en la fuente, por ejemplo, las
               lagunas dejadas por el autor en el texto para complementar el texto posteriormente,
-              se deben codiciar con el elemento vacío <seg type="code">space</seg>. La
+              se deben codificar con el elemento vacío <seg type="code">space</seg>. La
               reproducción de dichos vacíos en la transcripción debe distinguirse de las <ref
                 target="#omisiones">omisiones</ref> realizadas por los editores, así como de las
                 <ref target="#páginas-en-blanco">páginas vacías</ref> o <ref
@@ -622,29 +623,29 @@
           </div>
           <div type="level3" xml:id="acto-de-escritura-interrumpido">
             <head>Acto de escritura interrumpido</head>
-            <p>En caso de que una carta, un documento, un comentario o una adición sean inerrumpidos
-              en el texto, cada interrupción debe ser marcada. Hay que diferenciar entre las
+            <p>En caso de que una carta, un documento, un comentario o una adición sean interrumpidos
+              en el texto, se debe codificar cada acto de interrupción de manera explícita. Hay que diferenciar entre las
               interrupciones en el texto y <ref target="#espacio-en-blanco">el espacio
-                semanticamente relevante</ref>, ya que este fue dejado intencionadamente.</p>
-            <p>Para marcar una interrupción del acto de escritura se utiliza el elemento <seg
+                semanticamente relevante</ref>, es decir, dejado en blanco intencionadamente.</p>
+            <p>Para codificar una interrupción del acto de escritura se debe utilizar el elemento <seg
                 type="code">sic</seg> con el atributo <seg type="code">@ana</seg> y el valor <seg
                 type="code">#break-off</seg>.</p>
             <ab type="codeblock">&lt;sic ana="#break-off"/&gt;</ab>
           </div>
           <div type="level3" xml:id="listas">
             <head>Listas</head>
-            <p>Las estructuras de texto que tengan forma de lista, serán marcadas como tal.</p>
-            <p>Las listas en el documento original serán marcadas con el elemento <seg type="code"
+            <p>Las estructuras de texto que tengan forma de lista, deben codificarse como tal con el elemento <seg type="code"
                 >list</seg>. Los puntos o líneas individuales se transcriben en un elemento <seg
-                type="code">item</seg>. Cualquier numeración existente (también con letras) no tiene
-              por qué ser marcada independientemente, sino que simplemente se transcribe dentro del
+                type="code">item</seg>. La numeración existente (también con letras) no debe codificarse de manera independiente, sino que se transcribirá dentro del
               elemento <seg type="code">item</seg>.</p>
-            <ab type="codeblock"> &lt;list&gt; &lt;item&gt;Le Rio Apure près de S. Fernando 206
-              t.&lt;/item&gt; &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;mais quand le
-              Capucin est islado = 10750 mètres.&lt;/item&gt; &lt;item&gt;Orinoco près du Baraguan
-              889 t.&lt;/item&gt; &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au
-              delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I.
-              vieja de Montica.&lt;/item&gt; &lt;/list&gt;</ab>
+            <ab type="codeblock">
+            &lt;list&gt; 
+              &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt; 
+              &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;mais quand le
+              Capucin est islado = 10750 mètres.&lt;/item&gt; 
+              &lt;item&gt;Orinoco près du Baraguan 889 t.&lt;/item&gt; 
+              &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I. vieja de Montica.&lt;/item&gt; 
+            &lt;/list&gt;</ab>
           </div>
           <div type="level3" xml:id="tablas">
             <head>Tablas</head>
