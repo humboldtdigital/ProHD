@@ -682,26 +682,20 @@
              &lt;row role="label"&gt; 
               &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
               &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell&gt;
-              cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
+              &lt;cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
               thermomètre de reaumur.&lt;/cell&gt; 
-              &lt;cell&gt;température &lt;lb/&gt;de
-              l’atmosphère.&lt;lb/&gt; &lt;choice&gt;&lt;orig/&gt;&lt;reg&gt;thermomètre de
+              &lt;cell&gt;température &lt;lb/&gt;de l’atmosphère.&lt;lb/&gt; &lt;choice&gt;&lt;orig/&gt;&lt;reg&gt;thermomètre de
               reaumur.&lt;/reg&gt; &lt;/choice&gt;&lt;/cell&gt; 
-            &lt;/row&gt; &lt;row&gt; 
-             &lt;cell
-              rendition="#right"&gt;43°. 29′&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;10°.
-              31′.″&lt;/cell&gt; 
+            &lt;/row&gt; 
+            &lt;row&gt; 
+             &lt;cell rendition="#right"&gt;43°. 29′&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;10°. 31′.″&lt;/cell&gt; 
               &lt;cell rendition="#right"&gt;12°.&lt;/cell&gt; 
-              &lt;cell
-              rendition="#right"&gt;18°.&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; 
-              &lt;cell
-              rendition="#right"&gt;39. 10.&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;16. 18.
-              30″&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;18°.&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; 
+              &lt;cell rendition="#right"&gt;39. 10.&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;16. 18. 30″&lt;/cell&gt; 
               &lt;cell rendition="#right"&gt;12.&lt;/cell&gt; 
-              &lt;cell
-              rendition="#right"&gt;13.&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;13.&lt;/cell&gt; 
              &lt;/row&gt; 
              &lt;!--[…]--&gt;
             &lt;/table&gt;</ab>
@@ -721,10 +715,7 @@
               independientes.</p>
             <p>Las notas en el manuscrito se deben codificar con un elemento <seg type="code"
               >note</seg>:</p>
-            <ab type="codeblock">
-            En los partidos más remotos una caballería &lt;note place="mBottom"
-              hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]
-              </ab>
+            <ab type="codeblock">En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</ab>
             <p>El autor de la nota se puede codificar con el atributo <seg type="code">@hand</seg>. Los siguientes valores están permitidos:</p>
             <table>
               <row role="label">
@@ -837,18 +828,13 @@
                 </cell>
               </row>
             </table>
-            <p>En caso de haber una marca de inserción del autor, ésta será codificada con el
-              elemento vacío <seg type="code">metamark/</seg>. La apariencia de la marca de inserción
-              (asterisco, número, etc.) no debe hacerse explícita.</p>
+            <p>En caso de haber una marca de inserción del autor, ésta será codificada con el elemento vacío <seg type="code">metamark/</seg>. La apariencia de la marca de inserción (asterisco, número, etc.) no debe hacerse explícita.</p>
           </div>
           <div type="level3" xml:id="dibujos-e-ilustraciones">
             <head>Dibujos e ilustraciones</head>
-            <p>Los dibujos o ilustraciones incluidos en la fuente serán marcados especialmente.
-              Estos pueden ser comentados y descritos.</p>
-            <p>Se debe distinguir entre los dibujos y las copias digitales (también: facsímiles) de
-              un documento completo.</p>
-            <p>La creación y el correcto almacenamiento del archivo de imagen se realiza en 4
-              pasos:</p>
+            <p>Los dibujos o ilustraciones incluidos en la fuente se deben codificar de manera explícita. Además, se pueden comentar y describir de manera opcional.</p>
+            <p>Se debe distinguir entre los dibujos y las copias digitales (también: facsímiles) de un documento completo.</p>
+            <p>La creación y el correcto almacenamiento del fichero de imagen se realiza en 4 pasos:</p>
             <list type="ordered:arabic">
               <item>
                 <p>Tome una captura de pantalla del dibujo/esquema (por ejemplo en Acrobat
@@ -867,20 +853,21 @@
                 <p>Inserte y comente el dibujo/esquema en el lugar apropiado.</p>
               </item>
             </list>
-            <p>Los dibujos se capturan con el elemento <seg type="code">figure</seg>. La persona que
-              realizó el dibujo se indica con el atributo <seg type="code">@hand</seg>: <seg
+            <p>Los dibujos se deben codificar con el elemento <seg type="code">figure</seg>. La persona que
+              realizó el dibujo se debe indicar con el atributo <seg type="code">@hand</seg>: <seg
                 type="code">#author</seg>, <seg type="code">#addressee</seg>, <seg type="code"
                 >#unknown</seg> o una persona del registro de personas. En caso de que se disponga
-              de un título en el documento original, éste debe ser registrado con el elemento
-              secundario <seg type="code">p</seg>. En el elemento hijo <seg type="code"
+              de un título en el documento original, debe codificarse con el elemento <seg type="code">p</seg>. En el elemento hijo <seg type="code"
                 >figDesc</seg>, en cambio, la imagen es descrita por los editores y editoras. El
-              nombre del archivo se anota con el atributo <seg type="code">@facs</seg>. Los
-              comentarios editoriales que se refieren a la imagen en sí se registran en el elemento
+              nombre del fichero se codifica con el atributo <seg type="code">@facs</seg>. Los
+              comentarios editoriales que se refieren a la imagen en sí deben codificarse con el elemento
               hijo <seg type="code">note</seg>.</p>
-            <ab type="codeblock"> &lt;figure facs="dibujo" hand="#addressee"&gt; &lt;p&gt;[Título de
-              la figura]&lt;/p&gt; &lt;figDesc&gt;[Descripción de la imagen por el
-              editor]&lt;/figDesc&gt; &lt;note type="editorial"&gt;[Comentario
-              editorial]&lt;/note&gt; &lt;/figure&gt;</ab>
+            <ab type="codeblock">
+            &lt;figure facs="dibujo" hand="#addressee"&gt; 
+             &lt;p&gt;[Título de la figura]&lt;/p&gt; 
+             &lt;figDesc&gt;[Descripción de la imagen por el editor]&lt;/figDesc&gt; 
+             &lt;note type="editorial"&gt;[Comentario editorial]&lt;/note&gt; 
+            &lt;/figure&gt;</ab>
           </div>
         </div>
         <div type="level2" xml:id="ediciones-textuales-por-el-autor">
