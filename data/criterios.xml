@@ -13,7 +13,7 @@
           </persName>
         </editor>
         <editor>
-          <persName ref="https://orcid.org/0000-0002-8916-4997">
+          <persName>
             <surname>Kraft</surname>
             <forename>Tobias</forename>
           </persName>
@@ -39,7 +39,9 @@
           <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der Wissenschaften
             (BBAW)</ref>
         </publisher>
+        <publisher>Oficina del Historiador de la Ciudad de la Habana</publisher>
         <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
+        <pubPlace>La Habana</pubPlace>
         <availability status="free">
           <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Atribución
             4.0 Internacional (CC BY 4.0) </licence>
