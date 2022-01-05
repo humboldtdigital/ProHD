@@ -1196,15 +1196,11 @@
         </div>
         <div type="level2" xml:id="intervenciones-editoriales">
           <head>Intervenciones editoriales</head>
-          <p>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita, es decir, con etiquetado TEI.</p>
+          <p>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita.</p>
           <div type="level3" xml:id="lecturas-inciertas">
             <head>Lecturas inciertas</head>
-            <p>Si hay palabras y/o pasajes que los editores y editoras no puedan leer
-              con certeza, estos han sido codificados. Las lecturas inciertas han sido diferenciadas de
-                <ref target="#texto-ilegible">texto ilegible</ref>.</p>
-            <p>Las palabras que los editores y editoras no pueden descifrar de forma cierta se
-              marcan con el elemento <seg type="code">unclear</seg>. El atributo <seg type="code"
-                >@reason</seg> especifica la razón de la lectura incierta:</p>
+            <p>Las palabras o pasajes que no son fácilmente legibles se han codificado como "lecturas inciertas" con el elemento <seg type="code">unclear</seg>. Con el atributo <seg type="code"
+                >@reason</seg> ha especificado la razón de la lectura incierta:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1236,7 +1232,7 @@
                 </cell>
               </row>
             </table>
-            <p>El atributo <seg type="code">@cert</seg> (certainty) indica la probabilidad con la
+            <p>Con el atributo <seg type="code">@cert</seg> (certainty) se ha indicado la probabilidad con la
               que se aplica la interpretación en opinión de los editores y editoras.</p>
             <table>
               <row role="label">
@@ -1270,21 +1266,13 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">&lt;unclear reason="illegible"
-              cert="high"&gt;año&lt;/unclear&gt;</ab>
+            <ab type="codeblock">&lt;unclear reason="illegible" cert="high"&gt;año&lt;/unclear&gt;</ab>
           </div>
           <div type="level3" xml:id="texto-ilegible">
             <head>Texto ilegible</head>
-            <p>Los caracteres o palabras ilegibles en el manuscrito se registran con la codificación
-              adecuada. Las razones de la ilegibilidad pueden ser daños materiales o escritura
-              ilegible.</p>
-            <p>Se ha distinguido entre palabras ilegibles y palabras difíciles de leer pero que se
-              pueden transcribir con una <ref target="#lecturas-inciertas">lectura
-              incierta</ref>.</p>
-            <p>Los caracteres o cadenas de caracteres ilegibles en el manuscrito se marcan con el
-              elemento vacío <seg type="code">gap/</seg>. El segmento ilegible se especifica con
-              más detalle en el atributo <seg type="code">@unit</seg>.</p>
-            <p>El atributo <seg type="code">@reason</seg> indica la razón de la ilegibilidad:</p>
+            <p>Los caracteres o palabras ilegibles en la fuente textual debido a daños materiales o a que la escritura es ilegible, se han codificado con el
+              elemento vacío <seg type="code">gap/</seg>.</p>
+            <p>Con el atributo <seg type="code">@reason</seg> se ha indicado la razón de la ilegibilidad:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1326,9 +1314,8 @@
                 </cell>
               </row>
             </table>
-            <p>Si se conoce el número de líneas, palabras, etc. de la laguna, se pueden anotar
-              usando <seg type="code">@unit</seg> y <seg type="code">@quantity</seg>. De lo
-              contrario, se omiten sin sustitución.</p>
+            <p>Si se conoce el número de líneas, palabras, etc., se han codificado
+              usando <seg type="code">@unit</seg> (unidad) y <seg type="code">@quantity</seg> (cantidad).</p>
             <table>
               <row role="label">
                 <cell>
@@ -1380,37 +1367,29 @@
                 </cell>
               </row>
             </table>
-            <p>En el atributo <seg type="code">@quantity</seg>, se anota el número de caracteres,
+            <p>En el atributo <seg type="code">@quantity</seg>, se ha codificado el número de caracteres,
               líneas, etc. ilegibles.</p>
             <ab type="codeblock">&lt;gap reason="illegible" unit="words" quantity="3"/&gt;</ab>
             <p>Si un carácter (o cadena de caracteres) está tachado y no se puede descifrar, se
-              codificará tanto con <seg type="code">del</seg> como <seg type="code">gap/</seg>.</p>
+              ha codificado tanto con <seg type="code">del</seg> como con <seg type="code">gap/</seg>:</p>
             <ab type="codeblock"> &lt;del rendition="#s"&gt; &lt;gap reason="illegible" unit="chars"
               quantity="5"/&gt; &lt;/del&gt;</ab>
-            <p>Se han codificado las páginas destruidas o perdidas individualmente.</p>
+            <p>Por último, también se han codificado las páginas destruidas o perdidas individualmente.</p>
             <ab type="codeblock">&lt;pb n="1r"/&gt; &lt;gap reason="lost" unit="pages"
               quantity="1"/&gt;</ab>
-            <p>
-              <hi rendition="#i">Nota</hi>: Tanto <ref target="#páginas-en-blanco">páginas en
-                blanco</ref>, como <ref target="#omisiones">omisiones hechas por los editores y
-                editoras</ref> serán marcadas también con <seg type="code">gap/</seg>.</p>
           </div>
           <div type="level3" xml:id="omisiones">
             <head>Omisiones</head>
-            <p>Las directrices de una edición pueden estipular que ciertas secciones no sean
-              transcritas por los editores y editoras. En estos casos, sin embargo, se establece una
-              codificación correspondiente, lo que hace que la omisión sea reconocible.</p>
-            <p>Para registrar y mostrar correctamente la foliación, se ha codificado cada página
-              individualmente. Aunque se omitan varias páginas consecutivas, siempre se han especificado un <quote rendition="#i">1</quote> como número para cada nueva página
-              registrada.</p>
+            <p>Las omisiones se han codificado de manera explícita. Por ejemplo, para registrar y mostrar correctamente la foliación, se ha codificado cada página
+              individualmente. Aunque se omitan varias páginas consecutivas, siempre se ha codificado la omisión con un <quote rendition="#i">1</quote> como número correspondiente a cada página que falta.</p>
             <p>Las omisiones de caracteres, palabras, pasajes de texto o páginas enteras por parte
-              de los editores y editoras están marcadas con el elemento vacío <seg type="code"
-                >gap/</seg>. El atributo <seg type="code">@unit</seg> especifica el tipo de
+              de los editores y editoras se han marcado con el elemento vacío <seg type="code"
+                >gap/</seg>. Con el atributo <seg type="code">@unit</seg> se ha especificado el tipo de
               segmento:</p>
             <table>
               <row role="label">
                 <cell>
-                  <p>Segmento a omitir</p>
+                  <p>Segmento omitido</p>
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@unit</seg>
@@ -1458,14 +1437,13 @@
                 </cell>
               </row>
             </table>
-            <p>En el atributo <seg type="code">@quantity</seg>, se anota el número de caracteres,
-              líneas, etc. que se omiten.</p>
-            <p>El atributo <seg type="code">@reason</seg> se ha especificado el motivo de la omisión
+            <p>Con el atributo <seg type="code">@quantity</seg>, se ha codificado el número de caracteres,
+              líneas, etc. omitidos. mientras que con el atributo <seg type="code">@reason</seg> se ha codificado el motivo de la omisión
               editorial.</p>
             <table>
               <row role="label">
                 <cell>
-                  <p>Motivo de la laguna</p>
+                  <p>Motivo de la omisión</p>
                 </cell>
                 <cell>
                   <p>Valor para <seg type="code">@reason</seg>
@@ -1493,36 +1471,23 @@
                 </cell>
               </row>
             </table>
+            <p>Por ejemplo:</p>
             <ab type="codeblock">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt;
               entonces de nuevo</ab>
-            <p>También se marcan con <seg type="code">gap/</seg> los <ref target="#texto-ilegible"
-                >pasajes ilegibles o dañados</ref>, así como <ref target="#páginas-en-blanco"
-                >páginas en blanco</ref>.</p>
           </div>
-          <div type="level3" xml:id="abreviaturas-resueltas-por-el-editor">
-            <head>Abreviaturas resueltas por el editor</head>
-            <p>En el manuscrito, los editores complementan las palabras abreviadas. Estos
-              suplementos se identifican como tales.</p>
-            <p>Las abreviaturas y su expansión se codifican utilizando <seg type="code">choice</seg>
-              y sus dos elementos hijo <seg type="code">abbr</seg> y <seg type="code">expan</seg>.
-              En el elemento <seg type="code">abbr</seg> la abreviatura se registra fiel al
-              original, en el elemento <seg type="code">expan</seg> la adición de los editores y
-              editoras.</p>
+          <div type="level3" xml:id="abreviaturas">
+            <head>Abreviaturas</head>
+            <p>Las abreviaturas se han codificado con elemento <seg type="code">choice</seg>
+              y sus dos elementos hijo <seg type="code">abbr</seg> (abreviatura) y <seg type="code">expan</seg> (abreviatura resuelta).
+              En el elemento <seg type="code">abbr</seg> la abreviatura se ha codificado conservando la forma
+              original mientras que en el elemento <seg type="code">expan</seg> las y los editoras han proporcionado la forma resuelta.</p>
             <ab type="codeblock"> &lt;choice&gt; &lt;abbr&gt;q&lt;/abbr&gt;
               &lt;expan&gt;que&lt;/expan&gt; &lt;/choice&gt;</ab>
           </div>
-          <div type="level3" xml:id="palabras-letras-o-signos-de-puntuación-suplidos-por-el-editor">
-            <head>Palabras, letras o signos de puntuación suplidos por el editor</head>
-            <p>Las palabras o signos de puntuación que faltan pueden ser completados por los
-              editores y editoras. Estos suplementos se marcan con <seg type="code">supplied</seg>.
-              Se indica la probabilidad con la que se aplica este suplemento.</p>
-            <p>La adición de las palabras o signos de puntuación que faltan se han distinguido de la
-                <ref target="#abreviaturas-resueltas-por-el-editor">adición (también: expansión) de
-                palabras abreviadas</ref>.</p>
-            <p>Las adiciones de signos de puntuación o palabras completas faltantes se marcan con
-                <seg type="code">supplied</seg>.</p>
-            <p>El valor del atributo <seg type="code">@cert</seg> (certainty) expresa la
-              probabilidad de la que la adición sea correcta:</p>
+          <div type="level3" xml:id="palabras-letras-o-signos-de-puntuación-suplidos">
+            <head>Palabras, letras o signos de puntuación suplidos</head>
+            <p>Cuando las palabras o signos de puntuación que faltan de manera evidente se han suplido, se ha codificado dicha información con el elemento <seg type="code">supplied</seg> indicando la probabilidad con la que se ha intervenido.</p>
+            <p>Con el atributo <seg type="code">@cert</seg> (certainty) se codificado la certeza con la que se han suplido los caracteres o palabras:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1554,40 +1519,14 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock"> Éstas&lt;supplied cert="high"&gt;,&lt;/supplied&gt; al
-              fin&lt;supplied cert="high"&gt;,&lt;/supplied&gt; rompieron el malecón, y cayó aquel
-              torrente sobre los desgraciados Molinos&lt;supplied cert="high"&gt;,&lt;/supplied&gt;
-              que están dos pasos de allí.</ab>
+            <ab type="codeblock">30 de julio de &lt;supplied cert="high"&gt;18&lt;/supplied&gt;27</ab>
           </div>
-          <div type="level3" xml:id="eliminación-por-el-editor">
-            <head>Eliminación por el editor</head>
-            <p>Bajo ciertas circunstancias, el autor puede haber establecido una palabra por error
-              varias veces. Si esta palabra superflua o redundante complica la comprensión de una
-              oración, los editores y editoras pueden eliminarla.</p>
-            <p>La eliminación de una palabra (o palabras) por parte de los editores y editoras se
-              realiza en el elemento <seg type="code">choice</seg>. El elemento hijo <seg
-                type="code">sic</seg> indica la palabra que se va a eliminar. La eliminación misma
-              se indica mediante otro elemento hijo, <seg type="code">corr</seg> (correction), cuyo
-              atributo <seg type="code">@type</seg> tiene el valor <seg type="code">deleted</seg>.
-              Se ha codificado explícitamente la palabra eliminada y
-              no se ha olvidado una corrección por el editor.</p>
-            <ab type="codeblock"> Es grande finura y brillantes de los &lt;choice&gt;
-              &lt;sic&gt;los&lt;/sic&gt; &lt;corr type="deleted"/&gt; &lt;/choice&gt; vestidos
-              […]</ab>
-          </div>
-          <div type="level3" xml:id="correcciones-del-editor">
-            <head>Correcciones del editor</head>
-            <p>Los errores obvios por parte del autor se transcriben fielmente al original. Si se
-              considera necesario para la comprensión del texto, los editores y editoras pueden
-              corregir estos errores utilizando los marcados que se indican a continuación.</p>
-            <p>Relacionados con la corrección por parte del editor, pero bastante distinguibles, son
-                <ref target="#abreviaturas-resueltas-por-el-editor">las resoluciones de palabras
-                abreviadas</ref>.</p>
-            <p>En el texto editado, las correcciones de los errores del autor pueden anotarse
-              utilizando el elemento <seg type="code">choice</seg>. La palabra original se anota en
-                <seg type="code">sic</seg>, la corrección en <seg type="code">corr</seg>. En el
+          <div type="level3" xml:id="errores-y-correcciones">
+            <head>Errores y correcciones</head>
+            <p>Los errores evidentes que aparecen en la fuente textual se han codificado con el elemento <seg type="code">choice</seg>. Dentro, la palabra errónea se ha codificado con
+                el elemento <seg type="code">sic</seg> mientras que la corrección se ha codificado con <seg type="code">corr</seg>. En el
               elemento <seg type="code">corr</seg>, el atributo <seg type="code">@cert</seg>
-              (certainty) indica la probabilidad con la que la corrección sea válida:</p>
+              (certainty) indica la certeza con que se ha corregido:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1629,9 +1568,14 @@
                 </cell>
               </row>
             </table>
-            <ab type="codeblock">[…] como lo prue&lt;choice&gt; &lt;sic&gt;v&lt;/sic&gt; &lt;corr
-              cert="high"&gt;b&lt;/corr&gt; &lt;/choice&gt;a el valor extraordinario de las
-              tierras[…]</ab>
+            <p>Por ejemplo:</p>
+            <ab type="codeblock">
+              <choice>
+                <sic>Humbold</sic>
+                <corr cert="high">Humboldt</corr>
+              </choice>
+              </ab>
+           <p>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha empleado el mismo elemento <seg type="code">choice</seg> para codificar la palabra errónea con <seg type="code">sic</seg>. Ahora bien, en estos casos no se ha proporcionado una forma corregida sino que se utilizado el elemento <seg type="code">corr</seg> y se ha dejado vacío. Además, se ha utilizado el atributo <seg type="code">type</seg> con valor "deleted" para indicar que se ha eliminado una palabra redundante.</p>   
           </div>
           <div type="level3" xml:id="comentario-editorial">
             <head>Comentario editorial</head>
