@@ -1133,6 +1133,10 @@
         <div type="level2" xml:id="intervenciones-editoriales">
           <head>Intervenciones editoriales</head>
           <p>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita.</p>
+          <div type="level3" xml:id="normalizaciones">
+          <head>Normalizaciones</head>
+          <p><!-- to do--></p>
+          </div>
           <div type="level3" xml:id="abreviaturas">
             <head>Abreviaturas</head>
             <p>Las abreviaturas se han codificado con elemento <seg type="code">choice</seg>
