@@ -1847,7 +1847,7 @@
           </div>
           <div type="level3" xml:id="personas-lugares-y-organizaciones">
             <head>Personas, lugares y organizaciones</head>
-            <p>Las personas, los lugares y las organizaciones mencionados en la fuente textual se han codificado de manera explícita. La codficación de alusiones o referencias (por ejemplo, anáforas) se ha codificado de manera opcioanal según el criterio del editor o editora.</p>
+            <p>Las personas, los lugares y las organizaciones mencionados con nombres propios en la fuente textual se han codificado de manera explícita. En cambio, la codificación de alusiones o referencias (por ejemplo, anáforas) se ha codificado de manera opcional según el criterio del editor o editora.</p>
             <p>En ambos casos se han utilizado los elementos siguientes:</p>
             <list type="unordered">
               <item>
@@ -1864,7 +1864,7 @@
               </item>
             </list>
             <p>Se ha codificado con el atributo <seg type="code"
-                >@key</seg> un identificador único (URI) correspondiente de la entidad el registro del proyecto o en un recurso de autoridades externos. Por ejemplo:</p>
+                >@key</seg> un identificador único (URI) correspondiente a del registro del proyecto o bien al de algún recurso de autoridades externo como VIAF, GND o GeoNames. Por ejemplo:</p>
             <ab type="codeblock"> Mr. &lt;persName key="H0012737"&gt;James Arnold&lt;/persName&gt;</ab>
           </div>
         </div>
