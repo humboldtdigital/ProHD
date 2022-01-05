@@ -907,7 +907,104 @@
             <p>Por ejemplo:</p>
             <ab type="codeblock">Conocen ya estos vecinos la esplendidez en la mesa, las viviendas, muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</ab>
           </div>
-          <div type="level3" xml:id="sustituciones">
+          <div type="level3" xml:id="adiciones">
+            <head>Adiciones</head>
+            <p>En todas las ediciones del proyecto se han codificado las adiciones que el propio autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos realizados por el autor que sólo amplían el texto y se integran sintácticamente.</p>
+            <p>Las adiciones hechas por el autor se han codificado con <seg type="code">add</seg> (addition) utilizando el atributo <seg type="code">@place</seg> para especificar el lugar de la adición:</p>
+            <table>
+              <row role="label">
+                <cell>
+                  <p>Valor</p>
+                </cell>
+                <cell>
+                  <p>Definición</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">superlinear</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>encima de la línea</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">sublinear</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>debajo de la línea</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">intralinear</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>en la misma línea</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">across</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>sobre el texto original</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">left</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>en el margen izquierdo</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">right</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>en el margen derecho</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">mTop</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>en el margen superior</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">mBottom</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>en el margen inferior</p>
+                </cell>
+              </row>
+            </table>
+            <p>Por ejemplo:</p>
+            <ab type="codeblock">[…] y logré para el Comercio con estranjeros, los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</ab>
+            <p>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado con el elemento <seg type="code">metamark/</seg>. La forma de la marca de inserción (asterisco, número, etc.) no se ha especificado.</p>
+          </div><div type="level3" xml:id="sustituciones">
             <head>Sustituciones</head>
             <p>Si se elimina una palabra o un pasaje del texto en el manuscrito y al mismo tiempo se añade una palabra, estos dos fenómenos textuales se han codificado juntos con un elemento <seg type="code">subst</seg> (substition).</p>
             <p>La palabra eliminada se ha codificado con el elemento <seg type="code">del</seg> (deletion). El tipo de eliminación se ha especificado en el atributo <seg type="code">@rendition</seg>:</p>
@@ -1030,104 +1127,6 @@
               &lt;del rendition="#ow"&gt;a&lt;/del&gt; 
               &lt;add place="across"&gt;o&lt;/add&gt; 
             &lt;/subst&gt; con la mayor claridad</ab>
-          </div>
-          <div type="level3" xml:id="adiciones">
-            <head>Adiciones</head>
-            <p>En todas las ediciones del proyecto se han codificado las adiciones que el propio autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos realizados por el autor que sólo amplían el texto y se integran sintácticamente.</p>
-            <p>Las adiciones hechas por el autor se han codificado con <seg type="code">add</seg> (addition) utilizando el atributo <seg type="code">@place</seg> para especificar el lugar de la adición:</p>
-            <table>
-              <row role="label">
-                <cell>
-                  <p>Valor</p>
-                </cell>
-                <cell>
-                  <p>Definición</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">superlinear</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>encima de la línea</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">sublinear</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>debajo de la línea</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">intralinear</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>en la misma línea</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">across</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>sobre el texto original</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">left</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>en el margen izquierdo</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">right</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>en el margen derecho</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">mTop</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>en el margen superior</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">mBottom</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>en el margen inferior</p>
-                </cell>
-              </row>
-            </table>
-            <p>Por ejemplo:</p>
-            <ab type="codeblock">[…] y logré para el Comercio con estranjeros, los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</ab>
-            <p>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado con el elemento <seg type="code">metamark/</seg>. La forma de la marca de inserción (asterisco, número, etc.) no se ha especificado.</p>
           </div>
         </div>
         <div type="level2" xml:id="intervenciones-editoriales">
