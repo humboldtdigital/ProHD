@@ -2005,10 +2005,7 @@
               </item>
             </list>
             <ab type="codeblock">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</ab>
-          </div>
-          <div type="level3" xml:id="nota-a-la-carta">
-            <head>Nota a la carta</head>
-            <p>Las notas a la carta se han codificado en <seg type="code">correspDesc</seg> con el elemento hijo <seg type="code">note</seg>. Por ejemplo:</p>
+            <p>Cuando no se ha podido determinar las fechas de envío o recepción, se ha codificado una nota explicativa en <seg type="code">correspDesc</seg> con el elemento hijo <seg type="code">note</seg>. Por ejemplo:</p>
             <ab type="codeblock">
             &lt;correspDesc&gt; … 
               &lt;note&gt;No se puede determinar la fecha de recepción.&lt;/note&gt; 
@@ -2102,7 +2099,8 @@
             <ab type="codeblock"> 
             &lt;closer rend="paragraph"&gt; 
               &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt; 
-            &lt;!-- […] --&gt; &lt;/closer&gt;</ab>
+              &lt;!-- […] --&gt; 
+            &lt;/closer&gt;</ab>
           </div>
           <div type="level3" xml:id="posdata">
             <head>Posdata</head>
