@@ -62,8 +62,7 @@
           tipos de texto (documento, carta, etc.) del proyecto.</p>
         <div type="level2" xml:id="titulo">
           <head>Título</head>
-          <p>Todas las ediciones deben identificarse con un título principal. El título debe ser
-            descriptivo y breve, y debe normalizarse ortográficamente.</p>
+          <p>Todas las ediciones se han identificado con un título principal. El título ha sido normalizado ortográficamente.</p>
           <p>Como parte del <seg type="code">//titleStmt</seg>, la codificación del título principal
             se realizará utilizando el elemento <seg type="code">title</seg> y el atributo <seg
               type="code">@type="main"</seg>. Por ejemplo:</p>
@@ -83,9 +82,9 @@
         </div>
         <div type="level2" xml:id="editores-y-colaboradores">
           <head>Editores y colaboradores</head>
-          <p>Tras el título, como parte del elemento <seg type="code">//titleStmt</seg>, se debe identificar
+          <p>Tras el título, como parte del elemento <seg type="code">//titleStmt</seg>, se ha identificado
             de manera clara quiénes son los responsables de la edición con <seg
-              type="code">editor</seg>. El nombre de la persona se debe codificar en el elemento
+              type="code">editor</seg>. El nombre de la persona se ha codificado con el elemento
             hijo <seg type="code">persName</seg>.</p>
           <list type="unordered">
             <item>
@@ -126,9 +125,9 @@
           </list>
           <p>En el atributo <seg type="code">@ref</seg> también se puede codificar la referencia a
             una base de datos externa en forma de URI como VIAF u ORCID.</p>
-          <p>El tipo de colaboración se debe definir detalladamente con el elemento <seg type="code"
+          <p>El tipo de colaboración se ha definido detalladamente con el elemento <seg type="code"
               >resp</seg> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
-            elemento <seg type="code">note</seg> se debe identificar el tipo de contribución: colaboración, colaboración editorial, transcripción, comentario o
+            elemento <seg type="code">note</seg> se ha definido el tipo de contribución: colaboración, colaboración editorial, transcripción, comentario o
             registros.</p>
           <ab type="codeblock">
             &lt;respStmt&gt;  
@@ -144,7 +143,7 @@
         </div>
         <div type="level2" xml:id="financiación">
           <head>Financiación</head>
-          <p>Tras el nombre del editor o editora, se debe identificar en todas las ediciones, las
+          <p>Tras el nombre del editor o editora, se han identificados, las
             tres entidades que financian el proyecto: Auswärtiges Amt, Fritz Thyssen Stiftung y
             Gerda Henkel Stiftung.</p>
           <p>Como parte del <seg type="code">//titleStmt</seg> es necesario utilzar el elemento <seg
@@ -154,29 +153,29 @@
             &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&gt;Fritz Thyssen Stiftung&lt;/funder&gt; 
             &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&gt;Gerda Henkel Stiftung&lt;/funder&gt;
           </ab>
-          <p>El elemento <seg type="code">funder</seg> debe llevar el atributo <seg type="code"
+          <p>El elemento <seg type="code">funder</seg> hace uso del atributo <seg type="code"
               >@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras.</p>
         </div>
         <div type="level2" xml:id="edición">
           <head>Edición</head>
-          <p>Todas las ediciones del proyecto deben mencionar el Proyecto Humboldt Digital y
-            documentar la fecha de edición correspondiente a la creación del documento TEI.</p>
-          <p>Esta información sobre la edición, debe codificarse con los elementos <seg type="code"
+          <p>Todas las ediciones del proyecto mencionan el Proyecto Humboldt Digital y
+            documentan la fecha de edición correspondiente a la creación del documento TEI.</p>
+          <p>Esta información sobre la edición, se ha codificado con los elementos <seg type="code"
               >editionStmt</seg> y <seg type="code">p</seg> de la siguiente manera:</p>
           <ab type="codeblock"> 
             &lt;editionStmt&gt;  
               &lt;p&gt;Proyecto Humboldt Digital (&lt;date&gt;2021&lt;/date&gt;)&lt;/p&gt;  
             &lt;/editionStmt&gt; 
           </ab>
-          <p>La fecha entre paréntesis debe corresponder al año de creación del documento TEI; es importante no confundir esta fecha con la fecha de creación de la fuente que se está editando.</p>
+          <p>La fecha entre paréntesis corresponde al año de creación del documento TEI; es importante no confundir esta fecha con la fecha de creación de la fuente que se está editando.</p>
         </div>
         <div type="level2" xml:id="publicación-y-licencia">
           <head>Publicación y licencia</head>
-          <p>En todas las ediciones se debe codificar información sobre las organizaciones responsables de la distribucón y
+          <p>En todas las ediciones se ha codificado información sobre las organizaciones responsables de la distribucón y
             publicación de las ediciones, los lugares de publicación y la licencia en todas las ediciones creadas en el marco
             del proyecto.</p>
           <p>Para ello es necesario utilizar el elemento <seg type="code">publicationStmt</seg>.
-            Dentro de este elemento, se deben utilizar tres elementos anidados: <seg type="code"
+            Dentro de este elemento, se han utilizado tres elementos anidados: <seg type="code"
               >publisher</seg> (entidad que publica la edición), <seg type="code">pubPlace</seg>
             (lugar de publicación)y <seg type="code">availability</seg> (disponibilidad). Por
             ejemplo:</p>
@@ -197,20 +196,20 @@
             repetibles, es decir, es posible incluir más de una entidad y lugar de publicación, pero
             la información sobre la disponibilidad del fichero no es repetible.</p>
           <p>El elemento <seg type="code">availability</seg>, con un atributo <seg type="code"
-              >@status="free"</seg>, debe contener a su vez un elemento <seg type="code"
+              >@status="free"</seg>, contiene a su vez un elemento <seg type="code"
               >licence</seg> con información sobre la licencia con que se publica la edición
             digital; es necesario utilizar el atributo <seg type="code">@target</seg>, cuyo valor
             será el hipervínculo a la licencia.</p>
-          <p>En todas las ediciones del proyecto, se debe emplear la licencia "Creative Commons
+          <p>En todas las ediciones del proyecto, se ha utilizado la licencia "Creative Commons
             Atribución 4.0 Internacional (CC BY 4.0)".</p>
         </div>
         <div type="level2" xml:id="tradición-manuscrita">
           <head>Fuente textual</head>
-          <p>En todas las ediciones del proyecto se debe codificar la fuente de la que deriva el
+          <p>En todas las ediciones del proyecto se ha codificado la fuente de la que deriva el
             texto, el nombre de la institución en la que se conserva el documento y al menos un
             identificador como una signatura.</p>
-          <p>La descripción de la fuente debe codificarse con el elemento <seg type="code"
-              >msDesc</seg> (manuscript description). Dentro se debe utilizar el elemento <seg type="code">msIdentifier</seg> y proporcionar información sobre la institución que conserva el documento con el elemento <seg type="code"
+          <p>La descripción de la fuente se ha codificado con el elemento <seg type="code"
+              >msDesc</seg> (manuscript description). Dentro se ha utilizado el elemento <seg type="code">msIdentifier</seg> y proporcionar información sobre la institución que conserva el documento con el elemento <seg type="code"
               >institution</seg> y la signatura con elemento <seg type="code">idno</seg>, que llevará
             el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>. Es importante anidar el elemento <seg type="code">idno</seg> dentro de otro elemento <seg type="code">idno</seg>; de esta manera es posible repetir el elemento <seg type="code">idno</seg> tantas veces como sea necesario. De manera opcional, es posible incluir información sobre la colección con el elemento <seg type="code"
               >collection</seg>. Por ejemplo:</p>
@@ -225,10 +224,10 @@
               &lt;/msIdentifier&gt;
             &lt;/msDesc&gt; 
           </ab>
-          <p>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado una edición impresa, se debe codificar
-            la información en <seg type="code">listWit</seg> y utilizar el elemento <seg type="code">witness</seg>. Dentro se debe utilizar
+          <p>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado una edición impresa, se ha codificado
+            la información en <seg type="code">listWit</seg> y se ha utilizado el elemento <seg type="code">witness</seg>. Dentro se ha usado
             un elemento <seg type="code">bibl</seg> para codificar una referencia bibliográfica. Se
-            debe utilizar el atributo <seg type="code">@type</seg> con el valor <seg type="code"
+             el atributo <seg type="code">@type</seg> con el valor <seg type="code"
               >print</seg> para distinguirlo de un manuscrito.</p>
           <p>Por ejemplo:</p>
           <ab type="codeblock">
@@ -256,12 +255,12 @@
               <p>Impreso</p>
             </item>
           </list>
-          <p>Cuando se utilizan más de una fuente textual, se debe escoger <hi
+          <p>Cuando se utilizan más de una fuente textual, se ha seleccionado <hi
               rendition="#i">un único</hi> documento como base textual. Los demás testimonios
             textuales se mencionan explícitamente en la edición sólo en los puntos en que indican
             variantes mediante un comentario editorial.</p>
           <p>Si la existencia y el contenido de un documento se han deducido con la ayuda de otros
-            documentos, no hay base textual. En tal caso, en el elemento <seg type="code">msDesc</seg>, se debe marcar el tipo de fuente textual con el
+            documentos, no hay base textual. En tal caso, en el elemento <seg type="code">msDesc</seg>, se ha codificado el tipo de fuente textual con el
             atributo <seg type="code">@rend</seg>. Para ello se puede escoger entre las siguientes
             valores:</p>
           <table>
@@ -378,7 +377,7 @@
               </cell>
             </row>
           </table>
-          <p>Se debe utilizar el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> de la
+          <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> de la
             siguiente manera:</p>
           <ab type="codeblock">
             &lt;idno&gt;
@@ -391,9 +390,9 @@
           <head>Descripción del documento</head>
           <p>Es recomendable que se describan las características físicas de la fuente textual de la que deriva la edición:
             papel, formato, número de páginas, etc.</p>
-          <p>La descripción del documento se debe codificar con el elemento <seg type="code"
+          <p>La descripción del documento se ha codificado con el elemento <seg type="code"
               >physDesc</seg> (<quote rendition="#i">physical description</quote>, en español:
-            descripción física). La descripción debe darse como texto en un elemento <seg
+            descripción física). La descripción ha sido proporcionada como texto en un elemento <seg
               type="code">p</seg>:</p>
           <ab type="codeblock">
             &lt;physDesc&gt; 
@@ -402,11 +401,11 @@
         </div>
         <div type="level2" xml:id="autor-del-texto">
           <head>Autor del texto</head>
-          <p>Si se conoce quién es autor del texto, esta información debe codificarse en el elemento
-              <seg type="code">profileDesc</seg>. Allí, debe crearse un elemento <seg type="code"
-              >creation</seg> en el cual se codifican los datos sobre la creación: autor, lugar de
+          <p>Si se conoce quién es autor del texto, esta información se ha codificado con el elemento
+              <seg type="code">profileDesc</seg>. Allí, se ha creado un elemento <seg type="code"
+              >creation</seg> en el cual se han codificado los datos sobre la creación: autor, lugar de
             escritura y fecha de creación.</p>
-          <p>El nombre del autor debe codificarse con el elemento <seg type="code">persName</seg>. En caso
+          <p>El nombre del autor se ha codificado con el elemento <seg type="code">persName</seg>. En caso
             de seleccionar el autor del registro de personas del proyecto, el ID asociado se genera en el
             atributo <seg type="code">@key</seg>, creando un enlace al registro.</p>
           <ab type="codeblock">
@@ -416,13 +415,13 @@
              &lt;/creation&gt; 
             &lt;/profileDesc&gt;
           </ab>
-          <p>Se debe respetar el siguiente orden: primero el apellido y luego el nombre, separados por una coma. Si se
+          <p>Se ha respetado siempre el siguiente orden: primero el apellido y luego el nombre, separados por una coma. Si se
             conoce la fecha de nacimiento y fallecimiento, es posible incluirla seguida del nombre y
             entre paréntesis como se muestra en el ejemplo.</p>
         </div>
         <div type="level2" xml:id="lugar-de-escritura">
           <head>Lugar de escritura</head>
-          <p>Si se conoce el lugar de escritura, se debe codificar también en el elemento <seg
+          <p>Si se conoce el lugar de escritura, se ha codificado también en el elemento <seg
               type="code">profileDesc</seg>. Allí, si aún no existiera uno, se creará un elemento
               <seg type="code">creation</seg> en el que se codificará la información sobre la
             creación. Dentro de este elemento, se utilizará <seg type="code">placeName</seg> para codificar
@@ -439,7 +438,7 @@
         </div>
         <div type="level2" xml:id="fechas">
           <head>Fechas</head>
-          <p>Si se conoce la fecha de creación, se debe codificar con el elemento <seg type="code"
+          <p>Si se conoce la fecha de creación, se ha codificado con el elemento <seg type="code"
               >date</seg> respetando el formato <seg type="code">AAAA-MM-DD</seg> (o <seg
               type="code">AA-MM</seg> o <seg type="code">AAAA</seg>, dependiendo de la información
             disponible) utilizando los atributos <seg type="code">@when</seg>, <seg type="code"
@@ -478,7 +477,7 @@
         </div>
         <div type="level2" xml:id="idioma">
           <head>Idioma</head>
-          <p>En todas las ediciones del proyecto, se debe codificar el idioma principal en que el
+          <p>En todas las ediciones del proyecto, se ha codificado el idioma principal en que el
             texto fue escrito. Dentro de <seg type="code">profileDesc</seg>, se utilizará el
             elemento <seg type="code">langUsage</seg>. Allí se anidará el elemento <seg type="code"
               >language</seg> para codificar el idioma o lengua. Por ejemplo:</p>
@@ -494,9 +493,9 @@
         </div>
         <div type="level2" xml:id="resumen">
           <head>Resumen</head>
-          <p>En todas las ediciones del proyecto, se debe proporcionar un resumen del contenido
+          <p>En todas las ediciones del proyecto, se ha proporcionado un resumen del contenido
             intelectual del texto, los temas, las ideas discutidas, etc.</p>
-          <p>El resumen se debe codificar en <seg type="code">//profileDesc/abstract</seg> en un
+          <p>El resumen se ha codificado con <seg type="code">//profileDesc/abstract</seg> en un
             elemento <seg type="code">p</seg> de la siguiente manera:</p>
           <ab type="code">
             &lt;abstract xml:lang="es"&gt; 
@@ -524,34 +523,32 @@
             &lt;/textClass&gt; </ab>
           <p>Las tres categorías son repetibles y opcionales, pero se recomienda usar una para el
             género y la forma y tantas como sean necesarias para clasificar el texto desde un punto
-            de vista temático. Todas las categorías se deben definir previamente en la taxonomía del proyecto situada
+            de vista temático. Todas las categorías se han definido previamente en la taxonomía del proyecto situada
             en el elemento <seg type="code">taxonomy</seg>.</p>
         </div>
       </div>
       <div type="level1" xml:id="texto">
         <head>Texto</head>
-        <p>Los textos editados como parte del proyecto deben codificarse desde un punto de vista estructural con el objetivo de capturar las divisiones internas del documento (secciones, párrafos, etc.) y la paginación o  foliación de la fuente. Asimismo, se deben codificar de manera explícita los cambios en la tipografía y las intervenciones del autor y del editor o editora. Por último, en la medida de lo posible, se deben codificar también las entidades nombradas en el cuerpo del texto.</p>
+        <p>Los textos editados como parte del proyecto han sido codificados desde un punto de vista estructural con el objetivo de capturar las divisiones internas del documento (secciones, párrafos, etc.) y la paginación o  foliación de la fuente. Asimismo, se han codificado de manera explícita los cambios en la tipografía y las intervenciones del autor y del editor o editora. Por último, en la medida de lo posible, se han codificado también las entidades nombradas en el cuerpo del texto.</p>
         <div type="level2" xml:id="estructuras-textuales">
           <head>Estructuras textuales</head>
           <div type="level3" xml:id="párrafo">
             <head>Párrafos</head>
-            <p>En todas las ediciones del proyecto se deben codificar los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). Es posible codificar los
+            <p>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). Es posible codificar los
               párrafos sangrados si existe una sangría en el original y se considera como
               significativa.</p>
             <p>Los párrafos se codifican con el elemento <seg type="code">p</seg> (paragraph).</p>
           </div>
           <div type="level3" xml:id="ruptura-de-línea">
             <head>Rupturas de línea</head>
-            <p>Las rupturas de línea se deben codificar de manera explícita siguiendo la fuente textual. Los separadores <hi
-                rendition="#i">no deben introducirse manualmente, es decir, con la tecla
-                correspondiente del teclado</hi>.</p>
-            <p>Las rupturas de línea se deben codificar con un elemento (vacío) <seg type="code"
-                >lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se utiliza como
-              el <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
+            <p>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente textual. <hi
+                rendition="#i">No se ha introducido separadores manualmente.</hi>.</p>
+            <p>Las rupturas de línea se han codificado con un elemento (vacío) <seg type="code"
+                >lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se utiliza al <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
               TEI.</p>
-            <p>Si el salto de línea ocurre dentro de una palabra, debe codificarse con el
+            <p>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
               atributo <seg type="code">@break</seg> y el valor <seg type="code">no</seg>. En caso
-              de aparecer un separador en la fuente original, debe codificarse como <seg type="code">
+              de aparecer un separador en la fuente original, se ha codificado como <seg type="code">
                 <g ref="#typoHyphen"/>
               </seg>.</p>
             <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za
@@ -559,42 +556,40 @@
           </div>
           <div type="level3" xml:id="foliación-y-paginación">
             <head>Foliación y paginación</head>
-            <p>En todas las ediciones del proyecto se debe codificar el inicio de la foliación o paginación, es decir, el lugar en
+            <p>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o paginación, es decir, el lugar en
               que se inicia un nuevo folio o página en la fuente. Siempre se marca el principio del
               folio o página, no el final. En caso de que el autor haya empleado otro sistema para
               numerar las páginas en la fuente textual, se recomienda codificar la foliciación o paginación del autor de manera adicional a la secuencia física del documento.</p>
-            <p>El inicio de folio o página se debe codificar siempre con el elemento vacío
+            <p>El inicio de folio o página se ha codificado siempre con el elemento vacío
                 <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
               contiene el número de página o folio (según la secuencia física del documento o del
               autor).</p>
             <ab type="codeblock">
               distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano
               </ab>
-            <p>La digitalización del folio o página se debe marcar con el atributo <seg type="code"
-                >@facs</seg> (facsimile). Como regla general solo se debe codificar el nombre del fichero de la imagen
-              digital; el nombre del fichero debe corresponder a un URI, es decir, ser único y uniforme. Por
+            <p>La digitalización del folio o página se ha codificado con el atributo <seg type="code"
+                >@facs</seg> (facsimile). Como regla general solo se ha codificado el nombre del fichero de la imagen
+              digital; el nombre del fichero corresponde a un URI, es decir, ser único y uniforme. Por
               ejemplo:</p>
             <ab type="codeblock">&lt;n="1r" facs="787980595-0001"/&gt;</ab>
-            <p>Cualquier otra información sobre la numeración contenida en la fuente se debe
-              codificar con el elemento <seg type="code">fw</seg> (forme work), cuyo atributo <seg
+            <p>Cualquier otra información sobre la numeración contenida en la fuente se ha codificado con el elemento <seg type="code">fw</seg> (forme work), cuyo atributo <seg
                 type="code">@type</seg> será el valor <seg type="code">folNum</seg>.</p>
             <ab type="codeblock">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</ab>
           </div>
           <div type="level3" xml:id="páginas-en-blanco">
             <head>Páginas en blanco</head>
-            <p>En todas las ediciones del proyecto se deben codificar las páginas en blanco de la fuente textual. Además, se debe distinguir entre páginas en blanco, <ref target="#texto-ilegible">páginas perdidas</ref>, <ref target="#espacio-en-blanco">espacios en
+            <p>En todas las ediciones del proyecto se han codificado las páginas en blanco de la fuente textual. Además, se ha distinguido entre páginas en blanco, <ref target="#texto-ilegible">páginas perdidas</ref>, <ref target="#espacio-en-blanco">espacios en
                 blanco</ref> semánticamente significativos y <ref target="#omisiones">omisiones
                 de los editores</ref>.</p>
-            <p>Para poder registrar y mostrar la foliación correctamente, se debe registrar cada página
-              (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre se debe
-              introducir <quote rendition="#i">1</quote> un número para cada nueva página en
+            <p>Para poder registrar y mostrar la foliación correctamente, se ha codificado cada página
+              (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre se ha introducido <quote rendition="#i">1</quote> un número para cada nueva página en
               blanco codificada.</p>
-            <p>Las páginas en blanco se deben codificar con el elemento (vacío) <seg type="code">gap/</seg>.
+            <p>Las páginas en blanco se han codificado con el elemento (vacío) <seg type="code">gap/</seg>.
               Este se coloca justo después del salto de página (<seg type="code">pb/</seg>)
               anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code"
                 >@quantity</seg> del elemento <seg type="code">gap/</seg> se establecen con los
               valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg
-                type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando haya más de una página en blanco seguida, se deben codificar cada unan de ellas individualmente.</p>
+                type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando hay más de una página en blanco seguida, se han codificado cada una de ellas individualmente.</p>
             <ab type="codeblock">
             &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</ab>
             <p>Tanto <ref target="#texto-ilegible">partes del texto dañadas o ilegibles</ref>, como
@@ -605,16 +600,16 @@
             <head>Espacios en blanco</head>
             <p>El espacio en blanco semánticamente significativo en la fuente como,  por ejemplo, las
               lagunas dejadas por el autor en el texto para complementar el texto posteriormente,
-              se deben codificar con el elemento vacío <seg type="code">space</seg>. La
-              reproducción de dichos vacíos en la transcripción debe distinguirse de las <ref
+              se han codificado con el elemento vacío <seg type="code">space</seg>. La
+              reproducción de dichos vacíos en la transcripción se ha distinguido de las <ref
                 target="#omisiones">omisiones</ref> realizadas por los editores, así como de las
                 <ref target="#páginas-en-blanco">páginas vacías</ref> o <ref
-                target="#texto-ilegible">perdidas</ref>, cada una de las cuales debe codificarse como
+                target="#texto-ilegible">perdidas</ref>, cada una de las cuales se ha codificado como
                 <seg type="code">gap/</seg>.</p>
-            <p>El espacio en blanco semánticamente significativo debe codificarse con el
+            <p>El espacio en blanco semánticamente significativo se ha codificado con el
               elemento (vacío) <seg type="code">space/</seg>. El atributo <seg type="code"
                 >@dim</seg> indica si es un espacio en blanco horizontal o vertical. El alcance de
-              la omisión se debe indicar mediante los valores correspondientes de los atributos <seg
+              la omisión se ha indicado mediante los valores correspondientes de los atributos <seg
                 type="code">@unit</seg> y <seg type="code">@quantity</seg>. Si el número de líneas
                 (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code"
                 >unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
@@ -624,19 +619,19 @@
           <div type="level3" xml:id="acto-de-escritura-interrumpido">
             <head>Acto de escritura interrumpido</head>
             <p>En caso de que una carta, un documento, un comentario o una adición sean interrumpidos
-              en el texto, se debe codificar cada acto de interrupción de manera explícita. Hay que diferenciar entre las
+              en el texto, se ha codificado cada acto de interrupción de manera explícita. Hay que diferenciar entre las
               interrupciones en el texto y <ref target="#espacio-en-blanco">el espacio
                 semanticamente relevante</ref>, es decir, dejado en blanco intencionadamente.</p>
-            <p>Para codificar una interrupción del acto de escritura se debe utilizar el elemento <seg
+            <p>Para codificar una interrupción del acto de escritura se ha utilizado el elemento <seg
                 type="code">sic</seg> con el atributo <seg type="code">@ana</seg> y el valor <seg
                 type="code">#break-off</seg>.</p>
             <ab type="codeblock">&lt;sic ana="#break-off"/&gt;</ab>
           </div>
           <div type="level3" xml:id="listas">
             <head>Listas</head>
-            <p>Las estructuras de texto que tengan forma de lista, deben codificarse como tal con el elemento <seg type="code"
+            <p>Las estructuras de texto que tengan forma de lista se han codificado como tal con el elemento <seg type="code"
                 >list</seg>. Los puntos o líneas individuales se transcriben en un elemento <seg
-                type="code">item</seg>. La numeración existente (también con letras) no debe codificarse de manera independiente, sino que se transcribirá dentro del
+                type="code">item</seg>. La numeración existente (también con letras) no se ha codificado de manera independiente, sino que se transcribirá dentro del
               elemento <seg type="code">item</seg>.</p>
             <ab type="codeblock">
             &lt;list&gt; 
@@ -652,9 +647,9 @@
             <p>Las tablas contenidas en la fuente se transcriben como tal, haciendo distinción
               entre tablas explícitas e implícitas. Hay tablas explícitas dibujadas por el autor,
               mientras que en las implícitas la tabla es reconocible sólo por la disposición de sus
-              contenidos. Se debe distinguir entre tablas y <ref target="#listas">enumeraciones que
+              contenidos. Se ha distinguido entre tablas y <ref target="#listas">enumeraciones que
                 se asemejan a listas</ref>.</p>
-            <p>Las tablas se deben codificar con el elemento <seg type="code">table</seg>. A continuación, se
+            <p>Las tablas se han codificado con el elemento <seg type="code">table</seg>. A continuación, se
               asigna a la primera fila de la tabla el papel del etiquetado: <seg type="code"
                 >@role="label"</seg>. Por ejemplo:</p>
             <ab type="codeblock">
@@ -674,7 +669,7 @@
             <p>En las tablas y en el inicio de una carta, se puede especificar la alineación del
               texto. De este modo, las fechas o las celdas de la tabla se alinean a la derecha.</p>
             <p>El elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code"
-                >dateline</seg> se debe codificar con un atributo <seg type="code">@rendition</seg> con el
+                >dateline</seg> se ha codificado con un atributo <seg type="code">@rendition</seg> con el
               valor <seg type="code">#right</seg>.</p>
             <ab type="codeblock"> 
             &lt;table cols="4" rows="20" rend="drawn"&gt; 
@@ -705,15 +700,15 @@
             <p>Las notas del autor o de un editor contemporáneo no se insertan según su ubicación en
               el manuscrito, sino en el pasaje del texto al que la nota se refiere realmente (o que
               el editor supone razonablemente que se refiere). En caso de emplear una marca de
-              inserción (asterisco, número, etc.), debe utilizarse una señal de inserción
+              inserción (asterisco, número, etc.), se ha utilizado una señal de inserción
               general (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
               indicar que el texto fue introducido por el autor y no por los editores.</p>
             <p>
-              <hi rendition="#b">Se debe diferenciar entre las notas y las adiciones</hi>: las
+              <hi rendition="#b">Se ha diferenciado entre las notas y las adiciones</hi>: las
               adiciones complementan el texto principal y se integran sintácticamente en él. Las
               notas son, como las notas a pie de página impresas, unidades de texto
               independientes.</p>
-            <p>Las notas en el manuscrito se deben codificar con un elemento <seg type="code"
+            <p>Las notas en el manuscrito se han codificado con el elemento <seg type="code"
               >note</seg>:</p>
             <ab type="codeblock">En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</ab>
             <p>El autor de la nota se puede codificar con el atributo <seg type="code">@hand</seg>. Los siguientes valores están permitidos:</p>
@@ -767,7 +762,7 @@
                 </cell>
               </row>
             </table>
-            <p>El lugar de la nota se debe codificar con el atributo <seg type="code">@place</seg>:</p>
+            <p>El lugar de la nota se ha codificado con el atributo <seg type="code">@place</seg>:</p>
             <table>
               <row role="label">
                 <cell>
@@ -828,12 +823,12 @@
                 </cell>
               </row>
             </table>
-            <p>Si el autor utiliza una marca de inserción, se debe codificar con el elemento vacío <seg type="code">metamark/</seg>. La apariencia de la marca de inserción (asterisco, número, etc.) no debe hacerse explícita.</p>
+            <p>Si el autor utiliza una marca de inserción, se ha codificado con el elemento vacío <seg type="code">metamark/</seg>. La apariencia de la marca de inserción (asterisco, número, etc.) no se ha hecho explícita.</p>
           </div>
           <div type="level3" xml:id="dibujos-e-ilustraciones">
             <head>Dibujos e ilustraciones</head>
-            <p>Los dibujos o ilustraciones incluidos en la fuente se deben codificar de manera explícita. Además, se pueden comentar y describir de manera opcional.</p>
-            <p>Se debe distinguir entre los dibujos y las copias digitales (también: facsímiles) de un documento completo.</p>
+            <p>Los dibujos o ilustraciones incluidos en la fuente se han codificado de manera explícita. Además, se pueden comentar y describir de manera opcional.</p>
+            <p>Se ha distinguido entre los dibujos y las copias digitales (también: facsímiles) de un documento completo.</p>
             <p>La creación y el correcto almacenamiento del fichero de imagen se realiza en 4 pasos:</p>
             <list type="ordered:arabic">
               <item>
@@ -853,14 +848,14 @@
                 <p>Inserte y comente el dibujo/esquema en el lugar apropiado.</p>
               </item>
             </list>
-            <p>Los dibujos se deben codificar con el elemento <seg type="code">figure</seg>. La persona que
-              realizó el dibujo se debe indicar con el atributo <seg type="code">@hand</seg>: <seg
+            <p>Los dibujos se han codificado con el elemento <seg type="code">figure</seg>. La persona que
+              realizó el dibujo se ha indicado con el atributo <seg type="code">@hand</seg>: <seg
                 type="code">#author</seg>, <seg type="code">#addressee</seg>, <seg type="code"
                 >#unknown</seg> o una persona del registro de personas. En caso de que se disponga
-              de un título en el documento original, debe codificarse con el elemento <seg type="code">p</seg>. En el elemento hijo <seg type="code"
+              de un título en el documento original, se ha codificado con el elemento <seg type="code">p</seg>. En el elemento hijo <seg type="code"
                 >figDesc</seg>, en cambio, la imagen es descrita por los editores y editoras. El
               nombre del fichero se codifica con el atributo <seg type="code">@facs</seg>. Los
-              comentarios editoriales que se refieren a la imagen en sí deben codificarse con el elemento
+              comentarios editoriales que se refieren a la imagen en sí se han codificado con el elemento
               hijo <seg type="code">note</seg>.</p>
             <ab type="codeblock">
             &lt;figure facs="dibujo" hand="#addressee"&gt; 
@@ -872,10 +867,10 @@
         </div>
         <div type="level2" xml:id="intervenciones-autoriales">
           <head>Intervenciones autoriales</head>
-          <p>En todas las ediciones digitales del proyecto se deben codificar los cambios de tipografía y las intervenciones autoriales de manera explícita, es decir, con etiquetado TEI.</p>
+          <p>En todas las ediciones digitales del proyecto se han codificado los cambios de tipografía y las intervenciones autoriales de manera explícita, es decir, con etiquetado TEI.</p>
           <div type="level3" xml:id="destacados">
             <head>Destacados</head>
-            <p>Los destacados y marcas en el borde del documento se deben codificar con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg type="code">@rendition</seg> para especificar su apariencia:</p>
+            <p>Los destacados y marcas en el borde del documento se han codificado con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg type="code">@rendition</seg> para especificar su apariencia:</p>
             <table>
               <row role="label">
                 <cell>
@@ -919,17 +914,17 @@
             </table>
             <p>Por ejemplo:</p>
             <ab type="codeblock">Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</ab>
-            <p>Si un párrafo completo esté destacado con una marca en el margen, se debe codificar con el elemento <seg type="code">p</seg> y el atributo <seg type="code">@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
+            <p>Si un párrafo completo esté destacado con una marca en el margen, se ha codificado con el elemento <seg type="code">p</seg> y el atributo <seg type="code">@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
           </div>
           <div type="level3" xml:id="superscript">
             <head>Superscript</head>
-            <p>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto a la línea) en la fuente textual se deben codificar con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg
+            <p>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto a la línea) en la fuente textual se han codificado con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg
                 type="code">@rendition</seg> con valor <seg type="code">#sup</seg> PPor ejemplo:</p>
             <ab type="codeblock">ap.&lt;hi rendition="#sup"&gt;do&lt;/hi&gt;</ab>
           </div>
           <div type="level3" xml:id="eliminaciones">
             <head>Eliminaciones</head>
-            <p>Siempre sea legible y con independencia de dónde se encuentre (saltos de línea, expansiones de abreviaturas, normalizaciones y correcciones o adiciones del editor), el texto eliminado siempre debe codificarse con el elemento <seg type="code">del</seg> (deletion) y haciendo uso del atributo <seg type="code">@rendition</seg> para especificar el tipo de eliminación.</p>
+            <p>Siempre sea legible y con independencia de dónde se encuentre (saltos de línea, expansiones de abreviaturas, normalizaciones y correcciones o adiciones del editor), el texto eliminado siempre se ha codificado con el elemento <seg type="code">del</seg> (deletion) y haciendo uso del atributo <seg type="code">@rendition</seg> para especificar el tipo de eliminación.</p>
             <table>
               <row role="label">
                 <cell>
@@ -976,8 +971,8 @@
           </div>
           <div type="level3" xml:id="sustituciones">
             <head>Sustituciones</head>
-            <p>Las sustituciones son un tipo particular de corrección realizada por el autor o editor contemporáneo a la fuente textual: son eliminaciones con adiciones simultáneas. Todas estas sustituciones se deben codificar de manera explícita.</p>
-            <p>Si se elimina una palabra o un pasaje del texto en el manuscrito y al mismo tiempo se añade una palabra, estos dos fenómenos textuales se deben codificar juntos con un elemento <seg type="code">subst</seg> (substition).</p>
+            <p>Las sustituciones son un tipo particular de corrección realizada por el autor o editor contemporáneo a la fuente textual: son eliminaciones con adiciones simultáneas. Todas estas sustituciones se han codificado codificar de manera explícita.</p>
+            <p>Si se elimina una palabra o un pasaje del texto en el manuscrito y al mismo tiempo se añade una palabra, estos dos fenómenos textuales se han codificado juntos con un elemento <seg type="code">subst</seg> (substition).</p>
             <p>La palabra eliminada se codifica con el elemento <seg type="code">del</seg> (deletion). El tipo de eliminación se especifica en el atributo <seg type="code">@rendition</seg>. Los siguientes valores están permitidos:</p>
             <table>
               <row role="label">
@@ -1020,7 +1015,7 @@
                 </cell>
               </row>
             </table>
-            <p>La palabra (o palabras) añadida se debe codificar con el elemento <seg type="code">add</seg> (addition). El lugar de la adición se debe especificar con el atributo <seg type="code">@place</seg>. Los siguientes valores están permitidos:</p>
+            <p>La palabra (o palabras) añadida se ha codificado con el elemento <seg type="code">add</seg> (addition). El lugar de la adición se ha especificado con el atributo <seg type="code">@place</seg>. Los siguientes valores están permitidos:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1101,9 +1096,9 @@
           </div>
           <div type="level3" xml:id="adiciones">
             <head>Adiciones</head>
-            <p>En todas las ediciones del proyecto se deben codificar las adiciones que el propio autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos realizados por el autor que sólo amplían el texto y se integran sintácticamente.</p>
+            <p>En todas las ediciones del proyecto se han codificado las adiciones que el propio autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos realizados por el autor que sólo amplían el texto y se integran sintácticamente.</p>
             <p>Las adiciones se distinguen de las <ref target="#nota-en-el-manuscrito">notas</ref> porque forman unidades de texto independientes.</p>
-            <p>Las adiciones hechas por el autor se deben codificar con <seg type="code">add</seg> (addition) utilizando el atributo <seg type="code">@place</seg> para especificar el lugar de la adición:</p>
+            <p>Las adiciones hechas por el autor se han codificado con <seg type="code">add</seg> (addition) utilizando el atributo <seg type="code">@place</seg> para especificar el lugar de la adición:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1196,16 +1191,16 @@
             </table>
             <p>Por ejemplo:</p>
             <ab type="codeblock">[…] y logré para el Comercio con estranjeros, los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</ab>
-            <p>Si hay una marca de inserción hecha por el autor en la fuente, se debe codificar con el elemento <seg type="code">metamark/</seg>. La forma de la marca de inserción (asterisco, número, etc.) no se debe especificar.</p>
+            <p>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado con el elemento <seg type="code">metamark/</seg>. La forma de la marca de inserción (asterisco, número, etc.) no se ha especificado.</p>
           </div>
         </div>
         <div type="level2" xml:id="intervenciones-editoriales">
           <head>Intervenciones editoriales</head>
-          <p>En todas las ediciones digitales del proyecto se deben codificar las intervenciones editoriales de manera explícita, es decir, con etiquetado TEI.</p>
+          <p>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita, es decir, con etiquetado TEI.</p>
           <div type="level3" xml:id="lecturas-inciertas">
             <head>Lecturas inciertas</head>
             <p>Si hay palabras y/o pasajes que los editores y editoras no puedan leer
-              con certeza, estos deben ser marcados. Las lecturas inciertas deben distinguirse de
+              con certeza, estos han sido codificados. Las lecturas inciertas han sido diferenciadas de
                 <ref target="#texto-ilegible">texto ilegible</ref>.</p>
             <p>Las palabras que los editores y editoras no pueden descifrar de forma cierta se
               marcan con el elemento <seg type="code">unclear</seg>. El atributo <seg type="code"
@@ -1283,7 +1278,7 @@
             <p>Los caracteres o palabras ilegibles en el manuscrito se registran con la codificación
               adecuada. Las razones de la ilegibilidad pueden ser daños materiales o escritura
               ilegible.</p>
-            <p>Se debe distinguir entre palabras ilegibles y palabras difíciles de leer pero que se
+            <p>Se ha distinguido entre palabras ilegibles y palabras difíciles de leer pero que se
               pueden transcribir con una <ref target="#lecturas-inciertas">lectura
               incierta</ref>.</p>
             <p>Los caracteres o cadenas de caracteres ilegibles en el manuscrito se marcan con el
@@ -1392,7 +1387,7 @@
               codificará tanto con <seg type="code">del</seg> como <seg type="code">gap/</seg>.</p>
             <ab type="codeblock"> &lt;del rendition="#s"&gt; &lt;gap reason="illegible" unit="chars"
               quantity="5"/&gt; &lt;/del&gt;</ab>
-            <p>Debe registrar las páginas destruidas o perdidas de una en una.</p>
+            <p>Se han codificado las páginas destruidas o perdidas individualmente.</p>
             <ab type="codeblock">&lt;pb n="1r"/&gt; &lt;gap reason="lost" unit="pages"
               quantity="1"/&gt;</ab>
             <p>
@@ -1405,9 +1400,8 @@
             <p>Las directrices de una edición pueden estipular que ciertas secciones no sean
               transcritas por los editores y editoras. En estos casos, sin embargo, se establece una
               codificación correspondiente, lo que hace que la omisión sea reconocible.</p>
-            <p>Para registrar y mostrar correctamente la foliación, debe registrar cada página
-              individualmente. Aunque se omitan varias páginas consecutivas, siempre se debe
-              especificar <quote rendition="#i">1</quote> como número para cada nueva página
+            <p>Para registrar y mostrar correctamente la foliación, se ha codificado cada página
+              individualmente. Aunque se omitan varias páginas consecutivas, siempre se han especificado un <quote rendition="#i">1</quote> como número para cada nueva página
               registrada.</p>
             <p>Las omisiones de caracteres, palabras, pasajes de texto o páginas enteras por parte
               de los editores y editoras están marcadas con el elemento vacío <seg type="code"
@@ -1466,7 +1460,7 @@
             </table>
             <p>En el atributo <seg type="code">@quantity</seg>, se anota el número de caracteres,
               líneas, etc. que se omiten.</p>
-            <p>El atributo <seg type="code">@reason</seg> debe especificar el motivo de la omisión
+            <p>El atributo <seg type="code">@reason</seg> se ha especificado el motivo de la omisión
               editorial.</p>
             <table>
               <row role="label">
@@ -1522,7 +1516,7 @@
             <p>Las palabras o signos de puntuación que faltan pueden ser completados por los
               editores y editoras. Estos suplementos se marcan con <seg type="code">supplied</seg>.
               Se indica la probabilidad con la que se aplica este suplemento.</p>
-            <p>La adición de las palabras o signos de puntuación que faltan se debe distinguir de la
+            <p>La adición de las palabras o signos de puntuación que faltan se han distinguido de la
                 <ref target="#abreviaturas-resueltas-por-el-editor">adición (también: expansión) de
                 palabras abreviadas</ref>.</p>
             <p>Las adiciones de signos de puntuación o palabras completas faltantes se marcan con
@@ -1575,7 +1569,7 @@
                 type="code">sic</seg> indica la palabra que se va a eliminar. La eliminación misma
               se indica mediante otro elemento hijo, <seg type="code">corr</seg> (correction), cuyo
               atributo <seg type="code">@type</seg> tiene el valor <seg type="code">deleted</seg>.
-              Esto debería marcar explícitamente la codificación de que la palabra se ha eliminado y
+              Se ha codificado explícitamente la palabra eliminada y
               no se ha olvidado una corrección por el editor.</p>
             <ab type="codeblock"> Es grande finura y brillantes de los &lt;choice&gt;
               &lt;sic&gt;los&lt;/sic&gt; &lt;corr type="deleted"/&gt; &lt;/choice&gt; vestidos
@@ -1643,9 +1637,8 @@
             <head>Comentario editorial</head>
             <p>Un comentario editorial se refiere a un sólo pasaje de texto, típicamente una o
               varias frases. Su objetivo es promover la comprensión del pasaje individual.</p>
-            <p>Por un lado, el comentario editorial de un pasaje de texto individual debe
-              distinguirse del comentario editorial global, que se refiere a un texto completo (por
-              ejemplo, una carta). Por otro lado, debe distinguirse de las indexaciones puramente
+            <p>Por un lado, el comentario editorial de un pasaje de texto individual se ha diferenciado del comentario editorial global, que se refiere a un texto completo (por
+              ejemplo, una carta). Por otro lado, se ha distinguido de las indexaciones puramente
               identificativas de nombres y términos mencionados en el texto.</p>
             <p>Los comentarios editoriales se marcan con el elemento <seg type="code">seg</seg>
               (arbitrary segment), que siempre contiene dos elementos hijos: por un lado, <seg
@@ -1688,7 +1681,7 @@
             <head>Fechas</head>
             <p>Las fechas mencionadas en el manuscrito pueden marcarse si esto parece útil para la
               edición digital o el uso posterior de los datos.</p>
-            <p>Las fechas que aparecen en las líneas de fecha de las cartas no deben marcarse
+            <p>Las fechas que aparecen en las líneas de fecha de las cartas no se han codificado
               especialmente. El registro de su información se realiza mediante una codificación
               adecuada en los metadatos.</p>
             <p>Las fechas se marcan con <seg type="code">date</seg>. La fecha legible por máquina se
@@ -1974,8 +1967,7 @@
             <p>Por <quote rendition="#i">texto en idioma extranjero</quote> se entienden los textos
               (o partes de texto) que se desvían del idioma que normalmente se encuentra en el
               corpus o de un idioma definido como estándar. Puede tratarse de palabras individuales,
-              pasajes de texto más largos o textos completos (cartas o similares). Siempre se debe
-              marcar el cambio de idioma o el idioma de un texto. De este modo, se facilita tanto el
+              pasajes de texto más largos o textos completos (cartas o similares). Siempre se ha codificado el cambio de idioma o el idioma de un texto. De este modo, se facilita tanto el
               uso de servicios web externos, como el <quote rendition="#i">Cascaded Analysis
                 Broker</quote> del <ref target="http://www.deutschestextarchiv.de">DTA</ref>, como
               el uso posterior de los textos editados en corpus lingüísticos.</p>
@@ -2133,13 +2125,12 @@
                 <quote rendition="#i">datos del encabezado</quote>) son metadatos importantes que
               son rasgos característicos, si no necesarios, de cartas como tipo de texto. En la
               edición digital, pueden mencionarse total o parcialmente en el encabezamiento o el
-                <quote rendition="#i">título</quote> de la carta. Pero, sobre todo, deben
-              codificarse claramente en forma de los llamados metadatos, que también hacen
+                <quote rendition="#i">título</quote> de la carta. Pero, sobre todo, se han codificado claramente en forma de los llamados metadatos, que también hacen
               referencia a una entrada de registro correspondiente para el remitente, el
               destinatario, el lugar de escritura y el lugar de recepción. Sin estos metadatos, la
               clasificación y el filtrado por interlocutor de correspondencia o por fecha no es
               posible en la edición digital de cartas. La especificación de una fecha de escritura o
-              de recepción debe distinguirse de la explicación de la datación, que se anota por
+              de recepción se ha distinguido e de la explicación de la datación, que se anota por
               separado.</p>
             <p>Los metadatos de correspondencia de una carta se especifican en el elemento <seg
                 type="code">correspDesc</seg> (correspondence description). Se crea un elemento <seg
@@ -2244,13 +2235,13 @@
           <div type="level3" xml:id="acto-de-escritura">
             <head>Acto de escritura</head>
             <p>En muchos casos, una carta se escribe en un solo paso. Sin embargo, una carta
-              también puede haber sido escrita durante varios días. Si se pueden identificar más de
+              también puede haber sido escrita durante varios días. Si se ha podido identificar más de
               uno de estos actos por la estructura del texto (por ejemplo, una línea de fecha
-              adicional ) o por su contenido, deben marcarse en consecuencia. Hay que distinguir el
+              adicional ) o por su contenido, se han codificado en consecuencia. Se ha distinguido el
               acto de escritura de la posdata .</p>
-            <p>Un acto de escritura se codifica mediante el elemento <seg type="code">div</seg> con
+            <p>Los actos de escritura se han codificado con el elemento <seg type="code">div</seg> y
               el atributo <seg type="code">@type</seg> y el valor <seg type="code"
-                >writingSession</seg>. El número de un acto de escritura se especifica en el
+                >writingSession</seg>. El número de un acto de escritura se ha especificado en el
               atributo <seg type="code">@n</seg>.</p>
             <ab type="codeblock"> &lt;div type="writingSession"&gt; &lt;p&gt;[Primer acto de
               escritura]&lt;/p&gt; &lt;/div&gt; &lt;div type="writingSession" n="2"&gt;
@@ -2309,7 +2300,7 @@
           <div type="level3" xml:id="posdata">
             <head>Posdata</head>
             <p>La posdata es una adenda a la carta, que suele encontrarse debajo de la firma, pero
-              que también puede escribirse en el margen o en otro lugar. Debe distinguirse de un
+              que también puede escribirse en el margen o en otro lugar. Se ha distinguido un
               acto de escritura adicional si la carta se escribió a lo largo de varios días.</p>
             <p>La posdata se anota después del <seg type="code">closer</seg> como un elemento <seg
                 type="code">postcript</seg>. Conforme a las directrices de la TEI, siempre contiene
