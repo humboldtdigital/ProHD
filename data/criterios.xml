@@ -56,15 +56,14 @@
     <body>
       <div type="level1" xml:id="metadatos">
         <head>Metadatos</head>
-        <p>Los metadatos son de carácter descriptivo y ayudan a identificar la edición
+        <p>Los metadatos utilizados son descriptivos e identifican la edición
           digital, los responsables de la publicación, la fuente de la que deriva el texto, las
-          condiciones relacionadas con la creación y la clase de texto mediante categorías. Son aplicables a todos los
-          tipos de texto (documento, carta, etc.) del proyecto.</p>
+          condiciones relacionadas con la creación y la clase de texto mediante categorías. Han sido aplicados a todo tipo de texto (documento, carta, etc.).</p>
         <div type="level2" xml:id="titulo">
           <head>Título</head>
           <p>Todas las ediciones se han identificado con un título principal. El título ha sido normalizado ortográficamente.</p>
           <p>Como parte del <seg type="code">//titleStmt</seg>, la codificación del título principal
-            se realizará utilizando el elemento <seg type="code">title</seg> y el atributo <seg
+            se ha realiyado utilizando el elemento <seg type="code">title</seg> y el atributo <seg
               type="code">@type="main"</seg>. Por ejemplo:</p>
           <ab type="codeblock">
             &lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La Habana&lt;/title&gt;
@@ -210,7 +209,7 @@
             identificador como una signatura.</p>
           <p>La descripción de la fuente se ha codificado con el elemento <seg type="code"
               >msDesc</seg> (manuscript description). Dentro se ha utilizado el elemento <seg type="code">msIdentifier</seg> y proporcionar información sobre la institución que conserva el documento con el elemento <seg type="code"
-              >institution</seg> y la signatura con elemento <seg type="code">idno</seg>, que llevará
+              >institution</seg> y la signatura con elemento <seg type="code">idno</seg>, que lleva
             el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>. Es importante anidar el elemento <seg type="code">idno</seg> dentro de otro elemento <seg type="code">idno</seg>; de esta manera es posible repetir el elemento <seg type="code">idno</seg> tantas veces como sea necesario. De manera opcional, es posible incluir información sobre la colección con el elemento <seg type="code"
               >collection</seg>. Por ejemplo:</p>
           <ab type="codeblock"> 
@@ -422,9 +421,9 @@
         <div type="level2" xml:id="lugar-de-escritura">
           <head>Lugar de escritura</head>
           <p>Si se conoce el lugar de escritura, se ha codificado también en el elemento <seg
-              type="code">profileDesc</seg>. Allí, si aún no existiera uno, se creará un elemento
-              <seg type="code">creation</seg> en el que se codificará la información sobre la
-            creación. Dentro de este elemento, se utilizará <seg type="code">placeName</seg> para codificar
+              type="code">profileDesc</seg>. Allí, si aún no existiera uno, se ha creado un elemento
+              <seg type="code">creation</seg> en el que se ha codificado la información sobre la
+            creación. Dentro de este elemento, se ha utilizado <seg type="code">placeName</seg> para codificar
             el nombre del lugar. Si el lugar de escritura figura en el registro de lugares, el ID
             asociado se genera en el atributo <seg type="code">@key</seg>, creando un enlace al
             registro de lugares. Por ejemplo:</p>
@@ -478,8 +477,8 @@
         <div type="level2" xml:id="idioma">
           <head>Idioma</head>
           <p>En todas las ediciones del proyecto, se ha codificado el idioma principal en que el
-            texto fue escrito. Dentro de <seg type="code">profileDesc</seg>, se utilizará el
-            elemento <seg type="code">langUsage</seg>. Allí se anidará el elemento <seg type="code"
+            texto fue escrito. Dentro de <seg type="code">profileDesc</seg>, se ha utilizado el
+            elemento <seg type="code">langUsage</seg>. Allí se ha anidado el elemento <seg type="code"
               >language</seg> para codificar el idioma o lengua. Por ejemplo:</p>
           <ab type="code">
             &lt;langUsage&gt; 
@@ -502,7 +501,7 @@
                &lt;p&gt;Notas de Humboldt sobre la obra de Jean Nicolas Berthe "Précis Historique de la Maladie qui a régné dans l’Andalousie en 1800". Humboldt resume las tesis del trabajo de Berthe en preparación de su tratado
             científico sobre la fiebre amarilla. La obra de Berthe fue publicada en 1802.&lt;/p&gt;
             &lt;/abstract&gt; </ab>
-          <p>Se proporcionará el resumen en español y en alemán. Para ello, es necesario repetir el
+          <p>Se ha proporcionado el resumen en español y en alemán. Para ello, es necesario repetir el
             elemento <seg type="code">abstract</seg> y utilizar el atributo <seg type="code"
               >@xml:lang</seg> utilizando un código estandarizado de dos caracteres: "es" para el español y "de" para el alemán.</p>
         </div>
@@ -511,7 +510,7 @@
           <p>Como parte de <seg type="code">//profileDesc</seg> es posible utilizar el elemento <seg
               type="code">textClass</seg> para incluir distintas categorías con las que clasificar
             el texto editado. Se aceptan tres tipos de categorías: género, forma y tema. Para ello,
-            se utilizará el elemento <seg type="code">catRef</seg> con los atributos <seg
+            se ha utilizado el elemento <seg type="code">catRef</seg> con los atributos <seg
               type="code">@scheme</seg> y <seg type="code">@target</seg>. Por ejemplo:</p>
           <ab type="code">
             &lt;textClass&gt; 
@@ -1481,8 +1480,12 @@
               y sus dos elementos hijo <seg type="code">abbr</seg> (abreviatura) y <seg type="code">expan</seg> (abreviatura resuelta).
               En el elemento <seg type="code">abbr</seg> la abreviatura se ha codificado conservando la forma
               original mientras que en el elemento <seg type="code">expan</seg> las y los editoras han proporcionado la forma resuelta.</p>
-            <ab type="codeblock"> &lt;choice&gt; &lt;abbr&gt;q&lt;/abbr&gt;
-              &lt;expan&gt;que&lt;/expan&gt; &lt;/choice&gt;</ab>
+            <ab type="codeblock">
+            &lt;choice&gt; 
+              &lt;abbr&gt;q&lt;/abbr&gt;
+              &lt;expan&gt;que&lt;/expan&gt; 
+            &lt;/choice&gt;
+            </ab>
           </div>
           <div type="level3" xml:id="palabras-letras-o-signos-de-puntuación-suplidos">
             <head>Palabras, letras o signos de puntuación suplidos</head>
@@ -1570,124 +1573,71 @@
             </table>
             <p>Por ejemplo:</p>
             <ab type="codeblock">
-              <choice>
-                <sic>Humbold</sic>
-                <corr cert="high">Humboldt</corr>
-              </choice>
+              &lt;choice&gt;
+                &lt;sic&gt;Humbold&lt;/sic&gt;
+                &lt;corr cert="high"&gt;Humboldt&lt;/corr&gt;
+              &lt;/choice&gt;
               </ab>
            <p>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha empleado el mismo elemento <seg type="code">choice</seg> para codificar la palabra errónea con <seg type="code">sic</seg>. Ahora bien, en estos casos no se ha proporcionado una forma corregida sino que se utilizado el elemento <seg type="code">corr</seg> y se ha dejado vacío. Además, se ha utilizado el atributo <seg type="code">type</seg> con valor "deleted" para indicar que se ha eliminado una palabra redundante.</p>   
           </div>
-          <div type="level3" xml:id="comentario-editorial">
-            <head>Comentario editorial</head>
-            <p>Un comentario editorial se refiere a un sólo pasaje de texto, típicamente una o
-              varias frases. Su objetivo es promover la comprensión del pasaje individual.</p>
-            <p>Por un lado, el comentario editorial de un pasaje de texto individual se ha diferenciado del comentario editorial global, que se refiere a un texto completo (por
-              ejemplo, una carta). Por otro lado, se ha distinguido de las indexaciones puramente
-              identificativas de nombres y términos mencionados en el texto.</p>
-            <p>Los comentarios editoriales se marcan con el elemento <seg type="code">seg</seg>
-              (arbitrary segment), que siempre contiene dos elementos hijos: por un lado, <seg
-                type="code">orig</seg> para el pasaje de texto de la fuente que se anota. Por otro
-              lado, <seg type="code">note</seg> para el comentario editorial en sí. El atributo <seg
-                type="code">@type</seg> en <seg type="code">seg</seg> especifica la codificación con
-              su valor <seg type="code">comment</seg>. El valor del atributo <seg type="code"
-                >@xml:id</seg> en el elemento <seg type="code">note</seg> sirve para fines técnicos
-              y se genera automáticamente.</p>
-            <ab type="codeblock"> &lt;seg type="comment"&gt; &lt;orig&gt;Discurso del
-              héroe&lt;/orig&gt; &lt;note xml:id="nv1l_mxf_cy"&gt;Comentario irónico&lt;/note&gt;
-              &lt;/seg&gt;</ab>
-            <p>La codificación no es conforme al DTABf, pero permite comprobar más fácilmente si
-              están presentes tanto el texto de referencia como el comentario editorial.</p>
+          <div type="level3" xml:id="comentarios">
+            <head>Comentarios</head>
+            <p>Los comentarios editoriales se han codificado con el elemento <seg type="code">seg</seg>
+              (arbitrary segment). A su vez, este elemento contiene dos elementos hijos: por un lado, <seg
+                type="code">orig</seg> con el que se ha codicado el pasaje textual comentado; por el otro
+              lado, se ha utilizado el elemento <seg type="code">note</seg> para codificar el comentario editorial en sí. El atributo <seg
+                type="code">@type</seg> en <seg type="code">seg</seg> especifica la codificación con el valor <seg type="code">comment</seg>.</p>
+            <ab type="codeblock">
+              &lt;seg type="comment"&gt; 
+                &lt;orig&gt;Discurso del héroe&lt;/orig&gt; 
+                &lt;note&gt;Comentario irónico que alude a...&lt;/note&gt;
+              &lt;/seg&gt;
+              </ab>
           </div>
           <div type="level3" xml:id="referencias">
             <head>Referencias</head>
-            <p>Si es necesario, se puede hacer referencia a otras cartas, documentos y pasajes de
-              texto en un comentario editorial.</p>
-            <p>Los destinos de referencia en el texto están marcados con dos elementos <seg
-                type="code">anchor</seg>. En ambos elementos, el atributo <seg type="code"
-                >@xml:id</seg> lleva un ID que sólo se diferencia por el prefijo <quote
-                rendition="#i">start</quote> o <quote rendition="#i">stop</quote>. Se puede hacer
-              referencia a este ID desde otros textos y documentos..</p>
-            <ab type="codeblock"> &lt;anchor type="target" xml:id="start_b3k_pyf_cy"/&gt;[un destino
-              de referencia]&lt;anchor type="target" xml:id="stop_b3k_pyf_cy"/&gt;</ab>
-            <p>La referencia real a una carta o a un pasaje de texto se codifica con el elemento
+            <p>Las referencias a otras ediciones o pasajes internos se han codificado con el elemento
                 <seg type="code">ref</seg>, cuyo atributo <seg type="code">@target</seg> contiene el
-              ID del pasaje de texto de destino.</p>
-            <ab type="codeblock">&lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una
-              referencia]&lt;/ref&gt;</ab>
-            <p>Además, <seg type="code">ref</seg> también puede utilizarse para hacer referencia a
-              un sitio web externo desde un comentario editorial. En este caso, la URL completa del
+              ID único del pasaje de texto de destino. Por ejemplo:</p>
+            <ab type="codeblock">
+            &lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una referencia]&lt;/ref&gt;</ab>
+            <p>Además, en algunas ocasiones, con <seg type="code">ref</seg> se han codificado referencias a sitios web externos, por ejemplo, desde un comentario editorial. En este caso, la URL completa del
               sitio web se anota en el atributo <seg type="code">@target</seg>.</p>
-            <ab type="codeblock"> &lt;seg type="comment"&gt; &lt;orig&gt;el río&lt;/orig&gt;
-              &lt;note xml:id="nxlm_bhy_ny"&gt;&lt;ref
-              target="http://www.kallilope.de/beispiel"/&gt;&lt;/note&gt; &lt;/seg&gt;</ab>
+            <ab type="codeblock">
+            &lt;seg type="comment"&gt; 
+              &lt;orig&gt;el río&lt;/orig&gt;
+              &lt;note xml:id="nxlm_bhy_ny"&gt;&lt;ref target="http://www.kallilope.de/beispiel"/&gt;&lt;/note&gt; 
+            &lt;/seg&gt;
+            </ab>
           </div>
           <div type="level3" xml:id="fechas-1">
             <head>Fechas</head>
-            <p>Las fechas mencionadas en el manuscrito pueden marcarse si esto parece útil para la
-              edición digital o el uso posterior de los datos.</p>
-            <p>Las fechas que aparecen en las líneas de fecha de las cartas no se han codificado
-              especialmente. El registro de su información se realiza mediante una codificación
-              adecuada en los metadatos.</p>
-            <p>Las fechas se marcan con <seg type="code">date</seg>. La fecha legible por máquina se
-              especifica en el formato <seg type="code">AAAA-MM-DD</seg> en los atributos <seg
+            <p>Las fechas que aparecen en la fuente textual se han codificado con <seg type="code">date</seg>. Para que las fechas sean legibles por el ordenador se
+              se ha seguido el formato <seg type="code">AAAA-MM-DD</seg> en los atributos <seg
                 type="code">@when</seg>, <seg type="code">@from</seg> y <seg type="code">@to</seg>,
               así como <seg type="code">@notBefore</seg> y <seg type="code">@notAfter</seg>.</p>
-            <p>Además, el atributo <seg type="code">@cert</seg> especifica la probabilidad de que la
+            <p>Además, en el atributo <seg type="code">@cert</seg> ha especificado la certeza de que la
               fecha sea correcta: <seg type="code">high</seg>, <seg type="code">low</seg>.</p>
-            <p>En el atributo <seg type="code">@calendar</seg> se anota si la fecha se basa en el
-              calendario juliano o en el calendario gregoriano:</p>
-            <table>
-              <row role="label">
-                <cell>
-                  <p>Calendario</p>
-                </cell>
-                <cell>
-                  <p>Valor para <seg type="code">@calendar</seg>
-                  </p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>juliano</p>
-                </cell>
-                <cell>
-                  <p>
-                    <seg type="code">#Julian</seg>
-                  </p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>gregoriano</p>
-                </cell>
-                <cell>
-                  <p>
-                    <seg type="code">#Gregorian</seg>
-                  </p>
-                </cell>
-              </row>
-            </table>
             <list type="ordered:arabic">
               <item>
                 <p>Fecha exacta</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del
-              año 1772&lt;/date&gt;</ab>
+            <ab type="codeblock">
+            &lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;</ab>
             <list type="ordered:arabic">
               <item n="2">
                 <p>Período de tiempo exacto</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre
-              de 1731 al 11 de septiembre de 1741&lt;/date&gt;</ab>
+            <ab type="codeblock">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731 al 11 de septiembre de 1741&lt;/date&gt;</ab>
             <list type="ordered:arabic">
               <item n="3">
                 <p>Período aproximado</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera
-              mitad de mayo de 1804&lt;/date&gt;</ab>
+            <ab type="codeblock">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</ab>
+            <p>Más ejemplos:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1738,10 +1688,6 @@
                 </cell>
               </row>
               <row>
-                <cell/>
-                <cell/>
-              </row>
-              <row>
                 <cell>
                   <p>Primera mitad del siglo XVIII/18</p>
                 </cell>
@@ -1760,10 +1706,6 @@
                     <seg type="code">notBefore="1750" notAfter="1799"</seg>
                   </p>
                 </cell>
-              </row>
-              <row>
-                <cell/>
-                <cell/>
               </row>
               <row>
                 <cell>
@@ -1804,10 +1746,6 @@
                     <seg type="code">notBefore="1775" notAfter="1799"</seg>
                   </p>
                 </cell>
-              </row>
-              <row>
-                <cell/>
-                <cell/>
               </row>
               <row>
                 <cell>
@@ -1874,55 +1812,12 @@
                 </cell>
               </row>
             </table>
-            <p>Los datos combinados resultan en la suma de los períodos, por ejemplo:</p>
-            <table>
-              <row role="label">
-                <cell>
-                  <p>Fecha en el texto</p>
-                </cell>
-                <cell>
-                  <p>Valores de los atributos</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>finales del siglo 18 / primera mitad del siglo 19</p>
-                </cell>
-                <cell>
-                  <p>
-                    <seg type="code">notBefore="1780" notAfter="1849"</seg>
-                  </p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>1762/3s</p>
-                </cell>
-                <cell>
-                  <p>
-                    <seg type="code">notBefore="1762" notAfter="1763"</seg>
-                  </p>
-                </cell>
-              </row>
-            </table>
           </div>
-          <div type="level3" xml:id="sección-de-texto-en-idioma-extranjero">
-            <head>Sección de texto en idioma extranjero</head>
-            <p>Por <quote rendition="#i">texto en idioma extranjero</quote> se entienden los textos
-              (o partes de texto) que se desvían del idioma que normalmente se encuentra en el
-              corpus o de un idioma definido como estándar. Puede tratarse de palabras individuales,
-              pasajes de texto más largos o textos completos (cartas o similares). Siempre se ha codificado el cambio de idioma o el idioma de un texto. De este modo, se facilita tanto el
-              uso de servicios web externos, como el <quote rendition="#i">Cascaded Analysis
-                Broker</quote> del <ref target="http://www.deutschestextarchiv.de">DTA</ref>, como
-              el uso posterior de los textos editados en corpus lingüísticos.</p>
-            <p>Hay que distinguir entre el marcado de textos en idioma extranjero y el marcado de
-              cambios de tipografía, con la que el primero iba asociado a menudo en el mundo de
-              habla alemana. Por ejemplo, las cartas en alemán de la primera mitad del siglo XIX
-              solían estar escritas en letra alemana. Si el autor utilizaba una palabra extranjera,
-              ésta se representaba en escritura latina.</p>
-            <p>Las palabras y pasajes de texto individuales en idioma extranjera pueden marcarse con
-              un elemento <seg type="code">foreign</seg>. En el atributo <seg type="code"
-                >@xml:lang</seg> se indica la abreviatura del idioma extranjero correspondiente:</p>
+          <div type="level3" xml:id="palabras-en-otro-idioma">
+            <head>Palabras en otro idioma</head>
+            <p>Las palabras y pasajes de texto individuales en idioma extranjero se han codificado con
+              el elemento <seg type="code">foreign</seg>. Con el atributo <seg type="code"
+                >@xml:lang</seg> se ha codificado el código del idioma extranjero correspondiente:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1939,7 +1834,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">grc</seg>
+                    <seg type="code">gr</seg>
                   </p>
                 </cell>
               </row>
@@ -1949,7 +1844,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">lat</seg>
+                    <seg type="code">la</seg>
                   </p>
                 </cell>
               </row>
@@ -1959,7 +1854,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">heb</seg>
+                    <seg type="code">he</seg>
                   </p>
                 </cell>
               </row>
@@ -1969,7 +1864,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">deu</seg>
+                    <seg type="code">de</seg>
                   </p>
                 </cell>
               </row>
@@ -1979,7 +1874,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">fra</seg>
+                    <seg type="code">fr</seg>
                   </p>
                 </cell>
               </row>
@@ -1989,7 +1884,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">eng</seg>
+                    <seg type="code">en</seg>
                   </p>
                 </cell>
               </row>
@@ -1999,7 +1894,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">rus</seg>
+                    <seg type="code">ru</seg>
                   </p>
                 </cell>
               </row>
@@ -2009,28 +1904,23 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">spa</seg>
+                    <seg type="code">es</seg>
                   </p>
                 </cell>
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">Das &lt;lb/&gt;2te und 3te &lt;foreign
-              xml:lang="spa"&gt;vela&lt;/foreign&gt; Rufen machte sichtbar weniger Eindruk.</ab>
+            <ab type="codeblock">
+            Das &lt;lb/&gt;2te und 3te &lt;foreign xml:lang="es"&gt;vela&lt;/foreign&gt; Rufen machte sichtbar weniger Eindruk.</ab>
             <p>Además, el atributo <seg type="code">@xml:lang</seg> puede establecerse tanto a nivel
               de las estructuras de texto comunes (por ejemplo, párrafos) como para documentos
               completos (en el elemento raíz <seg type="code">TEI</seg>).</p>
           </div>
           <div type="level3" xml:id="personas-lugares-y-organizaciones">
             <head>Personas, lugares y organizaciones</head>
-            <p>Las personas, los lugares y las organizaciones mencionados en el documento original o
-              en el comentario editorial se marcan y se vinculan a una entrada del registro. Las
-              referencias en el documento pueden ser explícitas en forma de nombres propios o
-              indirectas en forma de anáforas (por ejemplo, títulos oficiales de monarcas y
-              funcionarios, grado de parentesco etc.). El marcado de anáforas queda a discreción de
-              cada edición.</p>
-            <p>Las personas, los lugares y las organizaciones que se mencionan explícitamente en el
-              manuscrito o en un comentario editorial se marcan con los siguientes elementos:</p>
+            <p>Las personas, los lugares y las organizaciones mencionados en la fuenten textual o
+              en los comentarios editoriales se han codificado de manera explícita y consistente cuando se trata de menciones. La codficiación de alusiones o referencias (por ejemplo, anáforas) se ha codificado de manera opcioanl según el criterio del editor o editora.</p>
+            <p>En ambos casos se han utilizado los elementos siguientes:</p>
             <list type="unordered">
               <item>
                 <p>Persona: <seg type="code">persName</seg>
@@ -2045,48 +1935,31 @@
                 </p>
               </item>
             </list>
-            <p>El ID de la entrada de registro vinculada se anota en la el atributo <seg type="code"
-                >@key</seg>.</p>
-            <ab type="codeblock">Mr. &lt;persName key="H0012737"&gt;James
-              Arnold&lt;/persName&gt;</ab>
+            <p>Se codificado con el atributo <seg type="code"
+                >@key</seg> un identificador único (URI) correspondiente a la entrada que describe la entidad. Por ejemplo:</p>
+            <ab type="codeblock">
+            Mr. &lt;persName key="H0012737"&gt;James Arnold&lt;/persName&gt;</ab>
           </div>
         </div>
       </div>
       <div type="level1" xml:id="cartas">
         <head>Cartas</head>
-        <p>Codificación de metadatos y estructuras textuales específicas de cartas y
-          correspondencias. En la edición digital, las cartas reciben un tratamiento especial debido
-          a algunos rasgos característicos y peculiaridades en cuanto a la estructura textual y los
-          metadatos. Estas características se presentan en este capítulo. Todos los metadatos y
-          fenómenos que también, pero no sólo, se aplican a las cartas se explican en los capítulos
-            <ref target="#metadatos">Metadatos</ref> y <ref target="#texto"
-            >Texto</ref>.</p>
+        <p>En este proyecto las cartas han recibido un tratamiento especial debido a algunos rasgos característicos de la estructura textual y los metadatos.</p>
         <div type="level2" xml:id="metadatos-de-cartas">
           <head>Metadatos de cartas</head>
           <div type="level3" xml:id="remitente-destinatario-lugar-y-fecha">
             <head>Remitente, destinatario, lugar y fecha</head>
-            <p>El remitente, el destinatario, el lugar y la fecha de una carta (también llamados
-                <quote rendition="#i">datos del encabezado</quote>) son metadatos importantes que
-              son rasgos característicos, si no necesarios, de cartas como tipo de texto. En la
-              edición digital, pueden mencionarse total o parcialmente en el encabezamiento o el
-                <quote rendition="#i">título</quote> de la carta. Pero, sobre todo, se han codificado claramente en forma de los llamados metadatos, que también hacen
-              referencia a una entrada de registro correspondiente para el remitente, el
-              destinatario, el lugar de escritura y el lugar de recepción. Sin estos metadatos, la
-              clasificación y el filtrado por interlocutor de correspondencia o por fecha no es
-              posible en la edición digital de cartas. La especificación de una fecha de escritura o
-              de recepción se ha distinguido e de la explicación de la datación, que se anota por
-              separado.</p>
-            <p>Los metadatos de correspondencia de una carta se especifican en el elemento <seg
-                type="code">correspDesc</seg> (correspondence description). Se crea un elemento <seg
+            <p>Los metadatos realativos a la correspondencia de una carta se han codificado en el elemento <seg
+                type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg
                 type="code">correspAction</seg> (correspondence action) para el proceso de envío y
-              el de recepción respectivamente. El atributo <seg type="code">@type</seg> especifica
-              el tipo del acto de comunicación; los valores (<seg type="code">sent</seg>, <seg
-                type="code">received</seg>) fueron tomados de las directrices de la TEI para <seg
-                type="code">correspAction</seg>.</p>
-            <ab type="codeblock"> &lt;correspDesc&gt; &lt;correspAction type="sent"&gt;[Información
-              sobre el remitente]&lt;/correspAction&gt; &lt;correspAction
-              type="received"&gt;[Información sobre el destinatario]&lt;/correspAction&gt;
-              &lt;/correspDesc&gt;</ab>
+              el de recepción respectivamente. Con atributo <seg type="code">@type</seg> se ha especificado
+              el tipo del acto de comunicación; los valores permitidos son dos: (<seg type="code">sent</seg> o <seg
+                type="code">received</seg>).</p>
+            <ab type="codeblock">
+            &lt;correspDesc&gt; 
+              &lt;correspAction type="sent"&gt;[Información sobre el remitente]&lt;/correspAction&gt; 
+              &lt;correspAction type="received"&gt;[Información sobre el destinatario]&lt;/correspAction&gt;
+            &lt;/correspDesc&gt;</ab>
             <p>Dentro del elemento <seg type="code">correspAction</seg>, se pueden utilizar los
               elementos <seg type="code">persName</seg>, <seg type="code">orgName</seg>, <seg
                 type="code">placeName</seg> y <seg type="code">date</seg>. La información sobre
