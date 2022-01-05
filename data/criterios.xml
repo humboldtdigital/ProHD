@@ -2107,8 +2107,7 @@
           <div type="level3" xml:id="posdata">
             <head>Posdata</head>
             <p>La posdata se ha codificado después del <seg type="code">closer</seg> como un elemento <seg
-                type="code">postcript</seg>. Conforme a las directrices de la TEI, siempre contiene
-              al menos un párrafo (<seg type="code">p</seg>).</p>
+                type="code">postcript</seg>. La postdata siempre contiene al menos un párrafo (<seg type="code">p</seg>).</p>
             <ab type="codeblock">
             &lt;postscript&gt; 
               &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
