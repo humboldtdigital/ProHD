@@ -465,7 +465,7 @@
               >language</seg> para codificar el idioma o lengua. Por ejemplo:</p>
           <ab type="code">
             &lt;langUsage&gt; 
-               &lt;language ident="es"Español&lt;/language&gt;
+               &lt;language ident="es"&gt;Español&lt;/language&gt;
             &lt;/langUsage&gt; </ab>
           <p>Se ha utilizado el atributo <seg type="code">@ident</seg> para identificar con un
             código estandarizado el idioma: "es" para el español, "de" para el alemán, "en" para el
