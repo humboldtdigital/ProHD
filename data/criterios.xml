@@ -509,7 +509,7 @@
       </div>
       <div type="level1" xml:id="texto">
         <head>Texto</head>
-        <p>Los textos editados como parte del proyecto han sido codificados desde un punto de vista estructural con el objetivo de capturar las divisiones internas del documento (secciones, párrafos, etc.) y la paginación o  foliación de la fuente. Asimismo, se han codificado de manera explícita los cambios en la tipografía y las intervenciones del autor y del editor o editora. Por último, en la medida de lo posible, se han codificado también las entidades nombradas en el cuerpo del texto.</p>
+        <p>Los textos editados como parte del proyecto han sido codificados desde un punto de vista estructural. Se han representando de manera explícita con etiquetado TEI todos los párrafos, rupturas de línea, listas, tablas, notas y dibujos. Asimismo, se han codificado la paginación o foliación de la fuente, incluyendo las páginas en blanco, y los cambios en la tipografía como los destacados, los espacios dejados por el autor, las intervenciones autoriales como las eliminaciones, adiciones y sustituciones, y las intervenciones editoriales como las normalizaciones, las abreviaturas y sus expansiones, las palabras suplidas, los errores y sus correcciones, las lecturas inciertas y el texto ilegible, las omisiones y los extranjerismos. Por último, en la medida de lo posible, se han codificado también las fechas y las entidades nombradas (personas, lugares y organizaciones) en el cuerpo del texto.</p>
         <div type="level2" xml:id="estructuras-textuales">
           <head>Estructuras textuales</head>
           <div type="level3" xml:id="párrafo">
@@ -1134,7 +1134,7 @@
           <p>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita.</p>
           <div type="level3" xml:id="normalizaciones">
           <head>Normalizaciones</head>
-          <p><!-- to do--></p>
+          <p><!-- to do-->to do</p>
           </div>
           <div type="level3" xml:id="abreviaturas">
             <head>Abreviaturas</head>
@@ -1874,11 +1874,11 @@
       </div>
       <div type="level1" xml:id="cartas">
         <head>Cartas</head>
-        <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos.</p>
+        <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado los remitentes, los destinatarios, el lugar y fecha de envío y recepción.</p>
         <div type="level2" xml:id="metadatos-de-cartas">
           <head>Metadatos de cartas</head>
-          <div type="level3" xml:id="remitente-destinatario-lugar-y-fecha">
-            <head>Remitente, destinatario, lugar y fecha</head>
+          <div type="level3" xml:id="remitente-destinatario-lugar">
+            <head>Remitente, destinatario y lugar</head>
             <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <seg
                 type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg
                 type="code">correspAction</seg> (correspondence action) para el proceso de envío y
@@ -1907,7 +1907,7 @@
               &lt;/correspAction&gt;
             &lt;/correspDesc&gt;</ab>
           </div>
-          <div type="level3" xml:id="fechas-cartas">
+          <div type="level3" xml:id="fechas">
             <head>Fechas</head>
             <p>Las fechas se han codificado con el elemento <seg type="code">date</seg> siguiendo el
               formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg
