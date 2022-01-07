@@ -59,7 +59,7 @@
         <p>Los metadatos utilizados son descriptivos e identifican la edición
           digital, los responsables de la publicación, la fuente de la que deriva el texto, las
           condiciones relacionadas con la creación y la clase de texto mediante categorías. Han sido aplicados a todo tipo de texto (documento, carta, etc.).</p>
-        <div type="level2" xml:id="titulo">
+        <div type="level2">
           <head>Título</head>
           <p>Todas las ediciones se han identificado con un título principal. El título ha sido normalizado ortográficamente.</p>
           <p>En <seg type="code">//titleStmt</seg>, la codificación del título principal
@@ -76,7 +76,7 @@
           <p>Se ha utilizado de manera opcional el atributo <seg type="code"
             >@xml:lang</seg> con un código estándar para indicar el idioma del título alternativo: "es" para el español, "fr" para el francés, "de" para el alemán, "en" para el inglés, etc.</p>
         </div>
-        <div type="level2" xml:id="editores-y-colaboradores">
+        <div type="level2">
           <head>Editores y colaboradores</head>
           <p>En el elemento <seg type="code">//titleStmt</seg>, se ha identificado los responsables de la edición con el elemento <seg
               type="code">editor</seg>. El nombre de la persona se ha codificado con <seg type="code">persName</seg> y los siguientes elementos:</p>
@@ -134,7 +134,7 @@
             &lt;/respStmt&gt;
           </ab>
         </div>
-        <div type="level2" xml:id="financiación">
+        <div type="level2">
           <head>Financiación</head>
           <p>Tras el nombre del editor o editora, se han identificado las
             tres entidades que financian el proyecto: Auswärtiges Amt, Fritz Thyssen Stiftung y
@@ -149,7 +149,7 @@
           <p>El elemento <seg type="code">funder</seg> lleva el atributo <seg type="code"
               >@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras.</p>
         </div>
-        <div type="level2" xml:id="edición">
+        <div type="level2">
           <head>Edición</head>
           <p>Todas las ediciones del proyecto mencionan el Proyecto Humboldt Digital y
             documentan la fecha de edición. Se ha codificado esta información sobre la edición con los elementos <seg type="code"
@@ -161,7 +161,7 @@
           </ab>
           <p>La fecha entre paréntesis corresponde al año de creación del documento TEI; es importante no confundir esta fecha con la fecha de creación de la fuente que se está editando.</p>
         </div>
-        <div type="level2" xml:id="publicación-y-licencia">
+        <div type="level2">
           <head>Publicación y licencia</head>
           <p>En todas las ediciones se ha codificado información sobre las organizaciones responsables de la distribución y
             publicación de las ediciones, los lugares de publicación y la licencia en todas las ediciones creadas en el marco
@@ -193,7 +193,7 @@
           <p>En todas las ediciones del proyecto, se ha utilizado la licencia "Creative Commons
             Atribución 4.0 Internacional (CC BY 4.0)".</p>
         </div>
-        <div type="level2" xml:id="tradición-manuscrita">
+        <div type="level2">
           <head>Fuente textual</head>
           <p>En todas las ediciones del proyecto se ha codificado la fuente de la que deriva el
             texto, el nombre de la institución en la que se conserva el documento y al menos un
@@ -227,7 +227,7 @@
             &lt;/witness&gt;
           </ab>
         </div>
-        <div type="level2" xml:id="tipo-de-base-textual">
+        <div type="level2">
           <head>Tipo de fuente textual</head>
           <p>La fuente de la edición siempre se basa en un texto que puede ser de diferentes
             tipos:</p>
@@ -317,7 +317,7 @@
           <p>Por ejemplo:</p>
           <ab type="codeblock">&lt;msDesc rend="manuscript"&gt;</ab>
         </div>
-        <div type="level2" xml:id="uri-del-registro-archivístico">
+        <div type="level2">
           <head>URI del registro bibliográfico</head>
           <p>Las fuentes documentales se identifican tradicionalmente con una signatura. Dado que
             las signaturas solo pueden ser identificadas parcialmente por máquinas, siempre que sea posible, se ha añadido un URI si se conoce o está disponible. El URI es un identificador de recursos
@@ -371,7 +371,7 @@
             &lt;/idno> 
           </ab>
         </div>
-        <div type="level2" xml:id="descripción-del-documento">
+        <div type="level2">
           <head>Descripción del documento</head>
           <p>Se han descrito las características físicas (papel, formato, número de páginas, etc.) de la fuente textual de la que deriva la edición de manera opcional.</p>
           <p>La descripción del documento se ha codificado con el elemento <seg type="code"
@@ -383,7 +383,7 @@
                 &lt;p&gt;La carta consiste en una hoja de papel blanco delgado en el formato …&lt;/p&gt; 
             &lt;/physDesc&gt;</ab>
         </div>
-        <div type="level2" xml:id="autor-del-texto">
+        <div type="level2">
           <head>Autor del texto</head>
           <p>Si se conoce quién es autor del texto, esta información se ha codificado en el elemento
               <seg type="code">profileDesc</seg>. Allí, se ha creado un elemento <seg type="code"
@@ -403,7 +403,7 @@
             conoce la fecha de nacimiento y fallecimiento, se ha incluido seguida del nombre y
             entre paréntesis como se muestra en el ejemplo.</p>
         </div>
-        <div type="level2" xml:id="lugar-de-escritura">
+        <div type="level2">
           <head>Lugar de escritura</head>
           <p>Si se conoce el lugar de escritura, se ha codificado también en el elemento <seg
               type="code">profileDesc</seg>. Allí, si aún no existiera uno, se ha creado un elemento
@@ -418,7 +418,7 @@
             &lt;/profileDesc&gt;
           </ab>
         </div>
-        <div type="level2" xml:id="fechas">
+        <div type="level2">
           <head>Fechas</head>
           <p>Si se conoce la fecha de creación, se ha codificado con el elemento <seg type="code"
               >date</seg> respetando el formato <seg type="code">AAAA-MM-DD</seg> (o <seg
@@ -458,7 +458,7 @@
               type="code">@cert</seg> con los valores <seg type="code">high</seg> y <seg type="code"
               >low</seg> para codificar la certeza con que se sabe si la fecha es correcta.</p>
         </div>
-        <div type="level2" xml:id="idioma">
+        <div type="level2">
           <head>Idioma</head>
           <p>En todas las ediciones del proyecto, se ha codificado el idioma principal del texto. En <seg type="code">profileDesc</seg>, se ha utilizado el
             elemento <seg type="code">langUsage</seg>. Allí se ha anidado el elemento <seg type="code"
@@ -473,7 +473,7 @@
           <p>Si el texto contiene partes sustanciales en otros idiomas, es posible repetir el
             elemento <seg type="code">language</seg> tantas veces como se desee.</p>
         </div>
-        <div type="level2" xml:id="resumen">
+        <div type="level2">
           <head>Resumen</head>
           <p>En todas las ediciones del proyecto, se ha proporcionado un resumen del contenido
             intelectual del texto, los temas, las ideas discutidas, etc.</p>
@@ -488,7 +488,7 @@
             elemento <seg type="code">abstract</seg> y se ha utilizado el atributo <seg type="code"
               >@xml:lang</seg> con un código estandarizado de dos caracteres: "es" para el español y "de" para el alemán.</p>
         </div>
-        <div type="level2" xml:id="categorización">
+        <div type="level2">
           <head>Categorización</head>
           <p>En <seg type="code">//profileDesc</seg> se ha utilizado el elemento <seg
               type="code">textClass</seg> para incluir distintas categorías con las que clasificar
@@ -510,15 +510,15 @@
       <div type="level1" xml:id="texto">
         <head>Texto</head>
         <p>Los textos editados como parte del proyecto han sido codificados desde un punto de vista estructural. Se han representando de manera explícita con etiquetado TEI todos los párrafos, rupturas de línea, listas, tablas, notas y dibujos. Asimismo, se han codificado la paginación o foliación de la fuente, incluyendo las páginas en blanco, y los cambios en la tipografía como los destacados, los espacios dejados por el autor, las intervenciones autoriales como las eliminaciones, adiciones y sustituciones, y las intervenciones editoriales como las normalizaciones, las abreviaturas y sus expansiones, las palabras suplidas, los errores y sus correcciones, las lecturas inciertas y el texto ilegible, las omisiones y los extranjerismos. Por último, en la medida de lo posible, se han codificado también las fechas y las entidades nombradas (personas, lugares y organizaciones) en el cuerpo del texto.</p>
-        <div type="level2" xml:id="estructuras-textuales">
+        <div type="level2">
           <head>Estructuras textuales</head>
-          <div type="level3" xml:id="párrafo">
+          <div type="level3">
             <head>Párrafos</head>
             <p>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional se han codificado el sangrado
               de los párrafos si la editora o editor considera dicha información relevante.</p>
             <p>Los párrafos se han codificado con el elemento <seg type="code">p</seg> (paragraph).</p>
           </div>
-          <div type="level3" xml:id="ruptura-de-línea">
+          <div type="level3">
             <head>Rupturas de línea</head>
             <p>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente textual con un elemento (vacío) <seg type="code"
                 >lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se ha utilizado al <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
@@ -531,7 +531,7 @@
             <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za
               enorme de aguas detenidas</ab>
           </div>
-          <div type="level3" xml:id="foliación-y-paginación">
+          <div type="level3">
             <head>Foliación y paginación</head>
             <p>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o paginación, es decir, el lugar en
               que se inicia un folio nuevo o página nueva. Siempre se marca el principio del
@@ -553,7 +553,7 @@
                 type="code">@type</seg> con el valor <seg type="code">folNum</seg>.</p>
             <ab type="codeblock">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</ab>
           </div>
-          <div type="level3" xml:id="páginas-en-blanco">
+          <div type="level3">
             <head>Páginas en blanco</head>
             <p>En todas las ediciones del proyecto se han codificado las páginas en blanco de la fuente textual. Además, se ha distinguido entre páginas en blanco, <ref target="#texto-ilegible">páginas perdidas</ref>, <ref target="#espacio-en-blanco">espacios en
                 blanco</ref> semánticamente significativos y <ref target="#omisiones">omisiones
@@ -570,7 +570,7 @@
             <ab type="codeblock">
             &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</ab>
           </div>
-          <div type="level3" xml:id="espacio-en-blanco">
+          <div type="level3">
             <head>Espacios en blanco</head>
             <p>El espacio en blanco semánticamente significativo (por ejemplo, a veces los autores dejan un espacio en el texto para complementarlo posteriormente)
               se han codificado con el elemento vacío <seg type="code">space</seg>. La
@@ -589,7 +589,7 @@
               puede determinar de manera segura, se ha utilizado el valor <seg type="code">1</seg> en
                 <seg type="code">@quantity</seg>.</p>
           </div>
-          <div type="level3" xml:id="listas">
+          <div type="level3">
             <head>Listas</head>
             <p>Las listas se han codificado con el elemento <seg type="code"
                 >list</seg>. Los puntos o líneas individuales se han transcrito en un elemento <seg
@@ -604,7 +604,7 @@
               &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I. vieja de Montica.&lt;/item&gt; 
             &lt;/list&gt;</ab>
           </div>
-          <div type="level3" xml:id="tablas">
+          <div type="level3">
             <head>Tablas</head>
             <p>Las tablas contenidas en la fuente se han transcrito como tal, haciendo distinción
               entre tablas explícitas e implícitas. Hay tablas explícitas dibujadas por el autor,
@@ -626,7 +626,7 @@
               &lt;/row&gt; … 
             &lt;/table&gt;</ab>
           </div>
-          <div type="level3" xml:id="alineación-de-texto">
+          <div type="level3">
             <head>Alineación de texto</head>
             <p>En las tablas y en el inicio de una carta, se puede especificar la alineación del texto. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <seg type="code">@rendition</seg> con el
               valor <seg type="code">#right</seg> en el elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code"
@@ -655,7 +655,7 @@
              &lt;!--[…]--&gt;
             &lt;/table&gt;</ab>
           </div>
-          <div type="level3" xml:id="notas">
+          <div type="level3">
             <head>Notas</head>
             <p>Las notas del autor o de un editor contemporáneo no se han insertado siguiendo su ubicación en
               el manuscrito, sino en el pasaje del texto al que la nota se refiere realmente (o que
@@ -784,7 +784,7 @@
               notas son, como las notas a pie de página impresas, unidades de texto
               independientes.</p>
           </div>
-          <div type="level3" xml:id="dibujos">
+          <div type="level3">
             <head>Dibujos</head>
             <p>Los dibujos e ilustraciones se han codificado con el elemento <seg type="code">figure</seg>. Se codificado la persona que
               realizó el dibujo con el atributo <seg type="code">@hand</seg>: <seg
@@ -806,7 +806,7 @@
         <div type="level2" xml:id="intervenciones-autoriales">
           <head>Intervenciones autoriales</head>
           <p>En todas las ediciones digitales del proyecto se han codificado los cambios de tipografía y las intervenciones autoriales de manera explícita, es decir, con etiquetado TEI.</p>
-          <div type="level3" xml:id="destacados">
+          <div type="level3">
             <head>Destacados</head>
             <p>Los destacados y marcas en el borde del documento se han codificado con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg type="code">@rendition</seg> para especificar su apariencia:</p>
             <table>
@@ -854,13 +854,13 @@
             <ab type="codeblock">Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</ab>
             <p>Si un párrafo completo esté destacado con una marca en el margen, se ha codificado con el elemento <seg type="code">p</seg> y el atributo <seg type="code">@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
           </div>
-          <div type="level3" xml:id="superscript">
+          <div type="level3">
             <head>Superscript</head>
             <p>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto a la línea) en la fuente textual se han codificado con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg
                 type="code">@rendition</seg> con valor <seg type="code">#sup</seg>. Por ejemplo:</p>
             <ab type="codeblock">ap.&lt;hi rendition="#sup"&gt;do&lt;/hi&gt;</ab>
           </div>
-          <div type="level3" xml:id="eliminaciones">
+          <div type="level3">
             <head>Eliminaciones</head>
             <p>Siempre que ha sido sea legible y con independencia de si se encuentra en saltos de línea, abreviaturas, normalizaciones y correcciones o adiciones del editor, se ha codificado el texto eliminado con el elemento <seg type="code">del</seg> (deletion) y haciendo uso del atributo <seg type="code">@rendition</seg> para especificar el tipo de eliminación:</p>
             <table>
@@ -907,7 +907,7 @@
             <p>Por ejemplo:</p>
             <ab type="codeblock">Conocen ya estos vecinos la esplendidez en la mesa, las viviendas, muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</ab>
           </div>
-          <div type="level3" xml:id="adiciones">
+          <div type="level3">
             <head>Adiciones</head>
             <p>En todas las ediciones del proyecto se han codificado las adiciones que el propio autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos realizados por el autor que sólo amplían el texto y se integran sintácticamente.</p>
             <p>Las adiciones hechas por el autor se han codificado con <seg type="code">add</seg> (addition) utilizando el atributo <seg type="code">@place</seg> para especificar el lugar de la adición:</p>
@@ -1004,7 +1004,7 @@
             <p>Por ejemplo:</p>
             <ab type="codeblock">[…] y logré para el Comercio con estranjeros, los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</ab>
             <p>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado con el elemento <seg type="code">metamark/</seg>. La forma de la marca de inserción (asterisco, número, etc.) no se ha especificado.</p>
-          </div><div type="level3" xml:id="sustituciones">
+          </div><div type="level3">
             <head>Sustituciones</head>
             <p>Si se elimina una palabra o un pasaje del texto en el manuscrito y al mismo tiempo se añade una palabra, estos dos fenómenos textuales se han codificado juntos con un elemento <seg type="code">subst</seg> (substition).</p>
             <p>La palabra eliminada se ha codificado con el elemento <seg type="code">del</seg> (deletion). El tipo de eliminación se ha especificado en el atributo <seg type="code">@rendition</seg>:</p>
@@ -1132,11 +1132,11 @@
         <div type="level2" xml:id="intervenciones-editoriales">
           <head>Intervenciones editoriales</head>
           <p>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita.</p>
-          <div type="level3" xml:id="normalizaciones">
+          <div type="level3">
           <head>Normalizaciones</head>
           <p><!-- to do-->to do</p>
           </div>
-          <div type="level3" xml:id="abreviaturas">
+          <div type="level3">
             <head>Abreviaturas</head>
             <p>Las abreviaturas se han codificado con elemento <seg type="code">choice</seg>
               y sus dos elementos hijo <seg type="code">abbr</seg> (abreviatura) y <seg type="code">expan</seg> (abreviatura resuelta).
@@ -1149,7 +1149,7 @@
             &lt;/choice&gt;
             </ab>
           </div>
-          <div type="level3" xml:id="palabras-letras-o-signos-de-puntuación-suplidos">
+          <div type="level3">
             <head>Palabras, letras o signos de puntuación suplidos</head>
             <p>Cuando las palabras o signos de puntuación que faltan de manera evidente se han suplido, se ha codificado dicha información con el elemento <seg type="code">supplied</seg> indicando la probabilidad con la que se ha intervenido.</p>
             <p>Con el atributo <seg type="code">@cert</seg> (certainty) se ha codificado la certeza con la que se han suplido los caracteres o palabras:</p>
@@ -1186,7 +1186,7 @@
             <p>Por ejemplo:</p>
             <ab type="codeblock">30 de julio de &lt;supplied cert="high"&gt;18&lt;/supplied&gt;27</ab>
           </div>
-          <div type="level3" xml:id="errores-y-correcciones">
+          <div type="level3">
             <head>Errores y correcciones</head>
             <p>Los errores evidentes que aparecen en la fuente textual se han codificado con el elemento <seg type="code">choice</seg>. Dentro, la palabra errónea se ha codificado con
                 el elemento <seg type="code">sic</seg> mientras que la corrección se ha codificado con <seg type="code">corr</seg>. En el
@@ -1242,7 +1242,7 @@
               </ab>
            <p>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha empleado el mismo elemento <seg type="code">choice</seg> para codificar la palabra errónea con <seg type="code">sic</seg>. Ahora bien, en estos casos no se ha proporcionado una forma corregida sino que se ha utilizado el elemento <seg type="code">corr</seg> y se ha dejado vacío. Además, se ha utilizado el atributo <seg type="code">type</seg> con valor "deleted" para indicar que se ha eliminado una palabra redundante.</p>   
           </div>
-          <div type="level3" xml:id="lecturas-inciertas">
+          <div type="level3">
             <head>Lecturas inciertas</head>
             <p>Las palabras o pasajes que no son fácilmente legibles se han codificado como "lecturas inciertas" con el elemento <seg type="code">unclear</seg>. Con el atributo <seg type="code"
                 >@reason</seg> se ha especificado la razón de la lectura incierta:</p>
@@ -1313,7 +1313,7 @@
             <p>Por ejemplo:</p>
             <ab type="codeblock">&lt;unclear reason="illegible" cert="high"&gt;año&lt;/unclear&gt;</ab>
           </div>
-          <div type="level3" xml:id="texto-ilegible">
+          <div type="level3">
             <head>Texto ilegible</head>
             <p>Los caracteres o palabras ilegibles en la fuente textual debido a daños materiales o a que la escritura es poco clara, se han codificado con el
               elemento vacío <seg type="code">gap/</seg>.</p>
@@ -1423,7 +1423,7 @@
             <ab type="codeblock">&lt;pb n="1r"/&gt; &lt;gap reason="lost" unit="pages"
               quantity="1"/&gt;</ab>
           </div>
-          <div type="level3" xml:id="omisiones">
+          <div type="level3">
             <head>Omisiones</head>
             <p>Las omisiones se han codificado de manera explícita. Por ejemplo, para representar y mostrar correctamente la foliación, se ha codificado cada página
               individualmente. Aunque se omitan varias páginas consecutivas, siempre se ha codificado la omisión con un <quote rendition="#i">1</quote> como número correspondiente a cada página que falta.</p>
@@ -1519,7 +1519,7 @@
             <ab type="codeblock">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt;
               entonces de nuevo</ab>
           </div>
-          <div type="level3" xml:id="comentarios">
+          <div type="level3">
             <head>Comentarios</head>
             <p>Los comentarios editoriales se han codificado con el elemento <seg type="code">seg</seg>
               (arbitrary segment). A su vez, se han anidado dos elementos: por un lado, <seg
@@ -1533,7 +1533,7 @@
               &lt;/seg&gt;
               </ab>
           </div>
-          <div type="level3" xml:id="referencias">
+          <div type="level3">
             <head>Referencias</head>
             <p>Las referencias a otras ediciones o pasajes internos se han codificado con el elemento
                 <seg type="code">ref</seg>, cuyo atributo <seg type="code">@target</seg> contiene el
@@ -1548,7 +1548,7 @@
             &lt;/seg&gt;
             </ab>
           </div>
-          <div type="level3" xml:id="fechas-1">
+          <div type="level3">
             <head>Fechas</head>
             <p>Las fechas que aparecen en la fuente textual se han codificado con <seg type="code">date</seg>. Para que las fechas sean legibles por el ordenador
               se ha seguido el formato <seg type="code">AAAA-MM-DD</seg> en los atributos <seg
@@ -1749,7 +1749,7 @@
               </row>
             </table>
           </div>
-          <div type="level3" xml:id="palabras-en-otro-idioma">
+          <div type="level3">
             <head>Palabras en otro idioma</head>
             <p>Las palabras y pasajes de texto individuales en idioma extranjero se han codificado con
               el elemento <seg type="code">foreign</seg>. Con el atributo <seg type="code"
@@ -1848,7 +1848,7 @@
             <p>Por ejemplo:</p>
             <ab type="codeblock">Das &lt;lb/&gt;2te und 3te &lt;foreign xml:lang="es"&gt;vela&lt;/foreign&gt; Rufen machte sichtbar weniger Eindruk.</ab>
           </div>
-          <div type="level3" xml:id="personas-lugares-y-organizaciones">
+          <div type="level3">
             <head>Personas, lugares y organizaciones</head>
             <p>Las personas, los lugares y las organizaciones mencionados con nombres propios en la fuente textual se han codificado de manera explícita. En cambio, la codificación de alusiones o referencias (por ejemplo, anáforas) se ha codificado de manera opcional según el criterio del editor o editora.</p>
             <p>En ambos casos se han utilizado los elementos siguientes:</p>
@@ -1874,10 +1874,10 @@
       </div>
       <div type="level1" xml:id="cartas">
         <head>Cartas</head>
-        <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado los remitentes, los destinatarios, el lugar y fecha de envío y recepción.</p>
+        <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado los remitentes, los destinatarios, el lugar y fechas de envío y recepción. Por lo que respecta a las estructura, cuando están presente en la fuente, se han codificado la dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones) y el cierre de la carta.</p>
         <div type="level2" xml:id="metadatos-de-cartas">
           <head>Metadatos de cartas</head>
-          <div type="level3" xml:id="remitente-destinatario-lugar">
+          <div type="level3">
             <head>Remitente, destinatario y lugar</head>
             <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <seg
                 type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg
@@ -1907,7 +1907,7 @@
               &lt;/correspAction&gt;
             &lt;/correspDesc&gt;</ab>
           </div>
-          <div type="level3" xml:id="fechas">
+          <div type="level3">
             <head>Fechas</head>
             <p>Las fechas se han codificado con el elemento <seg type="code">date</seg> siguiendo el
               formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg
@@ -1943,7 +1943,7 @@
         </div>
         <div type="level2" xml:id="estructuras-textuales-de-cartas">
           <head>Estructuras textuales de cartas</head>
-          <div type="level3" xml:id="dirección-postal">
+          <div type="level3">
             <head>Dirección postal</head>
             <p>La dirección postal de una carta se ha codificado en el elemento <seg type="code">opener</seg> (inicio
               de la carta) o en el <seg type="code">closer</seg> (cierre de la carta). Consta del
@@ -1957,7 +1957,7 @@
             &lt;/opener&gt;
             </ab>
           </div>
-          <div type="level3" xml:id="inicio-de-la-carta">
+          <div type="level3">
             <head>Inicio de la carta</head>
             <p>El inicio de la carta se ha codificado con el elemento <seg type="code">opener</seg>. Dentro, si los hubiera, se ha codificado la fecha y el saludo con los elementos <seg type="code">dateline</seg> y <seg type="code">salute</seg> respectivamente.</p>
             <p>En el elemento <seg type="code">dateline</seg> se ha utilizado el atributo <seg type="code">@rend</seg> si la fecha está sangrada o alineada a la derecha. Por ejemplo:</p>
@@ -1967,7 +1967,7 @@
               &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
             &lt;/opener&gt;</ab>
           </div>
-          <div type="level3" xml:id="acto-de-escritura">
+          <div type="level3">
             <head>Actos de escritura</head>
             <p>Los actos de escritura se han codificado con el elemento <seg type="code">div</seg> con dos atributos: por un lado, el atributo <seg type="code">@type</seg> debe llevar el valor <seg type="code"
                 >writingSession</seg>; por el otro, <seg type="code">@n</seg> debe indicar el número del acto de escritura.</p>
@@ -1979,7 +1979,7 @@
               &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt; 
             &lt;/div&gt;</ab>
           </div>
-          <div type="level3" xml:id="cierre-de-la-carta">
+          <div type="level3">
             <head>Cierre de la carta</head>
             <p>El cierre de la carta se ha codificado en el elemento <seg type="code">closer</seg>. La
               fórmula de saludo se ha codificado con el elemento <seg type="code">salute</seg> mientras que la firma se ha codificado
@@ -2031,7 +2031,7 @@
               &lt;!-- […] --&gt; 
             &lt;/closer&gt;</ab>
           </div>
-          <div type="level3" xml:id="posdata">
+          <div type="level3">
             <head>Posdata</head>
             <p>La posdata se ha codificado después del <seg type="code">closer</seg> con el elemento <seg
                 type="code">postcript</seg>. La postdata siempre contiene al menos un párrafo (<seg type="code">p</seg>).</p>
