@@ -1894,7 +1894,7 @@
       <div type="level1" xml:id="cartas">
         <head>Cartas</head>
         <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado los remitentes, los destinatarios, el lugar y fechas de envío y recepción. Por lo que respecta a las estructura, cuando están presente en la fuente, se han codificado la dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones) y el cierre de la carta.</p>
-        <div type="level2" xml:id="metadatos-de-cartas">
+        <div type="level2">
           <head>Metadatos de cartas</head>
             <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <seg
                 type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg
@@ -1954,9 +1954,7 @@
               &lt;note&gt;No se puede determinar la fecha de recepción.&lt;/note&gt; 
             &lt;/correspDesc&gt;</ab>
         </div>
-        <div type="level2" xml:id="estructuras-textuales-de-cartas">
-          <head>Estructuras textuales de cartas</head>
-          <div type="level3">
+          <div type="level2">
             <head>Dirección postal</head>
             <p>La dirección postal de una carta se ha codificado en el elemento <seg type="code">opener</seg> (inicio
               de la carta) o en el <seg type="code">closer</seg> (cierre de la carta). Consta del
@@ -1970,7 +1968,7 @@
             &lt;/opener&gt;
             </ab>
           </div>
-          <div type="level3">
+          <div type="level2">
             <head>Inicio de la carta</head>
             <p>El inicio de la carta se ha codificado con el elemento <seg type="code">opener</seg>. Dentro, si los hubiera, se ha codificado la fecha y el saludo con los elementos <seg type="code">dateline</seg> y <seg type="code">salute</seg> respectivamente.</p>
             <p>En el elemento <seg type="code">dateline</seg> se ha utilizado el atributo <seg type="code">@rend</seg> si la fecha está sangrada o alineada a la derecha. Por ejemplo:</p>
@@ -1980,7 +1978,7 @@
               &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
             &lt;/opener&gt;</ab>
           </div>
-          <div type="level3">
+          <div type="level2">
             <head>Actos de escritura</head>
             <p>Los actos de escritura se han codificado con el elemento <seg type="code">div</seg> con dos atributos: por un lado, el atributo <seg type="code">@type</seg> debe llevar el valor <seg type="code"
                 >writingSession</seg>; por el otro, <seg type="code">@n</seg> debe indicar el número del acto de escritura.</p>
@@ -1992,7 +1990,7 @@
               &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt; 
             &lt;/div&gt;</ab>
           </div>
-          <div type="level3">
+          <div type="level2">
             <head>Cierre de la carta</head>
             <p>El cierre de la carta se ha codificado en el elemento <seg type="code">closer</seg>. La
               fórmula de saludo se ha codificado con el elemento <seg type="code">salute</seg> mientras que la firma se ha codificado
@@ -2044,7 +2042,7 @@
               &lt;!-- […] --&gt; 
             &lt;/closer&gt;</ab>
           </div>
-          <div type="level3">
+          <div type="level2">
             <head>Posdata</head>
             <p>La posdata se ha codificado después del <seg type="code">closer</seg> con el elemento <seg
                 type="code">postcript</seg>. La postdata siempre contiene al menos un párrafo (<seg type="code">p</seg>).</p>
@@ -2053,7 +2051,6 @@
               &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
             &lt;/postscript&gt;</ab>
           </div>
-        </div>
       </div>
     </body>
   </text>
