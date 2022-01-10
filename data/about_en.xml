@@ -36,15 +36,16 @@
             <p>
                <hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> is an international
                initiative for continuing education in the digital humanities, which is located in
-               Havana (Casa Museo Alejandro de Humboldt) and Berlin
-               (Berlin-Brandenburg Academy of Sciences and Humanities).</p>
-            <p>The project focuses on the study of Cuban scientific and literary culture of the 18th and
-               19th centuries, especially on the exploration of sources relevant to Alexander von Humboldt's 
-               research on Cuba during the period of 1800–1830.</p>
+               Havana (Casa Museo Alejandro de Humboldt) and Berlin (Berlin-Brandenburg Academy of
+               Sciences and Humanities).</p>
+            <p>The project focuses on the study of Cuban scientific and literary culture of the 18th
+               and 19th centuries, especially on the exploration of sources relevant to Alexander
+               von Humboldt's research on Cuba during the period of 1800–1830.</p>
             <p>The project started in 2019 and is scheduled for completion in 2023. It has been
-               funded thanks to generous support from the Auswärtiges Amt, Fritz Thyssen Stiftung and
-               Gerda Henkel Stiftung.</p>
-            <p>To learn more about the resources created by the project, refer to the following links:</p>
+               funded thanks to generous support from the Auswärtiges Amt, Fritz Thyssen Stiftung
+               and Gerda Henkel Stiftung.</p>
+            <p>To learn more about the resources created by the project, refer to the following
+               links:</p>
             <list>
                <item>
                   <ref target="https://habanaberlin.hypotheses.org/">Blog</ref>
@@ -59,48 +60,76 @@
          </div>
          <div>
             <head>Editorial principles</head>
-            <p>The "Digital Dossier: Alexander von
-               Humboldt and Cuba (1800–1830)" contains transcriptions of textual documents in
-               manuscript and printed format, in four languages (English, French, German and
-               Spanish). They all relate to Humboldt's trip to Cuba and the questions the
-               Prussian scientist studied in the <title>Essai politique sur
-                  l'île de Cuba</title>. The textual sources of the editions published in the "Digital Dossier" stem from libraries and archives in Germany,
-               Cuba and Poland. For more information on the documents' provenance, please consult the metadata
-               section of each edition.</p> 
-            <p>The text of each edition is offered in two versions: The diplomatic transcription attempts to retain the spelling peculiarities of the source, including the graphic and phonetic aspects of American Spanish, abbreviations and spacing between words. In the normalized version, abbreviations are resolved, spacing and punctuation marks introduced in order to improve the readability of the text. In both versions, accents have been added according to the current norm to make the text more readable and to maintain conformity with the editorial traditions established in the BBAW for Humboldt's texts.</p>
+            <p>The "Digital Dossier: Alexander von Humboldt and Cuba (1800–1830)" contains
+               transcriptions of textual documents in manuscript and printed format, in four
+               languages (English, French, German and Spanish). They all relate to Humboldt's trip
+               to Cuba and the questions the Prussian scientist studied in the <title>Essai
+                  politique sur l'île de Cuba</title>. The textual sources of the editions published
+               in the "Digital Dossier" stem from libraries and archives in Germany, Cuba and
+               Poland. FThe text of the editions is available in a double presentation: on the one
+               hand, in the diplomatic transcription, the historical particularities of the source,
+               such as abbreviations, original spellings, accentuation, word unions, punctuation
+               marks and obvious errors, have been preserved; on the other hand, in the standardised
+               text, abbreviations have been resolved, spelling, accentuation, word spacing and
+               punctuation have been regularised, and obvious errors have been corrected in order to
+               improve the readability of the text. The text of the editions is available in a
+               double presentation: on the one hand, in the diplomatic transcription, the historical
+               particularities of the source, such as abbreviations, original spellings,
+               accentuation, word unions, punctuation marks and obvious errors, have been preserved;
+               on the other hand, in the standardised text, abbreviations have been resolved,
+               spelling, accentuation, word spacing and punctuation have been regularised, and
+               obvious errors have been corrected in order to improve the readability of the text.
+               or more information on the documents' provenance, please consult the metadata section
+               of each edition.</p>
+            <p>The text of the editions is available in a double presentation: on the one hand, in
+               the diplomatic transcription, the historical particularities of the source, such as
+               abbreviations, original spellings, accentuation, word unions, punctuation marks and
+               obvious errors, have been preserved; on the other hand, in the standardised text,
+               abbreviations have been resolved, spelling, accentuation, word spacing and
+               punctuation have been regularised, and obvious errors have been corrected in order to
+               improve the readability of the text.</p>
          </div>
          <div>
             <head>Technical Aspects</head>
-            <p>All the texts and the corresponding metadata published in the "Digital Dossier" have been encoded in XML format following the <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P5) Guidelines. To
-               facilitate the encoding task, the framework ediarum developed by TELOTA has been
-               adapted resulting in <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
-            <p>The TEI markup captures metadata about the documents, such as the 
-            source, those responsible for the edition and, whenever possible, the
-               authorship and other data related to the creation of the texts. Regarding the
-               texts themselves, the following information is encoded: Pagination of the original
-               source, headings and paragraphs, divisions and logical divisions of letters, changes
-               in typography, authorial interventions such as strikethroughs or additions, uncertain
-               readings, gaps, supplied words, etc. For more details on our TEI markup, it is
-               recommended to consult the ediarum documentation available in <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">German</ref> and <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">Spanish</ref>.</p>
-            <p>This web application has been built with <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) and
+            <p>All the texts and the corresponding metadata published in the "Digital Dossier" have
+               been encoded in XML format following the <ref target="https://tei-c.org/">Text
+                  Encoding Initiative</ref> (P5) Guidelines. To facilitate the encoding task, the
+               framework ediarum developed by TELOTA has been adapted resulting in <ref
+                  target="https://github.com/humboldtdigital/ediarum.PROHD.edit"
+                  >ediarum.PROHD.edit</ref>.</p>
+            <p>The TEI markup captures metadata about the documents, such as the source, those
+               responsible for the edition and, whenever possible, the authorship and other data
+               related to the creation of the texts. Regarding the texts themselves, the following
+               information is encoded: Pagination of the original source, headings and paragraphs,
+               divisions and logical divisions of letters, changes in typography, authorial
+               interventions such as strikethroughs or additions, uncertain readings, gaps, supplied
+               words, etc. For more details on our TEI markup, it is recommended to consult the
+               ediarum documentation available in <ref
+                  target="https://www.ediarum.org/docs/ediarum.BASE.manual/">German</ref> and <ref
+                  target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">Spanish</ref>.</p>
+            <p>This web application has been built with <ref
+                  target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) and
                   <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
                5.2.0.). An ODD called prohd.xml is used to style the editions and static pages and
                two templates called prohd.html and view-grid-prohd.html are used to build the
                graphical user interface with web components. A copy of the files that make up the
-               web application is available at the <ref target="https://github.com/humboldtdigital/ProHD">project's Github
-                  repository</ref>. Both the web application and the facsimiles are hosted on servers of the
-               Oficina del Historiador de la Ciudad de La Habana; the facsimiles use <ref target="https://iiif.io/">IIIF</ref>'s API.</p>
+               web application is available at the <ref
+                  target="https://github.com/humboldtdigital/ProHD">project's Github
+                  repository</ref>. Both the web application and the facsimiles are hosted on
+               servers of the Oficina del Historiador de la Ciudad de La Habana; the facsimiles use
+                  <ref target="https://iiif.io/">IIIF</ref>'s API.</p>
             <p>The development of the framework ediarum.PROHD.edit and of this web application has
                been carried out by Antonio Rojas Castro with the collaboration of Violeta López.
                Technical inquiries can be directed to antonio.rojas-castro [at] bbaw.de.</p>
          </div>
          <div>
             <head>Legal aspects</head>
-            <p>All contents of the "Digital Dossier" are published under a <ref target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
-                  license CC BY 4.0</ref>. Accordingly, it is permitted to
-               share (copy and redistribute the material in any medium or format) and adapt (remix,
-               transform, and build upon the material for any purpose, even commercially); please give appropriate credit, provide
-               a link to the license, and indicate if changes were made.</p>
+            <p>All contents of the "Digital Dossier" are published under a <ref
+                  target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
+                  license CC BY 4.0</ref>. Accordingly, it is permitted to share (copy and
+               redistribute the material in any medium or format) and adapt (remix, transform, and
+               build upon the material for any purpose, even commercially); please give appropriate
+               credit, provide a link to the license, and indicate if changes were made.</p>
          </div>
          <div>
             <head>Recommended citation</head>
@@ -110,8 +139,8 @@
                Oficina del Historiador de la Ciudad de la Habana, 2021-2023.</p>
             <p>Or a specific individual edition:</p>
             <p>Arango y Parreño, Francisco de. "Observaciones sobre el Ensayo politico con relacion
-               a la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Digital Dossier: 
-               Alexander von Humboldt and Cuba (1800-1830)</title>, Kathrin Kraller (ed.),
+               a la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Digital Dossier:
+                  Alexander von Humboldt and Cuba (1800-1830)</title>, Kathrin Kraller (ed.),
                Berlin-Brandenburgische Akademie der Wissenschaften and Oficina del Historiador de la
                Ciudad de la Habana, 2021.</p>
          </div>
