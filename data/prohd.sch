@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
-    xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:sqf="http://www.schematron-quickfix.com/validator/process" queryBinding="xslt2">
 
     <ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
 
@@ -28,7 +26,7 @@
 
     <pattern id="choiceElement">
         <rule context="tei:choice">
-            <assert test="count(*) > 1" role="ERROR"> [E0005] Element " <name/> " must have at least
+            <assert test="count(*) &gt; 1" role="ERROR"> [E0005] Element " <name/> " must have at least
                 two child elements. </assert>
         </rule>
     </pattern>
@@ -42,8 +40,7 @@
 
     <pattern id="corrElement">
         <rule context="tei:corr">
-            <assert test="count(preceding-sibling::tei:sic | following-sibling::tei:sic) = 1"
-                role="ERROR"> [E0006] Element " <name/> " must have exactly one corresponding "sic"
+            <assert test="count(preceding-sibling::tei:sic | following-sibling::tei:sic) = 1" role="ERROR"> [E0006] Element " <name/> " must have exactly one corresponding "sic"
                 element. </assert>
         </rule>
     </pattern>
@@ -53,19 +50,14 @@
             <assert test="matches(@corresp, '^#|^https?://')" role="ERROR"> [E0028] The value of
                 attribute @corresp must be a URL or same document reference starting with 'http://'
                 or 'https://' or '#'. </assert>
-            <assert test="
-                    if (starts-with(@corresp, '#')) then
-                        //@xml:id = substring-after(@corresp, '#')
-                    else
-                        1" role="error"> [E0026] The value of attribute @corresp must
+            <assert test="                     if (starts-with(@corresp, '#')) then                         //@xml:id = substring-after(@corresp, '#')                     else                         1" role="error"> [E0026] The value of attribute @corresp must
                 have a corresponding @xml:id-value within the same document. </assert>
         </rule>
     </pattern>
 
     <pattern id="expanElement">
         <rule context="tei:expan">
-            <assert test="count(preceding-sibling::tei:abbr | following-sibling::tei:abbr) = 1"
-                role="ERROR"> [E0007] Element " <name/> " must have exactly one corresponding "abbr"
+            <assert test="count(preceding-sibling::tei:abbr | following-sibling::tei:abbr) = 1" role="ERROR"> [E0007] Element " <name/> " must have exactly one corresponding "abbr"
                 element. </assert>
         </rule>
     </pattern>
@@ -79,11 +71,7 @@
 
     <pattern id="facsInsidePagebreaks">
         <rule context="tei:pb[@facs]">
-            <assert test="
-                    if (matches(@facs, '^#f\d\d\d\d') and matches(preceding::tei:pb[1]/@facs, '^#f\d\d\d\d') and (preceding::tei:pb)) then
-                        xs:integer(substring(@facs, 3)) = preceding::tei:pb[1]/xs:integer(substring(@facs, 3)) + 1
-                    else
-                        1" role="ERROR"> [E0014] Value of @facs within "pb" incorrect;
+            <assert test="                     if (matches(@facs, '^#f\d\d\d\d') and matches(preceding::tei:pb[1]/@facs, '^#f\d\d\d\d') and (preceding::tei:pb)) then                         xs:integer(substring(@facs, 3)) = preceding::tei:pb[1]/xs:integer(substring(@facs, 3)) + 1                     else                         1" role="ERROR"> [E0014] Value of @facs within "pb" incorrect;
                 @facs-values of "pb"-elements have to increase by 1 continually starting with
                 #f0001. </assert>
         </rule>
@@ -133,11 +121,7 @@
         <rule context="tei:*[@next]">
             <assert test="starts-with(@next, '#')" role="ERROR"> [E0017] The value of attribute
                 @next must be a same document reference starting with '#'. </assert>
-            <assert test="
-                    if (starts-with(@next, '#')) then
-                        //@xml:id = substring-after(@next, '#')
-                    else
-                        1" role="error"> [E0019] The value of attribute @next must have
+            <assert test="                     if (starts-with(@next, '#')) then                         //@xml:id = substring-after(@next, '#')                     else                         1" role="error"> [E0019] The value of attribute @next must have
                 a corresponding @xml:id-value within the same document. </assert>
         </rule>
     </pattern>
@@ -166,19 +150,14 @@
         <rule context="tei:*[@prev]">
             <assert test="starts-with(@prev, '#')" role="ERROR"> [E0025] The value of attribute
                 @prev must be a same document reference starting with '#'. </assert>
-            <assert test="
-                    if (starts-with(@prev, '#')) then
-                        //@xml:id = substring-after(@prev, '#')
-                    else
-                        1" role="error"> [E0021] The value of attribute @prev must have
+            <assert test="                     if (starts-with(@prev, '#')) then                         //@xml:id = substring-after(@prev, '#')                     else                         1" role="error"> [E0021] The value of attribute @prev must have
                 a corresponding @xml:id-value within the same document. </assert>
         </rule>
     </pattern>
 
     <pattern id="regElement">
         <rule context="tei:reg">
-            <assert test="count(preceding-sibling::tei:orig | following-sibling::tei:orig) = 1"
-                role="ERROR"> [E0009] Element " <name/> " must have exactly one corresponding "orig"
+            <assert test="count(preceding-sibling::tei:orig | following-sibling::tei:orig) = 1" role="ERROR"> [E0009] Element " <name/> " must have exactly one corresponding "orig"
                 element. </assert>
         </rule>
     </pattern>
@@ -218,8 +197,7 @@
 
     <pattern id="sicElement">
         <rule context="tei:sic">
-            <assert test="count(preceding-sibling::tei:corr | following-sibling::tei:corr) = 1"
-                role="ERROR"> [E0012] Element " <name/> " must have exactly one corresponding "corr"
+            <assert test="count(preceding-sibling::tei:corr | following-sibling::tei:corr) = 1" role="ERROR"> [E0012] Element " <name/> " must have exactly one corresponding "corr"
                 element. </assert>
         </rule>
     </pattern>
@@ -243,30 +221,17 @@
             <assert test="matches(@target, '^#|^https?://')" role="ERROR"> [E0024] The value of
                 attribute @target must be a URL or same document reference starting with 'http://'
                 or 'https://' or '#' or '#f'. </assert>
-            <assert test="
-                    if (starts-with(@target, '#') and not(starts-with(@target, '#f'))) then
-                        //@xml:id = substring-after(@target, '#')
-                    else
-                        1" role="error"> [E0032] Value of attribute @target must have a
+            <assert test="                     if (starts-with(@target, '#') and not(starts-with(@target, '#f'))) then                         //@xml:id = substring-after(@target, '#')                     else                         1" role="error"> [E0032] Value of attribute @target must have a
                 corresponding @xml:id-value within the same document.</assert>
-            <assert test="
-                    if (starts-with(@target, '#f')) then
-                        //tei:pb/@facs = //./@target
-                    else
-                        1" role="error"> [E0020] Value of attribute @target must have a
+            <assert test="                     if (starts-with(@target, '#f')) then                         //tei:pb/@facs = //./@target                     else                         1" role="error"> [E0020] Value of attribute @target must have a
                 corresponding @facs-value within a pb element in the same document.</assert>
-            <assert test="
-                    if (. = tei:licence) then
-                        starts-with(@target, 'https?://')
-                    else
-                        1" role="error"> [E0031] Value of attribute @target must have a
+            <assert test="                     if (. = tei:licence) then                         starts-with(@target, 'https?://')                     else                         1" role="error"> [E0031] Value of attribute @target must have a
                 corresponding @facs-value within a pb-element in the same document. </assert>
         </rule>
     </pattern>
 
     <pattern id="teiHeaderElements">
-        <rule
-            context="tei:addName | tei:address | tei:addrLine | tei:email | tei:biblFull | tei:country | tei:forename | tei:genName | tei:msDesc | tei:nameLink | tei:publicationStmt | tei:resp | tei:respStmt | tei:roleName | tei:surname | tei:titleStmt ">
+        <rule context="tei:addName | tei:address | tei:addrLine | tei:email | tei:biblFull | tei:country | tei:forename | tei:genName | tei:msDesc | tei:nameLink | tei:publicationStmt | tei:resp | tei:respStmt | tei:roleName | tei:surname | tei:titleStmt ">
             <report test="ancestor::tei:text" role="ERROR"> [E0001] Element " <name/> " not allowed
                 anywhere within element "text". </report>
         </rule>
@@ -353,10 +318,8 @@
             <assert test="tei:langUsage/tei:language" role="ERROR">An edition must contain
                 information about the language of the text in &lt;language&gt; inside
                 &lt;langUsage&gt;.</assert>
-            <report test="tei:creation/tei:persName[not(matches(., '(.+),(.+)'))]" role="ERROR"
-                >Incorrect format. The surname should go first and be separated by a coma.</report>
-            <report test="tei:correspDesc/correspAction/tei:persName[not(matches(., '(.+),(.+)'))]"
-                role="ERROR">Incorrect format. The surname should go first and be separated by a
+            <report test="tei:creation/tei:persName[not(matches(., '(.+),(.+)'))]" role="ERROR">Incorrect format. The surname should go first and be separated by a coma.</report>
+            <report test="tei:correspDesc/correspAction/tei:persName[not(matches(., '(.+),(.+)'))]" role="ERROR">Incorrect format. The surname should go first and be separated by a
                 coma.</report>
         </rule>
     </pattern>

@@ -81,9 +81,7 @@
             <p>All the texts and the corresponding metadata published in the "Digital Dossier" have
                been encoded in XML format following the <ref target="https://tei-c.org/">Text
                   Encoding Initiative</ref> (P5) Guidelines. To facilitate the encoding task, the
-               framework ediarum developed by TELOTA has been adapted resulting in <ref
-                  target="https://github.com/humboldtdigital/ediarum.PROHD.edit"
-                  >ediarum.PROHD.edit</ref>.</p>
+               framework ediarum developed by TELOTA has been adapted resulting in <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
             <p>The TEI markup captures metadata about the documents, such as the source, those
                responsible for the edition and, whenever possible, the authorship and other data
                related to the creation of the texts. Regarding the texts themselves, the following
@@ -91,17 +89,13 @@
                divisions and logical divisions of letters, changes in typography, authorial
                interventions such as strikethroughs or additions, uncertain readings, gaps, supplied
                words, etc. For more details on our TEI markup, it is recommended to consult the
-               ediarum documentation available in <ref
-                  target="https://www.ediarum.org/docs/ediarum.BASE.manual/">German</ref> and <ref
-                  target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">Spanish</ref>.</p>
-            <p>This web application has been built with <ref
-                  target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) and
+               ediarum documentation available in <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">German</ref> and <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">Spanish</ref>.</p>
+            <p>This web application has been built with <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) and
                   <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
                5.2.0.). An ODD called prohd.xml is used to style the editions and static pages and
                two templates called prohd.html and view-grid-prohd.html are used to build the
                graphical user interface with web components. A copy of the files that make up the
-               web application is available at the <ref
-                  target="https://github.com/humboldtdigital/ProHD">project's Github
+               web application is available at the <ref target="https://github.com/humboldtdigital/ProHD">project's Github
                   repository</ref>. Both the web application and the facsimiles are hosted on
                servers of the Oficina del Historiador de la Ciudad de La Habana; the facsimiles use
                   <ref target="https://iiif.io/">IIIF</ref>'s API.</p>
@@ -111,8 +105,7 @@
          </div>
          <div>
             <head>Legal aspects</head>
-            <p>All contents of the "Digital Dossier" are published under a <ref
-                  target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
+            <p>All contents of the "Digital Dossier" are published under a <ref target="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons
                   license CC BY 4.0</ref>. Accordingly, it is permitted to share (copy and
                redistribute the material in any medium or format) and adapt (remix, transform, and
                build upon the material for any purpose, even commercially); please give appropriate
