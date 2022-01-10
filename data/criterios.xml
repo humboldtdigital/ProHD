@@ -56,7 +56,7 @@
     <body>
       <div type="level1" xml:id="metadatos">
         <head>Metadatos</head>
-        <p>Los metadatos utilizados son descriptivos e identifican la edición
+        <p>Los metadatos utilizados en Proyecto Humboldt Digital son descriptivos e identifican la edición
           digital, los responsables de la publicación, la fuente de la que deriva el texto, las
           condiciones relacionadas con la creación y la clase de texto mediante categorías. Han sido aplicados a todo tipo de texto (documento, carta, etc.).</p>
         <div type="level2">
@@ -1134,20 +1134,36 @@
           <p>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita.</p>
           <div type="level3">
           <head>Normalizaciones</head>
-          <p><!-- to do-->to do</p>
+          <p>La ortografía, puntuación y separación de las palabras se han normalizado de manera explcita con el elemento <seg type="code">choice</seg> y sus dos elementos hijos <seg type="code">orig</seg> (forma original) y <seg type="code">reg</seg> (forma regulizada). En el elemento <seg type="code">orig</seg> se ha codificado la forma
+          original tal y como aparece en la fuente textual mientras que en el elemento <seg type="code">reg</seg> se ha codificado la forma regularizada, es decir, modernizada a la normal ortográfica actual para facilitar la legibilidad del texto. Por ejemplo:</p>
+          <ab type="codeblock">
+          &lt;choice&gt; 
+              &lt;orig&gt;espendiendo&lt;/orig&gt;
+              &lt;reg&gt;expendiendo&lt;/reg&gt; 
+          &lt;/choice&gt;
+          </ab>
+          <p>Siempre se han codificado las palabras enteras aun cuando solamente se regularice una grafía o una tilde tal y como se muestra en el ejemplo anterior.</p>
+          <p>Se ha seguido el mismo método de codificación con la normalización de contracciones o uniones de palabras. Por ejemplo:</p>
+          <ab type="codeblock">
+          &lt;choice&gt; 
+              &lt;orig&gt;dela&lt;/orig&gt;
+              &lt;reg&gt;de la&lt;/reg&gt; 
+          &lt;/choice&gt;
+          </ab>
           </div>
           <div type="level3">
             <head>Abreviaturas</head>
             <p>Las abreviaturas se han codificado con elemento <seg type="code">choice</seg>
               y sus dos elementos hijo <seg type="code">abbr</seg> (abreviatura) y <seg type="code">expan</seg> (abreviatura resuelta).
               En el elemento <seg type="code">abbr</seg> la abreviatura se ha codificado conservando la forma
-              original mientras que en el elemento <seg type="code">expan</seg> las y los editoras han proporcionado la forma resuelta.</p>
+              abreviada que aparece en la fuente textual mientras que en el elemento <seg type="code">expan</seg> las y los editoras han proporcionado la forma resuelta o expandida para facilitar la legibilidad del texto.</p>
             <ab type="codeblock">
             &lt;choice&gt; 
               &lt;abbr&gt;q&lt;/abbr&gt;
               &lt;expan&gt;que&lt;/expan&gt; 
             &lt;/choice&gt;
             </ab>
+            <p>Las siglas se han codificado como abreviaturas y también se han codificado de manera explícita utilizando <seg type="code">choice</seg>.</p>
           </div>
           <div type="level3">
             <head>Palabras, letras o signos de puntuación suplidos</head>
@@ -1877,8 +1893,6 @@
         <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado los remitentes, los destinatarios, el lugar y fechas de envío y recepción. Por lo que respecta a las estructura, cuando están presente en la fuente, se han codificado la dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones) y el cierre de la carta.</p>
         <div type="level2" xml:id="metadatos-de-cartas">
           <head>Metadatos de cartas</head>
-          <div type="level3">
-            <head>Remitente, destinatario y lugar</head>
             <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <seg
                 type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg
                 type="code">correspAction</seg> (correspondence action) para el proceso de envío y
@@ -1906,9 +1920,6 @@
                 &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt; 
               &lt;/correspAction&gt;
             &lt;/correspDesc&gt;</ab>
-          </div>
-          <div type="level3">
-            <head>Fechas</head>
             <p>Las fechas se han codificado con el elemento <seg type="code">date</seg> siguiendo el
               formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg
                 type="code">AAAA</seg>, dependiendo de la información disponible) en los atributos
@@ -1939,7 +1950,6 @@
             &lt;correspDesc&gt; … 
               &lt;note&gt;No se puede determinar la fecha de recepción.&lt;/note&gt; 
             &lt;/correspDesc&gt;</ab>
-          </div>
         </div>
         <div type="level2" xml:id="estructuras-textuales-de-cartas">
           <head>Estructuras textuales de cartas</head>
