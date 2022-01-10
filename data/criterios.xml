@@ -587,7 +587,11 @@
                 (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code"
                 >unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
               puede determinar de manera segura, se ha utilizado el valor <seg type="code">1</seg> en
-                <seg type="code">@quantity</seg>.</p>
+                <seg type="code">@quantity</seg>. Por ejemplo:</p>
+            <ab type="codeblock">
+            sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur 
+            </ab>
+          </div>
           </div>
           <div type="level3">
             <head>Listas</head>
