@@ -64,6 +64,11 @@
                   <catDesc xml:lang="en">Subjects</catDesc>
                   <catDesc xml:lang="es">Materias</catDesc>
                   <catDesc xml:lang="de">Themen</catDesc>
+                  <category xml:id="administration">
+                     <catDesc xml:lang="en">Administration</catDesc>
+                     <catDesc xml:lang="es">Administración</catDesc>
+                     <catDesc xml:lang="de">Verwaltung</catDesc>
+                  </category>
                   <category xml:id="climatology">
                      <catDesc xml:lang="en">Climatology</catDesc>
                      <catDesc xml:lang="es">Climatología</catDesc>
@@ -88,6 +93,11 @@
                      <catDesc xml:lang="en">Economic conditions</catDesc>
                      <catDesc xml:lang="es">Situación económica</catDesc>
                      <catDesc xml:lang="de">Wirtschaftslage</catDesc>
+                  </category>
+                  <category xml:id="education">
+                     <catDesc xml:lang="en">Education</catDesc>
+                     <catDesc xml:lang="es">Educación</catDesc>
+                     <catDesc xml:lang="de">Fortbildung</catDesc>
                   </category>
                   <category xml:id="emancipation">
                      <catDesc xml:lang="en">Emancipation</catDesc>
