@@ -55,6 +55,8 @@
         "science": "Science",
         "slavery": "Slavery",
         "sugar": "Sugar",
-        "trade": "Trade"
+        "trade": "Trade",
+        "education": "Education",
+        "administration": "Administration"
     }
 }
