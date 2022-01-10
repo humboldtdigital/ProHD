@@ -1895,7 +1895,7 @@
         <head>Cartas</head>
         <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado los remitentes, los destinatarios, el lugar y fechas de envío y recepción. Por lo que respecta a las estructura, cuando están presente en la fuente, se han codificado la dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones) y el cierre de la carta.</p>
         <div type="level2">
-          <head>Metadatos de cartas</head>
+          <head>Remitente, destinatiario, lugares y fechas</head>
             <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <seg
                 type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg
                 type="code">correspAction</seg> (correspondence action) para el proceso de envío y
