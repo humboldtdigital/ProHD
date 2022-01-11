@@ -1,5 +1,6 @@
 <?teipublisher template="view-grid-prohd.html" odd="prohd.odd" view="div"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -69,7 +70,11 @@
                   sur l'île de Cuba</title> untersucht hat. Die Textquellen der Editionen stammen aus Bibliotheken und Archiven in
                Deutschland, Kuba und Polen. Weitere Informationen zur Provenienz finden Sie in den
                Metadaten der jeweiligen Ausgabe.</p>
-            <p>Die Texte der einzelnen Ausgaben werden in zwei Fassungen präsentiert: In der diplomatischen Transkription wurde sich darum bemüht, die orthografischen Eigenheiten der Quelle zu wahren, einschließlich der grafischen und phonetischen Aspekte des amerikanischen Spanisch sowie der Abkürzungen und Leerräume. Im normalisierten Text wurden die Abkürzungen aufgelöst und Leerräume und Interpunktionszeichen eingeführt, um die Lesbarkeit des Textes zu verbessern. In beiden Fassungen wurden zur besseren Lesbarkeit des Textes und zur Wahrung der redaktionellen Traditionen, die sich in der BBAW für Humboldts Texte etabliert haben, Akzente nach dem heutigen Standard gesetzt.</p>
+            <p>Die Texte der einzelnen Ausgaben werden in zwei Fassungen präsentiert: In der diplomatischen Transkription wurden die 
+               historischen Besonderheiten der Quelle, wie Abkürzungen, historische Orthographie, Akzentsetzung, Interpunktion, fehlende 
+               Wortzwischenräume und offensichtliche Fehler, bewahrt. In der normalisierten Fassung wurden, zur 
+               besseren Lesbarkeit des Textes, die Abkürzungen aufgelöst, die Orthographie, Akzentsetzung, Interpunktions- und 
+               Leerzeichen an die heutige Norm angepasst und offensichtliche Fehler korrigiert.</p>
          </div>
          <div>
             <head>Technische Realisierung</head>
