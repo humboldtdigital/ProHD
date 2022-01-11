@@ -827,9 +827,9 @@
           <div type="level3">
             <head>Foliación y paginación</head>
             <p>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o paginación, es decir, el lugar en
-              que se inicia un folio nuevo o página nueva. Siempre se marca el principio del
+              que se inicia un folio nuevo o página nueva. Siempre se ha codificado el principio del
               folio o página, no el final. En caso de que el autor haya empleado otro sistema para
-              numerar las páginas en la fuente textual, se ha codifcado la foliciación o paginación del autor de manera opcional.</p>
+              numerar las páginas en la fuente textual, se ha codifcado la foliación o paginación del autor de manera opcional.</p>
             <p>El inicio de folio o página se ha codificado siempre con el elemento vacío
                 <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
               contiene el número de página o folio (según la secuencia física del documento o del
@@ -853,7 +853,7 @@
               (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre se ha introducido un número <quote rendition="#i">1</quote> para cada nueva página en
               blanco codificada.</p>
             <p>Las páginas en blanco se han codificado con el elemento (vacío) <seg type="code">gap/</seg>.
-              Este se coloca justo después del salto de página (<seg type="code">pb/</seg>)
+              Este se ha utilizado justo después del salto de página (<seg type="code">pb/</seg>)
               anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg> del elemento <seg type="code">gap/</seg> llevan los
               valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando hay más de una página en blanco seguida, se han codificado cada una de ellas individualmente.</p>
             <ab type="codeblock">
@@ -862,7 +862,7 @@
           <div type="level3">
             <head>Espacios en blanco</head>
             <p>El espacio en blanco semánticamente significativo (por ejemplo, a veces los autores dejan un espacio en el texto para complementarlo posteriormente)
-              se han codificado con el elemento vacío <seg type="code">space</seg>. La
+              se ha codificado con el elemento vacío <seg type="code">space</seg>. La
               reproducción de dichos vacíos en la transcripción se ha distinguido de las omisiones realizadas por los editores, así como de las
                 páginas vacías o perdidas, cada una de las cuales se ha codificado como
                 <seg type="code">gap/</seg>.</p>
@@ -892,8 +892,8 @@
           <div type="level3">
             <head>Tablas</head>
             <p>Las tablas contenidas en la fuente se han transcrito como tal, haciendo distinción
-              entre tablas explícitas e implícitas. Hay tablas explícitas dibujadas por el autor,
-              mientras que en las implícitas la tabla es reconocible sólo por la disposición de sus
+              entre tablas explícitas e implícitas. Se ha considerado como tablas explícitas aquellas dibujadas por el autor,
+              mientras que las implícitas son reconocibles sólo por la disposición de sus
               contenidos. Se ha distinguido entre tablas y enumeraciones que
                 se asemejan a listas.</p>
             <p>Las tablas se han codificado con el elemento <seg type="code">table</seg>. Se ha
@@ -912,7 +912,7 @@
           </div>
           <div type="level3">
             <head>Alineación de texto</head>
-            <p>En las tablas y en el inicio de una carta, se puede especificar la alineación del texto. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <seg type="code">@rendition</seg> con el
+            <p>En las tablas y en el inicio de una carta, se ha codificado la alineación del texto de manera opcional. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <seg type="code">@rendition</seg> con el
               valor <seg type="code">#right</seg> en el elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code">dateline</seg>.</p>
             <ab type="codeblock"> 
             &lt;table cols="4" rows="20" rend="drawn"&gt; 
@@ -948,7 +948,7 @@
               indicar que el texto ha sido introducido por el autor y no por los editores.</p>
             <p>Las notas se han codificado con el elemento <seg type="code">note</seg>:</p>
             <ab type="codeblock">En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</ab>
-            <p>El autor de la nota se puede codificar con el atributo <seg type="code">@hand</seg>:</p>
+            <p>Cuando es posible identificar al autor de la nota, se ha codificado esta información con el atributo <seg type="code">@hand</seg>:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1068,7 +1068,7 @@
           </div>
           <div type="level3">
             <head>Dibujos</head>
-            <p>Los dibujos e ilustraciones se han codificado con el elemento <seg type="code">figure</seg>. Se codificado la persona que
+            <p>Los dibujos e ilustraciones se han codificado con el elemento <seg type="code">figure</seg>. cuando ha sido posible identificarla, se ha codificado la persona que
               realizó el dibujo con el atributo <seg type="code">@hand</seg>: <seg type="code">#author</seg>, <seg type="code">#addressee</seg>, <seg type="code">#unknown</seg> o una persona del registro de personas. En caso de que se disponga
               de un título en el documento original, se ha codificado con el elemento <seg type="code">p</seg>. En el elemento hijo <seg type="code">figDesc</seg>, en cambio, las y los editores han descrito de manera opcional la imagen. El
               nombre del fichero se ha codificado con el atributo <seg type="code">@facs</seg>. Los
