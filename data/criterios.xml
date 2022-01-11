@@ -346,7 +346,7 @@
               </cell>
             </row>
           </table>
-          <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> utilizando el atributo <seg>@type</seg> con valor "uri". Por ejemplo:</p>
+          <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> utilizando el atributo <seg type="code">@type</seg> con valor "uri". Por ejemplo:</p>
           <ab type="codeblock">
             &lt;idno&gt;
                 &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
@@ -479,6 +479,284 @@
       <div type="level1" xml:id="texto">
         <head>Texto</head>
         <p>Los textos editados como parte del proyecto han sido codificados desde un punto de vista estructural. Se han representando de manera explícita con etiquetado TEI todos los párrafos, rupturas de línea, listas, tablas, notas y dibujos. Asimismo, se han codificado la paginación o foliación de la fuente, incluyendo las páginas en blanco, y los cambios en la tipografía como los destacados, los espacios dejados por el autor, las intervenciones autoriales como las eliminaciones, adiciones y sustituciones, y las intervenciones editoriales como las normalizaciones, la resolución de las abreviaturas, las palabras suplidas, las correcciones de errores evidentes, las lecturas inciertas y el texto ilegible, las omisiones y los extranjerismos. Por último, en la medida de lo posible, se han codificado también las fechas y las entidades nombradas (personas, lugares y organizaciones) en el cuerpo del texto.</p>
+          <div type="level2" xml:id="estructuras-textuales">
+          <head>Estructuras textuales</head>
+          <div type="level3">
+            <head>Párrafos</head>
+            <p>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional se ha codificado el sangrado
+              de los párrafos si la editora o editor considera dicha información relevante.</p>
+            <p>Los párrafos se han codificado con el elemento <seg type="code">p</seg> (paragraph).</p>
+          </div>
+          <div type="level3">
+            <head>Rupturas de línea</head>
+            <p>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente textual con un elemento (vacío) <seg type="code">lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se ha utilizado al <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
+              TEI.</p>
+            <p>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
+              atributo <seg type="code">@break</seg> y el valor <seg type="code">no</seg>. En caso
+              de aparecer un separador en la fuente original, se ha codificado como <seg type="code">
+                <g ref="#typoHyphen"/>
+              </seg>.</p>
+            <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za
+              enorme de aguas detenidas</ab>
+          </div>
+          <div type="level3">
+            <head>Foliación y paginación</head>
+            <p>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o paginación, es decir, el lugar en
+              que se inicia un folio nuevo o página nueva. Siempre se ha codificado el principio del
+              folio o página, no el final. En caso de que el autor haya empleado otro sistema para
+              numerar las páginas en la fuente textual, se ha codifcado la foliación o paginación del autor de manera opcional.</p>
+            <p>El inicio de folio o página se ha codificado siempre con el elemento vacío
+                <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
+              contiene el número de página o folio (según la secuencia física del documento o del
+              autor).</p>
+            <ab type="codeblock">
+              distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano
+              </ab>
+            <p>La digitalización del folio o página se ha codificado con el atributo <seg type="code">@facs</seg> (facsimile). Como regla general solo se ha codificado el nombre del fichero de la imagen
+              digital; el nombre del fichero corresponde a un URI. Por
+              ejemplo:</p>
+            <ab type="codeblock">&lt;n="1r" facs="787980595-0001"/&gt;</ab>
+            <p>Cualquier otra información sobre la numeración contenida en la fuente se ha codificado con el elemento <seg type="code">fw</seg> (forme work); este elemento lleva el atributo <seg type="code">@type</seg> con el valor <seg type="code">folNum</seg>.</p>
+            <ab type="codeblock">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</ab>
+          </div>
+          <div type="level3">
+            <head>Páginas en blanco</head>
+            <p>En todas las ediciones del proyecto se han codificado las páginas en blanco de la fuente textual. Además, se ha distinguido entre páginas en blanco, páginas perdidas, espacios en
+                blanco semánticamente significativos y omisiones
+                de los editores.</p>
+            <p>Para poder representar y mostrar la foliación correctamente, se ha codificado cada página
+              (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre se ha introducido un número <quote rendition="#i">1</quote> para cada nueva página en
+              blanco codificada.</p>
+            <p>Las páginas en blanco se han codificado con el elemento (vacío) <seg type="code">gap/</seg>.
+              Este se ha utilizado justo después del salto de página (<seg type="code">pb/</seg>)
+              anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg> del elemento <seg type="code">gap/</seg> llevan los
+              valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando hay más de una página en blanco seguida, se han codificado cada una de ellas individualmente.</p>
+            <ab type="codeblock">
+            &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</ab>
+          </div>
+          <div type="level3">
+            <head>Espacios en blanco</head>
+            <p>El espacio en blanco semánticamente significativo (por ejemplo, a veces los autores dejan un espacio en el texto para complementarlo posteriormente)
+              se ha codificado con el elemento vacío <seg type="code">space</seg>. La
+              reproducción de dichos vacíos en la transcripción se ha distinguido de las omisiones realizadas por los editores, así como de las
+                páginas vacías o perdidas, cada una de las cuales se ha codificado como
+                <seg type="code">gap/</seg>.</p>
+            <p>El espacio en blanco semánticamente significativo se ha codificado con el
+              elemento (vacío) <seg type="code">space/</seg> y tres atributos: con <seg type="code">@dim</seg> se ha indicado si es un espacio en blanco horizontal o vertical mientras que el alcance de
+              la omisión se ha indicado mediante los valores de los atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg>. Si el número de líneas
+                (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code">unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
+              puede determinar de manera segura, se ha utilizado el valor <seg type="code">1</seg> en
+                <seg type="code">@quantity</seg>. Por ejemplo:</p>
+            <ab type="codeblock">
+            sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur 
+            </ab>
+          </div>
+          <div type="level3">
+            <head>Listas</head>
+            <p>Las listas se han codificado con el elemento <seg type="code">list</seg>. Los puntos o líneas individuales se han transcrito en un elemento <seg type="code">item</seg>. La numeración existente (también con letras) no se ha codificado de manera independiente, sino que se ha transcrito dentro del
+              elemento <seg type="code">item</seg>.</p>
+            <ab type="codeblock">
+            &lt;list&gt; 
+              &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt; 
+              &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;mais quand le
+              Capucin est islado = 10750 mètres.&lt;/item&gt; 
+              &lt;item&gt;Orinoco près du Baraguan 889 t.&lt;/item&gt; 
+              &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I. vieja de Montica.&lt;/item&gt; 
+            &lt;/list&gt;</ab>
+          </div>
+          <div type="level3">
+            <head>Tablas</head>
+            <p>Las tablas contenidas en la fuente se han transcrito como tal, haciendo distinción
+              entre tablas explícitas e implícitas. Se ha considerado como tablas explícitas aquellas dibujadas por el autor,
+              mientras que las implícitas son reconocibles sólo por la disposición de sus
+              contenidos. Se ha distinguido entre tablas y enumeraciones que
+                se asemejan a listas.</p>
+            <p>Las tablas se han codificado con el elemento <seg type="code">table</seg>. Se ha
+              asignado a la primera fila de la tabla el atributo <seg type="code">@role="label"</seg> para que se consideren como encabezados. Por ejemplo:</p>
+            <ab type="codeblock">
+            &lt;table rows="3" cols="2"&gt; 
+              &lt;head&gt;Tabla&lt;/head&gt;
+              &lt;row role="label"&gt; 
+               &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
+               &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt; 
+              &lt;/row&gt; &lt;row&gt;
+               &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; 
+               &lt;cell&gt;[Columna 2/ Fila 1]&lt;/cell&gt; 
+              &lt;/row&gt; … 
+            &lt;/table&gt;</ab>
+          </div>
+          <div type="level3">
+            <head>Alineación de texto</head>
+            <p>En las tablas y en el inicio de una carta, se ha codificado la alineación del texto de manera opcional. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <seg type="code">@rendition</seg> con el
+              valor <seg type="code">#right</seg> en el elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code">dateline</seg>.</p>
+            <ab type="codeblock"> 
+            &lt;table cols="4" rows="20" rend="drawn"&gt; 
+             &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
+             &lt;row role="label"&gt; 
+              &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
+              &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell&gt;
+              &lt;cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
+              thermomètre de reaumur.&lt;/cell&gt; 
+              &lt;cell&gt;température &lt;lb/&gt;de l’atmosphère.&lt;lb/&gt; &lt;choice&gt;&lt;orig/&gt;&lt;reg&gt;thermomètre de
+              reaumur.&lt;/reg&gt; &lt;/choice&gt;&lt;/cell&gt; 
+            &lt;/row&gt; 
+            &lt;row&gt; 
+             &lt;cell rendition="#right"&gt;43°. 29′&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;10°. 31′.″&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;12°.&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;18°.&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; 
+              &lt;cell rendition="#right"&gt;39. 10.&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;16. 18. 30″&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;12.&lt;/cell&gt; 
+              &lt;cell rendition="#right"&gt;13.&lt;/cell&gt; 
+             &lt;/row&gt; 
+             &lt;!--[…]--&gt;
+            &lt;/table&gt;</ab>
+          </div>
+          <div type="level3">
+            <head>Notas</head>
+            <p>Las notas del autor o de un editor contemporáneo no se han insertado siguiendo su ubicación en
+              el manuscrito, sino en el pasaje del texto al que la nota se refiere realmente (o que
+              el editor supone razonablemente que se refiere). En caso de emplear una marca de
+              inserción (asterisco, número, etc.), se ha utilizado una señal de inserción
+              general (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
+              indicar que el texto ha sido introducido por el autor y no por los editores.</p>
+            <p>Las notas se han codificado con el elemento <seg type="code">note</seg>:</p>
+            <ab type="codeblock">En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</ab>
+            <p>Cuando es posible identificar al autor de la nota, se ha codificado esta información con el atributo <seg type="code">@hand</seg>:</p>
+            <table>
+              <row role="label">
+                <cell>
+                  <p>Valor</p>
+                </cell>
+                <cell>
+                  <p>Definición</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">#author</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>Autor del texto</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">#addressee</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>Destinatario de esta carta</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">#unknown</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>Desconocido</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">H000000</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>ID interno proveniente del registro de personas</p>
+                </cell>
+              </row>
+            </table>
+            <p>El lugar de la nota se ha codificado con el atributo <seg type="code">@place</seg>:</p>
+            <table>
+              <row role="label">
+                <cell>
+                  <p>Valor</p>
+                </cell>
+                <cell>
+                  <p>Definición</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">left</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>margen izquierdo</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">right</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>margen derecho</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">mTop</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>parte superior</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">mBottom</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>parte inferior</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">inline</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>dentro de la línea</p>
+                </cell>
+              </row>
+            </table>
+            <p>Si el autor utiliza una marca de inserción, se ha codificado con el elemento vacío <seg type="code">metamark/</seg>. La apariencia de la marca de inserción (asterisco, número, etc.) no se ha hecho explícita.</p>
+            <p>Se ha diferenciado entre las notas y las adiciones: las
+              adiciones complementan el texto principal y se integran sintácticamente en él. Las
+              notas son, como las notas a pie de página impresas, unidades de texto
+              independientes.</p>
+          </div>
+          <div type="level3">
+            <head>Dibujos</head>
+            <p>Los dibujos e ilustraciones se han codificado con el elemento <seg type="code">figure</seg>. cuando ha sido posible identificarla, se ha codificado la persona que
+              realizó el dibujo con el atributo <seg type="code">@hand</seg>: <seg type="code">#author</seg>, <seg type="code">#addressee</seg>, <seg type="code">#unknown</seg> o una persona del registro de personas. En caso de que se disponga
+              de un título en el documento original, se ha codificado con el elemento <seg type="code">p</seg>. En el elemento hijo <seg type="code">figDesc</seg>, en cambio, las y los editores han descrito de manera opcional la imagen. El
+              nombre del fichero se ha codificado con el atributo <seg type="code">@facs</seg>. Los
+              comentarios editoriales que se refieren a la imagen en sí se han codificado con el elemento
+              hijo <seg type="code">note</seg>.</p>
+            <ab type="codeblock">
+            &lt;figure facs="dibujo" hand="#addressee"&gt; 
+             &lt;p&gt;[Título de la figura]&lt;/p&gt; 
+             &lt;figDesc&gt;[Descripción de la imagen por el editor]&lt;/figDesc&gt; 
+             &lt;note type="editorial"&gt;[Comentario editorial]&lt;/note&gt; 
+            &lt;/figure&gt;</ab>
+          </div>
+        </div>
         <div type="level2" xml:id="intervenciones-autoriales">
           <head>Intervenciones autoriales</head>
           <p>En todas las ediciones digitales del proyecto se han codificado los cambios de tipografía y las intervenciones autoriales de manera explícita, es decir, con etiquetado TEI.</p>
@@ -802,284 +1080,6 @@
               &lt;del rendition="#ow"&gt;a&lt;/del&gt; 
               &lt;add place="across"&gt;o&lt;/add&gt; 
             &lt;/subst&gt; con la mayor claridad</ab>
-          </div>
-        </div>
-          <div type="level2" xml:id="estructuras-textuales">
-          <head>Estructuras textuales</head>
-          <div type="level3">
-            <head>Párrafos</head>
-            <p>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional se ha codificado el sangrado
-              de los párrafos si la editora o editor considera dicha información relevante.</p>
-            <p>Los párrafos se han codificado con el elemento <seg type="code">p</seg> (paragraph).</p>
-          </div>
-          <div type="level3">
-            <head>Rupturas de línea</head>
-            <p>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente textual con un elemento (vacío) <seg type="code">lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se ha utilizado al <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
-              TEI.</p>
-            <p>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
-              atributo <seg type="code">@break</seg> y el valor <seg type="code">no</seg>. En caso
-              de aparecer un separador en la fuente original, se ha codificado como <seg type="code">
-                <g ref="#typoHyphen"/>
-              </seg>.</p>
-            <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za
-              enorme de aguas detenidas</ab>
-          </div>
-          <div type="level3">
-            <head>Foliación y paginación</head>
-            <p>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o paginación, es decir, el lugar en
-              que se inicia un folio nuevo o página nueva. Siempre se ha codificado el principio del
-              folio o página, no el final. En caso de que el autor haya empleado otro sistema para
-              numerar las páginas en la fuente textual, se ha codifcado la foliación o paginación del autor de manera opcional.</p>
-            <p>El inicio de folio o página se ha codificado siempre con el elemento vacío
-                <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
-              contiene el número de página o folio (según la secuencia física del documento o del
-              autor).</p>
-            <ab type="codeblock">
-              distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano
-              </ab>
-            <p>La digitalización del folio o página se ha codificado con el atributo <seg type="code">@facs</seg> (facsimile). Como regla general solo se ha codificado el nombre del fichero de la imagen
-              digital; el nombre del fichero corresponde a un URI. Por
-              ejemplo:</p>
-            <ab type="codeblock">&lt;n="1r" facs="787980595-0001"/&gt;</ab>
-            <p>Cualquier otra información sobre la numeración contenida en la fuente se ha codificado con el elemento <seg type="code">fw</seg> (forme work); este elemento lleva el atributo <seg type="code">@type</seg> con el valor <seg type="code">folNum</seg>.</p>
-            <ab type="codeblock">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</ab>
-          </div>
-          <div type="level3">
-            <head>Páginas en blanco</head>
-            <p>En todas las ediciones del proyecto se han codificado las páginas en blanco de la fuente textual. Además, se ha distinguido entre páginas en blanco, páginas perdidas, espacios en
-                blanco semánticamente significativos y omisiones
-                de los editores.</p>
-            <p>Para poder representar y mostrar la foliación correctamente, se ha codificado cada página
-              (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre se ha introducido un número <quote rendition="#i">1</quote> para cada nueva página en
-              blanco codificada.</p>
-            <p>Las páginas en blanco se han codificado con el elemento (vacío) <seg type="code">gap/</seg>.
-              Este se ha utilizado justo después del salto de página (<seg type="code">pb/</seg>)
-              anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg> del elemento <seg type="code">gap/</seg> llevan los
-              valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando hay más de una página en blanco seguida, se han codificado cada una de ellas individualmente.</p>
-            <ab type="codeblock">
-            &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</ab>
-          </div>
-          <div type="level3">
-            <head>Espacios en blanco</head>
-            <p>El espacio en blanco semánticamente significativo (por ejemplo, a veces los autores dejan un espacio en el texto para complementarlo posteriormente)
-              se ha codificado con el elemento vacío <seg type="code">space</seg>. La
-              reproducción de dichos vacíos en la transcripción se ha distinguido de las omisiones realizadas por los editores, así como de las
-                páginas vacías o perdidas, cada una de las cuales se ha codificado como
-                <seg type="code">gap/</seg>.</p>
-            <p>El espacio en blanco semánticamente significativo se ha codificado con el
-              elemento (vacío) <seg type="code">space/</seg> y tres atributos: con <seg type="code">@dim</seg> se ha indicado si es un espacio en blanco horizontal o vertical mientras que el alcance de
-              la omisión se ha indicado mediante los valores de los atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg>. Si el número de líneas
-                (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code">unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
-              puede determinar de manera segura, se ha utilizado el valor <seg type="code">1</seg> en
-                <seg type="code">@quantity</seg>. Por ejemplo:</p>
-            <ab type="codeblock">
-            sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur 
-            </ab>
-          </div>
-          <div type="level3">
-            <head>Listas</head>
-            <p>Las listas se han codificado con el elemento <seg type="code">list</seg>. Los puntos o líneas individuales se han transcrito en un elemento <seg type="code">item</seg>. La numeración existente (también con letras) no se ha codificado de manera independiente, sino que se ha transcrito dentro del
-              elemento <seg type="code">item</seg>.</p>
-            <ab type="codeblock">
-            &lt;list&gt; 
-              &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt; 
-              &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;mais quand le
-              Capucin est islado = 10750 mètres.&lt;/item&gt; 
-              &lt;item&gt;Orinoco près du Baraguan 889 t.&lt;/item&gt; 
-              &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I. vieja de Montica.&lt;/item&gt; 
-            &lt;/list&gt;</ab>
-          </div>
-          <div type="level3">
-            <head>Tablas</head>
-            <p>Las tablas contenidas en la fuente se han transcrito como tal, haciendo distinción
-              entre tablas explícitas e implícitas. Se ha considerado como tablas explícitas aquellas dibujadas por el autor,
-              mientras que las implícitas son reconocibles sólo por la disposición de sus
-              contenidos. Se ha distinguido entre tablas y enumeraciones que
-                se asemejan a listas.</p>
-            <p>Las tablas se han codificado con el elemento <seg type="code">table</seg>. Se ha
-              asignado a la primera fila de la tabla el atributo <seg type="code">@role="label"</seg> para que se consideren como encabezados. Por ejemplo:</p>
-            <ab type="codeblock">
-            &lt;table rows="3" cols="2"&gt; 
-              &lt;head&gt;Tabla&lt;/head&gt;
-              &lt;row role="label"&gt; 
-               &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
-               &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt; 
-              &lt;/row&gt; &lt;row&gt;
-               &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; 
-               &lt;cell&gt;[Columna 2/ Fila 1]&lt;/cell&gt; 
-              &lt;/row&gt; … 
-            &lt;/table&gt;</ab>
-          </div>
-          <div type="level3">
-            <head>Alineación de texto</head>
-            <p>En las tablas y en el inicio de una carta, se ha codificado la alineación del texto de manera opcional. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <seg type="code">@rendition</seg> con el
-              valor <seg type="code">#right</seg> en el elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code">dateline</seg>.</p>
-            <ab type="codeblock"> 
-            &lt;table cols="4" rows="20" rend="drawn"&gt; 
-             &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
-             &lt;row role="label"&gt; 
-              &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
-              &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell&gt;
-              &lt;cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
-              thermomètre de reaumur.&lt;/cell&gt; 
-              &lt;cell&gt;température &lt;lb/&gt;de l’atmosphère.&lt;lb/&gt; &lt;choice&gt;&lt;orig/&gt;&lt;reg&gt;thermomètre de
-              reaumur.&lt;/reg&gt; &lt;/choice&gt;&lt;/cell&gt; 
-            &lt;/row&gt; 
-            &lt;row&gt; 
-             &lt;cell rendition="#right"&gt;43°. 29′&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;10°. 31′.″&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;12°.&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;18°.&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; 
-              &lt;cell rendition="#right"&gt;39. 10.&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;16. 18. 30″&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;12.&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;13.&lt;/cell&gt; 
-             &lt;/row&gt; 
-             &lt;!--[…]--&gt;
-            &lt;/table&gt;</ab>
-          </div>
-          <div type="level3">
-            <head>Notas</head>
-            <p>Las notas del autor o de un editor contemporáneo no se han insertado siguiendo su ubicación en
-              el manuscrito, sino en el pasaje del texto al que la nota se refiere realmente (o que
-              el editor supone razonablemente que se refiere). En caso de emplear una marca de
-              inserción (asterisco, número, etc.), se ha utilizado una señal de inserción
-              general (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
-              indicar que el texto ha sido introducido por el autor y no por los editores.</p>
-            <p>Las notas se han codificado con el elemento <seg type="code">note</seg>:</p>
-            <ab type="codeblock">En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</ab>
-            <p>Cuando es posible identificar al autor de la nota, se ha codificado esta información con el atributo <seg type="code">@hand</seg>:</p>
-            <table>
-              <row role="label">
-                <cell>
-                  <p>Valor</p>
-                </cell>
-                <cell>
-                  <p>Definición</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">#author</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>Autor del texto</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">#addressee</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>Destinatario de esta carta</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">#unknown</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>Desconocido</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">H000000</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>ID interno proveniente del registro de personas</p>
-                </cell>
-              </row>
-            </table>
-            <p>El lugar de la nota se ha codificado con el atributo <seg type="code">@place</seg>:</p>
-            <table>
-              <row role="label">
-                <cell>
-                  <p>Valor</p>
-                </cell>
-                <cell>
-                  <p>Definición</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">left</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>margen izquierdo</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">right</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>margen derecho</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">mTop</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>parte superior</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">mBottom</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>parte inferior</p>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  <p>
-                    <seg type="code">inline</seg>
-                  </p>
-                </cell>
-                <cell>
-                  <p>dentro de la línea</p>
-                </cell>
-              </row>
-            </table>
-            <p>Si el autor utiliza una marca de inserción, se ha codificado con el elemento vacío <seg type="code">metamark/</seg>. La apariencia de la marca de inserción (asterisco, número, etc.) no se ha hecho explícita.</p>
-            <p>Se ha diferenciado entre las notas y las adiciones: las
-              adiciones complementan el texto principal y se integran sintácticamente en él. Las
-              notas son, como las notas a pie de página impresas, unidades de texto
-              independientes.</p>
-          </div>
-          <div type="level3">
-            <head>Dibujos</head>
-            <p>Los dibujos e ilustraciones se han codificado con el elemento <seg type="code">figure</seg>. cuando ha sido posible identificarla, se ha codificado la persona que
-              realizó el dibujo con el atributo <seg type="code">@hand</seg>: <seg type="code">#author</seg>, <seg type="code">#addressee</seg>, <seg type="code">#unknown</seg> o una persona del registro de personas. En caso de que se disponga
-              de un título en el documento original, se ha codificado con el elemento <seg type="code">p</seg>. En el elemento hijo <seg type="code">figDesc</seg>, en cambio, las y los editores han descrito de manera opcional la imagen. El
-              nombre del fichero se ha codificado con el atributo <seg type="code">@facs</seg>. Los
-              comentarios editoriales que se refieren a la imagen en sí se han codificado con el elemento
-              hijo <seg type="code">note</seg>.</p>
-            <ab type="codeblock">
-            &lt;figure facs="dibujo" hand="#addressee"&gt; 
-             &lt;p&gt;[Título de la figura]&lt;/p&gt; 
-             &lt;figDesc&gt;[Descripción de la imagen por el editor]&lt;/figDesc&gt; 
-             &lt;note type="editorial"&gt;[Comentario editorial]&lt;/note&gt; 
-            &lt;/figure&gt;</ab>
           </div>
         </div>
         <div type="level2" xml:id="intervenciones-editoriales">
