@@ -1721,7 +1721,7 @@
           </div>
           <div type="level3">
             <head>Palabras en otro idioma</head>
-            <p>Las palabras y pasajes de texto individuales en idioma extranjero se han codificado con
+            <p>Las palabras y pasajes de texto en idioma extranjero se han codificado con
               el elemento <seg type="code">foreign</seg>. Con el atributo <seg type="code">@xml:lang</seg> se ha codificado el código del idioma extranjero correspondiente:</p>
             <table>
               <row role="label">
@@ -1842,7 +1842,7 @@
       </div>
       <div type="level1" xml:id="cartas">
         <head>Cartas</head>
-        <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado los remitentes, los destinatarios, el lugar y fechas de envío y recepción. Por lo que respecta a las estructura, cuando están presente en la fuente, se han codificado la dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones) y el cierre de la carta.</p>
+        <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado el remitente, el destinatario, el lugar y la fecha de envío y recepción. Por lo que respecta a las estructura, cuando están presente en la fuente, se han codificado la dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones) y el cierre de la carta.</p>
         <div type="level2">
           <head>Remitente, destinatario, lugares y fechas</head>
             <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <seg type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg type="code">correspAction</seg> (correspondence action) para el proceso de envío y
@@ -1973,8 +1973,7 @@
               &lt;salute&gt;Muchos saludos&lt;/salute&gt; 
               &lt;signed&gt;F. E.&lt;/signed&gt; 
             &lt;/closer&gt;</ab>
-            <p>Una línea de fecha posiblemente existente en el cierre de la carta se anota dentro
-              del elemento <seg type="code">closer</seg> como <seg type="code">dateline</seg>.</p>
+            <p>Si hubiera una fecha en el cierre de la carta, se ha codificado en el elemento <seg type="code">closer</seg> con <seg type="code">dateline</seg>.</p>
             <ab type="codeblock"> 
             &lt;closer rend="paragraph"&gt; 
               &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt; 
