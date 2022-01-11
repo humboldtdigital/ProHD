@@ -58,7 +58,7 @@
       <div type="level1" xml:id="metadatos">
         <head>Metadatos</head>
         <p>Los metadatos utilizados en Proyecto Humboldt Digital son descriptivos e identifican la edición
-          digital, los responsables de la publicación, la fuente de la que deriva el texto, las
+          digital, los responsables de la edición y la publicación, la fuente de la que deriva el texto, las
           condiciones relacionadas con la creación y la clase de texto mediante categorías. Han sido aplicados a todo tipo de texto (documento, carta, etc.).</p>
         <div type="level2">
           <head>Título</head>
@@ -77,7 +77,7 @@
         </div>
         <div type="level2">
           <head>Editores y colaboradores</head>
-          <p>En el elemento <seg type="code">//titleStmt</seg>, se ha identificado los responsables de la edición con el elemento <seg type="code">editor</seg>. El nombre de la persona se ha codificado con <seg type="code">persName</seg> y los siguientes elementos:</p>
+          <p>En el elemento <seg type="code">//titleStmt</seg>, se han identificado los responsables de la edición con el elemento <seg type="code">editor</seg>. El nombre de la persona se ha codificado con <seg type="code">persName</seg> y los siguientes elementos:</p>
           <list type="unordered">
             <item>
               <p>Apellido: <seg type="code">surname</seg>
@@ -111,7 +111,7 @@
               </p>
             </item>
           </list>
-          <p>En el atributo <seg type="code">@ref</seg> también se puede codificar la referencia a
+          <p>En el atributo <seg type="code">@ref</seg> también se ha codificado de manera opcional la referencia a
             una base de datos externa en forma de URI como VIAF u ORCID.</p>
           <p>El tipo de colaboración se ha definido detalladamente con el elemento <seg type="code">resp</seg> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
             elemento <seg type="code">note</seg> se ha definido el tipo de contribución: colaboración, colaboración editorial, transcripción, comentario o
@@ -150,28 +150,30 @@
               &lt;p&gt;Proyecto Humboldt Digital (&lt;date&gt;2021&lt;/date&gt;)&lt;/p&gt;  
             &lt;/editionStmt&gt; 
           </ab>
-          <p>La fecha entre paréntesis corresponde al año de creación del documento TEI; es importante no confundir esta fecha con la fecha de creación de la fuente que se está editando.</p>
+          <p>La fecha entre paréntesis corresponde al año de creación del documento TEI; es importante no confundir esta fecha con la fecha de creación de la fuente de la que deriva el texto.</p>
         </div>
         <div type="level2">
           <head>Publicación y licencia</head>
           <p>En todas las ediciones se ha codificado información sobre las organizaciones responsables de la distribución y
-            publicación de las ediciones, los lugares de publicación y la licencia en todas las ediciones creadas en el marco
-            del proyecto.</p>
+            publicación de las ediciones, los lugares de publicación y la licencia.</p>
           <p>Para ello se ha utilizado el elemento <seg type="code">publicationStmt</seg>.
             Dentro de este elemento, se han utilizado tres elementos anidados: <seg type="code">publisher</seg> (entidad que publica la edición), <seg type="code">pubPlace</seg>
             (lugar de publicación) y <seg type="code">availability</seg> (disponibilidad). Por
             ejemplo:</p>
           <ab type="codeblock"> 
             &lt;publicationStmt&gt;  
-             &lt;publisher&gt; &lt;ref target="http://www.bbaw.de"&gt;  Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)&lt;/ref&gt; 
-             &lt;/publisher&gt;  
-             &lt;pubPlace ref="http://www.geonames.org/2950159"&gt; Berlín&lt;/pubPlace&gt;  
+             &lt;publisher&gt; 
+              &lt;ref target="http://www.bbaw.de"&gt;Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)&lt;/ref&gt; 
+             &lt;/publisher&gt;
+             &lt;publisher&gt;Oficina del Historiador de la Ciudad de la Habana&lt;/publisher&gt;    
+             &lt;pubPlace&gt;Berlín&lt;/pubPlace&gt;
+             &lt;pubPlace&gt;La Habana&lt;/pubPlace&gt;  
              &lt;availability status="free"&gt;  
                 &lt;licence target="http://creativecommons.org/licenses/by/4.0/"&lt;Creative Commons Atribución 4.0 Internacional (CC BY 4.0) &lt;/licence&gt;  
              &lt;/availability&gt; 
             &lt;/publicationStmt&gt;  </ab>
           <p>De manera opcional, se ha enriquecido la información sobre la entidad responsable de
-            la publicación mediante el elemento <seg type="code">ref</seg> para proporcionar un hipervínculo a la web con el atributo <seg type="code">@target</seg>. Asimismo, de manera opcional, se ha utilizado el atributo <seg type="code">@ref</seg> en el elemento <seg type="code">pubPlace</seg> para identificar el lugar de publicación con un URI.</p>
+            la publicación mediante el elemento <seg type="code">ref</seg> para proporcionar un hipervínculo a la web con el atributo <seg type="code">@target</seg>. Asimismo, de manera opcional, se ha utilizado el atributo <seg type="code">@ref</seg> en el elemento <seg type="code">pubPlace</seg> para identificar el lugar de publicación con un URI procedente de GeoNames.</p>
           <p>Los elementos <seg type="code">publisher</seg> y <seg type="code">pubPlace</seg> son
             repetibles, es decir, es posible incluir más de una entidad y lugar de publicación, pero
             la información sobre la disponibilidad del fichero no es repetible.</p>
@@ -185,8 +187,8 @@
           <p>En todas las ediciones del proyecto se ha codificado la fuente de la que deriva el
             texto, el nombre de la institución en la que se conserva el documento y al menos un
             identificador como una signatura.</p>
-          <p>La descripción de la fuente se ha codificado con el elemento <seg type="code">msDesc</seg> (manuscript description). Dentro se ha utilizado el elemento <seg type="code">msIdentifier</seg> para proporcionar información sobre la institución que conserva el documento con el elemento <seg type="code">institution</seg> y la signatura con elemento <seg type="code">idno</seg>, que lleva
-            el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>. Es importante anidar el elemento <seg type="code">idno</seg> dentro de otro elemento <seg type="code">idno</seg>; de esta manera es posible repetir el elemento <seg type="code">idno</seg> tantas veces como sea necesario. De manera opcional, se ha incluido información sobre la colección con el elemento <seg type="code">collection</seg>. Por ejemplo:</p>
+          <p>La descripción de la fuente se ha codificado con el elemento <seg type="code">msDesc</seg> (manuscript description). Dentro se ha utilizado el elemento <seg type="code">msIdentifier</seg> para proporcionar información sobre la institución que conserva el documento con el elemento <seg type="code">institution</seg> y la signatura con el elemento <seg type="code">idno</seg>, que lleva
+            el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>. Se ha codificado este elemento <seg type="code">idno</seg> dentro de otro elemento <seg type="code">idno</seg> a fin de repetir tantos elementos <seg type="code">idno</seg> como sea necesario. De manera opcional, se ha incluido información sobre la colección con el elemento <seg type="code">collection</seg>. Por ejemplo:</p>
           <ab type="codeblock"> 
             &lt;msDesc type="copy"&gt; 
               &lt;msIdentifier&gt;
@@ -200,7 +202,7 @@
           </ab>
           <p>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado una edición impresa, se ha codificado
             la información en <seg type="code">listWit</seg> y se ha utilizado el elemento <seg type="code">witness</seg>. Dentro se ha usado
-            un elemento <seg type="code">bibl</seg> para codificar una referencia bibliográfica. Se ha utilizado
+            un elemento <seg type="code">bibl</seg> para codificar una referencia bibliográfica. En <seg type="code">bibl</seg> se ha utilizado
              el atributo <seg type="code">@type</seg> con el valor <seg type="code">print</seg> para distinguirlo de un manuscrito.</p>
           <p>Por ejemplo:</p>
           <ab type="codeblock">
@@ -212,7 +214,7 @@
         </div>
         <div type="level2">
           <head>Tipo de fuente textual</head>
-          <p>La fuente de la edición siempre se basa en un texto que puede ser de diferentes
+          <p>La fuente de la que deriva el texto editado puede ser de diferentes
             tipos:</p>
           <list type="unordered">
             <item>
@@ -229,7 +231,7 @@
             </item>
           </list>
           <p>Cuando se utilizan más de una fuente textual, se ha seleccionado <hi rendition="#i">un único</hi> documento como base textual. Los demás testimonios
-            textuales se mencionan explícitamente en la edición sólo en los lugares que transmiten
+            textuales se han mencionado explícitamente en la edición sólo en los lugares que transmiten
             variantes mediante un comentario editorial.</p>
           <p>Si la existencia y el contenido de un documento se han deducido con la ayuda de otros
             documentos, no hay base textual. En tal caso, en el elemento <seg type="code">msDesc</seg>, se ha codificado el tipo de fuente textual con el
@@ -344,8 +346,7 @@
               </cell>
             </row>
           </table>
-          <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> de la
-            siguiente manera:</p>
+          <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> utilizando el atributo <seg>@type</seg> con valor "uri". Por ejemplo:</p>
           <ab type="codeblock">
             &lt;idno&gt;
                 &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
@@ -369,7 +370,7 @@
               <seg type="code">profileDesc</seg>. Allí, se ha creado un elemento <seg type="code">creation</seg> donde se han codificado los datos sobre la creación: autor, lugar de
             escritura y fecha de creación.</p>
           <p>El nombre del autor se ha codificado con el elemento <seg type="code">persName</seg>. En caso
-            de seleccionar el autor del registro de personas del proyecto, el ID asociado se genera en el
+            de seleccionar el autor del registro de personas del proyecto, el ID asociado se ha generado en el
             atributo <seg type="code">@key</seg>, creando un enlace al registro.</p>
           <ab type="codeblock">
             &lt;profileDesc&gt; 
@@ -386,7 +387,7 @@
           <head>Lugar de escritura</head>
           <p>Si se conoce el lugar de escritura, se ha codificado también en el elemento <seg type="code">profileDesc</seg>. Allí, si aún no existiera uno, se ha creado un elemento
               <seg type="code">creation</seg>. Dentro de este elemento, se ha utilizado <seg type="code">placeName</seg> para codificar
-            el nombre del lugar. Si el lugar de escritura figura en el registro de lugares, el ID
+            el nombre del lugar. Si el lugar de escritura figura en el registro de lugares del proyecto, el ID
             asociado se ha incluido en el atributo <seg type="code">@key</seg>. Por ejemplo:</p>
           <ab type="codeblock">
             &lt;profileDesc&gt; 
@@ -441,8 +442,8 @@
           <p>Se ha utilizado el atributo <seg type="code">@ident</seg> para identificar con un
             código estandarizado el idioma: "es" para el español, "de" para el alemán, "en" para el
             inglés, "fr" para el francés, etc.</p>
-          <p>Si el texto contiene partes sustanciales en otros idiomas, es posible repetir el
-            elemento <seg type="code">language</seg> tantas veces como se desee.</p>
+          <p>Si el texto contiene partes sustanciales en otros idiomas, se ha repetido
+            elemento <seg type="code">language</seg>.</p>
         </div>
         <div type="level2">
           <head>Resumen</head>
@@ -461,7 +462,7 @@
         <div type="level2">
           <head>Categorización</head>
           <p>En <seg type="code">//profileDesc</seg> se ha utilizado el elemento <seg type="code">textClass</seg> para incluir distintas categorías con las que clasificar
-            el texto editado. Se aceptan tres tipos de categorías: género, forma y tema. Para ello,
+            el texto editado. Las categorías utilizadas son: género, forma y tema(s). Para ello,
             se ha utilizado el elemento <seg type="code">catRef</seg> con los atributos <seg type="code">@scheme</seg> y <seg type="code">@target</seg>. Por ejemplo:</p>
           <ab type="code">
             &lt;textClass&gt; 
@@ -527,7 +528,7 @@
             </table>
             <p>Por ejemplo:</p>
             <ab type="codeblock">Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</ab>
-            <p>Si un párrafo completo esté destacado con una marca en el margen, se ha codificado con el elemento <seg type="code">p</seg> y el atributo <seg type="code">@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
+            <p>Si un párrafo completo aparece en la fuente destacado con una marca en el margen, se ha codificado con el elemento <seg type="code">p</seg> y el atributo <seg type="code">@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
           </div>
           <div type="level3">
             <head>Superscript</head>
@@ -536,7 +537,7 @@
           </div>
           <div type="level3">
             <head>Eliminaciones</head>
-            <p>Siempre que ha sido sea legible y con independencia de si se encuentra en saltos de línea, abreviaturas, normalizaciones y correcciones o adiciones del editor, se ha codificado el texto eliminado con el elemento <seg type="code">del</seg> (deletion) y haciendo uso del atributo <seg type="code">@rendition</seg> para especificar el tipo de eliminación:</p>
+            <p>Siempre que sea legible y con independencia de si se encuentra en saltos de línea, abreviaturas, normalizaciones y correcciones o adiciones del editor, se ha codificado el texto eliminado con el elemento <seg type="code">del</seg> (deletion) y haciendo uso del atributo <seg type="code">@rendition</seg> para especificar el tipo de eliminación:</p>
             <table>
               <row role="label">
                 <cell>
@@ -807,7 +808,7 @@
           <head>Estructuras textuales</head>
           <div type="level3">
             <head>Párrafos</head>
-            <p>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional se han codificado el sangrado
+            <p>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional se ha codificado el sangrado
               de los párrafos si la editora o editor considera dicha información relevante.</p>
             <p>Los párrafos se han codificado con el elemento <seg type="code">p</seg> (paragraph).</p>
           </div>
