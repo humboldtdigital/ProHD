@@ -57,9 +57,15 @@
     <body>
       <div type="level1" xml:id="metadatos">
         <head>Metadatos</head>
-        <p>Los metadatos utilizados en Proyecto Humboldt Digital son descriptivos e identifican la edición
-          digital, los responsables de la edición y la publicación, la fuente de la que deriva el texto, las
-          condiciones relacionadas con la creación y la clase de texto mediante categorías. Han sido aplicados a todo tipo de texto (documento, carta, etc.).</p>
+        <p>Los metadatos utilizados en Proyecto Humboldt Digital son descriptivos e identifican 
+           <list type="unordered">
+            <item>la edición digital,</item>
+            <item>los responsables de la edición y la publicación,</item>
+            <item>la fuente de la que deriva el texto,</item>
+            <item>las condiciones relacionadas con la creación y</item>
+            <item>la clase de texto mediante categorías.</item>
+          </list>
+             Estos metadatos han sido aplicados a todo tipo de texto (documento, carta, etc.).</p>
         <div type="level2">
           <head>Título</head>
           <p>Todas las ediciones se han identificado con un título principal. El título ha sido normalizado ortográficamente.</p>
