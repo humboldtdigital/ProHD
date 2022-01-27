@@ -157,9 +157,15 @@
           <p>En todas las ediciones se ha codificado información sobre las organizaciones responsables de la distribución y
             publicación de las ediciones, los lugares de publicación y la licencia.</p>
           <p>Para ello se ha utilizado el elemento <seg type="code">publicationStmt</seg>.
-            Dentro de este elemento, se han utilizado tres elementos anidados: <seg type="code">publisher</seg> (entidad que publica la edición), <seg type="code">pubPlace</seg>
-            (lugar de publicación) y <seg type="code">availability</seg> (disponibilidad). Por
-            ejemplo:</p>
+            Dentro de este elemento, se han utilizado tres elementos anidados: 
+            <list type="unordered">
+              <item><seg type="code">publisher</seg> (entidad que publica la edición), </item>
+              <item><seg type="code">pubPlace</seg> (lugar de publicación) y</item>
+              <item><seg type="code">availability</seg> (disponibilidad).</item>
+              </item> 
+            </list>
+            
+            Por ejemplo:</p>
           <ab type="codeblock"> 
             &lt;publicationStmt&gt;  
              &lt;publisher&gt; 
@@ -369,7 +375,7 @@
           <p>Si se conoce quién es autor del texto, esta información se ha codificado en el elemento
               <seg type="code">profileDesc</seg>. Allí, se ha creado un elemento <seg type="code">creation</seg> donde se han codificado los datos sobre la creación: autor, lugar de
             escritura y fecha de creación.</p>
-          <p>El nombre del autor se ha codificado con el elemento <seg type="code">persName</seg>. En caso
+          <p>El nombre del autor se ha codificado con el elemento <seg type="code">persName</seg>. <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades --> En caso
             de seleccionar el autor del registro de personas del proyecto, el ID asociado se ha generado en el
             atributo <seg type="code">@key</seg>, creando un enlace al registro.</p>
           <ab type="codeblock">
@@ -387,7 +393,7 @@
           <head>Lugar de escritura</head>
           <p>Si se conoce el lugar de escritura, se ha codificado también en el elemento <seg type="code">profileDesc</seg>. Allí, si aún no existiera uno, se ha creado un elemento
               <seg type="code">creation</seg>. Dentro de este elemento, se ha utilizado <seg type="code">placeName</seg> para codificar
-            el nombre del lugar. Si el lugar de escritura figura en el registro de lugares del proyecto, el ID
+            el nombre del lugar. <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades --> Si el lugar de escritura figura en el registro de lugares del proyecto, el ID
             asociado se ha incluido en el atributo <seg type="code">@key</seg>. Por ejemplo:</p>
           <ab type="codeblock">
             &lt;profileDesc&gt; 
