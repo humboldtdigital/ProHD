@@ -11,4 +11,5 @@ resources/css/prismjs
 resources/images/openseadragon
 resources/images/leaflet
 resources/i18n/common
+workspace.code-workspace
 README.md
