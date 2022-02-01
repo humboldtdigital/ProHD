@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
@@ -15,7 +16,9 @@
             <date when="2021-01-15">2021</date></publisher>
       </publicationStmt>
       <sourceDesc>
-        <bibl>ODD basada en TEI U5 y <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/index.html"/>ediarum.BASE.manual</bibl>
+        <bibl>ODD basada en TEI U5 y <ref
+            target="https://www.ediarum.org/docs/ediarum.BASE.manual/index.html"
+          />ediarum.BASE.manual</bibl>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
@@ -25,14 +28,18 @@
 
         <!-- modules -->
         <moduleRef key="tei"/>
-        <moduleRef key="core" include="abbr add addrLine address author bibl biblScope choice cit corr date del desc divGen editor emph expan foreign gap gloss graphic head hi index item l label lb lg list listBibl measure mentioned milestone name note num orig p pb ptr pubPlace publisher q ref reg relatedItem resp respStmt rs sic soCalled sp speaker stage term time title unclear quote"/>
-        <moduleRef key="header" include="authority availability catDesc catRef category change classCode classDecl creation distributor edition editionStmt editorialDecl encodingDesc extent fileDesc funder idno keywords langUsage language licence notesStmt principal profileDesc projectDesc publicationStmt refsDecl revisionDesc samplingDecl seriesStmt sourceDesc sponsor taxonomy teiHeader textClass titleStmt abstract listChange correspAction correspDesc correspContext"/>
-        <moduleRef key="textstructure" include="TEI argument back body byline closer dateline div docAuthor docDate docEdition docImprint docTitle epigraph front group imprimatur opener postscript salute signed text titlePage titlePart trailer"/>
+        <moduleRef key="core"
+          include="abbr add addrLine address author bibl biblScope choice cit corr date del desc divGen editor emph expan foreign gap gloss graphic head hi index item l label lb lg list listBibl measure mentioned milestone name note num orig p pb ptr pubPlace publisher q ref reg relatedItem resp respStmt rs sic soCalled sp speaker stage term time title unclear quote"/>
+        <moduleRef key="header"
+          include="authority availability catDesc catRef category change classCode classDecl creation distributor edition editionStmt editorialDecl encodingDesc extent fileDesc funder idno keywords langUsage language licence notesStmt principal profileDesc projectDesc publicationStmt refsDecl revisionDesc samplingDecl seriesStmt sourceDesc sponsor taxonomy teiHeader textClass titleStmt abstract listChange correspAction correspDesc correspContext"/>
+        <moduleRef key="textstructure"
+          include="TEI argument back body byline closer dateline div docAuthor docDate docEdition docImprint docTitle epigraph front group imprimatur opener postscript salute signed text titlePage titlePart trailer"/>
         <moduleRef key="figures" include="cell figure figDesc formula row table"/>
         <moduleRef key="linking" include="anchor seg linkGrp ab"/>
         <moduleRef key="tagdocs" include="att code eg gi ident val"/>
         <moduleRef key="transcr" include="facsimile fw space subst ex supplied metamark"/>
-        <moduleRef key="msdescription" include="physDesc msDesc msIdentifier institution collection repository"/>
+        <moduleRef key="msdescription"
+          include="physDesc msDesc msIdentifier institution collection repository"/>
         <moduleRef key="textcrit" include="listWit witness"/>
         <moduleRef key="namesdates" include="persName placeName surname forename orgName listPerson listOrg listPlace person org place occupation affiliation birth death floruit"/>
         <moduleRef key="gaiji" include="g"/>
@@ -386,7 +393,7 @@
             <attDef ident="type" usage="req" mode="change">
               <valList type="closed" mode="replace">
                 <valItem ident="comment"/>
-                <valItem ident="code"/>
+                <valItem ident="code"></valItem>
               </valList>
             </attDef>
           </attList>
@@ -405,14 +412,14 @@
           <attList>
             <attDef ident="xml:lang" usage="req" mode="change">
               <valList type="closed" mode="replace">
-                <valItem ident="grc"/>
-                <valItem ident="lat"/>
-                <valItem ident="heb"/>
-                <valItem ident="deu"/>
-                <valItem ident="fra"/>
-                <valItem ident="eng"/>
-                <valItem ident="rus"/>
-                <valItem ident="esp"/>
+                <valItem ident="gr"/>
+                <valItem ident="la"/>
+                <valItem ident="he"/>
+                <valItem ident="de"/>
+                <valItem ident="fr"/>
+                <valItem ident="en"/>
+                <valItem ident="ru"/>
+                <valItem ident="es"/>
               </valList>
             </attDef>
           </attList>
