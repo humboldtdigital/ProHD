@@ -164,7 +164,6 @@
               <item><seg type="code">publisher</seg> (entidad que publica la edición), </item>
               <item><seg type="code">pubPlace</seg> (lugar de publicación) y</item>
               <item><seg type="code">availability</seg> (disponibilidad).</item>
-              </item> 
             </list>
             
             Por ejemplo:</p>
