@@ -66,14 +66,16 @@
                gedruckter Textdokumente in vier Sprachen (Deutsch, Englisch, Französisch und
                Spanisch), die thematisch mit Humboldts Kubareise zusammenhängen, wie auch mit den
                Fragen, die der preußische Wissenschaftler in seinem <title>Essai politique
-                  sur l'île de Cuba</title> untersucht hat. Die Textquellen der Editionen stammen aus Bibliotheken und Archiven in
+                  sur l'île de Cuba</title> (2 Bde., Paris 1826) untersucht hat. Die Quellen der edierten Texte stammen aus Bibliotheken und Archiven in
                Deutschland, Kuba und Polen. Weitere Informationen zur Provenienz finden Sie in den
                Metadaten der jeweiligen Ausgabe.</p>
-            <p>Die Texte der einzelnen Ausgaben werden in zwei Fassungen präsentiert: In der diplomatischen Transkription wurden die 
-               historischen Besonderheiten der Quelle, wie Abkürzungen, historische Orthographie, Akzentsetzung, Interpunktion, fehlende 
-               Wortzwischenräume und offensichtliche Fehler, bewahrt. In der normalisierten Fassung wurden, zur 
-               besseren Lesbarkeit des Textes, die Abkürzungen aufgelöst, die Orthographie, Akzentsetzung, Interpunktions- und 
-               Leerzeichen an die heutige Norm angepasst und offensichtliche Fehler korrigiert.</p>
+            <p>Die Texte werden in zwei Fassungen präsentiert: 
+		<list>
+			<item>In der <hi rendition="#b">diplomatischen Transkription</hi> wurden die historischen Besonderheiten der Quelle, wie Abkürzungen, historische Orthographie, Akzentsetzung, Interpunktion, fehlende 
+			    Wortzwischenräume und offensichtliche Fehler, bewahrt.</item>
+			<item>In der <hi rendition="#b">normalisierten Fassung</hi> wurden, zur besseren Lesbarkeit des Textes, die Abkürzungen aufgelöst, die Orthographie, Akzentsetzung, Interpunktions- und Leerzeichen an die heutige Norm angepasst und offensichtliche Fehler korrigiert.</item>
+		</list>
+		 </p>
          </div>
          <div>
             <head>Technische Realisierung</head>
@@ -91,10 +93,10 @@
                   <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">spanisch</ref> verfügbar ist.</p>
             <p>Die Webanwendung wurde mit <ref target="https://teipublisher.com/index.html">TEI
                   Publisher</ref> (v. 7.0.0.) erstellt und basiert auf der XML-Datenbank <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> 
-                  (v.5.2.0.). Ein ODD namens prohd.xml dient der Formatierung der statischen Seiten und Editionen, die grafische Benutzeroberfläche wird mit den beiden auf Webkomponenten basierenden Vorlagen prohd.html und view-grid-prohd.html erzeugt. Eine Kopie der Dateien, aus denen die
+                  (v.5.2.0.). Ein ODD (prohd.xml) dient der Formatierung der statischen Seiten und Editionen, die grafische Benutzeroberfläche wird mit zwei auf Webkomponenten basierenden Vorlagen (prohd.html, view-grid-prohd.html) erzeugt. Eine Kopie der Dateien, aus denen die
                Webanwendung besteht, ist im <ref target="https://github.com/humboldtdigital/ProHD">Github-Repositorium</ref> des Projekts verfügbar. Sowohl die Webanwendung als auch
                die Faksimiles werden auf Servern der Oficina del Historiador de la Ciudad de La Habana (OHCH)
-               gehostet. Die Faksimiles verwenden die API von <ref target="https://iiif.io/">IIIF</ref>.</p>
+               gehostet. Die Faksimiles verwenden die API von <ref target="https://iiif.io/">IIIF</ref> und liegen auf einem Cantaloupe Image Server (v. 5.0.5).</p>
             <p>Die Entwicklung des Frameworks ediarum.PROHD.edit und dieser Webanwendung wurde von
                Antonio Rojas Castro in Zusammenarbeit mit Violeta López durchgeführt. Ihre
                technischen Fragen und Anmerkungen können Sie an antonio.rojas-castro [at] bbaw.de richten.</p>
