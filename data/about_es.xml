@@ -83,7 +83,10 @@
             <p>Los textos de las ediciones digitales del "Dossier Digital: Alexander von Humboldt y
                Cuba (1800-1830)" han sido codificados en formato XML siguiendo las directrices de la
                   <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P5). Para
-               facilitar la tarea de codificación, se ha adaptado el <foreign xml:lang="eng">framework</foreign> de ediarum desarrollado por TELOTA dando lugar a <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
+               facilitar la tarea de codificación, se ha adaptado el <foreign xml:lang="eng"
+                  >framework</foreign> de ediarum desarrollado por TELOTA dando lugar a <ref
+                  target="https://github.com/humboldtdigital/ediarum.PROHD.edit"
+                  >ediarum.PROHD.edit</ref>.</p>
             <p>Se ha llevado a cabo una codificación que permita identificar la fuente de la que
                deriva el texto, los responsables de la edición y, siempre que ha sido posible, la
                autoría y otros datos relativos al proceso de creación. En cuanto a la codificación
@@ -91,13 +94,17 @@
                y párrafos, las divisiones lógicas de las cartas, los cambios de tipografía, las
                intervenciones autoriales como tachados o adiciones, lecturas inciertas, lagunas,
                palabras suplidas, etc. Para más detalles sobre la codificación en TEI, se recomienda
-               consultar la documentación de ediarum disponible en <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">alemán</ref> y <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">español</ref>.</p>
-            <p>Esta aplicación web ha sido construida con <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) y
+               consultar la documentación de ediarum disponible en <ref
+                  target="https://www.ediarum.org/docs/ediarum.BASE.manual/">alemán</ref> y <ref
+                  target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">español</ref>.</p>
+            <p>Esta aplicación web ha sido construida con <ref
+                  target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) y
                   <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
                5.2.0.). Se utiliza un ODD llamado prohd.xml para dar formato a las ediciones y las
                páginas estáticas y dos plantillas llamadas prohd.html y view-grid-prohd.html
                construidas con componentes web para crear la interfaz gráfica de usuario. Una copia
-               de los ficheros que integran la aplicación web está disponible en el <ref target="https://github.com/humboldtdigital/ProHD">repositorio de Github</ref> del
+               de los ficheros que integran la aplicación web está disponible en el <ref
+                  target="https://github.com/humboldtdigital/ProHD">repositorio de Github</ref> del
                proyecto. Tanto la aplicación web como los facsímiles están alojados en servidores de
                la Oficina del Historiador de la Ciudad de La Habana; los facsímiles utilizan la API
                de <ref target="https://iiif.io/">IIIF</ref>.</p>
@@ -108,7 +115,8 @@
          </div>
          <div>
             <head>Licencia de uso</head>
-            <p>Todos los contenidos del "Dossier Digital" se publican con una licencia <ref target="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons
+            <p>Todos los contenidos del "Dossier Digital" se publican con una licencia <ref
+                  target="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons
                   Atribución 4.0 Internacional (CC BY 4.0)</ref>. En consecuencia, se permite
                compartir (copiar y redistribuir el material en cualquier medio o formato) y adaptar
                (remezclar, transformar y construir a partir del material para cualquier propósito,

@@ -1,5 +1,6 @@
 <?teipublisher template="view-grid-prohd.html" odd="prohd.odd" view="div"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -16,9 +17,9 @@
          </titleStmt>
          <publicationStmt>
             <publisher>
-                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                  Wissenschaften (BBAW)</ref>
-                </publisher>
+               <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der Wissenschaften
+                  (BBAW)</ref>
+            </publisher>
             <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -35,7 +36,7 @@
          <div>
             <head>Einführung</head>
             <p>
-                    <hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> ist eine internationale
+               <hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> ist eine internationale
                Initiative zur Fortbildung in den Digitalen Geisteswissenschaften an den zwei
                Standorten La Habana (Casa Museo Alejandro de Humboldt) und Berlin
                (Berlin-Brandenburgische Akademie der Wissenschaften).</p>
@@ -61,52 +62,71 @@
          </div>
          <div>
             <head>Editionsrichtlinien</head>
-            <p>Das "Digitale Dossier: Alexander von Humboldt und Kuba
-               (1800-1830)" veröffentlicht Transkriptionen handschriftlicher und
-               gedruckter Textdokumente in vier Sprachen (Deutsch, Englisch, Französisch und
-               Spanisch), die thematisch mit Humboldts Kubareise zusammenhängen, wie auch mit den
-               Fragen, die der preußische Wissenschaftler in seinem <title>Essai politique
-                  sur l'île de Cuba</title> (2 Bde., Paris 1826) untersucht hat. Die Quellen der edierten Texte stammen aus Bibliotheken und Archiven in
+            <p>Das "Digitale Dossier: Alexander von Humboldt und Kuba (1800-1830)" veröffentlicht
+               Transkriptionen handschriftlicher und gedruckter Textdokumente in vier Sprachen
+               (Deutsch, Englisch, Französisch und Spanisch), die thematisch mit Humboldts Kubareise
+               zusammenhängen, wie auch mit den Fragen, die der preußische Wissenschaftler in seinem
+                  <title>Essai politique sur l'île de Cuba</title> (2 Bde., Paris 1826) untersucht
+               hat. Die Quellen der edierten Texte stammen aus Bibliotheken und Archiven in
                Deutschland, Kuba und Polen. Weitere Informationen zur Provenienz finden Sie in den
                Metadaten der jeweiligen Ausgabe.</p>
-            <p>Die Texte werden in zwei Fassungen präsentiert: 
-		<list>
-			<item>In der <hi rendition="#b">diplomatischen Transkription</hi> wurden die historischen Besonderheiten der Quelle, wie Abkürzungen, historische Orthographie, Akzentsetzung, Interpunktion, fehlende 
-			    Wortzwischenräume und offensichtliche Fehler, bewahrt.</item>
-			<item>In der <hi rendition="#b">normalisierten Fassung</hi> wurden, zur besseren Lesbarkeit des Textes, die Abkürzungen aufgelöst, die Orthographie, Akzentsetzung, Interpunktions- und Leerzeichen an die heutige Norm angepasst und offensichtliche Fehler korrigiert.</item>
-		</list>
-		 </p>
+            <p>Die Texte werden in zwei Fassungen präsentiert: <list>
+                  <item>In der <hi rendition="#b">diplomatischen Transkription</hi> wurden die
+                     historischen Besonderheiten der Quelle, wie Abkürzungen, historische
+                     Orthographie, Akzentsetzung, Interpunktion, fehlende Wortzwischenräume und
+                     offensichtliche Fehler, bewahrt.</item>
+                  <item>In der <hi rendition="#b">normalisierten Fassung</hi> wurden, zur besseren
+                     Lesbarkeit des Textes, die Abkürzungen aufgelöst, die Orthographie,
+                     Akzentsetzung, Interpunktions- und Leerzeichen an die heutige Norm angepasst
+                     und offensichtliche Fehler korrigiert.</item>
+               </list>
+            </p>
          </div>
          <div>
             <head>Technische Realisierung</head>
-            <p>Alle im "Digitalen Dossier" enthaltenen edierten Texte und Metadaten sind in XML nach den Richtlinien der <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P5) kodiert. Um
-               die Kodierungsaufgabe zu erleichtern, wurde die von TELOTA entwickelte digitale Arbeitsumgebung ediarum
-               angepasst, wodurch <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit"> ediarum.PROHD.edit
+            <p>Alle im "Digitalen Dossier" enthaltenen edierten Texte und Metadaten sind in XML nach
+               den Richtlinien der <ref target="https://tei-c.org/">Text Encoding Initiative</ref>
+               (P5) kodiert. Um die Kodierungsaufgabe zu erleichtern, wurde die von TELOTA
+               entwickelte digitale Arbeitsumgebung ediarum angepasst, wodurch <ref
+                  target="https://github.com/humboldtdigital/ediarum.PROHD.edit"> ediarum.PROHD.edit
                </ref> entstanden ist.</p>
             <p>Durch TEI-XML werden zum Einen die Metadaten der Datensätze wie die Textquelle, die
-               Verantwortlichen der Edition und, wenn möglich, die Urheberschaft und andere
-               Angaben zum Entstehungsprozess des Textes kodiert. Zum Anderen werden durch die TEI-Kodierung der edierten Texte die Paginierung der Originalquelle, Überschriften und
-               Absätze, die logische Unterteilung der Briefe, typografische Änderungen,
-               Textbearbeitungen des Autors wie Streichungen oder Ergänzungen, unsichere Lesarten,
-               Lücken, Ersetzungen, usw. ausgezeichnet. Weitere Informationen zur
-               TEI-Kodierung finden Sie im ediarum-Benutzerhandbuch, das auf <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">deutsch</ref> und
-                  <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">spanisch</ref> verfügbar ist.</p>
+               Verantwortlichen der Edition und, wenn möglich, die Urheberschaft und andere Angaben
+               zum Entstehungsprozess des Textes kodiert. Zum Anderen werden durch die TEI-Kodierung
+               der edierten Texte die Paginierung der Originalquelle, Überschriften und Absätze, die
+               logische Unterteilung der Briefe, typografische Änderungen, Textbearbeitungen des
+               Autors wie Streichungen oder Ergänzungen, unsichere Lesarten, Lücken, Ersetzungen,
+               usw. ausgezeichnet. Weitere Informationen zur TEI-Kodierung finden Sie im
+               ediarum-Benutzerhandbuch, das auf <ref
+                  target="https://www.ediarum.org/docs/ediarum.BASE.manual/">deutsch</ref> und <ref
+                  target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">spanisch</ref>
+               verfügbar ist.</p>
             <p>Die Webanwendung wurde mit <ref target="https://teipublisher.com/index.html">TEI
-                  Publisher</ref> (v. 7.0.0.) erstellt und basiert auf der XML-Datenbank <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> 
-                  (v.5.2.0.). Ein ODD (prohd.xml) dient der Formatierung der statischen Seiten und Editionen, die grafische Benutzeroberfläche wird mit zwei auf Webkomponenten basierenden Vorlagen (prohd.html, view-grid-prohd.html) erzeugt. Eine Kopie der Dateien, aus denen die
-               Webanwendung besteht, ist im <ref target="https://github.com/humboldtdigital/ProHD">Github-Repositorium</ref> des Projekts verfügbar. Sowohl die Webanwendung als auch
-               die Faksimiles werden auf Servern der Oficina del Historiador de la Ciudad de La Habana (OHCH)
-               gehostet. Die Faksimiles verwenden die API von <ref target="https://iiif.io/">IIIF</ref> und liegen auf einem Cantaloupe Image Server (v. 5.0.5).</p>
+                  Publisher</ref> (v. 7.0.0.) erstellt und basiert auf der XML-Datenbank <ref
+                  target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref>
+               (v.5.2.0.). Ein ODD (prohd.xml) dient der Formatierung der statischen Seiten und
+               Editionen, die grafische Benutzeroberfläche wird mit zwei auf Webkomponenten
+               basierenden Vorlagen (prohd.html, view-grid-prohd.html) erzeugt. Eine Kopie der
+               Dateien, aus denen die Webanwendung besteht, ist im <ref
+                  target="https://github.com/humboldtdigital/ProHD">Github-Repositorium</ref> des
+               Projekts verfügbar. Sowohl die Webanwendung als auch die Faksimiles werden auf
+               Servern der Oficina del Historiador de la Ciudad de La Habana (OHCH) gehostet. Die
+               Faksimiles verwenden die API von <ref target="https://iiif.io/">IIIF</ref> und liegen
+               auf einem Cantaloupe Image Server (v. 5.0.5).</p>
             <p>Die Entwicklung des Frameworks ediarum.PROHD.edit und dieser Webanwendung wurde von
                Antonio Rojas Castro in Zusammenarbeit mit Violeta López durchgeführt. Ihre
-               technischen Fragen und Anmerkungen können Sie an antonio.rojas-castro [at] bbaw.de richten.</p>
+               technischen Fragen und Anmerkungen können Sie an antonio.rojas-castro [at] bbaw.de
+               richten.</p>
          </div>
          <div>
             <head>Copyright</head>
-            <p>Alle Inhalte des "Digitalen Dossiers" werden unter der <ref target="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons Lizenz CC BY 4.0</ref> veröffentlicht. 
-               Folglich ist das Teilen (das medien- und formatunabhängige Vervielfältigen und Weiterverbreiten) und Bearbeiten 
-               (das Remixen, Verändern und Ausbauen des Materials für beliebige, auch kommerzielle Zwecke) erlaubt, sofern die Urheber und Rechte sowie eventuell vorgenommene Änderungen angemessen
-               angegeben werden und ein Link der Lizenz beigefügt wird.</p>
+            <p>Alle Inhalte des "Digitalen Dossiers" werden unter der <ref
+                  target="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons
+                  Lizenz CC BY 4.0</ref> veröffentlicht. Folglich ist das Teilen (das medien- und
+               formatunabhängige Vervielfältigen und Weiterverbreiten) und Bearbeiten (das Remixen,
+               Verändern und Ausbauen des Materials für beliebige, auch kommerzielle Zwecke)
+               erlaubt, sofern die Urheber und Rechte sowie eventuell vorgenommene Änderungen
+               angemessen angegeben werden und ein Link der Lizenz beigefügt wird.</p>
          </div>
          <div>
             <head>Empfohlene Zitierweise</head>
@@ -116,9 +136,10 @@
                Oficina del Historiador de la Ciudad de la Habana, 2021-2023.</p>
             <p>Oder eine bestimmte Einzelausgabe:</p>
             <p>Arango y Parreño, Francisco de. "Observaciones sobre el Ensayo politico con relacion
-               a la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Digitales Dossier: Alexander von Humboldt und Kuba (1800-1830)</title>, Kathrin Kraller (Ed.),
-               Berlin-Brandenburgische Akademie der Wissenschaften und Oficina del Historiador de la
-               Ciudad de la Habana, 2021.</p>
+               a la Isla de Cuba que ha escrito el Señor Baron de Humboldt". <title>Digitales
+                  Dossier: Alexander von Humboldt und Kuba (1800-1830)</title>, Kathrin Kraller
+               (Ed.), Berlin-Brandenburgische Akademie der Wissenschaften und Oficina del
+               Historiador de la Ciudad de la Habana, 2021.</p>
          </div>
       </body>
    </text>
