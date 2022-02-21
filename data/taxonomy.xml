@@ -19,6 +19,11 @@
                   <catDesc xml:lang="en">Genre</catDesc>
                   <catDesc xml:lang="es">Género</catDesc>
                   <catDesc xml:lang="de">Genre</catDesc>
+                  <category xml:id="correspondence">
+                     <catDesc xml:lang="en">Personal Correspondence</catDesc>
+                     <catDesc xml:lang="es">Cartas</catDesc>
+                     <catDesc xml:lang="de">Briefe</catDesc>
+                  </category>
                   <category xml:id="diaries">
                      <catDesc xml:lang="en">Diaries</catDesc>
                      <catDesc xml:lang="es">Diarios personales</catDesc>
@@ -33,11 +38,6 @@
                      <catDesc xml:lang="en">Notebooks</catDesc>
                      <catDesc xml:lang="es">Notas personales</catDesc>
                      <catDesc xml:lang="de">Notizen</catDesc>
-                  </category>
-                  <category xml:id="correspondence">
-                     <catDesc xml:lang="en">Personal Correspondence</catDesc>
-                     <catDesc xml:lang="es">Cartas</catDesc>
-                     <catDesc xml:lang="de">Briefe</catDesc>
                   </category>
                   <category xml:id="travelwriting">
                      <catDesc xml:lang="en">Travel Writing</catDesc>
@@ -104,7 +104,12 @@
                      <catDesc xml:lang="es">Emancipación</catDesc>
                      <catDesc xml:lang="de">Emanzipation</catDesc>
                   </category>
-                  <category xml:id="geography">
+                  <category xml:id="factories">
+                     <catDesc xml:lang="en">Fábricas</catDesc>
+                     <catDesc xml:lang="es">Factories</catDesc>
+                     <catDesc xml:lang="de">Fabriken</catDesc>
+                  </category>
+                 <category xml:id="geography">
                      <catDesc xml:lang="en">Geography</catDesc>
                      <catDesc xml:lang="es">Geografía</catDesc>
                      <catDesc xml:lang="de">Geografie</catDesc>
@@ -124,6 +129,11 @@
                      <catDesc xml:lang="es">Ciencia</catDesc>
                      <catDesc xml:lang="de">Wissenschaft</catDesc>
                   </category>
+                  <category xml:id="scientificexpedition">
+                     <catDesc xml:lang="en">Scientific expedition</catDesc>
+                     <catDesc xml:lang="es">Expedición científica</catDesc>
+                     <catDesc xml:lang="de">Forschungsreisen</catDesc>
+                  </category>
                   <category xml:id="slavery">
                      <catDesc xml:lang="en">Slavery</catDesc>
                      <catDesc xml:lang="es">Esclavitud</catDesc>
@@ -133,6 +143,11 @@
                      <catDesc xml:lang="en">Sugar</catDesc>
                      <catDesc xml:lang="es">Azúcar</catDesc>
                      <catDesc xml:lang="de">Zucker</catDesc>
+                  </category>
+                  <category xml:id="tobacco">
+                     <catDesc xml:lang="en">Tobacco</catDesc>
+                     <catDesc xml:lang="es">Tabaco</catDesc>
+                     <catDesc xml:lang="de">Tabak</catDesc>
                   </category>
                   <category xml:id="trade">
                      <catDesc xml:lang="en">Trade</catDesc>
