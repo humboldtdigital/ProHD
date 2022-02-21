@@ -96,7 +96,6 @@
                         <category xml:id="demography"/>
                         <category xml:id="economicconditions"/>
                         <category xml:id="geography"/>
-                        <category xml:id="history"/>
                         <category xml:id="medicine"/>
                         <category xml:id="science"/>
                         <category xml:id="plantations"/>
@@ -105,16 +104,18 @@
                         <category xml:id="slavery"/>
                         <category xml:id="trade"/>
                         <category xml:id="emancipation"/>
-                    </category>    
+                        <category xml:id="education"/>
+                        <category xml:id="administration"/>
+                    </category>
                 </taxonomy>
             </classDecl>
         </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <pb n="1r" facs="787980595-0001"/>
-            <fw type="folNum">68.</fw>
             <div type="writingSession">
+                <pb n="1r" facs="prohd0014_1r.tif"/>
+                <fw type="folNum">68.</fw>
                 <opener>
                     <salute>Mi muy apreciable <unclear reason="illegible" cert="high">
                             <choice>
@@ -160,9 +161,8 @@
                         <orig>--</orig>
                         <reg>.</reg>
                     </choice> Me la pres<g ref="#typoHyphen"/>
-                    <lb/>taron por desgracia con término
-                    muy angustiado, y en esa<lb/> precipitación, no sé si me habré excedido, o si he
-                    dejado de decir<lb/> todo lo <choice>
+                    <lb/>taron por desgracia con término muy angustiado, y en esa<lb/>
+                    precipitación, no sé si me habré excedido, o si he dejado de decir<lb/> todo lo <choice>
                         <abbr>q</abbr>
                         <expan>que</expan>
                     </choice> podía<choice>
@@ -182,13 +182,11 @@
                         <abbr>q</abbr>
                         <expan>que</expan>
                     </choice> el de mi eterna amis<g ref="#typoHyphen"/>
-                    <lb/>tad y sincera gratitud
-                    al filósofo viajero <choice>
+                    <lb/>tad y sincera gratitud al filósofo viajero <choice>
                         <abbr>q</abbr>
                         <expan>que</expan>
                     </choice> admi<unclear reason="illegible" cert="low">ran</unclear>
-                    <lb/> todas
-                    las naciones cultas, y tan de veras estima este<lb/> en <choice>
+                    <lb/> todas las naciones cultas, y tan de veras estima este<lb/> en <choice>
                         <abbr>ap.<hi rendition="#sup">do</hi>
                         </abbr>
                         <expan>apasionado</expan>
