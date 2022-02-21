@@ -1,5 +1,4 @@
-<?xml-model href="prohd.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0018">
+<?xml-model href="prohd.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0018">
     <teiHeader>
         <fileDesc>
             <titleStmt>

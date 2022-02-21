@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemata/prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0001">
+<?xml-model href="../schemata/prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0001">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -101,14 +99,10 @@
             <div>
                 <pb n="1r" facs="prohd0001_1r.tif"/>
                 <p>Esclaves</p>
-                <p>nous rét<add place="superlinear">r</add>ogradons comme partout<supplied
-                        cert="high">,</supplied><lb/>on ne veut plus en écrire <lb/><unclear
-                        reason="illegible" cert="high">ni</unclear> parler<supplied cert="high"
-                        >,</supplied> les uns <choice>
+                <p>nous rét<add place="superlinear">r</add>ogradons comme partout<supplied cert="high">,</supplied><lb/>on ne veut plus en écrire <lb/><unclear reason="illegible" cert="high">ni</unclear> parler<supplied cert="high">,</supplied> les uns <choice>
                         <orig>par<lb/>ce</orig>
                         <reg>parce</reg>
-                    </choice> qu'ils craignent qu'on <lb/>les accuse de sensiblerie<supplied
-                        cert="high">,</supplied><lb/>d'autres <choice>
+                    </choice> qu'ils craignent qu'on <lb/>les accuse de sensiblerie<supplied cert="high">,</supplied><lb/>d'autres <choice>
                         <orig>par ce</orig>
                         <reg>parce</reg>
                     </choice> qu'on <lb/>agite des colonies, <hi rendition="#u"><choice>
@@ -119,8 +113,7 @@
                 <p>
                     <gap unit="lines" quantity="2" reason="insignificant"/>
                 </p>
-                <p><pb n="1v" facs="prohd0001_1v.tif"/>or!! <lb/>sur l'or des Îles <lb/>voyez <del rendition="#s"><gap
-                            unit="words" quantity="1" reason="illegible"/></del> Peter <lb/>Martyr
+                <p><pb n="1v" facs="prohd0001_1v.tif"/>or!! <lb/>sur l'or des Îles <lb/>voyez <del rendition="#s"><gap unit="words" quantity="1" reason="illegible"/></del> Peter <lb/>Martyr
                     1533 <choice>
                         <abbr>p</abbr>
                         <expan>page</expan>
@@ -178,8 +171,7 @@
                         <corr cert="high">La</corr>
                     </choice> Jamaïque<supplied cert="high">,</supplied> Cube a reçu <lb/>de
                     1655-1787 .. 676276 <lb/>nègres.</p>
-                <p><note place="left" hand="#Humboldt, Alexander von">150<unclear reason="illegible"
-                            cert="low">0</unclear>
+                <p><note place="left" hand="#Humboldt, Alexander von">150<unclear reason="illegible" cert="low">0</unclear>
                         <lb/>900000 <lb/>7000000</note>schon 1769 in House of <lb/>representatifes
                     of Massachu<lb break="no"/>sets wurde gefragt (lange <lb/>vor Congress von Wien)
                     <lb/>"the <choice>
@@ -200,8 +192,7 @@
                     </choice> 1819 <choice>
                         <abbr>p</abbr>
                         <expan>page</expan>
-                    </choice> 312 <lb/>abschaffung <del rendition="#s"><gap unit="words"
-                            quantity="1" reason="illegible"/></del> des Handels <lb/>Virginie 1778
+                    </choice> 312 <lb/>abschaffung <del rendition="#s"><gap unit="words" quantity="1" reason="illegible"/></del> des Handels <lb/>Virginie 1778
                         <lb/>Pensylvanie<lb/>Connecticut<note place="right" hand="#author">R.
                             Wilber<lb break="no"/>force <lb/>Gallatin</note>
                     <lb/>Danemark <lb/>Amérique</p>
