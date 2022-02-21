@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0011">
     <teiHeader>
         <fileDesc>
@@ -70,10 +71,10 @@
             <classDecl>
                 <taxonomy xml:id="pb-taxonomy">
                     <category xml:id="genre">
+                        <category xml:id="correspondence"/>
                         <category xml:id="diaries"/>
                         <category xml:id="essays"/>
                         <category xml:id="notebooks"/>
-                        <category xml:id="correspondence"/>
                         <category xml:id="travelwriting"/>
                     </category>
                     <category xml:id="form">
@@ -81,19 +82,24 @@
                         <category xml:id="print"/>
                     </category>
                     <category xml:id="subjects">
+                        <category xml:id="administration"/>
                         <category xml:id="climatology"/>
+                        <category xml:id="coffee"/>
                         <category xml:id="colonialism"/>
                         <category xml:id="demography"/>
                         <category xml:id="economicconditions"/>
+                        <category xml:id="education"/>
+                        <category xml:id="emancipation"/>
+                        <category xml:id="factories"/>
                         <category xml:id="geography"/>
                         <category xml:id="medicine"/>
-                        <category xml:id="science"/>
                         <category xml:id="plantations"/>
-                        <category xml:id="coffee"/>
+                        <category xml:id="science"/>
+                        <category xml:id="scientificexpedition"/>
                         <category xml:id="sugar"/>
                         <category xml:id="slavery"/>
+                        <category xml:id="tobacco"/>
                         <category xml:id="trade"/>
-                        <category xml:id="emancipation"/>
                     </category>
                 </taxonomy>
             </classDecl>
@@ -113,7 +119,8 @@
                         <abbr>p</abbr>
                         <expan>page</expan>
                     </choice> 447.) <hi rendition="#uu">1800</hi>. 1801. </p>
-                <p>2. A ne croit pas que le contage se fixe aux <lb/>draps (ropas)<supplied cert="high">,</supplied> croit que le contage<lb/>ne se manifeste dans une
+                <p>2. A ne croit pas que le contage se fixe aux <lb/>draps (ropas)<supplied
+                        cert="high">,</supplied> croit que le contage<lb/>ne se manifeste dans une
                     personne quel<lb break="no"/>quefois que dans <hi rendition="#u">7-8</hi> mois
                     (contagia <lb/>dos del año anterior !) <choice>
                         <abbr>p</abbr>
@@ -126,7 +133,8 @@
                     <choice>
                         <abbr>j.</abbr>
                         <expan>jaune</expan>
-                    </choice> ca 1699.1741.1747 <lb/>1762.<hi rendition="#u">1793</hi>.1796<supplied cert="high">.</supplied>1797.1798 et puis <lb/>toujours. Il meurt à
+                    </choice> ca 1699.1741.1747 <lb/>1762.<hi rendition="#u">1793</hi>.1796<supplied
+                        cert="high">.</supplied>1797.1798 et puis <lb/>toujours. Il meurt à
                     Philadelphia au plus <lb/>3-4000 individ. de <choice>
                         <abbr>f.</abbr>
                         <expan>fièvre</expan>
