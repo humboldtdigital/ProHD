@@ -57,6 +57,9 @@
         "sugar": "Sugar",
         "trade": "Trade",
         "education": "Education",
-        "administration": "Administration"
+        "administration": "Administration",
+        "tobacco": "Tobacco",
+        "factories": "Factories",
+        "scientificexpedition": "Scientific expedition"
     }
 }

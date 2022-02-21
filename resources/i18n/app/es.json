@@ -58,6 +58,9 @@
         "sugar": "Azúcar",
         "trade": "Comercio",
         "education": "Educación",
-        "administration": "Administración"
+        "administration": "Administración",
+        "tobacco": "Tabaco",
+        "factories": "Fábricas",
+        "scientificexpedition": "Expedición científica"
     }
 }

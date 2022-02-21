@@ -58,6 +58,9 @@
         "sugar": "Zucker",
         "trade": "Handel",
         "education": "Fortbildung",
-        "administration": "Verwaltung"
+        "administration": "Verwaltung",
+        "tobacco": "Tabak",
+        "factories": "Fabriken",
+        "scientificexpedition": "Forschungsreisen"
     }
 }
