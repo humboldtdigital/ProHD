@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?teipublisher odd="docbook.odd" template="documentation.html" depth="5" fill="2" ?>
+<?teipublisher odd="docbook.odd" template="documentation.html" depth="3" ?>
 <?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?>
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
@@ -164,7 +164,6 @@
                      <tag>availability</tag> (disponibilidad).</para>
                </listitem>
             </itemizedlist>
-            
             Por ejemplo:
           <programlisting language="xml" xml:space="preserve"> 
             &lt;publicationStmt&gt;  
