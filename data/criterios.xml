@@ -96,10 +96,10 @@
           </list>
           <p>Si hay más de una editora o editor, se ha repetido el elemento <code>editor</code>.</p>
           <p>Se ha codificado de manera opcional en el atributo <code>@ref</code> la referencia a una
-            base de datos externa en forma de URI como, por ejemplo, VIAF u ORCID.
+            base de datos externa en forma de URL como, por ejemplo, VIAF u ORCID.
           <code> 
             &lt;editor&gt; 
-            &lt;persName ref="118763784"&gt;
+            &lt;persName ref="http://viaf.org/viaf/21973914"&gt;
               &lt;surname&gt;[Apellido]&lt;/surname&gt; 
               &lt;forename&gt;[Nombre]&lt;/forename&gt;
             &lt;/persName&gt; 
