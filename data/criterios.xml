@@ -67,14 +67,14 @@
           <p>Todas las ediciones se han identificado con un título principal. El título ha sido normalizado ortográficamente.</p>
           <p>En <seg type="code">//titleStmt</seg>, la codificación del título principal
             se ha realizado utilizando el elemento <seg type="code">title</seg> y el atributo <seg type="code">@type="main"</seg>. Por ejemplo:</p>
-          <ab type="codeblock">&lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La Habana&lt;/title&gt;
-          </ab>
+          <code>&lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La Habana&lt;/title&gt;
+          </code>
           <p>Tras el título principal, se ha incluido de manera opcional el título en otro idioma, con la ortografía original, un título alternativo o un subtítulo. Con este fin se puede repetir el elemento <seg type="code">title</seg> debajo del título principal y usar el
             atributo <seg type="code">@type="sub"</seg>:</p>
-          <ab type="codeblock">
+          <code>
             &lt;title type="main"&gt;Carta de Francisco de Arango y Parreño a Alexander von Humboldt&lt;/title&gt; 
             &lt;title type="sub" xml:lang="fr"&gt;À Monsieur Mr. le Baron A. Humboldt&lt;/title&gt; 
-          </ab>
+          </code>
           <p>Se ha utilizado de manera opcional el atributo <seg type="code">@xml:lang</seg> con un código estándar para indicar el idioma del título alternativo: "es" para el español, "fr" para el francés, "de" para el alemán, "en" para el inglés, etc.</p>
         </div>
         <div type="level2">
@@ -93,14 +93,14 @@
           <p>Si hay más de una editora o editor, se ha repetido el elemento <seg type="code">editor</seg>.</p>
           <p>Se ha codificado de manera opcional en el atributo <seg type="code">@ref</seg> la referencia a una
             base de datos externa en forma de URI como, por ejemplo, VIAF u ORCID.</p>
-          <ab type="codeblock"> 
+          <code> 
             &lt;editor&gt; 
             &lt;persName ref="118763784"&gt;
               &lt;surname&gt;[Apellido]&lt;/surname&gt; 
               &lt;forename&gt;[Nombre]&lt;/forename&gt;
             &lt;/persName&gt; 
             &lt;/editor&gt;
-          </ab>
+          </code>
           <p>Si en la edición han participado otras personas con tareas menores, se ha incluido el nombre de los colaboradores y colaboradoras con el elemento <seg type="code">respStmt</seg> (<quote rendition="#i">statement of responsibility</quote> –
             declaración de responsabilidad). Nuevamente, el nombre de la persona se ha añadido en el elemento <seg type="code">persName</seg>.</p>
           <list type="unordered">
@@ -118,7 +118,7 @@
           <p>El tipo de colaboración se ha definido detalladamente con el elemento <seg type="code">resp</seg> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
             elemento <seg type="code">note</seg> se ha definido el tipo de contribución: colaboración, colaboración editorial, transcripción, comentario o
             registros.</p>
-          <ab type="codeblock">
+          <code>
             &lt;respStmt&gt;  
             &lt;persName ref="http://viaf.org/viaf/21973914"&gt;
                &lt;surname&gt;[Apellido]&lt;/surname&gt; 
@@ -128,7 +128,7 @@
               &lt;note type="remarkResponsibility"&gt;colaboración&lt;/note&gt; 
             &lt;/resp&gt;
             &lt;/respStmt&gt;
-          </ab>
+          </code>
         </div>
         <div type="level2">
           <head>Financiación</head>
@@ -136,22 +136,22 @@
             tres entidades que financian el proyecto: Auswärtiges Amt, Fritz Thyssen Stiftung y
             Gerda Henkel Stiftung.</p>
           <p>En <seg type="code">//titleStmt</seg> se ha utilizado el elemento <seg type="code">funder</seg> de la siguiente manera:</p>
-          <ab type="codeblock">
+          <code>
             &lt;funder ref="https://www.auswaertiges-amt.de/de/"&gt;Auswärtiges Amt&lt;/funder&gt; 
             &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&gt;Fritz Thyssen Stiftung&lt;/funder&gt; 
             &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&gt;Gerda Henkel Stiftung&lt;/funder&gt;
-          </ab>
+          </code>
           <p>El elemento <seg type="code">funder</seg> lleva el atributo <seg type="code">@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras.</p>
         </div>
         <div type="level2">
           <head>Edición</head>
           <p>Todas las ediciones del proyecto mencionan el Proyecto Humboldt Digital y
             documentan la fecha de edición. Se ha codificado esta información sobre la edición con los elementos <seg type="code">editionStmt</seg> y <seg type="code">p</seg> de la siguiente manera:</p>
-          <ab type="codeblock"> 
+          <code> 
             &lt;editionStmt&gt;  
               &lt;p&gt;Proyecto Humboldt Digital (&lt;date&gt;2021&lt;/date&gt;)&lt;/p&gt;  
             &lt;/editionStmt&gt; 
-          </ab>
+          </code>
           <p>La fecha entre paréntesis corresponde al año de creación del documento TEI; es importante no confundir esta fecha con la fecha de creación de la fuente de la que deriva el texto.</p>
         </div>
         <div type="level2">
@@ -167,7 +167,7 @@
             </list>
             
             Por ejemplo:</p>
-          <ab type="codeblock"> 
+          <code> 
             &lt;publicationStmt&gt;  
              &lt;publisher&gt; 
               &lt;ref target="http://www.bbaw.de"&gt;Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)&lt;/ref&gt; 
@@ -178,7 +178,7 @@
              &lt;availability status="free"&gt;  
                 &lt;licence target="http://creativecommons.org/licenses/by/4.0/"&lt;Creative Commons Atribución 4.0 Internacional (CC BY 4.0) &lt;/licence&gt;  
              &lt;/availability&gt; 
-            &lt;/publicationStmt&gt;  </ab>
+            &lt;/publicationStmt&gt;  </code>
           <p>De manera opcional, se ha enriquecido la información sobre la entidad responsable de
             la publicación mediante el elemento <seg type="code">ref</seg> para proporcionar un hipervínculo a la web con el atributo <seg type="code">@target</seg>. Asimismo, de manera opcional, se ha utilizado el atributo <seg type="code">@ref</seg> en el elemento <seg type="code">pubPlace</seg> para identificar el lugar de publicación con un URI procedente de GeoNames.</p>
           <p>Los elementos <seg type="code">publisher</seg> y <seg type="code">pubPlace</seg> son
@@ -196,7 +196,7 @@
             identificador como una signatura.</p>
           <p>La descripción de la fuente se ha codificado con el elemento <seg type="code">msDesc</seg> (manuscript description). Dentro se ha utilizado el elemento <seg type="code">msIdentifier</seg> para proporcionar información sobre la institución que conserva el documento con el elemento <seg type="code">institution</seg> y la signatura con el elemento <seg type="code">idno</seg>, que lleva
             el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>. Se ha codificado este elemento <seg type="code">idno</seg> dentro de otro elemento <seg type="code">idno</seg> a fin de repetir tantos elementos <seg type="code">idno</seg> como sea necesario. De manera opcional, se ha incluido información sobre la colección con el elemento <seg type="code">collection</seg>. Por ejemplo:</p>
-          <ab type="codeblock"> 
+          <code> 
             &lt;msDesc type="copy"&gt; 
               &lt;msIdentifier&gt;
                &lt;institution&gt;[institución]&lt;/institution&gt;
@@ -206,18 +206,18 @@
                &lt;/idno&gt; 
               &lt;/msIdentifier&gt;
             &lt;/msDesc&gt; 
-          </ab>
+          </code>
           <p>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado una edición impresa, se ha codificado
             la información en <seg type="code">listWit</seg> y se ha utilizado el elemento <seg type="code">witness</seg>. Dentro se ha usado
             un elemento <seg type="code">bibl</seg> para codificar una referencia bibliográfica. En <seg type="code">bibl</seg> se ha utilizado
              el atributo <seg type="code">@type</seg> con el valor <seg type="code">print</seg> para distinguirlo de un manuscrito.</p>
           <p>Por ejemplo:</p>
-          <ab type="codeblock">
+          <code>
             &lt;witness&gt; 
               &lt;bibl type="print"&gt;Humboldt, Alexander von: Geografía de la plantas, ó Quadro físico de los Andes Equinoxiales, y de los paises
               vecinos. Semanario del Nuevo Reyno de Granada, volumen 16-21, 1809.&lt;/bibl&gt;
             &lt;/witness&gt;
-          </ab>
+          </code>
           <div type="level3">
             <head>Tipo de fuente textual</head>
             <p>La fuente de la que deriva el texto editado puede ser de diferentes
@@ -305,7 +305,7 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">&lt;msDesc rend="manuscript"&gt;</ab>
+            <code>&lt;msDesc rend="manuscript"&gt;</code>
           </div>
           <div type="level3">
             <head>URI del registro bibliográfico</head>
@@ -353,13 +353,13 @@
               </row>
             </table>
             <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> utilizando el atributo <seg type="code">@type</seg> con valor "uri" para los enlaces permanentes o bien "URLImages" para los facsímiles. Por ejemplo:</p>
-            <ab type="codeblock">
+            <code>
               &lt;idno&gt;
               &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
               &lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-1272345&lt;/idno&gt;
               &lt;idno type="URLImages"&gt;http://resolver.staatsbibliothek-berlin.de/SBB00015CC500000000&lt;/idno&gt;
               &lt;/idno&gt; 
-            </ab>
+            </code>
           </div>
         </div>
         <div type="level2">
@@ -367,10 +367,10 @@
           <p>Se han descrito las características físicas (papel, formato, número de páginas, etc.) de la fuente textual de la que deriva la edición de manera opcional.</p>
           <p>La descripción del documento se ha codificado con el elemento <seg type="code">physDesc</seg> (<quote rendition="#i">physical description</quote>, en español:
             descripción física). La descripción ha sido proporcionada como texto en un elemento <seg type="code">p</seg>:</p>
-          <ab type="codeblock">
+          <code>
             &lt;physDesc&gt; 
                 &lt;p&gt;La carta consiste en una hoja de papel blanco delgado en el formato …&lt;/p&gt; 
-            &lt;/physDesc&gt;</ab>
+            &lt;/physDesc&gt;</code>
         </div>
         <div type="level2">
           <head>Autor del texto</head>
@@ -380,25 +380,25 @@
           <p>El nombre del autor se ha codificado con el elemento <seg type="code">persName</seg>. <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades --> En caso
             de seleccionar el autor del registro de personas del proyecto, el ID asociado se ha generado en el
             atributo <seg type="code">@key</seg>, creando un enlace al registro.</p>
-          <ab type="codeblock">
+          <code>
             &lt;profileDesc&gt; 
              &lt;creation&gt;
                &lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;…
              &lt;/creation&gt; 
             &lt;/profileDesc&gt;
-          </ab>
+          </code>
           <p>Se ha respetado siempre el siguiente orden: primero el apellido y luego el nombre, separados por una coma. Si se
             conoce la fecha de nacimiento y fallecimiento, se ha incluido seguida del nombre y
             entre paréntesis como se muestra en el ejemplo.</p>
           <p>Cuando el autor es deconocido, se ha empleado el mismo elemento <seg type="code">persName</seg>, pero con el contenido "N.N." (Nomen nominandum). Por ejemplo:</p>
-          <ab type="codeblock">
+          <code>
             &lt;creation&gt;
               &lt;persName&gt;N.N.&lt;/persName&gt;
               &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
               &lt;date when="1804-04-10"&gt;10 de abril de 1804&lt;/date&gt;
               &lt;placeName key="https://www.geonames.org/3553478"&gt;La Habana&lt;/placeName&gt;
             &lt;/creation&gt;
-          </ab>
+          </code>
           <p>Siempre que han participado más de una persona en la creación del texto se ha repetido el elemento <seg type="code">persName</seg>.</p>
         </div>
         <div type="level2">
@@ -407,13 +407,13 @@
               <seg type="code">creation</seg>. Dentro de este elemento, se ha utilizado <seg type="code">placeName</seg> para codificar
             el nombre del lugar. <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades --> Si el lugar de escritura figura en el registro de lugares del proyecto, el ID
             asociado se ha incluido en el atributo <seg type="code">@key</seg>. Por ejemplo:</p>
-          <ab type="codeblock">
+          <code>
             &lt;profileDesc&gt; 
               &lt;creation&gt;
                 &lt;placeName key="ed_wz2_shs_qx"&gt;Madrid&lt;/placeName&gt;…
                &lt;/creation&gt;
             &lt;/profileDesc&gt;
-          </ab>
+          </code>
         </div>
         <div type="level2">
           <head>Fechas</head>
@@ -426,37 +426,37 @@
               <p>Fecha exacta</p>
             </item>
           </list>
-          <ab type="codeblock">
+          <code>
             &lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;
-          </ab>
+          </code>
           <list type="ordered:arabic">
             <item n="2">
               <p>Período de tiempo exacto</p>
             </item>
           </list>
-          <ab type="codeblock">
+          <code>
             &lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
             1731 al 11 de septiembre de 1741&lt;/date&gt;
-          </ab>
+          </code>
           <list type="ordered:arabic">
             <item n="3">
               <p>Período aproximado</p>
             </item>
           </list>
-          <ab type="codeblock">
+          <code>
             &lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera
             mitad de mayo de 1804&lt;/date&gt;
-          </ab>
+          </code>
           <p>Además, de manera opcional, se ha utilizado el atributo <seg type="code">@cert</seg> con los valores <seg type="code">high</seg> y <seg type="code">low</seg> para codificar la certeza con que se sabe si la fecha es correcta.</p>
         </div>
         <div type="level2">
           <head>Idioma</head>
           <p>En todas las ediciones del proyecto, se ha codificado el idioma principal del texto. En <seg type="code">profileDesc</seg>, se ha utilizado el
             elemento <seg type="code">langUsage</seg>. Allí se ha anidado el elemento <seg type="code">language</seg> para codificar el idioma o lengua. Por ejemplo:</p>
-          <ab type="codeblock">
+          <code>
             &lt;langUsage&gt; 
                &lt;language ident="es"&gt;Español&lt;/language&gt;
-            &lt;/langUsage&gt; </ab>
+            &lt;/langUsage&gt; </code>
           <p>Se ha utilizado el atributo <seg type="code">@ident</seg> para identificar con un
             código estandarizado el idioma: "es" para el español, "de" para el alemán, "en" para el
             inglés, "fr" para el francés, etc.</p>
@@ -469,11 +469,11 @@
             intelectual del texto, los temas, las ideas discutidas, etc.</p>
           <p>El resumen se ha codificado con <seg type="code">//profileDesc/abstract</seg> en un
             elemento <seg type="code">p</seg> de la siguiente manera:</p>
-          <ab type="codeblock">
+          <code>
             &lt;abstract xml:lang="es"&gt; 
                &lt;p&gt;Notas de Humboldt sobre la obra de Jean Nicolas Berthe "Précis Historique de la Maladie qui a régné dans l’Andalousie en 1800". Humboldt resume las tesis del trabajo de Berthe en preparación de su tratado
             científico sobre la fiebre amarilla. La obra de Berthe fue publicada en 1802.&lt;/p&gt;
-            &lt;/abstract&gt; </ab>
+            &lt;/abstract&gt; </code>
           <p>Se ha proporcionado el resumen en español y en alemán. Se ha repetido el
             elemento <seg type="code">abstract</seg> y se ha utilizado el atributo <seg type="code">@xml:lang</seg> con un código estandarizado de dos caracteres: "es" para el español y "de" para el alemán.</p>
         </div>
@@ -482,14 +482,14 @@
           <p>En <seg type="code">//profileDesc</seg> se ha utilizado el elemento <seg type="code">textClass</seg> para incluir distintas categorías con las que clasificar
             el texto editado. Las categorías utilizadas son: género, forma y materia(s). Para ello,
             se ha utilizado el elemento <seg type="code">catRef</seg> con los atributos <seg type="code">@scheme</seg> y <seg type="code">@target</seg>. Por ejemplo:</p>
-          <ab type="codeblock">
+          <code>
             &lt;textClass&gt; 
                &lt;catRef scheme="#genre" target="#notebooks"/&gt;
                &lt;catRef scheme="#form" target="#manuscript"/&gt; 
                &lt;catRef scheme="#subject" target="#slavery"/&gt;
                &lt;catRef scheme="#subject" target="#geography"/&gt; 
                &lt;catRef scheme="#subject" target="#sugar"/&gt;
-            &lt;/textClass&gt; </ab>
+            &lt;/textClass&gt; </code>
           <p>Las tres categorías son repetibles y opcionales. Todas las categorías se han definido previamente en la taxonomía del proyecto situada
             en el elemento <seg type="code">taxonomy</seg>.</p>
           <p>En la medida de lo posible, se han utilizado términos procedentes de la Library of Congress y de otras bibliotecas nacionales como la Deutsche Nationalbibliothek y la Biblioteca Nacional de España.</p>
@@ -515,7 +515,7 @@
               de aparecer un separador en la fuente original, no se ha transcrito como tal sino que se ha codificado como <seg type="code">
                 <g ref="#typoHyphen"/>
               </seg>. Por ejmplo:</p>
-            <ab type="codeblock">y le añadí al propio titi&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</ab>
+            <code>y le añadí al propio titi&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</code>
           </div>
           <div type="level3">
             <head>Foliación y paginación</head>
@@ -527,15 +527,15 @@
                 <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
               contiene el número de página o folio (según la secuencia física del documento o del
               autor).</p>
-            <ab type="codeblock">
+            <code>
               distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano
-              </ab>
+              </code>
             <p>La digitalización del folio o página se ha codificado con el atributo <seg type="code">@facs</seg> (facsimile). Se ha codificado el nombre del fichero de la imagen
               digital incluyendo la foliación archivística y la extensión "tif". El nombre del fichero corresponde a un URI, es decir, es único en el dossier digital. Por
               ejemplo:</p>
-            <ab type="codeblock">&lt;n="1r" facs="prohd0014_1r.tif"/&gt;</ab>
+            <code>&lt;n="1r" facs="prohd0014_1r.tif"/&gt;</code>
             <p>Cualquier otra información sobre la numeración o paginación contenida en la fuente se ha codificado con el elemento <seg type="code">fw</seg> (forme work); este elemento lleva el atributo <seg type="code">@type</seg> con el valor <seg type="code">folNum</seg>.</p>
-            <ab type="codeblock">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</ab>
+            <code>&lt;fw type="folNum"&gt;34&lt;/fw&gt;</code>
           </div>
           <div type="level3">
             <head>Páginas en blanco</head>
@@ -549,8 +549,8 @@
               Este se ha utilizado justo después del salto de página (<seg type="code">pb/</seg>)
               anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg> del elemento <seg type="code">gap/</seg> llevan los
               valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando hay más de una página en blanco seguida, se han codificado cada una de ellas individualmente.</p>
-            <ab type="codeblock">
-            &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</ab>
+            <code>
+            &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</code>
           </div>
           <div type="level3">
             <head>Espacios en blanco</head>
@@ -565,22 +565,22 @@
                 (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code">unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
               puede determinar de manera segura, se ha utilizado el valor <seg type="code">1</seg> en
                 <seg type="code">@quantity</seg>. Por ejemplo:</p>
-            <ab type="codeblock">
+            <code>
             sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur 
-            </ab>
+            </code>
           </div>
           <div type="level3">
             <head>Listas</head>
             <p>Las listas se han codificado con el elemento <seg type="code">list</seg>. Los puntos o líneas individuales se han transcrito en un elemento <seg type="code">item</seg>. La numeración existente (también con letras) no se ha codificado de manera independiente, sino que se ha transcrito dentro del
               elemento <seg type="code">item</seg>.</p>
-            <ab type="codeblock">
+            <code>
             &lt;list&gt; 
               &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt; 
               &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;mais quand le
               Capucin est islado = 10750 mètres.&lt;/item&gt; 
               &lt;item&gt;Orinoco près du Baraguan 889 t.&lt;/item&gt; 
               &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I. vieja de Montica.&lt;/item&gt; 
-            &lt;/list&gt;</ab>
+            &lt;/list&gt;</code>
           </div>
           <div type="level3">
             <head>Tablas</head>
@@ -591,7 +591,7 @@
                 se asemejan a listas.</p>
             <p>Las tablas se han codificado con el elemento <seg type="code">table</seg>. Se ha
               asignado a la primera fila de la tabla el atributo <seg type="code">@role="label"</seg> para que se consideren como encabezados. Por ejemplo:</p>
-            <ab type="codeblock">
+            <code>
             &lt;table rows="3" cols="2"&gt; 
               &lt;head&gt;Tabla&lt;/head&gt;
               &lt;row role="label"&gt; 
@@ -601,13 +601,13 @@
                &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; 
                &lt;cell&gt;[Columna 2/ Fila 1]&lt;/cell&gt; 
               &lt;/row&gt; … 
-            &lt;/table&gt;</ab>
+            &lt;/table&gt;</code>
           </div>
           <div type="level3">
             <head>Alineación de texto</head>
             <p>En las tablas y en el inicio de una carta, se ha codificado la alineación del texto de manera opcional. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <seg type="code">@rendition</seg> con el
               valor <seg type="code">#right</seg> en el elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code">dateline</seg>.</p>
-            <ab type="codeblock"> 
+            <code> 
             &lt;table cols="4" rows="20" rend="drawn"&gt; 
              &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
              &lt;row role="label"&gt; 
@@ -629,7 +629,7 @@
               &lt;cell rendition="#right"&gt;13.&lt;/cell&gt; 
              &lt;/row&gt; 
              &lt;!--[…]--&gt;
-            &lt;/table&gt;</ab>
+            &lt;/table&gt;</code>
           </div>
           <div type="level3">
             <head>Notas</head>
@@ -640,7 +640,7 @@
               general (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
               indicar que el texto ha sido introducido por el autor y no por los editores.</p>
             <p>Las notas se han codificado con el elemento <seg type="code">note</seg>:</p>
-            <ab type="codeblock">En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</ab>
+            <code>En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</code>
             <p>Cuando es posible identificar al autor de la nota, se ha codificado esta información con el atributo <seg type="code">@hand</seg>:</p>
             <table>
               <row role="label">
@@ -767,12 +767,12 @@
               nombre del fichero se ha codificado con el atributo <seg type="code">@facs</seg>. Los
               comentarios editoriales que se refieren a la imagen en sí se han codificado con el elemento
               hijo <seg type="code">note</seg>.</p>
-            <ab type="codeblock">
+            <code>
             &lt;figure facs="dibujo" hand="#addressee"&gt; 
              &lt;p&gt;[Título de la figura]&lt;/p&gt; 
              &lt;figDesc&gt;[Descripción de la imagen por el editor]&lt;/figDesc&gt; 
              &lt;note type="editorial"&gt;[Comentario editorial]&lt;/note&gt; 
-            &lt;/figure&gt;</ab>
+            &lt;/figure&gt;</code>
           </div>
         </div>
         <div type="level2" xml:id="intervenciones-autoriales">
@@ -823,13 +823,13 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</ab>
+            <code>Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</code>
             <p>Si un párrafo completo aparece en la fuente destacado con una marca en el margen, se ha codificado con el elemento <seg type="code">p</seg> y el atributo <seg type="code">@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
           </div>
           <div type="level3">
             <head>Superscript</head>
             <p>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto a la línea) en la fuente textual se han codificado con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg type="code">@rendition</seg> con valor <seg type="code">#sup</seg>. Por ejemplo:</p>
-            <ab type="codeblock">ap.&lt;hi rendition="#sup"&gt;do&lt;/hi&gt;</ab>
+            <code>ap.&lt;hi rendition="#sup"&gt;do&lt;/hi&gt;</code>
           </div>
           <div type="level3">
             <head>Eliminaciones</head>
@@ -876,7 +876,7 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">Conocen ya estos vecinos la esplendidez en la mesa, las viviendas, muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</ab>
+            <code>Conocen ya estos vecinos la esplendidez en la mesa, las viviendas, muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</code>
           </div>
           <div type="level3">
             <head>Adiciones</head>
@@ -973,7 +973,7 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">[…] y logré para el Comercio con estranjeros, los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</ab>
+            <code>[…] y logré para el Comercio con estranjeros, los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</code>
             <p>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado con el elemento <seg type="code">metamark/</seg>. La forma de la marca de inserción (asterisco, número, etc.) no se ha especificado.</p>
           </div>
                     <div type="level3">
@@ -1094,11 +1094,11 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">en donde manifies&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;t 
+            <code>en donde manifies&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;t 
             &lt;subst&gt; 
               &lt;del rendition="#ow"&gt;a&lt;/del&gt; 
               &lt;add place="across"&gt;o&lt;/add&gt; 
-            &lt;/subst&gt; con la mayor claridad</ab>
+            &lt;/subst&gt; con la mayor claridad</code>
           </div>
         </div>
         <div type="level2" xml:id="intervenciones-editoriales">
@@ -1108,27 +1108,27 @@
           <head>Normalizaciones</head>
           <p>La ortografía, puntuación, mayúsculas y separación de las palabras se han normalizado de manera explícita con el elemento <seg type="code">choice</seg> y sus dos elementos hijos <seg type="code">orig</seg> (forma original) y <seg type="code">reg</seg> (forma regulizada). En el elemento <seg type="code">orig</seg> se ha codificado la forma
           original tal y como aparece en la fuente textual mientras que en el elemento <seg type="code">reg</seg> se ha codificado la forma regularizada, es decir, modernizada a la normal ortográfica actual para facilitar la legibilidad del texto. Por ejemplo:</p>
-          <ab type="codeblock">
+          <code>
           &lt;choice&gt; 
               &lt;orig&gt;espendiendo&lt;/orig&gt;
               &lt;reg&gt;expendiendo&lt;/reg&gt; 
           &lt;/choice&gt;
-          </ab>
+          </code>
           <p>Siempre se han codificado las palabras enteras aun cuando solamente se regularice una grafía o una tilde tal y como se muestra en el ejemplo anterior.</p>
           <p>Se ha seguido el mismo método de codificación con la normalización de la mayúscula. Por ejemplo:</p>
-          <ab type="codeblock">
+          <code>
           &lt;choice&gt; 
               &lt;orig&gt;ensayo político&lt;/orig&gt;
               &lt;reg&gt;Ensayo Político&lt;/reg&gt; 
           &lt;/choice&gt;
-          </ab>
+          </code>
           <p>El mismo método de normalización se ha aplicado a contracciones o uniones de palabras. Por ejemplo:</p>
-          <ab type="codeblock">
+          <code>
           &lt;choice&gt; 
               &lt;orig&gt;dela&lt;/orig&gt;
               &lt;reg&gt;de la&lt;/reg&gt; 
           &lt;/choice&gt;
-          </ab>
+          </code>
           </div>
           <div type="level3">
             <head>Abreviaturas</head>
@@ -1136,12 +1136,12 @@
               y sus dos elementos hijo <seg type="code">abbr</seg> (abreviatura) y <seg type="code">expan</seg> (abreviatura resuelta).
               En el elemento <seg type="code">abbr</seg> la abreviatura se ha codificado conservando la forma
               abreviada que aparece en la fuente textual mientras que en el elemento <seg type="code">expan</seg> las y los editoras han proporcionado la forma resuelta o expandida para facilitar la legibilidad del texto.</p>
-            <ab type="codeblock">
+            <code>
             &lt;choice&gt; 
               &lt;abbr&gt;q&lt;/abbr&gt;
               &lt;expan&gt;que&lt;/expan&gt; 
             &lt;/choice&gt;
-            </ab>
+            </code>
             <p>Las siglas se han codificado como abreviaturas siguiendo el mismo método con <seg type="code">choice</seg>.</p>
           </div>
           <div type="level3">
@@ -1179,7 +1179,7 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">30 de julio de &lt;supplied cert="high"&gt;18&lt;/supplied&gt;27</ab>
+            <code>30 de julio de &lt;supplied cert="high"&gt;18&lt;/supplied&gt;27</code>
           </div>
           <div type="level3">
             <head>Errores y correcciones</head>
@@ -1229,12 +1229,12 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">
+            <code>
               &lt;choice&gt;
                 &lt;sic&gt;Humbold&lt;/sic&gt;
                 &lt;corr cert="high"&gt;Humboldt&lt;/corr&gt;
               &lt;/choice&gt;
-              </ab>
+              </code>
            <p>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha empleado el mismo elemento <seg type="code">choice</seg> para codificar la palabra errónea con <seg type="code">sic</seg>. Ahora bien, en estos casos no se ha proporcionado una forma corregida sino que se ha utilizado el elemento <seg type="code">corr</seg> y se ha dejado vacío. Además, se ha utilizado el atributo <seg type="code">type</seg> con valor "deleted" para indicar que se ha eliminado una palabra redundante.</p>   
           </div>
           <div type="level3">
@@ -1304,7 +1304,7 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">&lt;unclear reason="illegible" cert="high"&gt;año&lt;/unclear&gt;</ab>
+            <code>&lt;unclear reason="illegible" cert="high"&gt;año&lt;/unclear&gt;</code>
           </div>
           <div type="level3">
             <head>Texto ilegible</head>
@@ -1407,14 +1407,14 @@
             </table>
             <p>En el atributo <seg type="code">@quantity</seg>, se ha codificado el número de caracteres,
               líneas, etc. ilegibles.</p>
-            <ab type="codeblock">&lt;gap reason="illegible" unit="words" quantity="3"/&gt;</ab>
+            <code>&lt;gap reason="illegible" unit="words" quantity="3"/&gt;</code>
             <p>Si un carácter (o cadena de caracteres) está tachado y no se puede descifrar, se
               ha codificado tanto con <seg type="code">del</seg> como con <seg type="code">gap/</seg>:</p>
-            <ab type="codeblock"> &lt;del rendition="#s"&gt; &lt;gap reason="illegible" unit="chars"
-              quantity="5"/&gt; &lt;/del&gt;</ab>
+            <code> &lt;del rendition="#s"&gt; &lt;gap reason="illegible" unit="chars"
+              quantity="5"/&gt; &lt;/del&gt;</code>
             <p>Por último, también se han codificado individualmente las páginas destruidas o perdidas.</p>
-            <ab type="codeblock">&lt;pb n="1r"/&gt; &lt;gap reason="lost" unit="pages"
-              quantity="1"/&gt;</ab>
+            <code>&lt;pb n="1r"/&gt; &lt;gap reason="lost" unit="pages"
+              quantity="1"/&gt;</code>
           </div>
           <div type="level3">
             <head>Omisiones</head>
@@ -1508,35 +1508,35 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt;
-              entonces de nuevo</ab>
+            <code>a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt;
+              entonces de nuevo</code>
           </div>
           <div type="level3">
             <head>Comentarios</head>
             <p>Los comentarios editoriales se han codificado con el elemento <seg type="code">seg</seg>
               (arbitrary segment). A su vez, se han anidado dos elementos: por un lado, <seg type="code">orig</seg> con el que se ha codificado el pasaje textual comentado; por el otro
               lado, <seg type="code">note</seg> con el que se ha codificado el comentario editorial en sí. Se ha utilizado el atributo <seg type="code">@type</seg> en <seg type="code">seg</seg> con el valor <seg type="code">comment</seg>.</p>
-            <ab type="codeblock">
+            <code>
               &lt;seg type="comment"&gt; 
                 &lt;orig&gt;Discurso del héroe&lt;/orig&gt; 
                 &lt;note&gt;Comentario irónico que alude a...&lt;/note&gt;
               &lt;/seg&gt;
-              </ab>
+              </code>
           </div>
           <div type="level3">
             <head>Referencias</head>
             <p>Las referencias a otras ediciones o pasajes internos se han codificado con el elemento
                 <seg type="code">ref</seg>, cuyo atributo <seg type="code">@target</seg> contiene el
               ID único de la edición o del pasaje de destino. Por ejemplo:</p>
-            <ab type="codeblock">&lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una referencia]&lt;/ref&gt;</ab>
+            <code>&lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una referencia]&lt;/ref&gt;</code>
             <p>Además, en algunas ocasiones, con <seg type="code">ref</seg> se han codificado referencias a sitios web externos, por ejemplo, en algún comentario editorial. En este caso, la URL completa del
               sitio web se ha codificado en el atributo <seg type="code">@target</seg>.</p>
-            <ab type="codeblock">
+            <code>
             &lt;seg type="comment"&gt; 
               &lt;orig&gt;el río&lt;/orig&gt;
               &lt;note xml:id="nxlm_bhy_ny"&gt;&lt;ref target="http://www.kallilope.de/beispiel"/&gt;&lt;/note&gt; 
             &lt;/seg&gt;
-            </ab>
+            </code>
           </div>
           <div type="level3">
             <head>Fechas</head>
@@ -1548,19 +1548,19 @@
                 <p>Fecha exacta</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;</ab>
+            <code>&lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;</code>
             <list type="ordered:arabic">
               <item n="2">
                 <p>Período de tiempo exacto</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731 al 11 de septiembre de 1741&lt;/date&gt;</ab>
+            <code>&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731 al 11 de septiembre de 1741&lt;/date&gt;</code>
             <list type="ordered:arabic">
               <item n="3">
                 <p>Período aproximado</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</ab>
+            <code>&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</code>
             <p>Además, de manera opcional, en el atributo <seg type="code">@cert</seg> se ha especificado la certeza: <seg type="code">high</seg>, <seg type="code">low</seg>.</p>
             <p>Más ejemplos:</p>
             <table>
@@ -1738,9 +1738,9 @@
               </row>
             </table>
             <p>Asimismo, se ha expresado el nivel de certeza, aproximación, período, etc. en el contenido del elemento mediante lenguaje natural. Por ejemplo:</p>
-            <ab type="codeblock">
+            <code>
               &lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
-            </ab>
+            </code>
           </div>
           <div type="level3">
             <head>Palabras en otro idioma</head>
@@ -1838,7 +1838,7 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock">Das &lt;lb/&gt;2te und 3te &lt;foreign xml:lang="es"&gt;vela&lt;/foreign&gt; Rufen machte sichtbar weniger Eindruk.</ab>
+            <code>Das &lt;lb/&gt;2te und 3te &lt;foreign xml:lang="es"&gt;vela&lt;/foreign&gt; Rufen machte sichtbar weniger Eindruk.</code>
           </div>
           <div type="level3">
             <head>Personas, lugares y organizaciones</head>
@@ -1859,7 +1859,7 @@
               </item>
             </list>
             <p>Se ha codificado con el atributo <seg type="code">@key</seg> un identificador único (URI) correspondiente a del registro del proyecto o bien al de algún recurso de autoridades externo como VIAF, GND o GeoNames. Por ejemplo:</p>
-            <ab type="codeblock"> Mr. &lt;persName key="H0012737"&gt;James Arnold&lt;/persName&gt;</ab>
+            <code> Mr. &lt;persName key="H0012737"&gt;James Arnold&lt;/persName&gt;</code>
           </div>
         </div>
       </div>
@@ -1871,16 +1871,16 @@
             <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <seg type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg type="code">correspAction</seg> (correspondence action) para el proceso de envío y
               el de recepción respectivamente. Con el atributo <seg type="code">@type</seg> se ha especificado
               el tipo del acto de comunicación; los valores permitidos son dos: <seg type="code">sent</seg> o <seg type="code">received</seg>.</p>
-            <ab type="codeblock">
+            <code>
             &lt;correspDesc&gt; 
               &lt;correspAction type="sent"&gt;[Información sobre el remitente]&lt;/correspAction&gt; 
               &lt;correspAction type="received"&gt;[Información sobre el destinatario]&lt;/correspAction&gt;
-            &lt;/correspDesc&gt;</ab>
+            &lt;/correspDesc&gt;</code>
             <p>Dentro del elemento <seg type="code">correspAction</seg>, se han utilizado los
               elementos <seg type="code">persName</seg>, <seg type="code">orgName</seg>, <seg type="code">placeName</seg> y <seg type="code">date</seg> para identificar la persona u organización que participa en el intercambio, el lugar en que sucede y la fecha. Siempre que ha sido posible, la información sobre
               personas, organizaciones y lugares se ha vinculado con el ID codificado en el atributo <seg type="code">@key</seg>. Esta información puede indicarse tanto para el remitente como para el
               destinatario.</p>
-            <ab type="codeblock">
+            <code>
             &lt;correspDesc&gt; 
               &lt;correspAction type="sent"&gt; 
                 &lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
@@ -1890,7 +1890,7 @@
               &lt;correspAction type="received"&gt; 
                 &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt; 
               &lt;/correspAction&gt;
-            &lt;/correspDesc&gt;</ab>
+            &lt;/correspDesc&gt;</code>
             <p>Las fechas se han codificado con el elemento <seg type="code">date</seg> siguiendo el
               formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg type="code">AAAA</seg>, dependiendo de la información disponible) en los atributos
                 <seg type="code">@when</seg>, <seg type="code">@from</seg>/<seg type="code">@to</seg> o <seg type="code">@notBefore</seg>/<seg type="code">@notAfter</seg>. Además, en el atributo <seg type="code">@cert</seg> se han utilizado los valores <seg type="code">high</seg> y <seg type="code">low</seg> para indicar la certeza sobre la fecha. Por ejemplo:</p>
@@ -1899,58 +1899,58 @@
                 <p>Fecha exacta</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;</ab>
+            <code>&lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;</code>
             <list type="ordered:arabic">
               <item n="2">
                 <p>Período de tiempo exacto</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731 al 11 de septiembre de 1741&lt;/date&gt;</ab>
+            <code>&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731 al 11 de septiembre de 1741&lt;/date&gt;</code>
             <list type="ordered:arabic">
               <item n="3">
                 <p>Período aproximado</p>
               </item>
             </list>
-            <ab type="codeblock">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</ab>
+            <code>&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</code>
             <p>Cuando no se ha podido determinar las fechas de envío o recepción, se ha codificado una nota explicativa en <seg type="code">correspDesc</seg> con el elemento hijo <seg type="code">note</seg>. Por ejemplo:</p>
-            <ab type="codeblock">
+            <code>
             &lt;correspDesc&gt; … 
               &lt;note&gt;No se puede determinar la fecha de recepción.&lt;/note&gt; 
-            &lt;/correspDesc&gt;</ab>
+            &lt;/correspDesc&gt;</code>
         </div>
           <div type="level2">
             <head>Dirección postal</head>
             <p>La dirección postal de una carta se ha codificado en el elemento <seg type="code">opener</seg> (inicio
               de la carta) o en el <seg type="code">closer</seg> (cierre de la carta). Consta del
               elemento padre <seg type="code">address</seg> y uno o varios elementos hijos <seg type="code">addrLine</seg>.</p>
-            <ab type="codeblock">
+            <code>
             &lt;opener&gt; 
               &lt;address&gt; 
                 &lt;addrLine&gt;Berlin, Kronenstraße 6&lt;/addrLine&gt; 
               &lt;/address&gt; 
             &lt;/opener&gt;
-            </ab>
+            </code>
           </div>
           <div type="level2">
             <head>Inicio de la carta</head>
             <p>El inicio de la carta se ha codificado con el elemento <seg type="code">opener</seg>. Dentro, si los hubiera, se ha codificado la fecha y el saludo con los elementos <seg type="code">dateline</seg> y <seg type="code">salute</seg> respectivamente.</p>
             <p>En el elemento <seg type="code">dateline</seg> se ha utilizado el atributo <seg type="code">@rend</seg> si la fecha está sangrada o alineada a la derecha. Por ejemplo:</p>
-            <ab type="codeblock">
+            <code>
             &lt;opener&gt; 
               &lt;dateline rend="align(right)"&gt;30 de julio de 1827&lt;/dateline&gt; 
               &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
-            &lt;/opener&gt;</ab>
+            &lt;/opener&gt;</code>
           </div>
           <div type="level2">
             <head>Actos de escritura</head>
             <p>Los actos de escritura se han codificado con el elemento <seg type="code">div</seg> con dos atributos: por un lado, el atributo <seg type="code">@type</seg> debe llevar el valor <seg type="code">writingSession</seg>; por el otro, <seg type="code">@n</seg> debe indicar el número del acto de escritura.</p>
-            <ab type="codeblock"> 
+            <code> 
             &lt;div type="writingSession"&gt; 
               &lt;p&gt;[Primer acto de escritura]&lt;/p&gt; 
             &lt;/div&gt; 
             &lt;div type="writingSession" n="2"&gt;
               &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt; 
-            &lt;/div&gt;</ab>
+            &lt;/div&gt;</code>
           </div>
           <div type="level2">
             <head>Cierre de la carta</head>
@@ -1991,25 +1991,25 @@
               </row>
             </table>
             <p>Por ejemplo:</p>
-            <ab type="codeblock"> 
+            <code> 
             &lt;closer rend="paragraph"&gt; 
               &lt;salute&gt;Muchos saludos&lt;/salute&gt; 
               &lt;signed&gt;F. E.&lt;/signed&gt; 
-            &lt;/closer&gt;</ab>
+            &lt;/closer&gt;</code>
             <p>Si hubiera una fecha en el cierre de la carta, se ha codificado en el elemento <seg type="code">closer</seg> con <seg type="code">dateline</seg>.</p>
-            <ab type="codeblock"> 
+            <code> 
             &lt;closer rend="paragraph"&gt; 
               &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt; 
               &lt;!-- […] --&gt; 
-            &lt;/closer&gt;</ab>
+            &lt;/closer&gt;</code>
           </div>
           <div type="level2">
             <head>Posdata</head>
             <p>La posdata se ha codificado después del <seg type="code">closer</seg> con el elemento <seg type="code">postcript</seg>. La posdata siempre contiene al menos un párrafo (<seg type="code">p</seg>).</p>
-            <ab type="codeblock">
+            <code>
             &lt;postscript&gt; 
               &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
-            &lt;/postscript&gt;</ab>
+            &lt;/postscript&gt;</code>
           </div>
       </div>
     </body>
