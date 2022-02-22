@@ -544,11 +544,11 @@
             <para>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente textual con un elemento (vacío) <tag>lb/</tag> (line beginning). El elemento <tag>lb/</tag> se ha utilizado al <emphasis role="bold">comienzo</emphasis> de la línea, tal y como determinan las directrices
               TEI.</para>
             <para>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
-              atributo <tag>@break</tag> y el valor <tag>no</tag>. En caso
-              de aparecer un separador en la fuente original, no se ha transcrito como tal sino que se ha codificado como <programlisting language="xml" xml:space="preserve">
-                &lt;g ref="#typoHyphen"/&gt;
-              </programlisting>. Por ejmplo:
-              <programlisting language="xml" xml:space="preserve">y le añadí al propio titi&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</programlisting>
+               atributo <tag>@break</tag> y el valor <tag>no</tag>. En caso de aparecer un separador
+               en la fuente original, no se ha transcrito como tal sino que se ha codificado como
+               <programlisting language="xml" xml:space="preserve">&lt;g ref="#typoHyphen"/&gt;             </programlisting>.
+               Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">y le añadí al propio titi&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</programlisting>
             </para>
           </section>
           <section>
