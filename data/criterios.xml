@@ -114,13 +114,13 @@
             </item>
           </list>
           <p>En el atributo <seg type="code">@ref</seg> también se ha codificado de manera opcional la referencia a
-            una base de datos externa en forma de URI como VIAF u ORCID.</p>
+            una base de datos externa como VIAF u ORCID en forma de URL.</p>
           <p>El tipo de colaboración se ha definido detalladamente con el elemento <seg type="code">resp</seg> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
             elemento <seg type="code">note</seg> se ha definido el tipo de contribución: colaboración, colaboración editorial, transcripción, comentario o
             registros.</p>
           <ab type="codeblock">
             &lt;respStmt&gt;  
-              &lt;persName ref="118763784"&gt;
+            &lt;persName ref="http://viaf.org/viaf/21973914"&gt;
                &lt;surname&gt;[Apellido]&lt;/surname&gt; 
                &lt;forename&gt;[Nombre]&lt;/forename&gt;
               &lt;/persName&gt; 
@@ -218,148 +218,149 @@
               vecinos. Semanario del Nuevo Reyno de Granada, volumen 16-21, 1809.&lt;/bibl&gt;
             &lt;/witness&gt;
           </ab>
-        </div>
-        <div type="level2">
-          <head>Tipo de fuente textual</head>
-          <p>La fuente de la que deriva el texto editado puede ser de diferentes
-            tipos:</p>
-          <list type="unordered">
-            <item>
-              <p>Manuscrito</p>
-            </item>
-            <item>
-              <p>Copia</p>
-            </item>
-            <item>
-              <p>Borrador</p>
-            </item>
-            <item>
-              <p>Impreso</p>
-            </item>
-          </list>
-          <p>Cuando se utilizan más de una fuente textual, se ha seleccionado <hi rendition="#i">un único</hi> documento como base textual. Los demás testimonios
-            textuales se han mencionado explícitamente en la edición sólo en los lugares que transmiten
-            variantes mediante un comentario editorial.</p>
-          <p>Si la existencia y el contenido de un documento se han deducido con la ayuda de otros
-            documentos, no hay base textual. En tal caso, en el elemento <seg type="code">msDesc</seg>, se ha codificado el tipo de fuente textual con el
-            atributo <seg type="code">@rend</seg>. Para ello se ha escogido entre los siguientes
-            valores:</p>
-          <table>
-            <row role="label">
-              <cell>
-                <p>Tipo de fuente textual</p>
-              </cell>
-              <cell>
-                <p>Valor para <seg type="code">@rend</seg>
-                </p>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <p>Desarrollado</p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">notExtant</seg>
-                </p>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <p>Borrador</p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">concept</seg>
-                </p>
-              </cell>
-            </row>
-            <row>
-              <cell>
+          <div type="level3">
+            <head>Tipo de fuente textual</head>
+            <p>La fuente de la que deriva el texto editado puede ser de diferentes
+              tipos:</p>
+            <list type="unordered">
+              <item>
                 <p>Manuscrito</p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">manuscript</seg>
-                </p>
-              </cell>
-            </row>
-            <row>
-              <cell>
+              </item>
+              <item>
                 <p>Copia</p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">copy</seg>
-                </p>
-              </cell>
-            </row>
-            <row>
-              <cell>
+              </item>
+              <item>
+                <p>Borrador</p>
+              </item>
+              <item>
                 <p>Impreso</p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">print</seg>
-                </p>
-              </cell>
-            </row>
-          </table>
-          <p>Por ejemplo:</p>
-          <ab type="codeblock">&lt;msDesc rend="manuscript"&gt;</ab>
-        </div>
-        <div type="level2">
-          <head>URI del registro bibliográfico</head>
-          <p>Las fuentes documentales se identifican tradicionalmente con una signatura. Dado que
-            las signaturas solo pueden ser identificadas parcialmente por máquinas, siempre que sea posible, se ha añadido un URI si se conoce o está disponible. El URI es un identificador de recursos
-            uniforme (del inglés <quote rendition="#i">Uniform Resource Identifier</quote>). El
-            identificador está estandarizado (<ref target="https://tools.ietf.org/html/rfc3986">RFC
-              3986</ref>) y es legible por una máquina, ya que únicamente se compone de ciertos
-            símbolos (especialmente los espacios en blanco no están permitidos).</p>
-          <p>Siempre que ha sido posible se ha utilizado un URI para conectar el texto editado con el registro bibliográfico del repositorio digital del proyecto.</p>
-          <table>
-            <row role="label">
-              <cell>
-                <p>Nombre del elemento</p>
-              </cell>
-              <cell>
-                <p>Punto de inserción</p>
-              </cell>
-              <cell>
-                <p>Atributo</p>
-              </cell>
-              <cell>
-                <p>Contenido del elemento</p>
-              </cell>
-            </row>
-            <row>
-              <cell>
-                <p>
-                  <seg type="code">idno</seg>
-                </p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">//msIdentifier/idno/idno</seg>
-                </p>
-              </cell>
-              <cell>
-                <p>
-                  <seg type="code">@type="uri"</seg>
-                </p>
-              </cell>
-              <cell>
-                <p>[URI]</p>
-              </cell>
-            </row>
-          </table>
-          <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> utilizando el atributo <seg type="code">@type</seg> con valor "uri". Por ejemplo:</p>
-          <ab type="codeblock">
-            &lt;idno&gt;
-                &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
-                &lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-1272345&lt;/idno&gt;
-            &lt;/idno&gt; 
-          </ab>
+              </item>
+            </list>
+            <p>Cuando se utilizan más de una fuente textual, se ha seleccionado <hi rendition="#i">un único</hi> documento como base textual. Los demás testimonios
+              textuales se han mencionado explícitamente en la edición sólo en los lugares que transmiten
+              variantes mediante un comentario editorial.</p>
+            <p>Si la existencia y el contenido de un documento se han deducido con la ayuda de otros
+              documentos, no hay base textual. En tal caso, en el elemento <seg type="code">msDesc</seg>, se ha codificado el tipo de fuente textual con el
+              atributo <seg type="code">@rend</seg>. Para ello se ha escogido entre los siguientes
+              valores:</p>
+            <table>
+              <row role="label">
+                <cell>
+                  <p>Tipo de fuente textual</p>
+                </cell>
+                <cell>
+                  <p>Valor para <seg type="code">@rend</seg>
+                  </p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>Desarrollado</p>
+                </cell>
+                <cell>
+                  <p>
+                    <seg type="code">notExtant</seg>
+                  </p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>Borrador</p>
+                </cell>
+                <cell>
+                  <p>
+                    <seg type="code">concept</seg>
+                  </p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>Manuscrito</p>
+                </cell>
+                <cell>
+                  <p>
+                    <seg type="code">manuscript</seg>
+                  </p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>Copia</p>
+                </cell>
+                <cell>
+                  <p>
+                    <seg type="code">copy</seg>
+                  </p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>Impreso</p>
+                </cell>
+                <cell>
+                  <p>
+                    <seg type="code">print</seg>
+                  </p>
+                </cell>
+              </row>
+            </table>
+            <p>Por ejemplo:</p>
+            <ab type="codeblock">&lt;msDesc rend="manuscript"&gt;</ab>
+          </div>
+          <div type="level3">
+            <head>URI del registro bibliográfico</head>
+            <p>Las fuentes documentales se identifican tradicionalmente con una signatura. Dado que
+              las signaturas solo pueden ser identificadas parcialmente por máquinas, siempre que sea posible, se ha añadido un URI si se conoce o está disponible. El URI es un identificador de recursos
+              uniforme (del inglés <quote rendition="#i">Uniform Resource Identifier</quote>). El
+              identificador está estandarizado (<ref target="https://tools.ietf.org/html/rfc3986">RFC
+                3986</ref>) y es legible por una máquina, ya que únicamente se compone de ciertos
+              símbolos (especialmente los espacios en blanco no están permitidos).</p>
+            <p>Siempre que ha sido posible se ha utilizado un URI para conectar el texto editado con el registro bibliográfico del repositorio digital del proyecto.</p>
+            <table>
+              <row role="label">
+                <cell>
+                  <p>Nombre del elemento</p>
+                </cell>
+                <cell>
+                  <p>Punto de inserción</p>
+                </cell>
+                <cell>
+                  <p>Atributo</p>
+                </cell>
+                <cell>
+                  <p>Contenido del elemento</p>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  <p>
+                    <seg type="code">idno</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>
+                    <seg type="code">//msIdentifier/idno/idno</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>
+                    <seg type="code">@type="uri"</seg>
+                  </p>
+                </cell>
+                <cell>
+                  <p>[URI]</p>
+                </cell>
+              </row>
+            </table>
+            <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> utilizando el atributo <seg type="code">@type</seg> con valor "uri" para los enlaces permanentes o bien "URLImages" para los facsímiles. Por ejemplo:</p>
+            <ab type="codeblock">
+              &lt;idno&gt;
+              &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
+              &lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-1272345&lt;/idno&gt;
+              &lt;idno type="URLImages"&gt;http://resolver.staatsbibliothek-berlin.de/SBB00015CC500000000&lt;/idno&gt;
+              &lt;/idno&gt; 
+            </ab>
+          </div>
         </div>
         <div type="level2">
           <head>Descripción del documento</head>
@@ -389,6 +390,16 @@
           <p>Se ha respetado siempre el siguiente orden: primero el apellido y luego el nombre, separados por una coma. Si se
             conoce la fecha de nacimiento y fallecimiento, se ha incluido seguida del nombre y
             entre paréntesis como se muestra en el ejemplo.</p>
+          <p>Cuando el autor es deconocido, se ha empleado el mismo elemento <seg type="code">persName</seg>, pero con el contenido "N.N." (Nomen nominandum). Por ejemplo:</p>
+          <ab type="code">
+            &lt;creation&gt;
+              &lt;persName&gt;N.N.&lt;/persName&gt;
+              &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
+              &lt;date when="1804-04-10"&gt;10 de abril de 1804&lt;/date&gt;
+              &lt;placeName key="https://www.geonames.org/3553478"&gt;La Habana&lt;/placeName&gt;
+            &lt;/creation&gt;
+          </ab>
+          <p>Siempre que han participado más de una persona en la creación del texto se ha repetido el elemento <seg type="code">persName</seg>.</p>
         </div>
         <div type="level2">
           <head>Lugar de escritura</head>
@@ -469,7 +480,7 @@
         <div type="level2">
           <head>Categorización</head>
           <p>En <seg type="code">//profileDesc</seg> se ha utilizado el elemento <seg type="code">textClass</seg> para incluir distintas categorías con las que clasificar
-            el texto editado. Las categorías utilizadas son: género, forma y tema(s). Para ello,
+            el texto editado. Las categorías utilizadas son: género, forma y materia(s). Para ello,
             se ha utilizado el elemento <seg type="code">catRef</seg> con los atributos <seg type="code">@scheme</seg> y <seg type="code">@target</seg>. Por ejemplo:</p>
           <ab type="code">
             &lt;textClass&gt; 
@@ -481,6 +492,7 @@
             &lt;/textClass&gt; </ab>
           <p>Las tres categorías son repetibles y opcionales. Todas las categorías se han definido previamente en la taxonomía del proyecto situada
             en el elemento <seg type="code">taxonomy</seg>.</p>
+          <p>En la medida de lo posible, se han utilizado términos procedentes de la Library of Congress y de otras bibliotecas nacionales como la Deutsche Nationalbibliothek y la Biblioteca Nacional de España.</p>
         </div>
       </div>
       <div type="level1" xml:id="texto">
@@ -500,11 +512,10 @@
               TEI.</p>
             <p>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
               atributo <seg type="code">@break</seg> y el valor <seg type="code">no</seg>. En caso
-              de aparecer un separador en la fuente original, se ha codificado como <seg type="code">
+              de aparecer un separador en la fuente original, no se ha transcrito como tal sino que se ha codificado como <seg type="code">
                 <g ref="#typoHyphen"/>
-              </seg>.</p>
-            <ab type="codeblock">Los molinos fueron víctimas de una ma&lt;lb break="no"/&gt;za
-              enorme de aguas detenidas</ab>
+              </seg>. Por ejmplo:</p>
+            <ab type="codeblock">y le añadí al propio titi&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</ab>
           </div>
           <div type="level3">
             <head>Foliación y paginación</head>
@@ -519,11 +530,11 @@
             <ab type="codeblock">
               distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano
               </ab>
-            <p>La digitalización del folio o página se ha codificado con el atributo <seg type="code">@facs</seg> (facsimile). Como regla general solo se ha codificado el nombre del fichero de la imagen
-              digital; el nombre del fichero corresponde a un URI. Por
+            <p>La digitalización del folio o página se ha codificado con el atributo <seg type="code">@facs</seg> (facsimile). Se ha codificado el nombre del fichero de la imagen
+              digital incluyendo la foliación archivística y la extensión "tif". El nombre del fichero corresponde a un URI, es decir, es único en el dossier digital. Por
               ejemplo:</p>
-            <ab type="codeblock">&lt;n="1r" facs="787980595-0001"/&gt;</ab>
-            <p>Cualquier otra información sobre la numeración contenida en la fuente se ha codificado con el elemento <seg type="code">fw</seg> (forme work); este elemento lleva el atributo <seg type="code">@type</seg> con el valor <seg type="code">folNum</seg>.</p>
+            <ab type="codeblock">&lt;n="1r" facs="prohd0014_1r.tif"/&gt;</ab>
+            <p>Cualquier otra información sobre la numeración o paginación contenida en la fuente se ha codificado con el elemento <seg type="code">fw</seg> (forme work); este elemento lleva el atributo <seg type="code">@type</seg> con el valor <seg type="code">folNum</seg>.</p>
             <ab type="codeblock">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</ab>
           </div>
           <div type="level3">
@@ -1726,6 +1737,10 @@
                 </cell>
               </row>
             </table>
+            <p>Asimismo, se ha expresado el nivel de certeza, aproximación, período, etc. en el contenido del elemento mediante lenguaje natural. Por ejemplo:</p>
+            <ab type="code">
+              &lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
+            </ab>
           </div>
           <div type="level3">
             <head>Palabras en otro idioma</head>
