@@ -65,33 +65,33 @@
         <div type="level2">
           <head>Título</head>
           <p>Todas las ediciones se han identificado con un título principal. El título ha sido normalizado ortográficamente.</p>
-          <p>En <seg type="code">//titleStmt</seg>, la codificación del título principal
-            se ha realizado utilizando el elemento <seg type="code">title</seg> y el atributo <seg type="code">@type="main"</seg>. Por ejemplo:
+          <p>En <code>//titleStmt</code>, la codificación del título principal
+            se ha realizado utilizando el elemento <code>title</code> y el atributo <code>@type="main"</code>. Por ejemplo:
           <code>&lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La Habana&lt;/title&gt;
           </code></p>
-          <p>Tras el título principal, se ha incluido de manera opcional el título en otro idioma, con la ortografía original, un título alternativo o un subtítulo. Con este fin se puede repetir el elemento <seg type="code">title</seg> debajo del título principal y usar el
-            atributo <seg type="code">@type="sub"</seg>:
+          <p>Tras el título principal, se ha incluido de manera opcional el título en otro idioma, con la ortografía original, un título alternativo o un subtítulo. Con este fin se puede repetir el elemento <code>title</code> debajo del título principal y usar el
+            atributo <code>@type="sub"</code>:
           <code>
             &lt;title type="main"&gt;Carta de Francisco de Arango y Parreño a Alexander von Humboldt&lt;/title&gt; 
             &lt;title type="sub" xml:lang="fr"&gt;À Monsieur Mr. le Baron A. Humboldt&lt;/title&gt; 
           </code></p>
-          <p>Se ha utilizado de manera opcional el atributo <seg type="code">@xml:lang</seg> con un código estándar para indicar el idioma del título alternativo: "es" para el español, "fr" para el francés, "de" para el alemán, "en" para el inglés, etc.</p>
+          <p>Se ha utilizado de manera opcional el atributo <code>@xml:lang</code> con un código estándar para indicar el idioma del título alternativo: "es" para el español, "fr" para el francés, "de" para el alemán, "en" para el inglés, etc.</p>
         </div>
         <div type="level2">
           <head>Editores y colaboradores</head>
-          <p>En el elemento <seg type="code">//titleStmt</seg>, se han identificado los responsables de la edición con el elemento <seg type="code">editor</seg>. El nombre de la persona se ha codificado con <seg type="code">persName</seg> y los siguientes elementos:</p>
+          <p>En el elemento <code>//titleStmt</code>, se han identificado los responsables de la edición con el elemento <code>editor</code>. El nombre de la persona se ha codificado con <code>persName</code> y los siguientes elementos:</p>
           <list type="unordered">
             <item>
-              <p>Apellido: <seg type="code">surname</seg>
+              <p>Apellido: <code>surname</code>
               </p>
             </item>
             <item>
-              <p>Nombre: <seg type="code">forename</seg>
+              <p>Nombre: <code>forename</code>
               </p>
             </item>
           </list>
-          <p>Si hay más de una editora o editor, se ha repetido el elemento <seg type="code">editor</seg>.</p>
-          <p>Se ha codificado de manera opcional en el atributo <seg type="code">@ref</seg> la referencia a una
+          <p>Si hay más de una editora o editor, se ha repetido el elemento <code>editor</code>.</p>
+          <p>Se ha codificado de manera opcional en el atributo <code>@ref</code> la referencia a una
             base de datos externa en forma de URI como, por ejemplo, VIAF u ORCID.
           <code> 
             &lt;editor&gt; 
@@ -102,22 +102,22 @@
             &lt;/editor&gt;
           </code>
           </p>
-          <p>Si en la edición han participado otras personas con tareas menores, se ha incluido el nombre de los colaboradores y colaboradoras con el elemento <seg type="code">respStmt</seg> (<quote rendition="#i">statement of responsibility</quote> –
-            declaración de responsabilidad). Nuevamente, el nombre de la persona se ha añadido en el elemento <seg type="code">persName</seg>.</p>
+          <p>Si en la edición han participado otras personas con tareas menores, se ha incluido el nombre de los colaboradores y colaboradoras con el elemento <code>respStmt</code> (<quote rendition="#i">statement of responsibility</quote> –
+            declaración de responsabilidad). Nuevamente, el nombre de la persona se ha añadido en el elemento <code>persName</code>.</p>
           <list type="unordered">
             <item>
-              <p>Apellido: <seg type="code">surname</seg>
+              <p>Apellido: <code>surname</code>
               </p>
             </item>
             <item>
-              <p>Nombre: <seg type="code">forename</seg>
+              <p>Nombre: <code>forename</code>
               </p>
             </item>
           </list>
-          <p>En el atributo <seg type="code">@ref</seg> también se ha codificado de manera opcional la referencia a
+          <p>En el atributo <code>@ref</code> también se ha codificado de manera opcional la referencia a
             una base de datos externa como VIAF u ORCID en forma de URL.</p>
-          <p>El tipo de colaboración se ha definido detalladamente con el elemento <seg type="code">resp</seg> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
-            elemento <seg type="code">note</seg> se ha definido el tipo de contribución: colaboración, colaboración editorial, transcripción, comentario o
+          <p>El tipo de colaboración se ha definido detalladamente con el elemento <code>resp</code> (<quote rendition="#i">responsibility</quote> – responsabilidad). En un
+            elemento <code>note</code> se ha definido el tipo de contribución: colaboración, colaboración editorial, transcripción, comentario o
             registros.
           <code>
             &lt;respStmt&gt;  
@@ -136,18 +136,18 @@
           <p>Tras el nombre del editor o editora, se han identificado las
             tres entidades que financian el proyecto: Auswärtiges Amt, Fritz Thyssen Stiftung y
             Gerda Henkel Stiftung.</p>
-          <p>En <seg type="code">//titleStmt</seg> se ha utilizado el elemento <seg type="code">funder</seg> de la siguiente manera:
+          <p>En <code>//titleStmt</code> se ha utilizado el elemento <code>funder</code> de la siguiente manera:
           <code>
             &lt;funder ref="https://www.auswaertiges-amt.de/de/"&gt;Auswärtiges Amt&lt;/funder&gt; 
             &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&gt;Fritz Thyssen Stiftung&lt;/funder&gt; 
             &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&gt;Gerda Henkel Stiftung&lt;/funder&gt;
           </code></p>
-          <p>El elemento <seg type="code">funder</seg> lleva el atributo <seg type="code">@ref</seg> con un hipervínculo a la web de las tres entidades financiadoras.</p>
+          <p>El elemento <code>funder</code> lleva el atributo <code>@ref</code> con un hipervínculo a la web de las tres entidades financiadoras.</p>
         </div>
         <div type="level2">
           <head>Edición</head>
           <p>Todas las ediciones del proyecto mencionan el Proyecto Humboldt Digital y
-            documentan la fecha de edición. Se ha codificado esta información sobre la edición con los elementos <seg type="code">editionStmt</seg> y <seg type="code">p</seg> de la siguiente manera:
+            documentan la fecha de edición. Se ha codificado esta información sobre la edición con los elementos <code>editionStmt</code> y <code>p</code> de la siguiente manera:
           <code> 
             &lt;editionStmt&gt;  
               &lt;p&gt;Proyecto Humboldt Digital (&lt;date&gt;2021&lt;/date&gt;)&lt;/p&gt;  
@@ -159,12 +159,12 @@
           <head>Publicación y licencia</head>
           <p>En todas las ediciones se ha codificado información sobre las organizaciones responsables de la distribución y
             publicación de las ediciones, los lugares de publicación y la licencia.</p>
-          <p>Para ello se ha utilizado el elemento <seg type="code">publicationStmt</seg>.
+          <p>Para ello se ha utilizado el elemento <code>publicationStmt</code>.
             Dentro de este elemento, se han utilizado tres elementos anidados: 
             <list type="unordered">
-              <item><seg type="code">publisher</seg> (entidad que publica la edición), </item>
-              <item><seg type="code">pubPlace</seg> (lugar de publicación) y</item>
-              <item><seg type="code">availability</seg> (disponibilidad).</item>
+              <item><code>publisher</code> (entidad que publica la edición), </item>
+              <item><code>pubPlace</code> (lugar de publicación) y</item>
+              <item><code>availability</code> (disponibilidad).</item>
             </list>
             
             Por ejemplo:
@@ -181,12 +181,12 @@
              &lt;/availability&gt; 
              &lt;/publicationStmt&gt;</code></p>
           <p>De manera opcional, se ha enriquecido la información sobre la entidad responsable de
-            la publicación mediante el elemento <seg type="code">ref</seg> para proporcionar un hipervínculo a la web con el atributo <seg type="code">@target</seg>. Asimismo, de manera opcional, se ha utilizado el atributo <seg type="code">@ref</seg> en el elemento <seg type="code">pubPlace</seg> para identificar el lugar de publicación con un URI procedente de GeoNames.</p>
-          <p>Los elementos <seg type="code">publisher</seg> y <seg type="code">pubPlace</seg> son
+            la publicación mediante el elemento <code>ref</code> para proporcionar un hipervínculo a la web con el atributo <code>@target</code>. Asimismo, de manera opcional, se ha utilizado el atributo <code>@ref</code> en el elemento <code>pubPlace</code> para identificar el lugar de publicación con un URI procedente de GeoNames.</p>
+          <p>Los elementos <code>publisher</code> y <code>pubPlace</code> son
             repetibles, es decir, es posible incluir más de una entidad y lugar de publicación, pero
             la información sobre la disponibilidad del fichero no es repetible.</p>
-          <p>El elemento <seg type="code">availability</seg>, con un atributo <seg type="code">@status="free"</seg>, contiene a su vez un elemento <seg type="code">licence</seg> con información sobre la licencia de la edición
-            digital; se ha utilizado el atributo <seg type="code">@target</seg> para dar la URL de la licencia.</p>
+          <p>El elemento <code>availability</code>, con un atributo <code>@status="free"</code>, contiene a su vez un elemento <code>licence</code> con información sobre la licencia de la edición
+            digital; se ha utilizado el atributo <code>@target</code> para dar la URL de la licencia.</p>
           <p>En todas las ediciones del proyecto, se ha utilizado la licencia "Creative Commons
             Atribución 4.0 Internacional (CC BY 4.0)".</p>
         </div>
@@ -195,8 +195,8 @@
           <p>En todas las ediciones del proyecto se ha codificado la fuente de la que deriva el
             texto, el nombre de la institución en la que se conserva el documento y al menos un
             identificador como una signatura.</p>
-          <p>La descripción de la fuente se ha codificado con el elemento <seg type="code">msDesc</seg> (manuscript description). Dentro se ha utilizado el elemento <seg type="code">msIdentifier</seg> para proporcionar información sobre la institución que conserva el documento con el elemento <seg type="code">institution</seg> y la signatura con el elemento <seg type="code">idno</seg>, que lleva
-            el atributo <seg type="code">@type</seg> con el valor <seg type="code">shelfmark</seg>. Se ha codificado este elemento <seg type="code">idno</seg> dentro de otro elemento <seg type="code">idno</seg> a fin de repetir tantos elementos <seg type="code">idno</seg> como sea necesario. De manera opcional, se ha incluido información sobre la colección con el elemento <seg type="code">collection</seg>. Por ejemplo:
+          <p>La descripción de la fuente se ha codificado con el elemento <code>msDesc</code> (manuscript description). Dentro se ha utilizado el elemento <code>msIdentifier</code> para proporcionar información sobre la institución que conserva el documento con el elemento <code>institution</code> y la signatura con el elemento <code>idno</code>, que lleva
+            el atributo <code>@type</code> con el valor <code>shelfmark</code>. Se ha codificado este elemento <code>idno</code> dentro de otro elemento <code>idno</code> a fin de repetir tantos elementos <code>idno</code> como sea necesario. De manera opcional, se ha incluido información sobre la colección con el elemento <code>collection</code>. Por ejemplo:
           <code> 
             &lt;msDesc type="copy"&gt; 
               &lt;msIdentifier&gt;
@@ -209,9 +209,9 @@
             &lt;/msDesc&gt; 
           </code></p>
           <p>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado una edición impresa, se ha codificado
-            la información en <seg type="code">listWit</seg> y se ha utilizado el elemento <seg type="code">witness</seg>. Dentro se ha usado
-            un elemento <seg type="code">bibl</seg> para codificar una referencia bibliográfica. En <seg type="code">bibl</seg> se ha utilizado
-             el atributo <seg type="code">@type</seg> con el valor <seg type="code">print</seg> para distinguirlo de un manuscrito.</p>
+            la información en <code>listWit</code> y se ha utilizado el elemento <code>witness</code>. Dentro se ha usado
+            un elemento <code>bibl</code> para codificar una referencia bibliográfica. En <code>bibl</code> se ha utilizado
+             el atributo <code>@type</code> con el valor <code>print</code> para distinguirlo de un manuscrito.</p>
           <p>Por ejemplo:
           <code>
             &lt;witness&gt; 
@@ -241,8 +241,8 @@
               textuales se han mencionado explícitamente en la edición sólo en los lugares que transmiten
               variantes mediante un comentario editorial.</p>
             <p>Si la existencia y el contenido de un documento se han deducido con la ayuda de otros
-              documentos, no hay base textual. En tal caso, en el elemento <seg type="code">msDesc</seg>, se ha codificado el tipo de fuente textual con el
-              atributo <seg type="code">@rend</seg>. Para ello se ha escogido entre los siguientes
+              documentos, no hay base textual. En tal caso, en el elemento <code>msDesc</code>, se ha codificado el tipo de fuente textual con el
+              atributo <code>@rend</code>. Para ello se ha escogido entre los siguientes
               valores:</p>
             <table>
               <row role="label">
@@ -250,7 +250,7 @@
                   <p>Tipo de fuente textual</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rend</seg>
+                  <p>Valor para <code>@rend</code>
                   </p>
                 </cell>
               </row>
@@ -260,7 +260,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notExtant</seg>
+                    <code>notExtant</code>
                   </p>
                 </cell>
               </row>
@@ -270,7 +270,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">concept</seg>
+                    <code>concept</code>
                   </p>
                 </cell>
               </row>
@@ -280,7 +280,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">manuscript</seg>
+                    <code>manuscript</code>
                   </p>
                 </cell>
               </row>
@@ -290,7 +290,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">copy</seg>
+                    <code>copy</code>
                   </p>
                 </cell>
               </row>
@@ -300,7 +300,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">print</seg>
+                    <code>print</code>
                   </p>
                 </cell>
               </row>
@@ -335,17 +335,17 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">idno</seg>
+                    <code>idno</code>
                   </p>
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">//msIdentifier/idno/idno</seg>
+                    <code>//msIdentifier/idno/idno</code>
                   </p>
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">@type="uri"</seg>
+                    <code>@type="uri"</code>
                   </p>
                 </cell>
                 <cell>
@@ -353,7 +353,7 @@
                 </cell>
               </row>
             </table>
-            <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <seg type="code">idno</seg> utilizando el atributo <seg type="code">@type</seg> con valor "uri" para los enlaces permanentes o bien "URLImages" para los facsímiles. Por ejemplo:
+            <p>Se ha utilizado el elemento &lt;idno&gt; como parte del elemento &lt;msIdentifier&gt; y como elemento hijo de otro <code>idno</code> utilizando el atributo <code>@type</code> con valor "uri" para los enlaces permanentes o bien "URLImages" para los facsímiles. Por ejemplo:
             <code>
               &lt;idno&gt;
               &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
@@ -366,8 +366,8 @@
         <div type="level2">
           <head>Descripción del documento</head>
           <p>Se han descrito las características físicas (papel, formato, número de páginas, etc.) de la fuente textual de la que deriva la edición de manera opcional.</p>
-          <p>La descripción del documento se ha codificado con el elemento <seg type="code">physDesc</seg> (<quote rendition="#i">physical description</quote>, en español:
-            descripción física). La descripción ha sido proporcionada como texto en un elemento <seg type="code">p</seg>:
+          <p>La descripción del documento se ha codificado con el elemento <code>physDesc</code> (<quote rendition="#i">physical description</quote>, en español:
+            descripción física). La descripción ha sido proporcionada como texto en un elemento <code>p</code>:
           <code>
             &lt;physDesc&gt; 
                 &lt;p&gt;La carta consiste en una hoja de papel blanco delgado en el formato …&lt;/p&gt; 
@@ -377,11 +377,11 @@
         <div type="level2">
           <head>Autor del texto</head>
           <p>Si se conoce quién es autor del texto, esta información se ha codificado en el elemento
-              <seg type="code">profileDesc</seg>. Allí, se ha creado un elemento <seg type="code">creation</seg> donde se han codificado los datos sobre la creación: autor, lugar de
+              <code>profileDesc</code>. Allí, se ha creado un elemento <code>creation</code> donde se han codificado los datos sobre la creación: autor, lugar de
             escritura y fecha de creación.</p>
-          <p>El nombre del autor se ha codificado con el elemento <seg type="code">persName</seg>. <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades --> En caso
+          <p>El nombre del autor se ha codificado con el elemento <code>persName</code>. <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades --> En caso
             de seleccionar el autor del registro de personas del proyecto, el ID asociado se ha generado en el
-            atributo <seg type="code">@key</seg>, creando un enlace al registro.
+            atributo <code>@key</code>, creando un enlace al registro.
           <code>
             &lt;profileDesc&gt; 
              &lt;creation&gt;
@@ -392,7 +392,7 @@
           <p>Se ha respetado siempre el siguiente orden: primero el apellido y luego el nombre, separados por una coma. Si se
             conoce la fecha de nacimiento y fallecimiento, se ha incluido seguida del nombre y
             entre paréntesis como se muestra en el ejemplo.</p>
-          <p>Cuando el autor es deconocido, se ha empleado el mismo elemento <seg type="code">persName</seg>, pero con el contenido "N.N." (Nomen nominandum). Por ejemplo:
+          <p>Cuando el autor es deconocido, se ha empleado el mismo elemento <code>persName</code>, pero con el contenido "N.N." (Nomen nominandum). Por ejemplo:
           <code>
             &lt;creation&gt;
               &lt;persName&gt;N.N.&lt;/persName&gt;
@@ -401,14 +401,14 @@
               &lt;placeName key="https://www.geonames.org/3553478"&gt;La Habana&lt;/placeName&gt;
             &lt;/creation&gt;
           </code></p>
-          <p>Siempre que han participado más de una persona en la creación del texto se ha repetido el elemento <seg type="code">persName</seg>.</p>
+          <p>Siempre que han participado más de una persona en la creación del texto se ha repetido el elemento <code>persName</code>.</p>
         </div>
         <div type="level2">
           <head>Lugar de escritura</head>
-          <p>Si se conoce el lugar de escritura, se ha codificado también en el elemento <seg type="code">profileDesc</seg>. Allí, si aún no existiera uno, se ha creado un elemento
-              <seg type="code">creation</seg>. Dentro de este elemento, se ha utilizado <seg type="code">placeName</seg> para codificar
+          <p>Si se conoce el lugar de escritura, se ha codificado también en el elemento <code>profileDesc</code>. Allí, si aún no existiera uno, se ha creado un elemento
+              <code>creation</code>. Dentro de este elemento, se ha utilizado <code>placeName</code> para codificar
             el nombre del lugar. <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades --> Si el lugar de escritura figura en el registro de lugares del proyecto, el ID
-            asociado se ha incluido en el atributo <seg type="code">@key</seg>. Por ejemplo:
+            asociado se ha incluido en el atributo <code>@key</code>. Por ejemplo:
           <code>
             &lt;profileDesc&gt; 
               &lt;creation&gt;
@@ -419,8 +419,8 @@
         </div>
         <div type="level2">
           <head>Fechas</head>
-          <p>Si se conoce la fecha de creación, se ha codificado con el elemento <seg type="code">date</seg> respetando el formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg type="code">AAAA</seg>, dependiendo de la información
-            disponible) y utilizando los atributos <seg type="code">@when</seg>, <seg type="code">@from</seg>/<seg type="code">@to</seg> o <seg type="code">@notBefore</seg>/<seg type="code">@notAfter</seg>. Esto permite que el programa o aplicación web utilice
+          <p>Si se conoce la fecha de creación, se ha codificado con el elemento <code>date</code> respetando el formato <code>AAAA-MM-DD</code> (o <code>AA-MM</code> o <code>AAAA</code>, dependiendo de la información
+            disponible) y utilizando los atributos <code>@when</code>, <code>@from</code>/<code>@to</code> o <code>@notBefore</code>/<code>@notAfter</code>. Esto permite que el programa o aplicación web utilice
             estos datos para buscar información en un periodo
             concreto de tiempo o filtrar los documentos a partir de la fecha estandarizada.
           <list type="ordered:arabic">
@@ -450,41 +450,41 @@
             mitad de mayo de 1804&lt;/date&gt;
           </code>
           </p> 
-          <p>Además, de manera opcional, se ha utilizado el atributo <seg type="code">@cert</seg> con los valores <seg type="code">high</seg> y <seg type="code">low</seg> para codificar la certeza con que se sabe si la fecha es correcta.</p>
+          <p>Además, de manera opcional, se ha utilizado el atributo <code>@cert</code> con los valores <code>high</code> y <code>low</code> para codificar la certeza con que se sabe si la fecha es correcta.</p>
         </div>
         <div type="level2">
           <head>Idioma</head>
-          <p>En todas las ediciones del proyecto, se ha codificado el idioma principal del texto. En <seg type="code">profileDesc</seg>, se ha utilizado el
-            elemento <seg type="code">langUsage</seg>. Allí se ha anidado el elemento <seg type="code">language</seg> para codificar el idioma o lengua. Por ejemplo:
+          <p>En todas las ediciones del proyecto, se ha codificado el idioma principal del texto. En <code>profileDesc</code>, se ha utilizado el
+            elemento <code>langUsage</code>. Allí se ha anidado el elemento <code>language</code> para codificar el idioma o lengua. Por ejemplo:
           <code>
             &lt;langUsage&gt; 
                &lt;language ident="es"&gt;Español&lt;/language&gt;
               &lt;/langUsage&gt; </code></p>
-          <p>Se ha utilizado el atributo <seg type="code">@ident</seg> para identificar con un
+          <p>Se ha utilizado el atributo <code>@ident</code> para identificar con un
             código estandarizado el idioma: "es" para el español, "de" para el alemán, "en" para el
             inglés, "fr" para el francés, etc.</p>
           <p>Si el texto contiene partes sustanciales en otros idiomas, se ha repetido
-            elemento <seg type="code">language</seg>.</p>
+            elemento <code>language</code>.</p>
         </div>
         <div type="level2">
           <head>Resumen</head>
           <p>En todas las ediciones del proyecto, se ha proporcionado un resumen del contenido
             intelectual del texto, los temas, las ideas discutidas, etc.</p>
-          <p>El resumen se ha codificado con <seg type="code">//profileDesc/abstract</seg> en un
-            elemento <seg type="code">p</seg> de la siguiente manera:
+          <p>El resumen se ha codificado con <code>//profileDesc/abstract</code> en un
+            elemento <code>p</code> de la siguiente manera:
           <code>
             &lt;abstract xml:lang="es"&gt; 
                &lt;p&gt;Notas de Humboldt sobre la obra de Jean Nicolas Berthe "Précis Historique de la Maladie qui a régné dans l’Andalousie en 1800". Humboldt resume las tesis del trabajo de Berthe en preparación de su tratado
             científico sobre la fiebre amarilla. La obra de Berthe fue publicada en 1802.&lt;/p&gt;
             &lt;/abstract&gt; </code></p>
           <p>Se ha proporcionado el resumen en español y en alemán. Se ha repetido el
-            elemento <seg type="code">abstract</seg> y se ha utilizado el atributo <seg type="code">@xml:lang</seg> con un código estandarizado de dos caracteres: "es" para el español y "de" para el alemán.</p>
+            elemento <code>abstract</code> y se ha utilizado el atributo <code>@xml:lang</code> con un código estandarizado de dos caracteres: "es" para el español y "de" para el alemán.</p>
         </div>
         <div type="level2">
           <head>Categorización</head>
-          <p>En <seg type="code">//profileDesc</seg> se ha utilizado el elemento <seg type="code">textClass</seg> para incluir distintas categorías con las que clasificar
+          <p>En <code>//profileDesc</code> se ha utilizado el elemento <code>textClass</code> para incluir distintas categorías con las que clasificar
             el texto editado. Las categorías utilizadas son: género, forma y materia(s). Para ello,
-            se ha utilizado el elemento <seg type="code">catRef</seg> con los atributos <seg type="code">@scheme</seg> y <seg type="code">@target</seg>. Por ejemplo:
+            se ha utilizado el elemento <code>catRef</code> con los atributos <code>@scheme</code> y <code>@target</code>. Por ejemplo:
           <code>
             &lt;textClass&gt; 
                &lt;catRef scheme="#genre" target="#notebooks"/&gt;
@@ -494,7 +494,7 @@
                &lt;catRef scheme="#subject" target="#sugar"/&gt;
                &lt;/textClass&gt; </code></p>
           <p>Las tres categorías son repetibles y opcionales. Todas las categorías se han definido previamente en la taxonomía del proyecto situada
-            en el elemento <seg type="code">taxonomy</seg>.</p>
+            en el elemento <code>taxonomy</code>.</p>
           <p>En la medida de lo posible, se han utilizado términos procedentes de la Library of Congress y de otras bibliotecas nacionales como la Deutsche Nationalbibliothek y la Biblioteca Nacional de España.</p>
         </div>
       </div>
@@ -507,17 +507,17 @@
             <head>Párrafos</head>
             <p>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional se ha codificado el sangrado
               de los párrafos si la editora o editor considera dicha información relevante.</p>
-            <p>Los párrafos se han codificado con el elemento <seg type="code">p</seg> (paragraph).</p>
+            <p>Los párrafos se han codificado con el elemento <code>p</code> (paragraph).</p>
           </div>
           <div type="level3">
             <head>Rupturas de línea</head>
-            <p>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente textual con un elemento (vacío) <seg type="code">lb/</seg> (line beginning). El elemento <seg type="code">lb/</seg> se ha utilizado al <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
+            <p>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente textual con un elemento (vacío) <code>lb/</code> (line beginning). El elemento <code>lb/</code> se ha utilizado al <hi rendition="#i">comienzo</hi> de la línea, tal y como determinan las directrices
               TEI.</p>
             <p>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
-              atributo <seg type="code">@break</seg> y el valor <seg type="code">no</seg>. En caso
-              de aparecer un separador en la fuente original, no se ha transcrito como tal sino que se ha codificado como <seg type="code">
-                <g ref="#typoHyphen"/>
-              </seg>. Por ejmplo:
+              atributo <code>@break</code> y el valor <code>no</code>. En caso
+              de aparecer un separador en la fuente original, no se ha transcrito como tal sino que se ha codificado como <code>
+                &lt;g ref="#typoHyphen"/&gt;
+              </code>. Por ejmplo:
               <code>y le añadí al propio titi&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</code></p>
           </div>
           <div type="level3">
@@ -527,17 +527,17 @@
               folio o página, no el final. En caso de que el autor haya empleado otro sistema para
               numerar las páginas en la fuente textual, se ha codifcado la foliación o paginación del autor de manera opcional.</p>
             <p>El inicio de folio o página se ha codificado siempre con el elemento vacío
-                <seg type="code">pb/</seg> (pagebreak). El atributo <seg type="code">@n</seg>
+                <code>pb/</code> (pagebreak). El atributo <code>@n</code>
               contiene el número de página o folio (según la secuencia física del documento o del
               autor).
             <code>
               distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano
             </code></p>
-            <p>La digitalización del folio o página se ha codificado con el atributo <seg type="code">@facs</seg> (facsimile). Se ha codificado el nombre del fichero de la imagen
+            <p>La digitalización del folio o página se ha codificado con el atributo <code>@facs</code> (facsimile). Se ha codificado el nombre del fichero de la imagen
               digital incluyendo la foliación archivística y la extensión "tif". El nombre del fichero corresponde a un URI, es decir, es único en el dossier digital. Por
               ejemplo:
               <code>&lt;n="1r" facs="prohd0014_1r.tif"/&gt;</code></p>
-            <p>Cualquier otra información sobre la numeración o paginación contenida en la fuente se ha codificado con el elemento <seg type="code">fw</seg> (forme work); este elemento lleva el atributo <seg type="code">@type</seg> con el valor <seg type="code">folNum</seg>.
+            <p>Cualquier otra información sobre la numeración o paginación contenida en la fuente se ha codificado con el elemento <code>fw</code> (forme work); este elemento lleva el atributo <code>@type</code> con el valor <code>folNum</code>.
               <code>&lt;fw type="folNum"&gt;34&lt;/fw&gt;</code></p>
           </div>
           <div type="level3">
@@ -548,34 +548,34 @@
             <p>Para poder representar y mostrar la foliación correctamente, se ha codificado cada página
               (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre se ha introducido un número <quote rendition="#i">1</quote> para cada nueva página en
               blanco codificada.</p>
-            <p>Las páginas en blanco se han codificado con el elemento (vacío) <seg type="code">gap/</seg>.
-              Este se ha utilizado justo después del salto de página (<seg type="code">pb/</seg>)
-              anterior. Los dos atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg> del elemento <seg type="code">gap/</seg> llevan los
-              valores <seg type="code">pages</seg> y <seg type="code">1</seg>. El atributo <seg type="code">@reason</seg> contiene el valor <seg type="code">empty</seg>. Cuando hay más de una página en blanco seguida, se han codificado cada una de ellas individualmente.
+            <p>Las páginas en blanco se han codificado con el elemento (vacío) <code>gap/</code>.
+              Este se ha utilizado justo después del salto de página (<code>pb/</code>)
+              anterior. Los dos atributos <code>@unit</code> y <code>@quantity</code> del elemento <code>gap/</code> llevan los
+              valores <code>pages</code> y <code>1</code>. El atributo <code>@reason</code> contiene el valor <code>empty</code>. Cuando hay más de una página en blanco seguida, se han codificado cada una de ellas individualmente.
             <code>
               &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</code></p>
           </div>
           <div type="level3">
             <head>Espacios en blanco</head>
             <p>El espacio en blanco semánticamente significativo (por ejemplo, a veces los autores dejan un espacio en el texto para complementarlo posteriormente)
-              se ha codificado con el elemento vacío <seg type="code">space</seg>. La
+              se ha codificado con el elemento vacío <code>space</code>. La
               reproducción de dichos vacíos en la transcripción se ha distinguido de las omisiones realizadas por los editores, así como de las
                 páginas vacías o perdidas, cada una de las cuales se ha codificado como
-                <seg type="code">gap/</seg>.</p>
+                <code>gap/</code>.</p>
             <p>El espacio en blanco semánticamente significativo se ha codificado con el
-              elemento (vacío) <seg type="code">space/</seg> y tres atributos: con <seg type="code">@dim</seg> se ha indicado si es un espacio en blanco horizontal o vertical mientras que el alcance de
-              la omisión se ha indicado mediante los valores de los atributos <seg type="code">@unit</seg> y <seg type="code">@quantity</seg>. Si el número de líneas
-                (<seg type="code">unit="lines"</seg>), caracteres (<seg type="code">unit="chars"</seg>) o palabras (<seg type="code">unit="words"</seg>) omitidos no se
-              puede determinar de manera segura, se ha utilizado el valor <seg type="code">1</seg> en
-                <seg type="code">@quantity</seg>. Por ejemplo:
+              elemento (vacío) <code>space/</code> y tres atributos: con <code>@dim</code> se ha indicado si es un espacio en blanco horizontal o vertical mientras que el alcance de
+              la omisión se ha indicado mediante los valores de los atributos <code>@unit</code> y <code>@quantity</code>. Si el número de líneas
+                (<code>unit="lines"</code>), caracteres (<code>unit="chars"</code>) o palabras (<code>unit="words"</code>) omitidos no se
+              puede determinar de manera segura, se ha utilizado el valor <code>1</code> en
+                <code>@quantity</code>. Por ejemplo:
             <code>
             sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur 
             </code></p>
           </div>
           <div type="level3">
             <head>Listas</head>
-            <p>Las listas se han codificado con el elemento <seg type="code">list</seg>. Los puntos o líneas individuales se han transcrito en un elemento <seg type="code">item</seg>. La numeración existente (también con letras) no se ha codificado de manera independiente, sino que se ha transcrito dentro del
-              elemento <seg type="code">item</seg>.
+            <p>Las listas se han codificado con el elemento <code>list</code>. Los puntos o líneas individuales se han transcrito en un elemento <code>item</code>. La numeración existente (también con letras) no se ha codificado de manera independiente, sino que se ha transcrito dentro del
+              elemento <code>item</code>.
             <code>
             &lt;list&gt; 
               &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt; 
@@ -592,8 +592,8 @@
               mientras que las implícitas son reconocibles sólo por la disposición de sus
               contenidos. Se ha distinguido entre tablas y enumeraciones que
                 se asemejan a listas.</p>
-            <p>Las tablas se han codificado con el elemento <seg type="code">table</seg>. Se ha
-              asignado a la primera fila de la tabla el atributo <seg type="code">@role="label"</seg> para que se consideren como encabezados. Por ejemplo:
+            <p>Las tablas se han codificado con el elemento <code>table</code>. Se ha
+              asignado a la primera fila de la tabla el atributo <code>@role="label"</code> para que se consideren como encabezados. Por ejemplo:
             <code>
             &lt;table rows="3" cols="2"&gt; 
               &lt;head&gt;Tabla&lt;/head&gt;
@@ -608,8 +608,8 @@
           </div>
           <div type="level3">
             <head>Alineación de texto</head>
-            <p>En las tablas y en el inicio de una carta, se ha codificado la alineación del texto de manera opcional. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <seg type="code">@rendition</seg> con el
-              valor <seg type="code">#right</seg> en el elemento <seg type="code">cell</seg> (celda de tabla) o <seg type="code">dateline</seg>.
+            <p>En las tablas y en el inicio de una carta, se ha codificado la alineación del texto de manera opcional. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <code>@rendition</code> con el
+              valor <code>#right</code> en el elemento <code>cell</code> (celda de tabla) o <code>dateline</code>.
             <code> 
             &lt;table cols="4" rows="20" rend="drawn"&gt; 
              &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
@@ -640,11 +640,11 @@
               el manuscrito, sino en el pasaje del texto al que la nota se refiere realmente (o que
               el editor supone razonablemente que se refiere). En caso de emplear una marca de
               inserción (asterisco, número, etc.), se ha utilizado una señal de inserción
-              general (es decir, el elemento vacío <seg type="code">metamark/</seg>) para
+              general (es decir, el elemento vacío <code>metamark/</code>) para
               indicar que el texto ha sido introducido por el autor y no por los editores.</p>
-            <p>Las notas se han codificado con el elemento <seg type="code">note</seg>:
+            <p>Las notas se han codificado con el elemento <code>note</code>:
               <code>En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</code></p>
-            <p>Cuando es posible identificar al autor de la nota, se ha codificado esta información con el atributo <seg type="code">@hand</seg>:</p>
+            <p>Cuando es posible identificar al autor de la nota, se ha codificado esta información con el atributo <code>@hand</code>:</p>
             <table>
               <row role="label">
                 <cell>
@@ -657,7 +657,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">#author</seg>
+                    <code>#author</code>
                   </p>
                 </cell>
                 <cell>
@@ -667,7 +667,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">#addressee</seg>
+                    <code>#addressee</code>
                   </p>
                 </cell>
                 <cell>
@@ -677,7 +677,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">#unknown</seg>
+                    <code>#unknown</code>
                   </p>
                 </cell>
                 <cell>
@@ -687,7 +687,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">H000000</seg>
+                    <code>H000000</code>
                   </p>
                 </cell>
                 <cell>
@@ -695,7 +695,7 @@
                 </cell>
               </row>
             </table>
-            <p>El lugar de la nota se ha codificado con el atributo <seg type="code">@place</seg>:</p>
+            <p>El lugar de la nota se ha codificado con el atributo <code>@place</code>:</p>
             <table>
               <row role="label">
                 <cell>
@@ -708,7 +708,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">left</seg>
+                    <code>left</code>
                   </p>
                 </cell>
                 <cell>
@@ -718,7 +718,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">right</seg>
+                    <code>right</code>
                   </p>
                 </cell>
                 <cell>
@@ -728,7 +728,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">mTop</seg>
+                    <code>mTop</code>
                   </p>
                 </cell>
                 <cell>
@@ -738,7 +738,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">mBottom</seg>
+                    <code>mBottom</code>
                   </p>
                 </cell>
                 <cell>
@@ -748,7 +748,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">inline</seg>
+                    <code>inline</code>
                   </p>
                 </cell>
                 <cell>
@@ -756,7 +756,7 @@
                 </cell>
               </row>
             </table>
-            <p>Si el autor utiliza una marca de inserción, se ha codificado con el elemento vacío <seg type="code">metamark/</seg>. La apariencia de la marca de inserción (asterisco, número, etc.) no se ha hecho explícita.</p>
+            <p>Si el autor utiliza una marca de inserción, se ha codificado con el elemento vacío <code>metamark/</code>. La apariencia de la marca de inserción (asterisco, número, etc.) no se ha hecho explícita.</p>
             <p>Se ha diferenciado entre las notas y las adiciones: las
               adiciones complementan el texto principal y se integran sintácticamente en él. Las
               notas son, como las notas a pie de página impresas, unidades de texto
@@ -764,12 +764,12 @@
           </div>
           <div type="level3">
             <head>Dibujos</head>
-            <p>Los dibujos e ilustraciones se han codificado con el elemento <seg type="code">figure</seg>. cuando ha sido posible identificarla, se ha codificado la persona que
-              realizó el dibujo con el atributo <seg type="code">@hand</seg>: <seg type="code">#author</seg>, <seg type="code">#addressee</seg>, <seg type="code">#unknown</seg> o una persona del registro de personas. En caso de que se disponga
-              de un título en el documento original, se ha codificado con el elemento <seg type="code">p</seg>. En el elemento hijo <seg type="code">figDesc</seg>, en cambio, las y los editores han descrito de manera opcional la imagen. El
-              nombre del fichero se ha codificado con el atributo <seg type="code">@facs</seg>. Los
+            <p>Los dibujos e ilustraciones se han codificado con el elemento <code>figure</code>. cuando ha sido posible identificarla, se ha codificado la persona que
+              realizó el dibujo con el atributo <code>@hand</code>: <code>#author</code>, <code>#addressee</code>, <code>#unknown</code> o una persona del registro de personas. En caso de que se disponga
+              de un título en el documento original, se ha codificado con el elemento <code>p</code>. En el elemento hijo <code>figDesc</code>, en cambio, las y los editores han descrito de manera opcional la imagen. El
+              nombre del fichero se ha codificado con el atributo <code>@facs</code>. Los
               comentarios editoriales que se refieren a la imagen en sí se han codificado con el elemento
-              hijo <seg type="code">note</seg>.
+              hijo <code>note</code>.
             <code>
             &lt;figure facs="dibujo" hand="#addressee"&gt; 
              &lt;p&gt;[Título de la figura]&lt;/p&gt; 
@@ -783,14 +783,14 @@
           <p>En todas las ediciones digitales del proyecto se han codificado los cambios de tipografía y las intervenciones autoriales de manera explícita, es decir, con etiquetado TEI.</p>
           <div type="level3">
             <head>Destacados</head>
-            <p>Los destacados y marcas en el borde del documento se han codificado con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg type="code">@rendition</seg> para especificar su apariencia:</p>
+            <p>Los destacados y marcas en el borde del documento se han codificado con el elemento <code>hi</code> (highlighted) y el atributo <code>@rendition</code> para especificar su apariencia:</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Tipo de destacado</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rendition</seg>
+                  <p>Valor para <code>@rendition</code>
                   </p>
                 </cell>
               </row>
@@ -800,7 +800,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#u</seg>
+                    <code>#u</code>
                   </p>
                 </cell>
               </row>
@@ -810,7 +810,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#uu</seg>
+                    <code>#uu</code>
                   </p>
                 </cell>
               </row>
@@ -820,30 +820,30 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#mMM</seg>
+                    <code>#mMM</code>
                   </p>
                 </cell>
               </row>
             </table>
             <p>Por ejemplo:
               <code>Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</code></p>
-            <p>Si un párrafo completo aparece en la fuente destacado con una marca en el margen, se ha codificado con el elemento <seg type="code">p</seg> y el atributo <seg type="code">@rendition</seg> con el valor <seg type="code">#mMM</seg> (marca al borde).</p>
+            <p>Si un párrafo completo aparece en la fuente destacado con una marca en el margen, se ha codificado con el elemento <code>p</code> y el atributo <code>@rendition</code> con el valor <code>#mMM</code> (marca al borde).</p>
           </div>
           <div type="level3">
             <head>Superscript</head>
-            <p>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto a la línea) en la fuente textual se han codificado con el elemento <seg type="code">hi</seg> (highlighted) y el atributo <seg type="code">@rendition</seg> con valor <seg type="code">#sup</seg>. Por ejemplo:
+            <p>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto a la línea) en la fuente textual se han codificado con el elemento <code>hi</code> (highlighted) y el atributo <code>@rendition</code> con valor <code>#sup</code>. Por ejemplo:
               <code>ap.&lt;hi rendition="#sup"&gt;do&lt;/hi&gt;</code></p>
           </div>
           <div type="level3">
             <head>Eliminaciones</head>
-            <p>Siempre que sea legible y con independencia de si se encuentra en saltos de línea, abreviaturas, normalizaciones y correcciones o adiciones del editor, se ha codificado el texto eliminado con el elemento <seg type="code">del</seg> (deletion) y haciendo uso del atributo <seg type="code">@rendition</seg> para especificar el tipo de eliminación:</p>
+            <p>Siempre que sea legible y con independencia de si se encuentra en saltos de línea, abreviaturas, normalizaciones y correcciones o adiciones del editor, se ha codificado el texto eliminado con el elemento <code>del</code> (deletion) y haciendo uso del atributo <code>@rendition</code> para especificar el tipo de eliminación:</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Tipo de eliminación</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rendition</seg>
+                  <p>Valor para <code>@rendition</code>
                   </p>
                 </cell>
               </row>
@@ -853,7 +853,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#ow</seg>
+                    <code>#ow</code>
                   </p>
                 </cell>
               </row>
@@ -863,7 +863,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#s</seg>
+                    <code>#s</code>
                   </p>
                 </cell>
               </row>
@@ -873,7 +873,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#erased</seg>
+                    <code>#erased</code>
                   </p>
                 </cell>
               </row>
@@ -884,7 +884,7 @@
           <div type="level3">
             <head>Adiciones</head>
             <p>En todas las ediciones del proyecto se han codificado las adiciones que el propio autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos realizados por el autor que sólo amplían el texto y se integran sintácticamente.</p>
-            <p>Las adiciones hechas por el autor se han codificado con <seg type="code">add</seg> (addition) utilizando el atributo <seg type="code">@place</seg> para especificar el lugar de la adición:</p>
+            <p>Las adiciones hechas por el autor se han codificado con <code>add</code> (addition) utilizando el atributo <code>@place</code> para especificar el lugar de la adición:</p>
             <table>
               <row role="label">
                 <cell>
@@ -897,7 +897,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">superlinear</seg>
+                    <code>superlinear</code>
                   </p>
                 </cell>
                 <cell>
@@ -907,7 +907,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">sublinear</seg>
+                    <code>sublinear</code>
                   </p>
                 </cell>
                 <cell>
@@ -917,7 +917,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">intralinear</seg>
+                    <code>intralinear</code>
                   </p>
                 </cell>
                 <cell>
@@ -927,7 +927,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">across</seg>
+                    <code>across</code>
                   </p>
                 </cell>
                 <cell>
@@ -937,7 +937,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">left</seg>
+                    <code>left</code>
                   </p>
                 </cell>
                 <cell>
@@ -947,7 +947,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">right</seg>
+                    <code>right</code>
                   </p>
                 </cell>
                 <cell>
@@ -957,7 +957,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">mTop</seg>
+                    <code>mTop</code>
                   </p>
                 </cell>
                 <cell>
@@ -967,7 +967,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">mBottom</seg>
+                    <code>mBottom</code>
                   </p>
                 </cell>
                 <cell>
@@ -977,19 +977,19 @@
             </table>
             <p>Por ejemplo:
               <code>[…] y logré para el Comercio con estranjeros, los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</code></p>
-            <p>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado con el elemento <seg type="code">metamark/</seg>. La forma de la marca de inserción (asterisco, número, etc.) no se ha especificado.</p>
+            <p>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado con el elemento <code>metamark/</code>. La forma de la marca de inserción (asterisco, número, etc.) no se ha especificado.</p>
           </div>
                     <div type="level3">
             <head>Sustituciones</head>
-            <p>Si se elimina una palabra o un pasaje del texto en el manuscrito y al mismo tiempo se añade una palabra, estos dos fenómenos textuales se han codificado juntos con un elemento <seg type="code">subst</seg> (substition).</p>
-            <p>La palabra eliminada se ha codificado con el elemento <seg type="code">del</seg> (deletion). El tipo de eliminación se ha especificado en el atributo <seg type="code">@rendition</seg>:</p>
+            <p>Si se elimina una palabra o un pasaje del texto en el manuscrito y al mismo tiempo se añade una palabra, estos dos fenómenos textuales se han codificado juntos con un elemento <code>subst</code> (substition).</p>
+            <p>La palabra eliminada se ha codificado con el elemento <code>del</code> (deletion). El tipo de eliminación se ha especificado en el atributo <code>@rendition</code>:</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Tipo de eliminación</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rendition</seg>
+                  <p>Valor para <code>@rendition</code>
                   </p>
                 </cell>
               </row>
@@ -999,7 +999,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#ow</seg>
+                    <code>#ow</code>
                   </p>
                 </cell>
               </row>
@@ -1009,7 +1009,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#s</seg>
+                    <code>#s</code>
                   </p>
                 </cell>
               </row>
@@ -1019,19 +1019,19 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">#erased</seg>
+                    <code>#erased</code>
                   </p>
                 </cell>
               </row>
             </table>
-            <p>La palabra (o palabras) añadida se ha codificado con el elemento <seg type="code">add</seg> (addition). El lugar de la adición se ha especificado con el atributo <seg type="code">@place</seg>:</p>
+            <p>La palabra (o palabras) añadida se ha codificado con el elemento <code>add</code> (addition). El lugar de la adición se ha especificado con el atributo <code>@place</code>:</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Tipo de adición</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@place</seg>
+                  <p>Valor para <code>@place</code>
                   </p>
                 </cell>
               </row>
@@ -1041,7 +1041,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">superlinear</seg>
+                    <code>superlinear</code>
                   </p>
                 </cell>
               </row>
@@ -1051,7 +1051,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">sublinear</seg>
+                    <code>sublinear</code>
                   </p>
                 </cell>
               </row>
@@ -1061,7 +1061,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">intralinear</seg>
+                    <code>intralinear</code>
                   </p>
                 </cell>
               </row>
@@ -1071,7 +1071,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">across</seg>
+                    <code>across</code>
                   </p>
                 </cell>
               </row>
@@ -1081,7 +1081,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">left</seg>
+                    <code>left</code>
                   </p>
                 </cell>
               </row>
@@ -1091,7 +1091,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">right</seg>
+                    <code>right</code>
                   </p>
                 </cell>
               </row>
@@ -1109,8 +1109,8 @@
           <p>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita.</p>
           <div type="level3">
           <head>Normalizaciones</head>
-          <p>La ortografía, puntuación, mayúsculas y separación de las palabras se han normalizado de manera explícita con el elemento <seg type="code">choice</seg> y sus dos elementos hijos <seg type="code">orig</seg> (forma original) y <seg type="code">reg</seg> (forma regulizada). En el elemento <seg type="code">orig</seg> se ha codificado la forma
-          original tal y como aparece en la fuente textual mientras que en el elemento <seg type="code">reg</seg> se ha codificado la forma regularizada, es decir, modernizada a la normal ortográfica actual para facilitar la legibilidad del texto. Por ejemplo:
+          <p>La ortografía, puntuación, mayúsculas y separación de las palabras se han normalizado de manera explícita con el elemento <code>choice</code> y sus dos elementos hijos <code>orig</code> (forma original) y <code>reg</code> (forma regulizada). En el elemento <code>orig</code> se ha codificado la forma
+          original tal y como aparece en la fuente textual mientras que en el elemento <code>reg</code> se ha codificado la forma regularizada, es decir, modernizada a la normal ortográfica actual para facilitar la legibilidad del texto. Por ejemplo:
           <code>
           &lt;choice&gt; 
               &lt;orig&gt;espendiendo&lt;/orig&gt;
@@ -1135,22 +1135,22 @@
           </div>
           <div type="level3">
             <head>Abreviaturas</head>
-            <p>Las abreviaturas se han codificado con elemento <seg type="code">choice</seg>
-              y sus dos elementos hijo <seg type="code">abbr</seg> (abreviatura) y <seg type="code">expan</seg> (abreviatura resuelta).
-              En el elemento <seg type="code">abbr</seg> la abreviatura se ha codificado conservando la forma
-              abreviada que aparece en la fuente textual mientras que en el elemento <seg type="code">expan</seg> las y los editoras han proporcionado la forma resuelta o expandida para facilitar la legibilidad del texto.
+            <p>Las abreviaturas se han codificado con elemento <code>choice</code>
+              y sus dos elementos hijo <code>abbr</code> (abreviatura) y <code>expan</code> (abreviatura resuelta).
+              En el elemento <code>abbr</code> la abreviatura se ha codificado conservando la forma
+              abreviada que aparece en la fuente textual mientras que en el elemento <code>expan</code> las y los editoras han proporcionado la forma resuelta o expandida para facilitar la legibilidad del texto.
             <code>
             &lt;choice&gt; 
               &lt;abbr&gt;q&lt;/abbr&gt;
               &lt;expan&gt;que&lt;/expan&gt; 
             &lt;/choice&gt;
             </code></p>
-            <p>Las siglas se han codificado como abreviaturas siguiendo el mismo método con <seg type="code">choice</seg>.</p>
+            <p>Las siglas se han codificado como abreviaturas siguiendo el mismo método con <code>choice</code>.</p>
           </div>
           <div type="level3">
             <head>Palabras, letras o signos de puntuación suplidos</head>
-            <p>Cuando las palabras o signos de puntuación que faltan de manera evidente se han suplido, se ha codificado dicha información con el elemento <seg type="code">supplied</seg> indicando la certeza de la intervención.</p>
-            <p>Con el atributo <seg type="code">@cert</seg> (certainty) se ha codificado la certeza con la que se han suplido los caracteres o palabras:</p>
+            <p>Cuando las palabras o signos de puntuación que faltan de manera evidente se han suplido, se ha codificado dicha información con el elemento <code>supplied</code> indicando la certeza de la intervención.</p>
+            <p>Con el atributo <code>@cert</code> (certainty) se ha codificado la certeza con la que se han suplido los caracteres o palabras:</p>
             <table>
               <row role="label">
                 <cell>
@@ -1163,7 +1163,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">low</seg>
+                    <code>low</code>
                   </p>
                 </cell>
                 <cell>
@@ -1173,7 +1173,7 @@
               <row>
                 <cell>
                   <p>
-                    <seg type="code">high</seg>
+                    <code>high</code>
                   </p>
                 </cell>
                 <cell>
@@ -1186,9 +1186,9 @@
           </div>
           <div type="level3">
             <head>Errores y correcciones</head>
-            <p>Los errores evidentes que aparecen en la fuente textual se han codificado con el elemento <seg type="code">choice</seg>. Dentro, la palabra errónea se ha codificado con
-                el elemento <seg type="code">sic</seg> mientras que la corrección se ha codificado con <seg type="code">corr</seg>. En el
-              elemento <seg type="code">corr</seg>, el atributo <seg type="code">@cert</seg>
+            <p>Los errores evidentes que aparecen en la fuente textual se han codificado con el elemento <code>choice</code>. Dentro, la palabra errónea se ha codificado con
+                el elemento <code>sic</code> mientras que la corrección se ha codificado con <code>corr</code>. En el
+              elemento <code>corr</code>, el atributo <code>@cert</code>
               (certainty) indica la certeza con que se ha corregido:</p>
             <table>
               <row role="label">
@@ -1196,7 +1196,7 @@
                   <p>Certeza</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@cert</seg>
+                  <p>Valor para <code>@cert</code>
                   </p>
                 </cell>
               </row>
@@ -1206,7 +1206,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">low</seg>
+                    <code>low</code>
                   </p>
                 </cell>
               </row>
@@ -1216,7 +1216,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">medium</seg>
+                    <code>medium</code>
                   </p>
                 </cell>
               </row>
@@ -1226,7 +1226,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">high</seg>
+                    <code>high</code>
                   </p>
                 </cell>
               </row>
@@ -1238,18 +1238,18 @@
                 &lt;corr cert="high"&gt;Humboldt&lt;/corr&gt;
               &lt;/choice&gt;
             </code></p>
-           <p>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha empleado el mismo elemento <seg type="code">choice</seg> para codificar la palabra errónea con <seg type="code">sic</seg>. Ahora bien, en estos casos no se ha proporcionado una forma corregida sino que se ha utilizado el elemento <seg type="code">corr</seg> y se ha dejado vacío. Además, se ha utilizado el atributo <seg type="code">type</seg> con valor "deleted" para indicar que se ha eliminado una palabra redundante.</p>   
+           <p>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha empleado el mismo elemento <code>choice</code> para codificar la palabra errónea con <code>sic</code>. Ahora bien, en estos casos no se ha proporcionado una forma corregida sino que se ha utilizado el elemento <code>corr</code> y se ha dejado vacío. Además, se ha utilizado el atributo <code>type</code> con valor "deleted" para indicar que se ha eliminado una palabra redundante.</p>   
           </div>
           <div type="level3">
             <head>Lecturas inciertas</head>
-            <p>Las palabras o pasajes que no son fácilmente legibles se han codificado como "lecturas inciertas" con el elemento <seg type="code">unclear</seg>. Con el atributo <seg type="code">@reason</seg> se ha especificado la razón de la lectura incierta:</p>
+            <p>Las palabras o pasajes que no son fácilmente legibles se han codificado como "lecturas inciertas" con el elemento <code>unclear</code>. Con el atributo <code>@reason</code> se ha especificado la razón de la lectura incierta:</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Razón de la lectura incierta</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@reason</seg>
+                  <p>Valor para <code>@reason</code>
                   </p>
                 </cell>
               </row>
@@ -1259,7 +1259,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">illegible</seg>
+                    <code>illegible</code>
                   </p>
                 </cell>
               </row>
@@ -1269,19 +1269,19 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">covered</seg>
+                    <code>covered</code>
                   </p>
                 </cell>
               </row>
             </table>
-            <p>Con el atributo <seg type="code">@cert</seg> (certainty) se ha codificado la certeza de la intervención.</p>
+            <p>Con el atributo <code>@cert</code> (certainty) se ha codificado la certeza de la intervención.</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Certeza</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@cert</seg>
+                  <p>Valor para <code>@cert</code>
                   </p>
                 </cell>
               </row>
@@ -1291,7 +1291,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">low</seg>
+                    <code>low</code>
                   </p>
                 </cell>
               </row>
@@ -1301,7 +1301,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">high</seg>
+                    <code>high</code>
                   </p>
                 </cell>
               </row>
@@ -1312,15 +1312,15 @@
           <div type="level3">
             <head>Texto ilegible</head>
             <p>Los caracteres o palabras ilegibles en la fuente textual debido a daños materiales o a que la escritura es poco clara, se han codificado con el
-              elemento vacío <seg type="code">gap/</seg>.</p>
-            <p>Con el atributo <seg type="code">@reason</seg> se ha indicado la razón de la ilegibilidad:</p>
+              elemento vacío <code>gap/</code>.</p>
+            <p>Con el atributo <code>@reason</code> se ha indicado la razón de la ilegibilidad:</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Razón de la ilegibilidad</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@reason</seg>
+                  <p>Valor para <code>@reason</code>
                   </p>
                 </cell>
               </row>
@@ -1330,7 +1330,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">lost</seg>
+                    <code>lost</code>
                   </p>
                 </cell>
               </row>
@@ -1340,7 +1340,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">illegible</seg>
+                    <code>illegible</code>
                   </p>
                 </cell>
               </row>
@@ -1350,20 +1350,20 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">covered</seg>
+                    <code>covered</code>
                   </p>
                 </cell>
               </row>
             </table>
             <p>Si se conoce el número de líneas, palabras, etc., se han codificado
-              usando <seg type="code">@unit</seg> (unidad) y <seg type="code">@quantity</seg> (cantidad).</p>
+              usando <code>@unit</code> (unidad) y <code>@quantity</code> (cantidad).</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Segmento ilegible</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@unit</seg>
+                  <p>Valor para <code>@unit</code>
                   </p>
                 </cell>
               </row>
@@ -1373,7 +1373,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">chars</seg>
+                    <code>chars</code>
                   </p>
                 </cell>
               </row>
@@ -1383,7 +1383,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">lines</seg>
+                    <code>lines</code>
                   </p>
                 </cell>
               </row>
@@ -1393,7 +1393,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">pages</seg>
+                    <code>pages</code>
                   </p>
                 </cell>
               </row>
@@ -1403,16 +1403,16 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">words</seg>
+                    <code>words</code>
                   </p>
                 </cell>
               </row>
             </table>
-            <p>En el atributo <seg type="code">@quantity</seg>, se ha codificado el número de caracteres,
+            <p>En el atributo <code>@quantity</code>, se ha codificado el número de caracteres,
               líneas, etc. ilegibles.
               <code>&lt;gap reason="illegible" unit="words" quantity="3"/&gt;</code></p>
             <p>Si un carácter (o cadena de caracteres) está tachado y no se puede descifrar, se
-              ha codificado tanto con <seg type="code">del</seg> como con <seg type="code">gap/</seg>:
+              ha codificado tanto con <code>del</code> como con <code>gap/</code>:
             <code> &lt;del rendition="#s"&gt; &lt;gap reason="illegible" unit="chars"
               quantity="5"/&gt; &lt;/del&gt;</code></p>
             <p>Por último, también se han codificado individualmente las páginas destruidas o perdidas.
@@ -1424,14 +1424,14 @@
             <p>Las omisiones se han codificado de manera explícita. Por ejemplo, para representar y mostrar correctamente la foliación, se ha codificado cada página
               individualmente. Aunque se omitan varias páginas consecutivas, siempre se ha codificado la omisión con un <quote rendition="#i">1</quote> como número correspondiente a cada página que falta.</p>
             <p>Las omisiones de caracteres, palabras, pasajes de texto o páginas enteras por parte
-              de los editores y editoras se han codificado con el elemento vacío <seg type="code">gap/</seg>. Con el atributo <seg type="code">@unit</seg> se ha especificado el tipo de unidad que la editora o editor ha tenido en cuenta:</p>
+              de los editores y editoras se han codificado con el elemento vacío <code>gap/</code>. Con el atributo <code>@unit</code> se ha especificado el tipo de unidad que la editora o editor ha tenido en cuenta:</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Segmento omitido</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@unit</seg>
+                  <p>Valor para <code>@unit</code>
                   </p>
                 </cell>
               </row>
@@ -1441,7 +1441,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">chars</seg>
+                    <code>chars</code>
                   </p>
                 </cell>
               </row>
@@ -1451,7 +1451,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">lines</seg>
+                    <code>lines</code>
                   </p>
                 </cell>
               </row>
@@ -1461,7 +1461,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">pages</seg>
+                    <code>pages</code>
                   </p>
                 </cell>
               </row>
@@ -1471,13 +1471,13 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">words</seg>
+                    <code>words</code>
                   </p>
                 </cell>
               </row>
             </table>
-            <p>Con el atributo <seg type="code">@quantity</seg>, se ha codificado el número de caracteres,
-              líneas, etc. omitidos mientras que con el atributo <seg type="code">@reason</seg> se ha codificado el motivo de la omisión
+            <p>Con el atributo <code>@quantity</code>, se ha codificado el número de caracteres,
+              líneas, etc. omitidos mientras que con el atributo <code>@reason</code> se ha codificado el motivo de la omisión
               editorial.</p>
             <table>
               <row role="label">
@@ -1485,7 +1485,7 @@
                   <p>Motivo de la omisión</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@reason</seg>
+                  <p>Valor para <code>@reason</code>
                   </p>
                 </cell>
               </row>
@@ -1495,7 +1495,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">fm</seg>
+                    <code>fm</code>
                   </p>
                 </cell>
               </row>
@@ -1505,7 +1505,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">insignificant</seg>
+                    <code>insignificant</code>
                   </p>
                 </cell>
               </row>
@@ -1516,9 +1516,9 @@
           </div>
           <div type="level3">
             <head>Comentarios</head>
-            <p>Los comentarios editoriales se han codificado con el elemento <seg type="code">seg</seg>
-              (arbitrary segment). A su vez, se han anidado dos elementos: por un lado, <seg type="code">orig</seg> con el que se ha codificado el pasaje textual comentado; por el otro
-              lado, <seg type="code">note</seg> con el que se ha codificado el comentario editorial en sí. Se ha utilizado el atributo <seg type="code">@type</seg> en <seg type="code">seg</seg> con el valor <seg type="code">comment</seg>.
+            <p>Los comentarios editoriales se han codificado con el elemento <code>seg</code>
+              (arbitrary segment). A su vez, se han anidado dos elementos: por un lado, <code>orig</code> con el que se ha codificado el pasaje textual comentado; por el otro
+              lado, <code>note</code> con el que se ha codificado el comentario editorial en sí. Se ha utilizado el atributo <code>@type</code> en <code>seg</code> con el valor <code>comment</code>.
             <code>
               &lt;seg type="comment"&gt; 
                 &lt;orig&gt;Discurso del héroe&lt;/orig&gt; 
@@ -1529,11 +1529,11 @@
           <div type="level3">
             <head>Referencias</head>
             <p>Las referencias a otras ediciones o pasajes internos se han codificado con el elemento
-                <seg type="code">ref</seg>, cuyo atributo <seg type="code">@target</seg> contiene el
+                <code>ref</code>, cuyo atributo <code>@target</code> contiene el
               ID único de la edición o del pasaje de destino. Por ejemplo:
               <code>&lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una referencia]&lt;/ref&gt;</code></p>
-            <p>Además, en algunas ocasiones, con <seg type="code">ref</seg> se han codificado referencias a sitios web externos, por ejemplo, en algún comentario editorial. En este caso, la URL completa del
-              sitio web se ha codificado en el atributo <seg type="code">@target</seg>.
+            <p>Además, en algunas ocasiones, con <code>ref</code> se han codificado referencias a sitios web externos, por ejemplo, en algún comentario editorial. En este caso, la URL completa del
+              sitio web se ha codificado en el atributo <code>@target</code>.
             <code>
             &lt;seg type="comment"&gt; 
               &lt;orig&gt;el río&lt;/orig&gt;
@@ -1543,9 +1543,9 @@
           </div>
           <div type="level3">
             <head>Fechas</head>
-            <p>Las fechas que aparecen en la fuente textual se han codificado con <seg type="code">date</seg>. Para que las fechas sean legibles por el ordenador
-              se ha seguido el formato <seg type="code">AAAA-MM-DD</seg> en los atributos <seg type="code">@when</seg>, <seg type="code">@from</seg> y <seg type="code">@to</seg>,
-              así como <seg type="code">@notBefore</seg> y <seg type="code">@notAfter</seg>.
+            <p>Las fechas que aparecen en la fuente textual se han codificado con <code>date</code>. Para que las fechas sean legibles por el ordenador
+              se ha seguido el formato <code>AAAA-MM-DD</code> en los atributos <code>@when</code>, <code>@from</code> y <code>@to</code>,
+              así como <code>@notBefore</code> y <code>@notAfter</code>.
             <list type="ordered:arabic">
               <item>
                 <p>Fecha exacta</p>
@@ -1564,7 +1564,7 @@
               </item>
             </list>
               <code>&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</code></p>
-            <p>Además, de manera opcional, en el atributo <seg type="code">@cert</seg> se ha especificado la certeza: <seg type="code">high</seg>, <seg type="code">low</seg>.</p>
+            <p>Además, de manera opcional, en el atributo <code>@cert</code> se ha especificado la certeza: <code>high</code>, <code>low</code>.</p>
             <p>Más ejemplos:</p>
             <table>
               <row role="label">
@@ -1581,7 +1581,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1700" notAfter="1799"</seg>
+                    <code>notBefore="1700" notAfter="1799"</code>
                   </p>
                 </cell>
               </row>
@@ -1591,7 +1591,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1700" notAfter="1719"</seg>
+                    <code>notBefore="1700" notAfter="1719"</code>
                   </p>
                 </cell>
               </row>
@@ -1601,7 +1601,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1740" notAfter="1759"</seg>
+                    <code>notBefore="1740" notAfter="1759"</code>
                   </p>
                 </cell>
               </row>
@@ -1611,7 +1611,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1780" notAfter="1799"</seg>
+                    <code>notBefore="1780" notAfter="1799"</code>
                   </p>
                 </cell>
               </row>
@@ -1621,7 +1621,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1700" notAfter="1749"</seg>
+                    <code>notBefore="1700" notAfter="1749"</code>
                   </p>
                 </cell>
               </row>
@@ -1631,7 +1631,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1750" notAfter="1799"</seg>
+                    <code>notBefore="1750" notAfter="1799"</code>
                   </p>
                 </cell>
               </row>
@@ -1641,7 +1641,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1700" notAfter="1724"</seg>
+                    <code>notBefore="1700" notAfter="1724"</code>
                   </p>
                 </cell>
               </row>
@@ -1651,7 +1651,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1725" notAfter="1749"</seg>
+                    <code>notBefore="1725" notAfter="1749"</code>
                   </p>
                 </cell>
               </row>
@@ -1661,7 +1661,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1750" notAfter="1774"</seg>
+                    <code>notBefore="1750" notAfter="1774"</code>
                   </p>
                 </cell>
               </row>
@@ -1671,7 +1671,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1775" notAfter="1799"</seg>
+                    <code>notBefore="1775" notAfter="1799"</code>
                   </p>
                 </cell>
               </row>
@@ -1681,7 +1681,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1700" notAfter="1733"</seg>
+                    <code>notBefore="1700" notAfter="1733"</code>
                   </p>
                 </cell>
               </row>
@@ -1691,7 +1691,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1733" notAfter="1766"</seg>
+                    <code>notBefore="1733" notAfter="1766"</code>
                   </p>
                 </cell>
               </row>
@@ -1701,7 +1701,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1766" notAfter="1799"</seg>
+                    <code>notBefore="1766" notAfter="1799"</code>
                   </p>
                 </cell>
               </row>
@@ -1715,7 +1715,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">notBefore="1757" notAfter="1767"</seg>
+                    <code>notBefore="1757" notAfter="1767"</code>
                   </p>
                 </cell>
               </row>
@@ -1725,7 +1725,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">when="1762"</seg>
+                    <code>when="1762"</code>
                   </p>
                 </cell>
               </row>
@@ -1735,7 +1735,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">when="1762-01-05"</seg>
+                    <code>when="1762-01-05"</code>
                   </p>
                 </cell>
               </row>
@@ -1748,14 +1748,14 @@
           <div type="level3">
             <head>Palabras en otro idioma</head>
             <p>Las palabras y pasajes de texto en idioma extranjero se han codificado con
-              el elemento <seg type="code">foreign</seg>. Con el atributo <seg type="code">@xml:lang</seg> se ha codificado el código del idioma extranjero correspondiente:</p>
+              el elemento <code>foreign</code>. Con el atributo <code>@xml:lang</code> se ha codificado el código del idioma extranjero correspondiente:</p>
             <table>
               <row role="label">
                 <cell>
                   <p>Idioma extranjero</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@xml:lang</seg>
+                  <p>Valor para <code>@xml:lang</code>
                   </p>
                 </cell>
               </row>
@@ -1765,7 +1765,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">gr</seg>
+                    <code>gr</code>
                   </p>
                 </cell>
               </row>
@@ -1775,7 +1775,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">la</seg>
+                    <code>la</code>
                   </p>
                 </cell>
               </row>
@@ -1785,7 +1785,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">he</seg>
+                    <code>he</code>
                   </p>
                 </cell>
               </row>
@@ -1795,7 +1795,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">de</seg>
+                    <code>de</code>
                   </p>
                 </cell>
               </row>
@@ -1805,7 +1805,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">fr</seg>
+                    <code>fr</code>
                   </p>
                 </cell>
               </row>
@@ -1815,7 +1815,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">en</seg>
+                    <code>en</code>
                   </p>
                 </cell>
               </row>
@@ -1825,7 +1825,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">ru</seg>
+                    <code>ru</code>
                   </p>
                 </cell>
               </row>
@@ -1835,7 +1835,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">es</seg>
+                    <code>es</code>
                   </p>
                 </cell>
               </row>
@@ -1849,19 +1849,19 @@
             <p>En ambos casos se han utilizado los elementos siguientes:</p>
             <list type="unordered">
               <item>
-                <p>Persona: <seg type="code">persName</seg>
+                <p>Persona: <code>persName</code>
                 </p>
               </item>
               <item>
-                <p>Lugar: <seg type="code">placeName</seg>
+                <p>Lugar: <code>placeName</code>
                 </p>
               </item>
               <item>
-                <p>Organización: <seg type="code">orgName</seg>
+                <p>Organización: <code>orgName</code>
                 </p>
               </item>
             </list>
-            <p>Se ha codificado con el atributo <seg type="code">@key</seg> un identificador único (URI) correspondiente a del registro del proyecto o bien al de algún recurso de autoridades externo como VIAF, GND o GeoNames. Por ejemplo:
+            <p>Se ha codificado con el atributo <code>@key</code> un identificador único (URI) correspondiente a del registro del proyecto o bien al de algún recurso de autoridades externo como VIAF, GND o GeoNames. Por ejemplo:
               <code> Mr. &lt;persName key="H0012737"&gt;James Arnold&lt;/persName&gt;</code></p>
           </div>
         </div>
@@ -1871,17 +1871,17 @@
         <p>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han codificado el remitente, el destinatario, el lugar y la fecha de envío y recepción. Por lo que respecta a la estructura, cuando están presente en la fuente, se han codificado la dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones) y el cierre de la carta.</p>
         <div type="level2">
           <head>Remitente, destinatario, lugares y fechas</head>
-            <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <seg type="code">correspDesc</seg> (correspondence description). Se ha creado un elemento <seg type="code">correspAction</seg> (correspondence action) para el proceso de envío y
-              el de recepción respectivamente. Con el atributo <seg type="code">@type</seg> se ha especificado
-              el tipo del acto de comunicación; los valores permitidos son dos: <seg type="code">sent</seg> o <seg type="code">received</seg>.
+            <p>Los metadatos relativos a la correspondencia de una carta se han codificado en el elemento <code>correspDesc</code> (correspondence description). Se ha creado un elemento <code>correspAction</code> (correspondence action) para el proceso de envío y
+              el de recepción respectivamente. Con el atributo <code>@type</code> se ha especificado
+              el tipo del acto de comunicación; los valores permitidos son dos: <code>sent</code> o <code>received</code>.
             <code>
             &lt;correspDesc&gt; 
               &lt;correspAction type="sent"&gt;[Información sobre el remitente]&lt;/correspAction&gt; 
               &lt;correspAction type="received"&gt;[Información sobre el destinatario]&lt;/correspAction&gt;
               &lt;/correspDesc&gt;</code></p>
-            <p>Dentro del elemento <seg type="code">correspAction</seg>, se han utilizado los
-              elementos <seg type="code">persName</seg>, <seg type="code">orgName</seg>, <seg type="code">placeName</seg> y <seg type="code">date</seg> para identificar la persona u organización que participa en el intercambio, el lugar en que sucede y la fecha. Siempre que ha sido posible, la información sobre
-              personas, organizaciones y lugares se ha vinculado con el ID codificado en el atributo <seg type="code">@key</seg>. Esta información puede indicarse tanto para el remitente como para el
+            <p>Dentro del elemento <code>correspAction</code>, se han utilizado los
+              elementos <code>persName</code>, <code>orgName</code>, <code>placeName</code> y <code>date</code> para identificar la persona u organización que participa en el intercambio, el lugar en que sucede y la fecha. Siempre que ha sido posible, la información sobre
+              personas, organizaciones y lugares se ha vinculado con el ID codificado en el atributo <code>@key</code>. Esta información puede indicarse tanto para el remitente como para el
               destinatario.
             <code>
             &lt;correspDesc&gt; 
@@ -1894,9 +1894,9 @@
                 &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt; 
               &lt;/correspAction&gt;
               &lt;/correspDesc&gt;</code></p>
-            <p>Las fechas se han codificado con el elemento <seg type="code">date</seg> siguiendo el
-              formato <seg type="code">AAAA-MM-DD</seg> (o <seg type="code">AA-MM</seg> o <seg type="code">AAAA</seg>, dependiendo de la información disponible) en los atributos
-                <seg type="code">@when</seg>, <seg type="code">@from</seg>/<seg type="code">@to</seg> o <seg type="code">@notBefore</seg>/<seg type="code">@notAfter</seg>. Además, en el atributo <seg type="code">@cert</seg> se han utilizado los valores <seg type="code">high</seg> y <seg type="code">low</seg> para indicar la certeza sobre la fecha. Por ejemplo:
+            <p>Las fechas se han codificado con el elemento <code>date</code> siguiendo el
+              formato <code>AAAA-MM-DD</code> (o <code>AA-MM</code> o <code>AAAA</code>, dependiendo de la información disponible) en los atributos
+                <code>@when</code>, <code>@from</code>/<code>@to</code> o <code>@notBefore</code>/<code>@notAfter</code>. Además, en el atributo <code>@cert</code> se han utilizado los valores <code>high</code> y <code>low</code> para indicar la certeza sobre la fecha. Por ejemplo:
             <list type="ordered:arabic">
               <item>
                 <p>Fecha exacta</p>
@@ -1915,7 +1915,7 @@
               </item>
             </list>
               <code>&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</code></p>
-            <p>Cuando no se ha podido determinar las fechas de envío o recepción, se ha codificado una nota explicativa en <seg type="code">correspDesc</seg> con el elemento hijo <seg type="code">note</seg>. Por ejemplo:
+            <p>Cuando no se ha podido determinar las fechas de envío o recepción, se ha codificado una nota explicativa en <code>correspDesc</code> con el elemento hijo <code>note</code>. Por ejemplo:
             <code>
             &lt;correspDesc&gt; … 
               &lt;note&gt;No se puede determinar la fecha de recepción.&lt;/note&gt; 
@@ -1923,9 +1923,9 @@
         </div>
           <div type="level2">
             <head>Dirección postal</head>
-            <p>La dirección postal de una carta se ha codificado en el elemento <seg type="code">opener</seg> (inicio
-              de la carta) o en el <seg type="code">closer</seg> (cierre de la carta). Consta del
-              elemento padre <seg type="code">address</seg> y uno o varios elementos hijos <seg type="code">addrLine</seg>.
+            <p>La dirección postal de una carta se ha codificado en el elemento <code>opener</code> (inicio
+              de la carta) o en el <code>closer</code> (cierre de la carta). Consta del
+              elemento padre <code>address</code> y uno o varios elementos hijos <code>addrLine</code>.
             <code>
             &lt;opener&gt; 
               &lt;address&gt; 
@@ -1936,8 +1936,8 @@
           </div>
           <div type="level2">
             <head>Inicio de la carta</head>
-            <p>El inicio de la carta se ha codificado con el elemento <seg type="code">opener</seg>. Dentro, si los hubiera, se ha codificado la fecha y el saludo con los elementos <seg type="code">dateline</seg> y <seg type="code">salute</seg> respectivamente.</p>
-            <p>En el elemento <seg type="code">dateline</seg> se ha utilizado el atributo <seg type="code">@rend</seg> si la fecha está sangrada o alineada a la derecha. Por ejemplo:
+            <p>El inicio de la carta se ha codificado con el elemento <code>opener</code>. Dentro, si los hubiera, se ha codificado la fecha y el saludo con los elementos <code>dateline</code> y <code>salute</code> respectivamente.</p>
+            <p>En el elemento <code>dateline</code> se ha utilizado el atributo <code>@rend</code> si la fecha está sangrada o alineada a la derecha. Por ejemplo:
             <code>
             &lt;opener&gt; 
               &lt;dateline rend="align(right)"&gt;30 de julio de 1827&lt;/dateline&gt; 
@@ -1946,7 +1946,7 @@
           </div>
           <div type="level2">
             <head>Actos de escritura</head>
-            <p>Los actos de escritura se han codificado con el elemento <seg type="code">div</seg> con dos atributos: por un lado, el atributo <seg type="code">@type</seg> debe llevar el valor <seg type="code">writingSession</seg>; por el otro, <seg type="code">@n</seg> debe indicar el número del acto de escritura.
+            <p>Los actos de escritura se han codificado con el elemento <code>div</code> con dos atributos: por un lado, el atributo <code>@type</code> debe llevar el valor <code>writingSession</code>; por el otro, <code>@n</code> debe indicar el número del acto de escritura.
             <code> 
             &lt;div type="writingSession"&gt; 
               &lt;p&gt;[Primer acto de escritura]&lt;/p&gt; 
@@ -1957,10 +1957,10 @@
           </div>
           <div type="level2">
             <head>Cierre de la carta</head>
-            <p>El cierre de la carta se ha codificado en el elemento <seg type="code">closer</seg>. La
-              fórmula de saludo se ha codificado con el elemento <seg type="code">salute</seg> mientras que la firma se ha codificado
-              con el elemento <seg type="code">signed</seg>. Con el atributo <seg type="code">@rend</seg>
-              del elemento <seg type="code">closer</seg> se ha representado la forma o apariencia con que se realizó el cierre
+            <p>El cierre de la carta se ha codificado en el elemento <code>closer</code>. La
+              fórmula de saludo se ha codificado con el elemento <code>salute</code> mientras que la firma se ha codificado
+              con el elemento <code>signed</code>. Con el atributo <code>@rend</code>
+              del elemento <code>closer</code> se ha representado la forma o apariencia con que se realizó el cierre
               de la carta.</p>
             <table>
               <row role="label">
@@ -1968,7 +1968,7 @@
                   <p>Cierre de carta</p>
                 </cell>
                 <cell>
-                  <p>Valor para <seg type="code">@rend</seg>
+                  <p>Valor para <code>@rend</code>
                   </p>
                 </cell>
               </row>
@@ -1978,7 +1978,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">paragraph</seg>
+                    <code>paragraph</code>
                   </p>
                 </cell>
               </row>
@@ -1988,7 +1988,7 @@
                 </cell>
                 <cell>
                   <p>
-                    <seg type="code">within the line</seg>
+                    <code>within the line</code>
                   </p>
                 </cell>
               </row>
@@ -1999,7 +1999,7 @@
               &lt;salute&gt;Muchos saludos&lt;/salute&gt; 
               &lt;signed&gt;F. E.&lt;/signed&gt; 
               &lt;/closer&gt;</code></p>
-            <p>Si hubiera una fecha en el cierre de la carta, se ha codificado en el elemento <seg type="code">closer</seg> con <seg type="code">dateline</seg>.
+            <p>Si hubiera una fecha en el cierre de la carta, se ha codificado en el elemento <code>closer</code> con <code>dateline</code>.
             <code> 
             &lt;closer rend="paragraph"&gt; 
               &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt; 
@@ -2008,7 +2008,7 @@
           </div>
           <div type="level2">
             <head>Posdata</head>
-            <p>La posdata se ha codificado después del <seg type="code">closer</seg> con el elemento <seg type="code">postcript</seg>. La posdata siempre contiene al menos un párrafo (<seg type="code">p</seg>).
+            <p>La posdata se ha codificado después del <code>closer</code> con el elemento <code>postcript</code>. La posdata siempre contiene al menos un párrafo (<code>p</code>).
             <code>
             &lt;postscript&gt; 
               &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
