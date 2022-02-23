@@ -1232,23 +1232,25 @@ explican en el documento […]</programlisting>
           </section>
           <section>
             <title>Abreviaturas</title>
-            <para>Las abreviaturas se han codificado con elemento <tag>choice</tag>
-              y sus dos elementos hijo <tag>abbr</tag> (abreviatura) y <tag>expan</tag> (abreviatura resuelta).
-              En el elemento <tag>abbr</tag> la abreviatura se ha codificado conservando la forma
-              abreviada que aparece en la fuente textual mientras que en el elemento <tag>expan</tag> las y los editoras han proporcionado la forma resuelta o expandida para facilitar la legibilidad del texto.
-            <programlisting language="xml" xml:space="preserve">
-            &lt;choice&gt; 
-              &lt;abbr&gt;q&lt;/abbr&gt;
-              &lt;expan&gt;que&lt;/expan&gt; 
-            &lt;/choice&gt;
-            </programlisting>
+            <para>Las abreviaturas se han codificado con elemento <tag>choice</tag> y sus dos
+               elementos hijo <tag>abbr</tag> (abreviatura) y <tag>expan</tag> (abreviatura
+               resuelta). En el elemento <tag>abbr</tag> se ha conservado la forma abreviada que
+               aparece en la fuente textual mientras que en el elemento <tag>expan</tag> las y los
+               editoras han proporcionado la forma resuelta o expandida para facilitar la
+               legibilidad del texto.
+               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
+   &lt;abbr&gt;q&lt;/abbr&gt;
+   &lt;expan&gt;que&lt;/expan&gt;
+&lt;/choice&gt;</programlisting>
             </para>
             <para>Las siglas se han codificado como abreviaturas siguiendo el mismo método con <tag>choice</tag>.</para>
           </section>
           <section>
             <title>Palabras, letras o signos de puntuación suplidos</title>
-            <para>Cuando las palabras o signos de puntuación que faltan de manera evidente se han suplido, se ha codificado dicha información con el elemento <tag>supplied</tag> indicando la certeza de la intervención.</para>
-            <para>Con el atributo <tag>@cert</tag> (certainty) se ha codificado la certeza con la que se han suplido los caracteres o palabras:</para>
+            <para>Las palabras o signos de puntuación que faltan de manera evidente en la fuente y
+               que han sido suplidas por la editora o editor, se han codificado con el elemento
+                  <tag>supplied</tag>. Con el atributo <tag>@cert</tag> (certainty) se ha codificado
+               la certeza con la que se han suplido los caracteres o palabras:</para>
             <informaltable>
                <thead>
                   <tr>
@@ -1338,13 +1340,10 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">
-              &lt;choice&gt;
-                &lt;sic&gt;Humbold&lt;/sic&gt;
-                &lt;corr cert="high"&gt;Humboldt&lt;/corr&gt;
-              &lt;/choice&gt;
-            </programlisting>
+            <para>Por ejemplo: <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
+   &lt;sic&gt;Humbold&lt;/sic&gt;
+   &lt;corr cert="high"&gt;Humboldt&lt;/corr&gt;
+&lt;/choice&gt;     </programlisting>
             </para>
            <para>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha empleado el mismo elemento <tag>choice</tag> para codificar la palabra errónea con <tag>sic</tag>. Ahora bien, en estos casos no se ha proporcionado una forma corregida sino que se ha utilizado el elemento <tag>corr</tag> y se ha dejado vacío. Además, se ha utilizado el atributo <tag>type</tag> con valor "deleted" para indicar que se ha eliminado una palabra redundante.</para>   
           </section>
