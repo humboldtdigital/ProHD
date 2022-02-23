@@ -614,16 +614,19 @@
           </section>
           <section>
             <title>Listas</title>
-            <para>Las listas se han codificado con el elemento <tag>list</tag>. Los puntos o líneas individuales se han transcrito en un elemento <tag>item</tag>. La numeración existente (también con letras) no se ha codificado de manera independiente, sino que se ha transcrito dentro del
-              elemento <tag>item</tag>.
-            <programlisting language="xml" xml:space="preserve">
-            &lt;list&gt; 
-              &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt; 
-              &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;mais quand le
-              Capucin est islado = 10750 mètres.&lt;/item&gt; 
-              &lt;item&gt;Orinoco près du Baraguan 889 t.&lt;/item&gt; 
-              &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;na et de I. vieja de Montica.&lt;/item&gt; 
-              &lt;/list&gt;</programlisting>
+            <para>Las listas se han codificado con el elemento <tag>list</tag>. Los puntos o líneas
+               individuales se han transcrito en un elemento <tag>item</tag>. La numeración
+               existente (también con letras) no se ha codificado de manera independiente, sino que
+               se ha transcrito dentro del elemento <tag>item</tag>.
+               <programlisting language="xml" xml:space="preserve">&lt;list&gt; 
+   &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt; 
+   &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;
+   mais quand le Capucin est islado = 10750 mètres.&lt;/item&gt; 
+   &lt;item&gt;Orinoco près du Baraguan 889 t.&lt;/item&gt;
+   &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;
+   jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;
+   &lt;lb break="no"/&gt;na et de I. vieja de Montica.&lt;/item&gt; 
+&lt;/list&gt;</programlisting>
             </para>
           </section>
           <section>
