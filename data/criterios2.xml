@@ -21,12 +21,12 @@
             <surname>Kraft</surname>
             <firstname>Tobias</firstname>
          </personname>
-      </author> 
+      </author>
       <author>
          <personname>
-         <surname>López</surname>
-         <firstname>Violeta</firstname>
-      </personname>
+            <surname>Terrón</surname>
+            <firstname>Grisel</firstname>
+         </personname>
       </author>
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
@@ -59,7 +59,8 @@
           <para>En <tag>titleStmt</tag>, la codificación del título principal se ha realizado
             utilizando el elemento <tag>title</tag> y el atributo <tag>@type="main"</tag>. Por
             ejemplo:
-            <programlisting language="xml" xml:space="preserve">&lt;title type="main"&gt;Carta de consulta al Ayuntamiento de La Habana&lt;/title&gt;     </programlisting>
+            <programlisting language="xml" xml:space="preserve">&lt;title type="main"&gt;Carta de consulta al Ayuntamiento 
+               de La Habana&lt;/title&gt;</programlisting>
          </para>
           <para>Tras el título principal, se ha incluido de manera opcional el título en otro
             idioma, con la ortografía original, un título alternativo o un subtítulo. Con este fin
@@ -67,7 +68,8 @@
             atributo <tag>@type="sub"</tag>:
             <programlisting language="xml" xml:space="preserve">&lt;title type="main"&gt;Carta de Francisco de Arango y Parreño 
    a Alexander von Humboldt&lt;/title&gt; 
-&lt;title type="sub" xml:lang="fr"&gt;À Monsieur Mr. le Baron A. Humboldt&lt;/title&gt;         </programlisting>
+&lt;title type="sub" xml:lang="fr"&gt;À Monsieur Mr. le Baron 
+   A. Humboldt&lt;/title&gt;         </programlisting>
          </para>
           <para>Se ha utilizado de manera opcional el atributo <tag>@xml:lang</tag> con un código estándar para indicar el idioma del título alternativo: "es" para el español, "fr" para el francés, "de" para el alemán, "en" para el inglés, etc.</para>
         </section>
@@ -223,7 +225,7 @@
           <para>Por ejemplo: <programlisting language="xml" xml:space="preserve">&lt;witness&gt; 
    &lt;bibl type="print"&gt;Humboldt, Alexander von: Geografía de la plantas, 
    ó Quadro físico de los Andes Equinoxiales, y de los paises
-   vecinos. Semanario del Nuevo Reyno de Granada, volumen 16-21, 1809.&lt;/bibl&gt;
+   vecinos. Semanario del Nuevo Reyno de Granada...&lt;/bibl&gt;
 &lt;/witness&gt;     </programlisting>
          </para>
           <section>
@@ -396,8 +398,8 @@
    documento conocido como &amp;quot;Umschlag mit den Materialien für die
    Statistik von Kuba [Werk]&amp;quot;. Doble numeración: una paginación 
    original en tinta; otra moderna en lápiz que solo numera los 
-   folios (123-124). Contiene algunas adiciones en tinta negra al inicio
-   del documento, en los márgenes y al final del texto en 
+   folios (123-124). Contiene algunas adiciones en tinta negra 
+   al inicio del documento, en los márgenes y al final del texto en 
    francés por Alexander von Humboldt.&lt;/p>
 &lt;/physDesc></programlisting>
          </para>
@@ -660,7 +662,7 @@
                con el valor <tag>#right</tag> en el elemento <tag>cell</tag> (celda de tabla) o
                   <tag>dateline</tag>. Por ejemplo:
                <programlisting language="xml" xml:space="preserve">&lt;table cols="4" rows="20" rend="drawn"&gt; 
-   &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
+   &lt;head&gt;Océan entre l’europe, l’afrique et l’amérique&lt;/head&gt;
    &lt;row role="label"&gt;
       &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
       &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell>
@@ -1690,10 +1692,10 @@ explican en el documento […]</programlisting>
             </para>
             <para>Además, en algunas ocasiones, con <tag>ref</tag> se han codificado referencias a
                sitios web externos, por ejemplo, en algún comentario editorial. En este caso, se ha
-               codificado en el atributo <tag>@target</tag>  la URL completa del sitio web:
+               codificado en el atributo <tag>@target</tag> la URL completa del sitio web:
                <programlisting language="xml" xml:space="preserve">&lt;seg type="comment"&gt; 
    &lt;orig&gt;el río&lt;/orig&gt;
-   &lt;note xml:id="nxlm_bhy_ny"&gt;&lt;ref target="http://www.kallilope.de/beispiel"/&gt;&lt;/note&gt; 
+   &lt;note&gt;Se refiere al río...&lt;/note&gt; 
 &lt;/seg&gt;</programlisting>
             </para>
           </section>
@@ -2051,8 +2053,8 @@ de mayo de 1804&lt;/date&gt;</programlisting>
             del acto de comunicación; los valores permitidos son dos: <tag>sent</tag> o
                <tag>received</tag>.
             <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt;
-   &lt;correspAction type="sent"&gt;[Información sobre el remitente]&lt;/correspAction&gt; 
-   &lt;correspAction type="received"&gt;[Información sobre el destinatario]&lt;/correspAction&gt;
+   &lt;correspAction type="sent"&gt;[Remitente]&lt;/correspAction&gt; 
+   &lt;correspAction type="received"&gt;[Destinatario]&lt;/correspAction&gt;
 &lt;/correspDesc&gt;</programlisting>
          </para>
             <para>Dentro del elemento <tag>correspAction</tag>, se han utilizado los elementos
@@ -2063,12 +2065,12 @@ de mayo de 1804&lt;/date&gt;</programlisting>
                <tag>@key</tag>. Esta información puede indicarse para todas las entidades nombradas.
             <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt; 
    &lt;correspAction type="sent"&gt; 
-      &lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
+      &lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de&lt;/persName&gt;
       &lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt; 
       &lt;date when="1827-07-30"&gt;30 de julio de 1827&lt;/date&gt; 
    &lt;/correspAction&gt;
    &lt;correspAction type="received"&gt; 
-      &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt; 
+      &lt;persName key="H0012069"&gt;Humboldt, Alexander von &lt;/persName&gt; 
     &lt;/correspAction&gt;
 &lt;/correspDesc&gt;</programlisting>
          </para>
