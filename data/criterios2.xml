@@ -1359,7 +1359,9 @@ explican en el documento […]</programlisting>
           </section>
           <section>
             <title>Lecturas inciertas</title>
-            <para>Las palabras o pasajes que no son fácilmente legibles se han codificado como "lecturas inciertas" con el elemento <tag>unclear</tag>. Con el atributo <tag>@reason</tag> se ha especificado la razón de la lectura incierta:</para>
+            <para>Las palabras o pasajes que no son fácilmente legibles se han codificado con el
+               elemento <tag>unclear</tag>. Con el atributo <tag>@reason</tag> se ha especificado la
+               razón de la lectura incierta:</para>
             <informaltable>
                <thead>
                   <tr>
@@ -1437,8 +1439,9 @@ explican en el documento […]</programlisting>
           </section>
           <section>
             <title>Texto ilegible</title>
-            <para>Los caracteres o palabras ilegibles en la fuente textual debido a daños materiales o a que la escritura es poco clara, se han codificado con el
-              elemento vacío <tag>gap/</tag>.</para>
+            <para>Los caracteres o palabras ilegibles en la fuente textual debido a daños materiales
+               o a que la escritura es poco clara se han codificado con el elemento vacío
+                  <tag>gap/</tag>.</para>
             <para>Con el atributo <tag>@reason</tag> se ha indicado la razón de la ilegibilidad:</para>
             <informaltable>
                <thead>
@@ -1547,21 +1550,23 @@ explican en el documento […]</programlisting>
               <programlisting language="xml" xml:space="preserve">&lt;gap reason="illegible" unit="words" quantity="3"/&gt;</programlisting>
             </para>
             <para>Si un carácter (o cadena de caracteres) está tachado y no se puede descifrar, se
-              ha codificado tanto con <tag>del</tag> como con <tag>gap/</tag>:
-            <programlisting language="xml" xml:space="preserve"> &lt;del rendition="#s"&gt; &lt;gap reason="illegible" unit="chars"
-              quantity="5"/&gt; &lt;/del&gt;</programlisting>
+               ha codificado tanto con <tag>del</tag> como con <tag>gap/</tag>:
+               <programlisting language="xml" xml:space="preserve">&lt;del rendition="#s"&gt;
+   &lt;gap reason="illegible" unit="chars" quantity="5"/&gt;
+&lt;/del&gt;</programlisting>
             </para>
-            <para>Por último, también se han codificado individualmente las páginas destruidas o perdidas.
-            <programlisting language="xml" xml:space="preserve">&lt;pb n="1r"/&gt; &lt;gap reason="lost" unit="pages"
-              quantity="1"/&gt;</programlisting>
+            <para>Por último, también se han codificado individualmente las páginas destruidas o
+               perdidas.
+               <programlisting language="xml" xml:space="preserve">&lt;pb n="1r"/&gt;&lt;gap reason="lost" unit="pages" quantity="1"/&gt;</programlisting>
             </para>
           </section>
           <section>
             <title>Omisiones</title>
-            <para>Las omisiones se han codificado de manera explícita. Por ejemplo, para representar y mostrar correctamente la foliación, se ha codificado cada página
-              individualmente. Aunque se omitan varias páginas consecutivas, siempre se ha codificado la omisión con un <quote>1</quote> como número correspondiente a cada página que falta.</para>
-            <para>Las omisiones de caracteres, palabras, pasajes de texto o páginas enteras por parte
-              de los editores y editoras se han codificado con el elemento vacío <tag>gap/</tag>. Con el atributo <tag>@unit</tag> se ha especificado el tipo de unidad que la editora o editor ha tenido en cuenta:</para>
+            <para>Las omisiones se han codificado de manera explícita. Las omisiones de caracteres,
+               palabras, pasajes de texto o páginas enteras por parte de los editores y editoras se
+               han codificado con el elemento vacío <tag>gap/</tag>. Con el atributo
+                  <tag>@unit</tag> se ha especificado el tipo de unidad que la editora o editor ha
+               tenido en cuenta:</para>
             <informaltable>
                <thead>
                   <tr>
@@ -1656,21 +1661,24 @@ explican en el documento […]</programlisting>
                </tbody>
             </informaltable>
             <para>Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt;
-              entonces de nuevo</programlisting>
-            </para>
+               <programlisting language="xml" xml:space="preserve">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt; entonces de nuevo</programlisting>Para
+               representar y mostrar correctamente la foliación, se ha codificado cada página
+               individualmente. Aunque se omitan varias páginas consecutivas, siempre se ha
+               codificado la omisión con un <quote>1</quote> como número correspondiente a cada
+               página que falta.</para>
           </section>
           <section>
             <title>Comentarios</title>
             <para>Los comentarios editoriales se han codificado con el elemento <tag>seg</tag>
-              (arbitrary segment). A su vez, se han anidado dos elementos: por un lado, <tag>orig</tag> con el que se ha codificado el pasaje textual comentado; por el otro
-              lado, <tag>note</tag> con el que se ha codificado el comentario editorial en sí. Se ha utilizado el atributo <tag>@type</tag> en <tag>seg</tag> con el valor <tag>comment</tag>.
-            <programlisting language="xml" xml:space="preserve">
-              &lt;seg type="comment"&gt; 
-                &lt;orig&gt;Discurso del héroe&lt;/orig&gt; 
-                &lt;note&gt;Comentario irónico que alude a...&lt;/note&gt;
-              &lt;/seg&gt;
-            </programlisting>
+               (arbitrary segment). A su vez, se han anidado dos elementos: por un lado,
+                  <tag>orig</tag> con el que se ha codificado el pasaje textual comentado; por el
+               otro lado, <tag>note</tag> con el que se ha codificado el comentario editorial en sí.
+               Se ha utilizado el atributo <tag>@type</tag> en <tag>seg</tag> con el valor
+                  <tag>comment</tag>.
+               <programlisting language="xml" xml:space="preserve">&lt;seg type="comment"&gt;
+   &lt;orig&gt;Discurso del héroe&lt;/orig&gt;
+   &lt;note&gt;Comentario irónico que alude a...&lt;/note&gt;
+&lt;/seg&gt;</programlisting>
             </para>
           </section>
           <section>
