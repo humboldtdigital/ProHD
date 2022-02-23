@@ -1063,8 +1063,11 @@ explican en el documento […]</programlisting>
           </section>
                     <section>
             <title>Sustituciones</title>
-            <para>Si se elimina una palabra o un pasaje del texto en el manuscrito y al mismo tiempo se añade una palabra, estos dos fenómenos textuales se han codificado juntos con un elemento <tag>subst</tag> (substition).</para>
-            <para>La palabra eliminada se ha codificado con el elemento <tag>del</tag> (deletion). El tipo de eliminación se ha especificado en el atributo <tag>@rendition</tag>:</para>
+            <para>Si se elimina una palabra o un pasaje del texto en la fuente y al mismo tiempo se
+               añade una palabra, estos dos fenómenos textuales se han codificado juntos con un
+               elemento <tag>subst</tag> (substition).</para>
+            <para>La eliminación se ha codificado con el elemento <tag>del</tag> (deletion). El tipo
+               de eliminación se ha especificado en el atributo <tag>@rendition</tag>:</para>
             <informaltable>
                <thead>
                   <tr>
@@ -1110,7 +1113,8 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>La palabra (o palabras) añadida se ha codificado con el elemento <tag>add</tag> (addition). El lugar de la adición se ha especificado con el atributo <tag>@place</tag>:</para>
+            <para>La adición se ha codificado con el elemento <tag>add</tag> (addition). El lugar de
+               la adición se ha especificado con el atributo <tag>@place</tag>:</para>
             <informaltable>
                <thead>
                   <tr>
@@ -1186,12 +1190,10 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">en donde manifies&lt;g ref="#typoHyphen"/&gt;&lt;lb break="no"/&gt;t 
-            &lt;subst&gt; 
-              &lt;del rendition="#ow"&gt;a&lt;/del&gt; 
-              &lt;add place="across"&gt;o&lt;/add&gt; 
-              &lt;/subst&gt; con la mayor claridad</programlisting>
+            <para>Por ejemplo: <programlisting language="xml" xml:space="preserve">&lt;subst>
+   &lt;del rendition="#ow">6&lt;/del>
+   &lt;add place="across">7&lt;/add>
+&lt;/subst>,4 pesos</programlisting>
             </para>
           </section>
         </section>
