@@ -4,12 +4,6 @@
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
         <title>Criterios de codificación TEI</title>
-         <copyright>
-            <year>2022</year>
-         </copyright>
-      <keywordset>
-         <keyword>Documentación</keyword>
-      </keywordset>
       <author>
         <personname>
          <surname>Rojas Castro</surname>
@@ -31,6 +25,16 @@
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
       </publisher>
+      <legalnotice><para>Creative Commons
+         Atribución 4.0 Internacional (CC BY 4.0)</para></legalnotice>
+      <revhistory>
+         <revision version="2">
+            <date>23-02-2002</date>
+         </revision>
+      </revhistory>
+      <keywordset>
+         <keyword>Documentación</keyword>
+      </keywordset>
    </info>
       <section xml:id="metadatos">
         <title>Metadatos</title>
