@@ -610,7 +610,8 @@
                   (<tag>unit="chars"</tag>) o palabras (<tag>unit="words"</tag>) omitidos no se
                puede determinar de manera segura, se ha utilizado el valor <tag>1</tag> en
                   <tag>@quantity</tag>. Por ejemplo:
-               <programlisting language="xml" xml:space="preserve">sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programlisting>
+               <programlisting language="xml" xml:space="preserve">sur une longueur de plus 
+de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programlisting>
                De manera opcional, se ha utilizado el atributo <tag>@dim</tag> para indicar si se
                trata de un espacio en blanco horizontal o vertical.</para>
           </section>
