@@ -814,19 +814,23 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
           </section>
           <section>
             <title>Dibujos</title>
-            <para>Los dibujos e ilustraciones se han codificado con el elemento <tag>figure</tag>. cuando ha sido posible identificarla, se ha codificado la persona que
-              realizó el dibujo con el atributo <tag>@hand</tag>: <tag>#author</tag>, <tag>#addressee</tag>, <tag>#unknown</tag> o una persona del registro de personas. En caso de que se disponga
-              de un título en el documento original, se ha codificado con el elemento <tag>p</tag>. En el elemento hijo <tag>figDesc</tag>, en cambio, las y los editores han descrito de manera opcional la imagen. El
-              nombre del fichero se ha codificado con el atributo <tag>@facs</tag>. Los
-              comentarios editoriales que se refieren a la imagen en sí se han codificado con el elemento
-              hijo <tag>note</tag>.
-            <programlisting language="xml" xml:space="preserve">
-            &lt;figure facs="dibujo" hand="#addressee"&gt; 
-             &lt;p&gt;[Título de la figura]&lt;/p&gt; 
-             &lt;figDesc&gt;[Descripción de la imagen por el editor]&lt;/figDesc&gt; 
-             &lt;note type="editorial"&gt;[Comentario editorial]&lt;/note&gt; 
-             &lt;/figure&gt;</programlisting>
+            <para>Los dibujos e ilustraciones se han codificado con el elemento <tag>figure</tag>.
+               Cuando ha sido posible identificar la persona que realizó el dibujo, se ha utilizado
+               el atributo <tag>@hand</tag> con los siguientes valores: <tag>#author</tag>,
+                  <tag>#addressee</tag>, <tag>#unknown</tag> o una persona del registro del
+               proyecto. En caso de que se disponga de un título en el documento original, se ha
+               codificado con el elemento <tag>p</tag>. Por
+               ejemplo:<programlisting language="xml" xml:space="preserve">&lt;figure facs="dibujo" hand="#addressee"&gt;
+   &lt;p&gt;[Título de la figura]&lt;/p&gt;
+   &lt;figDesc&gt;[Descripción de la imagen por el editor]&lt;/figDesc&gt;
+   &lt;note type="editorial"&gt;[Comentario editorial]&lt;/note&gt; 
+&lt;/figure&gt;</programlisting></para>
+            <para>El nombre del fichero se ha codificado con el atributo <tag>@facs</tag>. Los
+               comentarios editoriales que se refieren a la imagen en sí se han codificado con el
+               elemento hijo <tag>note</tag>. 
             </para>
+             <para>De manera opcional, en el elemento <tag>figDesc</tag> las y los editores han
+                descrito la imagen.</para>
           </section>
         </section>
         <section xml:id="intervenciones-autoriales">
@@ -881,14 +885,22 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                </tbody>
             </informaltable>
             <para>Por ejemplo:
-              <programlisting language="xml" xml:space="preserve">Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</programlisting>
+               <programlisting language="xml" xml:space="preserve">Sucinta noticia de la situación 
+&lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</programlisting>
             </para>
             <para>Si un párrafo completo aparece en la fuente destacado con una marca en el margen, se ha codificado con el elemento <tag>p</tag> y el atributo <tag>@rendition</tag> con el valor <tag>#mMM</tag> (marca al borde).</para>
           </section>
           <section>
             <title>Superscript</title>
-            <para>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto a la línea) en la fuente textual se han codificado con el elemento <tag>hi</tag> (highlighted) y el atributo <tag>@rendition</tag> con valor <tag>#sup</tag>. Por ejemplo:
-              <programlisting language="xml" xml:space="preserve">ap.&lt;hi rendition="#sup"&gt;do&lt;/hi&gt;</programlisting>
+            <para>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto
+               a la línea) en la fuente textual se han codificado con el elemento <tag>hi</tag>
+               (highlighted) y el atributo <tag>@rendition</tag> con valor <tag>#sup</tag>. Por
+               ejemplo:
+               <programlisting language="xml" xml:space="preserve">le ofreciera de mi parte 
+algunas observaciones &lt;choice>
+   &lt;abbr>sob&lt;hi rendition="#sup">e&lt;/hi>&lt;/abbr>
+   &lt;expan>sobre&lt;/expan>
+&lt;/choice> los&lt;lb/> principales hechos </programlisting>
             </para>
           </section>
           <section>
