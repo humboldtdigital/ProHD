@@ -562,17 +562,13 @@
           </section>
           <section>
             <title>Foliación y paginación</title>
-            <para>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o paginación, es decir, el lugar en
-              que se inicia un folio nuevo o página nueva. Siempre se ha codificado el principio del
-              folio o página, no el final. En caso de que el autor haya empleado otro sistema para
-              numerar las páginas en la fuente textual, se ha codifcado la foliación o paginación del autor de manera opcional.</para>
+            <para>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o
+               paginación, es decir, el lugar en que se inicia un folio nuevo o página nueva.
+               Siempre se ha codificado el principio del folio o página, no el final. </para>
             <para>El inicio de folio o página se ha codificado siempre con el elemento vacío
-                <tag>pb/</tag> (pagebreak). El atributo <tag>@n</tag>
-              contiene el número de página o folio (según la secuencia física del documento o del
-              autor).
-            <programlisting language="xml" xml:space="preserve">
-              distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano
-            </programlisting>
+                  <tag>pb/</tag> (pagebreak). El atributo <tag>@n</tag> contiene el número de página
+               o folio (según la secuencia física del documento o del autor).
+               <programlisting language="xml" xml:space="preserve">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano           </programlisting>
             </para>
             <para>La digitalización del folio o página se ha codificado con el atributo <tag>@facs</tag> (facsimile). Se ha codificado el nombre del fichero de la imagen
               digital incluyendo la foliación archivística y la extensión "tif". El nombre del fichero corresponde a un URI, es decir, es único en el dossier digital. Por
@@ -592,11 +588,12 @@
               (en blanco) individualmente. Aunque se sucedan varias páginas en blanco, siempre se ha introducido un número <quote>1</quote> para cada nueva página en
               blanco codificada.</para>
             <para>Las páginas en blanco se han codificado con el elemento (vacío) <tag>gap/</tag>.
-              Este se ha utilizado justo después del salto de página (<tag>pb/</tag>)
-              anterior. Los dos atributos <tag>@unit</tag> y <tag>@quantity</tag> del elemento <tag>gap/</tag> llevan los
-              valores <tag>pages</tag> y <tag>1</tag>. El atributo <tag>@reason</tag> contiene el valor <tag>empty</tag>. Cuando hay más de una página en blanco seguida, se han codificado cada una de ellas individualmente.
-            <programlisting language="xml" xml:space="preserve">
-              &lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</programlisting>
+               Este se ha utilizado justo después del salto de página (<tag>pb/</tag>) anterior. Los
+               dos atributos <tag>@unit</tag> y <tag>@quantity</tag> del elemento <tag>gap/</tag>
+               llevan los valores <tag>pages</tag> y <tag>1</tag>. El atributo <tag>@reason</tag>
+               contiene el valor <tag>empty</tag>. Cuando hay más de una página en blanco seguida,
+               se han codificado cada una de ellas individualmente.
+               <programlisting language="xml" xml:space="preserve">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</programlisting>
             </para>
           </section>
           <section>
@@ -606,16 +603,14 @@
               reproducción de dichos vacíos en la transcripción se ha distinguido de las omisiones realizadas por los editores, así como de las
                 páginas vacías o perdidas, cada una de las cuales se ha codificado como
                 <tag>gap/</tag>.</para>
-            <para>El espacio en blanco semánticamente significativo se ha codificado con el
-              elemento (vacío) <tag>space/</tag> y tres atributos: con <tag>@dim</tag> se ha indicado si es un espacio en blanco horizontal o vertical mientras que el alcance de
-              la omisión se ha indicado mediante los valores de los atributos <tag>@unit</tag> y <tag>@quantity</tag>. Si el número de líneas
-                (<tag>unit="lines"</tag>), caracteres (<tag>unit="chars"</tag>) o palabras (<tag>unit="words"</tag>) omitidos no se
-              puede determinar de manera segura, se ha utilizado el valor <tag>1</tag> en
-                <tag>@quantity</tag>. Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">
-            sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur 
-            </programlisting>
-            </para>
+            <para>El alcance de la omisión se ha indicado mediante <tag>@unit</tag> y
+                  <tag>@quantity</tag>. Si el número de líneas (<tag>unit="lines"</tag>), caracteres
+                  (<tag>unit="chars"</tag>) o palabras (<tag>unit="words"</tag>) omitidos no se
+               puede determinar de manera segura, se ha utilizado el valor <tag>1</tag> en
+                  <tag>@quantity</tag>. Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programlisting>
+               De manera opcional, se ha utilizado el atributo <tag>@dim</tag> para indicar si se
+               trata de un espacio en blanco horizontal o vertical.</para>
           </section>
           <section>
             <title>Listas</title>
