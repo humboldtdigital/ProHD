@@ -1055,7 +1055,9 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                </tbody>
             </informaltable>
             <para>Por ejemplo:
-              <programlisting language="xml" xml:space="preserve">[…] y logré para el Comercio con estranjeros, los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se explican en el documento […]</programlisting>
+               <programlisting language="xml" xml:space="preserve">[…] y logré para el Comercio con estranjeros, 
+los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se 
+explican en el documento […]</programlisting>
             </para>
             <para>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado con el elemento <tag>metamark/</tag>. La forma de la marca de inserción (asterisco, número, etc.) no se ha especificado.</para>
           </section>
