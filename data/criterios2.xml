@@ -952,7 +952,8 @@ algunas observaciones &lt;choice>
                </tbody>
             </informaltable>
             <para>Por ejemplo:
-              <programlisting language="xml" xml:space="preserve">Conocen ya estos vecinos la esplendidez en la mesa, las viviendas, muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</programlisting>
+               <programlisting language="xml" xml:space="preserve">Conocen ya estos vecinos la esplendidez en la mesa, las viviendas, 
+muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</programlisting>
             </para>
           </section>
           <section>
