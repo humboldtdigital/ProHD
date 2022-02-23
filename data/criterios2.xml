@@ -409,7 +409,7 @@
             escritura y fecha de creación.</para>
           <para>El nombre del autor se ha codificado con el elemento <tag>persName</tag>.
             <!-- Tobias: esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades -->
-            En caso de seleccionar el autor del registro de personas del proyecto, el ID asociado se
+            En caso de seleccionar el autor del registro de personas del proyecto, el identificador asociado se
             ha generado en el atributo <tag>@key</tag>, creando un enlace al registro.
             <programlisting language="xml" xml:space="preserve">&lt;profileDesc&gt; 
    &lt;creation&gt;
@@ -1648,7 +1648,7 @@
             <title>Referencias</title>
             <para>Las referencias a otras ediciones o pasajes internos se han codificado con el elemento
                 <tag>ref</tag>, cuyo atributo <tag>@target</tag> contiene el
-              ID único de la edición o del pasaje de destino. Por ejemplo:
+              identificador único de la edición o del pasaje de destino. Por ejemplo:
               <programlisting language="xml" xml:space="preserve">&lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una referencia]&lt;/ref&gt;</programlisting>
             </para>
             <para>Además, en algunas ocasiones, con <tag>ref</tag> se han codificado referencias a sitios web externos, por ejemplo, en algún comentario editorial. En este caso, la URL completa del
@@ -2014,7 +2014,7 @@
          </para>
             <para>Dentro del elemento <tag>correspAction</tag>, se han utilizado los
               elementos <tag>persName</tag>, <tag>orgName</tag>, <tag>placeName</tag> y <tag>date</tag> para identificar la persona u organización que participa en el intercambio, el lugar en que sucede y la fecha. Siempre que ha sido posible, la información sobre
-              personas, organizaciones y lugares se ha vinculado con el ID codificado en el atributo <tag>@key</tag>. Esta información puede indicarse tanto para el remitente como para el
+              personas, organizaciones y lugares se ha vinculado con el identificador codificado en el atributo <tag>@key</tag>. Esta información puede indicarse tanto para el remitente como para el
               destinatario.
             <programlisting language="xml" xml:space="preserve">
             &lt;correspDesc&gt; 
