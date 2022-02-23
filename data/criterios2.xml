@@ -636,48 +636,41 @@
               mientras que las implícitas son reconocibles sólo por la disposición de sus
               contenidos. Se ha distinguido entre tablas y enumeraciones que
                 se asemejan a listas.</para>
-            <para>Las tablas se han codificado con el elemento <tag>table</tag>. Se ha
-              asignado a la primera fila de la tabla el atributo <tag>@role="label"</tag> para que se consideren como encabezados. Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">
-            &lt;table rows="3" cols="2"&gt; 
-              &lt;head&gt;Tabla&lt;/head&gt;
-              &lt;row role="label"&gt; 
-               &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
-               &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt; 
-              &lt;/row&gt; &lt;row&gt;
-               &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; 
-               &lt;cell&gt;[Columna 2/ Fila 1]&lt;/cell&gt; 
-              &lt;/row&gt; … 
-              &lt;/table&gt;</programlisting>
+            <para>Las tablas se han codificado con el elemento <tag>table</tag>. Se ha asignado a la
+               primera fila de la tabla el atributo <tag>@role="label"</tag> para que se considere
+               un encabezado. Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">&lt;table rows="3" cols="2"&gt; 
+   &lt;head&gt;Tabla&lt;/head&gt;
+      &lt;row role="label"&gt; 
+         &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
+         &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt; 
+      &lt;/row&gt;
+      &lt;row&gt;
+         &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt; 
+         &lt;cell&gt;[Columna 2/ Fila 1]&lt;/cell&gt;
+      &lt;/row&gt; … 
+&lt;/table&gt;</programlisting>
             </para>
           </section>
           <section>
             <title>Alineación de texto</title>
-            <para>En las tablas y en el inicio de una carta, se ha codificado la alineación del texto de manera opcional. De este modo, las fechas o las celdas de la tabla se alinean a la derecha. Para ello, se ha utilizado atributo <tag>@rendition</tag> con el
-              valor <tag>#right</tag> en el elemento <tag>cell</tag> (celda de tabla) o <tag>dateline</tag>.
-            <programlisting language="xml" xml:space="preserve"> 
-            &lt;table cols="4" rows="20" rend="drawn"&gt; 
-             &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
-             &lt;row role="label"&gt; 
-              &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
-              &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell&gt;
-              &lt;cell&gt;température de&lt;lb/&gt;la surface de&lt;lb/&gt;la mer.&lt;lb/&gt;
-              thermomètre de reaumur.&lt;/cell&gt; 
-              &lt;cell&gt;température &lt;lb/&gt;de l’atmosphère.&lt;lb/&gt; &lt;choice&gt;&lt;orig/&gt;&lt;reg&gt;thermomètre de
-              reaumur.&lt;/reg&gt; &lt;/choice&gt;&lt;/cell&gt; 
-            &lt;/row&gt; 
-            &lt;row&gt; 
-             &lt;cell rendition="#right"&gt;43°. 29′&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;10°. 31′.″&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;12°.&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;18°.&lt;/cell&gt; &lt;/row&gt; &lt;row&gt; 
-              &lt;cell rendition="#right"&gt;39. 10.&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;16. 18. 30″&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;12.&lt;/cell&gt; 
-              &lt;cell rendition="#right"&gt;13.&lt;/cell&gt; 
-             &lt;/row&gt; 
-             &lt;!--[…]--&gt;
-             &lt;/table&gt;</programlisting>
+            <para>En las tablas y en el inicio de una carta, se ha codificado la alineación del
+               texto de manera opcional. De este modo, las fechas o las celdas de la tabla se
+               alinean a la derecha. Para ello, se ha utilizado el atributo <tag>@rendition</tag>
+               con el valor <tag>#right</tag> en el elemento <tag>cell</tag> (celda de tabla) o
+                  <tag>dateline</tag>. Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">&lt;table cols="4" rows="20" rend="drawn"&gt; 
+   &lt;head&gt;Océan entre l’europe&lt;supplied&gt;,&lt;/supplied&gt; l’afrique et l’amérique.&lt;/head&gt;
+   &lt;row role="label"&gt;
+      &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
+      &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell>
+   &lt;/row&gt; 
+   &lt;row&gt;
+      &lt;cell rendition="#right"&gt;43°. 29′&lt;/cell&gt;
+      &lt;cell rendition="#right"&gt;10°. 31′.″&lt;/cell&gt;
+   &lt;/row&gt;
+   &lt;!--[…]--&gt;
+&lt;/table&gt;</programlisting>
             </para>
           </section>
           <section>
@@ -689,7 +682,10 @@
               general (es decir, el elemento vacío <tag>metamark/</tag>) para
               indicar que el texto ha sido introducido por el autor y no por los editores.</para>
             <para>Las notas se han codificado con el elemento <tag>note</tag>:
-              <programlisting language="xml" xml:space="preserve">En los partidos más remotos una caballería &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</programlisting>
+               <programlisting language="xml" xml:space="preserve">En los partidos más remotos una caballería 
+&lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de 
+tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra
+montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</programlisting>
             </para>
             <para>Cuando es posible identificar al autor de la nota, se ha codificado esta información con el atributo <tag>@hand</tag>:</para>
             <informaltable>
@@ -812,10 +808,9 @@
                </tbody>
             </informaltable>
             <para>Si el autor utiliza una marca de inserción, se ha codificado con el elemento vacío <tag>metamark/</tag>. La apariencia de la marca de inserción (asterisco, número, etc.) no se ha hecho explícita.</para>
-            <para>Se ha diferenciado entre las notas y las adiciones: las
-              adiciones complementan el texto principal y se integran sintácticamente en él. Las
-              notas son, como las notas a pie de página impresas, unidades de texto
-              independientes.</para>
+            <para>Se ha diferenciado entre las notas y las adiciones: las adiciones complementan el
+               texto principal y se integran sintácticamente en él. Las notas son unidades de texto
+               independientes.</para>
           </section>
           <section>
             <title>Dibujos</title>
