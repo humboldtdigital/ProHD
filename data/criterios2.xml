@@ -1688,41 +1688,44 @@ explican en el documento […]</programlisting>
               identificador único de la edición o del pasaje de destino. Por ejemplo:
               <programlisting language="xml" xml:space="preserve">&lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una referencia]&lt;/ref&gt;</programlisting>
             </para>
-            <para>Además, en algunas ocasiones, con <tag>ref</tag> se han codificado referencias a sitios web externos, por ejemplo, en algún comentario editorial. En este caso, la URL completa del
-              sitio web se ha codificado en el atributo <tag>@target</tag>.
-            <programlisting language="xml" xml:space="preserve">
-            &lt;seg type="comment"&gt; 
-              &lt;orig&gt;el río&lt;/orig&gt;
-              &lt;note xml:id="nxlm_bhy_ny"&gt;&lt;ref target="http://www.kallilope.de/beispiel"/&gt;&lt;/note&gt; 
-            &lt;/seg&gt;
-            </programlisting>
+            <para>Además, en algunas ocasiones, con <tag>ref</tag> se han codificado referencias a
+               sitios web externos, por ejemplo, en algún comentario editorial. En este caso, se ha
+               codificado en el atributo <tag>@target</tag>  la URL completa del sitio web:
+               <programlisting language="xml" xml:space="preserve">&lt;seg type="comment"&gt; 
+   &lt;orig&gt;el río&lt;/orig&gt;
+   &lt;note xml:id="nxlm_bhy_ny"&gt;&lt;ref target="http://www.kallilope.de/beispiel"/&gt;&lt;/note&gt; 
+&lt;/seg&gt;</programlisting>
             </para>
           </section>
           <section>
             <title>Fechas</title>
-            <para>Las fechas que aparecen en la fuente textual se han codificado con <tag>date</tag>. Para que las fechas sean legibles por el ordenador
-              se ha seguido el formato <tag>AAAA-MM-DD</tag> en los atributos <tag>@when</tag>, <tag>@from</tag> y <tag>@to</tag>,
-              así como <tag>@notBefore</tag> y <tag>@notAfter</tag>.
-            <itemizedlist>
+            <para>Las fechas que aparecen en la fuente textual se han codificado con
+               <tag>date</tag>. Para que las fechas sean legibles por el ordenador se ha seguido el
+               formato <tag>AAAA-MM-DD</tag> en los atributos <tag>@when</tag>, <tag>@from</tag> y
+                  <tag>@to</tag>, así como <tag>@notBefore</tag> y <tag>@notAfter</tag>. <itemizedlist>
                   <listitem>
-                     <para>Fecha exacta</para>
+                     <para>Fecha exacta:</para>
                   </listitem>
                </itemizedlist>
-               <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de la Nochebuena del año 1772&lt;/date&gt;</programlisting>
+               <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de la 
+Nochebuena del año 1772&lt;/date&gt;</programlisting>
                <itemizedlist>
                   <listitem>
-                     <para>Período de tiempo exacto</para>
+                     <para>Período de tiempo exacto:</para>
                   </listitem>
                </itemizedlist>
-               <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731 al 11 de septiembre de 1741&lt;/date&gt;</programlisting>
+               <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731 
+al 11 de septiembre de 1741&lt;/date&gt;</programlisting>
                <itemizedlist>
                   <listitem>
-                     <para>Período aproximado</para>
+                     <para>Período aproximado:</para>
                   </listitem>
                </itemizedlist>
-              <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad de mayo de 1804&lt;/date&gt;</programlisting>
+               <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad 
+de mayo de 1804&lt;/date&gt;</programlisting>
             </para>
-            <para>Además, de manera opcional, en el atributo <tag>@cert</tag> se ha especificado la certeza: <tag>high</tag>, <tag>low</tag>.</para>
+            <para>Además, de manera opcional, en el atributo <tag>@cert</tag> se ha especificado el
+               nivel de certeza: <tag>high</tag>, <tag>low</tag>.</para>
             <para>Más ejemplos:</para>
             <informaltable>
                <thead>
@@ -1902,10 +1905,9 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Asimismo, se ha expresado el nivel de certeza, aproximación, período, etc. en el contenido del elemento mediante lenguaje natural. Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">
-              &lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
-            </programlisting>
+            <para>En el contenido del elemento también se ha expresado el nivel de certeza,
+               aproximación, período, etc. mediante lenguaje natural. Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;         </programlisting>
             </para>
           </section>
           <section>
