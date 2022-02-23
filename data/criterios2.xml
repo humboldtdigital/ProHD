@@ -2122,24 +2122,26 @@ de mayo de 1804&lt;/date&gt;</programlisting>
           <section>
             <title>Inicio de la carta</title>
             <para>El inicio de la carta se ha codificado con el elemento <tag>opener</tag>. Dentro, si los hubiera, se ha codificado la fecha y el saludo con los elementos <tag>dateline</tag> y <tag>salute</tag> respectivamente.</para>
-            <para>En el elemento <tag>dateline</tag> se ha utilizado el atributo <tag>@rend</tag> si la fecha está sangrada o alineada a la derecha. Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">
-            &lt;opener&gt; 
-              &lt;dateline rend="align(right)"&gt;30 de julio de 1827&lt;/dateline&gt; 
-              &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
-              &lt;/opener&gt;</programlisting>
+            <para>En el elemento <tag>dateline</tag> se ha utilizado el atributo <tag>@rend</tag> si
+            la fecha está sangrada o alineada a la derecha. Por ejemplo:
+            <programlisting language="xml" xml:space="preserve">&lt;opener&gt;
+   &lt;dateline rend="align(right)"&gt;30 de julio de 1827&lt;/dateline&gt;
+   &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
+&lt;/opener&gt;</programlisting>
          </para>
           </section>
           <section>
             <title>Actos de escritura</title>
-            <para>Los actos de escritura se han codificado con el elemento <tag>div</tag> con dos atributos: por un lado, el atributo <tag>@type</tag> debe llevar el valor <tag>writingSession</tag>; por el otro, <tag>@n</tag> debe indicar el número del acto de escritura.
-            <programlisting language="xml" xml:space="preserve"> 
-            &lt;div type="writingSession"&gt; 
-              &lt;p&gt;[Primer acto de escritura]&lt;/p&gt; 
-            &lt;/div&gt; 
-            &lt;div type="writingSession" n="2"&gt;
-              &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt; 
-              &lt;/div&gt;</programlisting>
+            <para>Los actos de escritura se han codificado con el elemento <tag>div</tag> con dos
+            atributos: por un lado, el atributo <tag>@type</tag> debe llevar el valor
+               <tag>writingSession</tag>; por el otro, <tag>@n</tag> debe indicar el número del acto
+            de escritura.
+            <programlisting language="xml" xml:space="preserve">&lt;div type="writingSession"&gt; 
+   &lt;p&gt;[Primer acto de escritura]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div type="writingSession" n="2"&gt;
+   &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt; 
+&lt;/div&gt;</programlisting>
          </para>
           </section>
           <section>
@@ -2185,27 +2187,26 @@ de mayo de 1804&lt;/date&gt;</programlisting>
             </tbody>
          </informaltable>
             <para>Por ejemplo:
-            <programlisting language="xml" xml:space="preserve"> 
-            &lt;closer rend="paragraph"&gt; 
-              &lt;salute&gt;Muchos saludos&lt;/salute&gt; 
-              &lt;signed&gt;F. E.&lt;/signed&gt; 
-              &lt;/closer&gt;</programlisting>
+            <programlisting language="xml" xml:space="preserve">&lt;closer rend="paragraph"&gt;
+   &lt;salute&gt;Muchos saludos&lt;/salute&gt;
+   &lt;signed&gt;F. E.&lt;/signed&gt;
+&lt;/closer&gt;</programlisting>
          </para>
-            <para>Si hubiera una fecha en el cierre de la carta, se ha codificado en el elemento <tag>closer</tag> con <tag>dateline</tag>.
-            <programlisting language="xml" xml:space="preserve"> 
-            &lt;closer rend="paragraph"&gt; 
-              &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt; 
-              &lt;!-- […] --&gt; 
-              &lt;/closer&gt;</programlisting>
+            <para>Si hubiera una fecha en el cierre de la carta, se ha codificado en el elemento
+               <tag>closer</tag> con <tag>dateline</tag>.
+            <programlisting language="xml" xml:space="preserve">&lt;closer rend="paragraph"&gt;
+   &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt; 
+   &lt;!-- […] --&gt; 
+&lt;/closer&gt;</programlisting>
          </para>
           </section>
           <section>
             <title>Posdata</title>
-            <para>La posdata se ha codificado después del <tag>closer</tag> con el elemento <tag>postcript</tag>. La posdata siempre contiene al menos un párrafo (<tag>p</tag>).
-            <programlisting language="xml" xml:space="preserve">
-            &lt;postscript&gt; 
-              &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
-              &lt;/postscript&gt;</programlisting>
+            <para>La posdata se ha codificado después del <tag>closer</tag> con el elemento
+               <tag>postcript</tag>. La posdata siempre contiene al menos un párrafo (<tag>p</tag>).
+            <programlisting language="xml" xml:space="preserve">&lt;postscript&gt;
+   &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
+&lt;/postscript&gt;</programlisting>
          </para>
           </section>
       </section>
