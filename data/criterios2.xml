@@ -1345,7 +1345,17 @@ explican en el documento […]</programlisting>
    &lt;corr cert="high"&gt;Humboldt&lt;/corr&gt;
 &lt;/choice&gt;     </programlisting>
             </para>
-           <para>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha empleado el mismo elemento <tag>choice</tag> para codificar la palabra errónea con <tag>sic</tag>. Ahora bien, en estos casos no se ha proporcionado una forma corregida sino que se ha utilizado el elemento <tag>corr</tag> y se ha dejado vacío. Además, se ha utilizado el atributo <tag>type</tag> con valor "deleted" para indicar que se ha eliminado una palabra redundante.</para>   
+           <para>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha
+               empleado el mismo elemento <tag>choice</tag> para codificar la palabra errónea con
+                  <tag>sic</tag>. Ahora bien, en estos casos no se ha proporcionado una forma
+               corregida sino que se ha utilizado el elemento <tag>corr</tag> y se ha dejado vacío.
+               Además, se ha utilizado el atributo <tag>type</tag> con valor "deleted" para indicar
+               que se ha eliminado una palabra redundante. Por
+               ejemplo:<programlisting>se trabaja aquí más 
+&lt;choice&gt;
+   &lt;sic&gt;más&lt;/sic&gt;
+   &lt;corr type="deleted"/&gt;
+&lt;/choice&gt; cantidad</programlisting></para>   
           </section>
           <section>
             <title>Lecturas inciertas</title>
