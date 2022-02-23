@@ -1202,31 +1202,32 @@ explican en el documento […]</programlisting>
           <para>En todas las ediciones digitales del proyecto se han codificado las intervenciones editoriales de manera explícita.</para>
           <section>
             <title>Normalizaciones</title>
-            <para>La ortografía, puntuación, mayúsculas y separación de las palabras se han normalizado de manera explícita con el elemento <tag>choice</tag> y sus dos elementos hijos <tag>orig</tag> (forma original) y <tag>reg</tag> (forma regulizada). En el elemento <tag>orig</tag> se ha codificado la forma
-          original tal y como aparece en la fuente textual mientras que en el elemento <tag>reg</tag> se ha codificado la forma regularizada, es decir, modernizada a la normal ortográfica actual para facilitar la legibilidad del texto. Por ejemplo:
-          <programlisting language="xml" xml:space="preserve">
-          &lt;choice&gt; 
-              &lt;orig&gt;espendiendo&lt;/orig&gt;
-              &lt;reg&gt;expendiendo&lt;/reg&gt; 
-          &lt;/choice&gt;
-          </programlisting>
+            <para>La ortografía, puntuación, mayúsculas y separación de las palabras se han
+               normalizado de manera explícita con el elemento <tag>choice</tag> y sus dos elementos
+               hijos <tag>orig</tag> (forma original) y <tag>reg</tag> (forma regularizada). En el
+               elemento <tag>orig</tag> se ha codificado la forma original tal y como aparece en la
+               fuente textual mientras que en el elemento <tag>reg</tag> se ha codificado la forma
+               regularizada, es decir, modernizada a la normal ortográfica actual para facilitar la
+               legibilidad del texto. Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
+   &lt;orig&gt;espendiendo&lt;/orig&gt;
+   &lt;reg&gt;expendiendo&lt;/reg&gt; 
+&lt;/choice&gt;        </programlisting>
             </para>
             <para>Siempre se han codificado las palabras enteras aun cuando solamente se regularice una grafía o una tilde tal y como se muestra en el ejemplo anterior.</para>
-            <para>Se ha seguido el mismo método de codificación con la normalización de la mayúscula. Por ejemplo:
-          <programlisting language="xml" xml:space="preserve">
-          &lt;choice&gt; 
-              &lt;orig&gt;ensayo político&lt;/orig&gt;
-              &lt;reg&gt;Ensayo Político&lt;/reg&gt; 
-          &lt;/choice&gt;
-          </programlisting>
+            <para>Se ha seguido el mismo método de codificación con la normalización de la
+               mayúscula. Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
+   &lt;orig&gt;ensayo político&lt;/orig&gt;
+   &lt;reg&gt;Ensayo Político&lt;/reg&gt; 
+&lt;/choice&gt;</programlisting>
             </para>
-            <para>El mismo método de normalización se ha aplicado a contracciones o uniones de palabras. Por ejemplo:
-          <programlisting language="xml" xml:space="preserve">
-          &lt;choice&gt; 
-              &lt;orig&gt;dela&lt;/orig&gt;
-              &lt;reg&gt;de la&lt;/reg&gt; 
-          &lt;/choice&gt;
-          </programlisting>
+            <para>El mismo método de normalización se ha aplicado a contracciones o uniones de
+               palabras. Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
+   &lt;orig&gt;dela&lt;/orig&gt;
+   &lt;reg&gt;de la&lt;/reg&gt;
+&lt;/choice&gt;</programlisting>
             </para>
           </section>
           <section>
