@@ -530,7 +530,17 @@
       </section>
       <section xml:id="texto">
         <title>Texto</title>
-        <para>Los textos editados como parte del proyecto han sido codificados desde un punto de vista estructural. Se han representado de manera explícita con etiquetado TEI todos los párrafos, rupturas de línea, listas, tablas, notas y dibujos. Asimismo, se han codificado la paginación o foliación de la fuente, incluyendo las páginas en blanco, y los cambios en la tipografía como los destacados, los espacios dejados por el autor, las intervenciones autoriales como las eliminaciones, adiciones y sustituciones, y las intervenciones editoriales como las normalizaciones, la resolución de las abreviaturas, las palabras suplidas, las correcciones de errores evidentes, las lecturas inciertas y el texto ilegible, las omisiones y los extranjerismos. Por último, en la medida de lo posible, se han codificado también las fechas y las entidades nombradas (personas, lugares y organizaciones) en el cuerpo del texto.</para>
+        <para>Los textos editados como parte del proyecto han sido codificados desde un punto de
+         vista estructural. Se han representado de manera explícita con etiquetado TEI todos los
+         párrafos, rupturas de línea, listas, tablas, notas y dibujos. Asimismo, se han codificado
+         la paginación o foliación de la fuente, incluyendo las páginas en blanco, y los cambios en
+         la tipografía como los destacados, los espacios dejados por el autor, las intervenciones
+         autoriales como las eliminaciones, adiciones y sustituciones, y las intervenciones
+         editoriales como las normalizaciones, la resolución de las abreviaturas, las palabras
+         suplidas, las correcciones de errores evidentes, las lecturas inciertas, las omisiones y
+         las palabras en otro idioma. Por último, en la medida de lo posible, se han codificado
+         también las fechas y las entidades nombradas (personas, lugares y organizaciones) en el
+         cuerpo del texto.</para>
           <section xml:id="estructuras-textuales">
           <title>Estructuras textuales</title>
           <section>
@@ -545,10 +555,9 @@
               TEI.</para>
             <para>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
                atributo <tag>@break</tag> y el valor <tag>no</tag>. En caso de aparecer un separador
-               en la fuente original, no se ha transcrito como tal sino que se ha codificado como
-               <programlisting language="xml" xml:space="preserve">&lt;g ref="#typoHyphen"/&gt;             </programlisting>.
-               Por ejemplo:
-               <programlisting language="xml" xml:space="preserve">y le añadí al propio titi&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</programlisting>
+               en la fuente original, no se ha transcrito como tal sino que se ha codificado con el
+               elemento <tag>g</tag> y el atributo <tag>@ref="#typoHyphen"</tag>. Por ejemplo:
+               <programlisting language="xml" xml:space="preserve">y le añadí al propio ti&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</programlisting>
             </para>
           </section>
           <section>
