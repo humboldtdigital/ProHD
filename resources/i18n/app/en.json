@@ -10,7 +10,11 @@
     	"page-view": "Page View",
     	"edition": "About this edition",
     	"source": "Source",
-    	"creation": "Creation"
+    	"creation": "Creation",
+    	"editor":  "Ed. by ",
+    	"author": "Author: ",
+    	"place": "Place: ",
+    	"date": "Date: "
     },
     "footer":{
     	"funded": "Funded by",

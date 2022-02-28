@@ -10,7 +10,11 @@
     	"page-view":"Seitenansicht",
     	"edition": "Über diese Ausgabe",
     	"source": "Quelle",
-    	"creation": "Erstellung"
+    	"creation": "Erstellung",
+    	"editor":  "Hg. von ",
+    	"author": "Autor: ",
+    	"place": "Ort: ",
+    	"date": "Datum: "
     },
     "footer":{
     	"funded": "Gefördert von",
