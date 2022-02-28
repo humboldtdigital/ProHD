@@ -14,7 +14,11 @@
     	"editor":  "Ed. by ",
     	"author": "Author: ",
     	"place": "Place: ",
-    	"date": "Date: "
+    	"date": "Date: ",
+    	"and": "and",
+    	"sender": "Sender: ",
+    	"receiver": "Receiver: ",
+    	"unknown": "Unknown"
     },
     "footer":{
     	"funded": "Funded by",

@@ -14,7 +14,11 @@
     	"editor":  "Hg. von ",
     	"author": "Autor: ",
     	"place": "Ort: ",
-    	"date": "Datum: "
+    	"date": "Datum: ",
+    	"and": "und",
+    	"sender": "Absender: ",
+    	"receiver": "Empfänger: ",
+    	"unknown": "Unbekannt"
     },
     "footer":{
     	"funded": "Gefördert von",
