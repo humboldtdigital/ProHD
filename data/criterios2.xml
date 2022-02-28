@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?teipublisher odd="docbook.odd" template="documentation.html" depth="3" ?>
-<?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?>
-<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+<?teipublisher odd="docbook.odd" template="documentation.html" depth="3" ?><?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
         <title>Criterios de codificación TEI</title>
+         <copyright>
+            <year>2022</year>
+         </copyright>
+      <keywordset>
+         <keyword>Documentación</keyword>
+      </keywordset>
       <author>
         <personname>
          <surname>Rojas Castro</surname>
@@ -25,16 +28,6 @@
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
       </publisher>
-      <legalnotice><para>Creative Commons
-         Atribución 4.0 Internacional (CC BY 4.0)</para></legalnotice>
-      <revhistory>
-         <revision version="2">
-            <date>23-02-2002</date>
-         </revision>
-      </revhistory>
-      <keywordset>
-         <keyword>Documentación</keyword>
-      </keywordset>
    </info>
       <section xml:id="metadatos">
         <title>Metadatos</title>
@@ -396,16 +389,16 @@
           <para>La descripción del documento se ha codificado con el elemento <tag>physDesc</tag>
                (<quote>physical description</quote>, en español: descripción física). La descripción
             ha sido proporcionada como texto en un elemento <tag>p</tag>:
-            <programlisting language="xml" xml:space="preserve">&lt;physDesc>
-   &lt;p>Manuscrito autógrafo de autor desconocido en buen estado
+            <programlisting language="xml" xml:space="preserve">&lt;physDesc&gt;
+   &lt;p&gt;Manuscrito autógrafo de autor desconocido en buen estado
    de conservación y de seis páginas de extensión. Forma parte del 
    documento conocido como &amp;quot;Umschlag mit den Materialien für die
    Statistik von Kuba [Werk]&amp;quot;. Doble numeración: una paginación 
    original en tinta; otra moderna en lápiz que solo numera los 
    folios (123-124). Contiene algunas adiciones en tinta negra 
    al inicio del documento, en los márgenes y al final del texto en 
-   francés por Alexander von Humboldt.&lt;/p>
-&lt;/physDesc></programlisting>
+   francés por Alexander von Humboldt.&lt;/p&gt;
+&lt;/physDesc&gt;</programlisting>
          </para>
         </section>
         <section>
@@ -448,7 +441,7 @@
             <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades -->
             Si el lugar de escritura figura en el registro de lugares del proyecto, el identificador
             asociado se ha incluido en el atributo <tag>@key</tag>. Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">&lt;placeName key="H0006819">La Habana&lt;/placeName>      </programlisting>
+            <programlisting language="xml" xml:space="preserve">&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;      </programlisting>
          </para>
         </section>
         <section>
@@ -614,8 +607,7 @@
                   (<tag>unit="chars"</tag>) o palabras (<tag>unit="words"</tag>) omitidos no se
                puede determinar de manera segura, se ha utilizado el valor <tag>1</tag> en
                   <tag>@quantity</tag>. Por ejemplo:
-               <programlisting language="xml" xml:space="preserve">sur une longueur de plus 
-de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programlisting>
+               <programlisting language="xml" xml:space="preserve">sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programlisting>
                De manera opcional, se ha utilizado el atributo <tag>@dim</tag> para indicar si se
                trata de un espacio en blanco horizontal o vertical.</para>
           </section>
@@ -670,7 +662,7 @@ de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programl
    &lt;head&gt;Océan entre l’europe, l’afrique et l’amérique&lt;/head&gt;
    &lt;row role="label"&gt;
       &lt;cell&gt;Latitude &lt;lb/&gt;boréale.&lt;/cell&gt;
-      &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell>
+      &lt;cell&gt;Longitude du&lt;lb/&gt;méridien&lt;lb/&gt;de Paris.&lt;/cell&gt;
    &lt;/row&gt; 
    &lt;row&gt;
       &lt;cell rendition="#right"&gt;43°. 29′&lt;/cell&gt;
@@ -904,10 +896,10 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                (highlighted) y el atributo <tag>@rendition</tag> con valor <tag>#sup</tag>. Por
                ejemplo:
                <programlisting language="xml" xml:space="preserve">le ofreciera de mi parte 
-algunas observaciones &lt;choice>
-   &lt;abbr>sob&lt;hi rendition="#sup">e&lt;/hi>&lt;/abbr>
-   &lt;expan>sobre&lt;/expan>
-&lt;/choice> los&lt;lb/> principales hechos </programlisting>
+algunas observaciones &lt;choice&gt;
+   &lt;abbr&gt;sob&lt;hi rendition="#sup"&gt;e&lt;/hi&gt;&lt;/abbr&gt;
+   &lt;expan&gt;sobre&lt;/expan&gt;
+&lt;/choice&gt; los&lt;lb/&gt; principales hechos </programlisting>
             </para>
           </section>
           <section>
@@ -1197,10 +1189,10 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo: <programlisting language="xml" xml:space="preserve">&lt;subst>
-   &lt;del rendition="#ow">6&lt;/del>
-   &lt;add place="across">7&lt;/add>
-&lt;/subst>,4 pesos</programlisting>
+            <para>Por ejemplo: <programlisting language="xml" xml:space="preserve">&lt;subst&gt;
+   &lt;del rendition="#ow"&gt;6&lt;/del&gt;
+   &lt;add place="across"&gt;7&lt;/add&gt;
+&lt;/subst&gt;,4 pesos</programlisting>
             </para>
           </section>
         </section>
@@ -2017,7 +2009,7 @@ de mayo de 1804&lt;/date&gt;</programlisting>
                </tbody>
             </informaltable>
             <para>Por ejemplo:
-               <programlisting language="xml" xml:space="preserve">cantidad de 29.000 arrobas, &lt;foreign xml:lang="la">plus minus&lt;/foreign></programlisting>
+               <programlisting language="xml" xml:space="preserve">cantidad de 29.000 arrobas, &lt;foreign xml:lang="la"&gt;plus minus&lt;/foreign&gt;</programlisting>
             </para>
           </section>
           <section>
