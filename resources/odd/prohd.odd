@@ -27,6 +27,7 @@
             <outputRendition xml:space="preserve">
             
             
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -35,6 +36,7 @@
                             margin-right: 5px;
                             float: right;
 padding-left: 10px;
+            
             
             
             </outputRendition>
@@ -53,6 +55,7 @@ padding-left: 10px;
             
             
             
+            
                             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -61,6 +64,7 @@ padding-left: 10px;
                             margin-right: 5px;
                             float: right;
      
+            
             
             
             
@@ -74,6 +78,7 @@ padding-left: 10px;
             
             
             
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -82,6 +87,7 @@ padding-left: 10px;
                             margin-right: 5px;
                             float: right;
 
+            
             
             
             
@@ -221,11 +227,13 @@ padding-left: 10px;
             
             
             
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
             
             
             
@@ -301,13 +309,7 @@ padding-left: 10px;
             <param name="highlight-self" value="'highlight-self'"/>
         </model><model behaviour="inline" useSourceRendition="true"/></elementSpec>
         
-        <elementSpec ident="titleStmt" mode="change"><model behaviour="block">
-            <param name="editor" value="editor"/>
-            <pb:template xmlns="" xml:space="preserve"><div>
-  <h3><pb-i18n key="document.edition"/></h3>
-  <ul>[[editor]]</ul>
-</div></pb:template>
-        </model><model output="latex" behaviour="meta">
+        <elementSpec ident="titleStmt" mode="change"><model output="latex" behaviour="meta">
             <param name="content" value="."/>
         </model><model output="fo" behaviour="heading"/><modelSequence output="web" predicate="$parameters?header='short'">
             <model behaviour="link">
@@ -329,12 +331,47 @@ padding-left: 10px;
             </model>
         </modelSequence><model output="web" behaviour="heading">
             <param name="level" value="4"/>
+        </model><model predicate="$parameters?mode='commentary' and count(editor)=2" behaviour="inline">
+            <param name="forename1" value="editor[1]/persName/forename"/>
+            <param name="surname1" value="editor[1]/persName/surname"/>
+            <param name="content" value="' '"/>
+            <param name="forename2" value="editor[2]/persName/forename"/>
+            <param name="surname2" value="editor[2]/persName/surname"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.edition"/></h3>
+  <p><pb-i18n key="document.editor"/>[[forename1]][[content]][[surname1]][[content]]<pb-i18n key="document.and"/>[[content]][[forename2]][[content]][[surname2]]</p>
+</div></pb:template>
+            <outputRendition xml:space="preserve">
+            
+            </outputRendition>
+        </model><model predicate="$parameters?mode='commentary' and count(editor)=1" behaviour="inline">
+            <param name="forename1" value="editor[1]/persName/forename"/>
+            <param name="surname1" value="editor[1]/persName/surname"/>
+            <param name="content" value="' '"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.edition"/></h3>
+  <p><pb-i18n key="document.editor"/>[[forename1]][[content]][[surname1]]</p>
+</div></pb:template>
+            <outputRendition xml:space="preserve">
+            
+            </outputRendition>
         </model></elementSpec>
         
         <elementSpec ident="teiHeader" mode="change"><model output="latex" behaviour="block">
             <param name="content" value="(fileDesc/titleStmt/title[not(@type)], profileDesc/correspDesc)"/>
             <pb:template xmlns="" xml:space="preserve">\def\volume{[[content]]}</pb:template>
-        </model><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model predicate="$parameters?mode='commentary'" behaviour="inline"/><model output="web" predicate="$parameters?mode='title'" behaviour="inline">
+        </model><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model predicate="$parameters?mode='commentary'" behaviour="block">
+            <param name="profileDesc" value="profileDesc"/>
+            <param name="titleStmt" value="fileDesc/titleStmt"/>
+            <param name="editionStmt" value="fileDesc/editionStmt/p"/>
+            <param name="publicationStmt" value="fileDesc/publicationStmt"/>
+            <param name="sourceDesc" value="fileDesc/sourceDesc"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <div>[[profileDesc]]</div>
+  <div>[[titleStmt]][[editionStmt]][[publicationStmt]]</div>
+  <div>[[sourceDesc]]</div>
+</div>  </pb:template>
+        </model><model output="web" predicate="$parameters?mode='title'" behaviour="inline">
             <param name="content" value="(fileDesc/titleStmt/title)"/>
         </model><model output="web" behaviour="metadata"/></elementSpec>
         
@@ -347,6 +384,7 @@ padding-left: 10px;
             <outputRendition xml:space="preserve">
             
             
+            
             display: inline-block;
 margin-top: .5em;
 margin-bottom: 1em;
@@ -354,9 +392,11 @@ color: #CCC;
 padding-right: 10px;
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@place='top' and $parameters?view='page'" behaviour="inline">
             <outputRendition xml:space="preserve">
+            
             
             
             display: inline-block;
@@ -365,9 +405,11 @@ padding-right: 10px;
                             color: #CCC;
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
+            
             
             
             margin-top: 1em;
@@ -375,9 +417,11 @@ padding-right: 10px;
                             text-align: left;
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@type='catch' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
+            
             
             
             
@@ -476,6 +520,7 @@ padding-right: 10px;
             
             
             
+            
             </outputRendition>
         </model><model behaviour="omit"/></elementSpec>
         
@@ -508,19 +553,7 @@ padding-right: 10px;
             <param name="content" value="titleStmt"/>
         </model></elementSpec>
         
-        <elementSpec ident="editor" mode="change"><model predicate="$parameters?mode='commentary'" behaviour="inline">
-            <param name="forename" value="persName/forename"/>
-            <param name="surname" value="persName/surname"/>
-            <pb:template xmlns="" xml:space="preserve"><li><pb-i18n key="document.editor"/>[[forename]] [[surname]] </li></pb:template>
-            <outputRendition xml:space="preserve">
-            
-            </outputRendition>
-        </model><modelSequence predicate="preceding-sibling::editor">
-            <model behaviour="inline">
-                <param name="content" value="', '"/>
-            </model>
-            <model behaviour="inline"/>
-        </modelSequence><model behaviour="inline"/></elementSpec>
+        <elementSpec ident="editor" mode="change"><model behaviour="inline"/></elementSpec>
         
         <elementSpec ident="title" mode="change"><modelSequence predicate="parent::titleStmt/parent::fileDesc">
             <model predicate="@type=&#34;main&#34;" behaviour="heading">
@@ -570,13 +603,14 @@ padding-right: 10px;
             <param name="URLImages" value="msDesc/msIdentifier/idno/idno[@type=&#34;URLImages&#34;]"/>
             <param name="URLCatalogue" value="msDesc/msIdentifier/idno/idno[@type=&#34;URLCatalogue&#34;]"/>
             <param name="physDesc" value="msDesc/physDesc/p"/>
-            <pb:template xmlns="" xml:space="preserve"><div><h3><pb-i18n key="document.source"/></h3>
-  <ol>[[institution]]</ol>
-  <ol>[[repository]]</ol>
-  <ol>[[collection]]</ol>
-  <ol>[[shelfmark]]</ol>
-  <ol>[[uri]]</ol>
-  <ol>[[physDesc]]</ol>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.source"/></h3>
+  <p>[[institution]]</p>
+  <p>[[repository]]</p>
+  <p>[[collection]]</p>
+  <p>[[shelfmark]]</p>
+  <p>[[uri]]</p>
+  <p>[[physDesc]]</p>
 </div></pb:template>
             <outputRendition xml:space="preserve">
             
@@ -624,21 +658,88 @@ padding-right: 10px;
             <model behaviour="block" cssClass="header-short">
                 <param name="content" value="abstract[@xml:lang=&#34;es&#34;]"/>
             </model>
-        </modelSequence><model predicate="$parameters?mode='commentary'" behaviour="block">
-            <param name="author" value="creation/persName"/>
+        </modelSequence><model predicate="$parameters?mode='commentary' and correspDesc" behaviour="block">
+            <param name="receiver" value="correspDesc/correspAction[@type=&#34;received&#34;]/persName"/>
+            <param name="dateSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
+            <param name="placeSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
+            <param name="sender" value="correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.sender"/> [[receiver]]</p>
+    <p><pb-i18n key="document.place"/> [[placeSent]]</p>
+    <p><pb-i18n key="document.date"/> [[dateSent]]</p>
+   	<p><pb-i18n key="document.receiver"/> [[sender]]</p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and creation[not(date)]" behaviour="block">
+            <param name="author1" value="creation/persName[1]"/>
+            <param name="placeName" value="creation/placeName"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+    <p><pb-i18n key="document.place"/> [[placeName]] </p>
+    <p><pb-i18n key="document.date"/> <pb-i18n key="document.unknown"/></p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and creation[not(placeName)]" behaviour="block">
+            <param name="author1" value="creation/persName[1]"/>
+            <param name="date" value="creation/date"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+    <p><pb-i18n key="document.place"/> <pb-i18n key="document.unknown"/> </p>
+    <p><pb-i18n key="document.date"/> [[date]]</p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and creation[not(placeName)] and creation[not(date)]" behaviour="block">
+            <desc>Esto no funciona</desc>
+            <param name="author1" value="creation/persName[1]"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+    <p><pb-i18n key="document.place"/> <pb-i18n key="document.unknown"/></p>
+    <p><pb-i18n key="document.date"/> <pb-i18n key="document.unknown"/></p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and creation[not(date)] and creation[not(placeName)]" behaviour="block">
+            <param name="author1" value="creation/persName[1]"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+    <p><pb-i18n key="document.place"/> <pb-i18n key="document.unknown"/></p>
+    <p><pb-i18n key="document.date"/> <pb-i18n key="document.unknown"/></p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and correspDesc[correspAction[not(date)]] and correspDesc[correspAction[not(placeName)]]" behaviour="block">
+            <desc>Esto no funciona</desc>
+            <param name="author1" value="creation/persName[1]"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+    <p><pb-i18n key="document.place"/> <pb-i18n key="document.unknown"/></p>
+    <p><pb-i18n key="document.date"/> <pb-i18n key="document.unknown"/></p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and creation[count(persName)=2]" behaviour="block">
+            <param name="author1" value="creation/persName[1]"/>
             <param name="place" value="creation/placeName"/>
             <param name="receiver" value="correspDesc/correspAction[@type=&#34;received&#34;]/persName"/>
             <param name="date" value="creation/date"/>
-            <param name="sender" value=" correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
             <param name="dateSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
             <param name="placeSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
+            <param name="content" value="', '"/>
+            <param name="author2" value="creation/persName[2]"/>
+            <param name="sender" value="correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
             <pb:template xmlns="" xml:space="preserve"><div>
   <h3><pb-i18n key="document.creation"/></h3>
-  <ul>
-    <li><pb-i18n key="document.author"/> [[author]] [[sender]]</li>
-    <li><pb-i18n key="document.place"/> [[place]][[placeSent]]</li>
-    <li><pb-i18n key="document.date"/> [[date]][[dateSent]]</li>
-  </ul>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+  	<p><pb-i18n key="document.author"/> [[author2]]</p>
+    <p><pb-i18n key="document.place"/> [[place]]</p>
+    <p><pb-i18n key="document.date"/> [[date]]</p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and creation[count(persName)=1]" behaviour="block">
+            <param name="author1" value="creation/persName[1]"/>
+            <param name="place" value="creation/placeName"/>
+            <param name="date" value="creation/date"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+    <p><pb-i18n key="document.place"/> [[place]]</p>
+    <p><pb-i18n key="document.date"/> [[date]]</p>
 </div></pb:template>
         </model><model behaviour="omit"/></elementSpec>
         
@@ -677,6 +778,7 @@ padding-right: 10px;
         </model></elementSpec>
                 <elementSpec ident="del" mode="change"><model behaviour="inline">
             <outputRendition xml:space="preserve">
+            
             
             
             
@@ -767,6 +869,7 @@ color:red;
             
             
             
+            
             </outputRendition>
         </model></elementSpec>
                 <elementSpec ident="correspDesc" mode="add"/>
@@ -779,13 +882,11 @@ color:red;
         </model><model predicate="text()" behaviour="inline"/></elementSpec>
                 <elementSpec ident="publicationStmt" mode="change"><model predicate="$parameters?mode='commentary'" behaviour="inline">
             <param name="licence" value="availability/licence"/>
-            <pb:template xmlns="" xml:space="preserve"><div>
-  <ol>[[licence]]</ol>
-</div></pb:template>
+            <pb:template xmlns="" xml:space="preserve"><p>[[licence]]</p></pb:template>
         </model></elementSpec>
-                <elementSpec ident="editionStmt" mode="add"><model behaviour="block">
+                <elementSpec ident="editionStmt" mode="add"><model predicate="$parameters?mode='commentary'" behaviour="block">
             <param name="editionStmt" value="p"/>
-            <pb:template xmlns="" xml:space="preserve"><div><ol>[[editionStmt]]</ol></div></pb:template>
+            <pb:template xmlns="" xml:space="preserve"><p>[[editionStmt]]</p></pb:template>
         </model></elementSpec>
                 <elementSpec ident="hi" mode="change"><model predicate="@rendition=&#34;#mMM&#34;" behaviour="inline">
             <outputRendition xml:space="preserve">
@@ -844,8 +945,10 @@ color:red;
             
             
             
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
             
             
             
@@ -953,10 +1056,12 @@ text-decoration-style: double;
             
             
             
+            
             font-size: smaller;
 display: block;
 border-collapse: collapse;
 padding: 10px;
+            
             
             
             
@@ -1042,8 +1147,10 @@ padding: 10px;
             
             
             
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
             
             
             
@@ -1186,8 +1293,10 @@ padding: 10px;
             
             
             
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
             
             
             
@@ -1272,9 +1381,11 @@ padding: 10px;
             
             
             
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
             
             
             
@@ -1347,12 +1458,14 @@ margin-bottom: 3em;
             
             
             
+            
             background-color: #F2F0EB;
 font-family: monospace;
 border: 1px solid #999;
 display: block;
 padding: 10px;
 white-space: pre-wrap;
+            
             
             
             
@@ -1367,11 +1480,13 @@ white-space: pre-wrap;
             
             
             
+            
             font-weight: bold;
 border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
             
             
             
@@ -1390,6 +1505,7 @@ padding: 10px;
             
             
             
+            
             border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
@@ -1400,7 +1516,8 @@ padding: 10px;
             
             
             
+            
             </outputRendition>
-        </model></elementSpec></schemaSpec>
+        </model></elementSpec><elementSpec ident="creation" mode="add"/></schemaSpec>
     </body>
   </text></TEI>
