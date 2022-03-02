@@ -28,6 +28,7 @@
             
             
             
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -36,6 +37,7 @@
                             margin-right: 5px;
                             float: right;
 padding-left: 10px;
+            
             
             
             
@@ -56,6 +58,7 @@ padding-left: 10px;
             
             
             
+            
                             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -64,6 +67,7 @@ padding-left: 10px;
                             margin-right: 5px;
                             float: right;
      
+            
             
             
             
@@ -79,6 +83,7 @@ padding-left: 10px;
             
             
             
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -87,6 +92,7 @@ padding-left: 10px;
                             margin-right: 5px;
                             float: right;
 
+            
             
             
             
@@ -156,7 +162,9 @@ padding-left: 10px;
             </outputRendition>
         </model></elementSpec>
 
-        <elementSpec ident="persName" mode="add"><model predicate="ancestor::teiHeader" behaviour="inline"/><model predicate="parent::person" behaviour="inline">
+        <elementSpec ident="persName" mode="add"><model predicate="ancestor::profileDesc and matches(., 'N/A')" behaviour="inline">
+            <pb:template xmlns="" xml:space="preserve"><pb-i18n key="document.unknown"/></pb:template>
+        </model><model predicate="ancestor::teiHeader" behaviour="inline"/><model predicate="parent::person" behaviour="inline">
             <outputRendition xml:space="preserve">
             
             </outputRendition>
@@ -228,11 +236,13 @@ padding-left: 10px;
             
             
             
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
             
             
             
@@ -385,6 +395,7 @@ padding-left: 10px;
             
             
             
+            
             display: inline-block;
 margin-top: .5em;
 margin-bottom: 1em;
@@ -393,9 +404,11 @@ padding-right: 10px;
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@place='top' and $parameters?view='page'" behaviour="inline">
             <outputRendition xml:space="preserve">
+            
             
             
             
@@ -406,15 +419,18 @@ padding-right: 10px;
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
             
             
             
+            
             margin-top: 1em;
                             color: #A0A0A0;
                             text-align: left;
+            
             
             
             
@@ -470,8 +486,10 @@ padding-right: 10px;
             
             
             
+            
                             margin-left: 20em;
                             color: #A0A0A0;
+            
             
             
             
@@ -665,54 +683,10 @@ padding-right: 10px;
             <param name="sender" value="correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
             <pb:template xmlns="" xml:space="preserve"><div>
   <h3><pb-i18n key="document.creation"/></h3>
-    <p><pb-i18n key="document.sender"/> [[receiver]]</p>
+    <p><pb-i18n key="document.sender"/> [[sender]]</p>
     <p><pb-i18n key="document.place"/> [[placeSent]]</p>
     <p><pb-i18n key="document.date"/> [[dateSent]]</p>
-   	<p><pb-i18n key="document.receiver"/> [[sender]]</p>
-</div></pb:template>
-        </model><model predicate="$parameters?mode='commentary' and creation[not(date)]" behaviour="block">
-            <param name="author1" value="creation/persName[1]"/>
-            <param name="placeName" value="creation/placeName"/>
-            <pb:template xmlns="" xml:space="preserve"><div>
-  <h3><pb-i18n key="document.creation"/></h3>
-    <p><pb-i18n key="document.author"/> [[author1]]</p>
-    <p><pb-i18n key="document.place"/> [[placeName]] </p>
-    <p><pb-i18n key="document.date"/> <pb-i18n key="document.unknown"/></p>
-</div></pb:template>
-        </model><model predicate="$parameters?mode='commentary' and creation[not(placeName)]" behaviour="block">
-            <param name="author1" value="creation/persName[1]"/>
-            <param name="date" value="creation/date"/>
-            <pb:template xmlns="" xml:space="preserve"><div>
-  <h3><pb-i18n key="document.creation"/></h3>
-    <p><pb-i18n key="document.author"/> [[author1]]</p>
-    <p><pb-i18n key="document.place"/> <pb-i18n key="document.unknown"/> </p>
-    <p><pb-i18n key="document.date"/> [[date]]</p>
-</div></pb:template>
-        </model><model predicate="$parameters?mode='commentary' and creation[not(placeName)] and creation[not(date)]" behaviour="block">
-            <desc>Esto no funciona</desc>
-            <param name="author1" value="creation/persName[1]"/>
-            <pb:template xmlns="" xml:space="preserve"><div>
-  <h3><pb-i18n key="document.creation"/></h3>
-    <p><pb-i18n key="document.author"/> [[author1]]</p>
-    <p><pb-i18n key="document.place"/> <pb-i18n key="document.unknown"/></p>
-    <p><pb-i18n key="document.date"/> <pb-i18n key="document.unknown"/></p>
-</div></pb:template>
-        </model><model predicate="$parameters?mode='commentary' and creation[not(date)] and creation[not(placeName)]" behaviour="block">
-            <param name="author1" value="creation/persName[1]"/>
-            <pb:template xmlns="" xml:space="preserve"><div>
-  <h3><pb-i18n key="document.creation"/></h3>
-    <p><pb-i18n key="document.author"/> [[author1]]</p>
-    <p><pb-i18n key="document.place"/> <pb-i18n key="document.unknown"/></p>
-    <p><pb-i18n key="document.date"/> <pb-i18n key="document.unknown"/></p>
-</div></pb:template>
-        </model><model predicate="$parameters?mode='commentary' and correspDesc[correspAction[not(date)]] and correspDesc[correspAction[not(placeName)]]" behaviour="block">
-            <desc>Esto no funciona</desc>
-            <param name="author1" value="creation/persName[1]"/>
-            <pb:template xmlns="" xml:space="preserve"><div>
-  <h3><pb-i18n key="document.creation"/></h3>
-    <p><pb-i18n key="document.author"/> [[author1]]</p>
-    <p><pb-i18n key="document.place"/> <pb-i18n key="document.unknown"/></p>
-    <p><pb-i18n key="document.date"/> <pb-i18n key="document.unknown"/></p>
+   	<p><pb-i18n key="document.receiver"/> [[receiver]]</p>
 </div></pb:template>
         </model><model predicate="$parameters?mode='commentary' and creation[count(persName)=2]" behaviour="block">
             <param name="author1" value="creation/persName[1]"/>
@@ -823,8 +797,10 @@ padding-right: 10px;
             
             
             
+            
             text-decoration: line-through;
 color:red;
+            
             
             
             
@@ -873,10 +849,14 @@ color:red;
             </outputRendition>
         </model></elementSpec>
                 <elementSpec ident="correspDesc" mode="add"/>
-                <elementSpec ident="placeName" mode="add"><model predicate="ancestor::teiHeader" behaviour="inline"/></elementSpec>
-                <elementSpec ident="date" mode="change"><model predicate="ancestor::profileDesc" behaviour="inline"/><model output="print" predicate="text()" behaviour="inline"/><model output="print" predicate="@when and not(text())" behaviour="inline">
+                <elementSpec ident="placeName" mode="add"><model predicate="ancestor::profileDesc and matches(., 'N/A')" behaviour="inline">
+            <pb:template xmlns="" xml:space="preserve"><pb-i18n key="document.unknown"/></pb:template>
+        </model><model predicate="ancestor::teiHeader" behaviour="inline"/></elementSpec>
+                <elementSpec ident="date" mode="change"><model predicate="ancestor::profileDesc and matches(., 'N/A')" behaviour="inline">
+            <pb:template xmlns="" xml:space="preserve"><pb-i18n key="document.unknown"/></pb:template>
+        </model><model output="print" predicate="text()" behaviour="inline"/><model output="print" predicate="@when and not(text())" behaviour="inline">
             <param name="content" value="@when"/>
-        </model><model output="web" predicate="@when" behaviour="alternate">
+        </model><model output="web" predicate="ancestor::text and @when" behaviour="alternate">
             <param name="default" value="."/>
             <param name="alternate" value="@when"/>
         </model><model predicate="text()" behaviour="inline"/></elementSpec>
@@ -946,8 +926,10 @@ color:red;
             
             
             
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
             
             
             
@@ -1057,10 +1039,12 @@ text-decoration-style: double;
             
             
             
+            
             font-size: smaller;
 display: block;
 border-collapse: collapse;
 padding: 10px;
+            
             
             
             
@@ -1148,8 +1132,10 @@ padding: 10px;
             
             
             
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
             
             
             
@@ -1294,8 +1280,10 @@ padding: 10px;
             
             
             
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
             
             
             
@@ -1382,9 +1370,11 @@ padding: 10px;
             
             
             
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
             
             
             
@@ -1459,12 +1449,14 @@ margin-bottom: 3em;
             
             
             
+            
             background-color: #F2F0EB;
 font-family: monospace;
 border: 1px solid #999;
 display: block;
 padding: 10px;
 white-space: pre-wrap;
+            
             
             
             
@@ -1481,11 +1473,13 @@ white-space: pre-wrap;
             
             
             
+            
             font-weight: bold;
 border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
             
             
             
@@ -1506,10 +1500,12 @@ padding: 10px;
             
             
             
+            
             border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
             
             
             
