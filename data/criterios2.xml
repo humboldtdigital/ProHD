@@ -443,6 +443,12 @@
             asociado se ha incluido en el atributo <tag>@key</tag>. Por ejemplo:
             <programlisting language="xml" xml:space="preserve">&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;      </programlisting>
          </para>
+           <para>Si no se conoce el lugar de escritura del texto, también se ha usado el mismo
+            elemento <tag>placeName</tag>, pero el valor utilizado es "N/A". Por ejemplo:
+            <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
+&lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
+&lt;placeName&gt;N/A&lt;/placeName&gt;    </programlisting> En tal caso, no se ha
+            utilizado el atributo <tag>@key</tag>. </para>
         </section>
         <section>
           <title>Fechas</title>
@@ -474,6 +480,12 @@
    de mayo de 1804&lt;/date&gt;     </programlisting>
          </para> 
           <para>Además, de manera opcional, se ha utilizado el atributo <tag>@cert</tag> con los valores <tag>high</tag> y <tag>low</tag> para codificar la certeza con que se sabe si la fecha es correcta.</para>
+         <para>Cuando no se conoce al fecha de creación del texto, también se ha utilizado el
+            elemento <tag>date</tag>, pero con el valor "N/A" (Not available). Por ejemplo:
+            <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
+&lt;date&gt;N/A&lt;/date&gt;
+&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;</programlisting> En tal
+            caso, no se ha utilizado ningún atributo en el elemento <tag>placeName</tag>.</para>
         </section>
         <section>
           <title>Idioma</title>
