@@ -2110,12 +2110,21 @@ la Nochebuena del año 1772&lt;/date&gt;</programlisting>
             <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad 
 de mayo de 1804&lt;/date&gt;</programlisting>
          </para>
-            <para>Cuando no se ha podido determinar las fechas de envío o recepción, se ha
-            codificado una nota explicativa en <tag>correspDesc</tag> con el elemento hijo
-               <tag>note</tag>. Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt; … 
-   &lt;note&gt;No se puede determinar la fecha de recepción.&lt;/note&gt;
-&lt;/correspDesc&gt;</programlisting>
+            <para>Cuando no se ha podido determinar el emisor, el destinatario o los lugares y las
+            fechas de envío o recepción, se han utilizado los elementos correspondientes, pero con
+            el valor "N/A" (Not Available). Por ejemplo:
+            <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt;
+   &lt;correspAction type="sent"&gt;
+      &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
+      &lt;date&gt;N/A&lt;/date&gt;
+      &lt;placeName&gt;N/A&lt;/placeName&gt;
+   &lt;/correspAction&gt;
+   &lt;correspAction type="received"&gt;
+      &lt;persName key="H0004321"&gt;Lapie, Pierre (1779-1850)&lt;/persName&gt;
+      &lt;date&gt;N/A&lt;/date&gt;
+      &lt;placeName&gt;N/A&lt;/placeName&gt;
+   &lt;/correspAction&gt;
+&lt;/correspDesc&gt;    </programlisting>
          </para>
         </section>
           <section>
