@@ -38,7 +38,9 @@
         </fileDesc>
         <profileDesc>
             <creation>
-                <date notBefore="1803">1803</date>
+                <persName>N/A</persName>
+                <date notBefore="1803">No antes de 1803</date>
+                <placeName>N/A</placeName>
             </creation>
             <langUsage>
                 <language ident="fr">Français</language>
@@ -56,9 +58,13 @@
             <correspDesc>
                 <correspAction type="sent">
                     <persName key="H0012069">Humboldt, Alexander von (1769-1859)</persName>
+                    <date>N/A</date>
+                    <placeName>N/A</placeName>
                 </correspAction>
                 <correspAction type="received">
                     <persName key="H0004321">Lapie, Pierre (1779-1850)</persName>
+                    <date>N/A</date>
+                    <placeName>N/A</placeName>
                 </correspAction>
             </correspDesc>
             <textClass>

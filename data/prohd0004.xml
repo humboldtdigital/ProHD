@@ -46,7 +46,7 @@
         <profileDesc>
             <creation>
                 <persName key="H0002756">Valle Hernández, Antonio del (1764-1830)</persName>
-                <placeName key="H0006819">Havanna [Havana, La Habana] (Hauptstadt Kubas)</placeName>
+                <placeName key="H0006819">La Habana</placeName>
                 <date when="1800-08-03" cert="high">1800</date>
             </creation>
             <langUsage>
@@ -250,7 +250,7 @@
                     permanentes que son <lb/><pb n="5r" facs="prohd0004_5r.tif"/><placeName key="ERRORH0018470">el de Güines</placeName> a <measure quantity="12" unit="leagua">doce leguas</measure> de distancia, y <placeName key="H0010548">el de la chorrera</placeName>, de <lb/>donde se provee de
                     agua <placeName key="H0006819">la ciudad</placeName> por medio de un canal o
                     <lb/>Zanja de más de <measure quantity="2" unit="leagua">dos leguas</measure> de
-                    cauce formado por <persName key="ERRORH0018897"><hi rendition="#u">Antone<g ref="#typoHyphen"/><lb break="no"/>li</hi></persName> desde los
+                    cauce formado por <persName key="H0018897"><hi rendition="#u">Antone<g ref="#typoHyphen"/><lb break="no"/>li</hi></persName> desde los
                     principios de la Población. En segundo lugar los <lb/>Puertos y Bahías están
                     todos situados en la costa del Nor<g ref="#typoHyphen"/><lb break="no"/>te : las
                     serranías están <choice>

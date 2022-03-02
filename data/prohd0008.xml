@@ -38,7 +38,9 @@
         </fileDesc>
         <profileDesc>
             <creation>
+                <persName>N/A</persName>
                 <date notBefore="1802">No antes de 1802</date>
+                <placeName>N/A</placeName>
             </creation>
             <langUsage>
                 <language ident="es">Español</language>
@@ -399,7 +401,7 @@
                     <note place="inline" hand="#Humboldt, Alexander von">
                         <seg type="comment">
                             <orig>
-                                <gap unit="lines" reason="insignificant"/>
+                                <gap quantity="1" unit="lines" reason="insignificant"/>
                             </orig>
                             <note xml:id="nkvp_frl_rpb">Berechnungen Humboldts auf der unteren
                                 Seitenhälfte</note>

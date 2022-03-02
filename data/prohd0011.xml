@@ -41,7 +41,8 @@
         <profileDesc>
             <creation>
                 <persName key="H0012069">Humboldt, Alexander von (1769-1859)</persName>
-                <date notBefore="1804">1804</date>
+                <date notBefore="1804">No antes de 1804</date>
+                <placeName>N/A</placeName>
             </creation>
             <langUsage>
                 <language ident="fr">Französisch</language>
