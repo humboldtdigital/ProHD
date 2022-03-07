@@ -340,6 +340,9 @@ padding-left: 10px;
             <model behaviour="block">
                 <param name="content" value="subsequence(title, 2)"/>
             </model>
+            <model behaviour="inline">
+                <param name="content" value="author"/>
+            </model>
             <model behaviour="block">
                 <param name="content" value="editor"/>
             </model>
@@ -583,7 +586,7 @@ padding-right: 10px;
         
         <elementSpec ident="fileDesc" mode="change"><model predicate="$parameters?mode='commentary'" behaviour="block"/><modelSequence predicate="$parameters?header='short'">
             <model behaviour="link" cssClass="header-short">
-                <param name="content" value="titleStmt/title[@type=&#34;main&#34;]"/>
+                <param name="content" value="titleStmt"/>
                 <param name="uri" value="$parameters?doc"/>
             </model>
         </modelSequence><model behaviour="title">
