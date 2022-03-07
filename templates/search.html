@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/faviconProhd.ico"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-32.png" sizes="24x24"/>
+         <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-64.png" sizes="64x64"/>
+
+        <title data-template="config:app-title"/>
+       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600"/>
+        <link rel="stylesheet" href="resources/css/theme.css"/>
+        <link rel="stylesheet" href="resources/css/prohd-theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+
+        <style>
+            main {
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+            }
+
+            .search-panel {
+                flex: 1 1;
+                margin: 0 20px;
+            }
+
+            .search-panel paper-card {
+                width: 100%;
+            }
+
+            .targets paper-checkbox {
+                margin-top: 10px;
+            }
+
+            #results {
+                flex: 2 1;
+                overflow: scroll;
+                margin: 0 20px;
+                height: calc(100vh - 140px);
+            }
+
+            #results paper-card {
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 8px;
+            }
+
+            #results header {
+                display: flex;
+                justify-content: flex-start;
+            }
+            #results .count {
+                margin-right: 20px;
+                font-weight: 600;
+            }
+            .breadcrumb:link, .breadcrumb:visited {
+                text-decoration: none;
+                color: var(--paper-grey-600);
+            }
+            .breadcrumb:before {
+                content: '&gt;';
+                padding: 0 8px;
+                font-weight: 600;
+            }
+            .breadcrumb:first-child::before {
+                content: '';
+            }
+            .matches {
+                display: table;
+                margin-left: 20px;
+                margin-top: 10px;
+                font: var(--pb-results-body-font);
+            }
+            .matches p {
+                display: table-row;
+            }
+            .matches p * {
+                display: table-cell;
+                padding: 4px 8px;
+            }
+
+            .hi {
+                display: block;
+                color: #008F8F;
+            }
+
+            #facets h3 {
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+                justify-content: space-between;
+            }
+
+            #facets h3 paper-checkbox {
+                font-size: 85%;
+                color: #FFFFFF;
+            }
+
+            #facets table td:nth-child(2) {
+                color: #808080;
+                text-align: right;
+                padding-left: 1em;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-header-layout>
+                <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                    <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    <app-toolbar class="toolbar" sticky="sticky">
+                        <pb-paginate per-page="10" range="5" subscribe="results"/>
+                        <pb-progress indeterminate="indeterminate" bottom-item="bottom-item"/>
+                    </app-toolbar>
+                </app-header>
+
+                <main>
+                    <pb-load id="results" url="api/search" emit="results"/>
+                    <div class="search-panel">
+                        <paper-card>
+                            <div class="card-content">
+                                <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" submit-on-load="submit-on-load">
+                                    <div class="targets">
+                                        <paper-checkbox name="field" value="text"><pb-i18n key="search.sections">Search sections</pb-i18n></paper-checkbox>
+                                        <paper-checkbox name="field" value="head"><pb-i18n key="search.headings">Search headings</pb-i18n></paper-checkbox>
+                                    </div>
+                                    <pb-custom-form id="facets" url="api/search/facets" subscribe="results" event="pb-results-received" emit="search"/>
+                                </pb-search>
+                            </div>
+                        </paper-card>
+                    </div>
+                </main>
+                <footer>
+                    <div id="footerGray">
+                        <p>
+                                <pb-i18n key="footer.funded"/>
+                            </p>
+                        <a href="https://www.auswaertiges-amt.de/">
+                                <img src="resources/images/aa.svg" class="funder1"/>
+                            </a>
+                        <a href="https://www.fritz-thyssen-stiftung.de/">
+                                <img src="resources/images/thyssen.svg" class="funder2"/>
+                            </a>
+                        <a href="https://www.gerda-henkel-stiftung.de/">
+                                <img src="resources/images/gerdahenkel.svg" class="funder3"/>
+                            </a>
+                    </div>    
+                    <div id="footerGreen">
+                        <a href="https://e-editiones.org/">
+                                <img src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                            </a>
+                        <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
+                            </p>
+                        <p class="license">
+                                <pb-i18n key="footer.license"/>
+                            </p>
+                        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                                <img src="resources/images/cc.svg" class="cc"/>
+                            </a>
+                    </div>
+                </footer>
+            </app-header-layout>
+        </pb-page>
+        <script>
+            const facets = document.getElementById('facets');
+            if (facets) {
+                facets.addEventListener('pb-custom-form-loaded', function(ev) {
+                    const elems = ev.detail.querySelectorAll('.facet');
+                    elems.forEach(facet =&gt; {
+                        facet.addEventListener('change', () =&gt; {
+                            const table = facet.closest('table');
+                            if (table) {
+                                const nested = table.querySelectorAll('.nested .facet').forEach(nested =&gt; {
+                                    if (nested != facet) {
+                                        nested.checked = false;
+                                    }
+                                });
+                            }
+                            facets._submit();
+                        });
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

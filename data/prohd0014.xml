@@ -1,0 +1,246 @@
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" type="letter" xml:id="prohd0014">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Carta de Francisco de Arango y Parreño a Alexander von Humboldt </title>
+                <title type="sub" xml:lang="fr">À Monsieur Mr. le Baron A. Humboldt</title>
+                <editor>
+                    <persName ref="https://orcid.org/0000-0002-8916-4997">
+                        <surname>Rojas Castro</surname>
+                        <forename>Antonio</forename>
+                    </persName>
+                </editor>
+                <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
+                <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
+                <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
+            </titleStmt>
+            <editionStmt>
+                <p>ProHD (<date>2020</date>)</p>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                        Wissenschaften (BBAW)</ref>
+                </publisher>
+                <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                        (CC BY 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc rend="manuscript">
+                    <msIdentifier>
+                        <institution>Staatsbibliothek zu Berlin – Preußischer
+                            Kulturbesitz</institution>
+                        <collection>Colección Alexander von Humboldt</collection>
+                        <idno>
+                            <idno type="shelfmark">Caja pequeña 7b, no. 68</idno>
+                            <idno type="uri">http://kalliope-verbund.info/DE-611-HS-1272345</idno>
+                            <idno type="URLImages">http://resolver.staatsbibliothek-berlin.de/SBB00015CC500000000</idno>
+                        </idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>1 hoja</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="H0012682">Arango y Parreño, Francisco de (1765-1837)</persName>
+                    <placeName key="H0006819">La Habana</placeName>
+                    <date when="1827-07-30">30 de julio de 1827</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="H0012069">Humboldt, Alexander von (1769-1859)</persName>
+                    <date>N/A</date>
+                    <placeName>N/A</placeName>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+            <abstract xml:lang="es">
+                <p>Carta en la que Francisco de Arango y Parreño comunica a Alexander von Humboldt
+                    el envío a través de su primo de unos comentarios al "Ensayo político sobre esta
+                    Isla", y expresa su admiración por el "filósofo viajero".</p>
+            </abstract>
+            <abstract xml:lang="de">
+                <p>Brief, in dem Francisco de Arango y Parreño an Alexander von Humboldt
+                    kommuniziert die Übersendung einiger Kommentare zum "Ensayo político sobre esta
+                    Isla" durch seinen Cousin, und drückt seine Bewunderung für den "reisenden
+                    Philosophen" aus.</p>
+            </abstract>
+            <textClass>
+                <catRef scheme="#genre" target="#correspondence"/>
+                <catRef scheme="#form" target="#manuscript"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="pb-taxonomy">
+                    <category xml:id="genre">
+                        <category xml:id="correspondence"/>
+                        <category xml:id="diaries"/>
+                        <category xml:id="essays"/>
+                        <category xml:id="notebooks"/>
+                        <category xml:id="travelwriting"/>
+                    </category>
+                    <category xml:id="form">
+                        <category xml:id="manuscript"/>
+                        <category xml:id="print"/>
+                    </category>
+                    <category xml:id="subjects">
+                        <category xml:id="administration"/>
+                        <category xml:id="climatology"/>
+                        <category xml:id="coffee"/>
+                        <category xml:id="colonialism"/>
+                        <category xml:id="demography"/>
+                        <category xml:id="economicconditions"/>
+                        <category xml:id="education"/>
+                        <category xml:id="emancipation"/>
+                        <category xml:id="factories"/>
+                        <category xml:id="geography"/>
+                        <category xml:id="medicine"/>
+                        <category xml:id="plantations"/>
+                        <category xml:id="science"/>
+                        <category xml:id="scientificexpedition"/>
+                        <category xml:id="sugar"/>
+                        <category xml:id="slavery"/>
+                        <category xml:id="tobacco"/>
+                        <category xml:id="trade"/>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="writingSession">
+                <pb n="1r" facs="prohd0014_1r.tif"/>
+                <fw type="folNum">68.</fw>
+                <opener>
+                    <salute>Mi muy apreciable <unclear reason="illegible" cert="high">
+                            <choice>
+                                <abbr>ami<hi rendition="#sup">go</hi>
+                                </abbr>
+                                <expan>amigo</expan>
+                            </choice>
+                        </unclear> y <unclear reason="illegible" cert="low">
+                            <choice>
+                                <abbr>s<hi rendition="#sup">eñ</hi>
+                                </abbr>
+                                <expan>señor</expan>
+                            </choice>
+                        </unclear>:</salute>
+                </opener>
+                <p>encargué a mi primo <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice>
+                    <lb/> anticipase a <choice>
+                        <abbr>V.</abbr>
+                        <expan>Usted</expan>
+                    </choice>
+                    <unclear reason="illegible" cert="high">mi</unclear> expresión <unclear reason="illegible" cert="high">de</unclear> gracias <choice>
+                        <abbr>p</abbr>
+                        <expan>por</expan>
+                    </choice> el favor <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> me hace<lb/> en su preciosísimo <bibl>Ensayo sobre esta Isla</bibl>, y
+                    le añadí al propio ti<g ref="#typoHyphen"/>
+                    <lb/>empo <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> le ofreciera de mi parte algunas observaciones <choice>
+                        <abbr>sob<hi rendition="#sup">e</hi>
+                        </abbr>
+                        <expan>sobre</expan>
+                    </choice> los<lb/> principales hechos <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> se mientan en la obra<choice>
+                        <orig>--</orig>
+                        <reg>.</reg>
+                    </choice> Me la pres<g ref="#typoHyphen"/>
+                    <lb/>taron por desgracia con término muy angustiado, y en esa<lb/>
+                    precipitación, no sé si me habré excedido, o si he dejado de decir<lb/> todo lo <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> podía<choice>
+                        <orig>--</orig>
+                        <reg>.</reg>
+                    </choice> De lo <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> estoy muy seguro es de mi buena<lb/> intención, y <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> no he tenido otro estímulo <choice>
+                        <abbr>p<hi rendition="#sup">a</hi>
+                        </abbr>
+                        <expan>para</expan>
+                    </choice> entender esas<lb/> notas y enviar esos documentos, <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> el de mi eterna amis<g ref="#typoHyphen"/>
+                    <lb/>tad y sincera gratitud al filósofo viajero <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> admi<unclear reason="illegible" cert="low">ran</unclear>
+                    <lb/> todas las naciones cultas, y tan de veras estima este<lb/> en <choice>
+                        <abbr>ap.<hi rendition="#sup">do</hi>
+                        </abbr>
+                        <expan>apasionado</expan>
+                    </choice>
+                    <choice>
+                        <abbr>serv.<hi rendition="#sup">r</hi>
+                        </abbr>
+                        <expan>servidor</expan>
+                    </choice>
+                    <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice>
+                    <choice>
+                        <abbr>s.</abbr>
+                        <expan>sus</expan>
+                    </choice>
+                    <choice>
+                        <abbr>m.</abbr>
+                        <expan>manos</expan>
+                    </choice>
+                    <choice>
+                        <abbr>b.</abbr>
+                        <expan>besa.</expan>
+                    </choice>
+                </p>
+                <closer>
+                    <signed>
+                        <choice>
+                            <abbr>Fran.<hi rendition="#sup">co</hi>
+                            </abbr>
+                            <expan>Francisco</expan>
+                        </choice> de Arango</signed>
+                    <dateline>
+                        <choice>
+                            <abbr>Hav.<hi rendition="#sup">a</hi>
+                            </abbr>
+                            <expan>La Habana</expan>
+                        </choice> 30 de julio de <supplied cert="high">18</supplied>27</dateline>
+                </closer>
+            </div>
+            <postscript>
+                <p>
+                    <choice>
+                        <abbr>P.<hi rendition="#sup">a</hi>
+                        </abbr>
+                        <expan>Para</expan>
+                    </choice> Barón von Humboldt</p>
+            </postscript>
+        </body>
+    </text>
+</tei:TEI>

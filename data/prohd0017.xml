@@ -1,0 +1,1112 @@
+<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd00017">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Factoría de tabacos</title>
+                <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
+                <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
+                <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
+                <editor>
+                    <persName ref="https://orcid.org/0000-0002-8916-4997">
+                        <surname>Rojas Castro</surname>
+                        <forename>Antonio</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <editionStmt>
+                <p>ProHD (<date>2022</date>)</p>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+                <publisher>Oficina del Historiador de la Ciudad de la Habana</publisher>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                        (CC BY 4.0)</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc rend="manuscript">
+                    <msIdentifier>
+                        <institution>Biblioteca Jagellónica</institution>
+                        <collection>Legado Alexander von Humboldt</collection>
+                        <idno>
+                            <idno type="shelfmark">Bd. 3/1 Bl. 1-179</idno>
+                            <idno type="uri">http://kalliope-verbund.info/DE-611-HS-2868341</idno>
+                            <idno type="URLImages">https://jbc.bj.uj.edu.pl/dlibra/publication/367139/edition/350047</idno>
+                        </idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <p>Manuscrito autógrafo de autor desconocido en buen estado de conservación
+                            y de seis páginas de extensión. Forma parte del documento conocido como
+                            "Umschlag mit den Materialien für die Statistik von Kuba
+                            [Werk]". Doble numeración: una paginación original en tinta; otra
+                            moderna en lápiz que solo numera los folios (123-124). Contiene algunas
+                            adiciones en tinta negra al inicio del documento, en los márgenes y al
+                            final del texto en francés por Alexander von Humboldt.</p>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <persName>N/A</persName>
+                <persName key="H0012069">Humboldt, Alexander von (1769-1859)</persName>
+                <date when="1804-04-10">10 de abril de 1804</date>
+                <placeName key="https://www.geonames.org/3553478">La Habana</placeName>
+            </creation>
+            <langUsage>
+                <language ident="es">Español</language>
+                <language ident="fr">Français</language>
+            </langUsage>
+            <abstract xml:lang="es">
+                <p>Informe sobre precios, producción, consumo, distribución y costes de una factoría
+                    de tabaco fundada en La Habana en 1769. Tras establecer la relación entre la
+                    factoría y la Hacienda Real, se expone la regulación de los precios de tabaco y
+                    sus clases, se relacionan las condiciones metereológicas y las insurrecciones
+                    políticas con el descenso de producción y se observa que ésta no es suficiente
+                    para satisfacer el consumo en la isla, España y otras colonias. Por último, se
+                    tratan los costes de la factoría incluyendo la nómina de los empleados y la
+                    manutención de los esclavos.</p>
+            </abstract>
+            <abstract xml:lang="de">
+                <p>Bericht über Preise, Produktion, Verbrauch, Vertrieb und Kosten einer 1769 in
+                    Havanna gegründeten Tabakfabrik. Der Text informiert über die Aufgaben und
+                    Herausforderungen der von der königlichen Kämmerei beauftragten Fabrik: a) die
+                    Regulierung der Tabakpreise nach Sorten, b) der Rückgang der Produktion infolge
+                    schlechter Witterungsbedingungen und politischer Unruhen, c) die unzureichende
+                    Produktionsmenge, um den Verbrauch auf der Insel, in Spanien und in anderen
+                    Kolonien zu decken. Schließlich werden die Kosten der Fabrik erörtert,
+                    einschließlich der Lohnkosten für die Angestellten und den Unterhalt der
+                    Sklaven.</p>
+            </abstract>
+            <textClass>
+                <catRef scheme="#genre" target="#notebooks"/>
+                <catRef scheme="#form" target="#manuscript"/>
+                <catRef scheme="#subject" target="#climatology"/>
+                <catRef scheme="#subject" target="#economicconditions"/>
+                <catRef scheme="#subject" target="#slavery"/>
+                <catRef scheme="#subject" target="#tobacco"/>
+                <catRef scheme="#subject" target="#factories"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="pb-taxonomy">
+                    <category xml:id="genre">
+                        <category xml:id="correspondence"/>
+                        <category xml:id="diaries"/>
+                        <category xml:id="essays"/>
+                        <category xml:id="notebooks"/>
+                        <category xml:id="travelwriting"/>
+                    </category>
+                    <category xml:id="form">
+                        <category xml:id="manuscript"/>
+                        <category xml:id="print"/>
+                    </category>
+                    <category xml:id="subjects">
+                        <category xml:id="administration"/>
+                        <category xml:id="climatology"/>
+                        <category xml:id="coffee"/>
+                        <category xml:id="colonialism"/>
+                        <category xml:id="demography"/>
+                        <category xml:id="economicconditions"/>
+                        <category xml:id="education"/>
+                        <category xml:id="emancipation"/>
+                        <category xml:id="factories"/>
+                        <category xml:id="geography"/>
+                        <category xml:id="medicine"/>
+                        <category xml:id="plantations"/>
+                        <category xml:id="science"/>
+                        <category xml:id="scientificexpedition"/>
+                        <category xml:id="sugar"/>
+                        <category xml:id="slavery"/>
+                        <category xml:id="tobacco"/>
+                        <category xml:id="trade"/>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <pb n="123r" facs="prohd0017_123r.tif"/>
+                <p>
+                    <choice>
+                        <orig>Havana</orig>
+                        <reg>Habana</reg>
+                    </choice> 10 de <choice>
+                        <abbr>Ab.<hi rendition="#sup">l</hi>
+                        </abbr>
+                        <expan>abril</expan>
+                    </choice> de 1804.<lb/>
+                    <add place="left" hand="#H0012069">ZZ</add>
+                    <choice>
+                        <orig>Factoria</orig>
+                        <reg>Factoría</reg>
+                    </choice>
+                    <choice>
+                        <orig>deTabacos</orig>
+                        <reg>de Tabacos</reg>
+                    </choice>
+                    <add place="right" hand="#H0012069">ZZ</add>
+                </p>
+                <p>Esta fue establecida <supplied cert="high">en el</supplied> año de 1769, hasta<lb/>
+                    <choice>
+                        <orig>cuio</orig>
+                        <reg>cuyo</reg>
+                    </choice> tiempo <choice>
+                        <orig>lacompañia</orig>
+                        <reg>la compañía</reg>
+                    </choice>
+                    <choice>
+                        <orig>decomercio</orig>
+                        <reg>de comercio</reg>
+                    </choice> insta<lb break="no"/>lada <choice>
+                        <orig>enla</orig>
+                        <reg>en la</reg>
+                    </choice> la <choice>
+                        <orig>Hav.a</orig>
+                        <reg>Habana</reg>
+                    </choice>
+                    <choice>
+                        <orig>probehia</orig>
+                        <reg>proveía</reg>
+                    </choice> de tabacos a las<lb/>
+                    <choice>
+                        <orig>fabricas</orig>
+                        <reg>fábricas</reg>
+                    </choice> de España por contratas celebradas<lb/> con la <choice>
+                        <abbr>R.<hi rendition="#sup">l</hi>
+                        </abbr>
+                        <expan>Real</expan>
+                    </choice> Hacienda.</p>
+                <p>Fijada la <choice>
+                        <abbr>Fact.<hi rendition="#sup">a</hi>
+                        </abbr>
+                        <expan>factoría</expan>
+                    </choice>, lo fueron <choice>
+                        <orig>tambien</orig>
+                        <reg>también</reg>
+                    </choice> los<lb/> precios señalados <choice>
+                        <orig>altabaco</orig>
+                        <reg>al tabaco</reg>
+                    </choice>. La nomenclatu<lb/>ra <choice>
+                        <orig>desus</orig>
+                        <reg>de sus</reg>
+                    </choice> clases<choice>
+                        <sic>,</sic>
+                        <corr/>
+                    </choice> es impuesta por los labrado<lb break="no"/>res <choice>
+                        <orig>deeste</orig>
+                        <reg>de este</reg>
+                    </choice> fruto, desde tiempo inmemorial,<lb/> y es diferente en cada uno de los
+                    catorce <unclear cert="high" reason="illegible">Parti<lb/>dos</unclear> de la
+                    Isla donde <choice>
+                        <orig>secultiva</orig>
+                        <reg>se cultiva</reg>
+                    </choice>, <choice>
+                        <orig>considerando<lb/>se</orig>
+                        <reg>considerándose</reg>
+                    </choice> por lo mismo <choice>
+                        <orig>noser</orig>
+                        <reg>no ser</reg>
+                    </choice>
+                    <choice>
+                        <orig>deesencia</orig>
+                        <reg>de esencia</reg>
+                    </choice> su nombra<lb break="no"/>miento, mucho <choice>
+                        <orig>mas</orig>
+                        <reg>más</reg>
+                    </choice>
+                    <choice>
+                        <orig>sabiendose</orig>
+                        <reg>sabiéndose</reg>
+                    </choice> que <unclear reason="illegible" cert="high">
+                        <choice>
+                            <abbr>virtu<g ref="#typoHyphen"/>
+                                <lb/>alm.<hi rendition="#sup">te</hi>
+                            </abbr>
+                            <expan>virtualmente</expan>
+                        </choice>
+                    </unclear> no hay <choice>
+                        <orig>mas</orig>
+                        <reg>más</reg>
+                    </choice> que tres clases <choice>
+                        <orig>enel</orig>
+                        <reg>en el</reg>
+                    </choice> taba<lb/>co, y son suprema, mediana, e <choice>
+                        <orig>infima</orig>
+                        <reg>ínfima</reg>
+                    </choice>. El<lb/> precio <choice>
+                        <orig>delaprimera</orig>
+                        <reg>de la primera</reg>
+                    </choice>
+                    <choice>
+                        <orig>nobaja</orig>
+                        <reg>no baja</reg>
+                    </choice> de seis <choice>
+                        <abbr>p.<hi rendition="#sup">r</hi>
+                        </abbr>
+                        <expan>por</expan>
+                    </choice> cada<lb/> arroba, el de la mediana <choice>
+                        <abbr>tresym.<hi rendition="#sup">o</hi>
+                        </abbr>
+                        <expan>tres y medio</expan>
+                    </choice>, y el<lb/> de la <choice>
+                        <orig>infima</orig>
+                        <reg>ínfima</reg>
+                    </choice> dos <choice>
+                        <orig>ymedio</orig>
+                        <reg>y medio</reg>
+                    </choice>: <choice>
+                        <orig>demodo</orig>
+                        <reg>de modo</reg>
+                    </choice> que <choice>
+                        <orig>recivi<lb/>das</orig>
+                        <reg>recibidas</reg>
+                    </choice> las tres clases, puede decirse que paga<lb/> el <choice>
+                        <orig>Rey</orig>
+                        <reg>rey</reg>
+                    </choice> cada arroba <choice>
+                        <orig>deste</orig>
+                        <reg>de este</reg>
+                    </choice> fruto <choice>
+                        <orig>asus</orig>
+                        <reg>a sus</reg>
+                    </choice> cul<lb break="no"/>tivadores al respecto de 4 <unclear cert="low" reason="illegible">
+                        <choice>
+                            <abbr>p.<hi rendition="#sup">r</hi>
+                            </abbr>
+                            <expan>por</expan>
+                        </choice>
+                    </unclear>
+                    <unclear reason="illegible" cert="low">
+                        <choice>
+                            <abbr>f.<hi rendition="#sup">r</hi>
+                            </abbr>
+                            <expan>factoría</expan>
+                        </choice>
+                    </unclear>, que es el de<lb/> 16. cada quintal, precio <unclear cert="high" reason="illegible">
+                        <choice>
+                            <orig>exorvitantisimo</orig>
+                            <reg>exorbitantísimo</reg>
+                        </choice>
+                    </unclear>
+                    <lb/> comparado con <choice>
+                        <orig>elquetiene</orig>
+                        <reg>el que tiene</reg>
+                    </choice>
+                    <choice>
+                        <orig>enlas</orig>
+                        <reg>en las</reg>
+                    </choice>
+                    <choice>
+                        <orig>demas</orig>
+                        <reg>demás</reg>
+                    </choice>
+                    <lb/>
+                    <pb n="123v" facs="prohd0017_123v.tif"/>
+                    <fw type="folNum">2</fw>
+                    <choice>
+                        <orig>Probincias</orig>
+                        <reg>provincias</reg>
+                    </choice>
+                    <choice>
+                        <orig>delmundo</orig>
+                        <reg>de el mundo</reg>
+                    </choice>, <choice>
+                        <orig>dondese</orig>
+                        <reg>donde se</reg>
+                    </choice> cultiva y cose<lb/>cha.</p>
+                <p>Manufacturas<choice>
+                        <orig>.</orig>
+                        <reg/>
+                    </choice>
+                </p>
+                <p>Cada libra de <choice>
+                        <orig>tavaco</orig>
+                        <reg>tabaco</reg>
+                    </choice> polvo delgado exqui<lb/>sito con color, o <choice>
+                        <orig>sinel</orig>
+                        <reg>sin él</reg>
+                    </choice>, cuesta <choice>
+                        <orig>alRey</orig>
+                        <reg>al rey</reg>
+                    </choice> en esta<lb/>
+                    <choice>
+                        <orig>Factoria</orig>
+                        <reg>factoría</reg>
+                    </choice>
+                    <choice>
+                        <orig>arazon</orig>
+                        <reg>a razón</reg>
+                    </choice> de tres <choice>
+                        <orig>ym.o</orig>
+                        <reg>y medio</reg>
+                    </choice>
+                    <choice>
+                        <abbr>rr.<hi rendition="#sup">de</hi>
+                        </abbr>
+                        <expan>arrobas de</expan>
+                    </choice> plata fuerte,<lb/> sin incluir <choice>
+                        <orig>elvalor</orig>
+                        <reg>el valor</reg>
+                    </choice> del <choice>
+                        <orig>embase</orig>
+                        <reg>envase</reg>
+                    </choice>, <choice>
+                        <abbr>por q.<hi rendition="#sup">e</hi>
+                        </abbr>
+                        <expan>porque</expan>
+                    </choice> este<lb/>
+                    <choice>
+                        <orig>varia</orig>
+                        <reg>varía</reg>
+                    </choice>
+                    <choice>
+                        <orig>segun</orig>
+                        <reg>según</reg>
+                    </choice> su calidad <choice>
+                        <orig>ytamaños</orig>
+                        <reg>y tamaños</reg>
+                    </choice>.</p>
+                <p>Al mismo precio sale cada libra de ta<lb/>baco <choice>
+                        <orig>Rapé</orig>
+                        <reg>rapé</reg>
+                    </choice> del que se fabrica <choice>
+                        <orig>enesta</orig>
+                        <reg>en esta</reg>
+                    </choice> casa.</p>
+                <p>La libra <choice>
+                        <orig>depolvo</orig>
+                        <reg>de polvo</reg>
+                    </choice> suave que llaman<lb/> cucarachero <choice>
+                        <orig>delquese</orig>
+                        <reg>del que se</reg>
+                    </choice> gasta por las <choice>
+                        <orig>mugeres</orig>
+                        <reg>mujeres</reg>
+                    </choice>
+                    <lb/>
+                    <choice>
+                        <orig>dela</orig>
+                        <reg>de la</reg>
+                    </choice> Provicincia de Sevilla <choice>
+                        <orig>encada</orig>
+                        <reg>en cada</reg>
+                    </choice> año como<lb/>
+                    <unclear cert="high" reason="illegible">12002</unclear>
+                    <choice>
+                        <abbr>lib.<hi rendition="#sup">s</hi>
+                        </abbr>
+                        <expan>libras</expan>
+                    </choice>, tiene decosto como real <choice>
+                        <orig>ymedio</orig>
+                        <reg>y medio</reg>
+                    </choice>
+                    <supplied cert="low">de</supplied> pla<lb/>ta fuerte.</p>
+                <p>La libra de cigarros sale costando al<lb/>
+                    <choice>
+                        <orig>Rey</orig>
+                        <reg>rey</reg>
+                    </choice>, con <choice>
+                        <orig>inclusion</orig>
+                        <reg>inclusión</reg>
+                    </choice> del valor de los cajones de<lb/> su <choice>
+                        <orig>embase</orig>
+                        <reg>envase</reg>
+                    </choice> 6 <choice>
+                        <orig>rr.d</orig>
+                        <reg>arrobas de</reg>
+                    </choice> plata fuerte.</p>
+                <p>Cosechas</p>
+                <p>Consistieron estas año <choice>
+                        <orig>comun</orig>
+                        <reg>común</reg>
+                    </choice> tomado <choice>
+                        <orig>deun</orig>
+                        <reg>de un</reg>
+                    </choice>
+                    <lb/> quinquenio, hasta <choice>
+                        <orig>elpasado</orig>
+                        <reg>el pasado</reg>
+                    </choice> de 1794 <choice>
+                        <orig>enla</orig>
+                        <reg>en la</reg>
+                    </choice>
+                    <lb/> cantidad de <unclear cert="high" reason="illegible">29.000</unclear>
+                    arrobas, <foreign xml:lang="la">plus minus</foreign>
+                    <unclear reason="illegible" cert="low">ve.</unclear> mas<lb/> desde entonces
+                    comenzaron <choice>
+                        <orig>adecaer</orig>
+                        <reg>a decaer</reg>
+                    </choice> por con<lb/>trariedad <choice>
+                        <orig>enlas</orig>
+                        <reg>en las</reg>
+                    </choice> estaciones <choice>
+                        <orig>deltiempo</orig>
+                        <reg>del tiempo</reg>
+                    </choice>
+                    <choice>
+                        <sic/>
+                        <corr type="high">,</corr>
+                    </choice>
+                    <choice>
+                        <orig>porla</orig>
+                        <reg>por la</reg>
+                    </choice>
+                    <lb/> guerra, que todos los gremios altera <choice>
+                        <orig>enesta</orig>
+                        <reg>en esta</reg>
+                    </choice>
+                    <lb/> Isla<choice>
+                        <sic/>
+                        <corr type="high">,</corr>
+                    </choice>
+                    <choice>
+                        <orig>porel</orig>
+                        <reg>por el</reg>
+                    </choice> considerable incremento que<lb/>
+                    <pb n="124r" facs="prohd0017_124r.tif"/>
+                    <fw type="folNum">3</fw> dentro <choice>
+                        <orig>delamisma</orig>
+                        <reg>de la misma</reg>
+                    </choice>
+                    <choice>
+                        <orig>epoca</orig>
+                        <reg>época</reg>
+                    </choice> han tomado las<lb/>
+                    <choice>
+                        <orig>Haciendas</orig>
+                        <reg>haciendas</reg>
+                    </choice> de <choice>
+                        <orig>Café</orig>
+                        <reg>café</reg>
+                    </choice>, que antes <choice>
+                        <orig>aqui</orig>
+                        <reg>aquí</reg>
+                    </choice>
+                    <choice>
+                        <orig>nose</orig>
+                        <reg>no se</reg>
+                    </choice>
+                    <choice>
+                        <orig>co<g ref="#typoHyphen"/>
+                            <lb/>nocian</orig>
+                        <reg>conocían</reg>
+                    </choice>, y las <choice>
+                        <abbr>q.</abbr>
+                        <expan>que</expan>
+                    </choice> fabrican <choice>
+                        <orig>Azucar</orig>
+                        <reg>azúcar</reg>
+                    </choice>, <choice>
+                        <orig>conmo<lb/>tibo</orig>
+                        <reg>con motivo</reg>
+                    </choice>
+                    <choice>
+                        <orig>dela</orig>
+                        <reg>de la</reg>
+                    </choice>
+                    <choice>
+                        <orig>insurrecion</orig>
+                        <reg>insurrección</reg>
+                    </choice> del <unclear reason="illegible" cert="high">
+                        <choice>
+                            <orig>Guaxiro</orig>
+                            <reg>Guajiro</reg>
+                        </choice>
+                    </unclear>. A este<lb/> principio <choice>
+                        <orig>sesiguio</orig>
+                        <reg>se siguió</reg>
+                    </choice>
+                    <choice>
+                        <orig>elefecto</orig>
+                        <reg>el efecto</reg>
+                    </choice> de <choice>
+                        <orig>haver</orig>
+                        <reg>haber</reg>
+                    </choice> tomado<lb/> las tierras un valor nunca esperado: <unclear cert="high" reason="illegible">siendo</unclear>
+                    <lb/>
+                    <choice>
+                        <orig>deaqui</orig>
+                        <reg>de aquí</reg>
+                    </choice>, que como el <choice>
+                        <orig>cultibo</orig>
+                        <reg>cultivo</reg>
+                    </choice>
+                    <choice>
+                        <orig>detabacos</orig>
+                        <reg>de tabacos</reg>
+                    </choice> es<lb/> tan <choice>
+                        <abbr>conocidam.<hi rendition="#sup">te</hi>
+                        </abbr>
+                        <expan>conocidamente</expan>
+                    </choice> expuesto a malograrse,<lb/> con cuio motibo ha estado siempre
+                    entre<lb/> gente indigente, sin <choice>
+                        <orig>mas</orig>
+                        <reg>más</reg>
+                    </choice> capital que el<lb/>
+                    <choice>
+                        <orig>desus</orig>
+                        <reg>de sus</reg>
+                    </choice> brazos, no pudiendo sufragar el <gap unit="words" reason="illegible" quantity="1"/>
+                    <lb/>cido <gap reason="illegible" unit="words" quantity="1"/> que exigeron los
+                    dueños de las men<lb/>cionadas tierras por su arriendo, ha <unclear reason="illegible" cert="low">desen<lb/>tado</unclear> muchos <choice>
+                        <abbr>labrad.<hi rendition="#sup">s</hi>
+                        </abbr>
+                        <expan>labradores</expan>
+                    </choice>
+                    <choice>
+                        <orig>detabaco</orig>
+                        <reg>de tabaco</reg>
+                    </choice>
+                    <choice>
+                        <orig>desta</orig>
+                        <reg>de esta</reg>
+                    </choice>
+                    <choice>
+                        <orig>ocu<lb/>pacion</orig>
+                        <reg>ocupación</reg>
+                    </choice>, saltando <choice>
+                        <orig>alas</orig>
+                        <reg>a las</reg>
+                    </choice> de tumbadores de<lb/> monte, <choice>
+                        <orig>Arrieros</orig>
+                        <reg>arrieros</reg>
+                    </choice>, <choice>
+                        <orig>Porteadores</orig>
+                        <reg>porteadores</reg>
+                    </choice>
+                    <choice>
+                        <orig>deleña</orig>
+                        <reg>de leña</reg>
+                    </choice>, <choice>
+                        <orig>tegeros</orig>
+                        <reg>tejeros</reg>
+                    </choice>
+                    <lb/> mayorales de las <choice>
+                        <orig>Haciendas</orig>
+                        <reg>haciendas</reg>
+                    </choice>
+                    <choice>
+                        <orig>nuebas</orig>
+                        <reg>nuevas</reg>
+                    </choice>, <choice>
+                        <orig>yotras</orig>
+                        <reg>y otras</reg>
+                    </choice>
+                    <lb/> varias en <choice>
+                        <abbr>q.<hi rendition="#sup">e</hi>
+                        </abbr>
+                        <expan>que</expan>
+                    </choice> han encontrado su <unclear cert="high" reason="illegible">pasar</unclear> me<lb/>nos <choice>
+                        <orig>equiboco</orig>
+                        <reg>equívoco</reg>
+                    </choice> que el del <choice>
+                        <orig>cultibo</orig>
+                        <reg>cultivo</reg>
+                    </choice>
+                    <choice>
+                        <orig>deltabaco</orig>
+                        <reg>del tabaco</reg>
+                    </choice>.<lb/> Por esto es <choice>
+                        <orig>elaumento</orig>
+                        <reg>el aumento</reg>
+                    </choice> tan crecido que de<lb/> cuatro años a esta <choice>
+                        <abbr>p.<hi rendition="#sup">te</hi>
+                        </abbr>
+                        <expan>parte</expan>
+                    </choice> se ha <choice>
+                        <sic>mipuesto</sic>
+                        <corr>impuesto</corr>
+                    </choice> a to<g ref="#typoHyphen"/>
+                    <lb/>das las clases, con el fin de llamarles al gre<lb/>mio por medio de este <choice>
+                        <orig>interes</orig>
+                        <reg>interés</reg>
+                    </choice>, vedadero con<lb/>ductor del hombre. Aun <choice>
+                        <orig>asi</orig>
+                        <reg>así</reg>
+                    </choice>
+                    <choice>
+                        <orig>noseha</orig>
+                        <reg>no se ha</reg>
+                    </choice> logrado<lb/> cosecha <choice>
+                        <orig>quemerezca</orig>
+                        <reg>que merezca</reg>
+                    </choice> el nombre de pujante;<lb/> al contrario la del año <choice>
+                        <sic>prox.mo</sic>
+                        <corr type="deleted"/>
+                    </choice> anterior de <supplied cert="high">1</supplied>803<choice>
+                        <sic>.</sic>
+                        <corr type="deleted"/>
+                    </choice>,<lb/> no llegó a <unclear cert="low" reason="illegible">38.000</unclear>
+                    <choice>
+                        <orig>arro.S</orig>
+                        <reg>arrobas</reg>
+                    </choice>
+                    <note place="mBottom" hand="#H0012069">38.000?</note>; la del anterior<lb/>
+                    <pb n="124v" facs="prohd0017_124v.tif"/>
+                    <fw type="folNum">4</fw> de <supplied cert="high">1</supplied>802, ni a <unclear cert="low" reason="illegible">60000</unclear>, <choice>
+                        <orig>haviendose</orig>
+                        <reg>habiéndose</reg>
+                    </choice> quedado las dos<lb/>
+                    <choice>
+                        <sic>proximas</sic>
+                        <corr type="deleted"/>
+                    </choice> precedentes en poco <choice>
+                        <orig>mas</orig>
+                        <reg>más</reg>
+                    </choice> de <unclear cert="low" reason="illegible">10.000</unclear> ca<lb/>da
+                    una, por la <unclear cert="high" reason="illegible">tierra</unclear> seca, qe
+                    hace muchos años<lb/> experimenta esta <choice>
+                        <orig>Ysla</orig>
+                        <reg>isla</reg>
+                    </choice>. <choice>
+                        <orig>Enel</orig>
+                        <reg>En el</reg>
+                    </choice> actual que ha<lb/>
+                    <choice>
+                        <orig>llobido</orig>
+                        <reg>llovido</reg>
+                    </choice> con regularidad, <choice>
+                        <orig>segun</orig>
+                        <reg>según</reg>
+                    </choice> las noticias<lb/>
+                    <unclear cert="high" reason="illegible">
+                        <choice>
+                            <orig>destasmias</orig>
+                            <reg>de estas mías</reg>
+                        </choice>
+                    </unclear>, juzgo <choice>
+                        <orig>excedera</orig>
+                        <reg>excederá</reg>
+                    </choice> de <unclear cert="low" reason="illegible">15.0000</unclear>
+                    arrobas.<lb/>
+                </p>
+                <p>Para cubrir todas las atenciones, <choice>
+                        <abbr>q.<hi rendition="#sup">e</hi>
+                        </abbr>
+                        <expan>que</expan>
+                    </choice>
+                    <lb/> son a cargo <choice>
+                        <orig>desta</orig>
+                        <reg>de esta</reg>
+                    </choice>
+                    <choice>
+                        <abbr>Fact.<hi rendition="#sup">a</hi>
+                        </abbr>
+                        <expan>factoría</expan>
+                    </choice>, y <choice>
+                        <orig>tambien</orig>
+                        <reg>también</reg>
+                    </choice> el enor<lb/>me consumo que del cigarro se hace en toda<lb/> la <choice>
+                        <orig>Ysla</orig>
+                        <reg>isla</reg>
+                    </choice>, no se necesita menos que de <unclear cert="low" reason="illegible">35.0000</unclear>
+                    <lb/>
+                    <choice>
+                        <abbr>arr.<hi rendition="#sup">s</hi>
+                        </abbr>
+                        <expan>arrobas</expan>
+                    </choice> en cada año, siendo bastante <choice>
+                        <orig>aora</orig>
+                        <reg>ahora</reg>
+                    </choice> diez,<lb/> la cantidad de <unclear cert="low" reason="illegible">25.0000</unclear> para tener provistos<lb/> todos los puntos <choice>
+                        <orig>aquienes</orig>
+                        <reg>a quienes</reg>
+                    </choice> surte, excepto<lb/> el consumo que se hace de veinte leguas tie<g ref="#typoHyphen"/>
+                    <lb/>rra adentro <choice>
+                        <orig>desta</orig>
+                        <reg>de esta</reg>
+                    </choice> capital, hasta Cuba in<lb/>clusive donde nunca <hi rendition="#u" hand="#H0012069">
+                        <choice>
+                            <orig>seha</orig>
+                            <reg>se ha</reg>
+                        </choice> establecido el<lb/> estanco</hi>.</p>
+                <p>
+                    <choice>
+                        <orig>Distribucion</orig>
+                        <reg>Distribución</reg>
+                    </choice>
+                </p>
+                <table>
+                    <row role="label">
+                        <cell/>
+                        <cell>
+                            <choice>
+                                <orig>Arr.s</orig>
+                                <reg>Arrobas</reg>
+                            </choice>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>A España ciento <choice>
+                                <abbr>v.<hi rendition="#sup">te</hi>
+                                </abbr>
+                                <expan>veinte</expan>
+                            </choice> y ocho mil<lb/>
+                            <choice>
+                                <abbr>arro.<hi rendition="#sup">s</hi>
+                                </abbr>
+                                <expan>arrobas</expan>
+                            </choice> en hoja y polvo.</cell>
+                        <cell>128.000</cell>
+                    </row>
+                    <row>
+                        <cell>A <choice>
+                                <orig>Mexico</orig>
+                                <reg>México</reg>
+                            </choice> dos mil doscientas y <choice>
+                                <abbr>quaren.<hi rendition="#sup">ta</hi>
+                                </abbr>
+                                <expan>cuarenta</expan>
+                            </choice>
+                            <choice>
+                                <orig>id</orig>
+                                <reg>ídem</reg>
+                            </choice>
+                        </cell>
+                        <cell>2.240</cell>
+                    </row>
+                    <row>
+                        <cell>A Lima <choice>
+                                <orig>nuebe</orig>
+                                <reg>nueve</reg>
+                            </choice> mil doscientas <choice>
+                                <orig>id</orig>
+                                <reg>ídem</reg>
+                            </choice>
+                        </cell>
+                        <cell>9.200</cell>
+                    </row>
+                    <row>
+                        <cell>Panama seis mil <choice>
+                                <orig>id</orig>
+                                <reg>ídem</reg>
+                            </choice>
+                        </cell>
+                        <cell>6.000</cell>
+                    </row>
+                    <row>
+                        <cell>Cartagena <choice>
+                                <orig>id</orig>
+                                <reg>ídem</reg>
+                            </choice>
+                        </cell>
+                        <cell>6.000</cell>
+                    </row>
+                    <row>
+                        <cell>A Buenos <choice>
+                                <orig>ayres</orig>
+                                <reg>Aires</reg>
+                            </choice> tres mil <choice>
+                                <orig>id</orig>
+                                <reg>ídem</reg>
+                            </choice>
+                        </cell>
+                        <cell>3.000</cell>
+                    </row>
+                    <row>
+                        <cell>Caracas y Campeche mil <choice>
+                                <orig>id</orig>
+                                <reg>ídem</reg>
+                            </choice>
+                        </cell>
+                        <cell>1.000</cell>
+                    </row>
+                    <row>
+                        <cell>Consumo de la <choice>
+                                <abbr>Hav.<hi rendition="#sup">a</hi>
+                                </abbr>
+                                <expan>Habana</expan>
+                            </choice> ochenta mil</cell>
+                        <cell>80.000</cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <choice>
+                                <orig>Considerase</orig>
+                                <reg>Considérase</reg>
+                            </choice> ig<supplied cert="high">ual</supplied>
+                            <choice>
+                                <sic>al</sic>
+                                <corr>el</corr>
+                            </choice> consumo al resto de la<lb/>
+                            <choice>
+                                <orig>Ysla</orig>
+                                <reg>isla</reg>
+                            </choice> donde se surten al campo</cell>
+                        <cell>80.000</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>315.440</cell>
+                    </row>
+                </table>
+                <pb n="125r" facs="prohd0017_125r.tif"/>
+                <fw type="folNum">5</fw>
+                <p>
+                    <choice>
+                        <orig>Cuio</orig>
+                        <reg>cuyo</reg>
+                    </choice> total asciende a trescientas quince mil<lb/>
+                    <choice>
+                        <abbr>quatroz.<hi rendition="#sup">tas</hi>
+                        </abbr>
+                        <expan>cuatrocientas</expan>
+                    </choice> y <choice>
+                        <abbr>quar.<hi rendition="#sup">ta</hi>
+                        </abbr>
+                        <expan>cuarenta</expan>
+                    </choice>
+                    <choice>
+                        <abbr>arr.<hi rendition="#sup">s</hi>
+                        </abbr>
+                        <expan>arrobas</expan>
+                    </choice> sin contar con<lb/> la merma y <choice>
+                        <orig>aberias</orig>
+                        <reg>averías</reg>
+                    </choice> que sufre este <choice>
+                        <orig>gene<lb/>ro</orig>
+                        <reg>género</reg>
+                    </choice> que pasa a un diez por ciento, y con su<lb/> agregacion se completa el <choice>
+                        <abbr>num.<hi rendition="#sup">o</hi>
+                        </abbr>
+                        <expan>número</expan>
+                    </choice> de las<lb/>
+                    <unclear cert="high" reason="illegible">350.000</unclear> que quedan
+                    calculadas.</p>
+                <p>Sueldos <choice>
+                        <abbr>q</abbr>
+                        <expan>que</expan>
+                    </choice> el <choice>
+                        <orig>Rey</orig>
+                        <reg>rey</reg>
+                    </choice> paga<lb/> a los empleados en este<lb/>
+                    <choice>
+                        <abbr>establecim.<hi rendition="#sup">to</hi>
+                        </abbr>
+                        <expan>establecimiento</expan>
+                    </choice>
+                </p>
+                <p>Asciende la <choice>
+                        <orig>Nomina</orig>
+                        <reg>nómina</reg>
+                    </choice> de los empleados<lb/> de <unclear cert="low" reason="illegible">
+                        <choice>
+                            <orig>num.o</orig>
+                            <reg>número</reg>
+                        </choice>
+                    </unclear> a la <choice>
+                        <abbr>cantid.<hi rendition="#sup">d</hi>
+                        </abbr>
+                        <expan>cantidad</expan>
+                    </choice> de 43.2000 <unclear cert="low" reason="illegible">
+                        <choice>
+                            <abbr>p.<hi rendition="#sup">os</hi>
+                            </abbr>
+                            <expan>pesos</expan>
+                        </choice>
+                    </unclear> y de los<lb/>
+                    <unclear cert="high" reason="illegible">
+                        <choice>
+                            <orig>Factorias</orig>
+                            <reg>factorías</reg>
+                        </choice>
+                    </unclear> del interior de la <choice>
+                        <orig>Ysla</orig>
+                        <reg>isla</reg>
+                    </choice> a 10.900<lb/> que reunidas forman la cantidad de<lb/>
+                    <hi rendition="#u" hand="#H0012069">54.100</hi>
+                    <choice>
+                        <abbr>p.<hi rendition="#sup">os</hi>
+                        </abbr>
+                        <expan>pesos</expan>
+                    </choice>. <note place="inline" hand="#H0012069">Voilà <gap unit="words" quantity="5" reason="illegible"/>
+                        <lb/> 43.200<lb/>
+                        <hi hand="#H0012069" rendition="#u">10.900</hi>
+                        <lb/>54.100 </note>
+                </p>
+                <p>La <choice>
+                        <orig>manutencion</orig>
+                        <reg>manutención</reg>
+                    </choice> de 120 <choice>
+                        <orig>Negros</orig>
+                        <reg>negros</reg>
+                    </choice>
+                    <choice>
+                        <orig>es<g ref="#typoHyphen"/>
+                            <lb/>clabos</orig>
+                        <reg>esclavos</reg>
+                    </choice> de la <choice>
+                        <abbr>Fact.<hi rendition="#sup">a</hi>
+                        </abbr>
+                        <expan>factoría</expan>
+                    </choice>, <unclear reason="illegible" cert="low">mulas</unclear> y otros
+                    gastos<lb/> menores en ella importa la suma de<lb/>
+                    <unclear cert="high" reason="illegible">12.000</unclear> p.s annuales.</p>
+                <p>Notas<choice>
+                        <sic>.</sic>
+                        <corr type="deleted"/>
+                    </choice>
+                </p>
+                <p>1.ª El año <choice>
+                        <orig>quese</orig>
+                        <reg>que se</reg>
+                    </choice> remitan a España las<lb/>
+                    <unclear cert="high" reason="illegible">128.000</unclear>
+                    <choice>
+                        <abbr>arr.<hi rendition="#sup">s</hi>
+                        </abbr>
+                        <expan>arrobas</expan>
+                    </choice> de tabaco en rama y <choice>
+                        <orig>polbo</orig>
+                        <reg>polvo</reg>
+                    </choice>
+                    <lb/> y que <choice>
+                        <orig>alli</orig>
+                        <reg>allí</reg>
+                    </choice> se consuman, debe ascender<lb/> su valor <choice>
+                        <abbr>p.<hi rendition="#sup">a</hi>
+                        </abbr>
+                        <expan>para</expan>
+                    </choice> el rey, <choice>
+                        <orig>segun</orig>
+                        <reg>según</reg>
+                    </choice> los precios a <choice>
+                        <abbr>q.<hi rendition="#sup">e</hi>
+                        </abbr>
+                        <expan>que</expan>
+                    </choice>
+                    <lb/> en la <choice>
+                        <orig>Peninsula</orig>
+                        <reg>península</reg>
+                    </choice> se vende, a cinco millo<g ref="#typoHyphen"/>
+                    <lb/>nes de <choice>
+                        <abbr>p.<hi rendition="#sup">s</hi>
+                        </abbr>
+                        <expan>pesos</expan>
+                    </choice>
+                    <gap unit="words" quantity="1" reason="illegible"/> descontados fletes, <choice>
+                        <orig>averias</orig>
+                        <reg>averías</reg>
+                    </choice>
+                    <lb/>
+                    <pb n="125v" facs="prohd0017_125v.tif"/> y gastos de <choice>
+                        <orig>elaboracion</orig>
+                        <reg>elaboración</reg>
+                    </choice> en aquel <choice>
+                        <abbr>Do.<hi rendition="#sup">no</hi>
+                        </abbr>
+                        <expan>
+                            <gap unit="words" quantity="1" reason="illegible"/>
+                        </expan>
+                    </choice>
+                </p>
+                <p>2.ª No puede señalarse, ni aun con <choice>
+                        <orig>apro<lb/>ximacion</orig>
+                        <reg>aproximación</reg>
+                    </choice> el producto que el <choice>
+                        <orig>Rey</orig>
+                        <reg>rey</reg>
+                    </choice> saque<lb/> de los <choice>
+                        <abbr>Tav.<hi rendition="#sup">os</hi>
+                        </abbr>
+                        <expan>tabacos</expan>
+                    </choice> que esta <choice>
+                        <abbr>Fact.<hi rendition="#sup">a</hi>
+                        </abbr>
+                        <expan>factoría</expan>
+                    </choice>
+                    <choice>
+                        <orig>embia</orig>
+                        <reg>envía</reg>
+                    </choice> a las <choice>
+                        <abbr>Ad<g ref="#typoHyphen"/>
+                            <lb/>ministrac.<hi rendition="#sup">es</hi>
+                        </abbr>
+                        <expan>administraciones</expan>
+                    </choice> de <choice>
+                        <orig>America</orig>
+                        <reg>América</reg>
+                    </choice>, <choice>
+                        <abbr>porq.<hi rendition="#sup">e</hi>
+                        </abbr>
+                        <expan>porque</expan>
+                    </choice> se ignora<lb/> el precio aque en cada <choice>
+                        <orig>pasage</orig>
+                        <reg>pasaje</reg>
+                    </choice>
+                    <choice>
+                        <orig>deaque<lb/>llas</orig>
+                        <reg>de aquellas</reg>
+                    </choice>
+                    <choice>
+                        <orig>Provincias</orig>
+                        <reg>provincias</reg>
+                    </choice>
+                    <choice>
+                        <orig>sevende</orig>
+                        <reg>se vende</reg>
+                    </choice>.</p>
+                <p>3.ª Las ochenta mil <choice>
+                        <orig>arr.as</orig>
+                        <reg>arrobas</reg>
+                    </choice> que se dicen<lb/> consume la <choice>
+                        <orig>Poblacion</orig>
+                        <reg>población</reg>
+                    </choice> de la <choice>
+                        <abbr>Hav.<hi rendition="#sup">a</hi>
+                        </abbr>
+                        <expan>Habana</expan>
+                    </choice> y sus<lb/> inmediaciones deja al <choice>
+                        <orig>Rey</orig>
+                        <reg>rey</reg>
+                    </choice>, deducidas<lb/> mermas y costos de venta <unclear cert="low" reason="illegible">latenviadas</unclear>
+                    <unclear cert="high" reason="illegible">de</unclear>
+                    <lb/> un <gap unit="words" quantity="1" reason="illegible"/> de utilidad, sin
+                    poder aspirar <choice>
+                        <orig>amas</orig>
+                        <reg>a más</reg>
+                    </choice>
+                    <lb/> por no excitar al contrabando en un <choice>
+                        <orig>Pais</orig>
+                        <reg>país</reg>
+                    </choice>
+                    <lb/> donde hasta <choice>
+                        <abbr>q.<hi rendition="#sup">e</hi>
+                        </abbr>
+                        <expan>que</expan>
+                    </choice> la <choice>
+                        <orig>Poblacion</orig>
+                        <reg>población</reg>
+                    </choice> aumente<lb/>
+                    <choice>
+                        <orig>algomas</orig>
+                        <reg>algo más</reg>
+                    </choice>
+                    <choice>
+                        <orig>delDuplo</orig>
+                        <reg>del duplo</reg>
+                    </choice> de la <choice>
+                        <orig>q.e</orig>
+                        <reg>que</reg>
+                    </choice> se numera<lb/> persuade la rama <choice>
+                        <orig>politica</orig>
+                        <reg>política</reg>
+                    </choice>
+                    <choice>
+                        <orig>aquese</orig>
+                        <reg>a que se</reg>
+                    </choice>
+                    <lb/> contemple, y aun <choice>
+                        <orig>alague</orig>
+                        <reg>halague</reg>
+                    </choice> a la exis<g ref="#typoHyphen"/>
+                    <lb/>tente.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

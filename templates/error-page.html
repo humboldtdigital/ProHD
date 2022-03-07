@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/faviconProhd.ico"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-32.png" sizes="24x24"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-64.png" sizes="64x64"/>
+        
+        <title data-template="config:app-title"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500"/> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500"/>
+        <link rel="stylesheet" href="resources/css/theme.css"/>
+        <link rel="stylesheet" href="resources/css/prohd-theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+        <custom-style>
+            <style include="pb-common-styles">
+               .error {
+                    vertical-align: middle;                    
+                    text-align: center;
+                    min-height: calc(100vh - 17.6em);
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                }
+
+                .textbox, .image {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-top: 1.5em;
+                }
+
+                .textbox {
+                    width: 270px;
+                }
+
+                .title {
+                    font-style: "Roboto Slab";
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #008F8F;
+                    line-height: 1.2;
+                }
+
+                .description {
+                    margin-bottom: 1.5em;
+                    font-style: "Montserrat";
+                    color:  #353831;
+                    font-size: 14px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                .button {
+                    background-color: white;
+                    color: #353831;
+                    border: 2px solid #008F8F;
+                    border-radius: 12px;
+                    text-decoration: none;
+                    font-style: "Montserrat";
+                    font-size: 14px;
+                    padding: 10px;
+                }
+
+                .hd {
+                    height: 16em;
+                    width: auto;
+                }
+                           
+                @media (min-width: 768px) {
+                                    
+                    .textbox {
+                        width: 300px;
+                    }
+
+                   .title {
+                        font-size: 24px;
+                    }   
+
+                    .description {
+                        font-size: 16px;
+                    }
+                    
+                    .button {
+                        font-size: 16px;
+                    }
+        
+                    .hd {
+                        height: 20em;
+                        width: auto;
+                    }
+                }               
+                
+                @media (min-width: 1200px) {
+
+                    .textbox {
+                        width: 450px;
+                    }
+                    
+                    .title {
+                        font-size: 28px;
+                    }   
+
+                    .description {
+                        font-size: 18px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                    }
+                    
+                    .hd {
+                        height: 25em;
+                        width: auto;
+                    }
+                }
+            </style>
+        </custom-style>
+    </head>
+
+    <body unresolved="unresolved">
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-header-layout>
+                <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                    <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                </app-header>
+
+                <main>
+                    <section class="error">
+                        <div class="textbox">
+                            <h1 class="title">
+                                <pb-i18n key="error.title">Ein Fehler ist aufgetreten...</pb-i18n>
+                            </h1>
+                            <p class="description">
+                                <pb-i18n key="error.description">Die von Ihnen aufgerufene Seite konnte 
+                                nicht gefunden werden. </pb-i18n>
+                            </p>
+                            <p>
+                                <a href="index.html" class="button">
+                                    <pb-i18n key="error.button">Zurück zur Startseite</pb-i18n>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img class="hd" src="resources/images/logoHDPositivo.svg"/>
+                        </div>
+                    </section>    
+                </main>
+                 <footer>
+                    <div id="footerGray">
+                        <p>
+                                <pb-i18n key="footer.funded"/>
+                            </p>
+                        <a href="https://www.auswaertiges-amt.de/">
+                                <img src="resources/images/aa.svg" class="funder1"/>
+                            </a>
+                        <a href="https://www.fritz-thyssen-stiftung.de/">
+                                <img src="resources/images/thyssen.svg" class="funder2"/>
+                            </a>
+                        <a href="https://www.gerda-henkel-stiftung.de/">
+                                <img src="resources/images/gerdahenkel.svg" class="funder3"/>
+                            </a>
+                    </div>    
+                    <div id="footerGreen">
+                        <a href="https://e-editiones.org/">
+                                <img src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                            </a>
+                        <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
+                            </p>
+                        <p class="license">
+                                <pb-i18n key="footer.license"/>
+                            </p>
+                        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                                <img src="resources/images/cc.svg" class="cc"/>
+                            </a>
+                    </div>
+                </footer>
+            </app-header-layout>
+        </pb-page>
+    </body>
+</html>
