@@ -330,7 +330,7 @@ declare variable $config:default-odd :="prohd.odd";
  : make sure to run modules/generate-pm-config.xql to update the main configuration
  : module for transformations (modules/pm-config.xql).
  :)
-declare variable $config:odd-available :=("prohd.odd");
+declare variable $config:odd-available :=("prohd.odd", "docbook.odd");
 
 (:~
  : List of ODD files which are used internally only, i.e. not for displaying information
