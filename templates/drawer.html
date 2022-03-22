@@ -1,11 +1,20 @@
 <app-drawer slot="drawer" align="right">
     <div class="drawer-content">
         <pb-media-query query="max-width: 1023px">
+            <div style="padding-top: 10px;">
+                <a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
+                    <pb-i18n key="menu.home"/>
+                </a>    
+            </div>        
             <div style="padding-top:10px;">
-                <a href="about.xml"><pb-i18n key="menu.about"/></a>
+                <a href="about.xml">
+                    <pb-i18n key="menu.about"/>
+                </a>
             </div>
             <div style="padding-top:10px; padding-bottom:10px;">
-                <a href="team.xml"><pb-i18n key="menu.team"/></a>
+                <a href="team.xml">
+                    <pb-i18n key="menu.team"/>
+                </a>
             </div>
             <!-- language selector -->
             <pb-lang name="lang" data-template="pages:languages"/>

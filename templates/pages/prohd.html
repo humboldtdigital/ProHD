@@ -25,21 +25,28 @@
                 pb-drawer {
                     background-color: #E2F4F1;
                 }
-
+                
+                .drawer-content pb-view {
+                    font-size: 16px;
+                }    
+                
                 .content-body {
                     position: relative;
                     display: flex;
                     justify-content: center;
                     padding: 0 20px;
                 }
-
+                
                 .metadata {
                     width: 100%;
                     padding: 0 20px 20px;
                 }
+                
+                
                 .metadata pb-view {
                     font: var(--pb-base-font);
                 }
+                
                 .metadata h3 pb-view {
                     font-family: var(--pb-heading-font-family);
                     font-weight: var(--pb-heading-font-weight);
@@ -52,6 +59,10 @@
                 .content-body pb-facsimile {
                     flex: 1;
                     height: var(--pb-view-height);
+                }
+                
+                paper-listbox  {
+                    background-color: #E2F4F1;
                 }
             </style>
         </custom-style>
@@ -75,20 +86,50 @@
                         
                         <!-- Overwrite toolbar to add metadata toggle -->
                         <app-toolbar class="toolbar" sticky="sticky">
+                            <pb-media-query query="min-width: 769px">
                             <paper-button id="tocToggle" class="toc-toggle" raised="raised">
                                 <iron-icon icon="icons:info-outline"/>
                                 <pb-i18n key="document.metadata"/>
                             </paper-button>
+                            </pb-media-query>
                             
+                            <pb-media-query query="max-width: 768px">
+                              <paper-icon-button id="tocToggle" class="toc-toggle" icon="icons:info-outline"/>
+                            </pb-media-query>
+                            
+                            
+                        <pb-media-query query="max-width: 768px">   
+                            <paper-menu-button class="view" vertical-offset="60">
+                                <paper-icon-button icon="visibility" slot="dropdown-trigger">
+                                   <pb-i18n key="document.view"/>
+                                </paper-icon-button>   
+                                <paper-listbox slot="dropdown-content">
+                                    <paper-item>
+                                        <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
+                                            <pb-i18n key="document.view-diplomatic"/>
+                                        </pb-toggle-feature>    
+                                    </paper-item>
+                                    <paper-item>
+                                        <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
+                                            <pb-i18n key="document.page-view"/>
+                                        </pb-toggle-feature>
+                                    </paper-item>
+                                </paper-listbox>
+                            </paper-menu-button>
+                        </pb-media-query>
+                        
+                        
                         <!-- pass a parameter 'mode'. pb-view will forward this to the ODD as a user-defined parameter-->
-                        <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
-                            <pb-i18n key="document.view-diplomatic"/>
-                        </pb-toggle-feature>
+                        <pb-media-query query="min-width: 769px">
+                            <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
+                                <pb-i18n key="document.view-diplomatic"/>
+                            </pb-toggle-feature>
                         
                         <!-- directly change properties of the pb-view -->
-                        <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
-                            <pb-i18n key="document.page-view"/>
-                        </pb-toggle-feature>
+                            <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
+                                <pb-i18n key="document.page-view"/>
+                            </pb-toggle-feature>
+                        </pb-media-query>
                         
                         <!-- Navigate to previous page -->
                         <pb-navigation direction="backward" keyboard="left">
@@ -100,11 +141,11 @@
                         <paper-icon-button icon="icons:chevron-right"/>
                         </pb-navigation>
                         
-                        
+                        <pb-media-query query="min-width: 1024px">
                             <a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
                                 <paper-icon-button icon="icons:folder-open"/>
                             </a>
-                            
+                        </pb-media-query>    
                             
                             <pb-restricted login="login">
                                 <pb-ajax subscribe="transcription" emit="transcription" url="${app}/api/odd" method="post" data-template="pages:parse-params" event="pb-refresh" title="Recompile ODD" data-i18n="[title]menu.admin.recompile">
@@ -115,9 +156,11 @@
                                 </pb-ajax>
                             </pb-restricted>
                         
+                        <!--    
                             <pb-zoom emit="transcription" direction="in" icon="icons:zoom-in"/>
                             
-                            <pb-zoom emit="transcription" direction="out" icon="icons:zoom-out"/>
+                            <pb-zoom emit="transcription" direction="out" icon="icons:zoom-out"/> 
+                        -->
                             
                             <!-- Page navigation in the menu -->
                             <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
