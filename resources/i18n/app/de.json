@@ -2,9 +2,11 @@
     "menu": {
         "title": "Digitales Dossier: Alexander von Humboldt und Kuba (1800–1830)",
         "about": "Über das Projekt",
-        "team": "Das Team"
+        "team": "Das Team",
+        "home": "Home"
     },
     "document":{
+    	"view": "Ansicht",
     	"view-diplomatic": "Diplomatische Ansicht",
     	"metadata": "Metadaten",
     	"page-view":"Seitenansicht",

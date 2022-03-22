@@ -2,9 +2,11 @@
     "menu": {
         "title": "Dossier Digital: Alexander von Humboldt y Cuba (1800–1830)",
         "about": "Sobre el proyecto",
-        "team": "Equipo"
+        "team": "Equipo",
+        "home": "Inicio"
     },
     "document":{
+    	"view": "Vista",
     	"view-diplomatic": "Vista diplomática",
     	"metadata": "Metadatos",
     	"page-view": "Vista por páginas",
