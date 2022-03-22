@@ -835,7 +835,8 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
    &lt;p&gt;[Título de la figura]&lt;/p&gt;
    &lt;figDesc&gt;[Descripción de la imagen por el editor]&lt;/figDesc&gt;
    &lt;note type="editorial"&gt;[Comentario editorial]&lt;/note&gt; 
-&lt;/figure&gt;</programlisting></para>
+&lt;/figure&gt;</programlisting>
+                </para>
             <para>El nombre del fichero se ha codificado con el atributo <tag>@facs</tag>. Los
                comentarios editoriales que se refieren a la imagen en sí se han codificado con el
                elemento hijo <tag>note</tag>. 
@@ -1366,7 +1367,8 @@ explican en el documento […]</programlisting>
 &lt;choice&gt;
    &lt;sic&gt;más&lt;/sic&gt;
    &lt;corr type="deleted"/&gt;
-&lt;/choice&gt; cantidad</programlisting></para>   
+&lt;/choice&gt; cantidad</programlisting>
+                </para>   
           </section>
           <section>
             <title>Lecturas inciertas</title>
