@@ -21,14 +21,10 @@
                 body {
                     --pb-view-height: calc(100vh - 192px);
                 }
-                
+               
                 pb-drawer {
                     background-color: #E2F4F1;
                 }
-                
-                .drawer-content pb-view {
-                    font-size: 16px;
-                }    
                 
                 .content-body {
                     position: relative;
@@ -64,6 +60,16 @@
                 paper-listbox  {
                     background-color: #E2F4F1;
                 }
+                
+                .drawer-content pb-view {
+                    font-size: 16px;
+                }    
+                
+                @media (max-width: 768px)   {
+                    body {
+                        --pb-drawer-width: 300px;
+                    }
+                }
             </style>
         </custom-style>
     </head>
@@ -86,16 +92,13 @@
                         
                         <!-- Overwrite toolbar to add metadata toggle -->
                         <app-toolbar class="toolbar" sticky="sticky">
-                            <pb-media-query query="min-width: 769px">
+                            
                             <paper-button id="tocToggle" class="toc-toggle" raised="raised">
                                 <iron-icon icon="icons:info-outline"/>
                                 <pb-i18n key="document.metadata"/>
                             </paper-button>
-                            </pb-media-query>
                             
-                            <pb-media-query query="max-width: 768px">
-                              <paper-icon-button id="tocToggle" class="toc-toggle" icon="icons:info-outline"/>
-                            </pb-media-query>
+                            
                             
                             
                         <pb-media-query query="max-width: 768px">   

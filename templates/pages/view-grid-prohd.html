@@ -24,7 +24,7 @@
                 grid-template-rows: auto 1fr auto;
             }
 
-            @media (max-width: 768px) {
+            @media (max-width: 1024px) {
                 main {
                     position: relative;
                     grid-template-columns: 1fr;
@@ -65,6 +65,12 @@
             .toolbar pb-navigation {
                 display: none;
             }
+            
+            @media (max-width: 768px)   {
+                    body {
+                        --pb-drawer-width: 300px;
+                    }
+                }
         </style>
     </head>
 
@@ -110,7 +116,9 @@
                     </main>
                     <footer>
                         <div id="footerGray">
-                            <p><pb-i18n key="footer.funded"/></p>
+                            <p>
+                                <pb-i18n key="footer.funded"/>
+                            </p>
                             <a href="https://www.auswaertiges-amt.de/">
                                 <img src="resources/images/aa.svg" class="funder1"/>
                             </a>
@@ -127,7 +135,9 @@
                             </a>
                             <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
                             </p>
-                            <p class="license"><pb-i18n key="footer.license"/></p>
+                            <p class="license">
+                                <pb-i18n key="footer.license"/>
+                            </p>
                             <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
                                 <img src="resources/images/cc.svg" class="cc"/>
                             </a>
