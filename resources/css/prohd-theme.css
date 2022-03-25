@@ -70,6 +70,12 @@ h2, h3, h6 {
 
 }
 
+@media (max-width: 768px)    {
+    .splash img  {
+        width: 50%;
+    }
+}
+
   pb-drawer {
              background-color: #E2F4F1;
 }
