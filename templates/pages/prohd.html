@@ -47,7 +47,8 @@
                     font-family: var(--pb-heading-font-family);
                     font-weight: var(--pb-heading-font-weight);
                 }
-
+                
+                
                 .content-body #view1 {
                     flex: 1;
                 }
@@ -55,7 +56,8 @@
                 .content-body pb-facsimile {
                     flex: 1;
                     height: var(--pb-view-height);
-                }
+                } 
+                
                 
                 paper-listbox  {
                     background-color: #E2F4F1;
@@ -70,6 +72,18 @@
                         --pb-drawer-width: 300px;
                     }
                 }
+                
+                <!-- esto no funciona?-->
+                
+                 @media (max-width: 769px) {
+                    .content-body {
+                    grid-template-columns: 1fr;
+                    padding: 0;
+                    }
+                }
+                
+                
+                
             </style>
         </custom-style>
     </head>
