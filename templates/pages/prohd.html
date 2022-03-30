@@ -26,13 +26,6 @@
                     background-color: #E2F4F1;
                 }
                 
-                .content-body {
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-                    padding: 0 20px;
-                }
-                
                 .metadata {
                     width: 100%;
                     padding: 0 20px 20px;
@@ -48,6 +41,14 @@
                     font-weight: var(--pb-heading-font-weight);
                 }
                 
+                @media (min-width:769px){
+                    .content-body {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 20px;
+                    }
+                }
                 
                 .content-body #view1 {
                     flex: 1;
@@ -57,7 +58,6 @@
                     flex: 1;
                     height: var(--pb-view-height);
                 } 
-                
                 
                 paper-listbox  {
                     background-color: #E2F4F1;
@@ -71,20 +71,23 @@
                     body {
                         --pb-drawer-width: 300px;
                     }
-                }
                 
-                <!-- esto no funciona?-->
-                
-                 @media (max-width: 769px) {
                     .content-body {
                     grid-template-columns: 1fr;
                     padding: 0;
                     }
+                    
+                    .content-body #view1 {
+                    padding: 0;
+                    }
+                
+                    .content-body pb-facsimile {
+                    padding: 20px;
+                    } 
                 }
+               
                 
-                
-                
-            </style>
+                </style>
         </custom-style>
     </head>
 
