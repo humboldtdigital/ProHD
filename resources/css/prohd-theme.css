@@ -18,6 +18,8 @@ body {
     --pb-drawer-background-color: var(--pb-color-inverse);
     --pb-base-font-family: "Montserrat", sans-serif;
     --pb-base-font-weight: 300;
+    --pb-content-font-size: 18px;
+    --pb-breadcrumbs-font-size: 12px;
     --pb-serif-font-family: "Roboto Slab";
     --pb-link-color: #353831;
     --iron-icon-fill-color: #353831;
@@ -44,9 +46,6 @@ h2, h3, h6 {
     font-weight: 400;
 }
 
-.menubar.logo {
-    margin: 8px 16px 0 0;
-}
 
 .toolbar a {
     color: #353831;
@@ -212,6 +211,10 @@ p.version {
         width: 50px;
         height: auto;
     }
+    
+    .menubar.logo {
+    margin: 8px 16px 0 0;
+}
 }
 
 @media (min-width: 992px) {
