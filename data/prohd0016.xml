@@ -116,7 +116,7 @@
         <body>
             <div>
                 <div type="writingSession" n="1">
-                    <pb n="1" facs="prohd0016_1.tif"/>
+                    <pb n="1r" facs="prohd0016_1r.tif"/>
                     <opener>
                         <dateline>1827</dateline>
                         <salute>
@@ -140,19 +140,22 @@
                         </choice> testimonio <choice>
                             <orig>delo</orig>
                             <reg>de lo</reg>
-                        </choice> acordado <lb/><gap unit="words" quantity="1" reason="illegible"/>
+                        </choice> acordado <lb/>
+                        <gap unit="words" quantity="1" reason="illegible"/>
                         el <choice>
                             <abbr>Excmo.</abbr>
                             <expan>Excelentísimo</expan>
                         </choice>
                         <choice>
-                            <abbr>Ayuntam.<hi rendition="#sup">to</hi></abbr>
+                            <abbr>Ayuntam.<hi rendition="#sup">to</hi>
+                            </abbr>
                             <expan>Ayuntamiento</expan>
                         </choice> en cabildo <choice>
                             <abbr>ord.</abbr>
                             <expan>ordinario</expan>
                         </choice> de 29. <lb/>de <choice>
-                            <abbr>Nov.<hi rendition="#sup">bre</hi></abbr>
+                            <abbr>Nov.<hi rendition="#sup">bre</hi>
+                            </abbr>
                             <expan>Noviembre</expan>
                         </choice>
                         <choice>
@@ -170,7 +173,8 @@
                         <choice>
                             <orig>enlas</orig>
                             <reg>en las</reg>
-                        </choice> librerías <lb/><unclear reason="illegible" cert="high">de
+                        </choice> librerías <lb/>
+                        <unclear reason="illegible" cert="high">de
                             la</unclear> ciudad titulada <choice>
                             <sic>ensayo</sic>
                             <corr cert="high">Ensayo</corr>
@@ -193,7 +197,8 @@
                             <sic>Humbold</sic>
                             <corr cert="high">Humboldt</corr>
                         </choice>, <choice>
-                            <abbr>p<hi rendition="#sup">a</hi></abbr>
+                            <abbr>p<hi rendition="#sup">a</hi>
+                            </abbr>
                             <expan>para</expan>
                         </choice>
                         <lb/>que se sirva <choice>
@@ -206,31 +211,38 @@
                         </choice> acceder <choice>
                             <sic>álo</sic>
                             <corr cert="high">a lo</corr>
-                        </choice> que se solicita. <lb/><unclear reason="illegible" cert="high">Otorgue</unclear>
+                        </choice> que se solicita. <lb/>
+                        <unclear reason="illegible" cert="high">Otorgue</unclear>
                         <choice>
                             <orig>aV.</orig>
                             <reg>a <choice>
                                     <abbr>V.</abbr>
                                     <expan>Vuestra</expan>
-                                </choice></reg>
+                                </choice>
+                            </reg>
                         </choice>
                         <choice>
                             <abbr>E.</abbr>
                             <expan>Excelencia</expan>
                         </choice>
-                        <unclear reason="illegible" cert="high">m a</unclear> Ha<g ref="#typoHyphen"/><lb break="no"/>bana 12 <choice>
-                            <abbr>D.<hi rendition="#sup">er</hi></abbr>
+                        <unclear reason="illegible" cert="high">m a</unclear> Ha<g ref="#typoHyphen"/>
+                        <lb break="no"/>bana 12 <choice>
+                            <abbr>D.<hi rendition="#sup">er</hi>
+                            </abbr>
                             <expan>Diciembre</expan>
-                        </choice> de 1827 <lb/><choice>
+                        </choice> de 1827 <lb/>
+                        <choice>
                             <abbr>Excmo. </abbr>
                             <expan>Excelentísimo </expan>
-                        </choice><choice>
+                        </choice>
+                        <choice>
                             <abbr>Sr.</abbr>
                             <expan>Señor</expan>
                         </choice>
                         <lb/>Juan Montalvo <gap unit="words" quantity="2" reason="illegible"/>
                         <lb/>Cabrera</p>
-                    <note place="mBottom" hand="#unknown"><choice>
+                    <note place="mBottom" hand="#unknown">
+                        <choice>
                             <abbr>Exmo</abbr>
                             <expan>Excelentísimo</expan>
                         </choice>
@@ -239,11 +251,13 @@
                             <expan>Señor</expan>
                         </choice>
                         <choice>
-                            <abbr>Presid.<hi rendition="#sup">te</hi></abbr>
+                            <abbr>Presid.<hi rendition="#sup">te</hi>
+                            </abbr>
                             <expan>Presidente</expan>
                         </choice>
                         <choice>
-                            <abbr>Gob.<hi rendition="#sup">r</hi></abbr>
+                            <abbr>Gob.<hi rendition="#sup">r</hi>
+                            </abbr>
                             <expan>Gobernador</expan>
                         </choice>
                         <lb/>y <choice>
@@ -253,7 +267,8 @@
                         <choice>
                             <abbr>Gral</abbr>
                             <expan>General</expan>
-                        </choice></note>
+                        </choice>
+                    </note>
                 </div>
                 <div type="writingSession" n="2">
                     <opener>
@@ -271,16 +286,19 @@
                             <expan>Excelentísimo</expan>
                         </choice>
                         <lb/>Ayuntamiento, <choice>
-                            <orig>compre<g ref="#typoHyphen"/><lb break="no"/>hende</orig>
+                            <orig>compre<g ref="#typoHyphen"/>
+                                <lb break="no"/>hende</orig>
                             <reg>comprende</reg>
                         </choice> dos particulares; <lb/>el <choice>
-                            <abbr>prim.<hi rendition="#sup">o</hi></abbr>
+                            <abbr>prim.<hi rendition="#sup">o</hi>
+                            </abbr>
                             <expan>primero</expan>
                         </choice> relativo <choice>
                             <orig>ála</orig>
                             <reg>a la</reg>
                         </choice>
-                        <lb/>licencia concedida por <lb/><choice>
+                        <lb/>licencia concedida por <lb/>
+                        <choice>
                             <abbr>V.</abbr>
                             <expan>Vuestra</expan>
                         </choice>
@@ -291,7 +309,8 @@
                         <choice>
                             <orig>á</orig>
                             <reg>a</reg>
-                        </choice> la morena libre <lb/><pb n="2" facs="prohd0016_2.tif"/>Ana del
+                        </choice> la morena libre <lb/>
+                        <pb n="2" facs="prohd0016_2.tif"/>Ana del
                         Toro para establecer una <choice>
                             <orig>Escuela</orig>
                             <reg>escuela</reg>
@@ -303,30 +322,40 @@
                         la venta de <lb/>la obra del <choice>
                             <orig>Baron</orig>
                             <reg>Barón</reg>
-                        </choice> de Humboldt intitulada <lb/><hi rendition="#u">Ensayo <choice>
+                        </choice> de Humboldt intitulada <lb/>
+                        <hi rendition="#u">Ensayo <choice>
                                 <sic>politico</sic>
                                 <corr cert="high">político</corr>
                             </choice> sobre la Isla de Cuba</hi>,<lb/> que igualmente gradua de
-                        peligroso <unclear reason="illegible" cert="low">otra<lb/></unclear><choice>
-                            <orig><unclear reason="illegible" cert="low">corporacion</unclear></orig>
+                        peligroso <unclear reason="illegible" cert="low">otra<lb/>
+                        </unclear>
+                        <choice>
+                            <orig>
+                                <unclear reason="illegible" cert="low">corporacion</unclear>
+                            </orig>
                             <reg>corporación</reg>
                         </choice>, así por las <gap reason="covered" unit="chars" quantity="8"/> y
-                            princi<lb break="no"/>pios de su autor, acerca de la esclavitud, co<g ref="#typoHyphen"/><lb break="no"/>mo por otras razones que se indican
+                            princi<lb break="no"/>pios de su autor, acerca de la esclavitud, co<g ref="#typoHyphen"/>
+                        <lb break="no"/>mo por otras razones que se indican
                         en <lb/>la acta, transcrita en <choice>
                             <abbr>dho</abbr>
                             <expan>dicho</expan>
                         </choice>
                         <unclear reason="covered" cert="high">testimonio</unclear>. Por <choice>
-                            <sic><lb/>loque</sic>
+                            <sic>
+                                <lb/>loque</sic>
                             <corr cert="high"> lo que</corr>
                         </choice> toca a lo <choice>
-                            <abbr>primr<hi rendition="#sup">o</hi></abbr>
+                            <abbr>primr<hi rendition="#sup">o</hi>
+                            </abbr>
                             <expan>primero</expan>
                         </choice> me parece que podri<supplied cert="high">a</supplied>
-                        <lb/><choice>
+                        <lb/>
+                        <choice>
                             <abbr>V E.</abbr>
                             <expan>Vuestra Excelencia</expan>
-                        </choice> mandar que agregado el memorial <lb/><unclear reason="illegible" cert="high">presentado</unclear> por la <choice>
+                        </choice> mandar que agregado el memorial <lb/>
+                        <unclear reason="illegible" cert="high">presentado</unclear> por la <choice>
                             <abbr>dha</abbr>
                             <expan>dicha</expan>
                         </choice> Ana del Toro, se oiga <lb/>a la Sociedad <choice>
@@ -340,7 +369,8 @@
                             <abbr>VE.</abbr>
                             <expan>Vuestra Excelencia</expan>
                         </choice>
-                        <gap reason="covered" unit="words" quantity="6"/> a uno de los <lb/><choice>
+                        <gap reason="covered" unit="words" quantity="6"/> a uno de los <lb/>
+                        <choice>
                             <abbr>Sres</abbr>
                             <expan>Señores</expan>
                         </choice> Regidores, u otra persona de su confian <lb/>za para que recoja <choice>
@@ -351,7 +381,8 @@
                             <reg>más</reg>
                         </choice>
                         <choice>
-                            <abbr>conocimien<hi rendition="#sup">to</hi></abbr>
+                            <abbr>conocimien<hi rendition="#sup">to</hi>
+                            </abbr>
                             <expan>conocimiento</expan>
                         </choice> de causa <lb/>pueda providenciarse lo que corresponda <lb/>sobre
                         su <choice>
