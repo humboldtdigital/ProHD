@@ -34,6 +34,11 @@
                      <catDesc xml:lang="es">Ensayos</catDesc>
                      <catDesc xml:lang="de">Essays</catDesc>
                   </category>
+                  <category xml:id="minutes">
+                    <catDesc xml:lang="en">Minutes</catDesc>
+                     <catDesc xml:lang="es">Actas</catDesc>
+                     <catDesc xml:lang="de">Protokolle</catDesc>
+                  </category>
                   <category xml:id="notebooks">
                      <catDesc xml:lang="en">Notebooks</catDesc>
                      <catDesc xml:lang="es">Notas personales</catDesc>
