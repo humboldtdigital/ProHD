@@ -42,6 +42,7 @@
             
             
             
+            
                             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -59,10 +60,12 @@
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@n and $parameters?view='page'" behaviour="inline">
             <param name="content" value="@n"/>
             <outputRendition xml:space="preserve">
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -70,10 +73,12 @@
                             display: block;
                             margin-right: 5px;
                             float: right;
+            
             </outputRendition>
         </model><model predicate="@n" behaviour="inline">
             <param name="content" value="@n"/>
             <outputRendition xml:space="preserve">
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -82,6 +87,7 @@
                             margin-right: 5px;
                             float: right;
 padding-left: 10px;
+            
             </outputRendition>
         </model></elementSpec>
 
@@ -212,11 +218,13 @@ padding-left: 10px;
             
             
             
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
             
             
             
@@ -377,6 +385,7 @@ padding-left: 10px;
             
             
             
+            
             display: inline-block;
 margin-top: .5em;
 margin-bottom: 1em;
@@ -389,9 +398,11 @@ padding-right: 10px;
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@place='top' and $parameters?view='page'" behaviour="inline">
             <outputRendition xml:space="preserve">
+            
             
             
             
@@ -410,6 +421,7 @@ padding-right: 10px;
             
             
             
+            
             </outputRendition>
         </model><model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
@@ -420,9 +432,11 @@ padding-right: 10px;
             
             
             
+            
             margin-top: 1em;
                             color: #A0A0A0;
                             text-align: left;
+            
             
             
             
@@ -486,8 +500,10 @@ padding-right: 10px;
             
             
             
+            
                             margin-left: 20em;
                             color: #A0A0A0;
+            
             
             
             
@@ -678,7 +694,34 @@ padding-right: 10px;
             <model behaviour="block" cssClass="header-short">
                 <param name="content" value="abstract[@xml:lang=&#34;es&#34;]"/>
             </model>
-        </modelSequence><model predicate="$parameters?mode='commentary' and correspDesc" behaviour="block">
+        </modelSequence><model predicate="$parameters?mode='commentary' and creation[count(orgName)=2]" behaviour="block">
+            <param name="author1" value="creation/orgName[1]"/>
+            <param name="place" value="creation/placeName"/>
+            <param name="receiver" value="correspDesc/correspAction[@type=&#34;received&#34;]/orgName"/>
+            <param name="date" value="creation/date"/>
+            <param name="dateSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
+            <param name="placeSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
+            <param name="content" value="', '"/>
+            <param name="author2" value="creation/orgName[2]"/>
+            <param name="sender" value="correspDesc/correspAction[@type=&#34;sent&#34;]/orgName"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+  	<p><pb-i18n key="document.author"/> [[author2]]</p>
+    <p><pb-i18n key="document.place"/> [[place]]</p>
+    <p><pb-i18n key="document.date"/> [[date]]</p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and creation[count(orgName)=1]" behaviour="block">
+            <param name="author1" value="creation/orgName[1]"/>
+            <param name="place" value="creation/placeName"/>
+            <param name="date" value="creation/date"/>
+            <pb:template xmlns="" xml:space="preserve"><div>
+  <h3><pb-i18n key="document.creation"/></h3>
+    <p><pb-i18n key="document.author"/> [[author1]]</p>
+    <p><pb-i18n key="document.place"/> [[place]]</p>
+    <p><pb-i18n key="document.date"/> [[date]]</p>
+</div></pb:template>
+        </model><model predicate="$parameters?mode='commentary' and correspDesc" behaviour="block">
             <param name="receiver" value="correspDesc/correspAction[@type=&#34;received&#34;]/persName"/>
             <param name="dateSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
             <param name="placeSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
@@ -803,8 +846,10 @@ padding-right: 10px;
             
             
             
+            
             text-decoration: line-through;
 color:red;
+            
             
             
             
@@ -938,8 +983,10 @@ color:red;
             
             
             
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
             
             
             
@@ -1007,15 +1054,14 @@ text-decoration-style: double;
             color: grey;
             </outputRendition>
         </model><model predicate="@quantity" behaviour="inline">
-            <param name="content" value="@quantity"/>
-            <outputRendition xml:space="preserve" scope="before">
-            content: '[..';
-            </outputRendition>
-            <outputRendition xml:space="preserve" scope="after">
-            content: '..]';
-            </outputRendition>
             <outputRendition xml:space="preserve">
             color: grey;
+            </outputRendition>
+            <outputRendition xml:space="preserve" scope="before">
+            content:'[...'
+            </outputRendition>
+            <outputRendition xml:space="preserve" scope="after">
+            content:']'
             </outputRendition>
         </model><model behaviour="inline">
             <outputRendition xml:space="preserve" scope="before">
@@ -1057,10 +1103,12 @@ text-decoration-style: double;
             
             
             
+            
             font-size: smaller;
 display: block;
 border-collapse: collapse;
 padding: 10px;
+            
             
             
             
@@ -1156,8 +1204,10 @@ padding: 10px;
             
             
             
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
             
             
             
@@ -1310,8 +1360,10 @@ padding: 10px;
             
             
             
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
             
             
             
@@ -1406,9 +1458,11 @@ padding: 10px;
             
             
             
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
             
             
             
@@ -1491,12 +1545,14 @@ margin-bottom: 3em;
             
             
             
+            
             background-color: #F2F0EB;
 font-family: monospace;
 border: 1px solid #999;
 display: block;
 padding: 10px;
 white-space: pre-wrap;
+            
             
             
             
@@ -1521,11 +1577,13 @@ white-space: pre-wrap;
             
             
             
+            
             font-weight: bold;
 border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
             
             
             
@@ -1554,10 +1612,12 @@ padding: 10px;
             
             
             
+            
             border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
             
             
             
