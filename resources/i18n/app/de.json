@@ -20,7 +20,8 @@
     	"and": "und",
     	"sender": "Absender: ",
     	"receiver": "Empfänger: ",
-    	"unknown": "Unbekannt"
+    	"unknown": "Unbekannt",
+    	"lines": "Zeilen"
     },
     "footer":{
     	"funded": "Gefördert von",
@@ -44,6 +45,7 @@
     "genre": {
         "diaries": "Tagebücher",
         "essays": "Essays",
+        "minutes": "Protokolle",
         "notebooks": "Notizen",
         "correspondence": "Briefe",
         "travelwriting": "Reiseberichte"

@@ -20,7 +20,8 @@
     	"and": "y",
     	"sender": "Emisor: ",
     	"receiver": "Destinatario: ",
-    	"unknown": "Desconocido"
+    	"unknown": "Desconocido",
+    	"lines": "líneas"
     },
     "footer":{
     	"funded": "Financiado por",
@@ -44,6 +45,7 @@
     "genre": {
         "diaries": "Diarios personales",
         "essays": "Ensayos",
+        "minutes": "Actas",
         "notebooks": "Notas personales",
         "correspondence": "Cartas",
         "travelwriting": "Narraciones de viajes"
