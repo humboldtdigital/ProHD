@@ -34,8 +34,8 @@
                         <collection>Nachl. Alexander von Humboldt</collection>
                         <idno>
                             <idno type="shelfmark">Bd. 3/1 Bl. 152-155</idno>
-                            <idno type="uri">http://kalliope-verbund.info/DE-611-HS-2877796</idno>
-                            <idno type="URLImages">"http://jbc.bj.uj.edu.pl/dlibra/publication/367142/content"</idno>
+                            <idno type="uri">https://kalliope-verbund.info/DE-611-HS-2877796</idno>
+                            <idno type="URLImages">"https://jbc.bj.uj.edu.pl/dlibra/publication/367142/content"</idno>
                         </idno>
                     </msIdentifier>
                     <physDesc>
@@ -178,7 +178,7 @@
                     </choice> ni los <choice>
                         <orig>savios</orig>
                         <reg>sabios</reg>
-                    </choice> romanos, ni sus insig<g ref="#typoHyphen"/><lb break="no"/>nes
+                    </choice> romanos<choice><sic>,</sic><corr type="deleted"/></choice> ni sus insig<g ref="#typoHyphen"/><lb break="no"/>nes
                     <choice>
                         <orig>Maestros</orig>
                         <reg>maestros</reg>
@@ -235,7 +235,7 @@
                         <orig>lexitimidad</orig>
                         <reg>legitimidad</reg>
                     </choice> de un do<g ref="#typoHyphen"/><lb break="no"/>minio 
-                    que se adquiere traficando, y no
+                    que se adquiere traficando<choice><sic>,</sic><corr type="deleted"/></choice> y no
                     <lb/>peleando como ellos: que por la mayor
                     <lb/>parte se <choice>
                         <orig>exerce</orig>
@@ -247,7 +247,7 @@
                     </choice> de los <choice>
                         <orig>Magistrados</orig>
                         <reg>magistrados</reg>
-                    </choice>, y de la<lb/>
+                    </choice><choice><sic>,</sic><corr type="deleted"/></choice> y de la<lb/>
                     <choice>
                         <orig>poblacion</orig>
                         <reg>población</reg>
@@ -273,10 +273,10 @@
                     </choice> esclavo? ¿<choice>
                         <orig>como</orig>
                         <reg>cómo</reg>
-                    </choice> sin <choice>
+                    </choice><supplied cert="high">,</supplied> sin <choice>
                         <orig>alucinacion</orig>
                         <reg>alucinación</reg>
-                    </choice>
+                    </choice><supplied cert="high">,</supplied>
                     <lb/>nos podemos persuadir que hemos to<g ref="#typoHyphen"/><lb break="no"/>mado 
                     todos los pasos por donde pue<g ref="#typoHyphen"/><lb break="no"/>de asomarse la violenta <choice>
                         <orig>tentacion</orig>
@@ -290,7 +290,8 @@
                         <reg>monarcas</reg>
                     </choice> ha pro<g ref="#typoHyphen"/><lb break="no"/><pb n="153r" facs="prohd0018_153r.tif"/><fw type="folNum">3</fw>pendido 
                     siempre a aliviar y proteger la
-                    <lb/>suerte de estos desgraciados, y que <choice>
+                    <lb/>suerte de estos desgraciados<choice><sic>,</sic><corr type="deleted"/></choice> y que<supplied cert="high">,</supplied> 
+                    <choice>
                         <orig>despues</orig>
                         <reg>después</reg>
                     </choice> <unclear reason="illegible" cert="high">de</unclear>
@@ -367,7 +368,7 @@
                         <choice>
                             <orig>el</orig>
                             <reg>él</reg>
-                        </choice> de tener propiedad, y poder con
+                        </choice> de tener propiedad<choice><sic>,</sic><corr type="deleted"/></choice> y poder con
                         <lb/>ella pagar la <choice>
                             <orig>livertad</orig>
                             <reg>libertad</reg>
@@ -375,7 +376,7 @@
                         <lb/>de su <choice>
                             <orig>Muger</orig>
                             <reg>mujer</reg>
-                        </choice>, y la suya.
+                        </choice><choice><sic>,</sic><corr type="deleted"/></choice> y la suya.
                     </hi>
                 </p>
                 <p>Pero 
@@ -418,7 +419,7 @@
                         <orig>mas</orig>
                         <reg>más</reg>
                     </choice> en los
-                    <lb/>lugares poblados, y en las pequeñas <choice>
+                    <lb/>lugares poblados<choice><sic>,</sic><corr type="deleted"/></choice> y en las pequeñas <choice>
                         <orig>la<g ref="#typoHyphen"/><lb break="no"/>vores</orig>
                         <reg>labores</reg>
                     </choice>, 
@@ -430,7 +431,7 @@
                     <choice>
                         <orig>Magistrado</orig>
                         <reg>magistrado</reg>
-                    </choice>, y en los otros la natural
+                    </choice><choice><sic>,</sic><corr type="deleted"/></choice> y en los otros la natural
                     <lb/>dulzura de esta clase de cultivos, unida
                     <lb/>
                     <choice>
@@ -461,7 +462,8 @@
                     <choice>
                         <orig>govierno</orig>
                         <reg>gobierno</reg>
-                    </choice>, el tamaño de su fortu<g ref="#typoHyphen"/><lb break="no"/>na, y las consideraciones 
+                    </choice>, el tamaño de su 
+                    fortu<g ref="#typoHyphen"/><lb break="no"/>na<choice><sic>,</sic><corr type="deleted"/></choice> y las consideraciones 
                     <choice>
                         <orig>politicas</orig>
                         <reg>políticas</reg>
@@ -518,11 +520,7 @@
                     <choice>
                         <orig>interes</orig>
                         <reg>interés</reg>
-                    </choice>
-                    <choice>
-                        <sic>,</sic>
-                        <corr type="deleted"/>
-                    </choice>
+                    </choice><choice><sic>,</sic><corr type="deleted"/></choice>
                     <lb/>
                     <choice>
                         <orig>jamas</orig>
@@ -537,7 +535,7 @@
                     <choice>
                         <orig>poquisimo</orig>
                         <reg>poquísimo</reg>
-                    </choice>, <choice>
+                    </choice><choice><sic>,</sic><corr type="deleted"/></choice> <choice>
                         <orig>u</orig>
                         <reg>o</reg>
                     </choice> nada <choice>
@@ -547,15 +545,11 @@
                     de la maña de los <choice>
                         <orig>Directores</orig>
                         <reg>directores</reg>
-                    </choice>
-                    <choice>
-                        <sic>,</sic>
-                        <corr/>
-                    </choice> <choice>
+                    </choice><choice><sic>,</sic><corr/></choice> <choice>
                         <orig>ò</orig>
                         <reg>o</reg>
                     </choice> capa<g ref="#typoHyphen"/><lb break="no"/>taces de semejantes trabajos. Su rusticidad
-                    <lb/>es conocida, y basta verles 
+                    <lb/>es conocida<choice><sic>,</sic><corr type="deleted"/></choice> y basta verles 
                     <choice>
                         <orig>á</orig>
                         <reg>a</reg>
@@ -566,7 +560,7 @@
                     </choice> y <choice>
                         <orig>foete</orig>
                         <reg>fuete</reg>
-                    </choice>, para que
+                    </choice><choice><sic>,</sic><corr type="deleted"/></choice> para que
                     <lb/>se conozca que aquellos son sus recursos. 
                 </p>
                 <p>La ley no limita el castigo ni seña<g ref="#typoHyphen"/><lb break="no"/>la 
@@ -659,7 +653,7 @@
                         <abbr>q.<hi rendition="#sup">n</hi></abbr>
                         <expan>quien</expan>
                     </choice>
-                    <lb/>le protege contra un poderoso que es amo,
+                    <lb/>le protege contra un poderoso que es amo<choice><sic>,</sic><corr type="deleted"/></choice>
                     <lb/>y que <choice>
                         <orig>alas</orig>
                         <reg>a las</reg>
@@ -739,7 +733,7 @@
                         <orig>á</orig>
                         <reg>a</reg>
                     </choice> los
-                    <lb/>parajes en que pudieran encontrar hembras<supplied ert="high">,</supplied>
+                    <lb/>parajes en que pudieran encontrar hembras<supplied cert="high">,</supplied>
                     <lb/>es claro que <choice>
                         <orig>deciciba</orig>
                         <reg>decisiva</reg>
@@ -750,8 +744,8 @@
                     se les impide gozar de tan apreciable
                     <lb/>derecho. 
                 </p>
-                <p>No disimulemos no, la exactitud y
-                    <lb/>verdad de los anteriores raciocinios, y de
+                <p>No disimulemos<supplied cert="high">,</supplied> no, la exactitud y
+                    <lb/>verdad de los anteriores raciocinios<choice><sic>,</sic><corr type="deleted"/></choice> y de
                     <lb/>otros muchos <choice>
                         <orig>todavia</orig>
                         <reg>todavía</reg>
@@ -770,18 +764,19 @@
                     </choice> de un <choice>
                         <orig>Yngenio</orig>
                         <reg>ingenio</reg>
-                    </choice>, y la sim<g ref="#typoHyphen"/><lb break="no"/>ple 
+                    </choice><choice><sic>,</sic><corr type="deleted"/></choice> y la sim<g ref="#typoHyphen"/><lb break="no"/>ple 
                     <choice>
                         <orig>reflexion</orig>
                         <reg>reflexión</reg>
-                    </choice> de que mientras que en
-                    <lb/>ellos se ven <unclear cert="high">suicidios</unclear>, coitos bestiales,
+                    </choice> de que<supplied cert="high">,</supplied> mientras que en
+                    <lb/>ellos se ven <unclear reason="illegible" cert="high">suicidios</unclear>, coitos bestiales,
                     <lb/>fugas continuas, languidez en los sem<g ref="#typoHyphen"/><lb break="no"/>blantes, 
                     <choice>
                         <orig>devilidad</orig>
                         <reg>debilidad</reg>
                     </choice> en los miembros, mu<g ref="#typoHyphen"/><lb break="no"/>
-                <pb n="155v" facs="prohd0018_155v.tif"/>chos enfermos y muertos, nada, 
+                <pb n="155v" facs="prohd0018_155v.tif"/>chos enfermos y muertos, 
+                nada<choice><sic>,</sic><corr type="deleted"/></choice> 
                     <choice>
                         <orig>ó</orig>
                         <reg>o</reg>
@@ -803,11 +798,11 @@
                         <orig>lavores</orig>
                         <reg>labores</reg>
                     </choice>. Al contrario, concluyamos
-                    <lb/>con la dable ingenuidad que <choice>
+                    <lb/>con la dable ingenuidad que<supplied cert="high">,</supplied> <choice>
                         <orig>apesar</orig>
                         <reg>a pesar</reg>
                     </choice> <unclear reason="illegible" cert="high">de</unclear>
-                    <lb/>nuestras leyes y de sus santos designios
+                    <lb/>nuestras leyes y de sus santos designios<supplied cert="high">,</supplied>
                     <lb/>
                     <choice>
                         <orig>deve</orig>

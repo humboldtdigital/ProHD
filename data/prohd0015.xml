@@ -2,8 +2,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Observaciones sobre el Ensayo politico con relacion a la Isla de Cuba que ha
-                    escrito el Señor Baron de Humboldt</title>
+                <title type="main">Observaciones sobre el Ensayo politico con relacion a la Isla de
+                    Cuba que ha escrito el Señor Baron de Humboldt</title>
                 <editor>
                     <persName>
                         <surname>Kraller</surname>
@@ -15,7 +15,8 @@
                 <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
             </titleStmt>
             <editionStmt>
-                <p>Dossier Digital: Alexander von Humboldt y Cuba (1800-1830). ProHD (<date>2020</date>)</p>
+                <p>Dossier Digital: Alexander von Humboldt y Cuba (1800-1830). ProHD
+                        (<date>2020</date>)</p>
             </editionStmt>
             <publicationStmt>
                 <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
@@ -40,12 +41,12 @@
                         <institution>Staatsbibliothek zu Berlin – Preußischer
                             Kulturbesitz</institution>
                         <repository>Handschriftenabteilung</repository>
-                        <collection>Nachl. Alexander von Humboldt</collection>
+                        <collection>Nachlass Alexander von Humboldt</collection>
                         <idno>
-                            <idno type="shelfmark">kl. Kasten 7b, Nr. 68–69</idno>
-                            <idno type="uri">http://kalliope-verbund.info/DE-611-HS-1272356</idno>
-                            <idno type="URLImages">http://resolver.staatsbibliothek-berlin.de/SBB00015CC600000000</idno>
-                            <idno type="URLCatalogue">http://stabikat.de/DB=1/PPN?PPN=787980617</idno>
+                            <idno type="shelfmark">kl. Kasten 7b, Nr. 69</idno>
+                            <idno type="uri">https://kalliope-verbund.info/DE-611-HS-1272356</idno>
+                            <idno type="URLImages">https://resolver.staatsbibliothek-berlin.de/SBB00015CC600000000</idno>
+                            <idno type="URLCatalogue">https://stabikat.de/DB=1/PPN?PPN=787980617</idno>
                         </idno>
                     </msIdentifier>
                 </msDesc>
@@ -63,7 +64,8 @@
             <abstract xml:lang="de">
                 <p>Handschriftliche Anmerkungen und Korrekturen Francisco Arango y Parreños zu
                     Humboldts "Essai politique sur l’île de Cube“" einem berühmten Dokument der
-                    frühen kubanischen Rezeption von Humboldts Werk.</p></abstract>
+                    frühen kubanischen Rezeption von Humboldts Werk.</p>
+            </abstract>
             <abstract xml:lang="es">
                 <p>Notas manuscritas y correcciones de Francisco Arango y Parreños al "Essai
                     politique sur l’île de Cube" de Humboldt, célebre documento de la temprana
@@ -402,7 +404,8 @@
                         </choice> Barón</persName>, a quien suplico <choice>
                         <abbr>q.<hi rendition="#sup">e</hi></abbr>
                         <expan>que</expan>
-                    </choice> modere<lb/><pb n="1v" facs="prohd0015_1v.tif"/>su rigor leyendo el primer párrafo de la Página <choice>
+                    </choice> modere<lb/><pb n="1v" facs="prohd0015_1v.tif"/>su rigor leyendo el
+                    primer párrafo de la Página <choice>
                         <orig>40_</orig>
                         <reg>40,</reg>
                     </choice> el úl<lb break="no"/>timo de la <choice>
@@ -442,8 +445,8 @@
                         <expan>que</expan>
                     </choice> pretendi<del rendition="#ow" hand="H0012682">ó</del> con ella, <subst>
                         <del rendition="#ow">era</del>
-                            <add place="across" hand="H0012682">fue</add> </subst>
-                        hacer ver la diferente conduc<g ref="#typoHyphen"/><lb break="no"/>ta <choice>
+                        <add place="across" hand="H0012682">fue</add>
+                    </subst> hacer ver la diferente conduc<g ref="#typoHyphen"/><lb break="no"/>ta <choice>
                         <abbr>q.<hi rendition="#sup">e</hi></abbr>
                         <expan>que</expan>
                     </choice> habíamos tenido en este asunto <choice>
@@ -623,7 +626,8 @@
                     <lb/>anterior, le ha producido <choice>
                         <orig>2600.</orig>
                         <reg>2600</reg>
-                    </choice> cajas, y los negros<lb/><pb n="2r" facs="prohd0015_2r.tif"/>que allí tiene (según dice) son <choice>
+                    </choice> cajas, y los negros<lb/><pb n="2r" facs="prohd0015_2r.tif"/>que allí
+                    tiene (según dice) son <choice>
                         <orig>220. _</orig>
                         <reg>220.</reg>
                     </choice></p>
@@ -893,7 +897,8 @@
                             <abbr>p.<hi rendition="#sup">a</hi></abbr>
                             <expan>página</expan>
                         </choice> 237</add></p>
-                <p>Todos se acuerdan con aprecio y gratitud de esos útiles En<g ref="#typoHyphen"/><lb break="no"/><pb n="2v" facs="prohd0015_2v.tif"/>sayos, y ellos han servido <choice>
+                <p>Todos se acuerdan con aprecio y gratitud de esos útiles En<g ref="#typoHyphen"/><lb break="no"/><pb n="2v" facs="prohd0015_2v.tif"/>sayos, y ellos han
+                    servido <choice>
                         <abbr>eficazm.<hi rendition="#sup">te</hi></abbr>
                         <expan>eficazmente</expan>
                     </choice> a <choice>

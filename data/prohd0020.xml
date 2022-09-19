@@ -32,7 +32,7 @@
             <sourceDesc>
                 <msDesc rend="manuscript">
                     <msIdentifier>
-                        <institution>Archivo histórico de la Ciudad de La Habana</institution>
+                        <institution>Archivo Histórico de la Oficina del Historiador de la ciudad de La Habana</institution>
                         <collection>Gobierno español</collection>
                         <idno>
                             <idno type="shelfmark">A4-A L112-O</idno>
@@ -149,11 +149,7 @@
                             <hi rendition="#sup">r</hi>.
                         </abbr>
                         <expan>Señor</expan>
-                    </choice> <choice>
-                        <abbr>D.<hi rendition="#sup">n</hi>
-                        </abbr>
-                        <expan>Don</expan>
-                    </choice>
+                    </choice> <choice><abbr>D.<hi rendition="#sup">n</hi></abbr><expan>Don</expan></choice>
                     <choice>
                         <orig>Andres</orig>
                         <reg>Andrés</reg>
@@ -169,7 +165,8 @@
                     <choice>
                         <orig>estan</orig>
                         <reg>están</reg>
-                    </choice> ven<g ref="#typoHyphen"/><lb break="no"/>diendo en castellano el
+                    </choice> ven<g ref="#typoHyphen"/>
+                    <lb break="no"/>diendo en castellano el
                     <title>
                         <choice>
                             <sic>ensayo</sic>
@@ -193,8 +190,7 @@
                     <lb/>aspectos
                     <choice>
                         <orig>apreciabilisimos</orig>
-                        <reg>apreciabilísimos<supplied cert="high">,</supplied>
-                        </reg>
+                        <reg>apreciabilísimos<supplied cert="high">,</supplied></reg>
                     </choice> era sin embargo sobremanera
                     <choice>
                         <sic>pe
@@ -233,8 +229,10 @@
                     <choice>
                         <orig>Ysla</orig>
                         <reg>isla</reg>
-                    </choice>, y su preponde<lb break="no"/>rancia excesiva en todas las Antillas y
-                    las costas del conti<g ref="#typoHyphen"/><lb break="no"/>nente que nos cerca; que<supplied cert="high">,</supplied> en consecuencia de la
+                    </choice>, y su preponde
+                    <lb break="no"/>rancia excesiva en todas las Antillas y
+                    las costas del conti<g ref="#typoHyphen"/>
+                    <lb break="no"/>nente que nos cerca; que<supplied cert="high">,</supplied> en consecuencia de la
                     <choice>
                         <orig>mocion</orig>
                         <reg>moción</reg>
@@ -290,8 +288,7 @@
                         <expan>Excelentísimo</expan>
                     </choice>
                     <choice>
-                        <abbr>Ayuntamien.<hi rendition="#sup">to</hi>
-                        </abbr>
+                        <abbr>Ayuntamien.<hi rendition="#sup">to</hi></abbr>
                         <expan>Ayuntamiento</expan>
                     </choice> aprobó con
                     <pb n="786v" facs="prohd0020_786v.tif"/>
@@ -299,8 +296,7 @@
                     <choice>
                         <orig>mocion</orig>
                         <reg>moción</reg>
-                    </choice>
-                    <supplied cert="high">,</supplied> y acordó en cuanto
+                    </choice><supplied cert="high">,</supplied> y acordó en cuanto
                     <lb/>
                     <choice>
                         <orig>á</orig>

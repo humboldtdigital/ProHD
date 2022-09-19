@@ -1,8 +1,10 @@
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0012">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0012">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Luzuriaga</title>
+                <title type="main">Relación de la calentura biliosa remitente amarilla que se
+                    manifestó en Filadelfia en 1793 [in: C’est mon cahier de la Havane intitule sur
+                    la salubrite de l’air]</title>
                 <editor>
                     <persName>
                         <surname>Kraller</surname>
@@ -20,7 +22,8 @@
                 <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
             </titleStmt>
             <editionStmt>
-                <p>Dossier Digital: Alexander von Humboldt y Cuba (1800-1830). ProHD (<date>2020</date>)</p>
+                <p>Dossier Digital: Alexander von Humboldt y Cuba (1800-1830). ProHD
+                        (<date>2020</date>)</p>
             </editionStmt>
             <publicationStmt>
                 <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
@@ -34,11 +37,13 @@
             <sourceDesc>
                 <msDesc rend="manuscript">
                     <msIdentifier>
-                        <institution>Biblioteka Jagiellonska Krakau</institution>
-                        <collection>Nachlass Alexander von Humboldt</collection>
+                        <institution>Biblioteka Jagiellońska</institution>
+                        <collection>Nachl. Alexander von Humboldt</collection>
                         <idno>
-                            <idno type="shelfmark">Nachlass Alexander von Humboldt Bd. 1/3, Bl.
-                                185-211 (DE-611-HS-2849282)</idno>
+                            <idno type="shelfmark">Bd. 1/3, Bl. 185-211 [Bl. 194r-194v]</idno>
+                            <idno type="uri">https://kalliope-verbund.info/DE-611-HS-2849282</idno>
+                            <idno type="URLImages">http://jbc.bj.uj.edu.pl/dlibra/publication/363975</idno>
+                            <!-- the JBC site server is currently down, as of Aug 26, 2022, but this is hopefully temporary, the URL is ok -->
                         </idno>
                     </msIdentifier>
                 </msDesc>
@@ -58,7 +63,8 @@
                     remitente amarilla que se manifestó en Filadelfia en 1793”, das von Ignacio
                     María Ruiz de Luzuriaga ins Spanische übersetzt wurde und unter diesem Titel
                     1804 in Madrid erschien. Humboldt fasst die Thesen des Werks in Vorbereitung auf
-                    seine wissenschaftliche Abhandlung über das Gelbfieber zusammen.</p></abstract>
+                    seine wissenschaftliche Abhandlung über das Gelbfieber zusammen.</p>
+            </abstract>
             <abstract xml:lang="es">
                 <p>Apuntes de Humboldt sobre la obra de Benjamin Rush “Relación de la calentura
                     biliosa remitente amarilla que se manifestó en Filadelfia en 1793”, que fue
@@ -114,8 +120,8 @@
         <body>
             <div>
                 <pb n="194r" facs="prohd0012_194r.tif"/>
-                <p>Luzuriaga relación de la calentura biliosa remitente <lb/>amarilla
-                    que se manifestó en Filadelfia en 1793 <lb/>Madrid F. I 1804 <lb/><gap reason="fm" unit="words" quantity="5"/></p>
+                <head>Luzuriaga relación de la calentura biliosa remitente <lb/>amarilla que se
+                    manifestó en Filadelfia en 1793 <lb/>Madrid F. I 1804 <lb/><gap reason="fm" unit="words" quantity="5"/></head>
                 <p>T I</p>
                 <p><choice>
                         <abbr>V.</abbr>
@@ -161,7 +167,7 @@
                     <choice>
                         <abbr>j.</abbr>
                         <expan>jaune</expan>
-                    </choice> presque <lb/>identiques p XXXII - XLVII. <lb/><choice>
+                    </choice> presque <lb/>identiques p XXXII–XLVII. <lb/><choice>
                         <abbr>f.</abbr>
                         <expan>fièvre</expan>
                     </choice>
@@ -247,9 +253,9 @@
                     Luz. <add place="superlinear">I</add> #, <del rendition="#s"><gap reason="illegible" quantity="1" unit="words"/></del>
                     <add place="superlinear">220</add> et il est faux <lb/>de dire que si elle est
                     contagieuse elle est introduite de de<lb break="no"/>hors.</p>
-                <p><pb n="194v" facs="prohd0012_194v.tif"/>3. Veracruz climat. Nicht so gewiß mit mittlerer Temperatur in
-                        temperier<lb break="no"/>ter Zone. In Verac. mehr endemischer
-                        Charakter<supplied cert="high">,</supplied> in Philadelphia
+                <p><pb n="194v" facs="prohd0012_194v.tif"/>3. Veracruz climat. Nicht so gewiß mit
+                    mittlerer Temperatur in temperier<lb break="no"/>ter Zone. In Verac. mehr
+                    endemischer Charakter<supplied cert="high">,</supplied> in Philadelphia
                         <lb/>Therm<supplied cert="high">.</supplied> die Kälte nicht sehr gewiß S.
                     Thermometerstand. Luz I p 278<supplied cert="high">.</supplied>
                     <lb/>Wird Veracruz einmal ganz befreit werden<supplied cert="high">,</supplied>
@@ -261,4 +267,4 @@
             </div>
         </body>
     </text>
-</tei:TEI>
+</TEI>
