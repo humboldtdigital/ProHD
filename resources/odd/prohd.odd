@@ -43,6 +43,8 @@
             
             
             
+            
+            
                             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -51,6 +53,8 @@
                             margin-right: 5px;
                             float: right;
      
+            
+            
             
             
             
@@ -219,11 +223,15 @@ padding-left: 10px;
             
             
             
+            
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
+            
             
             
             
@@ -378,30 +386,16 @@ padding-left: 10px;
         
         <elementSpec ident="fw" mode="change"><model output="web" predicate="@type='folNum' and $parameters?view='page'" behaviour="inline">
             <outputRendition xml:space="preserve">
-            
-            
-            
-            
-            
-            
-            
-            
             display: inline-block;
 margin-top: .5em;
 margin-bottom: 1em;
 color: #CCC;
 padding-right: 10px;
-            
-            
-            
-            
-            
-            
-            
-            
             </outputRendition>
         </model><model output="web" predicate="@place='top' and $parameters?view='page'" behaviour="inline">
             <outputRendition xml:space="preserve">
+            
+            
             
             
             
@@ -422,6 +416,8 @@ padding-right: 10px;
             
             
             
+            
+            
             </outputRendition>
         </model><model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
@@ -433,9 +429,13 @@ padding-right: 10px;
             
             
             
+            
+            
             margin-top: 1em;
                             color: #A0A0A0;
                             text-align: left;
+            
+            
             
             
             
@@ -501,8 +501,12 @@ padding-right: 10px;
             
             
             
+            
+            
                             margin-left: 20em;
                             color: #A0A0A0;
+            
+            
             
             
             
@@ -847,8 +851,12 @@ padding-right: 10px;
             
             
             
+            
+            
             text-decoration: line-through;
 color:red;
+            
+            
             
             
             
@@ -984,8 +992,12 @@ color:red;
             
             
             
+            
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
+            
             
             
             
@@ -1104,10 +1116,14 @@ text-decoration-style: double;
             
             
             
+            
+            
             font-size: smaller;
 display: block;
 border-collapse: collapse;
 padding: 10px;
+            
+            
             
             
             
@@ -1205,8 +1221,12 @@ padding: 10px;
             
             
             
+            
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
+            
             
             
             
@@ -1361,8 +1381,12 @@ padding: 10px;
             
             
             
+            
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
+            
             
             
             
@@ -1459,9 +1483,13 @@ padding: 10px;
             
             
             
+            
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
+            
             
             
             
@@ -1546,12 +1574,16 @@ margin-bottom: 3em;
             
             
             
+            
+            
             background-color: #F2F0EB;
 font-family: monospace;
 border: 1px solid #999;
 display: block;
 padding: 10px;
 white-space: pre-wrap;
+            
+            
             
             
             
@@ -1578,11 +1610,15 @@ white-space: pre-wrap;
             
             
             
+            
+            
             font-weight: bold;
 border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
+            
             
             
             
@@ -1613,10 +1649,14 @@ padding: 10px;
             
             
             
+            
+            
             border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
+            
             
             
             
