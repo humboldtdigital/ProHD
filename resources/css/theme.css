@@ -32,7 +32,7 @@ body {
     --pb-toolbar-background-color: #d1dae0;
     --pb-toolbar-color: var(--pb-color-primary);
     --paper-tooltip-delay-in: 200;
-    --pb-footnote-font-size: 13px;
+    --pb-footnote-font-size: 6px;
     --pb-footnote-font-family: var(--pb-content-font-family);
     --pb-footnote-font-weight: var(--pb-content-font-weight);
     --pb-footnote-color: #303030;
