@@ -45,6 +45,9 @@
             
             
             
+            
+            
+            
                             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -65,10 +68,16 @@
             
             
             
+            
+            
+            
             </outputRendition>
         </model><model output="web" predicate="@n and $parameters?view='page'" behaviour="inline">
             <param name="content" value="@n"/>
             <outputRendition xml:space="preserve">
+            
+            
+            
             
             font-size: 16px;
                             color: #888888;
@@ -78,10 +87,16 @@
                             margin-right: 5px;
                             float: right;
             
+            
+            
+            
             </outputRendition>
         </model><model predicate="@n" behaviour="inline">
             <param name="content" value="@n"/>
             <outputRendition xml:space="preserve">
+            
+            
+            
             
             font-size: 16px;
                             color: #888888;
@@ -91,6 +106,9 @@
                             margin-right: 5px;
                             float: right;
 padding-left: 10px;
+            
+            
+            
             
             </outputRendition>
         </model></elementSpec>
@@ -225,11 +243,17 @@ padding-left: 10px;
             
             
             
+            
+            
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
+            
+            
             
             
             
@@ -307,11 +331,24 @@ padding-left: 10px;
             </outputRendition>
         </model></elementSpec>
         
-        <elementSpec ident="seg" mode="change"><model output="web" behaviour="webcomponent">
+        <elementSpec ident="seg" mode="change"><modelSequence predicate="@type=&#34;comment&#34;">
+            <model behaviour="inline">
+                <param name="orig" value="orig"/>
+                <pb:template xmlns="" xml:space="preserve">[[orig]]</pb:template>
+            </model>
+            <model behaviour="note">
+                <param name="editor" value="&#34;Nota del editor: &#34;"/>
+                <param name="note" value="note"/>
+                <pb:template xmlns="" xml:space="preserve">[[editor]][[note]]</pb:template>
+                <outputRendition xml:space="preserve">
+                font-size:smaller;
+                </outputRendition>
+            </model>
+        </modelSequence><model output="web" behaviour="webcomponent">
             <param name="name" value="'pb-highlight'"/>
             <param name="key" value="replace(@xml:id, '^s\.(.*)$', 't.$1')"/>
             <param name="highlight-self" value="'highlight-self'"/>
-        </model><model behaviour="inline" useSourceRendition="true"/></elementSpec>
+        </model></elementSpec>
         
         <elementSpec ident="titleStmt" mode="change"><model output="latex" behaviour="meta">
             <param name="content" value="."/>
@@ -384,16 +421,21 @@ padding-left: 10px;
             <param name="label" value="@n"/>
         </model></elementSpec>
         
-        <elementSpec ident="fw" mode="change"><model output="web" predicate="@type='folNum' and $parameters?view='page'" behaviour="inline">
+        <elementSpec ident="fw" mode="change"><model output="web" predicate="@type='folNum' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
-            display: inline-block;
-margin-top: .5em;
-margin-bottom: 1em;
+            
+            
+            margin-top: .5em;
 color: #CCC;
 padding-right: 10px;
+            
+            
             </outputRendition>
         </model><model output="web" predicate="@place='top' and $parameters?view='page'" behaviour="inline">
             <outputRendition xml:space="preserve">
+            
+            
+            
             
             
             
@@ -418,6 +460,9 @@ padding-right: 10px;
             
             
             
+            
+            
+            
             </outputRendition>
         </model><model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
@@ -431,9 +476,15 @@ padding-right: 10px;
             
             
             
+            
+            
+            
             margin-top: 1em;
                             color: #A0A0A0;
                             text-align: left;
+            
+            
+            
             
             
             
@@ -503,8 +554,14 @@ padding-right: 10px;
             
             
             
+            
+            
+            
                             margin-left: 20em;
                             color: #A0A0A0;
+            
+            
+            
             
             
             
@@ -853,8 +910,14 @@ padding-right: 10px;
             
             
             
+            
+            
+            
             text-decoration: line-through;
 color:red;
+            
+            
+            
             
             
             
@@ -994,8 +1057,14 @@ color:red;
             
             
             
+            
+            
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
+            
+            
             
             
             
@@ -1118,10 +1187,16 @@ text-decoration-style: double;
             
             
             
+            
+            
+            
             font-size: smaller;
 display: block;
 border-collapse: collapse;
 padding: 10px;
+            
+            
+            
             
             
             
@@ -1223,8 +1298,14 @@ padding: 10px;
             
             
             
+            
+            
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
+            
+            
             
             
             
@@ -1383,8 +1464,14 @@ padding: 10px;
             
             
             
+            
+            
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
+            
+            
             
             
             
@@ -1485,9 +1572,15 @@ padding: 10px;
             
             
             
+            
+            
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
+            
+            
             
             
             
@@ -1576,12 +1669,18 @@ margin-bottom: 3em;
             
             
             
+            
+            
+            
             background-color: #F2F0EB;
 font-family: monospace;
 border: 1px solid #999;
 display: block;
 padding: 10px;
 white-space: pre-wrap;
+            
+            
+            
             
             
             
@@ -1612,11 +1711,17 @@ white-space: pre-wrap;
             
             
             
+            
+            
+            
             font-weight: bold;
 border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
+            
+            
             
             
             
@@ -1651,6 +1756,9 @@ padding: 10px;
             
             
             
+            
+            
+            
             border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
@@ -1669,7 +1777,34 @@ padding: 10px;
             
             
             
+            
+            
+            
             </outputRendition>
-        </model></elementSpec><elementSpec ident="creation" mode="add"/></schemaSpec>
+        </model></elementSpec><elementSpec ident="creation" mode="add"/><elementSpec ident="head" mode="change"><model predicate="$parameters?header='short'" behaviour="inline">
+            <param name="content" value="replace(string-join(.//text()[not(parent::ref)]), '^(.*?)[^\w]*$', '$1')"/>
+        </model><model predicate="parent::figure" behaviour="block">
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model><model predicate="parent::table" behaviour="block">
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model><model predicate="parent::lg" behaviour="block">
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model><model predicate="parent::list" behaviour="block">
+            <outputRendition xml:space="preserve">
+            font-weight: bold;
+            </outputRendition>
+        </model><model predicate="parent::div" behaviour="block">
+            <param name="level" value="count(ancestor::div)"/>
+            <outputRendition xml:space="preserve">
+            font-size: 18px;
+font-style:italic
+            </outputRendition>
+        </model><model behaviour="block"/></elementSpec></schemaSpec>
     </body>
   </text></TEI>
