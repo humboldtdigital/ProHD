@@ -69,13 +69,6 @@
                 </person>
                 <person>
                   <persName>
-                     <hi rendition="#b">Violeta López</hi>
-                  </persName>
-                  <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
-                  <occupation>Studentische Hilfskraft</occupation>
-                </person>
-                <person>
-                  <persName>
                      <hi rendition="#b">
                         <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio">Dr. Antonio Rojas Castro</ref>
                      </hi>
@@ -118,6 +111,15 @@
                   <occupation>Wissenschaftliche Mitarbeiterin (Projektkoordination, Editionsphilologie)</occupation>
                   <note>Juni 2019 bis November 2021</note>
                 </person>
+                 <person>
+                        <persName>
+                            <hi rendition="#b">Violeta López</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Studentische Hilfskraft</occupation>
+                        <note>Januar 2021 bis Oktober 2022</note>
+                    </person>
                 <person>
                   <persName>
                      <hi rendition="#b">Alina Mendt</hi>

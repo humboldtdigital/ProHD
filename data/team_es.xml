@@ -69,14 +69,7 @@
                             Wissenschaften</affiliation>
                         <occupation>Idea original y dirección</occupation>
                     </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Violeta López</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Estudiante asistente</occupation>
-                    </person>
+                    
                     <person>
                         <persName>
                             <hi rendition="#b">
@@ -125,6 +118,15 @@
                             Wissenschaften</affiliation>
                         <occupation>Asistente de investigación (coordinación, edición)</occupation>
                         <note>Junio de 2019 a noviembre de 2021</note>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Violeta López</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Estudiante asistente</occupation>
+                        <note>Enero de 2021 a octubre de 2022</note>
                     </person>
                     <person>
                         <persName>
