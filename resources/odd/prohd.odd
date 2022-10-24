@@ -48,6 +48,8 @@
             
             
             
+            
+            
                             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -71,10 +73,14 @@
             
             
             
+            
+            
             </outputRendition>
         </model><model output="web" predicate="@n and $parameters?view='page'" behaviour="inline">
             <param name="content" value="@n"/>
             <outputRendition xml:space="preserve">
+            
+            
             
             
             
@@ -86,6 +92,8 @@
                             display: block;
                             margin-right: 5px;
                             float: right;
+            
+            
             
             
             
@@ -98,6 +106,8 @@
             
             
             
+            
+            
             font-size: 16px;
                             color: #888888;
                             cursor: pointer;
@@ -106,6 +116,8 @@
                             margin-right: 5px;
                             float: right;
 padding-left: 10px;
+            
+            
             
             
             
@@ -246,11 +258,15 @@ padding-left: 10px;
             
             
             
+            
+            
 
             
             margin-left: 10px;margin-right: 10px;
                   font-size:smaller;
 
+            
+            
             
             
             
@@ -337,7 +353,7 @@ padding-left: 10px;
                 <pb:template xmlns="" xml:space="preserve">[[orig]]</pb:template>
             </model>
             <model behaviour="note">
-                <param name="editor" value="&#34;Nota del editor: &#34;"/>
+                <param name="editor" value="&#34;Nota editorial: &#34;"/>
                 <param name="note" value="note"/>
                 <pb:template xmlns="" xml:space="preserve">[[editor]][[note]]</pb:template>
                 <outputRendition xml:space="preserve">
@@ -425,14 +441,20 @@ padding-left: 10px;
             <outputRendition xml:space="preserve">
             
             
+            
+            
             margin-top: .5em;
 color: #CCC;
 padding-right: 10px;
             
             
+            
+            
             </outputRendition>
         </model><model output="web" predicate="@place='top' and $parameters?view='page'" behaviour="inline">
             <outputRendition xml:space="preserve">
+            
+            
             
             
             
@@ -463,6 +485,8 @@ padding-right: 10px;
             
             
             
+            
+            
             </outputRendition>
         </model><model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
             <outputRendition xml:space="preserve">
@@ -479,9 +503,13 @@ padding-right: 10px;
             
             
             
+            
+            
             margin-top: 1em;
                             color: #A0A0A0;
                             text-align: left;
+            
+            
             
             
             
@@ -557,8 +585,12 @@ padding-right: 10px;
             
             
             
+            
+            
                             margin-left: 20em;
                             color: #A0A0A0;
+            
+            
             
             
             
@@ -700,6 +732,7 @@ padding-right: 10px;
             <param name="URLImages" value="msDesc/msIdentifier/idno/idno[@type=&#34;URLImages&#34;]"/>
             <param name="URLCatalogue" value="msDesc/msIdentifier/idno/idno[@type=&#34;URLCatalogue&#34;]"/>
             <param name="physDesc" value="msDesc/physDesc/p"/>
+            <param name="msName" value="msDesc/msIdentifier/msName"/>
             <pb:template xmlns="" xml:space="preserve"><div>
   <h3><pb-i18n key="document.source"/></h3>
   <p>[[institution]]</p>
@@ -707,6 +740,7 @@ padding-right: 10px;
   <p>[[collection]]</p>
   <p>[[shelfmark]]</p>
   <p>[[uri]]</p>
+  <p>[[msName]]</p>
   <p>[[physDesc]]</p>
 </div></pb:template>
             <outputRendition xml:space="preserve">
@@ -725,6 +759,7 @@ padding-right: 10px;
             <param name="uri" value="msIdentifier/idno/idno[@type=&#34;uri&#34;]"/>
             <param name="images" value="msIdentifier/idno/idno[@type=&#34;URLImages&#34;]"/>
             <param name="catalogue" value="msIdentifier/idno/idno[@type=&#34;URLCatalogue&#34;]"/>
+            <param name="msName" value="msIdentifier/msName"/>
             <pb:template xmlns="" xml:space="preserve">[[institution]]
 [[repository]]
 [[collection]]
@@ -732,6 +767,7 @@ padding-right: 10px;
 [[uri]]
 [[images]]
 [[catalogue]]
+[[msName]]
 [[desc]]</pb:template>
         </model></elementSpec>
 
@@ -913,8 +949,12 @@ padding-right: 10px;
             
             
             
+            
+            
             text-decoration: line-through;
 color:red;
+            
+            
             
             
             
@@ -992,7 +1032,21 @@ color:red;
             <param name="editionStmt" value="p"/>
             <pb:template xmlns="" xml:space="preserve"><p>[[editionStmt]]</p></pb:template>
         </model></elementSpec>
-                <elementSpec ident="hi" mode="change"><model predicate="@rendition=&#34;#mMM&#34;" behaviour="inline">
+                <elementSpec ident="hi" mode="change"><modelSequence predicate="@rendition=&#34;#u&#34; and @hand=&#34;#unknown&#34;">
+            <model behaviour="inline">
+                <outputRendition xml:space="preserve">
+                text-decoration: underline;
+text-decoration-style: dotted;
+                </outputRendition>
+            </model>
+            <model behaviour="note">
+                <param name="editor" value="&#34;Nota editorial: mano desconocida.&#34;"/>
+                <pb:template xmlns="" xml:space="preserve">[[editor]]</pb:template>
+                <outputRendition xml:space="preserve">
+                font-size:smaller;
+                </outputRendition>
+            </model>
+        </modelSequence><model predicate="@rendition=&#34;#mMM&#34;" behaviour="inline">
             <outputRendition xml:space="preserve">
             background-color: #F2F0EB;
             </outputRendition>
@@ -1060,8 +1114,12 @@ color:red;
             
             
             
+            
+            
             text-decoration-line: underline;
 text-decoration-style: double;
+            
+            
             
             
             
@@ -1190,10 +1248,14 @@ text-decoration-style: double;
             
             
             
+            
+            
             font-size: smaller;
 display: block;
 border-collapse: collapse;
 padding: 10px;
+            
+            
             
             
             
@@ -1301,8 +1363,12 @@ padding: 10px;
             
             
             
+            
+            
             margin-top: 2em; margin-left: 2em; margin-right: 2em;
                   margin-bottom: 2em;
+            
+            
             
             
             
@@ -1467,8 +1533,12 @@ padding: 10px;
             
             
             
+            
+            
             margin-top: 1em; margin-left: 1em; margin-left:
                   1em;
+            
+            
             
             
             
@@ -1575,9 +1645,13 @@ padding: 10px;
             
             
             
+            
+            
             margin-top: 3em;
 margin-right: 3em;
 margin-bottom: 3em;
+            
+            
             
             
             
@@ -1672,12 +1746,16 @@ margin-bottom: 3em;
             
             
             
+            
+            
             background-color: #F2F0EB;
 font-family: monospace;
 border: 1px solid #999;
 display: block;
 padding: 10px;
 white-space: pre-wrap;
+            
+            
             
             
             
@@ -1714,11 +1792,15 @@ white-space: pre-wrap;
             
             
             
+            
+            
             font-weight: bold;
 border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
+            
             
             
             
@@ -1759,10 +1841,14 @@ padding: 10px;
             
             
             
+            
+            
             border: 1px solid #999;
 background-color: #F2F0EB;
 border-collapse: collapse;
 padding: 10px;
+            
+            
             
             
             
@@ -1802,9 +1888,13 @@ padding: 10px;
         </model><model predicate="parent::div" behaviour="block">
             <param name="level" value="count(ancestor::div)"/>
             <outputRendition xml:space="preserve">
+            
+            
             font-size: 18px;
 font-style:italic
+            
+            
             </outputRendition>
-        </model><model behaviour="block"/></elementSpec></schemaSpec>
+        </model><model behaviour="block"/></elementSpec><elementSpec ident="msName" mode="add"><model behaviour="inline"/></elementSpec></schemaSpec>
     </body>
   </text></TEI>
