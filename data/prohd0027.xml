@@ -89,6 +89,7 @@
                     <category xml:id="subjects">
                         <category xml:id="climatology"/>
                         <category xml:id="mineralogy"/>
+                        <category xml:id="education"/>
                         <category xml:id="geology"/>
                         <category xml:id="colonialism"/>
                         <category xml:id="demography"/>
@@ -114,39 +115,50 @@
             <div>
                 <head>Junta
                     <choice>
-                            <abbr><orig>ord.<hi rendition="#sup">a</hi></orig></abbr>
+                            <abbr>
+                            <orig>ord.<hi rendition="#sup">a</hi>
+                            </orig>
+                        </abbr>
                             <expan>ordinaria</expan>
                         </choice>
-                     del <date when="1804-04-30" calendar="#Gregorian"><choice>
+                     del <date when="1804-04-30" calendar="#Gregorian">
+                        <choice>
                             <sic>31</sic>
                             <corr cert="high">30</corr>
                         </choice> de <choice>
-                            <abbr>Ab<hi rendition="#sup">l</hi></abbr>
+                            <abbr>Ab<hi rendition="#sup">l</hi>
+                            </abbr>
                             <expan>abril</expan>
                         </choice> del 1804</date>
                     <lb/>Presidente<lb/>El <choice>
                         <abbr>S<hi rendition="#sup">or</hi>.</abbr>
                         <expan>Señor</expan>
                     </choice> Marqués deSomeruelos <lb/>Gobernador y <choice>
-                        <abbr>Cap.<hi rendition="#sup">n</hi></abbr>
+                        <abbr>Cap.<hi rendition="#sup">n</hi>
+                        </abbr>
                         <expan>Capitán</expan>
                     </choice>
                     <choice>
-                        <abbr>Gen.<hi rendition="#sup">l</hi></abbr>
+                        <abbr>Gen.<hi rendition="#sup">l</hi>
+                        </abbr>
                         <expan>General</expan>
                     </choice>
                 </head>
                 </div>
             <div>
                 <head>Socios <choice>
-                        <abbr>concurr.<hi rendition="#sup">tes</hi></abbr>
+                        <abbr>concurr.<hi rendition="#sup">tes</hi>
+                        </abbr>
                         <expan>concurrentes</expan>
                     </choice> los <choice>
-                        <abbr>S.<hi rendition="#sup">res</hi></abbr>
+                        <abbr>S.<hi rendition="#sup">res</hi>
+                        </abbr>
                         <expan>Señores</expan>
-                    </choice></head>
+                    </choice>
+                </head>
                 <list>
-                    <item><choice>
+                    <item>
+                        <choice>
                             <abbr>D.</abbr>
                             <expan>Don</expan>
                         </choice>
@@ -155,40 +167,53 @@
                             <reg>José</reg>
                         </choice> de Ylincheta. Director</item>
                 <item>El Conde de Vallellano. Censor</item>
-                 <item><choice>
+                 <item>
+                        <choice>
                             <abbr>D.</abbr>
                             <expan>Don</expan>
                         </choice> B. D. de Heredia. <choice>
-                            <abbr>Secret.<hi rendition="#sup">o</hi></abbr>
+                            <abbr>Secret.<hi rendition="#sup">o</hi>
+                            </abbr>
                             <expan>Secretario</expan>
-                        </choice></item>
-                    <item><choice>
+                        </choice>
+                    </item>
+                    <item>
+                        <choice>
                             <abbr>D.</abbr>
                             <expan>Don</expan>
                         </choice> Manuel Garcia. <choice>
-                            <abbr>Tesor.<hi rendition="#sup">o</hi></abbr>
+                            <abbr>Tesor.<hi rendition="#sup">o</hi>
+                            </abbr>
                             <expan>Tesorero</expan>
-                        </choice></item>
-                    <item><choice>
+                        </choice>
+                    </item>
+                    <item>
+                        <choice>
                             <abbr>D.</abbr>
                             <expan>Don</expan>
                         </choice> Pablo Boloiso. <choice>
-                            <abbr>Cont.<hi rendition="#sup">or</hi></abbr>
+                            <abbr>Cont.<hi rendition="#sup">or</hi>
+                            </abbr>
                             <expan>Contador</expan>
-                        </choice></item>
-                    <item><choice>
+                        </choice>
+                    </item>
+                    <item>
+                        <choice>
                             <abbr>D.</abbr>
                             <expan>Don</expan>
                         </choice>
                         <choice>
-                            <abbr>Fran.<hi rendition="#sup">co</hi></abbr>
+                            <abbr>Fran.<hi rendition="#sup">co</hi>
+                            </abbr>
                             <expan>Francisco</expan>
                         </choice> de Arango 154</item>
-                    <item><choice>
+                    <item>
+                        <choice>
                             <abbr>D.</abbr>
                             <expan>Don</expan>
                         </choice> Felix Feranes 159</item>
-                    <item><choice>
+                    <item>
+                        <choice>
                             <abbr>D.</abbr>
                             <expan>Don</expan>
                         </choice> Juan Tirry y Laci 15<gap reason="illegible" unit="chars" quantity="1"/>
@@ -196,41 +221,49 @@
             </list>
             </div>
                 <div>
-                <p><choice>
+                <p>
+                    <choice>
                         <orig>Aprovado</orig>
                         <reg>Aprobado</reg>
                     </choice> el acuerdo de la Junta <choice>
                         <orig>ultima</orig>
                         <reg>última</reg>
-                    </choice>; se leyó <lb/><choice>
+                    </choice>; se leyó <lb/>
+                    <choice>
                         <orig>lacensura</orig>
                         <reg>la censura</reg>
                     </choice>
                     <choice>
                         <orig>quepresentó</orig>
                         <reg>que presentó</reg>
-                    </choice> la <lb/><choice>
+                    </choice> la <lb/>
+                    <choice>
                         <orig>Comísion</orig>
                         <reg>Comisión</reg>
                     </choice> nombrada <choice>
-                        <abbr>p.<hi rendition="#sup">r</hi></abbr>
+                        <abbr>p.<hi rendition="#sup">r</hi>
+                        </abbr>
                         <expan>por</expan>
                     </choice> el <lb/>Papel <choice>
                         <orig>Períodíco</orig>
                         <reg>Periódico</reg>
                     </choice>
                     <choice>
-                        <abbr>correspond.<hi rendition="#sup">te</hi></abbr>
+                        <abbr>correspond.<hi rendition="#sup">te</hi>
+                        </abbr>
                         <expan>correspondiente</expan>
                     </choice>
-                    <lb/><choice>
+                    <lb/>
+                    <choice>
                         <orig>álos</orig>
                         <reg>a los</reg>
                     </choice> años <choice>
-                        <orig>de<date when="1802" calendar="#Gregorian">1802</date></orig>
+                        <orig>de<date when="1802" calendar="#Gregorian">1802</date>
+                        </orig>
                         <reg>y 1802</reg>
                     </choice>. <choice>
-                        <orig>y<date when="1803" calendar="#Gregorian">1803</date></orig>
+                        <orig>y<date when="1803" calendar="#Gregorian">1803</date>
+                        </orig>
                         <reg>y 1803</reg>
                     </choice>; exa<lb break="no"/>men <choice>
                         <orig>asus</orig>
@@ -259,9 +292,11 @@
                         <abbr>Rl</abbr>
                         <expan>Real</expan>
                     </choice> Sociedad: y por lo <choice>
-                        <abbr>q.<hi rendition="#sup">e</hi></abbr>
+                        <abbr>q.<hi rendition="#sup">e</hi>
+                        </abbr>
                         <expan>que</expan>
-                    </choice><lb/>hace <choice>
+                    </choice>
+                    <lb/>hace <choice>
                         <abbr>ála</abbr>
                         <expan>a la</expan>
                     </choice> parte Literaria y Económica del expresado<lb/>Papel, hace <choice>
@@ -286,11 +321,13 @@
                     <choice>
                         <orig>qual</orig>
                         <reg>cual</reg>
-                    </choice>, acordó la <unclear reason="illegible" cert="high"/><lb/>ta; que
+                    </choice>, acordó la <unclear reason="illegible" cert="high"/>
+                    <lb/>ta; que
                     conforme al año <date when="1929" calendar="#Gregorian">29</date>. del Plan de <choice>
                         <orig>Redaccion</orig>
                         <reg>Redacción</reg>
-                    </choice>, y en <lb/>la forma que previene, se hagan al redactor las adver<g ref="#typoHyphen"/><lb break="no"/>tencias correspondientes, <choice>
+                    </choice>, y en <lb/>la forma que previene, se hagan al redactor las adver<g ref="#typoHyphen"/>
+                    <lb break="no"/>tencias correspondientes, <choice>
                         <orig>manísfestandole</orig>
                         <reg>manifestándole</reg>
                     </choice> la <choice>
@@ -310,10 +347,12 @@
                         <reg>crédito</reg>
                     </choice>
                     <choice>
-                        <orig>pub:<hi rendition="#sup">co</hi></orig>
+                        <orig>pub:<hi rendition="#sup">co</hi>
+                        </orig>
                         <reg>público</reg>
                     </choice> y <choice>
-                        <orig>tam<g ref="#typoHyphen"/><lb break="no"/>bien</orig>
+                        <orig>tam<g ref="#typoHyphen"/>
+                            <lb break="no"/>bien</orig>
                         <reg>también</reg>
                     </choice>
                     <del rendition="#s">(<choice>
@@ -330,7 +369,8 @@
                     <choice>
                         <orig>dádo</orig>
                         <reg>dado</reg>
-                    </choice> cumplimiento<lb/><choice>
+                    </choice> cumplimiento<lb/>
+                    <choice>
                         <orig>á</orig>
                         <reg>a</reg>
                     </choice> los artículos 5. y 31. de <choice>
@@ -343,7 +383,8 @@
                         <orig>ní</orig>
                         <reg>ni</reg>
                     </choice> al <choice>
-                        <abbr>8.<hi rendition="#sup">o</hi></abbr>
+                        <abbr>8.<hi rendition="#sup">o</hi>
+                        </abbr>
                         <expan>octavo</expan>
                     </choice> del<lb/>mismo, que <choice>
                         <orig>és</orig>
@@ -352,32 +393,40 @@
                         <orig>ála</orig>
                         <reg>a la</reg>
                     </choice> Sociedad; lo <choice>
-                        <abbr>q.<hi rendition="#sup">e</hi></abbr>
+                        <abbr>q.<hi rendition="#sup">e</hi>
+                        </abbr>
                         <expan>que</expan>
                     </choice> se <choice>
                         <orig>advetira</orig>
                         <reg>advertirá</reg>
                     </choice> así al <unclear reason="illegible" cert="high"/>
                     <lb/>Redactor, <choice>
-                        <abbr>p.<hi rendition="#sup">a</hi></abbr>
+                        <abbr>p.<hi rendition="#sup">a</hi>
+                        </abbr>
                         <expan>para</expan>
                     </choice> su puntual <choice>
-                        <abbr>cumplim.<hi rendition="#sup">to</hi></abbr>
+                        <abbr>cumplim.<hi rendition="#sup">to</hi>
+                        </abbr>
                         <expan>cumplimiento</expan>
-                    </choice></p>
+                    </choice>
+                </p>
                 <p>
                     <add place="intralinear">X</add> El <choice>
-                        <abbr>Sor.<hi rendition="#sup">ñ</hi></abbr>
+                        <abbr>Sor.<hi rendition="#sup">ñ</hi>
+                        </abbr>
                         <expan>Señor</expan>
                     </choice> Presidente <choice>
-                        <abbr>Gob.<hi rendition="#sup">or</hi></abbr>
+                        <abbr>Gob.<hi rendition="#sup">or</hi>
+                        </abbr>
                         <expan>Gobernador</expan>
                     </choice> y <choice>
-                        <abbr>Cap.<hi rendition="#sup">n</hi></abbr>
+                        <abbr>Cap.<hi rendition="#sup">n</hi>
+                        </abbr>
                         <expan>Capitán</expan>
                     </choice>
                     <choice>
-                        <abbr>Gen.<hi rendition="#sup">l</hi></abbr>
+                        <abbr>Gen.<hi rendition="#sup">l</hi>
+                        </abbr>
                         <expan>General</expan>
                     </choice>
                     <choice>
@@ -387,13 +436,16 @@
                         <orig>aprovechárse</orig>
                         <reg>aprovecharse</reg>
                     </choice> del talento y <choice>
-                        <abbr>conocim.<hi rendition="#sup">to</hi></abbr>
+                        <abbr>conocim.<hi rendition="#sup">to</hi>
+                        </abbr>
                         <expan>conocimiento</expan>
-                    </choice> del <lb/><choice>
+                    </choice> del <lb/>
+                    <choice>
                         <abbr>So<unclear reason="illegible" cert="high">r</unclear>.</abbr>
                         <expan>Señor</expan>
                     </choice>
-                    <hi rendition="#u" hand="#unkown"><choice>
+                    <hi rendition="#u" hand="#unknown">
+                        <choice>
                             <orig>Baron</orig>
                             <reg>Barón</reg>
                         </choice> de Humboldt</hi>, <choice>
@@ -414,7 +466,8 @@
                         <orig>ésta</orig>
                         <reg>esta</reg>
                     </choice> Plaza de regreso <choice>
-                        <abbr>p.<hi rendition="#sup">a</hi></abbr>
+                        <abbr>p.<hi rendition="#sup">a</hi>
+                        </abbr>
                         <expan>para</expan>
                     </choice> Europa, le <choice>
                         <orig>ha<lb break="no"/>bia</orig>
@@ -445,7 +498,8 @@
                         <orig>utiles</orig>
                         <reg>útiles</reg>
                     </choice> y <lb/>convenientes; y <choice>
-                        <orig>q.<hi rendition="#sup">e</hi></orig>
+                        <orig>q.<hi rendition="#sup">e</hi>
+                        </orig>
                         <reg>que</reg>
                     </choice>
                     <choice>
@@ -455,34 +509,43 @@
                         <abbr>Sria.</abbr>
                         <expan>Señoría</expan>
                     </choice> en el Papel <choice>
-                        <abbr>orig,<hi rendition="#sup">l</hi></abbr>
+                        <abbr>orig,<hi rendition="#sup">l</hi>
+                        </abbr>
                         <expan>original</expan>
                     </choice> que mandó leer, <choice>
                         <orig>cuyó</orig>
                         <reg>cuyo</reg>
-                    </choice> tenor <lb/><choice>
+                    </choice> tenor <lb/>
+                    <choice>
                         <orig>és</orig>
                         <reg>es</reg>
                     </choice> el <choice>
-                        <abbr>sig<hi rendition="#sup"><hi rendition="#uu">te</hi></hi></abbr>
+                        <abbr>sig<hi rendition="#sup">
+                                <hi rendition="#uu">te</hi>
+                            </hi>
+                        </abbr>
                         <expan>siguiente</expan>
                     </choice>, <choice>
                         <abbr>Sor</abbr>
                         <expan>Señor</expan>
                     </choice>
                     <choice>
-                        <abbr>Presid.<hi rendition="#sup">te</hi></abbr>
+                        <abbr>Presid.<hi rendition="#sup">te</hi>
+                        </abbr>
                         <expan>Presidente</expan>
                     </choice>
                     <choice>
-                        <abbr>Gon.<hi rendition="#sup">or</hi></abbr>
+                        <abbr>Gon.<hi rendition="#sup">or</hi>
+                        </abbr>
                         <expan>Gobernador</expan>
                     </choice> y <choice>
-                        <abbr>Cap.<hi rendition="#sup">n</hi></abbr>
+                        <abbr>Cap.<hi rendition="#sup">n</hi>
+                        </abbr>
                         <expan>Capitán</expan>
                     </choice>
                     <choice>
-                        <abbr>Gen.<hi rendition="#sup">l</hi></abbr>
+                        <abbr>Gen.<hi rendition="#sup">l</hi>
+                        </abbr>
                         <expan>General</expan>
                     </choice>
                     <quote rendition="#i">Me apresuro <lb/>en cumplir con la orden que <choice>
@@ -496,13 +559,18 @@
                             <reg>darme</reg>
                         </choice>
                         <choice>
-                            <orig>co<g ref="#typoHyphen"/><lb break="no"/>municandole</orig>
+                            <orig>co<g ref="#typoHyphen"/>
+                                <lb break="no"/>municandole</orig>
                             <reg>comunicándole</reg>
                         </choice> la breve noticia <choice>
                             <orig>míneralogíca</orig>
                             <reg>mineralógica</reg>
-                        </choice> del Cerro de <lb/><choice>
-                            <abbr>Guanav<hi rendition="#sup"><hi rendition="#uu">a</hi></hi></abbr>
+                        </choice> del Cerro de <lb/>
+                        <choice>
+                            <abbr>Guanav<hi rendition="#sup">
+                                    <hi rendition="#uu">a</hi>
+                                </hi>
+                            </abbr>
                             <expan>Guanabacoa</expan>
                         </choice> Toda la parte Occidental <choice>
                             <orig>dela</orig>
@@ -523,7 +591,8 @@
                         <choice>
                             <orig>Trínídad</orig>
                             <reg>Trinidad</reg>
-                        </choice> consiste de capas <hi rendition="#u">se<g ref="#typoHyphen"/><lb break="no"/>cundarias</hi>
+                        </choice> consiste de capas <hi rendition="#u">se<g ref="#typoHyphen"/>
+                            <lb break="no"/>cundarias</hi>
                         <choice>
                             <orig>depiedras</orig>
                             <reg>de piedras</reg>
@@ -592,18 +661,24 @@
                             <orig>ó</orig>
                             <reg>o</reg>
                         </choice>
-                        <hi rendition="#u"><choice>
+                        <hi rendition="#u">
+                            <choice>
                                 <orig>prímitíva</orig>
                                 <reg>primitiva</reg>
-                            </choice></hi>. La mayor parte de <choice>
+                            </choice>
+                        </hi>. La mayor parte de <choice>
                             <orig>éstas</orig>
                             <reg>estas</reg>
-                        </choice> colinas primi<g ref="#typoHyphen"/><lb break="no"/>tivas consiste
-                        en <hi rendition="#u">serpentinas</hi>, cuyas capas y regularmente <lb/><choice>
+                        </choice> colinas primi<g ref="#typoHyphen"/>
+                        <lb break="no"/>tivas consiste
+                        en <hi rendition="#u">serpentinas</hi>, cuyas capas y regularmente <lb/>
+                        <choice>
                             <orig>ínclinadas</orig>
                             <reg>inclinadas</reg>
-                        </choice> al norte y nordeste descansan (cerca de Mari<g ref="#typoHyphen"/><lb break="no"/>melena) sobre una roca bastante rara, que los
-                            mineralo<g ref="#typoHyphen"/><lb break="no"/>gistas modernos llaman <hi rendition="#u">Syenita</hi> por <choice>
+                        </choice> al norte y nordeste descansan (cerca de Mari<g ref="#typoHyphen"/>
+                        <lb break="no"/>melena) sobre una roca bastante rara, que los
+                            mineralo<g ref="#typoHyphen"/>
+                        <lb break="no"/>gistas modernos llaman <hi rendition="#u">Syenita</hi> por <choice>
                             <orig>hallárse</orig>
                             <reg>hallarse</reg>
                         </choice> cerca de <lb/>Syene en el Alto Egipto. La <hi rendition="#u">Serpentina</hi>
@@ -613,7 +688,8 @@
                         </choice> una <choice>
                             <orig>píedra</orig>
                             <reg>piedra</reg>
-                        </choice> tal<g ref="#typoHyphen"/><lb break="no"/>cosa, que se trabaja en <choice>
+                        </choice> tal<g ref="#typoHyphen"/>
+                        <lb break="no"/>cosa, que se trabaja en <choice>
                             <orig>Ytalia</orig>
                             <reg>Italia</reg>
                         </choice> y <choice>
@@ -632,14 +708,18 @@
                         </choice> vista. La Serpentina <choice>
                             <orig>és</orig>
                             <reg>es</reg>
-                        </choice> una Roca muy es<g ref="#typoHyphen"/><lb break="no"/>casa en el
+                        </choice> una Roca muy es<g ref="#typoHyphen"/>
+                        <lb break="no"/>casa en el
                         nuevo Continente, y apenas se conoce sino cerca <lb/>de Jaruma en la <choice>
-                            <abbr>Prov.<hi rendition="#sup">a</hi></abbr>
+                            <abbr>Prov.<hi rendition="#sup">a</hi>
+                            </abbr>
                             <expan>provincia</expan>
                         </choice> de Guito, y cerca de <choice>
-                            <abbr>S.<hi rendition="#sup">n</hi></abbr>
+                            <abbr>S.<hi rendition="#sup">n</hi>
+                            </abbr>
                             <expan>San</expan>
-                        </choice> Juan y la <lb/><gap reason="illegible" unit="words" quantity="1"/>
+                        </choice> Juan y la <lb/>
+                        <gap reason="illegible" unit="words" quantity="1"/>
                         <choice>
                             <orig>deCoro</orig>
                             <reg>de Coro</reg>
@@ -647,13 +727,16 @@
                             <orig>deCaracas</orig>
                             <reg>de Caracas</reg>
                         </choice>. <choice>
-                            <abbr>Aúnq.<hi rendition="#sup">e</hi></abbr>
+                            <abbr>Aúnq.<hi rendition="#sup">e</hi>
+                            </abbr>
                             <expan>Aunque</expan>
                         </choice> la <choice>
                             <orig>Serpentína</orig>
                             <reg>serpentina</reg>
-                        </choice><lb/>peca <choice>
-                            <abbr>generalm.<hi rendition="#sup">te</hi></abbr>
+                        </choice>
+                        <lb/>peca <choice>
+                            <abbr>generalm.<hi rendition="#sup">te</hi>
+                            </abbr>
                             <expan>generalmente</expan>
                         </choice> por <choice>
                             <orig>sér</orig>
@@ -664,11 +747,15 @@
                         </choice>, <choice>
                             <orig>nó</orig>
                             <reg>no</reg>
-                        </choice> dudo que <del rendition="#s"><gap reason="illegible" unit="words" quantity="1"/></del> la <choice>
+                        </choice> dudo que <del rendition="#s">
+                            <gap reason="illegible" unit="words" quantity="1"/>
+                        </del> la <choice>
                             <orig>profundídad</orig>
                             <reg>profundidad</reg>
-                        </choice> se ha<g ref="#typoHyphen"/><lb break="no"/>llasen piedras aptas <choice>
-                            <abbr>p.<hi rendition="#sup">a</hi></abbr>
+                        </choice> se ha<g ref="#typoHyphen"/>
+                        <lb break="no"/>llasen piedras aptas <choice>
+                            <abbr>p.<hi rendition="#sup">a</hi>
+                            </abbr>
                             <expan>para</expan>
                         </choice> el empedrado, <choice>
                             <orig>tán</orig>
@@ -677,11 +764,13 @@
                         <choice>
                             <orig>apetecído</orig>
                             <reg>apetecido</reg>
-                        </choice>, de <lb/><choice>
+                        </choice>, de <lb/>
+                        <choice>
                             <orig>laCapital</orig>
                             <reg>la Capital</reg>
                         </choice>. Los cerritos de <choice>
-                            <abbr>Guanav.<hi rendition="#sup">a</hi></abbr>
+                            <abbr>Guanav.<hi rendition="#sup">a</hi>
+                            </abbr>
                             <expan>Guanabacoa</expan>
                         </choice>
                         <choice>
@@ -706,7 +795,8 @@
                             <orig>unícos</orig>
                             <reg>únicos</reg>
                         </choice> metales que <lb/>suele haber en otras partes del mundo en la
-                            Serpen<g ref="#typoHyphen"/><lb break="no"/>tina son Cobre y Pyrita <gap reason="illegible" unit="words" quantity="1"/> : el cobre algunas <choice>
+                            Serpen<g ref="#typoHyphen"/>
+                        <lb break="no"/>tina son Cobre y Pyrita <gap reason="illegible" unit="words" quantity="1"/> : el cobre algunas <choice>
                             <orig>vezes</orig>
                             <reg>veces</reg>
                         </choice>
@@ -721,7 +811,8 @@
                             <orig>deBarreto</orig>
                             <reg>de Barreto</reg>
                         </choice> cerca de <choice>
-                            <abbr>Guanav.<hi rendition="#sup">a</hi></abbr>
+                            <abbr>Guanav.<hi rendition="#sup">a</hi>
+                            </abbr>
                             <expan>Guanabacoa</expan>
                         </choice>
                         <choice>
@@ -737,13 +828,15 @@
                         </choice> me <choice>
                             <orig>hán</orig>
                             <reg>han</reg>
-                        </choice> parecido dig<g ref="#typoHyphen"/><lb break="no"/>nas de mayores <choice>
+                        </choice> parecido dig<g ref="#typoHyphen"/>
+                        <lb break="no"/>nas de mayores <choice>
                             <orig>ínvestígacíones</orig>
                             <reg>investigaciones</reg>
                         </choice>, en un <choice>
                             <orig>Paíf</orig>
                             <reg>país</reg>
-                        </choice> cuya ver<g ref="#typoHyphen"/><lb break="no"/>dadera <choice>
+                        </choice> cuya ver<g ref="#typoHyphen"/>
+                        <lb break="no"/>dadera <choice>
                             <orig>ríqueza</orig>
                             <reg>riqueza</reg>
                         </choice>
@@ -770,7 +863,8 @@
                         </choice> la <choice>
                             <orig>olgazaneria</orig>
                             <reg>holgazanería</reg>
-                        </choice> de <lb/><choice>
+                        </choice> de <lb/>
+                        <choice>
                             <orig>buscár</orig>
                             <reg>buscar</reg>
                         </choice> lo que se debe producir.= Las aguas de <choice>
@@ -795,15 +889,18 @@
                             <orig>zerrito</orig>
                             <reg>cerrito</reg>
                         </choice> de <choice>
-                            <abbr>Guanav.<hi rendition="#sup">a</hi></abbr>
+                            <abbr>Guanav.<hi rendition="#sup">a</hi>
+                            </abbr>
                             <expan>Guanabacoa</expan>
-                        </choice><lb/>tendría <choice>
+                        </choice>
+                        <lb/>tendría <choice>
                             <orig>mas</orig>
                             <reg>mas</reg>
                         </choice> fama en el mundo. Alguna <choice>
                             <orig>hé</orig>
                             <reg>he</reg>
-                        </choice> buscado dar<g ref="#typoHyphen"/><lb break="no"/>le en una Memoria
+                        </choice> buscado dar<g ref="#typoHyphen"/>
+                        <lb break="no"/>le en una Memoria
                         mía <choice>
                             <orig>ímpresa</orig>
                             <reg>impresa</reg>
@@ -816,13 +913,15 @@
                             <reg>he</reg>
                         </choice>
                         <choice>
-                            <orig>envía<g ref="#typoHyphen"/><lb break="no"/>do</orig>
+                            <orig>envía<g ref="#typoHyphen"/>
+                                <lb break="no"/>do</orig>
                             <reg>enviado</reg>
                         </choice> varios <choice>
                             <orig>forciles</orig>
                             <reg>fósiles</reg>
                         </choice> de <choice>
-                            <abbr>Guanav.<hi rendition="#sup">a</hi></abbr>
+                            <abbr>Guanav.<hi rendition="#sup">a</hi>
+                            </abbr>
                             <expan>Guanabacoa</expan>
                         </choice> al <choice>
                             <orig>Gavinete</orig>
@@ -834,11 +933,14 @@
                             <orig>deParis</orig>
                             <reg>de París</reg>
                         </choice>. La <choice>
-                            <orig><hi rendition="#u">Calcedonía</hi></orig>
+                            <orig>
+                                <hi rendition="#u">Calcedonía</hi>
+                            </orig>
                             <reg>calcedonia</reg>
                         </choice>
                         <choice>
-                            <abbr>q.<hi rendition="#sup">e</hi></abbr>
+                            <abbr>q.<hi rendition="#sup">e</hi>
+                            </abbr>
                             <expan>que</expan>
                         </choice> se halla <unclear reason="illegible" cert="high">en</unclear>
                         <lb/>vetas al Este <choice>
@@ -848,7 +950,8 @@
                             <orig>deBarreto</orig>
                             <reg>de Barreto</reg>
                         </choice> cerca al palmar <choice>
-                            <orig><lb/>és</orig>
+                            <orig>
+                                <lb/>és</orig>
                             <reg>es</reg>
                         </choice> superior <choice>
                             <orig>ála</orig>
@@ -862,7 +965,8 @@
                             <orig>hán</orig>
                             <reg>han</reg>
                         </choice> tapado parte <choice>
-                            <orig><lb/>dela</orig>
+                            <orig>
+                                <lb/>dela</orig>
                             <reg>de la</reg>
                         </choice> veta que encontré hace tres años. La Serpentina de <lb/>Regla,
                         contiene además un <choice>
@@ -888,7 +992,8 @@
                         </choice> en un <lb/>solo paraje <choice>
                             <orig>dela</orig>
                             <reg>de la</reg>
-                        </choice> Alemania, el <hi rendition="#u">Espato de Latur</hi> cuyo res<g ref="#typoHyphen"/><lb break="no"/>plandor <choice>
+                        </choice> Alemania, el <hi rendition="#u">Espato de Latur</hi> cuyo res<g ref="#typoHyphen"/>
+                        <lb break="no"/>plandor <choice>
                             <orig>metalíco</orig>
                             <reg>metálico</reg>
                         </choice> puede haber <choice>
@@ -901,12 +1006,14 @@
                             <orig>deplata</orig>
                             <reg>de plata</reg>
                         </choice> y oro <choice>
-                            <abbr>q.<hi rendition="#sup">e</hi></abbr>
+                            <abbr>q.<hi rendition="#sup">e</hi>
+                            </abbr>
                             <expan>que</expan>
                         </choice> tienen aquellos <choice>
                             <orig>Zerritos</orig>
                             <reg>cerritos</reg>
-                        </choice>.- Dis<g ref="#typoHyphen"/><lb break="no"/>pense <choice>
+                        </choice>.- Dis<g ref="#typoHyphen"/>
+                        <lb break="no"/>pense <choice>
                             <abbr>Us.</abbr>
                             <expan>usted</expan>
                         </choice>
@@ -917,16 +1024,20 @@
                             <orig>ésta</orig>
                             <reg>esta</reg>
                         </choice> noticia, y el fastidio <choice>
-                            <abbr>q.<hi rendition="#sup">e</hi></abbr>
+                            <abbr>q.<hi rendition="#sup">e</hi>
+                            </abbr>
                             <expan>que</expan>
-                        </choice><lb/>le causará mi mal Castellano. Desearía <choice>
-                            <abbr>q.<hi rendition="#sup">e</hi></abbr>
+                        </choice>
+                        <lb/>le causará mi mal Castellano. Desearía <choice>
+                            <abbr>q.<hi rendition="#sup">e</hi>
+                            </abbr>
                             <expan>que</expan>
                         </choice>
                         <choice>
                             <abbr>Us.</abbr>
                             <expan>Usted</expan>
-                        </choice> se dig<g ref="#typoHyphen"/><lb break="no"/>nase <choice>
+                        </choice> se dig<g ref="#typoHyphen"/>
+                        <lb break="no"/>nase <choice>
                             <orig>honrárme</orig>
                             <reg>honrarme</reg>
                         </choice> con sus <choice>
@@ -935,10 +1046,12 @@
                         </choice>, y pido <choice>
                             <orig>áDios</orig>
                             <reg>a Dios</reg>
-                        </choice> guarde <lb/><choice>
+                        </choice> guarde <lb/>
+                        <choice>
                             <orig>áUs.</orig>
                             <reg>a Usted</reg>
-                        </choice> muchos años. Habana el <date when="1804-04-01" calendar="#Gregorian">1. de Abril de1804</date>= <lb/><choice>
+                        </choice> muchos años. Habana el <date when="1804-04-01" calendar="#Gregorian">1. de Abril de1804</date>= <lb/>
+                        <choice>
                             <abbr>Sor.S</abbr>
                             <expan>eñor</expan>
                         </choice> Presidente= <choice>
@@ -957,9 +1070,11 @@
                             <expan>atento</expan>
                         </choice>
                         <choice>
-                            <abbr>serv.<hi rendition="#sup">or</hi></abbr>
+                            <abbr>serv.<hi rendition="#sup">or</hi>
+                            </abbr>
                             <expan>servidor</expan>
-                        </choice> que <lb/><choice>
+                        </choice> que <lb/>
+                        <choice>
                             <orig>beza</orig>
                             <reg>besa</reg>
                         </choice> las manos <choice>
@@ -969,23 +1084,28 @@
                             <orig>Baron</orig>
                             <reg>Barón</reg>
                         </choice> de Humboldt</quote>
-                    <pb n="4" facs="prohd0027_4.tif"/><fw type="folNum">125</fw>La Junta oyó con
+                    <pb n="4" facs="prohd0027_4.tif"/>
+                    <fw type="folNum">125</fw>La Junta oyó con
                     gusto la expresada <choice>
-                        <abbr>descripc.<hi rendition="#sup">n</hi></abbr>
+                        <abbr>descripc.<hi rendition="#sup">n</hi>
+                        </abbr>
                         <expan>descripción</expan>
                     </choice>
                     <lb/> trasladó <choice>
                         <orig>gracías</orig>
                         <reg>gracias</reg>
                     </choice> al <choice>
-                        <abbr>S.<hi rendition="#sup">or</hi></abbr>
+                        <abbr>S.<hi rendition="#sup">or</hi>
+                        </abbr>
                         <expan>Señor</expan>
                     </choice>
                     <choice>
-                        <abbr>Presid.<hi rendition="#sup">te</hi></abbr>
+                        <abbr>Presid.<hi rendition="#sup">te</hi>
+                        </abbr>
                         <expan>Presidente</expan>
                     </choice> por el interés <choice>
-                        <abbr>q.<hi rendition="#sup">e</hi></abbr>
+                        <abbr>q.<hi rendition="#sup">e</hi>
+                        </abbr>
                         <expan>que</expan>
                     </choice> toma <lb/> en <choice>
                         <orig>éstos</orig>
@@ -999,7 +1119,9 @@
                         <orig>Socíedad</orig>
                         <reg>Sociedad</reg>
                     </choice>, para los <choice>
-                        <orig><unclear reason="illegible" cert="high">uzos</unclear></orig>
+                        <orig>
+                            <unclear reason="illegible" cert="high">uzos</unclear>
+                        </orig>
                         <reg>usos</reg>
                     </choice>
                     <choice>
@@ -1007,7 +1129,8 @@
                         <reg>sucesivos</reg>
                     </choice>
                     <choice>
-                        <abbr>q.<hi rendition="#sup">e</hi></abbr>
+                        <abbr>q.<hi rendition="#sup">e</hi>
+                        </abbr>
                         <expan>que</expan>
                     </choice> convenga: con <lb/> lo que se concluyó_ </p>
             </div>
@@ -1015,7 +1138,8 @@
                 <signed> Benigno Duque <choice>
                         <orig>deHeredia </orig>
                         <reg>de Heredia</reg>
-                    </choice></signed>
+                    </choice>
+                </signed>
             <signed>
                 Ylincheta
             </signed>
