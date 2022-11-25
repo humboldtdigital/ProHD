@@ -48,7 +48,8 @@
         "minutes": "Protokolle",
         "notebooks": "Notizen",
         "correspondence": "Briefe",
-        "travelwriting": "Reiseberichte"
+        "travelwriting": "Reiseberichte",
+        "records": "Akte"
     },
     "form": {
         "manuscript": "Handschriften",

@@ -48,7 +48,8 @@
         "minutes": "Minutes",
         "notebooks": "Notebooks",
         "correspondence": "Personal Correspondence",
-        "travelwriting": "Travel Writing"
+        "travelwriting": "Travel Writing",
+        "records": "Records"
     },
     "form": {
         "manuscript": "Manuscript",

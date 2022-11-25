@@ -45,10 +45,11 @@
     "genre": {
         "diaries": "Diarios personales",
         "essays": "Ensayos",
-        "minutes": "Actas",
+        "minutes": "Protocolo",
         "notebooks": "Notas personales",
         "correspondence": "Cartas",
-        "travelwriting": "Narraciones de viajes"
+        "travelwriting": "Narraciones de viajes",
+        "records": "Registros"
     },
     "form": {
         "manuscript": "Manuscritos",

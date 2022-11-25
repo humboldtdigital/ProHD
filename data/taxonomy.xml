@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -36,7 +36,7 @@
                   </category>
                   <category xml:id="minutes">
                     <catDesc xml:lang="en">Minutes</catDesc>
-                     <catDesc xml:lang="es">Actas</catDesc>
+                     <catDesc xml:lang="es">Protocolos</catDesc>
                      <catDesc xml:lang="de">Protokolle</catDesc>
                   </category>
                   <category xml:id="notebooks">
@@ -48,6 +48,11 @@
                      <catDesc xml:lang="en">Travel Writing</catDesc>
                      <catDesc xml:lang="es">Narraciones de viajes</catDesc>
                      <catDesc xml:lang="de">Reiseberichte</catDesc>
+                  </category>
+                  <category xml:id="records">
+                     <catDesc xml:lang="en">Records</catDesc>
+                     <catDesc xml:lang="es">Registros</catDesc>
+                     <catDesc xml:lang="de">Akte</catDesc>
                   </category>
                </category>
                <category xml:id="form">
@@ -169,4 +174,4 @@
          <p/>
       </body>
    </text>
-</TEI>
+</tei:TEI>

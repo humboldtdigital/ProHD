@@ -1,6 +1,4 @@
-<?teipublisher odd="docbook.odd" template="documentation.html" depth="3" view="div" ?><?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?>
-<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="5.0">
+<?teipublisher odd="docbook.odd" template="documentation.html" depth="3" view="div" ?><?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
       <title>Criterios de codificación TEI</title>
       <copyright>
@@ -53,106 +51,106 @@
          </itemizedlist>Estos metadatos han sido aplicados a todo tipo de texto (documento, carta,
          etc.).</para>
       <para>La estructura de un encabezado TEI de un documento genérico es la
-         siguiente:<programlisting language="xml">&lt;teiHeader>
-        &lt;fileDesc>
-            &lt;titleStmt>
-                &lt;title type="main">[Introducir datos]&lt;/title>
-                &lt;funder ref="https://www.auswaertiges-amt.de/de/">
-                  Auswärtiges Amt&lt;/funder>
-                &lt;funder ref="https://www.fritz-thyssen-stiftung.de/">
-                  Fritz Thyssen Stiftung&lt;/funder>
-                &lt;funder ref="https://www.gerda-henkel-stiftung.de/">
-                  Gerda Henkel Stiftung&lt;/funder>
-                &lt;editor>
-                    &lt;persName>
-                        &lt;surname>[Introducir datos]&lt;/surname>
-                        &lt;forename>[Introducir datos]&lt;/forename>
-                    &lt;/persName>
-                &lt;/editor>
-            &lt;/titleStmt>
-            &lt;editionStmt>
-                &lt;p>Dossier Digital: Alexander von Humboldt y Cuba (1800-1830). 
-               ProHD (&lt;date>2022–2023&lt;/date>)&lt;/p>
-            &lt;/editionStmt>
-            &lt;publicationStmt>
-                &lt;publisher>Berlin-Brandenburgische Akademie 
-                  der Wissenschaften&lt;/publisher>
-                &lt;publisher>Oficina del Historiador de la Ciudad 
-                  de la Habana&lt;/publisher>
-                &lt;pubPlace>Berlín&lt;/pubPlace>
-                &lt;pubPlace>La Habana&lt;/pubPlace>
-                &lt;availability status="free">
-                &lt;licence target="http://creativecommons.org/licenses/by/4.0/">
-                     Creative Commons (CC BY 4.0)&lt;/licence>
-                &lt;/availability>
-            &lt;/publicationStmt>
-            &lt;sourceDesc>
-                &lt;msDesc rend="manuscript">
-                    &lt;msIdentifier>
-                        &lt;institution>[Introducir datos]&lt;/institution>
-                        &lt;collection>[Introducir datos]&lt;/collection>
-                        &lt;idno>
-                            &lt;idno type="shelfmark">[Introducir datos]&lt;/idno>
-                            &lt;idno type="uri">[Introducir datos]&lt;/idno>
-                        &lt;/idno>
-                    &lt;/msIdentifier>
-                    &lt;physDesc>&lt;p>[Introducir datos]&lt;/p>&lt;/physDesc>
-                &lt;/msDesc>
-            &lt;/sourceDesc>
-        &lt;/fileDesc>
-        &lt;profileDesc>
-            &lt;creation>[Introducir datos]&lt;/creation>
-            &lt;langUsage>
-                &lt;language ident="">[Introducir datos]&lt;/language>
-            &lt;/langUsage>
-            &lt;abstract xml:lang="es">
-                &lt;p>[Introducir datos]&lt;/p>
-            &lt;/abstract>
-            &lt;abstract xml:lang="de">
-                &lt;p>[Introducir datos]&lt;/p>
-            &lt;/abstract>
-            &lt;textClass>
-                &lt;catRef>&lt;/catRef>
-            &lt;/textClass>
-        &lt;/profileDesc>
-        &lt;encodingDesc>
-            &lt;classDecl>
-                    &lt;taxonomy xml:id="pb-taxonomy">
-                        &lt;category xml:id="genre">
-                            &lt;category xml:id="correspondence"/>
-                            &lt;category xml:id="diaries"/>
-                            &lt;category xml:id="essays"/>
-                            &lt;category xml:id="notebooks"/>
-                            &lt;category xml:id="travelwriting"/>
-                        &lt;/category>
-                        &lt;category xml:id="form">
-                            &lt;category xml:id="manuscript"/>
-                            &lt;category xml:id="print"/>
-                        &lt;/category>
-                        &lt;category xml:id="subjects">
-                            &lt;category xml:id="administration"/>
-                            &lt;category xml:id="climatology"/>
-                            &lt;category xml:id="coffee"/>
-                            &lt;category xml:id="colonialism"/>
-                            &lt;category xml:id="demography"/>
-                            &lt;category xml:id="economicconditions"/>
-                            &lt;category xml:id="education"/>
-                            &lt;category xml:id="emancipation"/>
-                            &lt;category xml:id="factories"/>
-                            &lt;category xml:id="geography"/>
-                            &lt;category xml:id="medicine"/>
-                            &lt;category xml:id="plantations"/>
-                            &lt;category xml:id="science"/>
-                            &lt;category xml:id="scientificexpedition"/>
-                            &lt;category xml:id="sugar"/>
-                            &lt;category xml:id="slavery"/>
-                            &lt;category xml:id="tobacco"/>
-                            &lt;category xml:id="trade"/>
-                        &lt;/category>
-                    &lt;/taxonomy>
-            &lt;/classDecl>
-        &lt;/encodingDesc>
-&lt;/teiHeader></programlisting></para>
+         siguiente:<programlisting language="xml">&lt;teiHeader&gt;
+        &lt;fileDesc&gt;
+            &lt;titleStmt&gt;
+                &lt;title type="main"&gt;[Introducir datos]&lt;/title&gt;
+                &lt;funder ref="https://www.auswaertiges-amt.de/de/"&gt;
+                  Auswärtiges Amt&lt;/funder&gt;
+                &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&gt;
+                  Fritz Thyssen Stiftung&lt;/funder&gt;
+                &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&gt;
+                  Gerda Henkel Stiftung&lt;/funder&gt;
+                &lt;editor&gt;
+                    &lt;persName&gt;
+                        &lt;surname&gt;[Introducir datos]&lt;/surname&gt;
+                        &lt;forename&gt;[Introducir datos]&lt;/forename&gt;
+                    &lt;/persName&gt;
+                &lt;/editor&gt;
+            &lt;/titleStmt&gt;
+            &lt;editionStmt&gt;
+                &lt;p&gt;Dossier Digital: Alexander von Humboldt y Cuba (1800-1830). 
+               ProHD (&lt;date&gt;2022–2023&lt;/date&gt;)&lt;/p&gt;
+            &lt;/editionStmt&gt;
+            &lt;publicationStmt&gt;
+                &lt;publisher&gt;Berlin-Brandenburgische Akademie 
+                  der Wissenschaften&lt;/publisher&gt;
+                &lt;publisher&gt;Oficina del Historiador de la Ciudad 
+                  de la Habana&lt;/publisher&gt;
+                &lt;pubPlace&gt;Berlín&lt;/pubPlace&gt;
+                &lt;pubPlace&gt;La Habana&lt;/pubPlace&gt;
+                &lt;availability status="free"&gt;
+                &lt;licence target="http://creativecommons.org/licenses/by/4.0/"&gt;
+                     Creative Commons (CC BY 4.0)&lt;/licence&gt;
+                &lt;/availability&gt;
+            &lt;/publicationStmt&gt;
+            &lt;sourceDesc&gt;
+                &lt;msDesc rend="manuscript"&gt;
+                    &lt;msIdentifier&gt;
+                        &lt;institution&gt;[Introducir datos]&lt;/institution&gt;
+                        &lt;collection&gt;[Introducir datos]&lt;/collection&gt;
+                        &lt;idno&gt;
+                            &lt;idno type="shelfmark"&gt;[Introducir datos]&lt;/idno&gt;
+                            &lt;idno type="uri"&gt;[Introducir datos]&lt;/idno&gt;
+                        &lt;/idno&gt;
+                    &lt;/msIdentifier&gt;
+                    &lt;physDesc&gt;&lt;p&gt;[Introducir datos]&lt;/p&gt;&lt;/physDesc&gt;
+                &lt;/msDesc&gt;
+            &lt;/sourceDesc&gt;
+        &lt;/fileDesc&gt;
+        &lt;profileDesc&gt;
+            &lt;creation&gt;[Introducir datos]&lt;/creation&gt;
+            &lt;langUsage&gt;
+                &lt;language ident=""&gt;[Introducir datos]&lt;/language&gt;
+            &lt;/langUsage&gt;
+            &lt;abstract xml:lang="es"&gt;
+                &lt;p&gt;[Introducir datos]&lt;/p&gt;
+            &lt;/abstract&gt;
+            &lt;abstract xml:lang="de"&gt;
+                &lt;p&gt;[Introducir datos]&lt;/p&gt;
+            &lt;/abstract&gt;
+            &lt;textClass&gt;
+                &lt;catRef&gt;&lt;/catRef&gt;
+            &lt;/textClass&gt;
+        &lt;/profileDesc&gt;
+        &lt;encodingDesc&gt;
+            &lt;classDecl&gt;
+                    &lt;taxonomy xml:id="pb-taxonomy"&gt;
+                        &lt;category xml:id="genre"&gt;
+                            &lt;category xml:id="correspondence"/&gt;
+                            &lt;category xml:id="diaries"/&gt;
+                            &lt;category xml:id="essays"/&gt;
+                            &lt;category xml:id="notebooks"/&gt;
+                            &lt;category xml:id="travelwriting"/&gt;
+                        &lt;/category&gt;
+                        &lt;category xml:id="form"&gt;
+                            &lt;category xml:id="manuscript"/&gt;
+                            &lt;category xml:id="print"/&gt;
+                        &lt;/category&gt;
+                        &lt;category xml:id="subjects"&gt;
+                            &lt;category xml:id="administration"/&gt;
+                            &lt;category xml:id="climatology"/&gt;
+                            &lt;category xml:id="coffee"/&gt;
+                            &lt;category xml:id="colonialism"/&gt;
+                            &lt;category xml:id="demography"/&gt;
+                            &lt;category xml:id="economicconditions"/&gt;
+                            &lt;category xml:id="education"/&gt;
+                            &lt;category xml:id="emancipation"/&gt;
+                            &lt;category xml:id="factories"/&gt;
+                            &lt;category xml:id="geography"/&gt;
+                            &lt;category xml:id="medicine"/&gt;
+                            &lt;category xml:id="plantations"/&gt;
+                            &lt;category xml:id="science"/&gt;
+                            &lt;category xml:id="scientificexpedition"/&gt;
+                            &lt;category xml:id="sugar"/&gt;
+                            &lt;category xml:id="slavery"/&gt;
+                            &lt;category xml:id="tobacco"/&gt;
+                            &lt;category xml:id="trade"/&gt;
+                        &lt;/category&gt;
+                    &lt;/taxonomy&gt;
+            &lt;/classDecl&gt;
+        &lt;/encodingDesc&gt;
+&lt;/teiHeader&gt;</programlisting></para>
       
       <section>
          <title>Título</title>
@@ -199,18 +197,18 @@
    &lt;/persName&gt; 
 &lt;/editor&gt;     </programlisting></para>
          <para>Si hay más de una editora o editor, se ha repetido el elemento <tag>editor</tag>. Por
-            ejemplo: <programlisting language="xml" xml:space="preserve">&lt;editor>
-                    &lt;persName>
-                        &lt;surname>Tylus&lt;/surname>
-                        &lt;forename>Piotr&lt;/forename>
-                    &lt;/persName>
-                &lt;/editor>
-                &lt;editor>
-                    &lt;persName>
-                        &lt;surname>Kraller&lt;/surname>
-                        &lt;forename>Kathrin&lt;/forename>
-                    &lt;/persName>
-                &lt;/editor></programlisting></para>
+            ejemplo: <programlisting language="xml" xml:space="preserve">&lt;editor&gt;
+                    &lt;persName&gt;
+                        &lt;surname&gt;Tylus&lt;/surname&gt;
+                        &lt;forename&gt;Piotr&lt;/forename&gt;
+                    &lt;/persName&gt;
+                &lt;/editor&gt;
+                &lt;editor&gt;
+                    &lt;persName&gt;
+                        &lt;surname&gt;Kraller&lt;/surname&gt;
+                        &lt;forename&gt;Kathrin&lt;/forename&gt;
+                    &lt;/persName&gt;
+                &lt;/editor&gt;</programlisting></para>
          <para>Si en la edición han participado otras personas con tareas menores, se ha incluido el
             nombre de los colaboradores y colaboradoras con el elemento <tag>respStmt</tag>
                (<quote>statement of responsibility</quote> – declaración de responsabilidad).
@@ -427,8 +425,7 @@
                   <para>Impreso</para>
                </listitem>
             </itemizedlist>
-            <para>Cuando se utilizan más de una fuente textual, se ha seleccionado <emphasis
-                  role="bold">un único</emphasis> documento como base textual. Los demás testimonios
+            <para>Cuando se utilizan más de una fuente textual, se ha seleccionado <emphasis role="bold">un único</emphasis> documento como base textual. Los demás testimonios
                textuales se han mencionado explícitamente en la edición sólo en los lugares que
                transmiten variantes mediante un comentario editorial.</para>
             <para>Si la existencia y el contenido de un documento se han deducido con la ayuda de
@@ -616,10 +613,10 @@
             "fr" para el francés, etc.</para>
          <para>Si el texto contiene partes sustanciales en otro idioma, se ha repetido elemento
                <tag>language</tag> para codificar la lengua secundaria. Por
-            ejemplo:<programlisting language="xml" xml:space="preserve">&lt;langUsage>
-     &lt;language ident="es">Español&lt;/language>
-     &lt;language ident="fr">Francés&lt;/language>
-&lt;/langUsage></programlisting></para>
+            ejemplo:<programlisting language="xml" xml:space="preserve">&lt;langUsage&gt;
+     &lt;language ident="es"&gt;Español&lt;/language&gt;
+     &lt;language ident="fr"&gt;Francés&lt;/language&gt;
+&lt;/langUsage&gt;</programlisting></para>
       </section>
       <section>
          <title>Resumen</title>
@@ -810,7 +807,7 @@
                <programlisting language="xml" xml:space="preserve">&lt;closer&gt;
    &lt;signed&gt; Benigno Duque &lt;choice&gt;
              &lt;orig&gt;deHeredia&lt;/orig&gt;
-             &lt;reg>de Heredia&lt;/reg&gt;
+             &lt;reg&gt;de Heredia&lt;/reg&gt;
            &lt;/choice&gt;&lt;/signed&gt; 
    &lt;signed&gt;Ylincheta&lt;/signed&gt;
 &lt;/closer&gt;                 </programlisting></para>
