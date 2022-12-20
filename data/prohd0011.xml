@@ -2,8 +2,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Fièvre jaune 2 [in: C’est mon cahier de la Havane intitule sur la
-                    salubrite de l’air]</title>
+                <title type="main">Fièvre jaune 2</title>
                 <editor>
                     <persName>
                         <surname>Kraller</surname>
@@ -19,8 +18,10 @@
                         (<date>2020</date>)</p>
             </editionStmt>
             <publicationStmt>
-                <publisher><ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
-                        Wissenschaften (BBAW)</ref></publisher>
+                <publisher>
+                    <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
+                        Wissenschaften (BBAW)</ref>
+                </publisher>
                 <pubPlace ref="http://www.geonames.org/2950159">Berlín</pubPlace>
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -38,6 +39,7 @@
                             <idno type="URLImages">http://jbc.bj.uj.edu.pl/dlibra/publication/363975</idno>
                             <!-- the JBC site server is currently down, as of Aug 26, 2022, but this is hopefully temporary, the URL is ok -->
                         </idno>
+                        <msName>C’est mon cahier de la Havane intitule sur la salubrite de l’air</msName>
                     </msIdentifier>
                 </msDesc>
             </sourceDesc>
@@ -113,11 +115,14 @@
         <body>
             <div>
                 <pb n="193r" facs="prohd0011_193r.tif"/>
-                <head><hi rendition="#u">Fièvre jaune</hi>
+                <head>
+                    <hi rendition="#u">Fièvre jaune</hi>
                 </head>
-                <p><note place="left" hand="#author">Aréjula breve descripción de <lb/>la fiebre
+                <p>
+                    <note place="left" hand="#author">Aréjula breve descripción de <lb/>la fiebre
                         amarilla padecida <lb/>en Cádiz en 1800 en Medina <lb/>Sidonia en 1801. en
-                        Málaga <lb/>en 1803. y 1804.<lb/></note>
+                        Málaga <lb/>en 1803. y 1804.<lb/>
+                    </note>
                     <lb/>1. Il y eut vomito negro à Cádiz au commen<lb break="no"/>cement du 18<hi rendition="#sup">ème </hi> siècle, puis 1733, <lb/>1734. 1764. (A <choice>
                         <abbr>p</abbr>
                         <expan>page</expan>
@@ -144,7 +149,8 @@
                     <choice>
                         <abbr>j.</abbr>
                         <expan>jaune</expan>
-                    </choice> annuellement<supplied cert="high">.</supplied></p>
+                    </choice> annuellement<supplied cert="high">.</supplied>
+                </p>
             </div>
         </body>
     </text>
