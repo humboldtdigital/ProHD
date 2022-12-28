@@ -101,7 +101,7 @@ footer {
 
 #footerGray p {
     font-family: Montserrat;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 12px;
     padding-top: 0.5em;
 }
@@ -113,6 +113,7 @@ footer {
     background-color: #008F8F;
     position: relative;
     overflow: hidden;
+    font-weight: 500;
 }
  
 p.license,
