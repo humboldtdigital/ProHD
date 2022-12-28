@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
@@ -126,8 +126,12 @@
                             <div class="card-content">
                                 <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" submit-on-load="submit-on-load">
                                     <div class="targets">
-                                        <paper-checkbox name="field" value="text"><pb-i18n key="search.sections">Search sections</pb-i18n></paper-checkbox>
-                                        <paper-checkbox name="field" value="head"><pb-i18n key="search.headings">Search headings</pb-i18n></paper-checkbox>
+                                        <paper-checkbox name="field" value="text">
+                                            <pb-i18n key="search.sections">Search sections</pb-i18n>
+                                        </paper-checkbox>
+                                        <paper-checkbox name="field" value="head">
+                                            <pb-i18n key="search.headings">Search headings</pb-i18n>
+                                        </paper-checkbox>
                                     </div>
                                     <pb-custom-form id="facets" url="api/search/facets" subscribe="results" event="pb-results-received" emit="search"/>
                                 </pb-search>
@@ -141,18 +145,18 @@
                                 <pb-i18n key="footer.funded"/>
                             </p>
                         <a href="https://www.auswaertiges-amt.de/">
-                                <img src="resources/images/aa.svg" class="funder1"/>
+                                <img alt="logo of Auswärtiges Amt" src="resources/images/aa.svg" class="funder1"/>
                             </a>
                         <a href="https://www.fritz-thyssen-stiftung.de/">
-                                <img src="resources/images/thyssen.svg" class="funder2"/>
+                                <img alt="logo of Fritz Thyssen institute" src="resources/images/thyssen.svg" class="funder2"/>
                             </a>
                         <a href="https://www.gerda-henkel-stiftung.de/">
-                                <img src="resources/images/gerdahenkel.svg" class="funder3"/>
+                                <img alt="logo of Gerda Henkel institue" src="resources/images/gerdahenkel.svg" class="funder3"/>
                             </a>
                     </div>    
                     <div id="footerGreen">
                         <a href="https://e-editiones.org/">
-                                <img src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                                <img alt="logo of powered by e-editiones" src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
                             </a>
                         <p class="version">App: v<span data-template="pages:version"/>web components: v<pb-version/>
                             </p>
@@ -160,7 +164,7 @@
                                 <pb-i18n key="footer.license"/>
                             </p>
                         <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
-                                <img src="resources/images/cc.svg" class="cc"/>
+                                <img alt="logo of creative commons license By" src="resources/images/cc.svg" class="cc"/>
                             </a>
                     </div>
                 </footer>

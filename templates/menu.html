@@ -1,10 +1,14 @@
 <app-toolbar class="menubar">
        <a href="${app}/index.html" class="logo" data-template="pages:parse-params">
-         <img src="resources/images/logopositivo.svg"/>
+         <img alt="logo of Proyecto Humboldt Digital" src="resources/images/logopositivo.svg"/>
     </a>   
     <pb-media-query query="min-width: 1024px">
-        <a href="${app}/about.xml" data-template="pages:parse-params"><pb-i18n key="menu.about"/></a>
-        <a href="${app}/team.xml" data-template="pages:parse-params"><pb-i18n key="menu.team"/></a>
+        <a href="${app}/about.xml" data-template="pages:parse-params">
+            <pb-i18n key="menu.about"/>
+        </a>
+        <a href="${app}/team.xml" data-template="pages:parse-params">
+            <pb-i18n key="menu.team"/>
+        </a>
         
     <!-- deleted by ARC -->
        <!-- <paper-menu-button>
