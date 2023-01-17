@@ -109,8 +109,9 @@
                auf einem Cantaloupe Image Server (v. 5.0.5).</p>
             <p>Die Entwicklung des Frameworks ediarum.PROHD.edit und dieser Webanwendung wurde von
                Antonio Rojas Castro in Zusammenarbeit mit Violeta López durchgeführt. Ihre
-               technischen Fragen und Anmerkungen können Sie an antonio.rojas-castro [at] bbaw.de
+               technischen Fragen und Anmerkungen können Sie an antonio.rojas-castro at bbaw.de
                richten.</p>
+            <p>Was die Barrierefreiheit dieser Website betrifft, so wurde der WCAG 2.1-Standard berücksichtigt. Wenn Sie Probleme mit der Barrierefreiheit haben oder Verbesserungsvorschläge machen möchten, kontaktieren Sie uns bitte.</p>   
          </div>
          <div>
             <head>Copyright</head>
@@ -133,6 +134,17 @@
                   Dossier: Alexander von Humboldt und Kuba (1800-1830)</title>, Kathrin Kraller
                (Ed.), Berlin-Brandenburgische Akademie der Wissenschaften und Oficina del
                Historiador de la Ciudad de la Habana, 2021.</p>
+         </div>
+         <div>
+            <head>Kontakt</head>
+            <p>For general questions about the project, please contact:</p>
+            <p>Tobias Kraft<lb/>
+            Berlin-Brandenburg Academy of Sciences<lb/>
+            tobias.kraft at bbaw.de</p>
+            <p>For technical questions, please contact:</p>
+            <p>Eritk Guerra<lb/>
+            Oficina del Historiador de La Ciudad de La Habana<lb/>
+            eritk at dic.ohc.cu</p>
          </div>
       </body>
    </text>

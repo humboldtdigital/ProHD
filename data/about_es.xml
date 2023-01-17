@@ -113,8 +113,9 @@
                Server (v. 5.0.5).</p>
             <p>El desarrollo del <foreign xml:lang="eng">framework</foreign> ediarum.PROHD.edit y de
                esta aplicación web ha sido realizado por Antonio Rojas Castro con la colaboración de
-               Violeta López; puede dirigir sus consultas técnicas a antonio.rojas-castro [at]
+               Violeta López; puede dirigir sus consultas técnicas a antonio.rojas-castro at
                bbaw.de.</p>
+               <p>Sobre la accesibilidad de esta web, se ha tenido en cuenta la norma WCAG 2.1. Si encuentra problemas de accesibilidad o tiene sugerencias de mejora, por favor, póngase en contacto con nosotros.</p>
          </div>
          <div>
             <head>Licencia de uso</head>
@@ -137,6 +138,17 @@
                   Alexander von Humboldt y Cuba (1800-1830)</title>, Kathrin Kraller (ed.),
                Berlin-Brandenburgische Akademie der Wissenschaften y Oficina del Historiador de la
                Ciudad de la Habana, 2021.</p>
+         </div>
+          <div>
+            <head>Contacto</head>
+            <p>Para preguntas generales sobre el proyecto, póngase en contacto con:</p>
+            <p>Tobias Kraft<lb/>
+            Academia de Ciencias y Humanidades de Berlín-Brandeburgo<lb/>
+            tobias.kraft at bbaw.de</p>
+            <p>Para cuestiones técnicas, póngase en contacto con:</p>
+            <p>Eritk Guerra<lb/>
+            Oficina del Historiador de La Ciudad de La Habana<lb/>
+            eritk arroba dic.ohc.cu</p>
          </div>
       </body>
    </text>

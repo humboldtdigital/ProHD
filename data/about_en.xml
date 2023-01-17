@@ -101,7 +101,7 @@
                documentation available in <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">German</ref> and <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">Spanish</ref>.</p>
             <p>This web application has been built with <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.), <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
                5.2.0.) and Cantaloupe Image Server (v. 5.0.5).
-               <!-- please check if this is still up to date --> An ODD (prohd.xml) is used to style
+            An ODD (prohd.xml) is used to style
                the editions and static pages and two templates (prohd.html, view-grid-prohd.html)
                are used to build the graphical user interface with web components. A copy of the
                files that make up the web application is available at the <ref target="https://github.com/humboldtdigital/ProHD">project's Github
@@ -110,7 +110,8 @@
                   <ref target="https://iiif.io/">IIIF</ref>'s API.</p>
             <p>The development of the framework ediarum.PROHD.edit and of this web application has
                been carried out by Antonio Rojas Castro with the collaboration of Violeta López.
-               Technical inquiries can be directed to antonio.rojas-castro [at] bbaw.de.</p>
+               Technical inquiries can be directed to antonio.rojas-castro at bbaw.de.</p>
+               <p>Regarding the accessibility of this website, the WCAG 2.1 standard has been taken into account. If you encounter accessibility problems or have suggestions for improvement, please contact us.</p>
          </div>
          <div>
             <head>Legal aspects</head>
@@ -132,6 +133,17 @@
                   Alexander von Humboldt and Cuba (1800-1830)</title>, Kathrin Kraller (ed.),
                Berlin-Brandenburgische Akademie der Wissenschaften and Oficina del Historiador de la
                Ciudad de la Habana, 2021.</p>
+         </div>
+         <div>
+            <head>Contact</head>
+            <p>For general questions about the project, please contact:</p>
+            <p>Tobias Kraft<lb/>
+            Berlin-Brandenburg Academy of Sciences and Humanities<lb/>
+            tobias.kraft at bbaw.de</p>
+            <p>For technical questions, please contact:</p>
+            <p>Eritk Guerra<lb/>
+            Office of the Historian of the City of Havana<lb/>
+            eritk at dic.ohc.cu</p>
          </div>
       </body>
    </text>
