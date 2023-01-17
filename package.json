@@ -3,6 +3,6 @@
     "@teipublisher/pb-components" : "1.14.0"
   },
   "name" : "ProHD",
-  "version" : "1.0.0",
-  "description" : "Digitales Dossier: Alexander von Humboldt und Kuba (1800-1830)"
+  "version" : "0.2",
+  "description" : "Dossier Digital: Alexander von Humboldt y Cuba (1800-1830)"
 }
