@@ -9,5 +9,5 @@
     <finish>post-install.xql</finish>
     <target>ProHD</target>
     <permissions user="prohd" group="tei" mode="rw-r--r--"/>
-    <deployed>2022-03-09T10:45:47.719+01:00</deployed>
-</meta>
+    
+<deployed>2023-01-17T10:39:44.468+01:00</deployed></meta>
