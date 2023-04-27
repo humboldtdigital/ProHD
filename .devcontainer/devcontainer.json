@@ -1,0 +1,29 @@
+{
+    "name": "ProHD Development Container",
+    "build": {
+        "dockerfile": "Dockerfile.dev",
+        "args": {
+            "HTTP_PORT": "8080",
+            "HTTPS_PORT": "8443",
+            "INSTALL_NODE": "true",
+            "INSTALL_TEXLIVE": "false"
+
+        }
+    },
+    "runArgs": ["--name=ProHD"],
+    "forwardPorts": [ 8080, 8001 ],
+    "customizations": {
+        "vscode": {
+            "extensions": [ "exist-db.existdb-vscode", "42crunch.vscode-openapi", "redhat.vscode-xml" ]
+        }
+    },
+    "overrideCommand": false,
+    "postCreateCommand": [
+        "${containerWorkspaceFolder}/.devcontainer/init.sh"
+    ], 
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "latest"
+        }
+    }
+}
