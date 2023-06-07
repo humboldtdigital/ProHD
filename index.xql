@@ -49,13 +49,13 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                     $root/@xml:lang,
                     $header/@xml:lang
                 ))
-            case "date" return head((
-                $header//tei:correspDesc/tei:correspAction/tei:date/@when,
-                $header//tei:sourceDesc/(tei:bibl|tei:biblFull)/tei:publicationStmt/tei:date,
-                $header//tei:sourceDesc/(tei:bibl|tei:biblFull)/tei:date/@when,
-                $header//tei:fileDesc/tei:editionStmt/tei:edition/tei:date,
-                $header//tei:publicationStmt/tei:date
+            case "date" return
+                let $d := head((
+                $header//tei:profileDesc/tei:creation/tei:date/@when,
+                $header//tei:profileDesc/tei:creation/tei:date/@notAfter,
+                $header//tei:correspDesc/tei:correspAction/tei:date/@when
             ))
+                return tokenize($d, '-')
             case "genre" return
             (: pass the genre id, will be resolved into correct label via i18n :)
                 for $i in $header//tei:textClass/tei:catRef[@scheme="#genre"]/@target return substring($i, 2)
