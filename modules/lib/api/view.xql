@@ -4,16 +4,12 @@ module namespace vapi="http://teipublisher.com/api/view";
 
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "../../config.xqm";
 import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "../util.xql";
-import module namespace errors = "http://exist-db.org/xquery/router/errors";
-import module namespace templates="http://exist-db.org/xquery/templates";
+import module namespace errors = "http://e-editiones.org/roaster/errors";
+import module namespace templates="http://exist-db.org/xquery/html-templating";
+import module namespace lib="http://exist-db.org/xquery/html-templating/lib" at "../templates-lib.xql";
 import module namespace browse="http://www.tei-c.org/tei-simple/templates" at "../browse.xql";
 import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "../pages.xql";
 import module namespace custom="http://teipublisher.com/api/custom" at "../../custom-api.xql";
-
-declare variable $vapi:template-config := map {
-    $templates:CONFIG_APP_ROOT : $config:app-root,
-    $templates:CONFIG_STOP_ON_ERROR : true()
-};
 
 (:
 : We have to provide a lookup function to templates:apply to help it
@@ -34,41 +30,53 @@ declare function vapi:lookup($name as xs:string, $arity as xs:int) {
     }
 };
 
-declare function vapi:get-template($doc as xs:string, $template as xs:string?, $view as xs:string?) {
+declare function vapi:get-template($config as map(*), $template as xs:string?) {
     if ($template) then
         $template
     else
-        let $document := config:get-document($doc)
-        return
-            if (exists($document)) then
-                let $config := tpu:parse-pi($document, $view)
-                return
-                    $config?template
-            else
-                error($errors:NOT_FOUND, "document " || $doc || " not found")
+        $config?template
+};
+
+declare function vapi:get-config($doc as xs:string, $view as xs:string?) {
+    let $document := config:get-document($doc)
+    return
+        if (exists($document)) then
+            tpu:parse-pi(root($document), $view)
+        else
+            error($errors:NOT_FOUND, "document " || $doc || " not found")
 };
 
 declare function vapi:view($request as map(*)) {
-    let $path := 
+    let $path :=
         if ($request?parameters?suffix) then 
-            xmldb:decode($request?parameters?doc) || $request?parameters?suffix
+            xmldb:decode($request?parameters?docid) || $request?parameters?suffix
         else
-            xmldb:decode($request?parameters?doc)
-    let $templateName := head((vapi:get-template($path, $request?parameters?template, $request?parameters?view), $config:default-template))
-    let $templatePath := $config:app-root || "/templates/pages/" || $templateName
+            xmldb:decode($request?parameters?docid)
+    let $config :=
+        if ($request?parameters?suffix = '.md') then
+            map {}
+        else 
+            vapi:get-config($path, $request?parameters?view)
+    let $templateName := head((vapi:get-template($config, $request?parameters?template), $config:default-template))
+    let $templatePaths := ($config:app-root || "/templates/pages/" || $templateName, $config:app-root || "/templates/" || $templateName)
     let $template :=
-        if (doc-available($templatePath)) then
-            doc($templatePath)
-        else
-            error($errors:NOT_FOUND, "template " || $templatePath || " not found")
-    let $model := map { 
-        "doc": $path,
-        "template": $templateName,
-        "odd": $request?parameters?odd,
-        "view": $request?parameters?view
-    }
+        for-each($templatePaths, function($path) {
+            if (doc-available($path)) then
+                doc($path)
+            else
+                ()
+        }) => head()
     return
-        templates:apply($template, vapi:lookup#2, $model, $vapi:template-config)
+        if (not($template)) then
+            error($errors:NOT_FOUND, "template " || $templateName || " not found")
+        else
+            let $model := map { 
+                "doc": $path,
+                "template": $templateName,
+                "media": if (map:contains($config, 'media')) then $config?media else ()
+            }
+            return
+                templates:apply($template, vapi:lookup#2, $model, tpu:get-template-config($request))
 };
 
 declare function vapi:html($request as map(*)) {
@@ -79,12 +87,12 @@ declare function vapi:html($request as map(*)) {
         else
             error($errors:NOT_FOUND, "HTML file " || $path || " not found")
     return
-        templates:apply($template, vapi:lookup#2, (), $vapi:template-config)
+        templates:apply($template, vapi:lookup#2, (), tpu:get-template-config($request))
 };
 
 declare function vapi:handle-error($error) {
     let $path := $config:app-root || "/templates/error-page.html"
     let $template := doc($path)
     return
-        templates:apply($template, vapi:lookup#2, map { "description": $error }, $vapi:template-config)
+        templates:apply($template, vapi:lookup#2, map { "description": $error?description }, $tpu:template-config)
 };

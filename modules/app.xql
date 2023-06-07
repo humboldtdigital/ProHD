@@ -1,6 +1,6 @@
 xquery version "3.1";
 
-(: 
+(:
  : Module for app-specific template functions
  :
  : Add your own templating functions here, e.g. if you want to extend the template used for showing
@@ -11,7 +11,7 @@ module namespace app="teipublisher.com/app";
 import module namespace templates="http://exist-db.org/xquery/templates";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
 import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "../pages.xql";
-import module namespace errors = "http://exist-db.org/xquery/router/errors";
+import module namespace errors = "http://e-editiones.org/roaster/errors";
 import module namespace mapping="http://www.tei-c.org/tei-simple/components/map" at "map.xql";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation" at "navigation.xql";
 import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at "pm-config.xql";
@@ -26,16 +26,16 @@ function app:foo($node as node(), $model as map(*)) {
 
 declare function app:table-of-contents($request as map(*)) {
     let $doc := xmldb:decode-uri($request?parameters?id)
-       
+
     let $language := request:get-parameter('language', 'de')
 
-       
+
     let $view := head(($request?parameters?view, $config:default-view))
     let $xml := pages:load-xml($view, (), $doc)
 
     let $toc := if (exists($xml)) then
                 app:toc-div(root($xml?data), $xml, $request?parameters?target, $request?parameters?icons, $language)
-            else 
+            else
                 ()
 
     return
@@ -47,7 +47,7 @@ declare function app:table-of-contents($request as map(*)) {
 
 declare function app:toc-div($node, $model as map(*), $target as xs:string?,
     $icons as xs:boolean?, $language as xs:string?) {
-    
+
     let $language := ($language, 'de')[1]
 
     let $view := $model?config?view
@@ -61,9 +61,9 @@ declare function app:toc-div($node, $model as map(*), $target as xs:string?,
             let $headings := $heads/node()
 
             let $translated :=  mapping:prohd-document-translation($heads, map {"language": $language})
-            
+
             let $html :=
-                if ($translated) then 
+                if ($translated) then
                     $translated/string()
 
                 else if ($headings/*) then

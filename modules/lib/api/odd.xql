@@ -7,13 +7,12 @@ declare namespace pb="http://teipublisher.com/1.0";
 
 declare default element namespace "http://www.tei-c.org/ns/1.0";
 
-import module namespace router="http://exist-db.org/xquery/router";
-import module namespace errors = "http://exist-db.org/xquery/router/errors";
+import module namespace router="http://e-editiones.org/roaster";
+import module namespace errors = "http://e-editiones.org/roaster/errors";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "../../config.xqm";
 import module namespace pmu="http://www.tei-c.org/tei-simple/xquery/util";
 import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "../util.xql";
 import module namespace odd="http://www.tei-c.org/tei-simple/odd2odd";
-import module namespace dbutil = "http://exist-db.org/xquery/dbutil";
 
 declare variable $oapi:EXIDE :=
     let $path := collection(repo:get-root())//expath:package[@name = "http://exist-db.org/apps/eXide"]
@@ -74,7 +73,8 @@ declare function oapi:recompile($request as map(*)) {
                     $outputRoot,
                     $module,
                     $outputPrefix,
-                    $oddConfig)
+                    $oddConfig,
+                    $module = "web")
                 let $file := $output?module
                 return
                     if ($output?error) then
@@ -122,26 +122,24 @@ declare function oapi:recompile($request as map(*)) {
 
 declare function oapi:list-odds($request as map(*)) {
     array {
-        dbutil:scan-resources(xs:anyURI($config:odd-root), function ($resource) {
-            if (ends-with($resource, ".odd")) then
-                let $name := replace($resource, "^.*/([^/\.]+)\..*$", "$1")
-                let $displayName := (
-                    doc($resource)/TEI/teiHeader/fileDesc/titleStmt/title[@type = "short"]/string(),
-                    doc($resource)/TEI/teiHeader/fileDesc/titleStmt/title/text(),
-                    $name
-                )[1]
-                let $description :=  doc($resource)/TEI/teiHeader/fileDesc/titleStmt/title/desc/string()
-                return
-                    map {
-                        "name": $name,
-                        "label": $displayName,
-                        "description": $description,
-                        "path": $resource,
-                        "canWrite": sm:has-access(xs:anyURI($resource), "rw-")
-                    }
-            else
-                ()
-        })
+        for $doc in xmldb:get-child-resources(xs:anyURI($config:odd-root))
+        let $resource := $config:odd-root || "/" || $doc
+        where ends-with($resource, ".odd")
+        let $name := replace($resource, "^.*/([^/\.]+)\..*$", "$1")
+        let $displayName := (
+            doc($resource)/TEI/teiHeader/fileDesc/titleStmt/title[@type = "short"]/string(),
+            doc($resource)/TEI/teiHeader/fileDesc/titleStmt/title/text(),
+            $name
+        )[1]
+        let $description :=  doc($resource)/TEI/teiHeader/fileDesc/titleStmt/title/desc/string()
+        return
+            map {
+                "name": $name,
+                "label": $displayName,
+                "description": $description,
+                "path": $resource,
+                "canWrite": sm:has-access(xs:anyURI($resource), "rw-")
+            }
     }
 };
 
@@ -217,17 +215,17 @@ return
         let $oddPath := analyze-string($request?parameters?odd, '\.odd')//fn:non-match/string()
 
         let $updated := oapi:update($odd, $request?body, $odd) => oapi:normalize-ns()
-
+    
         let $stored := xmldb:store($root, $request?parameters?odd, $updated, "text/xml")
 
         let $report := oapi:recompile($request)
 
-        return
+        return 
             router:response(201, "application/json", map {
                 "path": $stored,
                 "report": $report
             })
-    else
+    else 
             router:response(401, "application/json", map {
                 "status": "denied",
                 "path": $request?parameters?odd,
@@ -237,14 +235,15 @@ return
 };
 
 declare %private function oapi:compile($odd) {
-    for $module in ("web", "print", "latex", "epub")
+    for $module in ("web", "print", "latex", "epub", "fo")
     let $result :=
         pmu:process-odd(
             odd:get-compiled($config:odd-root, $odd || ".odd"),
             $config:output-root,
             $module,
             $config:output,
-            $config:module-config
+            $config:module-config,
+            $module = "web"
         )
     return
         ()
@@ -261,6 +260,7 @@ declare %private function oapi:models($spec as element()) {
                 "behaviour": $model/@behaviour/string(),
                 "predicate": $model/@predicate/string(),
                 "css": $model/@cssClass/string(),
+                "mode": if ($model/@pb:mode) then $model/@pb:mode/string() else '',
                 "sourcerend": $model/@useSourceRendition = 'true',
                 "renditions": oapi:renditions($model),
                 "parameters": oapi:parameters($model),
@@ -277,6 +277,13 @@ declare %private function oapi:parameters($model as element()) {
             map {
                 "name": $param/@name/string(),
                 "value": $param/@value/string()
+            },
+        for $param in $model/pb:set-param
+        return
+            map {
+                "name": $param/@name/string(),
+                "value": $param/@value/string(),
+                "set": true()
             }
     }
 };
@@ -368,7 +375,7 @@ declare function oapi:get-odd($request as map(*)) {
 
 declare function oapi:lint($request as map(*)) {
     let $code := $request?parameters?code
-    let $query := ``[xquery version "3.1";declare variable $parameters := map {};declare variable $node := ();declare variable $get := (); () ! (
+    let $query := ``[xquery version "3.1";declare variable $parameters := map {};declare variable $mode := '';declare variable $node := ();declare variable $get := (); () ! (
 `{$code}`
 )]``
     let $r := util:compile-query($query, ())
@@ -492,7 +499,7 @@ declare %private function oapi:normalize-ns($nodes as node()*) {
                     $node/@*,
                     oapi:normalize-ns($node/node())
                 }
-            case element(pb:behaviour) | element(pb:param) return
+            case element(pb:behaviour) | element(pb:param) | element(pb:set-param) return
                 element { node-name($node) } {
                     $node/@*,
                     oapi:normalize-ns($node/node())
