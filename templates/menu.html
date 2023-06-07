@@ -1,20 +1,23 @@
 <app-toolbar class="menubar">
        <a href="${app}/index.html" class="logo" data-template="pages:parse-params">
          <img alt="logo of Proyecto Humboldt Digital" src="resources/images/logopositivo.svg"/>
-    </a>   
+    </a>
     <pb-media-query query="min-width: 1024px">
-        <a href="${app}/about.xml" data-template="pages:parse-params">
+        <a href="${app}/articles/about.xml" data-template="pages:parse-params">
             <pb-i18n key="menu.about"/>
         </a>
-        <a href="${app}/team.xml" data-template="pages:parse-params">
+        <a href="${app}/articles/team.xml" data-template="pages:parse-params">
             <pb-i18n key="menu.team"/>
         </a>
-        
+        <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
+            <pb-i18n key="menu.criterios"/>
+        </a>
+
     <!-- deleted by ARC -->
         <!--<paper-menu-button>
             <a href="#" slot="dropdown-trigger" data-i18n="[title]menu.download.title" title="i18n(download)">
                 <pb-i18n key="menu.download.title">Download</pb-i18n>
-            </a> 
+            </a>
             <paper-listbox slot="dropdown-content">
                 <paper-item>
                     <pb-download type="tex" src="document1" dialog="downloadDialog" data-i18n="[title]menu.download.pdf-latex" title="i18n(pdf-latex)">
@@ -49,8 +52,8 @@
             </paper-listbox>
         </paper-menu-button>
         -->
-    
-        
+
+
         <pb-restricted login="login">
             <paper-menu-button>
                 <a href="#" slot="dropdown-trigger">
