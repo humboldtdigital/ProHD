@@ -22,7 +22,7 @@
                     --pb-view-height: calc(100vh - 192px);
                 }
                 
-                }
+                
                 pb-drawer {
                     background-color: #E2F4F1;
                 }
@@ -163,9 +163,21 @@
                         </pb-navigation>
                         
                         <pb-media-query query="min-width: 1024px">
-                            <a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
-                                <paper-icon-button icon="icons:folder-open"/>
-                            </a>
+                            <paper-item>
+                                <a href="${app}/print/${doc}" target="_new" data-template="pages:parse-params" title="Print CSS">
+                                    <iron-icon icon="icons:print"/>
+                                </a>
+                            </paper-item>
+                            <paper-item>
+                                <pb-download type="epub" src="document1" data-i18n="[title]menu.download.epub" dialog="downloadDialog">
+                                    <iron-icon icon="icons:chrome-reader-mode"/>
+                                </pb-download>
+                            </paper-item>
+                            <paper-item>
+                                <pb-edit-xml src="document1" data-i18n="[title]menu.download.view-tei" title="view-tei">
+                                    <iron-icon icon="icons:code"/>
+                                </pb-edit-xml>
+                            </paper-item>
                         </pb-media-query>    
                             
                             <pb-restricted login="login">

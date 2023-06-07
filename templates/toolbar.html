@@ -1,9 +1,9 @@
 <app-toolbar class="toolbar" sticky="sticky">
     <paper-icon-button id="tocToggle" class="toc-toggle" icon="icons:view-list"/>
     <pb-media-query query="min-width: 1024px">
-        <a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
+        <!-- <a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
             <paper-icon-button icon="icons:folder-open"/>
-        </a>
+        </a> -->
     </pb-media-query>   
     <pb-restricted login="login">
         <pb-ajax subscribe="transcription" emit="transcription" url="api/odd" method="post" data-template="pages:parse-params" event="pb-refresh" title="Recompile ODD" data-i18n="[title]menu.admin.recompile">
