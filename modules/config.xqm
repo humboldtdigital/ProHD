@@ -26,7 +26,7 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
  : If a version is given, the components will be loaded from a public CDN.
  : This is recommended unless you develop your own components.
  :)
-declare variable $config:webcomponents :="1.24.20";
+declare variable $config:webcomponents :="2.4.5";
 
 (:~
  : CDN URL to use for loading webcomponents. Could be changed if you created your
@@ -123,7 +123,7 @@ declare variable $config:facets := [
             <pb-i18n key="form.{$label}">{$label}</pb-i18n>
         }
     }
-    , 
+    ,
     map {
         "dimension": "subject",
         "heading": "facets.subject",
@@ -416,7 +416,7 @@ declare variable $config:dts-import-collection := $config:data-default || "/play
  : Change this to support different configurations for different collections or document types.
  : By default this returns a configuration based on the default settings defined
  : by other variables in this module.
- : 
+ :
  : @param $collection relative collection path (i.e. with $config:data-root stripped off)
  : @param $docUri relative document path (including $collection)
  :)
@@ -424,9 +424,9 @@ declare function config:collection-config($collection as xs:string?, $docUri as 
     (: Return empty sequence to use default config :)
     ()
 
-    (: 
+    (:
      : Replace line above with the following code to switch between different view configurations per collection.
-     : $collection corresponds to the relative collection path (i.e. after $config:data-root). 
+     : $collection corresponds to the relative collection path (i.e. after $config:data-root).
      :)
     (:
     switch ($collection)
@@ -455,7 +455,7 @@ declare function config:default-config($docUri as xs:string?) {
         "fill": $config:pagination-fill,
         "template": $config:default-template
     }
-    let $collection := 
+    let $collection :=
         if (exists($docUri)) then
             replace($docUri, "^(.*)/[^/]+$", "$1") => substring-after($config:data-root || "/")
         else
