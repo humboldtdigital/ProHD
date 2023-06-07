@@ -66,7 +66,7 @@ declare function oapi:recompile($request as map(*)) {
             if ($pi?output) then
                 tokenize($pi?output)
             else
-                ("web", "print", "latex", "epub")
+                ("web", "print", "latex", "epub", "fo")
         return
             try {
                 for $output in pmu:process-odd(
@@ -217,17 +217,17 @@ return
         let $oddPath := analyze-string($request?parameters?odd, '\.odd')//fn:non-match/string()
 
         let $updated := oapi:update($odd, $request?body, $odd) => oapi:normalize-ns()
-    
+
         let $stored := xmldb:store($root, $request?parameters?odd, $updated, "text/xml")
 
         let $report := oapi:recompile($request)
 
-        return 
+        return
             router:response(201, "application/json", map {
                 "path": $stored,
                 "report": $report
             })
-    else 
+    else
             router:response(401, "application/json", map {
                 "status": "denied",
                 "path": $request?parameters?odd,
