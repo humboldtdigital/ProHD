@@ -123,8 +123,25 @@ declare variable $config:facets := [
         "output": function($label) {
             <pb-i18n key="form.{$label}">{$label}</pb-i18n>
         }
-    }
-    ,
+    },
+    map {
+        "dimension": "author",
+        "heading": "facets.author",
+        "max": 5,
+        "hierarchical": false()
+    },
+    map {
+        "dimension": "institution",
+        "heading": "facets.institution",
+        "max": 5,
+        "hierarchical": false()
+    },
+    map {
+        "dimension": "date",
+        "heading": "facets.date",
+        "max": 5,
+        "hierarchical": true()
+    },
     map {
         "dimension": "subject",
         "heading": "facets.subject",

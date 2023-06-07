@@ -34,7 +34,10 @@
     },
     "facets":{
     	"form":"Form",
-    	"subject": "Subjects"
+    	"subject": "Subjects",
+        "date": "Date",
+        "institution": "Institution",
+        "author": "Author"
     },
     "languages": {
         "en": "English",

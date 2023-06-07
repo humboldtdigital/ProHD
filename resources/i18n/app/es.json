@@ -34,7 +34,10 @@
     },
     "facets":{
     	"form":"Forma",
-    	"subject": "Materias"
+    	"subject": "Materias",
+        "date": "Fecha",
+        "institution": "Institución",
+        "author": "Autor"
     },
     "languages": {
         "en": "Inglés",

@@ -40,6 +40,9 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 $header//tei:titleStmt/tei:author,
                 $root/dbk:info/dbk:author
             )
+            case "institution" return (
+                $header//tei:msIdentifier/tei:institution
+            )
             case "language" return
                 head((
                     $header//tei:langUsage/tei:language/@ident,
@@ -53,16 +56,16 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 $header//tei:fileDesc/tei:editionStmt/tei:edition/tei:date,
                 $header//tei:publicationStmt/tei:date
             ))
-            case "genre" return 
+            case "genre" return
             (: pass the genre id, will be resolved into correct label via i18n :)
                 for $i in $header//tei:textClass/tei:catRef[@scheme="#genre"]/@target return substring($i, 2)
-            (: Added by ARC on 06.07.2021 :)    
+            (: Added by ARC on 06.07.2021 :)
             case "form" return (
                 for $i in $header//tei:textClass/tei:catRef[@scheme="#form"]/@target return substring($i, 2)
-            ) 
+            )
             case "subject" return (
                 for $i in $header//tei:textClass/tei:catRef[@scheme="#subject"]/@target return substring($i, 2)
-            ) 
+            )
             default return
                 ()
 };
