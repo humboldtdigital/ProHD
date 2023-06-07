@@ -331,24 +331,24 @@ declare variable $config:data-root :=$config:app-root || "/data";
  : The root of the collection hierarchy whose files should be displayed
  : on the entry page. Can be different from $config:data-root.
  :)
-declare variable $config:data-default := $config:data-root;
+declare variable $config:data-default := $config:data-root || '/edition';
 
 (:~
  : A sequence of root elements which should be excluded from the list of
  : documents displayed in the browsing view.
  :)
 declare variable $config:data-exclude := (
-    doc($config:data-root || "/taxonomy.xml")/tei:TEI,
-    doc($config:data-root || "/about.xml")/tei:TEI,
-    doc($config:data-root || "/team.xml")/tei:TEI,
-    doc($config:data-root || "/team_es.xml")/tei:TEI,
-    doc($config:data-root || "/about_es.xml")/tei:TEI,
-    doc($config:data-root || "/team_en.xml")/tei:TEI,
-    doc($config:data-root || "/about_en.xml")/tei:TEI,
-    doc($config:data-root || "/criterios.xml")/tei:TEI,
-    doc($config:data-root || "/prohd.xml")/tei:TEI,
-    doc($config:data-root || "/prohd.rng")/tei:TEI,
-    doc($config:data-root || "/prohd.sch")/tei:TEI
+    doc($config:data-root || "/auxiliary/taxonomy.xml")/tei:TEI,
+    doc($config:data-root || "/articles/about.xml")/tei:TEI,
+    doc($config:data-root || "/articles/about_es.xml")/tei:TEI,
+    doc($config:data-root || "/articles/about_en.xml")/tei:TEI,
+    doc($config:data-root || "/articles/team.xml")/tei:TEI,
+    doc($config:data-root || "/articles/team_es.xml")/tei:TEI,
+    doc($config:data-root || "/articles/team_en.xml")/tei:TEI,
+    doc($config:data-root || "/articles/criterios.xml")/tei:TEI,
+    doc($config:data-root || "/documentation/prohd.xml")/tei:TEI,
+    doc($config:data-root || "/documentation/prohd.rng")/tei:TEI,
+    doc($config:data-root || "/documentation/prohd.sch")/tei:TEI
 );
 
 (:~
