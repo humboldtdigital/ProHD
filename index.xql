@@ -53,7 +53,8 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 let $d := head((
                 $header//tei:profileDesc/tei:creation/tei:date/@when,
                 $header//tei:profileDesc/tei:creation/tei:date/@notAfter,
-                $header//tei:correspDesc/tei:correspAction/tei:date/@when
+                $header//tei:correspDesc/tei:correspAction[@type='sent']/tei:date/@when,
+                $header//tei:correspDesc/tei:correspAction[@type='sent']/tei:date/@notAfter
             ))
                 return tokenize($d, '-')
             case "genre" return
