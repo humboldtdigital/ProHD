@@ -216,16 +216,16 @@
                     <pb-drawer toggle="tocToggle" class="tocDrawer" emit="toc" subscribe="transcription">
                         <div class="drawer-content">
                             <pb-view id="commentary" src="document1" xpath="//teiHeader" view="single" subscribe="toc">
-                                <pb-param name="mode" value="commentary"/>
+                                <pb-param name="display" value="commentary"/>
                             </pb-view>
                         </div>
                     </pb-drawer>
 
                     <!-- Title of the edition -->
                     <section class="breadcrumbs">
-                        <h2>
+                        <h2>     
                             <pb-view id="title-view1" src="document1" xpath="//teiHeader" view="single">
-                                <pb-param name="mode" value="title"/>
+                                <pb-param name="display" value="title"/>
                             </pb-view>
                         </h2>
                     </section>
@@ -235,7 +235,6 @@
 
                         <!-- pb-toggle-feature-->
                         <pb-view id="view1" src="document1" emit="transcription" subscribe="transcription" wait-for="#facsimile"/>
-                        
                         <!-- pb-facsimile -->
                        <pb-facsimile id="facsimile" base-uri="https://iiif.ohc.cu/iiif/3/" default-zoom-level="0" show-navigator="show-navigator" show-navigation-control="show-navigation-control" subscribe="transcription"/>
                          
