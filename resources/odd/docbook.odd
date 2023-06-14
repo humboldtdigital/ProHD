@@ -278,7 +278,7 @@
         </modelSequence>
                     <model output="web" behaviour="block">
             <param name="root" value="util:node-id($parameters?root)"/>
-            <param name="nodeId" value="util:node-id($get(.))"/>
+            <param name="nodeId" value="util:node-id($parameters?root)"/>
             <pb:template xmlns="" xml:space="preserve">
                             <pb-observable data="[[root]],[[nodeId]]" emit="transcription">[[content]]</pb-observable>
                         </pb:template>
