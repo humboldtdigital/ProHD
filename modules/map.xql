@@ -8,6 +8,7 @@ module namespace mapping="http://www.tei-c.org/tei-simple/components/map";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation/tei" at "navigation-tei.xql";
 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare namespace dbk="http://docbook.org/ns/docbook";
 
 (:~
  : For the Van Gogh letters: find the page break in the translation corresponding
@@ -89,6 +90,33 @@ declare function mapping:prohd-document-translation($root as element(), $userPar
             if ($doc) then
                     let $mapped-document-id := util:node-id($doc)
                     let $mapped := util:node-by-id($doc, $mapped-document-id || '.' || $node-id)
+                    return
+                            if ($mapped) then $mapped else $doc
+            else 
+                $root         
+};
+
+
+declare function mapping:prohd-docbook-translation($root as element(), $userParams as map(*)) {
+    let $language := ($userParams?language, 'de')[1]
+
+    return
+        if ($language = "de") then
+            $root
+        else        
+         
+            let $node-id :=  substring-after(util:node-id($root), '.')
+            let $path := util:collection-name($root) || "/" || replace(util:document-name($root), "^(.+)\.xml$", "$1") || "_" || $language || ".xml"
+
+            let $document := doc($path)
+            let $doc := $document//dbk:article
+            return
+
+            if ($doc) then
+                    let $mapped-document-id := util:node-id($doc)
+                    let $translated-node-id := $mapped-document-id || '.' || $node-id
+                    let $mapped := util:node-by-id($doc, $translated-node-id)
+
                     return
                             if ($mapped) then $mapped else $doc
             else 
