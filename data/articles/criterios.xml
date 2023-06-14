@@ -1,4 +1,6 @@
-<?teipublisher odd="docbook.odd" template="documentation.html" depth="3" view="div" ?><?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+<?teipublisher template="documentation-prohd.html" odd="docbook.odd" view="div"depth="3" view="div" ?>
+<?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
       <title>Criterios de codificación TEI</title>
       <copyright>
@@ -31,7 +33,7 @@
       <edition>Versión 4</edition>
    </info>
    <section xml:id="metadatos">
-      <title>Metadatos</title>
+      <title>Metadaten</title>
       <para>Los metadatos utilizados en Proyecto Humboldt Digital son descriptivos e identifican <itemizedlist>
             <listitem>
                <para>la edición digital,</para>
