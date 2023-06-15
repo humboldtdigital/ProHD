@@ -417,13 +417,35 @@ padding-left: 10px;
         <elementSpec ident="teiHeader" mode="change"><model output="latex" behaviour="block">
             <param name="content" value="(fileDesc/titleStmt/title[not(@type)], profileDesc/correspDesc)"/>
             <pb:template xmlns="" xml:space="preserve">\def\volume{[[content]]}</pb:template>
-        </model><model output="fo" behaviour="omit"/><model output="web" predicate="$parameters?header='short'" behaviour="block"/><model predicate="$parameters?display='commentary'" behaviour="block">
+        </model>
+                    <model output="fo" behaviour="omit"/>
+                    <model output="web" predicate="$parameters?header='short'" behaviour="block"/>
+                    <model predicate="$parameters?display='commentary'" behaviour="block">
             <param name="profileDesc" value="profileDesc"/>
             <param name="titleStmt" value="fileDesc/titleStmt"/>
             <param name="editionStmt" value="fileDesc/editionStmt/p"/>
             <param name="publicationStmt" value="fileDesc/publicationStmt"/>
             <param name="sourceDesc" value="fileDesc/sourceDesc"/>
+            <param name="currentDate" value="format-date(current-date(), &#34;[Y0001]-[M01]-[D01]&#34;)"/>
+            <param name="file" value="util:document-name(.)"/>
+            <param name="editors" value="for $i at $pos in fileDesc/titleStmt/editor return    (   if ($pos &gt; 1) then ', ' else (),   $i   )"/>
+            <param name="publishers" value="for $i at $pos in fileDesc/publicationStmt/publisher return    (   if ($pos &gt; 1) then ', ' else (),   $i   )"/>
+            <param name="editionTitle" value="fileDesc/editionStmt/p/string()"/>
+            <param name="title" value="fileDesc/titleStmt/title/string()"/>
             <pb:template xmlns="" xml:space="preserve"><div>
+  <div>
+    <pb-popover persistent="persistent">
+      <iron-icon icon="icons:launch"/><pb-i18n key="cite">Citación</pb-i18n>
+      <span slot="alternate"> 
+        "[[editionTitle]]", 
+        [[editors]] (ed.), 
+        <i>[[title]]</i>, 
+        [[publishers]] 
+        ([[currentDate]]): 
+        <a href="[[file]]">[[file]] </a>
+      </span>
+    </pb-popover>
+  </div>
   <div>[[profileDesc]]</div>
   <div>[[titleStmt]][[editionStmt]][[publicationStmt]]</div>
   <div>[[sourceDesc]]</div>
