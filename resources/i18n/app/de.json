@@ -1,10 +1,13 @@
 {
     "menu": {
         "title": "Digitales Dossier: Alexander von Humboldt und Kuba (1800–1830)",
+        "title1": "Digitales Dossier",
+        "title2": "Alexander von Humboldt und Kuba (1800–1830)",
         "about": "Über das Projekt",
         "team": "Das Team",
         "home": "Home",
-        "criterios": "Editionsprinzipien"
+        "criterios": "Editionsprinzipien",
+        "documents": "Dokumente"
     },
     "document":{
     	"view": "Ansicht",
