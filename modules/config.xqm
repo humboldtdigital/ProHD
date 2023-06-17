@@ -346,6 +346,7 @@ declare variable $config:data-exclude := (
     doc($config:data-root || "/articles/team_es.xml")/tei:TEI,
     doc($config:data-root || "/articles/team_en.xml")/tei:TEI,
     doc($config:data-root || "/articles/criterios.xml")/tei:TEI,
+    doc($config:data-root || "/articles/start.xml")/tei:TEI,
     doc($config:data-root || "/documentation/prohd.xml")/tei:TEI,
     doc($config:data-root || "/documentation/prohd.rng")/tei:TEI,
     doc($config:data-root || "/documentation/prohd.sch")/tei:TEI

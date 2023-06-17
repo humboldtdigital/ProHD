@@ -262,6 +262,11 @@
                                 </a>
                             </div>
                             <div style="padding-top:10px; padding-bottom:10px;">
+                                <a href="${app}/index.html" data-template="pages:parse-params">
+                                    <pb-i18n key="menu.documents"/>
+                                </a>
+                            </div>
+                            <div style="padding-top:10px; padding-bottom:10px;">
                                <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
                                     <pb-i18n key="menu.criterios"/>
                                 </a>
@@ -274,7 +279,7 @@
                 <app-header-layout>
                 <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
                     <app-toolbar class="menubar">
-                        <a href="${app}/index.html" class="logo" data-template="pages:parse-params">
+                        <a href="${app}/start.html" class="logo" data-template="pages:parse-params">
                             <img alt="logo of Proyecto Humboldt Digital" src="resources/images/logopositivo.svg"/>
                         </a>
                         <pb-media-query query="(min-width: 1024px)">
@@ -283,6 +288,9 @@
                             </a>
                             <a href="${app}/articles/team.xml" data-template="pages:parse-params">
                                     <pb-i18n key="menu.team"/>
+                            </a>
+                            <a href="${app}/index.html" data-template="pages:parse-params">
+                                <pb-i18n key="menu.documents"/>
                             </a>
                             <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
                                     <pb-i18n key="menu.criterios"/>
