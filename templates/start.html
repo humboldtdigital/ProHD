@@ -16,24 +16,19 @@
     <custom-style>
         <style>
             
-            body {
-                width: 100vw;  
-            }
-           
             .page {
                 display: block;
                 display: flex;
                 justify-content: space-around;
                 max-width: 1200px;
                 margin: auto;
-                // width: minmax(100vw, 1000px);
             }
 
             main {
-                margin: 0 20px 0 20px;
-                padding: 0 20px 0 10px;
+                padding: 10px 20px 10px 20px;
                 background-color: #7ac7c4;
                 border-radius: 5px;
+                margin-bottom: 100px;
             }
 
             @media (max-width: 1023px) {
@@ -101,17 +96,22 @@
                 padding-top: 2em;
             }
 
+
+
             .start {
                 display: grid;
-                width: 100%;
-                padding: 10px;
+                padding: 20px 10px;
                 margin: 10px;
-                border: 1px solid green;
+                // border: 1px solid rgb(213, 219, 213);
                 grid-template-columns: 300px 1fr;
                 background-color: #e2f4f1;
+                border-radius: 5px;
+                padding-left: 3em;
 
 
             }
+
+
 
             .lang {
                 text-align: right;
@@ -119,6 +119,22 @@
 
             .title {
                 text-align: center;
+            }
+
+            a {
+                color: #008f8f;
+            }
+
+            a::visited {
+                color: #008f8f;
+            }
+
+            footer {
+                border-radius: 5px;
+            }
+
+            footer div {
+                border-radius: 5px;
             }
         </style>
     </custom-style>
