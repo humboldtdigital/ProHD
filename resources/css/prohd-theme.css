@@ -26,6 +26,10 @@ body {
     --paper-checkbox-checked-color: #353831;
     --paper-font-common-base_-_font-family: "Montserrat";
     --paper-checkbox-checked-color: #353831;
+
+    --pb-landing-accent-background-color: #7ac7c4;
+    --pb-landing-background-color: #e2f4f1;
+    --pb-landing-link-color: #008f8f;
 }
 
 
