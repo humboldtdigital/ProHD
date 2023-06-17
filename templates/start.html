@@ -33,9 +33,12 @@
 
             @media (max-width: 1023px) {
                 main {
-                    margin: 0 8px 0 8px;
-                    padding: 0 4px 0 4px;
+                    padding: 0 0;
+                    margin: 0;
+                }
 
+                .page {
+                    max-width: 100%;
                 }
             }
             
@@ -111,11 +114,27 @@
                 text-align: center;
             }
 
+            .inner {
+                text-align: center;
+            }
+
             .caption {
                 font-family: "Roboto Slab", serif;
                 font-weight: 400 !important;
                 line-height: 1.2;
+            }
 
+            @media (max-width: 1023px) {
+                .start {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    padding: 1em;
+                    margin: 1px 0;
+                }
+
+                .lang {
+                    display: none;
+                }
             }
 
             a {
@@ -140,6 +159,37 @@
     <div class="page">
         <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json" require-language="require-language">
             <pb-document id="document1" path="articles/start.xml" odd="prohd"/>
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer slot="drawer" align="right">
+                    <div class="drawer-content">
+                        <pb-media-query query="max-width: 1023px">
+                            <nav>
+                                <a href="${app}/articles/about.xml" data-template="pages:parse-params">
+                                        <pb-i18n key="menu.about"/>
+                                </a>
+                                <br/>
+                                <a href="${app}/articles/team.xml" data-template="pages:parse-params">
+                                        <pb-i18n key="menu.team"/>
+                                </a>
+                                <br/>
+                                <a href="${app}/index.html" data-template="pages:parse-params">
+                                        <pb-i18n key="menu.documents"/>
+                                </a>
+                                <br/>
+                                <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
+                                        <pb-i18n key="menu.criterios"/>
+                                </a>
+                                <br/>
+                                <a href="?lang=de">Deutsch</a>
+                                <br/>
+                                <a href="?lang=es">Español</a>
+                                <br/>
+                                <a href="?lang=en">English</a>
+                            </nav>
+                        </pb-media-query>
+                    </div>
+                </app-drawer>
+          
             <div class="header">
                 <div class="lang">
                     <a href="?lang=de">Deutsch</a>
@@ -175,6 +225,8 @@
                                 <paper-icon-button icon="icons:menu" drawer-toggle="drawer-toggle"/>
                             </app-toolbar>
                         </pb-media-query>
+                        <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+
                 </div>   
             </div>
             
@@ -182,7 +234,7 @@
                 <div class="start">
                     <div class="inner">
                         <img src="resources/images/humboldt.png" width="270"/>
-                        <span class="caption"><pb-i18n key="landing.caption"/></span>
+                        <div class="caption"><pb-i18n key="landing.caption"/></div>
                     </div>
                     <pb-view id="view1" src="document1" view="single"
                         disable-history="disable-history" animation="" use-language="use-language">
@@ -219,6 +271,7 @@
                         </a>
                 </div>
             </footer>
+            </app-drawer-layout>
         </pb-page>
     </div>
     <div class="splash">
