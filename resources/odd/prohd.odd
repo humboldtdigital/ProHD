@@ -1917,6 +1917,19 @@ font-style:italic
             
             
             </outputRendition>
-        </model><model behaviour="block"/></elementSpec><elementSpec ident="msName" mode="add"><model behaviour="inline"/></elementSpec></schemaSpec>
+        </model>
+                    <model behaviour="block"/>
+                </elementSpec>
+                <elementSpec ident="msName" mode="add">
+                    <model behaviour="inline"/>
+                </elementSpec>
+            <elementSpec ident="text" mode="change">
+                    <model predicate="$parameters?display='landing'" behaviour="body">
+            <param name="content" value="let $lang := $parameters?language let $l := if ($lang = ('en', 'es', 'de')) then $lang else 'en' return root(.)//text[@xml:lang=$l]"/>
+        </model>
+                    <model behaviour="body"/>
+                </elementSpec>
+            </schemaSpec>
     </body>
-  </text></TEI>
+  </text>
+</TEI>
