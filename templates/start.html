@@ -26,7 +26,7 @@
 
             main {
                 padding: 10px 20px 10px 20px;
-                background-color: #7ac7c4;
+                background-color: var(--pb-landing-accent-background-color);
                 border-radius: 5px;
                 margin-bottom: 100px;
             }
@@ -68,8 +68,6 @@
                 line-height: 1.2;
             }
             
-           
-            
             h5 {
                 font-size: 16px;
                 margin: 0;
@@ -77,17 +75,16 @@
 
             nav {
                 border-top: 1px solid gray;
-                
             }
 
             nav a {
                 display: inline-block;
                 font-family: "Montserrat Bold", Verdana, sans-serif;
-                font-size: 18;
+                font-size: 18px;
+                line-height: 1.1;
                 font-weight: 600 !important;
 
-                color: #008f8f;
-                margin: 2em;
+                margin: 1em 2em 2em 2em;
             }
 
             .header {
@@ -96,22 +93,15 @@
                 padding-top: 2em;
             }
 
-
-
             .start {
                 display: grid;
                 padding: 20px 10px;
                 margin: 10px;
-                // border: 1px solid rgb(213, 219, 213);
                 grid-template-columns: 300px 1fr;
-                background-color: #e2f4f1;
+                background-color: var(--pb-landing-background-color);
                 border-radius: 5px;
                 padding-left: 3em;
-
-
             }
-
-
 
             .lang {
                 text-align: right;
@@ -121,12 +111,19 @@
                 text-align: center;
             }
 
+            .caption {
+                font-family: "Roboto Slab", serif;
+                font-weight: 400 !important;
+                line-height: 1.2;
+
+            }
+
             a {
-                color: #008f8f;
+                color: var(--pb-landing-link-color);
             }
 
             a::visited {
-                color: #008f8f;
+                color: var(--pb-landing-link-color);
             }
 
             footer {
@@ -139,7 +136,6 @@
         </style>
     </custom-style>
 </head>
-
 <body>
     <div class="page">
         <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json" require-language="require-language">
@@ -156,90 +152,77 @@
                             <pb-i18n key="menu.title1"/>
                         </h2>
                         <h1 class="tp-title">
-                                <pb-i18n key="menu.title2"/>
+                            <pb-i18n key="menu.title2"/>
                         </h1>
                         <pb-media-query query="(min-width: 1024px)">
-                        <nav>
-                            <a href="${app}/articles/about.xml" data-template="pages:parse-params">
-                                    <pb-i18n key="menu.about"/>
-                            </a>
-                            <a href="${app}/articles/team.xml" data-template="pages:parse-params">
-                                    <pb-i18n key="menu.team"/>
-                            </a>
-                            <a href="${app}/index.html" data-template="pages:parse-params">
-                                    <pb-i18n key="menu.documents"/>
-                            </a>
-                            <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
-                                    <pb-i18n key="menu.criterios"/>
-                            </a>
-                           
-                        </nav>
-                        
-                       
-                    </pb-media-query>
-                </div>
-                   
-
-                   
-                    <pb-media-query query="(max-width: 1023px)">
-                        <app-toolbar class="toolbar" sticky="sticky">
-                            <paper-icon-button icon="icons:menu" drawer-toggle="drawer-toggle"/>
-                        </app-toolbar>
-                    </pb-media-query>
-
+                            <nav>
+                                <a href="${app}/articles/about.xml" data-template="pages:parse-params">
+                                        <pb-i18n key="menu.about"/>
+                                </a>
+                                <a href="${app}/articles/team.xml" data-template="pages:parse-params">
+                                        <pb-i18n key="menu.team"/>
+                                </a>
+                                <a href="${app}/index.html" data-template="pages:parse-params">
+                                        <pb-i18n key="menu.documents"/>
+                                </a>
+                                <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
+                                        <pb-i18n key="menu.criterios"/>
+                                </a>
+                            </nav>
+                        </pb-media-query>
+                        <pb-media-query query="(max-width: 1023px)">
+                            <app-toolbar class="toolbar" sticky="sticky">
+                                <paper-icon-button icon="icons:menu" drawer-toggle="drawer-toggle"/>
+                            </app-toolbar>
+                        </pb-media-query>
+                </div>   
             </div>
             
-                <main>
-                    <div class="start">
-                        <div class="inner">
-                            <img src="resources/images/humboldt.png" width="270"/>
-
-                              
-                        </div>
-                        <pb-view id="view1" src="document1" view="single"
-                            disable-history="disable-history" animation="" use-language="use-language"
-                            >
-                            <pb-param name="display" value="landing"/>
-                        </pb-view>
+            <main>
+                <div class="start">
+                    <div class="inner">
+                        <img src="resources/images/humboldt.png" width="270"/>
+                        <span class="caption"><pb-i18n key="landing.caption"/></span>
                     </div>
-
-                </main>
-               <footer>
-                    <div id="footerGray">
-                        <p>
-                            <pb-i18n key="footer.funded"/>
+                    <pb-view id="view1" src="document1" view="single"
+                        disable-history="disable-history" animation="" use-language="use-language">
+                        <pb-param name="display" value="landing"/>
+                    </pb-view>
+                </div>
+            </main>
+            <footer>
+                <div id="footerGray">
+                    <p>
+                        <pb-i18n key="footer.funded"/>
+                    </p>
+                    <a href="https://www.auswaertiges-amt.de/">
+                            <img alt="logo of Auswärtiges Amt" src="resources/images/aa.svg" class="funder1"/>
+                        </a>
+                    <a href="https://www.fritz-thyssen-stiftung.de/">
+                            <img alt="logo of Fritz Thyssen Institute" src="resources/images/thyssen.svg" class="funder2"/>
+                        </a>
+                    <a href="https://www.gerda-henkel-stiftung.de/">
+                            <img alt="logo of Gerda Henkel Institute" src="resources/images/gerdahenkel.svg" class="funder3"/>
+                    </a>
+                </div>    
+                <div id="footerGreen">
+                    <a href="https://e-editiones.org/">
+                            <img alt="logo of powered by e-editiones" src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                        </a>
+                    <p class="version">App: v <span data-template="pages:version"/>web components: v <pb-version/>
                         </p>
-                        <a href="https://www.auswaertiges-amt.de/">
-                                <img alt="logo of Auswärtiges Amt" src="resources/images/aa.svg" class="funder1"/>
-                            </a>
-                        <a href="https://www.fritz-thyssen-stiftung.de/">
-                                <img alt="logo of Fritz Thyssen Institute" src="resources/images/thyssen.svg" class="funder2"/>
-                            </a>
-                        <a href="https://www.gerda-henkel-stiftung.de/">
-                                <img alt="logo of Gerda Henkel Institute" src="resources/images/gerdahenkel.svg" class="funder3"/>
-                            </a>
-                    </div>    
-                    <div id="footerGreen">
-                        <a href="https://e-editiones.org/">
-                                <img alt="logo of powered by e-editiones" src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
-                            </a>
-                        <p class="version">App: v <span data-template="pages:version"/>web components: v <pb-version/>
-                            </p>
-                        <p class="license">
-                                <pb-i18n key="footer.license"/>
-                            </p>
-                        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
-                                <img alt="logo of Creative Commons license By" src="resources/images/cc.svg" class="cc"/>
-                            </a>
-                    </div>
-                </footer>
-                
-        
-    </pb-page>
+                    <p class="license">
+                            <pb-i18n key="footer.license"/>
+                        </p>
+                    <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                            <img alt="logo of Creative Commons license By" src="resources/images/cc.svg" class="cc"/>
+                        </a>
+                </div>
+            </footer>
+        </pb-page>
     </div>
     <div class="splash">
         <img alt="animated big logo of Proyecto Humboldt Digital that disappears after some seconds" src="resources/images/logoHDNegativo.svg"/>
     </div>
 </body>
-
 </html>

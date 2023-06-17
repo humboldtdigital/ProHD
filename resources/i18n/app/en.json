@@ -81,5 +81,8 @@
         "tobacco": "Tobacco",
         "factories": "Factories",
         "scientificexpedition": "Scientific expedition"
+    },
+    "landing": {
+        "caption": "Image caption"
     }
 }

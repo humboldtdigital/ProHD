@@ -82,5 +82,8 @@
         "tobacco": "Tabak",
         "factories": "Fabriken",
         "scientificexpedition": "Forschungsreisen"
+    },
+    "landing": {
+        "caption": "Image caption in de"
     }
 }
