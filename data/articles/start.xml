@@ -23,132 +23,69 @@
    </teiHeader>
    <text>
       <group>
-      <text xml:lang="de">
-      <body>
-         <div>
-            <p>
-               <hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> ist eine internationale
-               Initiative zur Fortbildung in den Digitalen Geisteswissenschaften an den zwei
-               Standorten La Habana (Casa Museo Alejandro de Humboldt) und Berlin
-               (Berlin-Brandenburgische Akademie der Wissenschaften).</p>
-            <p>Der Schwerpunkt des Projekts ist die kubanische Schriftkultur des 18. und 19.
-               Jahrhunderts, insbesondere die Erschließung der Quellenlage zu Alexander von
-               Humboldts kubanischer Forschung im Zeitraum 1800–1830.</p>
-            <p>Das Projekt begann 2019 und soll 2023 abgeschlossen werden. Es wurde finanziert dank
-               der großzügigen Unterstützung des Auswärtigen Amtes, der Fritz Thyssen Stiftung und
-               der Gerda Henkel Stiftung.</p>
-            <p>Weitere Informationen über die im Rahmen des Projekts erstellten Ressourcen finden
-               Sie unter den folgenden Links:</p>
-           
-         </div>
-         <div>
-            <p>Das "Digitale Dossier: Alexander von Humboldt und Kuba (1800-1830)" veröffentlicht
-               Transkriptionen handschriftlicher und gedruckter Textdokumente in drei Sprachen
-               (Englisch, Französisch und Spanisch), die thematisch mit Humboldts Kubareise
-               zusammenhängen, wie auch mit den Fragen, die der preußische Wissenschaftler in seinem
-                  <title>Essai politique sur l'île de Cuba</title> (2 Bde., Paris 1826) untersucht
-               hat. Die Quellen der edierten Texte stammen aus Bibliotheken und Archiven in
-               Deutschland, Kuba und Polen. Weitere Informationen zur Provenienz finden Sie in den
-               Metadaten der jeweiligen Ausgabe.</p>
-            <p>Die Texte werden in zwei Fassungen präsentiert: <list>
-                  <item>In der <hi rendition="#b">diplomatischen Transkription</hi> wurden die
-                     historischen Besonderheiten der Quelle, wie Abkürzungen, historische
-                     Orthographie, Akzentsetzung, Interpunktion, fehlende Wortzwischenräume und
-                     offensichtliche Fehler, bewahrt.</item>
-                  <item>In der <hi rendition="#b">normalisierten Fassung</hi> wurden, zur besseren
-                     Lesbarkeit des Textes, die Abkürzungen aufgelöst, die Orthographie,
-                     Akzentsetzung, Interpunktions- und Leerzeichen an die heutige Norm angepasst
-                     und offensichtliche Fehler korrigiert.</item>
-               </list>
-            </p>
-         </div>
-         </body>
+         <text xml:lang="de">
+            <body>
+               <div>
+                  <p>
+                     Das Proyecto Humboldt Digital (ProHD) ist eine internationale Initiative zur Fortbildung in den Digital 
+                     Humanities an zwei Standorten: Havanna (Casa Museo Alejandro de Humboldt) und Berlin (Berlin-Brandenburgische 
+                     Akademie der Wissenschaften).
+                  </p>
+                  <p>
+                     Das Projekt fokussiert sich auf das Erforschen der kubanischen wissenschaftlichen und literarischen Kultur 
+                     des 18. und 19. Jahrhunderts, insbesondere auf die Erschließung von Quellen, die für Alexander von Humboldts 
+                     Kuba-Forschung in der Zeit von 1800-1830 relevant sind.
+                  </p>
+                  <p>
+                     Dieses <hi>Digitale Dossier: Alexander von Humboldt und Kuba (1800-1830)</hi> enthält Transkriptionen von 
+                     handschriftlichen Textdokumenten in drei Sprachen (Englisch, Französisch und Spanisch). Sie alle 
+                     beziehen sich auf Humboldts Reise nach Kuba und die Fragen, die der preußische Wissenschaftler in dem 
+                     <hi>Essai politique sur l'île de Cuba</hi> (2 Bände, Paris 1826) untersucht hat.
+                  </p>
+               </div>
+            </body>
          </text>
-
-               <text xml:lang="es">
-      <body>
-         <div>
-            <p>
-               <hi rendition="#b">El Proyecto Humboldt Digital (ProHD)</hi> es ....
-               Initiative zur Fortbildung in den Digitalen Geisteswissenschaften an den zwei
-               Standorten La Habana (Casa Museo Alejandro de Humboldt) und Berlin
-               (Berlin-Brandenburgische Akademie der Wissenschaften).</p>
-            <p>Der Schwerpunkt des Projekts ist die kubanische Schriftkultur des 18. und 19.
-               Jahrhunderts, insbesondere die Erschließung der Quellenlage zu Alexander von
-               Humboldts kubanischer Forschung im Zeitraum 1800–1830.</p>
-            <p>Das Projekt begann 2019 und soll 2023 abgeschlossen werden. Es wurde finanziert dank
-               der großzügigen Unterstützung des Auswärtigen Amtes, der Fritz Thyssen Stiftung und
-               der Gerda Henkel Stiftung.</p>
-            <p>Weitere Informationen über die im Rahmen des Projekts erstellten Ressourcen finden
-               Sie unter den folgenden Links:</p>
-           
-         </div>
-         <div>
-            <p>Das "Digitale Dossier: Alexander von Humboldt und Kuba (1800-1830)" veröffentlicht
-               Transkriptionen handschriftlicher und gedruckter Textdokumente in drei Sprachen
-               (Englisch, Französisch und Spanisch), die thematisch mit Humboldts Kubareise
-               zusammenhängen, wie auch mit den Fragen, die der preußische Wissenschaftler in seinem
-                  <title>Essai politique sur l'île de Cuba</title> (2 Bde., Paris 1826) untersucht
-               hat. Die Quellen der edierten Texte stammen aus Bibliotheken und Archiven in
-               Deutschland, Kuba und Polen. Weitere Informationen zur Provenienz finden Sie in den
-               Metadaten der jeweiligen Ausgabe.</p>
-            <p>Die Texte werden in zwei Fassungen präsentiert: <list>
-                  <item>In der <hi rendition="#b">diplomatischen Transkription</hi> wurden die
-                     historischen Besonderheiten der Quelle, wie Abkürzungen, historische
-                     Orthographie, Akzentsetzung, Interpunktion, fehlende Wortzwischenräume und
-                     offensichtliche Fehler, bewahrt.</item>
-                  <item>In der <hi rendition="#b">normalisierten Fassung</hi> wurden, zur besseren
-                     Lesbarkeit des Textes, die Abkürzungen aufgelöst, die Orthographie,
-                     Akzentsetzung, Interpunktions- und Leerzeichen an die heutige Norm angepasst
-                     und offensichtliche Fehler korrigiert.</item>
-               </list>
-            </p>
-         </div>
-         </body>
+         <text xml:lang="es">
+            <body>
+               <div>
+                  <p>
+                  El Proyecto Humboldt Digital (ProHD) es una iniciativa internacional para la formación avanzada en Humanidades 
+                  Digitales en dos lugares: La Habana (Casa Museo Alejandro de Humboldt) y Berlín (Academia de Ciencias y 
+                  Humanidades de Berlín-Brandeburgo).
+                  </p>
+                  <p>
+                     El proyecto se centra en el estudio de la cultura científica y literaria cubana de los siglos XVIII y 
+                     XIX, especialmente en la exploración de fuentes relevantes para la investigación de Alexander von 
+                     Humboldt sobre Cuba durante el periodo de 1800-1830.
+                  </p>
+                  <p>
+                     Este <hi>Dossier Digital: Alexander von Humboldt y Cuba (1800-1830)</hi> contiene transcripciones de documentos 
+                     textuales manuscritos en tres idiomas (inglés, francés y español). Todos ellos se refieren al viaje de 
+                     Humboldt a Cuba y a las cuestiones que el científico prusiano estudió en el <hi>Essai politique sur l'île 
+                     de Cuba</hi> (2 vols., París 1826).
+                  </p>
+               </div>
+            </body>
          </text>
       
-            <text xml:lang="en">
-      <body>
-         <div>
-            <p>
-               <hi rendition="#b">The Humboldt Digital Project (ProHD)</hi> is an international....
-               Initiative zur Fortbildung in den Digitalen Geisteswissenschaften an den zwei
-               Standorten La Habana (Casa Museo Alejandro de Humboldt) und Berlin
-               (Berlin-Brandenburgische Akademie der Wissenschaften).</p>
-            <p>Der Schwerpunkt des Projekts ist die kubanische Schriftkultur des 18. und 19.
-               Jahrhunderts, insbesondere die Erschließung der Quellenlage zu Alexander von
-               Humboldts kubanischer Forschung im Zeitraum 1800–1830.</p>
-            <p>Das Projekt begann 2019 und soll 2023 abgeschlossen werden. Es wurde finanziert dank
-               der großzügigen Unterstützung des Auswärtigen Amtes, der Fritz Thyssen Stiftung und
-               der Gerda Henkel Stiftung.</p>
-            <p>Weitere Informationen über die im Rahmen des Projekts erstellten Ressourcen finden
-               Sie unter den folgenden Links:</p>
-           
-         </div>
-         <div>
-            <p>Das "Digitale Dossier: Alexander von Humboldt und Kuba (1800-1830)" veröffentlicht
-               Transkriptionen handschriftlicher und gedruckter Textdokumente in drei Sprachen
-               (Englisch, Französisch und Spanisch), die thematisch mit Humboldts Kubareise
-               zusammenhängen, wie auch mit den Fragen, die der preußische Wissenschaftler in seinem
-                  <title>Essai politique sur l'île de Cuba</title> (2 Bde., Paris 1826) untersucht
-               hat. Die Quellen der edierten Texte stammen aus Bibliotheken und Archiven in
-               Deutschland, Kuba und Polen. Weitere Informationen zur Provenienz finden Sie in den
-               Metadaten der jeweiligen Ausgabe.</p>
-            <p>Die Texte werden in zwei Fassungen präsentiert: <list>
-                  <item>In der <hi rendition="#b">diplomatischen Transkription</hi> wurden die
-                     historischen Besonderheiten der Quelle, wie Abkürzungen, historische
-                     Orthographie, Akzentsetzung, Interpunktion, fehlende Wortzwischenräume und
-                     offensichtliche Fehler, bewahrt.</item>
-                  <item>In der <hi rendition="#b">normalisierten Fassung</hi> wurden, zur besseren
-                     Lesbarkeit des Textes, die Abkürzungen aufgelöst, die Orthographie,
-                     Akzentsetzung, Interpunktions- und Leerzeichen an die heutige Norm angepasst
-                     und offensichtliche Fehler korrigiert.</item>
-               </list>
-            </p>
-         </div>
-         </body>
+         <text xml:lang="en">
+            <body>
+               <div>
+                  <p>
+                     Proyecto Humboldt Digital (ProHD) is an international initiative for advanced training in the Digital Humanities at two locations: Havana (Casa Museo Alejandro de Humboldt) and Berlin (Berlin-Brandenburg Academy of Sciences and Humanities).
+                  </p>
+                  <p>
+                     The project focuses on the study of Cuban scientific and literary culture of the 18th and 19th centuries, especially on the exploration of sources relevant to Alexander von Humboldt's research on Cuba during the period of 1800–1830.
+                  </p>
+                  <p>
+                     This  <hi>Digital Dossier: Alexander von Humboldt and Cuba (1800–1830)</hi> contains transcriptions of 
+                     textual documents in manuscript in three languages (English, French, and Spanish). They all relate to 
+                     Humboldt's trip to Cuba and the questions the Prussian scientist studied in the 
+                     <hi>Essai politique sur l'île de Cuba</hi> (2 vols., Paris 1826).
+                  </p>  
+               </div>
+            </body>
          </text>
-      
       </group>
    </text>
 </TEI>
