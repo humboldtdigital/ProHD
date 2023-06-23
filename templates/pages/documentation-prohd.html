@@ -1,20 +1,20 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
-        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico"/>
-        <link rel="shortcut icon" type="image/png" href="resources/images/favicon-16.png" sizes="16x16"/>
-        <link rel="shortcut icon" type="image/png" href="resources/images/favicon-24.png" sizes="24x24"/>
-        <link rel="shortcut icon" type="image/png" href="resources/images/favicon-32.png" sizes="32x32"/>
-        <link rel="shortcut icon" type="image/png" href="resources/images/favicon-64.png" sizes="64x64"/>
-
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/faviconProhd.ico"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-16.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-32.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-64.png"/>
+        
         <title data-template="config:app-title"/>
         <meta name="description" content="Grid-based single text layout"/>
         <meta name="pb-template" content="view-grid.html"/>
 
-        <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500"/> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500"/>
         <link rel="stylesheet" href="resources/css/theme.css"/>
+        <link rel="stylesheet" href="resources/css/prohd-theme.css"/>
         <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
         <style>
             main {
@@ -24,7 +24,7 @@
                 grid-template-rows: auto 1fr auto;
             }
 
-            @media (max-width: 768px) {
+            @media (max-width: 1024px) {
                 main {
                     position: relative;
                     grid-template-columns: 1fr;
@@ -49,12 +49,7 @@
                 overflow: auto;
                 padding: 0;
             }
-
-            footer {
-                grid-column: 2 / 2;
-                background-color: var(--pb-toolbar-background-color);
-            }
-
+            
             footer pb-navigation[direction=forward] {
                 float: right;
             }
@@ -70,11 +65,17 @@
             .toolbar pb-navigation {
                 display: none;
             }
+            
+            @media (max-width: 768px)   {
+                    body {
+                        --pb-drawer-width: 300px;
+                    }
+                }
         </style>
     </head>
 
     <body>
-        <pb-page data-template="pages:pb-page" unresolved="unresolved">
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json" require-language="require-language">
             <pb-document id="document1" data-template="pages:pb-document"/>
             <app-drawer-layout force-narrow="force-narrow">
                 <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
@@ -90,14 +91,16 @@
                                 <h3>
                                     <pb-i18n key="document.contents">Contents</pb-i18n>
                                 </h3>
-                                <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" auto="auto"><pb-i18n key="dialogs.loading">Loading</pb-i18n></pb-load>
+                                <pb-load url="api/document/{doc}/contents?target=transcription&amp;icons=false" expand="expand" src="document1" auto="auto" use-language="use-language">
+                                    <pb-i18n key="dialogs.loading">Loading</pb-i18n>
+                                </pb-load>
                             </div>
                         </pb-drawer>
-                        <pb-view class="breadcrumbs" src="document1" xpath="//teiHeader/fileDesc/titleStmt/title" view="single">
+                        <pb-view class="breadcrumbs" src="document1" xpath="//info/title" view="single" use-language="use-language" map="prohd-docbook-translation">
                             <pb-param name="header" value="short"/>
                         </pb-view>
                         
-                        <pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription"/>
+                        <pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription" use-language="use-language" map="prohd-docbook-translation"/>
                         <footer>
                             <pb-navigation direction="forward" keyboard="right" unit="page" emit="transcription" subscribe="transcription">
                                 <paper-button>
@@ -111,9 +114,40 @@
                             </pb-navigation>
                         </footer>
                     </main>
+                    <footer>
+                        <div id="footerGray">
+                            <p>
+                                <pb-i18n key="footer.funded"/>
+                            </p>
+                            <a href="https://www.auswaertiges-amt.de/">
+                                <img alt="logo of Auswärtiges Amt" src="resources/images/aa.svg" class="funder1"/>
+                            </a>
+                            <a href="https://www.fritz-thyssen-stiftung.de/">
+                                <img alt="logo of Fritz Thyssen institute" src="resources/images/thyssen.svg" class="funder2"/>
+                            </a>
+                            <a href="https://www.gerda-henkel-stiftung.de/">
+                                <img alt="logo of Gerda Henkel institute" src="resources/images/gerdahenkel.svg" class="funder3"/>
+                            </a>
+                        </div>    
+                        <div id="footerGreen">
+                            <a href="https://e-editiones.org/">
+                                <img alt="logo of powered by e-editiones" src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                            </a>
+                            <p class="version">App: v <span data-template="pages:version"/>web components: v <pb-version/>
+                            </p>
+                            <p class="license">
+                                <pb-i18n key="footer.license"/>
+                            </p>
+                            <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                                <img alt="logo of creative commons license By" src="resources/images/cc.svg" class="cc"/>
+                            </a>
+                        </div>
+                    </footer>
                 </app-header-layout>
             </app-drawer-layout>
         </pb-page>
-        <div class="splash"/>
+        <div class="splash">
+            <img alt="big animated logo of Proyecto Humboldt digital that disappears after a few seconds" src="resources/images/logoHDNegativo.svg"/>
+        </div>
     </body>
 </html>

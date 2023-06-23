@@ -4,22 +4,47 @@
             <div style="padding-top: 10px;">
                 <a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
                     <pb-i18n key="menu.home"/>
-                </a>    
-            </div>        
+                </a>
+            </div>
             <div style="padding-top:10px;">
-                <a href="about.xml">
+                <a href="${app}/articles/about.xml" data-template="pages:parse-params">
                     <pb-i18n key="menu.about"/>
                 </a>
             </div>
             <div style="padding-top:10px; padding-bottom:10px;">
-                <a href="team.xml">
+                <a href="${app}/articles/team.xml" data-template="pages:parse-params">
                     <pb-i18n key="menu.team"/>
                 </a>
             </div>
+            <div style="padding-top:10px; padding-bottom:10px;">
+                <a href="${app}/index.html" data-template="pages:parse-params">
+                    <pb-i18n key="menu.documents"/>
+                </a>
+            </div>
+            <div style="padding-top:10px; padding-bottom:10px;">
+                <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
+                    <pb-i18n key="menu.criterios"/>
+                </a>
+            </div>
+            <paper-item>
+                <a href="${app}/print/${doc}" target="_new" data-template="pages:parse-params" title="Print CSS">
+                    <iron-icon icon="icons:print"/>
+                </a>
+            </paper-item>
+            <paper-item>
+                <pb-download type="epub" src="document1" data-i18n="[title]menu.download.epub" dialog="downloadDialog">
+                    <iron-icon icon="icons:chrome-reader-mode"/>
+                </pb-download>
+            </paper-item>
+            <paper-item>
+                <pb-edit-xml src="document1" data-i18n="[title]menu.download.view-tei" title="view-tei">
+                    <iron-icon icon="icons:code"/>
+                </pb-edit-xml>
+            </paper-item>
             <!-- language selector -->
             <pb-lang name="lang" data-template="pages:languages"/>
-            
-            
+
+
             <!--
             <pb-restricted login="login">
                 <pb-collapse>
@@ -43,15 +68,7 @@
             -->
         </pb-media-query>
         <div class="settings">
-            <h3>Settings</h3>
-            <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
-                <pb-i18n key="document.view-type"/>
-            </pb-toggle-feature>
-            <pb-edit-xml src="document1">
-                <paper-button alt="Edit source">
-                    <iron-icon icon="icons:code"/> <pb-i18n key="menu.download.view-tei"/>
-                </paper-button>
-            </pb-edit-xml>
+           
         </div>
     </div>
 </app-drawer>

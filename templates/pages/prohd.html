@@ -22,7 +22,7 @@
                     --pb-view-height: calc(100vh - 192px);
                 }
                 
-                }
+                
                 pb-drawer {
                     background-color: #E2F4F1;
                 }
@@ -104,7 +104,7 @@
                 
                 <app-header-layout>
                 
-                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall" data-template="browse:fix-links">
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
                     
                         <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
                         
@@ -163,9 +163,21 @@
                         </pb-navigation>
                         
                         <pb-media-query query="min-width: 1024px">
-                            <a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
-                                <paper-icon-button icon="icons:folder-open"/>
-                            </a>
+                            <paper-item>
+                                <a href="${app}/print/${doc}" target="_new" data-template="pages:parse-params" title="Print CSS">
+                                    <iron-icon icon="icons:print"/>
+                                </a>
+                            </paper-item>
+                            <paper-item>
+                                <pb-download type="epub" src="document1" data-i18n="[title]menu.download.epub" dialog="downloadDialog">
+                                    <iron-icon icon="icons:chrome-reader-mode"/>
+                                </pb-download>
+                            </paper-item>
+                            <paper-item>
+                                <pb-edit-xml src="document1" data-i18n="[title]menu.download.view-tei" title="view-tei">
+                                    <iron-icon icon="icons:code"/>
+                                </pb-edit-xml>
+                            </paper-item>
                         </pb-media-query>    
                             
                             <pb-restricted login="login">
@@ -204,16 +216,16 @@
                     <pb-drawer toggle="tocToggle" class="tocDrawer" emit="toc" subscribe="transcription">
                         <div class="drawer-content">
                             <pb-view id="commentary" src="document1" xpath="//teiHeader" view="single" subscribe="toc">
-                                <pb-param name="mode" value="commentary"/>
+                                <pb-param name="display" value="commentary"/>
                             </pb-view>
                         </div>
                     </pb-drawer>
 
                     <!-- Title of the edition -->
                     <section class="breadcrumbs">
-                        <h2>
+                        <h2>     
                             <pb-view id="title-view1" src="document1" xpath="//teiHeader" view="single">
-                                <pb-param name="mode" value="title"/>
+                                <pb-param name="display" value="title"/>
                             </pb-view>
                         </h2>
                     </section>
@@ -223,7 +235,6 @@
 
                         <!-- pb-toggle-feature-->
                         <pb-view id="view1" src="document1" emit="transcription" subscribe="transcription" wait-for="#facsimile"/>
-                        
                         <!-- pb-facsimile -->
                        <pb-facsimile id="facsimile" base-uri="https://iiif.ohc.cu/iiif/3/" default-zoom-level="0" show-navigator="show-navigator" show-navigation-control="show-navigation-control" subscribe="transcription"/>
                          

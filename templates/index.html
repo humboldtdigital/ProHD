@@ -252,13 +252,23 @@
                 <div class="drawer-content">
                     <pb-media-query query="(max-width: 1023px)">
                             <div style="padding-top:10px;">
-                               <a href="about.xml">
+                               <a href="${app}/articles/about.xml" data-template="pages:parse-params">
                                     <pb-i18n key="menu.about"/>
                                 </a>
                             </div>
-                                <div style="padding-top:10px; padding-bottom:10px;">
-                               <a href="team.xml">
+                            <div style="padding-top:10px; padding-bottom:10px;">
+                               <a href="${app}/articles/team.xml" data-template="pages:parse-params">
                                     <pb-i18n key="menu.team"/>
+                                </a>
+                            </div>
+                            <div style="padding-top:10px; padding-bottom:10px;">
+                                <a href="${app}/index.html" data-template="pages:parse-params">
+                                    <pb-i18n key="menu.documents"/>
+                                </a>
+                            </div>
+                            <div style="padding-top:10px; padding-bottom:10px;">
+                               <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
+                                    <pb-i18n key="menu.criterios"/>
                                 </a>
                             </div>
                             <!-- language selector -->
@@ -269,16 +279,22 @@
                 <app-header-layout>
                 <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
                     <app-toolbar class="menubar">
-                        <a href="${app}/index.html" class="logo" data-template="pages:parse-params">
+                        <a href="${app}/start.html" class="logo" data-template="pages:parse-params">
                             <img alt="logo of Proyecto Humboldt Digital" src="resources/images/logopositivo.svg"/>
-                        </a> 
+                        </a>
                         <pb-media-query query="(min-width: 1024px)">
-                            <a href="${app}/about.xml" data-template="pages:parse-params">
+                            <a href="${app}/articles/about.xml" data-template="pages:parse-params">
                                     <pb-i18n key="menu.about"/>
-                                </a>
-                            <a href="${app}/team.xml" data-template="pages:parse-params">
+                            </a>
+                            <a href="${app}/articles/team.xml" data-template="pages:parse-params">
                                     <pb-i18n key="menu.team"/>
-                                </a>
+                            </a>
+                            <a href="${app}/index.html" data-template="pages:parse-params">
+                                <pb-i18n key="menu.documents"/>
+                            </a>
+                            <a href="${app}/articles/criterios.xml" data-template="pages:parse-params">
+                                    <pb-i18n key="menu.criterios"/>
+                            </a>
                             <pb-restricted login="login" group="tei">
                                 <paper-menu-button>
                                     <a href="#" slot="dropdown-trigger">

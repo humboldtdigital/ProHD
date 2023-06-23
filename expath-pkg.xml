@@ -1,6 +1,7 @@
 <package xmlns="http://expath.org/ns/pkg" spec="1.0" version="0.2" name="http://prohd.org" abbrev="ProHD">
     <title>Dossier Digital: Alexander von Humboldt y Cuba (1800-1830)</title>
-    <dependency package="http://exist-db.org/apps/shared"/>
-    <dependency package="http://existsolutions.com/apps/tei-publisher-lib" semver-min="2.8.8"/>
-    <dependency package="http://exist-db.org/open-api/router" semver-min="0.2.0"/>
+    <dependency processor="http://exist-db.org" semver-min="5.3.0"/>
+    <dependency package="http://exist-db.org/html-templating" semver="1"/>
+    <dependency package="http://existsolutions.com/apps/tei-publisher-lib" semver="3"/>
+    <dependency package="http://e-editiones.org/roaster" semver="1"/>
 </package>

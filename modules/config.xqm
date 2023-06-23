@@ -26,13 +26,14 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
  : If a version is given, the components will be loaded from a public CDN.
  : This is recommended unless you develop your own components.
  :)
-declare variable $config:webcomponents :="1.24.20";
+declare variable $config:webcomponents :="2.5.1";
 
 (:~
  : CDN URL to use for loading webcomponents. Could be changed if you created your
  : own library extending pb-components and published it to a CDN.
  :)
-declare variable $config:webcomponents-cdn := "https://unpkg.com/@teipublisher/pb-components";
+(: declare variable $config:webcomponents-cdn := "https://unpkg.com/@teipublisher/pb-components"; :)
+declare variable $config:webcomponents-cdn := "https://cdn.jsdelivr.net/npm/@teipublisher/pb-components";
 
 (:~~
  : A list of regular expressions to check which external hosts are
@@ -122,8 +123,25 @@ declare variable $config:facets := [
         "output": function($label) {
             <pb-i18n key="form.{$label}">{$label}</pb-i18n>
         }
-    }
-    , 
+    },
+    map {
+        "dimension": "author",
+        "heading": "facets.author",
+        "max": 5,
+        "hierarchical": false()
+    },
+    map {
+        "dimension": "institution",
+        "heading": "facets.institution",
+        "max": 5,
+        "hierarchical": false()
+    },
+    map {
+        "dimension": "date",
+        "heading": "facets.date",
+        "max": 5,
+        "hierarchical": true()
+    },
     map {
         "dimension": "subject",
         "heading": "facets.subject",
@@ -281,6 +299,19 @@ declare variable $config:app-root :=
         substring-before($modulePath, "/modules")
 ;
 
+
+(:~
+ : Set to true to allow caching: if the browser sends an If-Modified-Since header,
+ : TEI Publisher will respond with a 304 if the resource has not changed since last
+ : access. However, this does *not* take into account changes to ODD or other auxiliary
+ : files, so don't use it during development.
+ :)
+declare variable $config:enable-proxy-caching :=
+    let $prop := util:system-property("teipublisher.proxy-caching")
+    return
+        exists($prop) and lower-case($prop) = 'true'
+;
+
 (:
  : The context path to use for links within the application, e.g. menus.
  : The default should work when running on top of a standard eXist installation,
@@ -300,24 +331,25 @@ declare variable $config:data-root :=$config:app-root || "/data";
  : The root of the collection hierarchy whose files should be displayed
  : on the entry page. Can be different from $config:data-root.
  :)
-declare variable $config:data-default := $config:data-root;
+declare variable $config:data-default := $config:data-root || '/edition';
 
 (:~
  : A sequence of root elements which should be excluded from the list of
  : documents displayed in the browsing view.
  :)
 declare variable $config:data-exclude := (
-    doc($config:data-root || "/taxonomy.xml")/tei:TEI,
-    doc($config:data-root || "/about.xml")/tei:TEI,
-    doc($config:data-root || "/team.xml")/tei:TEI,
-    doc($config:data-root || "/team_es.xml")/tei:TEI,
-    doc($config:data-root || "/about_es.xml")/tei:TEI,
-    doc($config:data-root || "/team_en.xml")/tei:TEI,
-    doc($config:data-root || "/about_en.xml")/tei:TEI,
-    doc($config:data-root || "/criterios.xml")/tei:TEI,
-    doc($config:data-root || "/prohd.xml")/tei:TEI,
-    doc($config:data-root || "/prohd.rng")/tei:TEI,
-    doc($config:data-root || "/prohd.sch")/tei:TEI
+    doc($config:data-root || "/auxiliary/taxonomy.xml")/tei:TEI,
+    doc($config:data-root || "/articles/about.xml")/tei:TEI,
+    doc($config:data-root || "/articles/about_es.xml")/tei:TEI,
+    doc($config:data-root || "/articles/about_en.xml")/tei:TEI,
+    doc($config:data-root || "/articles/team.xml")/tei:TEI,
+    doc($config:data-root || "/articles/team_es.xml")/tei:TEI,
+    doc($config:data-root || "/articles/team_en.xml")/tei:TEI,
+    doc($config:data-root || "/articles/criterios.xml")/tei:TEI,
+    doc($config:data-root || "/articles/start.xml")/tei:TEI,
+    doc($config:data-root || "/documentation/prohd.xml")/tei:TEI,
+    doc($config:data-root || "/documentation/prohd.rng")/tei:TEI,
+    doc($config:data-root || "/documentation/prohd.sch")/tei:TEI
 );
 
 (:~
@@ -416,7 +448,7 @@ declare variable $config:dts-import-collection := $config:data-default || "/play
  : Change this to support different configurations for different collections or document types.
  : By default this returns a configuration based on the default settings defined
  : by other variables in this module.
- : 
+ :
  : @param $collection relative collection path (i.e. with $config:data-root stripped off)
  : @param $docUri relative document path (including $collection)
  :)
@@ -424,9 +456,9 @@ declare function config:collection-config($collection as xs:string?, $docUri as 
     (: Return empty sequence to use default config :)
     ()
 
-    (: 
+    (:
      : Replace line above with the following code to switch between different view configurations per collection.
-     : $collection corresponds to the relative collection path (i.e. after $config:data-root). 
+     : $collection corresponds to the relative collection path (i.e. after $config:data-root).
      :)
     (:
     switch ($collection)
@@ -455,7 +487,7 @@ declare function config:default-config($docUri as xs:string?) {
         "fill": $config:pagination-fill,
         "template": $config:default-template
     }
-    let $collection := 
+    let $collection :=
         if (exists($docUri)) then
             replace($docUri, "^(.*)/[^/]+$", "$1") => substring-after($config:data-root || "/")
         else

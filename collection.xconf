@@ -10,6 +10,9 @@
                 <field name="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <field name="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
                 <field name="file" expression="util:document-name(.)"/>
+                <facet dimension="author" expression="nav:get-metadata(ancestor::tei:TEI, 'author')"/>
+                <facet dimension="institution" expression="nav:get-metadata(ancestor::tei:TEI, 'institution')"/>
+                <facet dimension="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')" hierarchical="yes"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <facet dimension="form" expression="nav:get-metadata(ancestor::tei:TEI, 'form')"/>

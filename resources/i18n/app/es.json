@@ -1,9 +1,13 @@
 {
     "menu": {
         "title": "Dossier Digital: Alexander von Humboldt y Cuba (1800–1830)",
+        "title1": "Dossier Digital",
+        "title2": "Alexander von Humboldt y Cuba (1800–1830)",
         "about": "Sobre el proyecto",
         "team": "Equipo",
-        "home": "Inicio"
+        "home": "Inicio",
+        "criterios": "Criterios editoriales",
+        "documents": "Documentos"
     },
     "document":{
     	"view": "Vista",
@@ -34,7 +38,10 @@
     },
     "facets":{
     	"form":"Forma",
-    	"subject": "Materias"
+    	"subject": "Materias",
+        "date": "Fecha",
+        "institution": "Institución",
+        "author": "Autor"
     },
     "languages": {
         "en": "Inglés",
@@ -75,5 +82,8 @@
         "tobacco": "Tabaco",
         "factories": "Fábricas",
         "scientificexpedition": "Expedición científica"
+    },
+    "landing": {
+        "caption": "Retrato de Alexander von Humboldt por Frédéric-Christophe d'Houdetot (1778-1859)."
     }
 }

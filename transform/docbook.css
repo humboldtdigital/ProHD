@@ -1,0 +1,24 @@
+/* Generated stylesheet. Do not edit. */
+/* Global styles */
+h3 {
+	font-family: serif;
+	font-weight: 400;
+	}
+
+/* Model rendition styles */
+
+.tei-title3:before { content: ' > '; color: #607d8b; }
+.tei-emphasis1 { font-weight: 400; font-style: italic; }
+.tei-emphasis2 { font-style: italic; }
+.tei-imagedata1 { max-width: 100%; }
+.tei-imagedata2 { max-width: 100%; }
+.tei-td1 { font-weight: bold; }
+.tei-programlisting1 { font-family: monospace; margin: 1em 0 1em .5em; padding: 1em 0 1em .5em; white-space: pre-wrap; }
+.tei-synopsis1 { font-family: monospace; margin: 1em 0 1em .5em; padding: 1em 0 1em .5em; white-space: pre-wrap; }
+.tei-note1 { border-top: 1px solid #C0C4C0; border-bottom: 1px solid #C0C4C0; margin: 1em 0 1em .5em; padding: 1em 0 1em .5em; -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */ page-break-inside: avoid; /* Firefox */ break-inside: avoid; /* IE 10+ */ }
+.tei-tag:before { content: '<'; }
+.tei-tag:after { content: '>'; }
+.tei-guilabel { font-style: italic; }
+.tei-videodata2 { max-width: 100%; }
+.tei-abstract2 { color: #909090; padding-left: 10px; border-left: 3px solid #c0c0c0; }
+.tei-pubdate { color: #808080; }
