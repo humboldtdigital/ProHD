@@ -8,7 +8,7 @@ xquery version "3.1";
  :)
 module namespace app="teipublisher.com/app";
 
-import module namespace templates="http://exist-db.org/xquery/templates";
+import module namespace templates="http://exist-db.org/xquery/html-templating";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
 import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "../pages.xql";
 import module namespace errors = "http://e-editiones.org/roaster/errors";
