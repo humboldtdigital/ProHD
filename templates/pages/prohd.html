@@ -86,6 +86,11 @@
                     padding: 20px;
                     } 
                 }
+
+                #page-nav {
+                    display: flex;
+                    flex-direction: row;
+                }
                
                 
                 </style>
@@ -150,6 +155,13 @@
                             <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
                                 <pb-i18n key="document.page-view"/>
                             </pb-toggle-feature>
+                            <span id="page-nav">
+                                <pb-autocomplete id="gotoPage" name="page" source="api/search/autocomplete" data-i18n="[placeholder]navigation.go">
+                                    <input type="hidden" name="field" value="page"/>
+                                    <input type="hidden" name="doc" value="${doc}" data-template="pages:parse-params" />
+                                </pb-autocomplete>
+                                <paper-icon-button icon="forward" id="submit"></paper-icon-button>
+                            </span>
                         </pb-media-query>
                         
                         <!-- Navigate to previous page -->
