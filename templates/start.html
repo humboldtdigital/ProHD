@@ -145,20 +145,16 @@
                 color: var(--pb-landing-link-color);
             }
 
-            footer {
-                border-radius: 5px;
-            }
-
-            footer div {
-                border-radius: 5px;
-            }
+          
+         
         </style>
     </custom-style>
 </head>
-<body>
+<body>        
+    <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json" require-language="require-language">
+
     <div class="page">
-        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json" require-language="require-language">
-            <pb-document id="document1" path="articles/start.xml" odd="prohd"/>
+        <pb-document id="document1" path="articles/start.xml" odd="prohd"/>
             <app-drawer-layout force-narrow="force-narrow">
                 <app-drawer slot="drawer" align="right">
                     <div class="drawer-content">
@@ -226,7 +222,6 @@
                             </app-toolbar>
                         </pb-media-query>
                         <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
-
                 </div>   
             </div>
             
@@ -242,38 +237,34 @@
                     </pb-view>
                 </div>
             </main>
-            <footer>
-                <div id="footerGray">
-                    <p>
-                        <pb-i18n key="footer.funded"/>
-                    </p>
-                    <a href="https://www.auswaertiges-amt.de/">
-                            <img alt="logo of Auswärtiges Amt" src="resources/images/aa.svg" class="funder1"/>
-                        </a>
-                    <a href="https://www.fritz-thyssen-stiftung.de/">
-                            <img alt="logo of Fritz Thyssen Institute" src="resources/images/thyssen.svg" class="funder2"/>
-                        </a>
-                    <a href="https://www.gerda-henkel-stiftung.de/">
-                            <img alt="logo of Gerda Henkel Institute" src="resources/images/gerdahenkel.svg" class="funder3"/>
-                    </a>
-                </div>    
-                <div id="footerGreen">
-                    <a href="https://e-editiones.org/">
-                            <img alt="logo of powered by e-editiones" src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
-                        </a>
-                    <p class="version">App: v <span data-template="pages:version"/>web components: v <pb-version/>
-                        </p>
-                    <p class="license">
-                            <pb-i18n key="footer.license"/>
-                        </p>
-                    <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
-                            <img alt="logo of Creative Commons license By" src="resources/images/cc.svg" class="cc"/>
-                        </a>
-                </div>
-            </footer>
-            </app-drawer-layout>
-        </pb-page>
+        </app-drawer-layout>
     </div>
+    <footer>
+        <div id="footerGray">
+            <p><pb-i18n key="footer.funded"/></p>
+            <a href="https://www.auswaertiges-amt.de/">
+                <img alt="logo of Auswärtiges Amt" src="resources/images/aa.svg" class="funder1"/>
+            </a>
+            <a href="https://www.fritz-thyssen-stiftung.de/">
+                <img alt="logo of Fritz Thyssen Institute" src="resources/images/thyssen.svg" class="funder2"/>
+            </a>
+            <a href="https://www.gerda-henkel-stiftung.de/">
+                <img alt="logo of Gerda Henkel Institute" src="resources/images/gerdahenkel.svg" class="funder3"/>
+            </a>
+        </div>    
+        <div id="footerGreen">
+            <a href="https://e-editiones.org/">
+                    <img alt="logo of powered by e-editiones" src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+            </a>
+            <p class="version">App: v <span data-template="pages:version"/> web components: v <pb-version/></p>
+            <p class="license"><pb-i18n key="footer.license"/></p>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                <img alt="logo of Creative Commons license By" src="resources/images/cc.svg" class="cc"/>
+            </a>
+        </div>
+    </footer>
+    </pb-page>
+
     <div class="splash">
         <img alt="animated big logo of Proyecto Humboldt Digital that disappears after some seconds" src="resources/images/logoHDNegativo.svg"/>
     </div>
