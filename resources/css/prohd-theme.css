@@ -367,3 +367,14 @@ a {
 aside .upload {
     margin: 1.5rem 0 0 0;
 }
+
+
+@media (min-width: 1024px) {
+    app-drawer {
+        display: none;
+    }
+
+    #drawer {
+        display:none;
+    }
+}
