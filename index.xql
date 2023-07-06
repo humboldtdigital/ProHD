@@ -28,7 +28,7 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
     return
         switch ($field)
             case "page" return           
-                $root//tei:pb/@n/string()       
+                $root/descendant-or-self::tei:pb/@n/string()       
             case "title" return
                 string-join((
                     $header//tei:msDesc/tei:head, $header//tei:titleStmt/tei:title[@type = 'main'],

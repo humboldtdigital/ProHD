@@ -22,6 +22,9 @@
               <text qname="tei:div">
                 <ignore qname="tei:div"/>
             </text>
+            <text qname="tei:pb">
+                <field name="page" expression="nav:get-metadata(., 'page')"/>
+            </text>
             <text qname="tei:head"/>
             <text match="//tei:titleStmt/tei:title"/>
             <text match="//tei:msDesc/tei:head"/>

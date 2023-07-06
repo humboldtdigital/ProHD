@@ -78,10 +78,8 @@ declare function teis:autocomplete($doc as xs:string?, $fields as xs:string+, $q
     return
         switch ($field)
             case "page" return array {
-                for $text in doc($config:data-root || '/' || $doc)//tei:text[ft:query(., "page:*" || $q || "*", $query:QUERY_OPTIONS)]
-                    for $pb at $pos in $text//tei:pb
-                        (: let $foo := util:log('INFO',  $pos || '-' || $pb/@n/string() ) :)
-                        return 
+                for $pb in doc($config:data-root || '/' || $doc)//tei:pb[ft:query(., "page:*" || $q || "*", $query:QUERY_OPTIONS)]
+                    return 
                         map {"text": $pb/@n/string(), "value": util:node-id($pb)}
             }
             case "author" return
