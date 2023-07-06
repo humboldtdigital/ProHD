@@ -25,6 +25,57 @@
         }
     },
     "paths": {
+        "/api/search/autocomplete": {
+			"get": {
+				"summary": "List possible completions",
+				"description": "Return a list of possible completions for the given search term",
+				"operationId": "app:autocomplete",
+				"tags": ["search"],
+				"parameters": [
+					{
+						"name": "query",
+						"in": "query",
+						"description": "The prefix to expand",
+						"schema": {
+							"type": "string"
+						},
+						"required": true
+					},
+					{
+						"name": "field",
+						"in": "query",
+						"description": "The field to query",
+						"schema": {
+							"title": "string",
+							"default": "text"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "List of possible completions",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"text": {
+												"type": "string"
+											},
+											"value": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
         "/api/document/{id}/toc": {
             "get": {
                 "summary": "Retrieve a formatted table of contents for the document",

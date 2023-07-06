@@ -22,19 +22,15 @@ declare function sapi:autocomplete($request as map(*)) {
         else
             ()
     return
-        switch ($type) 
-            case "page" return 
-                $items
-            default return 
-                array {
-                    for $item in $items
-                    group by $item
-                    return
-                        map {
-                            "text": $item,
-                            "value": $item
-                        }
+        array {
+            for $item in $items
+            group by $item
+            return
+                map {
+                    "text": $item,
+                    "value": $item
                 }
+        }
 };
 
 declare function sapi:search($request as map(*)) {
