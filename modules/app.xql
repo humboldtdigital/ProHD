@@ -8,13 +8,14 @@ xquery version "3.1";
  :)
 module namespace app="teipublisher.com/app";
 
-import module namespace templates="http://exist-db.org/xquery/templates";
+import module namespace templates="http://exist-db.org/xquery/html-templating";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
 import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "../pages.xql";
 import module namespace errors = "http://e-editiones.org/roaster/errors";
 import module namespace mapping="http://www.tei-c.org/tei-simple/components/map" at "map.xql";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation" at "navigation.xql";
 import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at "pm-config.xql";
+import module namespace query="http://www.tei-c.org/tei-simple/query" at "../../query.xql";
 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
@@ -22,6 +23,31 @@ declare
     %templates:wrap
 function app:foo($node as node(), $model as map(*)) {
     <p>Dummy templating function.</p>
+};
+
+declare function app:autocomplete($request as map(*)) {
+    let $q := request:get-parameter("query", ())
+    let $type := request:get-parameter("field", "text")
+    let $doc := request:get-parameter("doc", ())
+    let $items :=
+        if ($q) then
+            query:autocomplete($doc, $type, $q)
+        else
+            ()
+    return
+        switch ($type) 
+            case "page" return 
+                $items
+            default return 
+                array {
+                    for $item in $items
+                    group by $item
+                    return
+                        map {
+                            "text": $item,
+                            "value": $item
+                        }
+                }
 };
 
 declare function app:table-of-contents($request as map(*)) {

@@ -434,21 +434,26 @@ padding-left: 10px;
             <param name="title" value="fileDesc/titleStmt/title/string()"/>
             <pb:template xmlns="" xml:space="preserve"><div>
   <div>
-    <pb-popover persistent="persistent">
-      <iron-icon icon="icons:launch"/><pb-i18n key="cite">Citación</pb-i18n>
-      <span slot="alternate"> 
-        "[[editionTitle]]", 
+  <pb-collapse>
+   <div slot="collapse-trigger">
+       <pb-i18n key="cite">Citación</pb-i18n><iron-icon icon="icons:content-copy" id="clipboard-trigger"/>
+   </div>
+   <div slot="collapse-content" id="clipboard-citation">
+      "[[editionTitle]]", 
         [[editors]] (ed.), 
         <i>[[title]]</i>, 
         [[publishers]] 
         ([[currentDate]]): 
-        <a href="[[file]]">[[file]] </a>
-      </span>
-    </pb-popover>
+        <a href="[[file]]" id="url">[[file]] </a>
+   </div>
+  </pb-collapse>
+    
+   
   </div>
   <div>[[profileDesc]]</div>
   <div>[[titleStmt]][[editionStmt]][[publicationStmt]]</div>
   <div>[[sourceDesc]]</div>
+
 </div>  </pb:template>
         </model><model output="web" predicate="$parameters?display='title'" behaviour="inline">
             <param name="content" value="(fileDesc/titleStmt/title)"/>

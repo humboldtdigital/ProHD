@@ -245,12 +245,12 @@ p.version {
     
     p.license,
     p.version {
-        display: inline;
-        font-size: 0.7em;
+        display: inline-block;
+        font-size: 0.9em;
         font-family: Montserrat;
         color: white;
-        font-weight: 300;
-        
+        font-weight: 500;
+      
     }
     
     p.license span,
@@ -366,4 +366,15 @@ a {
 /* upload panel */
 aside .upload {
     margin: 1.5rem 0 0 0;
+}
+
+
+@media (min-width: 1024px) {
+    app-drawer {
+        display: none;
+    }
+
+    #drawer {
+        display:none;
+    }
 }

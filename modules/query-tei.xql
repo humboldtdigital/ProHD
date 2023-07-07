@@ -77,6 +77,11 @@ declare function teis:autocomplete($doc as xs:string?, $fields as xs:string+, $q
     for $field in $fields
     return
         switch ($field)
+            case "page" return array {
+                for $pb in doc($config:data-root || '/' || $doc)//tei:pb[ft:query(., "page:*" || $q || "*", $query:QUERY_OPTIONS)]
+                    return 
+                        map {"text": $pb/@n/string(), "value": util:node-id($pb)}
+            }
             case "author" return
                 collection($config:data-root)/ft:index-keys-for-field("author", $lower-case-q,
                     function($key, $count) {
