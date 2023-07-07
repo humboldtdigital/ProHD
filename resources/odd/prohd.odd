@@ -444,7 +444,7 @@ padding-left: 10px;
         <i>[[title]]</i>, 
         [[publishers]] 
         ([[currentDate]]): 
-        <a href="[[file]]">[[file]] </a>
+        <a href="[[file]]" id="url">[[file]] </a>
    </div>
   </pb-collapse>
     
