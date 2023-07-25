@@ -1,4 +1,5 @@
-<?xml-model href="prohd.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="letter" xml:id="prohd0022" xml:space="preserve">
+<?xml-model href="prohd.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="letter" xml:id="prohd0022" xml:space="preserve">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -29,12 +30,13 @@
             <sourceDesc>
                 <msDesc rend="manuscript">
                     <msIdentifier>
-                        <institution>Staatsbibliothek zu Berlin</institution>
+                        <institution>Staatsbibliothek zu Berlin Preußischer
+                            Kulturbesitz</institution>
                         <collection>Handschriftenabteilung</collection>
                         <idno>
                             <idno type="shelfmark">Nachl. Alexander von Humboldt, gr. Kasten 2, Mappe 3, Nr. 11</idno>
                             <idno type="uri">http://kalliope-verbund.info/DE-611-HS-1007953</idno>
-                            <idno type="URLImages">"http://resolver.staatsbibliothek-berlin.de/SBB0001698D00000000"</idno>
+                            <idno type="URLImages">http://resolver.staatsbibliothek-berlin.de/SBB0001698D00000000</idno>
                         </idno>
                     </msIdentifier>
                     <physDesc>
@@ -71,6 +73,8 @@
             <textClass>
                 <catRef scheme="#genre" target="#correspondence"/>
                 <catRef scheme="#form" target="#manuscript"/>
+                <catRef scheme="#subjects" target="#geography"/>
+                <catRef scheme="#subjects" target="#slavery"/>
             </textClass>
         </profileDesc>
         <encodingDesc>

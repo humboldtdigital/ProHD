@@ -1,4 +1,5 @@
-<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?><?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0023" xml:space="preserve">
+<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?><?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0023" xml:space="preserve">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -29,12 +30,12 @@
             <sourceDesc>
                 <msDesc rend="manuscript">
                     <msIdentifier>
-                        <institution>Biblioteka Jagiellónska</institution>
+                        <institution>Biblioteka Jagiellońska</institution>
                         <collection>Nachl. Alexander von Humboldt</collection>
                         <idno>
                             <idno type="shelfmark">Bd. 8/2 Bl. 310</idno>
                             <idno type="uri">http://kalliope-verbund.info/DE-611-HS-2991561</idno>
-                            <idno type="URLImages">"http://jbc.bj.uj.edu.pl/dlibra/publication/368881/content"</idno>
+                            <idno type="URLImages">http://jbc.bj.uj.edu.pl/dlibra/publication/368881/content</idno>
                         </idno>
                     </msIdentifier>
                     <physDesc>
@@ -209,7 +210,7 @@
                             </cell>
                             <cell>2704 <seg type="comment">
                                     <orig>pipas</orig>
-                                    <note>A proposito de las medidas ver Alexander von Humboldt y Aimé de Bonpland: Reise in die aequinoctial-gegenden des neuen continents in den jahren 1799, 1800, 1801, 1803 und 1804 (1829), p. 161-162, nota de pie de página : "Una pipa de aguardiente = 180 frascos oder 67½ Gallonen; 1 bocoy = 6 bariles. Die pipa von aguardiente de canna, welche heut zu Tage in der Havannah 25 Piaster kostet, galt von 1815 bis 1819 deren über 35. Der bocoy de miel de purga galt sieben Reales de plata. Man nimmt gewöhnlich an, daß drey Hüte Zucker ein Baril de miel de purga zu zwey arrobas geben. Beym Raffinieren wird häufig über die erste Lage feuchten Thons (barro), der unter einem Ueberdach (piza) durch Thiere mit Füßen getreten ward, eine zweyte Thonlage (barrisso) gelegt. Nachdem diese weggenommen worden, wird der raffinierte Zucker noch acht Tage in der Kegelform (horma) zurückgelassen, damit der kleine Ueberrest von Melasse frey ablaufen könne (para escurrir y limpiar)".
+                                    <note>A proposito de las medidas ver Alexander von Humboldt y Aimé de Bonpland: Reise in die Aequinoctial-Gegenden des neuen Continents in den Jahren 1799, 1800, 1801, 1803 und 1804. 6 tomos. Tomo 6, primera parte (1829), p. 161-162: "Una pipa de aguardiente = 180 frascos oder 67½ Gallonen; 1 bocoy = 6 bariles. Die pipa von aguardiente de canna, welche heut zu Tage in der Havannah 25 Piaster kostet, galt von 1815 bis 1819 deren über 35. Der bocoy de miel de purga galt sieben Reales de plata. Man nimmt gewöhnlich an, daß drey Hüte Zucker ein Baril de miel de purga zu zwey arrobas geben. Beym Raffinieren wird häufig über die erste Lage feuchten Thons (barro), der unter einem Ueberdach (piza) durch Thiere mit Füßen getreten ward, eine zweyte Thonlage (barrisso) gelegt. Nachdem diese weggenommen worden, wird der raffinierte Zucker noch acht Tage in der Kegelform (horma) zurückgelassen, damit der kleine Ueberrest von Melasse frey ablaufen könne (para escurrir y limpiar)".
                                     </note>
                                 </seg>
                             </cell>

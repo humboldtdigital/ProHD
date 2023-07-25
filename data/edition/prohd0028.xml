@@ -1,4 +1,7 @@
-<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?><?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="ed_">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?>
+<?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="ed_">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -128,7 +131,8 @@
                     </choice> celebradas en los <choice>
                         <orig>dias</orig>
                         <reg>días</reg>
-                    </choice><lb/><hi rendition="#u"><date from="1827-12-13" to="1827-12-15" cert="high" calendar="#Gregorian">13.. 14.. y 15.. de diciembre de
+                    </choice><lb/><hi rendition="#u"><date from="1827-12-13" to="1827-12-15"
+                            cert="high" calendar="#Gregorian">13.. 14.. y 15.. de diciembre de
                             1827</date>.</hi><lb/><choice>
                         <abbr>Presid.<hi rendition="#sup">te</hi></abbr>
                         <expan>Presidente</expan>
@@ -444,7 +448,8 @@
                         <orig>estimacion</orig>
                         <reg>estimación</reg>
                     </choice> y <choice>
-                        <abbr>re<g ref="#typoHyphen"/><lb break="no"/>conocim.<hi rendition="#sup">to</hi></abbr>
+                        <abbr>re<g ref="#typoHyphen"/><lb break="no"/>conocim.<hi rendition="#sup"
+                                >to</hi></abbr>
                         <expan>reconocimiento</expan>
                     </choice>
                 </p>
@@ -551,7 +556,8 @@
                         <abbr>q.</abbr>
                         <expan>que</expan>
                     </choice>
-                    <lb/>por estas razones y acostrumbrada <gap reason="illegible" unit="words" quantity="1"/>
+                    <lb/>por estas razones y acostrumbrada <gap reason="illegible" unit="words"
+                        quantity="1"/>
                     <choice>
                         <orig>á</orig>
                         <reg>a</reg>
@@ -607,7 +613,8 @@
                     <choice>
                         <abbr>Jta</abbr>
                         <expan>Junta</expan>
-                    </choice> de beneficencia y deseando darle es<g ref="#typoHyphen"/><lb break="no"/>ta nueva prueba de su constante deferencia, <lb/>accedió desde
+                    </choice> de beneficencia y deseando darle es<g ref="#typoHyphen"/><lb
+                        break="no"/>ta nueva prueba de su constante deferencia, <lb/>accedió desde
                     luego <choice>
                         <orig>á</orig>
                         <reg>a</reg>
@@ -778,7 +785,8 @@
                     <lb/>poner en el <lb/>monumento <lb/><choice>
                         <abbr>q.<hi rendition="#sup">e</hi></abbr>
                         <expan>que</expan>
-                    </choice> se está <lb/>erigiendo en <lb/>el lugar don<g ref="#typoHyphen"/><lb break="no"/>de se dijo la <lb/><choice>
+                    </choice> se está <lb/>erigiendo en <lb/>el lugar don<g ref="#typoHyphen"/><lb
+                        break="no"/>de se dijo la <lb/><choice>
                         <abbr>prim.<hi rendition="#sup">a</hi></abbr>
                         <expan>primera</expan>
                     </choice> misa <lb/>en esta plaza </head>
@@ -854,7 +862,8 @@
                     </choice>, como <choice>
                         <abbr>cpo</abbr>
                         <expan>cuerpo</expan>
-                    </choice> literario, se le presente en pro<g ref="#typoHyphen"/><lb break="no"/>yecto la inscripcion <choice>
+                    </choice> literario, se le presente en pro<g ref="#typoHyphen"/><lb break="no"
+                    />yecto la inscripcion <choice>
                         <abbr>q.</abbr>
                         <expan>que</expan>
                     </choice> deba ponerse en él y <choice>
@@ -1108,7 +1117,8 @@
                     </choice> escoger al<g ref="#typoHyphen"/><lb break="no"/>gunos <choice>
                         <abbr>p.<hi rendition="#sup">a</hi></abbr>
                         <expan>para</expan>
-                    </choice> ofrecerlos al público, acordó nom<g ref="#typoHyphen"/><lb break="no"/>brar una <choice>
+                    </choice> ofrecerlos al público, acordó nom<g ref="#typoHyphen"/><lb break="no"
+                    />brar una <choice>
                         <orig>comision</orig>
                         <reg>comisión</reg>
                     </choice> compuesta <choice>
@@ -1166,7 +1176,8 @@
                     <choice>
                         <abbr>q.<hi rendition="#sup">e</hi></abbr>
                         <expan>que</expan>
-                    </choice> no se con<g ref="#typoHyphen"/><lb break="no"/>ceda privile<lb break="no"/>gio exclusivo <lb/><choice>
+                    </choice> no se con<g ref="#typoHyphen"/><lb break="no"/>ceda privile<lb
+                        break="no"/>gio exclusivo <lb/><choice>
                         <orig>álos</orig>
                         <reg>a los</reg>
                     </choice>
@@ -1256,7 +1267,8 @@
                         <abbr>q.</abbr>
                         <expan>que</expan>
                     </choice> de<g ref="#typoHyphen"/><lb break="no"/>muestra la entrada salida y
-                    existencia de <lb/>caudales desde <date when="1827-01-01" calendar="#Gregorian">1.<hi rendition="#sup">o</hi> de <choice>
+                    existencia de <lb/>caudales desde <date when="1827-01-01" calendar="#Gregorian"
+                            >1.<hi rendition="#sup">o</hi> de <choice>
                             <abbr>en.<hi rendition="#sup">o</hi></abbr>
                             <expan>enero</expan>
                         </choice> de 1827</date> hasta fi<g ref="#typoHyphen"/><lb break="no"/>nes
