@@ -45,6 +45,14 @@
                </person>
                <person>
                   <persName>
+                     <hi rendition="#b">Bryan Echarri</hi>
+                  </persName>
+                  <affiliation>Oficina del Historiador de La Ciudad de La Habana - Schriftliches
+                     Kulturerbe</affiliation>
+                  <occupation>Digitalisierung</occupation>
+               </person>
+               <person>
+                  <persName>
                      <hi rendition="#b">
                         <ref
                            target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda"
@@ -67,6 +75,13 @@
                </person>
                <person>
                   <persName>
+                     <hi rendition="#b">Daniela Reyes</hi>
+                  </persName>
+                  <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
+                  <occupation>Studentische Hilfskraft</occupation>
+               </person>
+               <person>
+                  <persName>
                      <hi rendition="#b">
                         <ref
                            target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio"
@@ -74,8 +89,7 @@
                      </hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
-                  <occupation>Wissenschaftlicher Mitarbeiter (Digital Humanities,
-                     Editionsphilologie)</occupation>
+                  <occupation>Wissenschaftlicher Mitarbeiter (Digital Humanities)</occupation>
                </person>
                <person>
                   <persName>
