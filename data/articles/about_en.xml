@@ -59,16 +59,15 @@
             </list>
          </div>
          <div>
-            <head>Editorial principles</head>
+            <head>Content</head>
             <p>The "Digital Dossier: Alexander von Humboldt and Cuba (1800–1830)" contains
-               transcriptions of textual documents in manuscript and printed format, in three
+               transcriptions of textual documents in manuscript format, in three
                languages (English, French, and Spanish). They all relate to Humboldt's trip
                to Cuba and the questions the Prussian scientist studied in the <title>Essai
                   politique sur l'île de Cuba</title> (2 vols., Paris 1826). The textual sources of
                the edited documents published in the "Digital Dossier" stem from libraries and
                archives in Germany, Cuba and Poland. For more information on the documents'
                provenance, please consult the metadata section of each text.</p>
-            <!-- I would prefer using "text" here and not "edition" - as in "of each edition" -, since an edition - to me - is the entirety, here: our "Digital Dossier", and they contain digital documents, scholarly edited -->
             <p>The texts are made available in a double presentation: <list>
                   <item>on the one hand, as a <hi rendition="#b">diplomatic transcription</hi>,
                      preserving the historical particularities of the source, such as abbreviations,
@@ -80,6 +79,7 @@
                      of the text. </item>
                </list>
             </p>
+            <p>To learn more about text setting and coding in TEI format, please refer to the <ref target="criteria.xml">Editorial principles</ref> section.</p>
          </div>
          <div>
             <head>Technical Aspects</head>
@@ -97,15 +97,14 @@
                   <item>changes in typography, as well as</item>
                   <item>authorial interventions such as strikethroughs or additions, uncertain
                      readings, gaps, supplied words, etc.</item>
-               </list> For more details on our TEI markup, it is recommended to consult the ediarum
-               documentation available in <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">German</ref> and <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">Spanish</ref>.</p>
-            <p>This web application has been built with <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.), <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
-               5.2.0.) and Cantaloupe Image Server (v. 5.0.5).
+               </list> For more details on our TEI markup, please visit <ref target="criterios.xml">Editorial principles</ref>.</p>
+            <p>This web application has been built with <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 8.0.0.), <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
+               5.2.0.) and Cantaloupe Image Server (v. 5.3.1).
             An ODD (prohd.xml) is used to style
                the editions and static pages and two templates (prohd.html, view-grid-prohd.html)
                are used to build the graphical user interface with web components. A copy of the
                files that make up the web application is available at the <ref target="https://github.com/humboldtdigital/ProHD">project's Github
-                  repository</ref>. Both the web application and the facsimiles are hosted on
+                  repository</ref> and also available at <ref target="https://zenodo.org/record/7546909">Zenodo</ref>. Both the web application and the facsimiles are hosted on
                servers of the Oficina del Historiador de la Ciudad de La Habana; the facsimiles use
                   <ref target="https://iiif.io/">IIIF</ref>'s API.</p>
             <p>The development of the framework ediarum.PROHD.edit and of this web application has

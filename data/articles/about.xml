@@ -60,9 +60,9 @@
             </list>
          </div>
          <div>
-            <head>Editionsrichtlinien</head>
+            <head>Inhalt</head>
             <p>Das "Digitale Dossier: Alexander von Humboldt und Kuba (1800-1830)" veröffentlicht
-               Transkriptionen handschriftlicher und gedruckter Textdokumente in drei Sprachen
+               Transkriptionen handschriftlicher Textdokumente in drei Sprachen
                (Englisch, Französisch und Spanisch), die thematisch mit Humboldts Kubareise
                zusammenhängen, wie auch mit den Fragen, die der preußische Wissenschaftler in seinem
                   <title>Essai politique sur l'île de Cuba</title> (2 Bde., Paris 1826) untersucht
@@ -80,6 +80,7 @@
                      und offensichtliche Fehler korrigiert.</item>
                </list>
             </p>
+            <p>Weitere Informationen zur Textsetzung und Kodierung im TEI-Format finden Sie im Abschnitt <ref target="criterios.xml">Editionsprinzipien</ref>.</p> 
          </div>
          <div>
             <head>Technische Realisierung</head>
@@ -94,16 +95,14 @@
                der edierten Texte die Paginierung der Originalquelle, Überschriften und Absätze, die
                logische Unterteilung der Briefe, typografische Änderungen, Textbearbeitungen des
                Autors wie Streichungen oder Ergänzungen, unsichere Lesarten, Lücken, Ersetzungen,
-               usw. ausgezeichnet. Weitere Informationen zur TEI-Kodierung finden Sie im
-               ediarum-Benutzerhandbuch, das auf <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">deutsch</ref> und <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">spanisch</ref>
-               verfügbar ist.</p>
+               usw. ausgezeichnet. Weitere Informationen zur TEI-Kodierung finden Sie im <ref target="criterios.xml">Editionsprinzipien</ref>.</p>
             <p>Die Webanwendung wurde mit <ref target="https://teipublisher.com/index.html">TEI
-                  Publisher</ref> (v. 7.0.0.) erstellt und basiert auf der XML-Datenbank <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref>
-               (v.5.2.0.). Ein ODD (prohd.xml) dient der Formatierung der statischen Seiten und
+                  Publisher</ref> (v. 8.0.0.) erstellt und basiert auf der XML-Datenbank <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref>
+               (v.5.3.1.). Ein ODD (prohd.xml) dient der Formatierung der statischen Seiten und
                Editionen, die grafische Benutzeroberfläche wird mit zwei auf Webkomponenten
                basierenden Vorlagen (prohd.html, view-grid-prohd.html) erzeugt. Eine Kopie der
                Dateien, aus denen die Webanwendung besteht, ist im <ref target="https://github.com/humboldtdigital/ProHD">Github-Repositorium</ref> des
-               Projekts verfügbar. Sowohl die Webanwendung als auch die Faksimiles werden auf
+               Projekts und auch bei <ref target="https://zenodo.org/record/7546909">Zenodo</ref> verfügbar. Sowohl die Webanwendung als auch die Faksimiles werden auf
                Servern der Oficina del Historiador de la Ciudad de La Habana (OHCH) gehostet. Die
                Faksimiles verwenden die API von <ref target="https://iiif.io/">IIIF</ref> und liegen
                auf einem Cantaloupe Image Server (v. 5.0.5).</p>

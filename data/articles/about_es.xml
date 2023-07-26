@@ -61,9 +61,9 @@
             </list>
          </div>
          <div>
-            <head>Criterios editoriales</head>
+            <head>Contenido</head>
             <p>El "Dossier digital: Alexander von Humboldt y Cuba (1800-1830)" contiene
-               transcripciones de documentos textuales en formato manuscrito e impreso en tres
+               transcripciones de documentos textuales en formato manuscrito en tres
                idiomas (inglés, francés y español). Todos los textos están relacionados
                temáticamente con el viaje de Humboldt a Cuba y las cuestiones que el científico
                prusiano estudió en el <title>Essai politique sur l'île de Cuba</title> (2 tomos,
@@ -82,13 +82,14 @@
                      evidentes a fin de mejorar la legibilidad del texto.</item>
                </list>
             </p>
+            <p>Para saber más sobre el establecimiento de los textos y la codificación en formato TEI, se recomienda consultar la sección <ref target="criterios.xml">Criterios editoriales</ref>.</p>
          </div>
          <div>
             <head>Aspectos técnicos</head>
             <p>Los textos de las ediciones digitales del "Dossier Digital: Alexander von Humboldt y
                Cuba (1800-1830)" han sido codificados en formato XML siguiendo las directrices de la
                   <ref target="https://tei-c.org/">Text Encoding Initiative</ref> (P5). Para
-               facilitar la tarea de codificación, se ha adaptado el <foreign xml:lang="eng">framework</foreign> de ediarum desarrollado por TELOTA dando lugar a <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
+               facilitar la tarea de codificación, se ha adaptado el <foreign xml:lang="en">framework</foreign> de ediarum desarrollado por TELOTA dando lugar a <ref target="https://github.com/humboldtdigital/ediarum.PROHD.edit">ediarum.PROHD.edit</ref>.</p>
             <p>Se ha llevado a cabo una codificación que permita identificar la fuente de la que
                deriva el texto, los responsables de la edición y, siempre que ha sido posible, la
                autoría y otros datos relativos al proceso de creación. En cuanto a la codificación
@@ -100,18 +101,18 @@
                   <item>las intervenciones autoriales como tachados o adiciones, lecturas inciertas,
                      lagunas, palabras suplidas, etc.</item>
                </list> Para más detalles sobre la codificación en TEI, se recomienda consultar la
-               documentación de ediarum disponible en <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual/">alemán</ref> y <ref target="https://www.ediarum.org/docs/ediarum.BASE.manual_es/">español</ref>.</p>
-            <p>Esta aplicación web ha sido construida con <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 7.0.0.) y
+               sección <ref target="criterios.xml">Criterios editoriales</ref>.</p>
+            <p>Esta aplicación web ha sido construida con <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 8.0.0.) y
                   <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
-               5.2.0.). Se utiliza un ODD (prohd.xml) para dar formato a las ediciones y las páginas
+               5.3.1.). Se utiliza un ODD (prohd.xml) para dar formato a las ediciones y las páginas
                estáticas y dos plantillas (prohd.html, view-grid-prohd.html) construidas con
                componentes web para crear la interfaz gráfica de usuario. Una copia de los ficheros
                que integran la aplicación web está disponible en el <ref target="https://github.com/humboldtdigital/ProHD">repositorio de Github</ref> del
-               proyecto. Tanto la aplicación web como los facsímiles están alojados en servidores de
+               proyecto y en <ref target="https://zenodo.org/record/7546909">Zenodo</ref>. Tanto la aplicación web como los facsímiles están alojados en servidores de
                la Oficina del Historiador de la Ciudad de La Habana; los facsímiles utilizan la API
                de <ref target="https://iiif.io/">IIIF</ref> y se guardan en un Cantaloupe Image
                Server (v. 5.0.5).</p>
-            <p>El desarrollo del <foreign xml:lang="eng">framework</foreign> ediarum.PROHD.edit y de
+            <p>El desarrollo del <foreign xml:lang="en">framework</foreign> ediarum.PROHD.edit y de
                esta aplicación web ha sido realizado por Antonio Rojas Castro con la colaboración de
                Violeta López; puede dirigir sus consultas técnicas a antonio.rojas-castro at
                bbaw.de.</p>
