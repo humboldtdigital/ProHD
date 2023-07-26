@@ -60,12 +60,7 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             ))
                 return tokenize($d, '-')
             case "genre" return
-            (: pass the genre id, will be resolved into correct label via i18n :)
                 for $i in $header//tei:textClass/tei:catRef[@scheme="#genre"]/@target return substring($i, 2)
-            (: Added by ARC on 06.07.2021 :)
-            case "form" return (
-                for $i in $header//tei:textClass/tei:catRef[@scheme="#form"]/@target return substring($i, 2)
-            )
             case "subject" return (
                 for $i in $header//tei:textClass/tei:catRef[@scheme="#subject"]/@target return substring($i, 2)
             )
@@ -75,14 +70,6 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
 
 declare function idx:get-genre($header as element()?) {
     for $target in $header//tei:textClass/tei:catRef[@scheme="#genre"]/@target
-    let $category := id(substring($target, 2), doc($idx:app-root || "/data/taxonomy.xml"))
-    return
-        $category/ancestor-or-self::tei:category[parent::tei:category]/tei:catDesc
-};
-
-(: Added by ARC on 06.07.2021 :)
-declare function idx:get-form($header as element()?) {
-    for $target in $header//tei:textClass/tei:catRef[@scheme="#form"]/@target
     let $category := id(substring($target, 2), doc($idx:app-root || "/data/taxonomy.xml"))
     return
         $category/ancestor-or-self::tei:category[parent::tei:category]/tei:catDesc

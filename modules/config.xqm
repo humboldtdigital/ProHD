@@ -98,6 +98,18 @@ declare variable $config:pagination-fill := 5;
  :)
 declare variable $config:facets := [
     map {
+        "dimension": "author",
+        "heading": "facets.author",
+        "max": 5,
+        "hierarchical": false()
+    },
+    map {
+        "dimension": "institution",
+        "heading": "facets.institution",
+        "max": 5,
+        "hierarchical": false()
+    },
+    map {
         "dimension": "language",
         "heading": "facets.language",
         "max": 5,
@@ -116,33 +128,6 @@ declare variable $config:facets := [
         }
     },
     map {
-        "dimension": "form",
-        "heading": "facets.form",
-        "max": 5,
-        "hierarchical": false(),
-        "output": function($label) {
-            <pb-i18n key="form.{$label}">{$label}</pb-i18n>
-        }
-    },
-    map {
-        "dimension": "author",
-        "heading": "facets.author",
-        "max": 5,
-        "hierarchical": false()
-    },
-    map {
-        "dimension": "institution",
-        "heading": "facets.institution",
-        "max": 5,
-        "hierarchical": false()
-    },
-    map {
-        "dimension": "date",
-        "heading": "facets.date",
-        "max": 5,
-        "hierarchical": true()
-    },
-    map {
         "dimension": "subject",
         "heading": "facets.subject",
         "max": 5,
@@ -150,6 +135,12 @@ declare variable $config:facets := [
         "output": function($label) {
             <pb-i18n key="subject.{$label}">{$label}</pb-i18n>
         }
+    },
+    map {
+        "dimension": "date",
+        "heading": "facets.date",
+        "max": 5,
+        "hierarchical": true()
     }
 ];
 
