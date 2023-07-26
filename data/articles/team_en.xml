@@ -61,9 +61,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda"
-                                    >Linda Kirsten</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda">Linda Kirsten</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -73,9 +71,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias"
-                                    >Dr. Tobias Kraft</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias">Dr. Tobias Kraft</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -93,9 +89,7 @@
                     <person>
                         <persName>
                             <hi rendition="#b">
-                                <ref
-                                    target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio"
-                                    >Dr. Antonio Rojas Castro</ref>
+                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio">Dr. Antonio Rojas Castro</ref>
                             </hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
@@ -194,14 +188,9 @@
                             (BBAW)</orgName>
                         <note>The <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie
                                 der Wissenschaften</ref> (BBAW) is the largest non-university
-                            research institution in the humanities in the region. The <hi
-                                rendition="#i">Proyecto Humboldt Digital</hi> is institutionally
-                            located here and cooperates closely with the project <ref
-                                target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung"
-                                >"Travelling Humboldt - Science on the Move"</ref>. The academy
-                            projects are supported and advised by <ref
-                                target="https://www.bbaw.de/en/bbaw-digital/telota"
-                            >TELOTA</ref>.</note>
+                            research institution in the humanities in the region. The <hi rendition="#i">Proyecto Humboldt Digital</hi> is institutionally
+                            located here and cooperates closely with the project <ref target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">"Travelling Humboldt - Science on the Move"</ref>. The academy
+                            projects are supported and advised by <ref target="https://www.bbaw.de/en/bbaw-digital/telota">TELOTA</ref>.</note>
                     </org>
                     <org>
                         <orgName>Oficina del Historiador de La Ciudad de La Habana (OHCH)</orgName>
@@ -232,8 +221,7 @@
                         <note>The Casa Museo Alejandro de Humboldt is a Cuban museum dedicated to
                             the life and work of Alexander von Humboldt. It is part of the network
                             of museums of the OHCH and is located in Habana Vieja, the historical
-                            center of Havana. The Casa Humboldt is the site of <hi rendition="#i"
-                                >Proyecto Humboldt Digital</hi> in Cuba.</note>
+                            center of Havana. The Casa Humboldt is the site of <hi rendition="#i">Proyecto Humboldt Digital</hi> in Cuba.</note>
                     </org>
                     <org>
                         <orgName>Archivo Nacional de Cuba (ANC)</orgName>
@@ -246,9 +234,7 @@
                         <note>The <ref target="http://www.ill.cu">Instituto de Literatura y
                                 Lingüística (ILL)</ref> is in charge of researching and preserving
                             Cuba's literary and linguistic heritage. The ILL follows the tradition
-                            of the <ref
-                                target="https://press.uchicago.edu/books/humboldt/1_3_networks.html"
-                                > Sociedad Económica de Amigos del País</ref>, with which Alexander
+                            of the <ref target="https://press.uchicago.edu/books/humboldt/1_3_networks.html"> Sociedad Económica de Amigos del País</ref>, with which Alexander
                             von Humboldt also maintained close contact during his second visit to
                             the island in 1804.</note>
                     </org>

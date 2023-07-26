@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?>
-<?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="ed_sj1_wwf_y5b">
+<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?><?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="ed_sj1_wwf_y5b">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -37,8 +34,7 @@
                         <collection>Gobierno Superior Civil</collection>
                         <idno>
                             <idno type="shelfmark">Legajo 652. No.20407</idno>
-                            <idno type="URLImages"
-                                >http://prohd.ohc.cu/xmlui/handle/21.11149/85</idno>
+                            <idno type="URLImages">http://prohd.ohc.cu/xmlui/handle/21.11149/85</idno>
                         </idno>
                         <msName>Expediente en el que el Exmo. Ayuntamto sobre que se recoja sobre la
                             obra del Baron de Humboldt titulada ensayo político dela Isla de Cuba y
@@ -295,8 +291,7 @@
                         <reg>de la</reg>
                     </choice> educación primaria, el su<g ref="#typoHyphen"/><lb/>perior dictado de
                     nuestra seguridad y con<g ref="#typoHyphen"/><lb/>servación, oponían una
-                    resistencia <lb/>triste, pero poderosa a seguir los prin<g ref="#typoHyphen"
-                    /><lb/>cipios <choice>
+                    resistencia <lb/>triste, pero poderosa a seguir los prin<g ref="#typoHyphen"/><lb/>cipios <choice>
                         <orig>dela</orig>
                         <reg>de la</reg>
                     </choice> justicia universal y <choice>
@@ -435,8 +430,7 @@
                         <orig>apreciabi<g ref="#typoHyphen"/><lb break="no"/>lisimos</orig>
                         <reg>apreciabilísimos</reg>
                     </choice>, era sin embargo sobremanera <lb/>peligrosa entre nosotros por las
-                        opinion<g ref="#typoHyphen"/><pb n="4r" facs="prohd0025_4r.tif"/><lb
-                        break="no"/>es su autor acerca <choice>
+                        opinion<g ref="#typoHyphen"/><pb n="4r" facs="prohd0025_4r.tif"/><lb break="no"/>es su autor acerca <choice>
                         <orig>dela</orig>
                         <reg>de la</reg>
                     </choice> esclavitud, y <choice>
@@ -643,8 +637,7 @@
                     <choice>
                         <abbr>Seg.<hi rendition="#sup">do</hi></abbr>
                         <expan>Segundo</expan>
-                    </choice> de este <unclear reason="illegible" cert="low">SA.</unclear><hi
-                        rendition="#sup"><unclear reason="illegible" cert="low">o</unclear></hi>, me
+                    </choice> de este <unclear reason="illegible" cert="low">SA.</unclear><hi rendition="#sup"><unclear reason="illegible" cert="low">o</unclear></hi>, me
                     ha consultado <del rendition="#s"><lb/>el</del>
                     <unclear reason="illegible" cert="low">conftra</unclear> 2. del actual lo <choice>
                         <abbr>sig.<hi rendition="#sup">te</hi></abbr>
@@ -699,9 +692,7 @@
                     <lb/>obra en la libreria para en <lb/>su vista determinar lo <choice>
                         <abbr>q.<hi rendition="#sup">e</hi></abbr>
                         <expan>que</expan>
-                    </choice> corres<g ref="#typoHyphen"/><lb break="no"/>ponda, y <unclear
-                        reason="illegible" cert="high">acomeq.</unclear><hi rendition="#sup"
-                            ><unclear reason="illegible" cert="high">a</unclear></hi> del <choice>
+                    </choice> corres<g ref="#typoHyphen"/><lb break="no"/>ponda, y <unclear reason="illegible" cert="high">acomeq.</unclear><hi rendition="#sup"><unclear reason="illegible" cert="high">a</unclear></hi> del <choice>
                         <abbr>of.<hi rendition="#sup">o</hi></abbr>
                         <expan>oficio</expan>
                     </choice>
@@ -778,8 +769,7 @@
                         <reg>librerías</reg>
                     </choice> he proce<g ref="#typoHyphen"/><lb break="no"/>dido a evacuarlos en esta
                     mañana, recogiendo aquellos <choice>
-                        <abbr>i<g ref="#typoHyphen"/><lb break="no"/>gualm.<hi rendition="#sup"
-                                >te</hi></abbr>
+                        <abbr>i<g ref="#typoHyphen"/><lb break="no"/>gualm.<hi rendition="#sup">te</hi></abbr>
                         <expan>igualmente</expan>
                     </choice> conforme inspiraba la letra y copiaron del oficial <lb/><choice>
                         <abbr>q.<hi rendition="#sup">e</hi></abbr>
@@ -846,8 +836,7 @@
                     <lb/>Ramos, cuyo <choice>
                         <orig>numero</orig>
                         <reg>número</reg>
-                    </choice> de siete volumenes quedan en mi po<g ref="#typoHyphen"/><lb break="no"
-                    />der a la <choice>
+                    </choice> de siete volumenes quedan en mi po<g ref="#typoHyphen"/><lb break="no"/>der a la <choice>
                         <abbr>disposic.<hi rendition="#sup">n</hi></abbr>
                         <expan>dispocisión</expan>
                     </choice> de <choice>
@@ -1009,8 +998,7 @@
                         <abbr>Exmo</abbr>
                         <expan>Excelentísimo</expan>
                     </choice>
-                    <lb/>Ayuntaminerto en el cabildo de <lb/><date when="1828-01-11"
-                        calendar="#Gregorian">11 de Enero</date>
+                    <lb/>Ayuntaminerto en el cabildo de <lb/><date when="1828-01-11" calendar="#Gregorian">11 de Enero</date>
                     <choice>
                         <orig>ultimo</orig>
                         <reg>último</reg>
@@ -1145,8 +1133,7 @@
                     </choice> de la <choice>
                         <sic>Ysla</sic>
                         <corr cert="high">Isla</corr>
-                    </choice> de Cuba <lb/>lo Entregué <date when="1828-01-12" calendar="#Gregorian"
-                        >12 <choice>
+                    </choice> de Cuba <lb/>lo Entregué <date when="1828-01-12" calendar="#Gregorian">12 <choice>
                             <abbr>En.o</abbr>
                             <expan>Enero</expan>
                         </choice> 1828 </date><lb/>Cova <lb/><choice>
@@ -1311,8 +1298,7 @@
                 <gap unit="pages" quantity="1" reason="empty"/>
 
                 <p><pb n="13r" facs="prohd0025_13r.tif"/> Como mejor puedo y debo certifico: que en
-                    el cabildo ordi<g ref="#typoHyphen"/><lb break="no"/>nario celebrado en <date
-                        when="1828-01-11" calendar="#Gregorian">once de Enero <choice>
+                    el cabildo ordi<g ref="#typoHyphen"/><lb break="no"/>nario celebrado en <date when="1828-01-11" calendar="#Gregorian">once de Enero <choice>
                             <orig>ultimo</orig>
                             <reg>ultimo</reg>
                         </choice></date>
@@ -1352,8 +1338,7 @@
                     <choice>
                         <orig>á</orig>
                         <reg>a</reg>
-                    </choice> la morena libre Ana del Toro para estable<g ref="#typoHyphen"/><lb
-                        break="no"/>cér una escuela de primeras letras de niñas <lb/>
+                    </choice> la morena libre Ana del Toro para estable<g ref="#typoHyphen"/><lb break="no"/>cér una escuela de primeras letras de niñas <lb/>
                     <choice>
                         <orig>desu</orig>
                         <reg>de su</reg>
@@ -1515,8 +1500,7 @@
                         <orig>abando<g ref="#typoHyphen"/>
                             <lb break="no"/>nár</orig>
                         <reg>abandonar</reg>
-                    </choice> con responsabilidad uno de sus princi<g ref="#typoHyphen"/><lb
-                        break="no"/>pales deberes, y que desde luego se nombraba <lb/>al <choice>
+                    </choice> con responsabilidad uno de sus princi<g ref="#typoHyphen"/><lb break="no"/>pales deberes, y que desde luego se nombraba <lb/>al <choice>
                         <abbr>Sor.</abbr>
                         <expan>Señor</expan>
                     </choice>

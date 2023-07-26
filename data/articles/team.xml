@@ -1,6 +1,5 @@
 <?teipublisher template="view-grid-prohd.html" odd="prohd.odd" view="page"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="intro">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -54,9 +53,7 @@
                <person>
                   <persName>
                      <hi rendition="#b">
-                        <ref
-                           target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda"
-                           >Linda Kirsten</ref>
+                        <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda">Linda Kirsten</ref>
                      </hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
@@ -65,9 +62,7 @@
                <person>
                   <persName>
                      <hi rendition="#b">
-                        <ref
-                           target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias"
-                           >Dr. Tobias Kraft</ref>
+                        <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias">Dr. Tobias Kraft</ref>
                      </hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
@@ -83,9 +78,7 @@
                <person>
                   <persName>
                      <hi rendition="#b">
-                        <ref
-                           target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio"
-                           >Dr. Antonio Rojas Castro</ref>
+                        <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio">Dr. Antonio Rojas Castro</ref>
                      </hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
@@ -176,14 +169,11 @@
                   <orgName>Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</orgName>
                   <note>Die <ref target="http://www.bbaw.de">Berlin-Brandenburgische Akademie der
                         Wissenschaften BBAW)</ref> ist die größte außeruniversitäre Einrichtung
-                     geisteswissenschaftlicher Forschung in der Region Berlin-Brandenburg. <hi
-                        rendition="#i">Proyecto Humboldt Digital</hi> ist hier institutionell
-                     angesiedelt und kooperiert eng mit dem Akademienvorhaben <ref
-                        target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">
+                     geisteswissenschaftlicher Forschung in der Region Berlin-Brandenburg. <hi rendition="#i">Proyecto Humboldt Digital</hi> ist hier institutionell
+                     angesiedelt und kooperiert eng mit dem Akademienvorhaben <ref target="https://www.bbaw.de/forschung/alexander-von-humboldt-auf-reisen-wissenschaft-aus-der-bewegung">
                         <hi rendition="#i">Alexander von Humboldt auf Reisen - Wissenschaft aus der
                            Bewegung</hi>
-                     </ref>. Die Vorhaben der Akademie werden von der <ref
-                        target="https://www.bbaw.de/en/bbaw-digital/telota">TELOTA-Initiative</ref>
+                     </ref>. Die Vorhaben der Akademie werden von der <ref target="https://www.bbaw.de/en/bbaw-digital/telota">TELOTA-Initiative</ref>
                      unterstützt und beraten.</note>
                </org>
                <org>
@@ -191,8 +181,7 @@
                   <note>Die <ref target="http://www.habananuestra.cu">Oficina del Historiador de La
                         Ciudad de La Habana (OHCH)</ref> wurde 1938 gegründet und ist eine der
                      wichtigsten kubanischen Kulturinstitutionen. Sie führt bedeutende Projekte zum
-                     Kulturerhalt in Kuba durch. Die OHCH ist für die Umsetzung von <hi
-                        rendition="#i">Proyecto Humboldt Digital</hi> auf kubanischer Seite
+                     Kulturerhalt in Kuba durch. Die OHCH ist für die Umsetzung von <hi rendition="#i">Proyecto Humboldt Digital</hi> auf kubanischer Seite
                      zuständig.</note>
                </org>
                <org>
@@ -223,8 +212,7 @@
                   <orgName>Instituto de Literatura y Lingüística (ILL)</orgName>
                   <note>Das <ref target="http://www.ill.cu">Instituto de Literatura y Lingüística
                         (ILL)</ref> ist ein Institut, das das literarische und sprachliche Erbe
-                     Kubas erforscht und bewahrt. Das ILL steht in der Tradition der <ref
-                        target="https://press.uchicago.edu/books/humboldt/1_3_networks.html">
+                     Kubas erforscht und bewahrt. Das ILL steht in der Tradition der <ref target="https://press.uchicago.edu/books/humboldt/1_3_networks.html">
                         Sociedad Económica de Amigos del País</ref>, zu der auch Alexander von
                      Humboldt während seines zweiten Besuchs auf der Insel (1804) einen intensiven
                      Kontakt pflegte.</note>
