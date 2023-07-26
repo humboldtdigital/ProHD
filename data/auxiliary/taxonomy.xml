@@ -124,10 +124,20 @@
                      <catDesc xml:lang="es">Geografía</catDesc>
                      <catDesc xml:lang="de">Geografie</catDesc>
                   </category>
+                  <category xml:id="geology">
+                     <catDesc xml:lang="en">Geology</catDesc>
+                     <catDesc xml:lang="es">Geología</catDesc>
+                     <catDesc xml:lang="de">Geologie</catDesc>
+                  </category>
                   <category xml:id="medicine">
                      <catDesc xml:lang="en">Medicine</catDesc>
                      <catDesc xml:lang="es">Medicina</catDesc>
                      <catDesc xml:lang="de">Medizin</catDesc>
+                  </category>
+                  <category xml:id="mineralogy">
+                     <catDesc xml:lang="en">Mineralogy</catDesc>
+                     <catDesc xml:lang="es">Mineralogía</catDesc>
+                     <catDesc xml:lang="de">Mineralogie</catDesc>
                   </category>
                   <category xml:id="plantations">
                      <catDesc xml:lang="en">Plantations</catDesc>
