@@ -2,14 +2,14 @@
     <div data-template="browse:dispatch-action"/>
     <div>
         <paper-button class="parent-link" data-template="browse:parent-collection">
-            <iron-icon icon="icons:folder"></iron-icon>
+            <iron-icon icon="icons:folder"/>
             <pb-i18n key="browse.up">Up</pb-i18n>
         </paper-button>
         <ul class="documents" data-template="browse:browse" data-template-per-page="10">
             <li class="document">
                 <div class="document-info">
-                    <header data-template="browse:short-header"></header>
-                    <div class="matches" data-template="browse:show-hits"></div>
+                    <header data-template="browse:short-header"/>
+                    <div class="matches" data-template="browse:show-hits"/>
                     <!-- TODO this toolbar should only appear once per Documents papercard -->
                     <app-toolbar>
                         <paper-item data-template="pages:if-supported" data-template-media="print">
@@ -28,10 +28,9 @@
                             </pb-edit-xml>
                         </paper-item>
                         <pb-restricted login="login" group="tei">
-                            <pb-ajax url="api/document/${ident}" method="delete" emit="search" event="pb-search-resubmit"
-                                confirm="browse.confirmDeletion" quiet="" data-template="pages:parse-params">
-                                <paper-icon-button icon="icons:delete"></paper-icon-button>
-                                <h3 slot="title"><pb-i18n key="browse.delete"></pb-i18n></h3>
+                            <pb-ajax url="api/document/${ident}" method="delete" emit="search" event="pb-search-resubmit" confirm="browse.confirmDeletion" quiet="" data-template="pages:parse-params">
+                                <paper-icon-button icon="icons:delete"/>
+                                <h3 slot="title"><pb-i18n key="browse.delete"/></h3>
                             </pb-ajax>
                         </pb-restricted>
                     </app-toolbar>
