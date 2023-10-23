@@ -1,9 +1,9 @@
 window.addEventListener('load', function() {
 
     // handle jumping to the selected page from the toolbar
-    document.querySelector('#submit').addEventListener('click', function() {
-        const input = document.getElementById('gotoPage');
-        pbEvents.emit('pb-refresh', 'transcription', {"root": input.value});
+    document.querySelector('#page-select').addEventListener("change", (e) => {
+        console.log("click on #page-select e.target.value: " , e.target.value);
+        pbEvents.emit('pb-refresh', 'transcription', {"root": e.target.value});
     });
 
     // add copy-to-clipboard functionality for the citation button

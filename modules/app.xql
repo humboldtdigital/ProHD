@@ -10,12 +10,12 @@ module namespace app="teipublisher.com/app";
 
 import module namespace templates="http://exist-db.org/xquery/html-templating";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
-import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "../pages.xql";
+import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "lib/pages.xql";
 import module namespace errors = "http://e-editiones.org/roaster/errors";
 import module namespace mapping="http://www.tei-c.org/tei-simple/components/map" at "map.xql";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation" at "navigation.xql";
 import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at "pm-config.xql";
-import module namespace query="http://www.tei-c.org/tei-simple/query" at "../../query.xql";
+import module namespace query="http://www.tei-c.org/tei-simple/query" at "query.xql";
 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
@@ -49,6 +49,28 @@ declare function app:autocomplete($request as map(*)) {
                         }
                 }
 };
+
+declare %templates:wrap function app:switch-page($node,$model, $doc) {
+    let $root := request:get-parameter("root", ())
+    let $_ := util:log("info", map {
+        "name":"app-switch-page",
+        "$root":$root,
+        "doc":$doc
+    })
+
+    return
+        for $pb at $index in doc($config:data-root || '/' || $doc)//tei:pb[ft:query(., "page:*", $query:QUERY_OPTIONS)]
+                        let $value := util:node-id($pb)
+                        return 
+                        element option {
+                            attribute value { $value },
+                            if ($root = $value or (empty($root) and $index = 1)) then (
+                                attribute selected {'selected'}
+                            ) else (),
+                            $pb/@n/string()
+                        }
+};
+
 
 declare function app:table-of-contents($request as map(*)) {
     let $doc := xmldb:decode-uri($request?parameters?id)

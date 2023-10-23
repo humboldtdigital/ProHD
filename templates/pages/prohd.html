@@ -155,12 +155,9 @@
                             <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
                                 <pb-i18n key="document.page-view"/>
                             </pb-toggle-feature>
-                            <span id="page-nav">
-                                <pb-autocomplete id="gotoPage" name="page" source="api/search/autocomplete" data-i18n="[placeholder]navigation.go">
-                                    <input type="hidden" name="field" value="page"/>
-                                    <input type="hidden" name="doc" value="${doc}" data-template="pages:parse-params"/>
-                                </pb-autocomplete>
-                                <paper-icon-button icon="forward" id="submit"/>
+                            <span id="page-nav" data-template="pages:parse-params">
+                                <label for="page-select"><pb-i18n key="navigation.go"></pb-i18n></label>
+                                <select id="page-select" name="root" data-template="app:switch-page" data-template-doc="${doc}" />
                             </span>
                         </pb-media-query>
                         
