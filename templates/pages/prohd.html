@@ -1,288 +1,202 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
-        <link rel="shortcut icon" type="image/x-icon" href="resources/images/faviconProhd.ico"/>
-        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-16.png" sizes="16x16"/>
-        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-32.png" sizes="24x24"/>
-        <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-64.png" sizes="64x64"/>
-        
-        <title data-template="config:app-title"/>
-        <meta name="description" content="ProHD"/>
-        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600"/>
-        <link rel="stylesheet" href="resources/css/theme.css"/>
-        <link rel="stylesheet" href="resources/css/prohd-theme.css"/>
-        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/faviconProhd.ico"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-32.png" sizes="24x24"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/faviconProhd-64.png" sizes="64x64"/>
 
-        <custom-style>
-            <style>
-                body {
-                    --pb-view-height: calc(100vh - 192px);
-                }
-                
-                
-                pb-drawer {
-                    background-color: #E2F4F1;
-                }
-                
-                .metadata {
-                    width: 100%;
-                    padding: 0 20px 20px;
-                }
-                
-                
-                .metadata pb-view {
-                    font: var(--pb-base-font);
-                }
-                
-                .metadata h3 pb-view {
-                    font-family: var(--pb-heading-font-family);
-                    font-weight: var(--pb-heading-font-weight);
-                }
-                
-                @media (min-width:769px){
-                    .content-body {
+    <!--        <title>foo</title>-->
+    <title data-template="config:app-title"/>
+    <meta name="description" content="ProHD"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600"/>
+    <link rel="stylesheet" href="resources/css/theme.css"/>
+    <link rel="stylesheet" href="resources/css/prohd-theme.css"/>
+    <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+
+    <custom-style>
+        <style>
+            body {
+                --pb-view-height: calc(100vh - 192px);
+            }
+
+
+            pb-drawer {
+                background-color: #E2F4F1;
+            }
+
+            .metadata {
+                width: 100%;
+                padding: 0 20px 20px;
+            }
+
+
+            .metadata pb-view {
+                font: var(--pb-base-font);
+            }
+
+            .metadata h3 pb-view {
+                font-family: var(--pb-heading-font-family);
+                font-weight: var(--pb-heading-font-weight);
+            }
+
+            @media (min-width: 769px) {
+                .content-body {
                     position: relative;
                     display: flex;
                     justify-content: center;
                     padding: 0 20px;
-                    }               
                 }
-                
-                .content-body #view1 {
-                    flex: 1;
+            }
+
+            .content-body #view1 {
+                flex: 1;
+            }
+
+            .content-body pb-facsimile {
+                flex: 1;
+                height: var(--pb-view-height);
+            }
+
+            paper-listbox {
+                background-color: #E2F4F1;
+            }
+
+            .drawer-content pb-view {
+                font-size: 16px;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    --pb-drawer-width: 300px;
                 }
-                
-                .content-body pb-facsimile {
-                    flex: 1;
-                    height: var(--pb-view-height);
-                } 
-                
-                paper-listbox  {
-                    background-color: #E2F4F1;
-                }
-                
-                .drawer-content pb-view {
-                    font-size: 16px;
-                }    
-                
-                @media (max-width: 768px)   {
-                    body {
-                        --pb-drawer-width: 300px;
-                    }
-                
-                    .content-body {
+
+                .content-body {
                     grid-template-columns: 1fr;
                     padding: 0;
-                    }
-                    
-                    .content-body #view1 {
+                }
+
+                .content-body #view1 {
                     padding: 0;
-                    }
-                
-                    .content-body pb-facsimile {
+                }
+
+                .content-body pb-facsimile {
                     padding: 20px;
-                    } 
                 }
+            }
 
-                #page-nav {
-                    display: flex;
-                    flex-direction: row;
-                }
-               
-                
-                </style>
-        </custom-style>
-    </head>
+            #page-nav {
+                display: flex;
+                flex-direction: row;
+            }
 
-    <body unresolved="unresolved">
-    
-        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
-        
-            <pb-document id="document1" data-template="pages:pb-document"/>
-            
-            <app-drawer-layout force-narrow="force-narrow">
-            
-                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
-                
-                <app-header-layout>
-                
-                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
-                    
-                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
-                        
-                        <!-- Overwrite toolbar to add metadata toggle -->
-                        <app-toolbar class="toolbar" sticky="sticky">
-                            
-                            <paper-button id="tocToggle" class="toc-toggle" raised="raised">
-                                <iron-icon icon="icons:info-outline"/>
-                                <pb-i18n key="document.metadata"/>
-                            </paper-button>
-                            
-                            
-                            
-                            
-                        <pb-media-query query="max-width: 768px">   
-                            <paper-menu-button class="view" vertical-offset="60">
-                                <paper-icon-button icon="visibility" slot="dropdown-trigger">
-                                   <pb-i18n key="document.view"/>
-                                </paper-icon-button>   
-                                <paper-listbox slot="dropdown-content">
-                                    <paper-item>
-                                        <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
-                                            <pb-i18n key="document.view-diplomatic"/>
-                                        </pb-toggle-feature>    
-                                    </paper-item>
-                                    <paper-item>
-                                        <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
-                                            <pb-i18n key="document.page-view"/>
-                                        </pb-toggle-feature>
-                                    </paper-item>
-                                </paper-listbox>
-                            </paper-menu-button>
-                        </pb-media-query>
-                        
-                        
-                        <!-- pass a parameter 'mode'. pb-view will forward this to the ODD as a user-defined parameter-->
-                        <pb-media-query query="min-width: 769px">
-                            <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
-                                <pb-i18n key="document.view-diplomatic"/>
-                            </pb-toggle-feature>
-                        
-                        <!-- directly change properties of the pb-view -->
-                            <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
-                                <pb-i18n key="document.page-view"/>
-                            </pb-toggle-feature>
-                            <span id="page-nav" data-template="pages:parse-params">
-                                <label for="page-select"><pb-i18n key="navigation.go"></pb-i18n></label>
-                                <select id="page-select" name="root" data-template="app:switch-page" data-template-doc="${doc}" />
-                            </span>
-                        </pb-media-query>
-                        
-                        <!-- Navigate to previous page -->
-                        <pb-navigation direction="backward" keyboard="left">
-                        <paper-icon-button icon="icons:chevron-left"/>
-                        </pb-navigation>
-                        
-                        <!-- Navigate to next page -->
-                        <pb-navigation direction="forward" keyboard="right">
-                        <paper-icon-button icon="icons:chevron-right"/>
-                        </pb-navigation>
-                        
-                        <pb-media-query query="min-width: 1024px">
-                            <paper-item>
-                                <a href="${app}/print/${doc}" target="_new" data-template="pages:parse-params" title="Print CSS">
-                                    <iron-icon icon="icons:print"/>
-                                </a>
-                            </paper-item>
-                            <paper-item>
-                                <pb-download type="epub" src="document1" data-i18n="[title]menu.download.epub" dialog="downloadDialog">
-                                    <iron-icon icon="icons:chrome-reader-mode"/>
-                                </pb-download>
-                            </paper-item>
-                            <paper-item>
-                                <pb-edit-xml src="document1" data-i18n="[title]menu.download.view-tei" title="view-tei">
-                                    XML
-                                </pb-edit-xml>
-                            </paper-item>
-                        </pb-media-query>    
-                            
-                            <pb-restricted login="login">
-                                <pb-ajax subscribe="transcription" emit="transcription" url="${app}/api/odd" method="post" data-template="pages:parse-params" event="pb-refresh" title="Recompile ODD" data-i18n="[title]menu.admin.recompile">
-                                    <h3 slot="title">
-                                        <pb-i18n key="menu.admin.recompile"/>
-                                    </h3>
-                                    <paper-icon-button icon="icons:refresh"/>
-                                </pb-ajax>
-                            </pb-restricted>
-                        
-                        <!--    
-                            <pb-zoom emit="transcription" direction="in" icon="icons:zoom-in"/>
-                            
-                            <pb-zoom emit="transcription" direction="out" icon="icons:zoom-out"/> 
-                        -->
-                            
-                            <!-- Page navigation in the menu -->
-                            <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
-                                <paper-icon-button icon="icons:chevron-left"/>
-                            </pb-navigation>
-                             <!-- Page navigation in the menu -->
-                            <pb-navigation emit="transcription" keyboard="right" subscribe="transcription" direction="forward" unit="page">
-                                <paper-icon-button icon="icons:chevron-right"/>
-                            </pb-navigation>
-                            
-                            <paper-icon-button id="drawer" icon="icons:menu" drawer-toggle="drawer-toggle"/>
-                            
-                            <pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>
-                        
-                        </app-toolbar>
 
-                    </app-header>
+        </style>
+    </custom-style>
+</head>
 
-                    <!-- Metadata lateral section -->
-                    <pb-drawer toggle="tocToggle" class="tocDrawer" emit="toc" subscribe="transcription">
-                        <div class="drawer-content">
-                            <pb-view id="commentary" src="document1" xpath="//teiHeader" view="single" subscribe="toc">
-                                <pb-param name="display" value="commentary"/>
-                            </pb-view>
-                        </div>
-                    </pb-drawer>
+<body unresolved="unresolved">
 
-                    <!-- Title of the edition -->
-                    <section class="breadcrumbs">
-                        <h2>     
-                            <pb-view id="title-view1" src="document1" xpath="//teiHeader" view="single">
-                                <pb-param name="display" value="title"/>
-                            </pb-view>
-                        </h2>
-                    </section>
-                    
-                    <!-- Text and facsimile -->
-                    <main class="content-body">
+<pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
 
-                        <!-- pb-toggle-feature-->
-                        <pb-view id="view1" src="document1" emit="transcription" subscribe="transcription" wait-for="#facsimile"/>
-                        <!-- pb-facsimile -->
-                       <pb-facsimile id="facsimile" base-uri="https://iiif.ohc.cu/iiif/3/" default-zoom-level="0" show-navigator="show-navigator" show-navigation-control="show-navigation-control" subscribe="transcription"/>
-                         
-                    </main>
-                    <footer>
-                        <div id="footerGray">
-                            <p>
-                                <pb-i18n key="footer.funded"/>
-                            </p>
-                            <a href="https://www.auswaertiges-amt.de/">
-                                <img alt="logo of Auswärtiges Amt" src="resources/images/aa.svg" class="funder1"/>
-                            </a>
-                            <a href="https://www.fritz-thyssen-stiftung.de/">
-                                <img alt="logo of Fritz Thyssen institute" src="resources/images/thyssen.svg" class="funder2"/>
-                            </a>
-                            <a href="https://www.gerda-henkel-stiftung.de/">
-                                <img alt="logo of Gerda Henkel institute" src="resources/images/gerdahenkel.svg" class="funder3"/>
-                            </a>
-                        </div>    
-                        <div id="footerGreen">
-                            <a href="https://e-editiones.org/">
-                                <img alt="logo of powered by e-editiones" src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
-                            </a>
-                            <p class="version">App: v <span data-template="pages:version"/>web components: v <pb-version/>
-                            </p>
-                            <p class="license">
-                                <pb-i18n key="footer.license"/>
-                            </p>
-                            <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
-                                <img alt="logo of creative commons license by" src="resources/images/cc.svg" class="cc"/>
-                            </a>
-                        </div>
-                    </footer>
-                </app-header-layout>
-            </app-drawer-layout>
-        </pb-page>
-        <div class="splash">
-            <img alt="big animated logo of Proyecto Humboldt Digital that disappears after a few seconds" src="resources/images/logoHDNegativo.svg"/>
-        </div>
+    <pb-document id="document1" data-template="pages:pb-document"/>
+
+    <app-drawer-layout force-narrow="force-narrow">
+
+        <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+
+        <app-header-layout>
+
+            <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+
+                <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+
+                <!-- Overwrite toolbar to add metadata toggle -->
+                <app-toolbar data-template="templates:include" data-template-path="templates/doc-toolbar.html"/>
+
+            </app-header>
+
+            <!-- Metadata lateral section -->
+            <pb-drawer toggle="tocToggle" class="tocDrawer" emit="toc" subscribe="transcription">
+                <div class="drawer-content">
+                    <pb-view id="commentary" src="document1" xpath="//teiHeader" view="single" subscribe="toc">
+                        <pb-param name="display" value="commentary"/>
+                    </pb-view>
+                </div>
+            </pb-drawer>
+            <!-- dont remove this - the drawer toggle is different depending on media-query but the DOM will contain both versions.
+            As pb-drawer is expecting an 'id' it will break as it cannot resolve the scope. -->
+            <pb-drawer toggle="tocToggleMobile" class="tocDrawer" emit="toc" subscribe="transcription">
+                <div class="drawer-content">
+                    <pb-view id="commentary" src="document1" xpath="//teiHeader" view="single" subscribe="toc">
+                        <pb-param name="display" value="commentary"/>
+                    </pb-view>
+                </div>
+            </pb-drawer>
+
+            <!-- Title of the edition -->
+            <section class="breadcrumbs">
+                <h2>
+                    <pb-view id="title-view1" src="document1" xpath="//teiHeader" view="single">
+                        <pb-param name="display" value="title"/>
+                    </pb-view>
+                </h2>
+            </section>
+
+            <!-- Text and facsimile -->
+            <main class="content-body">
+
+                <!-- pb-toggle-feature-->
+                <pb-view id="view1" src="document1" emit="transcription" subscribe="transcription"
+                         wait-for="#facsimile"/>
+                <!-- pb-facsimile -->
+                <pb-facsimile id="facsimile" base-uri="https://iiif.ohc.cu/iiif/3/" default-zoom-level="0"
+                              show-navigator="show-navigator" show-navigation-control="show-navigation-control"
+                              subscribe="transcription"/>
+
+            </main>
+            <footer>
+                <div id="footerGray">
+                    <p>
+                        <pb-i18n key="footer.funded"/>
+                    </p>
+                    <a href="https://www.auswaertiges-amt.de/">
+                        <img alt="logo of Auswärtiges Amt" src="resources/images/aa.svg" class="funder1"/>
+                    </a>
+                    <a href="https://www.fritz-thyssen-stiftung.de/">
+                        <img alt="logo of Fritz Thyssen institute" src="resources/images/thyssen.svg" class="funder2"/>
+                    </a>
+                    <a href="https://www.gerda-henkel-stiftung.de/">
+                        <img alt="logo of Gerda Henkel institute" src="resources/images/gerdahenkel.svg"
+                             class="funder3"/>
+                    </a>
+                </div>
+                <div id="footerGreen">
+                    <a href="https://e-editiones.org/">
+                        <img alt="logo of powered by e-editiones"
+                             src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                    </a>
+                    <p class="version">App: v <span data-template="pages:version"/>web components: v
+                        <pb-version/>
+                    </p>
+                    <p class="license">
+                        <pb-i18n key="footer.license"/>
+                    </p>
+                    <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                        <img alt="logo of creative commons license by" src="resources/images/cc.svg" class="cc"/>
+                    </a>
+                </div>
+            </footer>
+        </app-header-layout>
+    </app-drawer-layout>
+</pb-page>
+<div class="splash">
+    <img alt="big animated logo of Proyecto Humboldt Digital that disappears after a few seconds"
+         src="resources/images/logoHDNegativo.svg"/>
+</div>
         <script src="resources/scripts/prohd.js"/>
-    </body>
+</body>
 </html>

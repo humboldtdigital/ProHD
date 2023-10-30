@@ -1,6 +1,5 @@
 <app-drawer slot="drawer" align="right">
     <div class="drawer-content">
-        <pb-media-query query="max-width: 1023px">
             <div style="padding-top: 10px;">
                 <a href="${app}/index.html?collection=${collection}" data-i18n="[title]browse.${collection}.title" title="" data-template="pages:parse-params">
                     <pb-i18n key="menu.home"/>
@@ -26,6 +25,7 @@
                     <pb-i18n key="menu.criterios"/>
                 </a>
             </div>
+<!--
             <paper-item>
                 <a href="${app}/print/${doc}" target="_new" data-template="pages:parse-params" title="Print CSS">
                     <iron-icon icon="icons:print"/>
@@ -41,34 +41,9 @@
                     XML
                 </pb-edit-xml>
             </paper-item>
+-->
             <!-- language selector -->
             <pb-lang name="lang" data-template="pages:languages"/>
 
-
-            <!--
-            <pb-restricted login="login">
-                <pb-collapse>
-                    <h3 slot="collapse-trigger">
-                        <pb-i18n key="menu.admin.title">Admin</pb-i18n>
-                    </h3>
-                    <paper-listbox slot="collapse-content">
-                        <paper-item>
-                            <pb-download data-template="pages:edit-odd-link" src="document1">
-                                <pb-i18n key="menu.admin.edit-odd">Edit ODD</pb-i18n>
-                            </pb-download>
-                        </paper-item>
-                        <paper-item>
-                            <a href="${app}/manage.html" data-template="pages:parse-params">
-                                <pb-i18n key="menu.admin.appGenerator"/>
-                            </a>
-                        </paper-item>
-                    </paper-listbox>
-                </pb-collapse>
-            </pb-restricted>
-            -->
-        </pb-media-query>
-        <div class="settings">
-           
-        </div>
     </div>
 </app-drawer>

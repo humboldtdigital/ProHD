@@ -564,8 +564,9 @@ declare function config:expath-descriptor() as element(expath:package) {
     $config:expath-descriptor
 };
 
-declare %templates:wrap function config:app-title($node as node(), $model as map(*)) as text() {
-    $config:expath-descriptor/expath:title/text()
+declare %templates:replace function config:app-title($node as node(), $model as map(*))  {
+(:    $config:expath-descriptor/expath:title/text():)
+    <title>{$config:expath-descriptor/expath:title/text()}</title>
 };
 
 declare function config:app-meta($node as node(), $model as map(*)) as element()* {
