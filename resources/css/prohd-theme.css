@@ -32,7 +32,9 @@ body {
     --pb-landing-link-color: #008f8f;
 }
 
-
+[drawer-toggle] {
+    padding: 0.5rem;
+}
 h1, h4, h5 {
     font-family: var(--pb-serif-font-family);
     font-weight: 400;
@@ -44,10 +46,42 @@ h2, h3, h6 {
     font-weight: 400;
     line-height: var(--pb-heading-line-height);
 }
-
-.menubar a {
+.menubar{
+    display: block;
+    padding:0 0.5rem;
+}
+.menubar nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--pb-menubar-background-color);
+    color: var(--pb-menubar-color);
+    --pb-search-suggestions-color: var(--pb-menubar-color);
+    --pb-search-suggestions-background: var(--pb-menubar-background-color);
+    align-items: center;
+    max-height: 100%;
+    width: 100%;
+}
+.menubar  a {
     font-family: var(--pb-base-font-family);
     font-weight: 400;
+    white-space: nowrap;
+}
+.menubar pb-media-query{
+    display: flex;
+    width: 100%;
+}
+.menubar .small{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.menubar .small #drawer{
+    position: absolute;
+    right: 1rem;
+}
+
+.menubar .small pb-search{
+    /*flex-grow: 1;*/
 }
 
 
@@ -143,6 +177,10 @@ p.version {
     left: auto;
     width: 35px;
     height: auto;
+}
+
+#page-nav label{
+    display: none;
 }
 
 @media (min-width: 374px) {
@@ -315,7 +353,10 @@ p.version {
         left: 11%;
         bottom: auto;
     }
-}
+    #page-nav label{
+        display: inline-block;
+        margin-right:0.25rem;
+    }
    
     
 @media (min-width: 1400px) {
@@ -369,6 +410,7 @@ aside .upload {
 }
 
 
+/*
 @media (min-width: 1024px) {
     app-drawer {
         display: none;
@@ -378,3 +420,4 @@ aside .upload {
         display:none;
     }
 }
+*/

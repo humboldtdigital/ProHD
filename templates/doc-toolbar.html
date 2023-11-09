@@ -1,0 +1,130 @@
+<app-toolbar class="toolbar" sticky="sticky">
+
+
+    <pb-media-query query="min-width: 78rem">
+
+        <paper-button id="tocToggle" class="toc-toggle" raised="raised">
+            <iron-icon icon="icons:info-outline"/>
+            <pb-i18n key="document.metadata"/>
+        </paper-button>
+
+        <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
+            <pb-i18n key="document.view-diplomatic"/>
+        </pb-toggle-feature>
+
+        <!-- directly change properties of the pb-view -->
+        <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page"
+                           off="div" init-from-view="init-from-view">
+            <pb-i18n key="document.page-view"/>
+        </pb-toggle-feature>
+
+        <span id="page-nav" data-template="pages:parse-params">
+            <label for="page-select"><pb-i18n key="navigation.go"></pb-i18n> </label>
+            <select id="page-select" name="root" data-template="app:switch-page"
+                    data-template-doc="${doc}"/>
+        </span>
+
+        <paper-item>
+            <a href="${app}/print/${doc}" target="_new" data-template="pages:parse-params"
+               title="Print CSS">
+                <iron-icon icon="icons:print"/>
+            </a>
+        </paper-item>
+        <paper-item>
+            <pb-download type="epub" src="document1" data-i18n="[title]menu.download.epub"
+                         dialog="downloadDialog">
+                <iron-icon icon="icons:chrome-reader-mode"/>
+            </pb-download>
+        </paper-item>
+        <paper-item>
+            <pb-edit-xml src="document1" data-i18n="[title]menu.download.view-tei" title="view-tei">
+                XML
+            </pb-edit-xml>
+        </paper-item>
+
+        <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
+            <paper-icon-button icon="icons:chevron-left"/>
+        </pb-navigation>
+        <pb-navigation emit="transcription" keyboard="right" subscribe="transcription" direction="forward" unit="page">
+            <paper-icon-button icon="icons:chevron-right"/>
+        </pb-navigation>
+
+    </pb-media-query>
+
+
+
+    <pb-media-query class="small" query="max-width: 78rem">
+        <paper-icon-button id="tocToggleMobile" class="toc-toggle" raised="raised" icon="icons:info-outline">
+<!--
+            <iron-icon icon="icons:info-outline"/>
+            <pb-i18n key="document.metadata"/>
+-->
+        </paper-icon-button>
+
+        <paper-menu-button class="view" vertical-offset="60">
+            <paper-icon-button icon="visibility" slot="dropdown-trigger" title="view options">
+                <pb-i18n key="document.view"/>
+            </paper-icon-button>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
+                        <pb-i18n key="document.view-diplomatic"/>
+                    </pb-toggle-feature>
+                </paper-item>
+                <paper-item>
+                    <pb-toggle-feature emit="transcription" subscribe="transcription" name="view"
+                                       on="page" off="div" init-from-view="init-from-view">
+                        <pb-i18n key="document.page-view"/>
+                    </pb-toggle-feature>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
+
+<!--
+        <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
+            <pb-i18n key="document.view-diplomatic"/>
+        </pb-toggle-feature>
+-->
+
+        <!-- directly change properties of the pb-view -->
+<!--
+        <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page"
+                           off="div" init-from-view="init-from-view">
+            <pb-i18n key="document.page-view"/>
+        </pb-toggle-feature>
+-->
+        <span id="page-nav" data-template="pages:parse-params">
+            <label for="page-select"><pb-i18n key="navigation.go"></pb-i18n> </label>
+            <select id="page-select" name="root" data-template="app:switch-page" data-template-doc="${doc}"/>
+        </span>
+
+        <paper-item>
+            <a href="${app}/print/${doc}" target="_new" data-template="pages:parse-params"
+               title="Print CSS">
+                <iron-icon icon="icons:print"/>
+            </a>
+        </paper-item>
+        <paper-item>
+            <pb-download type="epub" src="document1" data-i18n="[title]menu.download.epub"
+                         dialog="downloadDialog">
+                <iron-icon icon="icons:chrome-reader-mode"/>
+            </pb-download>
+        </paper-item>
+        <paper-item>
+            <pb-edit-xml src="document1" data-i18n="[title]menu.download.view-tei" title="view-tei">
+                XML
+            </pb-edit-xml>
+        </paper-item>
+
+        <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
+            <paper-icon-button icon="icons:chevron-left"/>
+        </pb-navigation>
+        <pb-navigation emit="transcription" keyboard="right" subscribe="transcription" direction="forward" unit="page">
+            <paper-icon-button icon="icons:chevron-right"/>
+        </pb-navigation>
+
+    </pb-media-query>
+
+    <pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>
+
+</app-toolbar>
