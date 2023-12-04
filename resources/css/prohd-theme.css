@@ -30,6 +30,10 @@ body {
     --pb-landing-accent-background-color: #7ac7c4;
     --pb-landing-background-color: #e2f4f1;
     --pb-landing-link-color: #008f8f;
+
+    --pb-base-line-height: 1.9;
+    --pb-heading-line-height: 1.9;
+    --pb-footnote-font-size: 6px;
 }
 
 [drawer-toggle] {
@@ -408,7 +412,6 @@ a {
 aside .upload {
     margin: 1.5rem 0 0 0;
 }
-
 
 /*
 @media (min-width: 1024px) {
