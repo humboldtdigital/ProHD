@@ -8,7 +8,7 @@
             <pb-i18n key="document.metadata"/>
         </paper-button>
 
-        <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
+        <pb-toggle-feature name="norm" default="off" emit="transcription" subscribe="transcription" selector=".choice,.choice-alternate,br,.lb" >
             <pb-i18n key="document.view-diplomatic"/>
         </pb-toggle-feature>
 
@@ -67,7 +67,7 @@
             </paper-icon-button>
             <paper-listbox slot="dropdown-content">
                 <paper-item>
-                    <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
+                    <pb-toggle-feature name="norm" default="off" emit="transcription" subscribe="transcription" selector=".choice,.choice-alternate,br,.lb" >
                         <pb-i18n key="document.view-diplomatic"/>
                     </pb-toggle-feature>
                 </paper-item>
@@ -81,9 +81,7 @@
         </paper-menu-button>
 
 <!--
-        <pb-toggle-feature name="mode" on="diplomatic" off="norm" emit="transcription">
-            <pb-i18n key="document.view-diplomatic"/>
-        </pb-toggle-feature>
+        
 -->
 
         <!-- directly change properties of the pb-view -->

@@ -23,7 +23,24 @@
         </fileDesc>
         <encodingDesc>
             <tagsDecl>
+                <rendition source="prohd.css"/>
                 <rendition selector=".choice"> color: #888888; </rendition>
+                <rendition selector=".choice-alternate"> color: #888888; </rendition>
+                <rendition selector=".choice-alternate">
+                    display: none;
+                </rendition>
+                <rendition selector=".choice-alternate.toggle">
+                    display: inline;
+                </rendition>
+                <rendition selector=".choice.toggle">
+                    display: none;
+                </rendition>
+                <rendition selector=".lb.toggle">
+                    display: inline;
+                </rendition>
+                <rendition selector=".lb">
+                    display: none;
+                </rendition>
             </tagsDecl>
         </encodingDesc>
         <revisionDesc>
@@ -35,13 +52,13 @@
             <schemaSpec start="TEI teiCorpus" ident="prohd" source="teipublisher.odd">
 
                 <elementSpec ident="pb" mode="change">
-                    <model predicate="@facs" behaviour="inline">
+                    <model predicate="@facs" behaviour="inline" cssClass="lb">
                         <param name="url" value="@facs"/>
                         <pb:template xmlns="" xml:space="preserve">
                         <pb-facs-link facs="[[url]]" emit="transcription"/>
 					</pb:template>
                     </model>
-                    <model predicate="@facs" behaviour="webcomponent" cssClass="facs">
+                    <model predicate="@facs" behaviour="webcomponent" cssClass="facs lb">
                         <param name="name" value="'pb-facs-link'"/>
                         <param name="content" value="@n"/>
                         <param name="facs" value="replace(@facs, '^img:(.*)$', '$1')"/>
@@ -143,28 +160,35 @@ padding-left: 10px;
                     </model>
                 </elementSpec>
 
-                <elementSpec ident="choice" mode="change">
-                    <model output="plain" predicate="sic and corr" behaviour="inline">
-                        <param name="content" value="corr[1]"/>
-                    </model>
-                    <model output="plain" predicate="abbr and expan" behaviour="inline">
-                        <param name="content" value="expan[1]"/>
-                    </model>
-                    <model output="plain" predicate="orig and reg" behaviour="inline">
-                        <param name="content" value="reg[1]"/>
-                    </model>
-                    <model predicate="$parameters?mode='norm' and sic and corr"
-                        behaviour="alternate" cssClass="choice">
-                        <param name="default" value="corr[1]"/>
-                        <param name="alternate" value="sic[1]"/>
-                    </model>
+                <elementSpec ident="choice" mode="change">                  
+                    <modelSequence predicate="abbr and expan">
+                        <model behaviour="alternate" cssClass="choice">
+                            <param name="default" value="expan[1]"/>
+                            <param name="alternate" value="abbr[1]"/>
+                        </model>
+                        <model behaviour="alternate" cssClass="choice-alternate">
+                            <param name="default" value="abbr[1]"/>
+                            <param name="alternate" value="expan[1]"/>
+                        </model>
+                    </modelSequence>
                     <modelSequence predicate="sic and corr">
                         <model behaviour="alternate" cssClass="choice">
+                            <param name="default" value="corr[1]"/>
+                            <param name="alternate" value="sic[1]"/>
+                        </model>
+                        <model behaviour="alternate" cssClass="choice-alternate">
                             <param name="default" value="sic[1]"/>
                             <param name="alternate" value="corr[1]"/>
                         </model>
+                    </modelSequence>
+                    <modelSequence predicate="reg and orig">
+                        <model behaviour="alternate" cssClass="choice">
+                            <param name="default" value="reg[1]"/>
+                            <param name="alternate" value="orig[1]"/>
+                        </model>
                         <model behaviour="alternate" cssClass="choice-alternate">
-                            <param name="alternate" value="corr[1]"/>
+                            <param name="default" value="orig[1]"/>
+                            <param name="alternate" value="reg[1]"/>
                         </model>
                     </modelSequence>
                     <model predicate="$parameters?mode='norm' and abbr and expan"
@@ -172,29 +196,16 @@ padding-left: 10px;
                         <param name="default" value="expan[1]"/>
                         <param name="alternate" value="abbr[1]"/>
                     </model>
-                    <modelSequence predicate="abbr and expan">
-                        <model behaviour="alternate" cssClass="choice">
-                            <param name="default" value="abbr[1]"/>
-                            <param name="alternate" value="expan[1]"/>
-                        </model>
-                        <model behaviour="alternate" cssClass="choice-alternate">
-                            <param name="alternate" value="abbr[1]"/>
-                        </model>
-                    </modelSequence>
+                    <model predicate="$parameters?mode='norm' and sic and corr"
+                        behaviour="alternate" cssClass="choice">
+                        <param name="default" value="corr[1]"/>
+                        <param name="alternate" value="sic[1]"/>
+                    </model>                                                    
                     <model predicate="$parameters?mode='norm' and orig and reg"
                         behaviour="alternate" cssClass="choice">
                         <param name="default" value="reg[1]"/>
                         <param name="alternate" value="orig[1]"/>
-                    </model>
-                    <modelSequence predicate="orig and reg">
-                        <model behaviour="alternate" cssClass="choice">
-                            <param name="default" value="orig[1]"/>
-                            <param name="alternate" value="reg[1]"/>
-                        </model>
-                        <model behaviour="alternate" cssClass="choice-alternate">
-                            <param name="alternate" value="orig[1]"/>
-                        </model>
-                    </modelSequence>
+                    </model>                 
                 </elementSpec>
 
                 <elementSpec ident="name" mode="change">
@@ -406,7 +417,7 @@ padding-left: 10px;
                         <model behaviour="note">
                             <param name="editor" value="&#34;Nota editorial: &#34;"/>
                             <param name="note" value="note"/>
-                            <pb:template xmlns="" xml:space="preserve">[[editor]][[note]]</pb:template>
+                            <pb:template xmlns="" xml:space="preserve"><span>[[editor]][[note]]</span></pb:template>
                             <outputRendition xml:space="preserve">
                 font-size:smaller;
                 </outputRendition>
@@ -435,7 +446,7 @@ padding-left: 10px;
                             <param name="sender"
                                 value="root(.)//teiHeader/profileDesc/correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
                             <param name="separator" value="' '"/>
-                            <pb:template xmlns="" xml:space="preserve">[[creator]][[separator]][[sender]]</pb:template>
+                            <pb:template xmlns="" xml:space="preserve"><span>[[creator]][[separator]][[sender]]</span></pb:template>
                         </model>
                         <model behaviour="inline">
                             <param name="content" value="author"/>
