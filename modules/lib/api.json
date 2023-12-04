@@ -8,7 +8,7 @@
 	"servers": [
 		{
 			"description": "Endpoint for testing on localhost",
-			"url": "http://localhost:8080/exist/apps/ProHD"
+			"url": "/exist/apps/tei-publisher"
 		}
 	],
 	"tags": [
@@ -55,6 +55,14 @@
 		{
 			"name": "nlp",
 			"description": "Entity recognition and other natural language processing features"
+		},
+		{
+			"name": "annotations",
+			"description": "Endpoints for the annotation editor"
+		},
+		{
+			"name": "iiif",
+			"description": "Generate IIIF manifests"
 		}
 	],
 	"components": {
@@ -1578,6 +1586,9 @@
 										},
 										"report": {
 											"type": "string"
+										},
+										"source": {
+											"type": "string"
 										}
 									}
 								}
@@ -1829,6 +1840,53 @@
 				}
 			}
 		},
+		"/api/search/facets/{type}": {
+            "get": {
+				"summary": "List facet values occurring in current search result set",
+				"operationId": "sapi:list-facets",
+				"tags": ["search"],
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+						"description": "Query string to filter facets by",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "schema":{
+                            "type": "string",
+                            "default": "en"
+                        }
+                    },
+                    {
+                        "name": "type",
+                        "in": "path",
+						"description": "The facet type, e.g. 'place' or 'person'",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+							"example": "place"
+                        }
+                    }
+                ],
+				"responses": {
+					"200": {
+						"description": "Facets returned",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array"
+								}
+							}
+						}
+					}
+				}
+			}
+        },
 		"/api/search/autocomplete": {
 			"get": {
 				"summary": "List possible completions",
@@ -2925,6 +2983,35 @@
                             "application/json": {
                                 "schema": {
                                     "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+		"/api/iiif/{path}": {
+            "get": {
+                "summary": "Retrieve IIIF presentation manifest for document",
+                "operationId": "iiif:manifest",
+                "tags": ["iiif"],
+                "parameters": [
+                    {
+                        "name": "path",
+                        "in": "path",
+                        "required": true,
+                        "schema":{
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200":{
+                        "description": "IIIF manifest",
+                        "content": {
+                            "application/ld+json":{
+                                "schema": {
+                                    "type": "string"
                                 }
                             }
                         }

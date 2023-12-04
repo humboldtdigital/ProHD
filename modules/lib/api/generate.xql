@@ -31,7 +31,7 @@ declare variable $deploy:EXPATH_DESCRIPTOR :=
         version="0.1" spec="1.0">
         <dependency processor="http://exist-db.org" semver-min="5.3.0"/>
         <dependency package="http://exist-db.org/html-templating" semver="1"/>
-        <dependency package="http://existsolutions.com/apps/tei-publisher-lib" semver="3"/>
+        <dependency package="http://existsolutions.com/apps/tei-publisher-lib" semver="4"/>
         <dependency package="http://e-editiones.org/roaster" semver="1"/>
     </package>
 ;
@@ -353,7 +353,7 @@ declare function deploy:expand($collection as xs:string, $resource as xs:string,
 
 declare function deploy:store-libs($target as xs:string, $userData as xs:string+, $permissions as xs:string) {
     let $path := $config:app-root || "/modules"
-    for $lib in ("map.xql", "facets.xql", "annotation-config.xqm", "nlp-config.xqm", xmldb:get-child-resources($path)[starts-with(., "navigation")],
+    for $lib in ("map.xql", "facets.xql", "annotation-config.xqm", "nlp-config.xqm", "iiif-config.xqm", xmldb:get-child-resources($path)[starts-with(., "navigation")],
         xmldb:get-child-resources($path)[starts-with(., "query")])
     return (
         xmldb:copy-resource($path, $lib, $target || "/modules", $lib)
