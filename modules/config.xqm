@@ -100,19 +100,20 @@ declare variable $config:facets := [
     map {
         "dimension": "author",
         "heading": "facets.author",
-        "max": 5,
+        "source": "api/search/facets/author",
+        "max": 6,
         "hierarchical": false()
     },
     map {
         "dimension": "institution",
         "heading": "facets.institution",
-        "max": 5,
+        "max": 10,
         "hierarchical": false()
     },
     map {
         "dimension": "language",
         "heading": "facets.language",
-        "max": 5,
+        "max": 10,
         "hierarchical": false(),
         "output": function($label) {
             <pb-i18n key="languages.{$label}">{$label}</pb-i18n>
@@ -121,7 +122,7 @@ declare variable $config:facets := [
     map {
         "dimension": "genre",
         "heading": "facets.genre",
-        "max": 5,
+        "max": 10,
         "hierarchical": false(),
         "output": function($label) {
             <pb-i18n key="genre.{$label}">{$label}</pb-i18n>
@@ -130,7 +131,8 @@ declare variable $config:facets := [
     map {
         "dimension": "subject",
         "heading": "facets.subject",
-        "max": 5,
+        "max": 6,
+        "source": "api/search/facets/subject",
         "hierarchical": false(),
         "output": function($label) {
             <pb-i18n key="subject.{$label}">{$label}</pb-i18n>
@@ -139,7 +141,7 @@ declare variable $config:facets := [
     map {
         "dimension": "date",
         "heading": "facets.date",
-        "max": 5,
+        "max": 15,
         "hierarchical": true()
     }
 ];
