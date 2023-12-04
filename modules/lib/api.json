@@ -8,7 +8,7 @@
 	"servers": [
 		{
 			"description": "Endpoint for testing on localhost",
-			"url": "/exist/apps/tei-publisher"
+			"url": "/exist/apps/ProHD"
 		}
 	],
 	"tags": [
