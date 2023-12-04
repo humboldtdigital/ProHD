@@ -2,6 +2,37 @@
 /* Global styles */
 .choice {
 	color: #888888; }
+
+.choice-alternate {
+	color: #888888; }
+
+.choice-alternate {
+	display: none;
+	}
+
+.choice-alternate.toggle {
+	display: inline;
+	}
+
+.choice.toggle {
+	display: none;
+	}
+
+.lb.toggle {
+	display: inline;
+	}
+
+.lb {
+	display: none;
+	}
+
+
+/* external styles loaded from prohd.css */
+
+
+
+
+
 .simple_allcaps { text-transform: uppercase; }
 .simple_blackletter { font-family: fantasy; }
 .simple_bold { font-weight: bold; }
