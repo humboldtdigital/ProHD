@@ -1,9 +1,26 @@
+@import url("../fonts/font.css");
+
 /* Due to a safari issue, relative paths to background images won't work as variables, so we list them here */
-.logo { background-image: url("../images/tei-publisher-logo-contrast-color.svg"); }
-.splash { background-image: url("../images/tei-publisher-logo-color.svg"); }
-.menubar { background-image: none; }
-.toolbar { background-image: none; }
-app-header { background-image: none; }
+
+.logo {
+    background-image: url("../images/tei-publisher-logo-contrast-color.svg");
+}
+
+.splash {
+    background-image: url("../images/tei-publisher-logo-color.svg");
+}
+
+.menubar {
+    background-image: none;
+}
+
+.toolbar {
+    background-image: none;
+}
+
+app-header {
+    background-image: none;
+}
 
 body {
     --pb-splash-image-size: 360px auto;
@@ -12,27 +29,30 @@ body {
     --pb-logo-image-height: 60px;
     --pb-base-font-family: 'Roboto', 'Noto', sans-serif;
     --pb-base-font-size: 16px;
-    --pb-base-line-height: 1.9;
+    --pb-base-line-height: 1.42857143;
     --pb-base-font-weight: 300;
     --pb-base-font: var(--pb-base-font-weight) var(--pb-base-font-size)/var(--pb-base-line-height) var(--pb-base-font-family);
     --pb-serif-font-family: "Junicode", Georgia, "Times New Roman", serif;
     --pb-content-font-family: var(--pb-serif-font-family);
+    --pb-content-font-weight:300;
     --pb-content-font-size: 20px;
     --pb-heading-font-family: "Oswald", Verdana, "Helvetica", sans-serif;
     --pb-heading-font-weight: 400 !important;
-    --pb-heading-line-height: 1.9;
+    --pb-heading-line-height: 1.2;
     --pb-breadcrumbs-font-size: 18px;
     --pb-color-primary: #303030;
     --pb-color-inverse: #F0F0F0;
     --pb-color-lighter: #35424b;
     --pb-color-focus: #f6a623;
+    --pb-annotation-stripes-light: #e0e0ef;
+    --pb-annotation-stripes-dark: #50505f;
     --pb-drawer-background-color: var(--pb-color-inverse);
     --pb-menubar-background-color: #35424b;
     --pb-menubar-color: var(--pb-color-inverse);
     --pb-toolbar-background-color: #d1dae0;
     --pb-toolbar-color: var(--pb-color-primary);
     --paper-tooltip-delay-in: 200;
-    --pb-footnote-font-size: 6px;
+    --pb-footnote-font-size: 13px;
     --pb-footnote-font-family: var(--pb-content-font-family);
     --pb-footnote-font-weight: var(--pb-content-font-weight);
     --pb-footnote-color: #303030;
@@ -53,6 +73,10 @@ body {
     font: var(--pb-base-font);
     color: var(--pb-color-primary);
     margin: 0;
+}
+
+html {
+    font-size: var(--pb-base-font-size);
 }
 
 *:focus {
@@ -236,15 +260,15 @@ pb-view-type {
     }
 }
 
-.breadcrumbs {
+/* .breadcrumbs {
     margin: 10px 0 0 20px;
-}
+} */
 
-pb-view {
+pb-view, pb-view-annotate {
     font-family: var(--pb-content-font-family);
     font-size: var(--pb-content-font-size);
     margin: 0 16px;
-    position:relative;
+    position: relative;
 }
 
 .breadcrumbs pb-view {
@@ -254,7 +278,7 @@ pb-view {
 }
 
 @media (min-width: 769px) {
-    pb-view {
+    pb-view, pb-view-annotate {
         max-width: var(--pb-view-max-width);
     }
 }
@@ -329,4 +353,80 @@ pb-drawer {
 
 .version span {
     font-weight: bold;
+}
+
+/* Display KWIC search results */
+.matches {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: var(--pb-content-font-family);
+}
+
+.matches .hi {
+    color: var(--pb-color-focus);
+}
+
+.matches .count {
+    margin-top: 1em;
+}
+
+.matches .count::before {
+    content: '[';
+}
+
+.matches .count::after {
+    content: ']';
+}
+
+.facets {
+    flex: 0;
+    min-width: 220px;
+}
+
+.facets h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.facets h3 paper-checkbox {
+    margin-left: 16px;
+    font-size: 11px;
+}
+
+.facets table {
+    font-size: 14px;
+    width:100%;
+}
+
+.facets table table {
+    padding-left: 16px;
+    width: 100%;
+}
+
+.facets table td {
+    padding: 4px 0;
+}
+
+.facets table td:nth-child(2) {
+    color: #808080;
+    text-align: right;
+    padding-left: 1em;
+    vertical-align: middle;
+}
+
+.facets pb-combo-box {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.facets pb-combo-box input::placeholder {
+    font-family: var(--pb-heading-font-family);
+    font-weight: var(--pb-heading-font-weight);
+}
+
+.gitlab img {
+    max-height: var(--pb-logo-image-height);
 }

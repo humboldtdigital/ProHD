@@ -22,9 +22,27 @@ import module namespace html="http://www.tei-c.org/tei-simple/xquery/functions";
 (: generated template function for element spec: teiHeader :)
 declare %private function model:template-teiHeader4($config as map(*), $node as node()*, $params as map(*)) {
     <t xmlns=""><div>
+  <div>
+  <pb-collapse>
+   <div slot="collapse-trigger">
+       <pb-i18n key="cite">Citación</pb-i18n><iron-icon icon="icons:content-copy" id="clipboard-trigger"/>
+   </div>
+   <div slot="collapse-content" id="clipboard-citation">
+      "{$config?apply-children($config, $node, $params?editionTitle)}", 
+        {$config?apply-children($config, $node, $params?editors)} (ed.), 
+        <i>{$config?apply-children($config, $node, $params?title)}</i>, 
+        {$config?apply-children($config, $node, $params?publishers)} 
+        ({$config?apply-children($config, $node, $params?currentDate)}): 
+        <a href="{$config?apply-children($config, $node, $params?file)}" id="url">{$config?apply-children($config, $node, $params?file)} </a>
+   </div>
+  </pb-collapse>
+    
+   
+  </div>
   <div>{$config?apply-children($config, $node, $params?profileDesc)}</div>
   <div>{$config?apply-children($config, $node, $params?titleStmt)}{$config?apply-children($config, $node, $params?editionStmt)}{$config?apply-children($config, $node, $params?publicationStmt)}</div>
   <div>{$config?apply-children($config, $node, $params?sourceDesc)}</div>
+
 </div></t>/*
 };
 (: generated template function for element spec: pb :)
@@ -41,7 +59,7 @@ declare %private function model:template-seg($config as map(*), $node as node()*
 };
 (: generated template function for element spec: seg :)
 declare %private function model:template-seg2($config as map(*), $node as node()*, $params as map(*)) {
-    ``[`{string-join($config?apply-children($config, $node, $params?editor))}``{string-join($config?apply-children($config, $node, $params?note))}`]``
+    <t xmlns=""><span>{$config?apply-children($config, $node, $params?editor)}{$config?apply-children($config, $node, $params?note)}</span></t>/*
 };
 (: generated template function for element spec: profileDesc :)
 declare %private function model:template-profileDesc2($config as map(*), $node as node()*, $params as map(*)) {
@@ -105,7 +123,7 @@ declare %private function model:template-date($config as map(*), $node as node()
 };
 (: generated template function for element spec: titleStmt :)
 declare %private function model:template-titleStmt4($config as map(*), $node as node()*, $params as map(*)) {
-    ``[`{string-join($config?apply-children($config, $node, $params?creator))}``{string-join($config?apply-children($config, $node, $params?separator))}``{string-join($config?apply-children($config, $node, $params?sender))}`]``
+    <t xmlns=""><span>{$config?apply-children($config, $node, $params?creator)}{$config?apply-children($config, $node, $params?separator)}{$config?apply-children($config, $node, $params?sender)}</span></t>/*
 };
 (: generated template function for element spec: titleStmt :)
 declare %private function model:template-titleStmt8($config as map(*), $node as node()*, $params as map(*)) {
@@ -225,7 +243,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                         if ($parameters?header='short') then
                             html:block($config, ., ("tei-teiHeader3", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
                         else
-                            if ($parameters?mode='commentary') then
+                            if ($parameters?display='commentary') then
                                 let $params := 
                                     map {
                                         "profileDesc": profileDesc,
@@ -233,6 +251,12 @@ declare function model:apply($config as map(*), $input as node()*) {
                                         "editionStmt": fileDesc/editionStmt/p,
                                         "publicationStmt": fileDesc/publicationStmt,
                                         "sourceDesc": fileDesc/sourceDesc,
+                                        "currentDate": format-date(current-date(), "[Y0001]-[M01]-[D01]"),
+                                        "file": util:document-name(.),
+                                        "editors": for $i at $pos in fileDesc/titleStmt/editor return    (   if ($pos > 1) then ', ' else (),   $i   ),
+                                        "publishers": for $i at $pos in fileDesc/publicationStmt/publisher return    (   if ($pos > 1) then ', ' else (),   $i   ),
+                                        "editionTitle": fileDesc/editionStmt/p/string(),
+                                        "title": fileDesc/titleStmt/title/string(),
                                         "content": .
                                     }
 
@@ -241,7 +265,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                                 return
                                                                 html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-teiHeader4", css:map-rend-to-class(.)), $content)                                => model:map($node, $trackIds)
                             else
-                                if ($parameters?mode='title') then
+                                if ($parameters?display='title') then
                                     html:inline($config, ., ("tei-teiHeader5", css:map-rend-to-class(.)), (fileDesc/titleStmt/title))                                    => model:map($node, $trackIds)
                                 else
                                     html:metadata($config, ., ("tei-teiHeader6", css:map-rend-to-class(.)), .)                                    => model:map($node, $trackIds)
@@ -284,10 +308,10 @@ declare function model:apply($config as map(*), $input as node()*) {
                                                         let $content := 
                                 model:template-pb($config, ., $params)
                             return
-                                                        html:inline(map:merge(($config, map:entry("template", true()))), ., ("tei-pb1", css:map-rend-to-class(.)), $content)                            => model:map($node, $trackIds)
+                                                        html:inline(map:merge(($config, map:entry("template", true()))), ., ("tei-pb1", "lb", css:map-rend-to-class(.)), $content)                            => model:map($node, $trackIds)
                         else
                             if (@facs) then
-                                html:webcomponent($config, ., ("tei-pb2", "facs", css:map-rend-to-class(.)), @n, 'pb-facs-link', map {"facs": replace(@facs, '^img:(.*)$', '$1')})                                => model:map($node, $trackIds)
+                                html:webcomponent($config, ., ("tei-pb2", "facs", "lb", css:map-rend-to-class(.)), @n, 'pb-facs-link', map {"facs": replace(@facs, '^img:(.*)$', '$1')})                                => model:map($node, $trackIds)
                             else
                                 if (@n and $parameters?view='page') then
                                     html:inline($config, ., ("tei-pb3", css:map-rend-to-class(.)), @n)                                    => model:map($node, $trackIds)
@@ -308,35 +332,35 @@ declare function model:apply($config as map(*), $input as node()*) {
                         else
                             html:inline($config, ., ("tei-formula2", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
                     case element(choice) return
-                        if ($parameters?mode='norm' and sic and corr) then
-                            html:alternate($config, ., ("tei-choice4", "choice", css:map-rend-to-class(.)), ., corr[1], sic[1], map {})                            => model:map($node, $trackIds)
+                        if (abbr and expan) then
+                            (
+                                html:alternate($config, ., ("tei-choice1", "choice", css:map-rend-to-class(.)), ., expan[1], abbr[1], map {})                                => model:map($node, $trackIds),
+                                html:alternate($config, ., ("tei-choice2", "choice-alternate", css:map-rend-to-class(.)), ., abbr[1], expan[1], map {})                                => model:map($node, $trackIds)
+                            )
+
                         else
                             if (sic and corr) then
                                 (
-                                    html:alternate($config, ., ("tei-choice5", "choice", css:map-rend-to-class(.)), ., sic[1], corr[1], map {})                                    => model:map($node, $trackIds),
-                                    html:alternate($config, ., ("tei-choice6", "choice-alternate", css:map-rend-to-class(.)), ., (), corr[1], map {})                                    => model:map($node, $trackIds)
+                                    html:alternate($config, ., ("tei-choice3", "choice", css:map-rend-to-class(.)), ., corr[1], sic[1], map {})                                    => model:map($node, $trackIds),
+                                    html:alternate($config, ., ("tei-choice4", "choice-alternate", css:map-rend-to-class(.)), ., sic[1], corr[1], map {})                                    => model:map($node, $trackIds)
                                 )
 
                             else
-                                if ($parameters?mode='norm' and abbr and expan) then
-                                    html:alternate($config, ., ("tei-choice7", "choice", css:map-rend-to-class(.)), ., expan[1], abbr[1], map {})                                    => model:map($node, $trackIds)
+                                if (reg and orig) then
+                                    (
+                                        html:alternate($config, ., ("tei-choice5", "choice", css:map-rend-to-class(.)), ., reg[1], orig[1], map {})                                        => model:map($node, $trackIds),
+                                        html:alternate($config, ., ("tei-choice6", "choice-alternate", css:map-rend-to-class(.)), ., orig[1], reg[1], map {})                                        => model:map($node, $trackIds)
+                                    )
+
                                 else
-                                    if (abbr and expan) then
-                                        (
-                                            html:alternate($config, ., ("tei-choice8", "choice", css:map-rend-to-class(.)), ., abbr[1], expan[1], map {})                                            => model:map($node, $trackIds),
-                                            html:alternate($config, ., ("tei-choice9", "choice-alternate", css:map-rend-to-class(.)), ., (), abbr[1], map {})                                            => model:map($node, $trackIds)
-                                        )
-
+                                    if ($parameters?mode='norm' and abbr and expan) then
+                                        html:alternate($config, ., ("tei-choice7", "choice", css:map-rend-to-class(.)), ., expan[1], abbr[1], map {})                                        => model:map($node, $trackIds)
                                     else
-                                        if ($parameters?mode='norm' and orig and reg) then
-                                            html:alternate($config, ., ("tei-choice10", "choice", css:map-rend-to-class(.)), ., reg[1], orig[1], map {})                                            => model:map($node, $trackIds)
+                                        if ($parameters?mode='norm' and sic and corr) then
+                                            html:alternate($config, ., ("tei-choice8", "choice", css:map-rend-to-class(.)), ., corr[1], sic[1], map {})                                            => model:map($node, $trackIds)
                                         else
-                                            if (orig and reg) then
-                                                (
-                                                    html:alternate($config, ., ("tei-choice11", "choice", css:map-rend-to-class(.)), ., orig[1], reg[1], map {})                                                    => model:map($node, $trackIds),
-                                                    html:alternate($config, ., ("tei-choice12", "choice-alternate", css:map-rend-to-class(.)), ., (), orig[1], map {})                                                    => model:map($node, $trackIds)
-                                                )
-
+                                            if ($parameters?mode='norm' and orig and reg) then
+                                                html:alternate($config, ., ("tei-choice9", "choice", css:map-rend-to-class(.)), ., reg[1], orig[1], map {})                                                => model:map($node, $trackIds)
                                             else
                                                 $config?apply($config, ./node())
                     case element(hi) return
@@ -449,7 +473,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                     case element(foreign) return
                         html:inline($config, ., ("tei-foreign", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
                     case element(fileDesc) return
-                        if ($parameters?mode='commentary') then
+                        if ($parameters?display='commentary') then
                             html:block($config, ., ("tei-fileDesc1", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
                         else
                             if ($parameters?header='short') then
@@ -496,7 +520,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                             )
 
                         else
-                            if ($parameters?mode='commentary' and creation[count(orgName)=2]) then
+                            if ($parameters?display='commentary' and creation[count(orgName)=2]) then
                                 let $params := 
                                     map {
                                         "author1": creation/orgName[1],
@@ -515,7 +539,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                                 return
                                                                 html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-profileDesc2", css:map-rend-to-class(.)), $content)                                => model:map($node, $trackIds)
                             else
-                                if ($parameters?mode='commentary' and creation[count(orgName)=1]) then
+                                if ($parameters?display='commentary' and creation[count(orgName)=1]) then
                                     let $params := 
                                         map {
                                             "author1": creation/orgName[1],
@@ -529,7 +553,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                                     return
                                                                         html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-profileDesc3", css:map-rend-to-class(.)), $content)                                    => model:map($node, $trackIds)
                                 else
-                                    if ($parameters?mode='commentary' and correspDesc) then
+                                    if ($parameters?display='commentary' and correspDesc) then
                                         let $params := 
                                             map {
                                                 "receiver": correspDesc/correspAction[@type="received"]/persName,
@@ -544,7 +568,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                                         return
                                                                                 html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-profileDesc4", css:map-rend-to-class(.)), $content)                                        => model:map($node, $trackIds)
                                     else
-                                        if ($parameters?mode='commentary' and creation[count(persName)=2]) then
+                                        if ($parameters?display='commentary' and creation[count(persName)=2]) then
                                             let $params := 
                                                 map {
                                                     "author1": creation/persName[1],
@@ -563,7 +587,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                                             return
                                                                                         html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-profileDesc5", css:map-rend-to-class(.)), $content)                                            => model:map($node, $trackIds)
                                         else
-                                            if ($parameters?mode='commentary' and creation[count(persName)=1]) then
+                                            if ($parameters?display='commentary' and creation[count(persName)=1]) then
                                                 let $params := 
                                                     map {
                                                         "author1": creation/persName[1],
@@ -581,7 +605,10 @@ declare function model:apply($config as map(*), $input as node()*) {
                     case element(email) return
                         html:inline($config, ., ("tei-email", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
                     case element(text) return
-                        html:body($config, ., ("tei-text", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        if ($parameters?display='landing') then
+                            html:body($config, ., ("tei-text1", css:map-rend-to-class(.)), let $lang := $parameters?language let $l := if ($lang = ('en', 'es', 'de')) then $lang else 'en' return root(.)//text[@xml:lang=$l])                            => model:map($node, $trackIds)
+                        else
+                            html:body($config, ., ("tei-text2", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
                     case element(floatingText) return
                         html:block($config, ., ("tei-floatingText", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
                     case element(sp) return
@@ -686,7 +713,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                     case element(lg) return
                         html:block($config, ., ("tei-lg", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
                     case element(publicationStmt) return
-                        if ($parameters?mode='commentary') then
+                        if ($parameters?display='commentary') then
                             let $params := 
                                 map {
                                     "licence": availability/licence,
@@ -799,7 +826,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                         if (@sameAs) then
                             html:inline($config, ., ("tei-bibl1", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
                         else
-                            if ($parameters?mode='commentary' and not(parent::p)) then
+                            if ($parameters?display='commentary' and not(parent::p)) then
                                 let $params := 
                                     map {
                                         "content": .
@@ -924,7 +951,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                             )
 
                         else
-                            if ($parameters?mode='commentary' and count(editor)=2) then
+                            if ($parameters?display='commentary' and count(editor)=2) then
                                 let $params := 
                                     map {
                                         "forename1": editor[1]/persName/forename,
@@ -939,7 +966,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                                 return
                                                                 html:inline(map:merge(($config, map:entry("template", true()))), ., ("tei-titleStmt8", css:map-rend-to-class(.)), $content)                                => model:map($node, $trackIds)
                             else
-                                if ($parameters?mode='commentary' and count(editor)=1) then
+                                if ($parameters?display='commentary' and count(editor)=1) then
                                     let $params := 
                                         map {
                                             "forename1": editor[1]/persName/forename,
@@ -1088,7 +1115,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                         if (parent::listPerson) then
                             html:block($config, ., ("tei-person1", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
                         else
-                            if ($parameters?mode='commentary') then
+                            if ($parameters?display='commentary') then
                                 let $params := 
                                     map {
                                         "content": .
@@ -1101,7 +1128,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                             else
                                 html:inline($config, ., ("tei-person3", css:map-rend-to-class(.)), .)                                => model:map($node, $trackIds)
                     case element(place) return
-                        if ($parameters?mode='commentary') then
+                        if ($parameters?display='commentary') then
                             let $params := 
                                 map {
                                     "content": .
@@ -1152,7 +1179,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                             else
                                 $config?apply($config, ./node())
                     case element(editionStmt) return
-                        if ($parameters?mode='commentary') then
+                        if ($parameters?display='commentary') then
                             let $params := 
                                 map {
                                     "editionStmt": p,

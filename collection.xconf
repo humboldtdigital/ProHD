@@ -4,13 +4,13 @@
         <lucene>
             <module uri="http://teipublisher.com/index" prefix="nav" at="index.xql"/>
             <text match="/tei:TEI/tei:text">
-                <ignore qname="tei:div"/>
                 <field name="title" expression="nav:get-metadata(ancestor::tei:TEI, 'title')"/>
                 <field name="author" expression="nav:get-metadata(ancestor::tei:TEI, 'author')"/>
                 <field name="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <field name="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
                 <field name="page" expression="nav:get-metadata(., 'page')"/>
                 <field name="file" expression="util:document-name(.)"/>
+                <field name="text" expression="."/>
                 <facet dimension="author" expression="nav:get-metadata(ancestor::tei:TEI, 'author')"/>
                 <facet dimension="institution" expression="nav:get-metadata(ancestor::tei:TEI, 'institution')"/>
                 <facet dimension="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')" hierarchical="yes"/>
