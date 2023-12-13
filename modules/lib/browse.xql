@@ -105,6 +105,7 @@ function app:browse($node as node(), $model as map(*), $start as xs:int, $per-pa
                         "config": $config,
                         "media": if (map:contains($config, 'media')) then $config?media else (),
                         "ident": config:get-identifier($work),
+                        "coll": $config:data-root, 
                         "path": document-uri(root($work))
                     }))
                 )
