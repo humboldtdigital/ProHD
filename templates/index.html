@@ -278,23 +278,22 @@
                                             <pb-custom-form class="options">
                                                 <input type="hidden" name="collection" value="${collection}" data-template="pages:parse-params"/>
                                                 <pb-select label="browse.sort" name="sort" value="${sort}" data-template="pages:parse-params">
-                                                    <paper-item value="title"><pb-i18n key="browse.title"></pb-i18n></paper-item>
-                                                    <paper-item value="author"><pb-i18n key="browse.author"></pb-i18n></paper-item>
+                                                    <paper-item value="title"><pb-i18n key="browse.title"/></paper-item>
+                                                    <paper-item value="author"><pb-i18n key="browse.author"/></paper-item>
                                                 </pb-select>
                                                 <pb-select label="search.scope" name="field" value="${field}" data-template="pages:parse-params">
-                                                    <paper-item value="text"><pb-i18n key="search.content"></pb-i18n></paper-item>
-                                                    <paper-item value="title"><pb-i18n key="search.title"></pb-i18n></paper-item>
+                                                    <paper-item value="text"><pb-i18n key="search.content"/></paper-item>
+                                                    <paper-item value="title"><pb-i18n key="search.title"/></paper-item>
                                                 </pb-select>
                                             </pb-custom-form>
-                                            <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}"
-                                                subforms=".facets,.options" submit-on-load="submit-on-load">
+                                            <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" subforms=".facets,.options" submit-on-load="submit-on-load">
                                                 <paper-button slot="searchButton"><pb-i18n key="search.search">Search</pb-i18n></paper-button>
                                             </pb-search>
-                                            <pb-custom-form class="facets" url="api/search/facets" event="pb-results-received" subscribe="search" emit="search"></pb-custom-form>
+                                            <pb-custom-form class="facets" url="api/search/facets" event="pb-results-received" subscribe="search" emit="search"/>
                                     </aside>
                                     <div id="document-list">
-                                            <pb-paginate id="paginate" per-page="10" range="5" subscribe="search" emit="search"></pb-paginate>
-                                            <pb-load url="api/collection/{collection}" expand="" emit="search"></pb-load>
+                                            <pb-paginate id="paginate" per-page="10" range="5" subscribe="search" emit="search"/>
+                                            <pb-load url="api/collection/{collection}" expand="" emit="search"/>
                                     </div>
                                 </div>                              
                             </div>

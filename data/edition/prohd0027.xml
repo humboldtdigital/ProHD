@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?>
-<?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0027">
+<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?><?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="prohd0027">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -200,8 +197,7 @@
                     <item><choice>
                             <abbr>D.</abbr>
                             <expan>Don</expan>
-                        </choice> Juan Tirry y Laci 15<gap reason="illegible" unit="chars"
-                            quantity="1"/>
+                        </choice> Juan Tirry y Laci 15<gap reason="illegible" unit="chars" quantity="1"/>
                     </item>
                 </list>
             </div>
@@ -300,8 +296,7 @@
                     conforme al año <date when="1929" calendar="#Gregorian">29</date>. del Plan de <choice>
                         <orig>Redaccion</orig>
                         <reg>Redacción</reg>
-                    </choice>, y en <lb/>la forma que previene, se hagan al redactor las adver<g
-                        ref="#typoHyphen"/><lb break="no"/>tencias correspondientes, <choice>
+                    </choice>, y en <lb/>la forma que previene, se hagan al redactor las adver<g ref="#typoHyphen"/><lb break="no"/>tencias correspondientes, <choice>
                         <orig>manísfestandole</orig>
                         <reg>manifestándole</reg>
                     </choice> la <choice>
@@ -441,8 +436,7 @@
                         <orig>mineralogicos</orig>
                         <reg>mineralógicos</reg>
                     </choice> de <choice>
-                        <orig>Guana<lb break="no"/>v<unclear reason="illegible" cert="high"
-                                >a</unclear>coa</orig>
+                        <orig>Guana<lb break="no"/>v<unclear reason="illegible" cert="high">a</unclear>coa</orig>
                         <reg>Guanabacoa</reg>
                     </choice>, y le comunicase las noticias y observaciones <choice>
                         <orig>q</orig>
@@ -538,8 +532,7 @@
                         <choice>
                             <orig>Trínídad</orig>
                             <reg>Trinidad</reg>
-                        </choice> consiste de capas <hi rendition="#u">se<g ref="#typoHyphen"/><lb
-                                break="no"/>cundarias</hi>
+                        </choice> consiste de capas <hi rendition="#u">se<g ref="#typoHyphen"/><lb break="no"/>cundarias</hi>
                         <choice>
                             <orig>depiedras</orig>
                             <reg>de piedras</reg>
@@ -618,14 +611,11 @@
                         en <hi rendition="#u">serpentinas</hi>, cuyas capas y regularmente <lb/><choice>
                             <orig>ínclinadas</orig>
                             <reg>inclinadas</reg>
-                        </choice> al norte y nordeste descansan (cerca de Mari<g ref="#typoHyphen"
-                            /><lb break="no"/>melena) sobre una roca bastante rara, que los
-                            mineralo<g ref="#typoHyphen"/><lb break="no"/>gistas modernos llaman <hi
-                            rendition="#u">Syenita</hi> por <choice>
+                        </choice> al norte y nordeste descansan (cerca de Mari<g ref="#typoHyphen"/><lb break="no"/>melena) sobre una roca bastante rara, que los
+                            mineralo<g ref="#typoHyphen"/><lb break="no"/>gistas modernos llaman <hi rendition="#u">Syenita</hi> por <choice>
                             <orig>hallárse</orig>
                             <reg>hallarse</reg>
-                        </choice> cerca de <lb/>Syene en el Alto Egipto. La <hi rendition="#u"
-                            >Serpentina</hi>
+                        </choice> cerca de <lb/>Syene en el Alto Egipto. La <hi rendition="#u">Serpentina</hi>
                         <choice>
                             <orig>és</orig>
                             <reg>es</reg>
@@ -683,8 +673,7 @@
                         </choice>, <choice>
                             <orig>nó</orig>
                             <reg>no</reg>
-                        </choice> dudo que <del rendition="#s"><gap reason="illegible" unit="words"
-                                quantity="1"/></del> la <choice>
+                        </choice> dudo que <del rendition="#s"><gap reason="illegible" unit="words" quantity="1"/></del> la <choice>
                             <orig>profundídad</orig>
                             <reg>profundidad</reg>
                         </choice> se ha<g ref="#typoHyphen"/><lb break="no"/>llasen piedras aptas <choice>
@@ -726,8 +715,7 @@
                             <orig>unícos</orig>
                             <reg>únicos</reg>
                         </choice> metales que <lb/>suele haber en otras partes del mundo en la
-                            Serpen<g ref="#typoHyphen"/><lb break="no"/>tina son Cobre y Pyrita <gap
-                            reason="illegible" unit="words" quantity="1"/> : el cobre algunas <choice>
+                            Serpen<g ref="#typoHyphen"/><lb break="no"/>tina son Cobre y Pyrita <gap reason="illegible" unit="words" quantity="1"/> : el cobre algunas <choice>
                             <orig>vezes</orig>
                             <reg>veces</reg>
                         </choice>
@@ -909,8 +897,7 @@
                         </choice> en un <lb/>solo paraje <choice>
                             <orig>dela</orig>
                             <reg>de la</reg>
-                        </choice> Alemania, el <hi rendition="#u">Espato de Latur</hi> cuyo res<g
-                            ref="#typoHyphen"/><lb break="no"/>plandor <choice>
+                        </choice> Alemania, el <hi rendition="#u">Espato de Latur</hi> cuyo res<g ref="#typoHyphen"/><lb break="no"/>plandor <choice>
                             <orig>metalíco</orig>
                             <reg>metálico</reg>
                         </choice> puede haber <choice>
@@ -960,8 +947,7 @@
                         </choice> guarde <lb/><choice>
                             <orig>áUs.</orig>
                             <reg>a Usted</reg>
-                        </choice> muchos años. Habana el <date when="1804-04-01"
-                            calendar="#Gregorian">1. de Abril de1804</date>= <lb/><choice>
+                        </choice> muchos años. Habana el <date when="1804-04-01" calendar="#Gregorian">1. de Abril de1804</date>= <lb/><choice>
                             <abbr>Sor.S</abbr>
                             <expan>eñor</expan>
                         </choice> Presidente= <choice>

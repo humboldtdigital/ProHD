@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?>
-<?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="ed_mr5_km2_lwb">
+<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?><?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="ed_mr5_km2_lwb">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -37,8 +34,7 @@
                         <collection>Nachlass Alexander von Humboldt</collection>
                         <idno>
                             <idno type="shelfmark">Bd. 3/1 Bl. 87-90</idno>
-                            <idno type="URLImages"
-                                >http://jbc.bj.uj.edu.pl/dlibra/publication/367128/content</idno>
+                            <idno type="URLImages">http://jbc.bj.uj.edu.pl/dlibra/publication/367128/content</idno>
                             <idno type="uri">http://kalliope-verbund.info/DE-611-HS-2877069</idno>
                         </idno>
                     </msIdentifier>
@@ -118,8 +114,7 @@
             <div>
                 <p><pb n="1v" facs="prohd0030_1v.tif"/>
                     <fw type="folNum">87</fw>
-                    <note place="mTop" hand="#author">AA.A en 1769. 10 <unclear reason="illegible"
-                            cert="high"/>
+                    <note place="mTop" hand="#author">AA.A en 1769. 10 <unclear reason="illegible" cert="high"/>
                         <unclear reason="illegible" cert="high"/> 118. Agricultura</note></p>
 
                 <p>Resumen por mayor de la riqueza civil <lb/>rural <choice>
@@ -484,9 +479,7 @@
                         </row>
                     </table>
                 </p>
-                <p><note place="right" hand="#author">Cererias 1 Porte a 216 qui le <unclear
-                            reason="illegible" cert="high"/> 1817 <unclear reason="illegible"
-                            cert="high"/> 1822, 60, </note></p>
+                <p><note place="right" hand="#author">Cererias 1 Porte a 216 qui le <unclear reason="illegible" cert="high"/> 1817 <unclear reason="illegible" cert="high"/> 1822, 60, </note></p>
                 <p/>
                 <p><choice>
                         <orig>Especificacion</orig>
@@ -664,8 +657,7 @@
                             <cell>17</cell>
                         </row>
                         <row>
-                            <cell>Potreros para engordar ganados de <unclear reason="illegible"
-                                    cert="high"/> con chiquero <lb/>para los de cerda "</cell>
+                            <cell>Potreros para engordar ganados de <unclear reason="illegible" cert="high"/> con chiquero <lb/>para los de cerda "</cell>
                             <cell>" 19</cell>
                         </row>
                         <row>

@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?>
-<?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="ed_o5w_bf3_kyb">
+<?xml-model href="prohd.rng"  schematypens="http://relaxng.org/ns/structure/1.0"  type="application/xml"?><?xml-model href="prohd.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="document" xml:id="ed_o5w_bf3_kyb">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -37,8 +34,7 @@
                         <collection>Nachl. Alexander von Humboldt</collection>
                         <idno>
                             <idno type="shelfmark">Bd. 3/1 Bl. 85-86</idno>
-                            <idno type="URLImages"
-                                >http://jbc.bj.uj.edu.pl/dlibra/publication/367127/content</idno>
+                            <idno type="URLImages">http://jbc.bj.uj.edu.pl/dlibra/publication/367127/content</idno>
                             <idno type="uri"> http://kalliope-verbund.info/DE-611-HS-2877058</idno>
                         </idno>
                     </msIdentifier>
@@ -226,8 +222,7 @@
                         <orig>Especificacion</orig>
                         <reg>Especificación</reg>
                     </choice> por años, y precios de los frutos exportados</p>
-                <p><note place="inline" hand="#author">9418,177</note>Año de 1815.<note
-                        place="inline" hand="#author">370000</note>
+                <p><note place="inline" hand="#author">9418,177</note>Año de 1815.<note place="inline" hand="#author">370000</note>
                     <lb/><table rows="8" cols="3">
                         <row>
                             <cell/>
@@ -709,8 +704,7 @@
                     </choice> en <lb/>el quinquenio expresado de 1815. <choice>
                         <orig>á</orig>
                         <reg>a</reg>
-                    </choice> 1819. inclusive. <lb/><note place="left" hand="#author"
-                        >Fisirer</note><gap reason="lost" unit="lines" quantity="4"/>
+                    </choice> 1819. inclusive. <lb/><note place="left" hand="#author">Fisirer</note><gap reason="lost" unit="lines" quantity="4"/>
                     <table rows="1" cols="4">
                         <row>
                             <cell/>
@@ -730,8 +724,7 @@
                     <lb/>tabaco para España, reemplazo para la <choice>
                         <orig>Junta</orig>
                         <reg>junta</reg>
-                    </choice> de este nombre que <lb/><unclear reason="illegible" cert="high"
-                        >junto</unclear> en Cadiz, <choice>
+                    </choice> de este nombre que <lb/><unclear reason="illegible" cert="high">junto</unclear> en Cadiz, <choice>
                         <orig>Almirantazgo</orig>
                         <reg>almirantazgo</reg>
                     </choice>, toneladas y <choice>
@@ -747,10 +740,7 @@
                 <p><note place="mBottom" hand="#author">Z225 11972 / 1143</note></p>
                 <p/>
                 <pb n="2r" facs="prohd0033_2r.tif"/>
-                <p><note place="mBottom" hand="#author">Exportaciones <unclear reason="illegible"
-                            cert="high"/> Total Todo, 61 Cafe,57 <unclear reason="illegible"
-                            cert="high"/>area Patriota 292<unclear reason="illegible" cert="high"
-                        /></note></p>
+                <p><note place="mBottom" hand="#author">Exportaciones <unclear reason="illegible" cert="high"/> Total Todo, 61 Cafe,57 <unclear reason="illegible" cert="high"/>area Patriota 292<unclear reason="illegible" cert="high"/></note></p>
             </div>
         </body>
     </text>

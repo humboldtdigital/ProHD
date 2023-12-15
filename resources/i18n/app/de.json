@@ -41,7 +41,8 @@
     	"subject": "Themen",
         "date": "Datum",
         "institution": "Institution",
-        "author": "Autor"
+        "author": "Autor",
+        "show": "Alle anzeigen"
     },
     "languages": {
         "en": "Englisch",

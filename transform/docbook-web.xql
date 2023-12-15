@@ -106,36 +106,36 @@ declare function model:apply($config as map(*), $input as node()*) {
                             typeswitch(.)
                     case element(article) return
                         if ($parameters?mode='summary') then
-                            html:block($config, ., ("tei-article2", css:map-rend-to-class(.)), info)                            => model:map($node, $trackIds)
+                            html:block($config, ., ("tei-article2", css:map-rend-to-class(.)), info)
                         else
-                            html:document($config, ., ("tei-article3", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
+                            html:document($config, ., ("tei-article3", css:map-rend-to-class(.)), .)
                     case element(info) return
                         if (not(parent::article or parent::book)) then
-                            html:block($config, ., ("tei-info2", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
+                            html:block($config, ., ("tei-info2", css:map-rend-to-class(.)), .)
                         else
                             if ($parameters?header='short') then
                                 (
-                                    html:heading($config, ., ("tei-info4", css:map-rend-to-class(.)), title, 5)                                    => model:map($node, $trackIds),
+                                    html:heading($config, ., ("tei-info4", css:map-rend-to-class(.)), title, 5),
                                     if (author) then
-                                        html:block($config, ., ("tei-info5", css:map-rend-to-class(.)), author)                                        => model:map($node, $trackIds)
+                                        html:block($config, ., ("tei-info5", css:map-rend-to-class(.)), author)
                                     else
                                         ()
                                 )
 
                             else
-                                html:block($config, ., ("tei-info6", css:map-rend-to-class(.)), (title, if ($parameters?skipAuthors) then () else author, pubdate, abstract))                                => model:map($node, $trackIds)
+                                html:block($config, ., ("tei-info6", css:map-rend-to-class(.)), (title, if ($parameters?skipAuthors) then () else author, pubdate, abstract))
                     case element(author) return
                         if (preceding-sibling::author and not($parameters?skipAuthors)) then
-                            html:inline($config, ., ("tei-author3", css:map-rend-to-class(.)), (', ', personname, affiliation))                            => model:map($node, $trackIds)
+                            html:inline($config, ., ("tei-author3", css:map-rend-to-class(.)), (', ', personname, affiliation))
                         else
                             if (not($parameters?skipAuthors)) then
-                                html:inline($config, ., ("tei-author4", css:map-rend-to-class(.)), (personname, affiliation))                                => model:map($node, $trackIds)
+                                html:inline($config, ., ("tei-author4", css:map-rend-to-class(.)), (personname, affiliation))
                             else
                                 $config?apply($config, ./node())
                     case element(personname) return
-                        html:inline($config, ., ("tei-personname", css:map-rend-to-class(.)), (firstname, ' ', surname))                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-personname", css:map-rend-to-class(.)), (firstname, ' ', surname))
                     case element(affiliation) return
-                        html:inline($config, ., ("tei-affiliation", css:map-rend-to-class(.)), (', ', .))                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-affiliation", css:map-rend-to-class(.)), (', ', .))
                     case element(title) return
                         if ($parameters?mode='summary') then
                             let $params := 
@@ -147,23 +147,23 @@ declare function model:apply($config as map(*), $input as node()*) {
                                                         let $content := 
                                 model:template-title2($config, ., $params)
                             return
-                                                        html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-title2", "articletitle", css:map-rend-to-class(.)), $content)                            => model:map($node, $trackIds)
+                                                        html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-title2", "articletitle", css:map-rend-to-class(.)), $content)
                         else
                             if ($parameters?mode='breadcrumbs') then
-                                html:inline($config, ., ("tei-title3", css:map-rend-to-class(.)), .)                                => model:map($node, $trackIds)
+                                html:inline($config, ., ("tei-title3", css:map-rend-to-class(.)), .)
                             else
                                 if (parent::note) then
-                                    html:heading($config, ., ("tei-title4", css:map-rend-to-class(.)), ., 4)                                    => model:map($node, $trackIds)
+                                    html:heading($config, ., ("tei-title4", css:map-rend-to-class(.)), ., 4)
                                 else
                                     if (parent::info and $parameters?header='short') then
-                                        html:link($config, ., ("tei-title5", css:map-rend-to-class(.)), ., $parameters?doc, (), map {})                                        => model:map($node, $trackIds)
+                                        html:link($config, ., ("tei-title5", css:map-rend-to-class(.)), ., $parameters?doc, (), map {})
                                     else
-                                        html:heading($config, ., ("tei-title6", "title", css:map-rend-to-class(.)), ., if ($parameters?view='single') then count(ancestor::section) + 1 else count($get(.)/ancestor::section))                                        => model:map($node, $trackIds)
+                                        html:heading($config, ., ("tei-title6", "title", css:map-rend-to-class(.)), ., if ($parameters?view='single') then count(ancestor::section) + 1 else count($get(.)/ancestor::section))
                     case element(section) return
                         if ($parameters?mode='breadcrumbs') then
                             (
-                                html:inline($config, ., ("tei-section1", css:map-rend-to-class(.)), $get(.)/ancestor::section/title)                                => model:map($node, $trackIds),
-                                html:inline($config, ., ("tei-section2", css:map-rend-to-class(.)), title)                                => model:map($node, $trackIds)
+                                html:inline($config, ., ("tei-section1", css:map-rend-to-class(.)), $get(.)/ancestor::section/title),
+                                html:inline($config, ., ("tei-section2", css:map-rend-to-class(.)), title)
                             )
 
                         else
@@ -178,84 +178,84 @@ declare function model:apply($config as map(*), $input as node()*) {
                                                         let $content := 
                                 model:template-section3($config, ., $params)
                             return
-                                                        html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-section3", css:map-rend-to-class(.)), $content)                            => model:map($node, $trackIds)
+                                                        html:block(map:merge(($config, map:entry("template", true()))), ., ("tei-section3", css:map-rend-to-class(.)), $content)
                     case element(para) return
-                        html:paragraph($config, ., ("tei-para", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:paragraph($config, ., ("tei-para", css:map-rend-to-class(.)), .)
                     case element(emphasis) return
                         if (@role='bold') then
-                            html:inline($config, ., ("tei-emphasis1", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
+                            html:inline($config, ., ("tei-emphasis1", css:map-rend-to-class(.)), .)
                         else
-                            html:inline($config, ., ("tei-emphasis2", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
+                            html:inline($config, ., ("tei-emphasis2", css:map-rend-to-class(.)), .)
                     case element(code) return
-                        html:inline($config, ., ("tei-code2", "code", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-code2", "code", css:map-rend-to-class(.)), .)
                     case element(figure) return
                         if (title|info/title) then
-                            html:figure($config, ., ("tei-figure2", "figure", css:map-rend-to-class(.)), *[not(self::title|self::info)], title/node()|info/title/node())                            => model:map($node, $trackIds)
+                            html:figure($config, ., ("tei-figure2", "figure", css:map-rend-to-class(.)), *[not(self::title|self::info)], title/node()|info/title/node())
                         else
-                            html:figure($config, ., ("tei-figure3", css:map-rend-to-class(.)), ., ())                            => model:map($node, $trackIds)
+                            html:figure($config, ., ("tei-figure3", css:map-rend-to-class(.)), ., ())
                     case element(informalfigure) return
                         if (caption) then
-                            html:figure($config, ., ("tei-informalfigure1", "figure", css:map-rend-to-class(.)), *[not(self::caption)], caption/node())                            => model:map($node, $trackIds)
+                            html:figure($config, ., ("tei-informalfigure1", "figure", css:map-rend-to-class(.)), *[not(self::caption)], caption/node())
                         else
-                            html:figure($config, ., ("tei-informalfigure2", "figure", css:map-rend-to-class(.)), ., ())                            => model:map($node, $trackIds)
+                            html:figure($config, ., ("tei-informalfigure2", "figure", css:map-rend-to-class(.)), ., ())
                     case element(imagedata) return
-                        html:graphic($config, ., ("tei-imagedata2", css:map-rend-to-class(.)), ., @fileref, @width, (), (), ())                        => model:map($node, $trackIds)
+                        html:graphic($config, ., ("tei-imagedata2", css:map-rend-to-class(.)), ., @fileref, @width, (), (), ())
                     case element(itemizedlist) return
-                        html:list($config, ., ("tei-itemizedlist", css:map-rend-to-class(.)), listitem, ())                        => model:map($node, $trackIds)
+                        html:list($config, ., ("tei-itemizedlist", css:map-rend-to-class(.)), listitem, ())
                     case element(listitem) return
-                        html:listItem($config, ., ("tei-listitem", css:map-rend-to-class(.)), ., ())                        => model:map($node, $trackIds)
+                        html:listItem($config, ., ("tei-listitem", css:map-rend-to-class(.)), ., ())
                     case element(orderedlist) return
-                        html:list($config, ., ("tei-orderedlist", css:map-rend-to-class(.)), listitem, 'ordered')                        => model:map($node, $trackIds)
+                        html:list($config, ., ("tei-orderedlist", css:map-rend-to-class(.)), listitem, 'ordered')
                     case element(procedure) return
-                        html:list($config, ., ("tei-procedure", css:map-rend-to-class(.)), step, 'ordered')                        => model:map($node, $trackIds)
+                        html:list($config, ., ("tei-procedure", css:map-rend-to-class(.)), step, 'ordered')
                     case element(step) return
-                        html:listItem($config, ., ("tei-step", css:map-rend-to-class(.)), ., ())                        => model:map($node, $trackIds)
+                        html:listItem($config, ., ("tei-step", css:map-rend-to-class(.)), ., ())
                     case element(variablelist) return
-                        model:definitionList($config, ., ("tei-variablelist", css:map-rend-to-class(.)), varlistentry)                        => model:map($node, $trackIds)
+                        model:definitionList($config, ., ("tei-variablelist", css:map-rend-to-class(.)), varlistentry)
                     case element(varlistentry) return
-                        model:definition($config, ., ("tei-varlistentry", css:map-rend-to-class(.)), listitem/node(), term/node())                        => model:map($node, $trackIds)
+                        model:definition($config, ., ("tei-varlistentry", css:map-rend-to-class(.)), listitem/node(), term/node())
                     case element(table) return
                         if (title) then
                             (
-                                html:heading($config, ., ("tei-table1", css:map-rend-to-class(.)), title, ())                                => model:map($node, $trackIds),
-                                html:table($config, ., ("tei-table2", css:map-rend-to-class(.)), .//tr)                                => model:map($node, $trackIds)
+                                html:heading($config, ., ("tei-table1", css:map-rend-to-class(.)), title, ()),
+                                html:table($config, ., ("tei-table2", css:map-rend-to-class(.)), .//tr)
                             )
 
                         else
-                            html:table($config, ., ("tei-table3", "table", css:map-rend-to-class(.)), .//tr)                            => model:map($node, $trackIds)
+                            html:table($config, ., ("tei-table3", "table", css:map-rend-to-class(.)), .//tr)
                     case element(informaltable) return
-                        html:table($config, ., ("tei-informaltable", "table", css:map-rend-to-class(.)), .//tr)                        => model:map($node, $trackIds)
+                        html:table($config, ., ("tei-informaltable", "table", css:map-rend-to-class(.)), .//tr)
                     case element(tr) return
-                        html:row($config, ., ("tei-tr", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:row($config, ., ("tei-tr", css:map-rend-to-class(.)), .)
                     case element(td) return
                         if (parent::tr/parent::thead) then
-                            html:cell($config, ., ("tei-td1", css:map-rend-to-class(.)), ., ())                            => model:map($node, $trackIds)
+                            html:cell($config, ., ("tei-td1", css:map-rend-to-class(.)), ., ())
                         else
-                            html:cell($config, ., ("tei-td2", css:map-rend-to-class(.)), ., ())                            => model:map($node, $trackIds)
+                            html:cell($config, ., ("tei-td2", css:map-rend-to-class(.)), ., ())
                     case element(programlisting) return
                         if (@role='codepen') then
-                            html:webcomponent($config, ., ("tei-programlisting3", css:map-rend-to-class(.)), ., 'pb-codepen', map {"hash": substring-after(@xlink:href, '#'), "user": substring-before(@xlink:href, '#'), "theme": 'dark', "height": 480, "editable": true()})                            => model:map($node, $trackIds)
+                            html:webcomponent($config, ., ("tei-programlisting3", css:map-rend-to-class(.)), ., 'pb-codepen', map {"hash": substring-after(@xlink:href, '#'), "user": substring-before(@xlink:href, '#'), "theme": 'dark', "height": 480, "editable": true()})
                         else
                             if (parent::cell|parent::para|parent::ab) then
-                                html:inline($config, ., ("tei-programlisting4", "code", css:map-rend-to-class(.)), .)                                => model:map($node, $trackIds)
+                                html:inline($config, ., ("tei-programlisting4", "code", css:map-rend-to-class(.)), .)
                             else
-                                html:webcomponent($config, ., ("tei-programlisting5", css:map-rend-to-class(.)), text(), 'pb-code-highlight', map {"language": (@language, 'xml')[1], "line-numbers": true()})                                => model:map($node, $trackIds)
+                                html:webcomponent($config, ., ("tei-programlisting5", css:map-rend-to-class(.)), text(), 'pb-code-highlight', map {"language": (@language, 'xml')[1], "line-numbers": true()})
                     case element(synopsis) return
-                        html:webcomponent($config, ., ("tei-synopsis4", css:map-rend-to-class(.)), text(), 'pb-code-highlight', map {"language": @language})                        => model:map($node, $trackIds)
+                        html:webcomponent($config, ., ("tei-synopsis4", css:map-rend-to-class(.)), text(), 'pb-code-highlight', map {"language": @language})
                     case element(example) return
-                        html:figure($config, ., ("tei-example", css:map-rend-to-class(.)), *[not(self::title|self::info)], info/title/node()|title/node())                        => model:map($node, $trackIds)
+                        html:figure($config, ., ("tei-example", css:map-rend-to-class(.)), *[not(self::title|self::info)], info/title/node()|title/node())
                     case element(function) return
-                        html:inline($config, ., ("tei-function", "code", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-function", "code", css:map-rend-to-class(.)), .)
                     case element(command) return
-                        html:inline($config, ., ("tei-command", "code", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-command", "code", css:map-rend-to-class(.)), .)
                     case element(parameter) return
-                        html:inline($config, ., ("tei-parameter", "code", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-parameter", "code", css:map-rend-to-class(.)), .)
                     case element(filename) return
-                        html:inline($config, ., ("tei-filename", "code", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-filename", "code", css:map-rend-to-class(.)), .)
                     case element(note) return
-                        html:block($config, ., ("tei-note3", "note", css:map-rend-to-class(.)), (title, *[not(self::title)]))                        => model:map($node, $trackIds)
+                        html:block($config, ., ("tei-note3", "note", css:map-rend-to-class(.)), (title, *[not(self::title)]))
                     case element(tag) return
-                        html:inline($config, ., ("tei-tag", "code", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-tag", "code", css:map-rend-to-class(.)), .)
                     case element(link) return
                         if (@role='source') then
                             let $params := 
@@ -267,34 +267,34 @@ declare function model:apply($config as map(*), $input as node()*) {
                                                         let $content := 
                                 model:template-link2($config, ., $params)
                             return
-                                                        html:inline(map:merge(($config, map:entry("template", true()))), ., ("tei-link2", css:map-rend-to-class(.)), $content)                            => model:map($node, $trackIds)
+                                                        html:inline(map:merge(($config, map:entry("template", true()))), ., ("tei-link2", css:map-rend-to-class(.)), $content)
                         else
                             if (@linkend) then
-                                html:link($config, ., ("tei-link3", css:map-rend-to-class(.)), ., concat('?odd=', request:get-parameter('odd', ()), '&amp;view=',                             request:get-parameter('view', ()), '&amp;id=', @linkend), (), map {})                                => model:map($node, $trackIds)
+                                html:link($config, ., ("tei-link3", css:map-rend-to-class(.)), ., concat('?odd=', request:get-parameter('odd', ()), '&amp;view=',                             request:get-parameter('view', ()), '&amp;id=', @linkend), (), map {})
                             else
                                 if (@xlink:show='new') then
-                                    html:link($config, ., ("tei-link4", css:map-rend-to-class(.)), ., @xlink:href, '_new', map {})                                    => model:map($node, $trackIds)
+                                    html:link($config, ., ("tei-link4", css:map-rend-to-class(.)), ., @xlink:href, '_new', map {})
                                 else
-                                    html:link($config, ., ("tei-link5", css:map-rend-to-class(.)), ., @xlink:href, (), map {})                                    => model:map($node, $trackIds)
+                                    html:link($config, ., ("tei-link5", css:map-rend-to-class(.)), ., @xlink:href, (), map {})
                     case element(guibutton) return
-                        html:inline($config, ., ("tei-guibutton", "guibutton", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-guibutton", "guibutton", css:map-rend-to-class(.)), .)
                     case element(guilabel) return
-                        html:inline($config, ., ("tei-guilabel", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-guilabel", css:map-rend-to-class(.)), .)
                     case element(videodata) return
-                        model:iframe($config, ., ("tei-videodata2", css:map-rend-to-class(.)), ., @fileref, @width, @depth)                        => model:map($node, $trackIds)
+                        model:iframe($config, ., ("tei-videodata2", css:map-rend-to-class(.)), ., @fileref, @width, @depth)
                     case element(abstract) return
                         if ($parameters?path = $parameters?active) then
-                            html:omit($config, ., ("tei-abstract1", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
+                            html:omit($config, ., ("tei-abstract1", css:map-rend-to-class(.)), .)
                         else
-                            html:block($config, ., ("tei-abstract2", css:map-rend-to-class(.)), .)                            => model:map($node, $trackIds)
+                            html:block($config, ., ("tei-abstract2", css:map-rend-to-class(.)), .)
                     case element(pubdate) return
-                        html:inline($config, ., ("tei-pubdate", "pubdate", css:map-rend-to-class(.)), format-date(., '[MNn] [D1], [Y0001]', 'en_US', (), ()))                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei-pubdate", "pubdate", css:map-rend-to-class(.)), format-date(., '[MNn] [D1], [Y0001]', 'en_US', (), ()))
                     case element(footnote) return
-                        html:note($config, ., ("tei-footnote", css:map-rend-to-class(.)), ., (), ())                        => model:map($node, $trackIds)
+                        html:note($config, ., ("tei-footnote", css:map-rend-to-class(.)), ., (), ())
                     case element(exist:match) return
                         html:match($config, ., .)
                     case element() return
-                        html:inline($config, ., ("tei--element", css:map-rend-to-class(.)), .)                        => model:map($node, $trackIds)
+                        html:inline($config, ., ("tei--element", css:map-rend-to-class(.)), .)
                     case text() | xs:anyAtomicType return
                         html:escapeChars(.)
                     default return 

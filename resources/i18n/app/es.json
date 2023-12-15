@@ -41,7 +41,9 @@
     	"subject": "Materias",
         "date": "Fecha",
         "institution": "Institución",
-        "author": "Autor"
+        "author": "Autor",
+        "show": "Mostrar todo"
+        
     },
     "languages": {
         "en": "Inglés",

@@ -150,12 +150,9 @@
             <main class="content-body">
 
                 <!-- pb-toggle-feature-->
-                <pb-view id="view1" src="document1" emit="transcription" subscribe="transcription"
-                         wait-for="#facsimile"/>
+                <pb-view id="view1" src="document1" emit="transcription" subscribe="transcription" wait-for="#facsimile"/>
                 <!-- pb-facsimile -->
-                <pb-facsimile id="facsimile" base-uri="https://iiif.ohc.cu/iiif/3/" default-zoom-level="0"
-                              show-navigator="show-navigator" show-navigation-control="show-navigation-control"
-                              subscribe="transcription"/>
+                <pb-facsimile id="facsimile" base-uri="https://iiif.ohc.cu/iiif/3/" default-zoom-level="0" show-navigator="show-navigator" show-navigation-control="show-navigation-control" subscribe="transcription"/>
 
             </main>
             <footer>
@@ -170,14 +167,12 @@
                         <img alt="logo of Fritz Thyssen institute" src="resources/images/thyssen.svg" class="funder2"/>
                     </a>
                     <a href="https://www.gerda-henkel-stiftung.de/">
-                        <img alt="logo of Gerda Henkel institute" src="resources/images/gerdahenkel.svg"
-                             class="funder3"/>
+                        <img alt="logo of Gerda Henkel institute" src="resources/images/gerdahenkel.svg" class="funder3"/>
                     </a>
                 </div>
                 <div id="footerGreen">
                     <a href="https://e-editiones.org/">
-                        <img alt="logo of powered by e-editiones"
-                             src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
+                        <img alt="logo of powered by e-editiones" src="resources/images/powered-by-editiones-bw-inverted.svg" class="poweredBy"/>
                     </a>
                     <p class="version">App: v <span data-template="pages:version"/>web components: v
                         <pb-version/>
@@ -194,8 +189,7 @@
     </app-drawer-layout>
 </pb-page>
 <div class="splash">
-    <img alt="big animated logo of Proyecto Humboldt Digital that disappears after a few seconds"
-         src="resources/images/logoHDNegativo.svg"/>
+    <img alt="big animated logo of Proyecto Humboldt Digital that disappears after a few seconds" src="resources/images/logoHDNegativo.svg"/>
 </div>
         <script src="resources/scripts/prohd.js"/>
 </body>

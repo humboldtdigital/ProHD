@@ -1,5 +1,4 @@
-<?xml-model href="teipublisher_odds.xsd"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:pb="http://teipublisher.com/1.0" xml:lang="en">
+<?xml-model href="teipublisher_odds.xsd"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:pb="http://teipublisher.com/1.0" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -108,8 +107,7 @@
             
             </outputRendition>
                     </model>
-                    <model output="web" predicate="@n and $parameters?view='page'"
-                        behaviour="inline">
+                    <model output="web" predicate="@n and $parameters?view='page'" behaviour="inline">
                         <param name="content" value="@n"/>
                         <outputRendition xml:space="preserve">
             
@@ -191,18 +189,15 @@ padding-left: 10px;
                             <param name="alternate" value="reg[1]"/>
                         </model>
                     </modelSequence>
-                    <model predicate="$parameters?mode='norm' and abbr and expan"
-                        behaviour="alternate" cssClass="choice">
+                    <model predicate="$parameters?mode='norm' and abbr and expan" behaviour="alternate" cssClass="choice">
                         <param name="default" value="expan[1]"/>
                         <param name="alternate" value="abbr[1]"/>
                     </model>
-                    <model predicate="$parameters?mode='norm' and sic and corr"
-                        behaviour="alternate" cssClass="choice">
+                    <model predicate="$parameters?mode='norm' and sic and corr" behaviour="alternate" cssClass="choice">
                         <param name="default" value="corr[1]"/>
                         <param name="alternate" value="sic[1]"/>
                     </model>                                                    
-                    <model predicate="$parameters?mode='norm' and orig and reg"
-                        behaviour="alternate" cssClass="choice">
+                    <model predicate="$parameters?mode='norm' and orig and reg" behaviour="alternate" cssClass="choice">
                         <param name="default" value="reg[1]"/>
                         <param name="alternate" value="orig[1]"/>
                     </model>                 
@@ -211,8 +206,7 @@ padding-left: 10px;
                 <elementSpec ident="name" mode="change">
                     <model behaviour="alternate">
                         <param name="default" value="."/>
-                        <param name="alternate"
-                            value="id(substring-after(@ref, '#'), root($parameters?root))/node()"/>
+                        <param name="alternate" value="id(substring-after(@ref, '#'), root($parameters?root))/node()"/>
                         <outputRendition xml:space="preserve">
             color: green;
             </outputRendition>
@@ -220,8 +214,7 @@ padding-left: 10px;
                 </elementSpec>
 
                 <elementSpec ident="persName" mode="add">
-                    <model predicate="ancestor::profileDesc and matches(., 'N/A')"
-                        behaviour="inline">
+                    <model predicate="ancestor::profileDesc and matches(., 'N/A')" behaviour="inline">
                         <pb:template xmlns="" xml:space="preserve"><pb-i18n key="document.unknown"/></pb:template>
                     </model>
                     <model predicate="ancestor::teiHeader" behaviour="inline"/>
@@ -400,8 +393,7 @@ padding-left: 10px;
                 <elementSpec ident="rs" mode="change">
                     <model behaviour="alternate">
                         <param name="default" value="."/>
-                        <param name="alternate"
-                            value="id(substring-after(@ref, '#'), root($parameters?root))/node()"/>
+                        <param name="alternate" value="id(substring-after(@ref, '#'), root($parameters?root))/node()"/>
                         <outputRendition xml:space="preserve">
             color: green;
             </outputRendition>
@@ -441,10 +433,8 @@ padding-left: 10px;
                             <param name="uri" value="$parameters?doc"/>
                         </model>
                         <model behaviour="block">
-                            <param name="creator"
-                                value="root(.)//teiHeader/profileDesc/creation/persName[1]"/>
-                            <param name="sender"
-                                value="root(.)//teiHeader/profileDesc/correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
+                            <param name="creator" value="root(.)//teiHeader/profileDesc/creation/persName[1]"/>
+                            <param name="sender" value="root(.)//teiHeader/profileDesc/correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
                             <param name="separator" value="' '"/>
                             <pb:template xmlns="" xml:space="preserve"><span>[[creator]][[separator]][[sender]]</span></pb:template>
                         </model>
@@ -459,8 +449,7 @@ padding-left: 10px;
                     <model output="web" behaviour="heading">
                         <param name="level" value="4"/>
                     </model>
-                    <model predicate="$parameters?display='commentary' and count(editor)=2"
-                        behaviour="inline">
+                    <model predicate="$parameters?display='commentary' and count(editor)=2" behaviour="inline">
                         <param name="forename1" value="editor[1]/persName/forename"/>
                         <param name="surname1" value="editor[1]/persName/surname"/>
                         <param name="content" value="' '"/>
@@ -474,8 +463,7 @@ padding-left: 10px;
             
             </outputRendition>
                     </model>
-                    <model predicate="$parameters?display='commentary' and count(editor)=1"
-                        behaviour="inline">
+                    <model predicate="$parameters?display='commentary' and count(editor)=1" behaviour="inline">
                         <param name="forename1" value="editor[1]/persName/forename"/>
                         <param name="surname1" value="editor[1]/persName/surname"/>
                         <param name="content" value="' '"/>
@@ -491,8 +479,7 @@ padding-left: 10px;
 
                 <elementSpec ident="teiHeader" mode="change">
                     <model output="latex" behaviour="block">
-                        <param name="content"
-                            value="(fileDesc/titleStmt/title[not(@type)], profileDesc/correspDesc)"/>
+                        <param name="content" value="(fileDesc/titleStmt/title[not(@type)], profileDesc/correspDesc)"/>
                         <pb:template xmlns="" xml:space="preserve">\def\volume{[[content]]}</pb:template>
                     </model>
                     <model output="fo" behaviour="omit"/>
@@ -503,13 +490,10 @@ padding-left: 10px;
                         <param name="editionStmt" value="fileDesc/editionStmt/p"/>
                         <param name="publicationStmt" value="fileDesc/publicationStmt"/>
                         <param name="sourceDesc" value="fileDesc/sourceDesc"/>
-                        <param name="currentDate"
-                            value="format-date(current-date(), &#34;[Y0001]-[M01]-[D01]&#34;)"/>
+                        <param name="currentDate" value="format-date(current-date(), &#34;[Y0001]-[M01]-[D01]&#34;)"/>
                         <param name="file" value="util:document-name(.)"/>
-                        <param name="editors"
-                            value="for $i at $pos in fileDesc/titleStmt/editor return    (   if ($pos &gt; 1) then ', ' else (),   $i   )"/>
-                        <param name="publishers"
-                            value="for $i at $pos in fileDesc/publicationStmt/publisher return    (   if ($pos &gt; 1) then ', ' else (),   $i   )"/>
+                        <param name="editors" value="for $i at $pos in fileDesc/titleStmt/editor return    (   if ($pos &gt; 1) then ', ' else (),   $i   )"/>
+                        <param name="publishers" value="for $i at $pos in fileDesc/publicationStmt/publisher return    (   if ($pos &gt; 1) then ', ' else (),   $i   )"/>
                         <param name="editionTitle" value="fileDesc/editionStmt/p/string()"/>
                         <param name="title" value="fileDesc/titleStmt/title/string()"/>
                         <pb:template xmlns="" xml:space="preserve"><div>
@@ -551,8 +535,7 @@ padding-left: 10px;
                 </elementSpec>
 
                 <elementSpec ident="fw" mode="change">
-                    <model output="web" predicate="@type='folNum' and $parameters?view='page'"
-                        behaviour="block">
+                    <model output="web" predicate="@type='folNum' and $parameters?view='page'" behaviour="block">
                         <outputRendition xml:space="preserve">
             
             
@@ -567,8 +550,7 @@ padding-right: 10px;
             
             </outputRendition>
                     </model>
-                    <model output="web" predicate="@place='top' and $parameters?view='page'"
-                        behaviour="inline">
+                    <model output="web" predicate="@place='top' and $parameters?view='page'" behaviour="inline">
                         <outputRendition xml:space="preserve">
             
             
@@ -606,8 +588,7 @@ padding-right: 10px;
             
             </outputRendition>
                     </model>
-                    <model output="web" predicate="@type='sig' and $parameters?view='page'"
-                        behaviour="block">
+                    <model output="web" predicate="@type='sig' and $parameters?view='page'" behaviour="block">
                         <outputRendition xml:space="preserve">
             
             
@@ -644,8 +625,7 @@ padding-right: 10px;
             
             </outputRendition>
                     </model>
-                    <model output="web" predicate="@type='catch' and $parameters?view='page'"
-                        behaviour="block">
+                    <model output="web" predicate="@type='catch' and $parameters?view='page'" behaviour="block">
                         <outputRendition xml:space="preserve">
             
             
@@ -825,8 +805,7 @@ padding-right: 10px;
                         <model predicate="@type=&#34;main&#34;" behaviour="heading">
                             <param name="level " value="2"/>
                         </model>
-                        <model predicate="preceding-sibling::title or @type=&#34;sub&#34;"
-                            behaviour="heading">
+                        <model predicate="preceding-sibling::title or @type=&#34;sub&#34;" behaviour="heading">
                             <param name="level" value="3"/>
                         </model>
                     </modelSequence>
@@ -847,8 +826,7 @@ padding-right: 10px;
                 font-style: italic;
                 </outputRendition>
                         </model>
-                        <model predicate="following-sibling::* and     (  ancestor::biblFull)"
-                            behaviour="text">
+                        <model predicate="following-sibling::* and     (  ancestor::biblFull)" behaviour="text">
                             <param name="content" value="', '"/>
                         </model>
                     </modelSequence>
@@ -858,8 +836,7 @@ padding-right: 10px;
                 font-style: italic;
                 </outputRendition>
                         </model>
-                        <model predicate="following-sibling::* and     (    ancestor::biblFull)"
-                            behaviour="text">
+                        <model predicate="following-sibling::* and     (    ancestor::biblFull)" behaviour="text">
                             <param name="content" value="'. '"/>
                         </model>
                     </modelSequence>
@@ -874,13 +851,10 @@ padding-right: 10px;
                         <param name="institution" value="msDesc/msIdentifier/institution"/>
                         <param name="repository" value="msDesc/msIdentifier/repository"/>
                         <param name="collection" value="msDesc/msIdentifier/collection"/>
-                        <param name="shelfmark"
-                            value="msDesc/msIdentifier/idno/idno[@type=&#34;shelfmark&#34;]"/>
+                        <param name="shelfmark" value="msDesc/msIdentifier/idno/idno[@type=&#34;shelfmark&#34;]"/>
                         <param name="uri" value="msDesc/msIdentifier/idno/idno[@type=&#34;uri&#34;]"/>
-                        <param name="URLImages"
-                            value="msDesc/msIdentifier/idno/idno[@type=&#34;URLImages&#34;]"/>
-                        <param name="URLCatalogue"
-                            value="msDesc/msIdentifier/idno/idno[@type=&#34;URLCatalogue&#34;]"/>
+                        <param name="URLImages" value="msDesc/msIdentifier/idno/idno[@type=&#34;URLImages&#34;]"/>
+                        <param name="URLCatalogue" value="msDesc/msIdentifier/idno/idno[@type=&#34;URLCatalogue&#34;]"/>
                         <param name="physDesc" value="msDesc/physDesc/p"/>
                         <param name="msName" value="msDesc/msIdentifier/msName"/>
                         <pb:template xmlns="" xml:space="preserve"><div>
@@ -904,16 +878,13 @@ padding-right: 10px;
                 <elementSpec ident="msDesc" mode="add">
                     <model behaviour="block">
                         <param name="institution" value="msIdentifier/institution"/>
-                        <param name="shelfmark"
-                            value="msIdentifier/idno/idno[@type=&#34;shelfmark&#34;]"/>
+                        <param name="shelfmark" value="msIdentifier/idno/idno[@type=&#34;shelfmark&#34;]"/>
                         <param name="desc" value="physDesc/p"/>
                         <param name="collection" value="msIdentifier/collection"/>
                         <param name="repository" value="msIdentifier/repository"/>
                         <param name="uri" value="msIdentifier/idno/idno[@type=&#34;uri&#34;]"/>
-                        <param name="images"
-                            value="msIdentifier/idno/idno[@type=&#34;URLImages&#34;]"/>
-                        <param name="catalogue"
-                            value="msIdentifier/idno/idno[@type=&#34;URLCatalogue&#34;]"/>
+                        <param name="images" value="msIdentifier/idno/idno[@type=&#34;URLImages&#34;]"/>
+                        <param name="catalogue" value="msIdentifier/idno/idno[@type=&#34;URLCatalogue&#34;]"/>
                         <param name="msName" value="msIdentifier/msName"/>
                         <pb:template xmlns="" xml:space="preserve">[[institution]]
 [[repository]]
@@ -933,8 +904,7 @@ padding-right: 10px;
             padding-bottom: 15px;
             </outputRendition>
                     </model>
-                    <model predicate="$parameters?display='commentary'" behaviour="inline"
-                        cssClass="person-entry">
+                    <model predicate="$parameters?display='commentary'" behaviour="inline" cssClass="person-entry">
                         <pb:template xmlns="" xml:space="preserve"><li>[[content]]</li></pb:template>
                     </model>
                     <model behaviour="inline"/>
@@ -957,22 +927,16 @@ padding-right: 10px;
                             <param name="content" value="abstract[@xml:lang=&#34;es&#34;]"/>
                         </model>
                     </modelSequence>
-                    <model
-                        predicate="$parameters?display='commentary' and creation[count(orgName)=2]"
-                        behaviour="block">
+                    <model predicate="$parameters?display='commentary' and creation[count(orgName)=2]" behaviour="block">
                         <param name="author1" value="creation/orgName[1]"/>
                         <param name="place" value="creation/placeName"/>
-                        <param name="receiver"
-                            value="correspDesc/correspAction[@type=&#34;received&#34;]/orgName"/>
+                        <param name="receiver" value="correspDesc/correspAction[@type=&#34;received&#34;]/orgName"/>
                         <param name="date" value="creation/date"/>
-                        <param name="dateSent"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
-                        <param name="placeSent"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
+                        <param name="dateSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
+                        <param name="placeSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
                         <param name="content" value="', '"/>
                         <param name="author2" value="creation/orgName[2]"/>
-                        <param name="sender"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/orgName"/>
+                        <param name="sender" value="correspDesc/correspAction[@type=&#34;sent&#34;]/orgName"/>
                         <pb:template xmlns="" xml:space="preserve"><div>
   <h3><pb-i18n key="document.creation"/></h3>
     <p><pb-i18n key="document.author"/> [[author1]]</p>
@@ -981,9 +945,7 @@ padding-right: 10px;
     <p><pb-i18n key="document.date"/> [[date]]</p>
 </div></pb:template>
                     </model>
-                    <model
-                        predicate="$parameters?display='commentary' and creation[count(orgName)=1]"
-                        behaviour="block">
+                    <model predicate="$parameters?display='commentary' and creation[count(orgName)=1]" behaviour="block">
                         <param name="author1" value="creation/orgName[1]"/>
                         <param name="place" value="creation/placeName"/>
                         <param name="date" value="creation/date"/>
@@ -994,16 +956,11 @@ padding-right: 10px;
     <p><pb-i18n key="document.date"/> [[date]]</p>
 </div></pb:template>
                     </model>
-                    <model predicate="$parameters?display='commentary' and correspDesc"
-                        behaviour="block">
-                        <param name="receiver"
-                            value="correspDesc/correspAction[@type=&#34;received&#34;]/persName"/>
-                        <param name="dateSent"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
-                        <param name="placeSent"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
-                        <param name="sender"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
+                    <model predicate="$parameters?display='commentary' and correspDesc" behaviour="block">
+                        <param name="receiver" value="correspDesc/correspAction[@type=&#34;received&#34;]/persName"/>
+                        <param name="dateSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
+                        <param name="placeSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
+                        <param name="sender" value="correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
                         <pb:template xmlns="" xml:space="preserve"><div>
   <h3><pb-i18n key="document.creation"/></h3>
     <p><pb-i18n key="document.sender"/> [[sender]]</p>
@@ -1012,22 +969,16 @@ padding-right: 10px;
    	<p><pb-i18n key="document.receiver"/> [[receiver]]</p>
 </div></pb:template>
                     </model>
-                    <model
-                        predicate="$parameters?display='commentary' and creation[count(persName)=2]"
-                        behaviour="block">
+                    <model predicate="$parameters?display='commentary' and creation[count(persName)=2]" behaviour="block">
                         <param name="author1" value="creation/persName[1]"/>
                         <param name="place" value="creation/placeName"/>
-                        <param name="receiver"
-                            value="correspDesc/correspAction[@type=&#34;received&#34;]/persName"/>
+                        <param name="receiver" value="correspDesc/correspAction[@type=&#34;received&#34;]/persName"/>
                         <param name="date" value="creation/date"/>
-                        <param name="dateSent"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
-                        <param name="placeSent"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
+                        <param name="dateSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/date"/>
+                        <param name="placeSent" value="correspDesc/correspAction[@type=&#34;sent&#34;]/placeName"/>
                         <param name="content" value="', '"/>
                         <param name="author2" value="creation/persName[2]"/>
-                        <param name="sender"
-                            value="correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
+                        <param name="sender" value="correspDesc/correspAction[@type=&#34;sent&#34;]/persName"/>
                         <pb:template xmlns="" xml:space="preserve"><div>
   <h3><pb-i18n key="document.creation"/></h3>
     <p><pb-i18n key="document.author"/> [[author1]]</p>
@@ -1036,9 +987,7 @@ padding-right: 10px;
     <p><pb-i18n key="document.date"/> [[date]]</p>
 </div></pb:template>
                     </model>
-                    <model
-                        predicate="$parameters?display='commentary' and creation[count(persName)=1]"
-                        behaviour="block">
+                    <model predicate="$parameters?display='commentary' and creation[count(persName)=1]" behaviour="block">
                         <param name="author1" value="creation/persName[1]"/>
                         <param name="place" value="creation/placeName"/>
                         <param name="date" value="creation/date"/>
@@ -1065,8 +1014,7 @@ padding-right: 10px;
             font-style:italic;
             </outputRendition>
                     </model>
-                    <model predicate="$parameters?display='commentary' and not(parent::p)"
-                        behaviour="inline">
+                    <model predicate="$parameters?display='commentary' and not(parent::p)" behaviour="inline">
                         <pb:template xmlns="" xml:space="preserve"><li>[[content]]</li></pb:template>
                     </model>
                     <model predicate="parent::listBibl" behaviour="listItem"/>
@@ -1236,15 +1184,13 @@ color:red;
                 </elementSpec>
                 <elementSpec ident="correspDesc" mode="add"/>
                 <elementSpec ident="placeName" mode="add">
-                    <model predicate="ancestor::profileDesc and matches(., 'N/A')"
-                        behaviour="inline">
+                    <model predicate="ancestor::profileDesc and matches(., 'N/A')" behaviour="inline">
                         <pb:template xmlns="" xml:space="preserve"><pb-i18n key="document.unknown"/></pb:template>
                     </model>
                     <model predicate="ancestor::teiHeader" behaviour="inline"/>
                 </elementSpec>
                 <elementSpec ident="date" mode="change">
-                    <model predicate="ancestor::profileDesc and matches(., 'N/A')"
-                        behaviour="inline">
+                    <model predicate="ancestor::profileDesc and matches(., 'N/A')" behaviour="inline">
                         <pb:template xmlns="" xml:space="preserve"><pb-i18n key="document.unknown"/></pb:template>
                     </model>
                     <model output="print" predicate="text()" behaviour="inline"/>
@@ -1300,8 +1246,7 @@ text-decoration-style: dotted;
             font-weight: bold;
             </outputRendition>
                     </model>
-                    <model predicate="@rendition=&#34;#uu&#34;" behaviour="inline"
-                        useSourceRendition="true">
+                    <model predicate="@rendition=&#34;#uu&#34;" behaviour="inline" useSourceRendition="true">
                         <outputRendition xml:space="preserve">
             
             
@@ -1419,14 +1364,12 @@ text-decoration-style: double;
             
             </outputRendition>
                     </model>
-                    <model predicate="@rendition=&#34;#sup&#34;" behaviour="inline"
-                        useSourceRendition="true">
+                    <model predicate="@rendition=&#34;#sup&#34;" behaviour="inline" useSourceRendition="true">
                         <outputRendition xml:space="preserve">
             vertical-align:super;
             </outputRendition>
                     </model>
-                    <model predicate="@rendition=&#34;#u&#34;" behaviour="inline"
-                        useSourceRendition="true">
+                    <model predicate="@rendition=&#34;#u&#34;" behaviour="inline" useSourceRendition="true">
                         <outputRendition xml:space="preserve">
             text-decoration: underline;
             </outputRendition>
@@ -1480,8 +1423,7 @@ text-decoration-style: double;
             border: 1px solid black; padding: 5px;
             </outputRendition>
                     </model>
-                    <model predicate="parent::body or parent::front or parent::back"
-                        behaviour="section"/>
+                    <model predicate="parent::body or parent::front or parent::back" behaviour="section"/>
                     <model behaviour="block"/>
                 </elementSpec>
                 <elementSpec ident="list" mode="change">
@@ -1769,8 +1711,7 @@ padding: 10px;
                     </model>
                 </elementSpec>
                 <elementSpec ident="signed" mode="change">
-                    <model predicate="parent::closer and @rend=&#34;align(right)&#34;"
-                        behaviour="block">
+                    <model predicate="parent::closer and @rend=&#34;align(right)&#34;" behaviour="block">
                         <outputRendition xml:space="preserve">
             text-align: right;
             </outputRendition>
@@ -2042,8 +1983,7 @@ margin-bottom: 3em;
                     </model>
                 </elementSpec>
                 <elementSpec ident="subst" mode="change">
-                    <model predicate="$parameters?mode='norm' and del and add" behaviour="alternate"
-                        cssClass="choice">
+                    <model predicate="$parameters?mode='norm' and del and add" behaviour="alternate" cssClass="choice">
                         <param name="default" value="add[1]"/>
                         <param name="alternate" value="del[1]"/>
                     </model>
@@ -2200,9 +2140,7 @@ padding: 10px;
                 <elementSpec ident="creation" mode="add"/>
                 <elementSpec ident="head" mode="change">
                     <model predicate="$parameters?header='short'" behaviour="inline">
-                        <param name="content"
-                            value="replace(string-join(.//text()[not(parent::ref)]), '^(.*?)[^\w]*$', '$1')"
-                        />
+                        <param name="content" value="replace(string-join(.//text()[not(parent::ref)]), '^(.*?)[^\w]*$', '$1')"/>
                     </model>
                     <model predicate="parent::figure" behaviour="block">
                         <outputRendition xml:space="preserve">
@@ -2242,9 +2180,7 @@ font-style:italic
                 </elementSpec>
                 <elementSpec ident="text" mode="change">
                     <model predicate="$parameters?display='landing'" behaviour="body">
-                        <param name="content"
-                            value="let $lang := $parameters?language let $l := if ($lang = ('en', 'es', 'de')) then $lang else 'en' return root(.)//text[@xml:lang=$l]"
-                        />
+                        <param name="content" value="let $lang := $parameters?language let $l := if ($lang = ('en', 'es', 'de')) then $lang else 'en' return root(.)//text[@xml:lang=$l]"/>
                     </model>
                     <model behaviour="body"/>
                 </elementSpec>

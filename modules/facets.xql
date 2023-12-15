@@ -106,17 +106,17 @@ declare function facets:display($config as map(*), $nodes as element()+) {
     where $table
     return (
         <div class="facet-dimension" data-dimension="facet-{$config?dimension}">
-            <h3><pb-i18n key="{$config?heading}">{$config?heading}</pb-i18n>
-            {
-                (: if ($fcount > $max) then
+            <h3><pb-i18n key="{$config?heading}">{$config?heading}</pb-i18n> 
+           {
+                 if ($fcount > $max) then
                     <paper-checkbox class="facet" name="all-{$config?dimension}">
                         { if (facets:get-parameter("all-" || $config?dimension)) then attribute checked { "checked" } else () }
-                        <pb-i18n key="facets.show">Show top 50</pb-i18n>
+                        <pb-i18n key="facets.show">Show All</pb-i18n>
                     </paper-checkbox>
                 else
-                    () :)
+                    ()
             }
-            </h3>
+           </h3>
             {
                 $table,
                 (: if config specifies a property "source", output combo-box :)

@@ -36,9 +36,8 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                     $root/dbk:info/dbk:title
                 ), " - ")
             case "author" return (
-                $header//tei:correspDesc/tei:correspAction[@type="sent"]/tei:persName,
-                (: Added by ARC on 06.07.2021 :)
-                $header//tei:creation/tei:persName,
+                $header//tei:correspDesc/tei:correspAction[@type="sent"]/tei:persName[position()=1],
+                $header//tei:creation/tei:persName[position()=1],
                 $header//tei:titleStmt/tei:author,
                 $root/dbk:info/dbk:author
             )
