@@ -22,11 +22,11 @@
                                 <iron-icon icon="icons:chrome-reader-mode"/>
                             </pb-download>
                         </paper-item>
-                        <paper-item>
+                        <!--<paper-item>
                             <pb-edit-xml data-i18n="[title]menu.download.view-tei" title="XML" path="${coll}/${ident}" data-template="pages:parse-params">
                                 XML
                             </pb-edit-xml>
-                        </paper-item>
+                        </paper-item>-->
                         <pb-restricted login="login" group="tei">
                             <pb-ajax url="api/document/${ident}" method="delete" emit="search" event="pb-search-resubmit" confirm="browse.confirmDeletion" quiet="" data-template="pages:parse-params">
                                 <paper-icon-button icon="icons:delete"/>
