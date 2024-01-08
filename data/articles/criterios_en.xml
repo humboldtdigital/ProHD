@@ -230,11 +230,9 @@
       </section>
       <section>
          <title>Funding</title>
-         <para>Tras el nombre del editor o editora, se han identificado las tres entidades que
-            financian el proyecto: Auswärtiges Amt, Fritz Thyssen Stiftung y Gerda Henkel
-            Stiftung.</para>
-         <para>En <tag>titleStmt</tag> se ha utilizado el elemento <tag>funder</tag> de la siguiente
-            manera:</para>
+         <para>After the name of the publisher, the three funding bodies have been identified:
+            Auswärtiges Amt, Fritz Thyssen Stiftung and Gerda Henkel Stiftung.</para>
+         <para>In <tag>titleStmt</tag> the funder element has been used as follows: </para>
             <programlisting language="xml" xml:space="preserve">&lt;funder ref="https://www.auswaertiges-amt.de/de/"&gt;
    Auswärtiges Amt
 &lt;/funder&gt;
@@ -244,41 +242,40 @@
 &lt;funder ref="https://www.gerda-henkel-stiftung.de/"&gt;
    Gerda Henkel Stiftung
 &lt;/funder&gt;      </programlisting>
-         <para>El elemento <tag>funder</tag> lleva el atributo <tag>@ref</tag> con la URL de la web
-            de las tres entidades financiadoras.</para>
+         <para>The <tag>funder</tag> element contains the <tag>@ref</tag> attribute with the URL of
+            the website of the three funding bodies.</para>
       </section>
       <section>
-         <title>Edición</title>
-         <para>Todas las ediciones del proyecto mencionan el Proyecto Humboldt Digital y documentan
-            la fecha de edición. Se ha codificado esta información sobre la edición con los
-            elementos <tag>editionStmt</tag> y <tag>p</tag> de la siguiente manera:</para>
+         <title>Edition</title>
+         <para>All editions of the project mention the Proyecto Humboldt Digital and document the
+            edition date. This edition information has been encoded with the <tag>editionStmt</tag>
+            and <tag>p</tag> elements as follows: </para>
             <programlisting language="xml" xml:space="preserve">&lt;editionStmt&gt;
    &lt;p&gt;Proyecto Humboldt Digital (&lt;date&gt;2021&lt;/date&gt;)&lt;/p&gt;
 &lt;/editionStmt&gt; </programlisting>
-         <para>La fecha entre paréntesis corresponde al año de creación del documento TEI; es
-            importante no confundir esta fecha con la fecha de creación de la fuente de la que
-            deriva el texto.</para>
+         <para>The date in brackets corresponds to the year of creation of the TEI document; it is
+            important not to confuse this date with the date of creation of the source.</para>
       </section>
       <section>
-         <title>Publicación y licencia</title>
-         <para>En todas las ediciones se ha codificado información sobre las organizaciones
-            responsables de la distribución y publicación de las ediciones, los lugares de
-            publicación y la licencia.</para>
-         <para>Para ello se ha utilizado el elemento <tag>publicationStmt</tag>. Dentro de este
-            elemento, se han utilizado tres elementos anidados: <itemizedlist>
+         <title>Publication and licence</title>
+         <para>Information on the organisations responsible for the distribution and publication of
+            the editions, the places of publication and the licence has been coded in all
+            editions.</para>
+         <para>For this purpose, the <tag>publicationStmt</tag> element has been used. Within this
+            element, three nested elements have been used:<itemizedlist>
                <listitem>
                   <para>
-                     <tag>publisher</tag> (entidad que publica la edición), </para>
+                     <tag>publisher</tag> (publishing entity), </para>
                </listitem>
                <listitem>
                   <para>
-                     <tag>pubPlace</tag> (lugar de publicación) y</para>
+                     <tag>pubPlace</tag> (publication place),</para>
                </listitem>
                <listitem>
                   <para>
-                     <tag>availability</tag> (disponibilidad).</para>
+                     <tag>availability</tag> (availability).</para>
                </listitem>
-            </itemizedlist> Por ejemplo:</para>
+            </itemizedlist>For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;publicationStmt&gt;
    &lt;publisher&gt;
       &lt;ref target="http://www.bbaw.de"&gt;Berlin-Brandenburgische
@@ -293,22 +290,22 @@
       4.0 Internacional (CC BY 4.0) &lt;/licence&gt;
    &lt;/availability&gt;
 &lt;/publicationStmt&gt;</programlisting>
-         <para>De manera opcional, se ha enriquecido la información sobre la entidad responsable de
-            la publicación mediante el elemento <tag>ref</tag> para proporcionar un hipervínculo a
-            la web con el atributo <tag>@target</tag>. Asimismo, de manera opcional, se ha utilizado
-            el atributo <tag>@ref</tag> en el elemento <tag>pubPlace</tag> para identificar el lugar
-            de publicación con un URI procedente de GeoNames.</para>
-         <para>Los elementos <tag>publisher</tag> y <tag>pubPlace</tag> son repetibles, es decir, es
-            posible incluir más de una entidad y lugar de publicación, pero la información sobre la
-            disponibilidad del fichero no es repetible. Así, el elemento <tag>availability</tag>,
-            con un atributo <tag>@status="free"</tag>, contiene a su vez un elemento
-               <tag>licence</tag> con información sobre la licencia de la edición digital; se ha
-            utilizado el atributo <tag>@target</tag> para dar la URL de la licencia.</para>
-         <para>En todas las ediciones del proyecto, se ha utilizado la licencia "Creative Commons
-            Atribución 4.0 Internacional (CC BY 4.0)".</para>
+         <para>Optionally, the information on the entity responsible for the publication has been
+            enriched using the <tag>ref</tag> element to provide a hyperlink to the website with the
+               <tag>@target</tag> attribute. Also, optionally, the <tag>@ref</tag> attribute has
+            been used in the <tag>pubPlace</tag> element to identify the place of publication with a
+            URI from GeoNames. </para>
+         <para>The <tag>publisher</tag> and <tag>pubPlace</tag> elements are repeatable, i.e. it is
+            possible to include more than one entity and place of publication, but the information
+            on the availability of the file is not repeatable. Thus, the <tag>availability</tag>
+            element, with a <tag>@status="free"</tag> attribute, contains a <tag>licence</tag>
+            element with information about the licence of the digital edition; the
+               <tag>@target</tag> attribute has been used to give the URL of the licence.</para>
+         <para>In all the editions of the project, the licence "Creative Commons Atribución 4.0
+            Internacional (CC BY 4.0)" has been used.</para>
       </section>
       <section>
-         <title>Fuente textual</title>
+         <title>Textual Source</title>
          <para>En todas las ediciones del proyecto se ha codificado la fuente de la que deriva el
             texto, el nombre de la institución en la que se conserva el documento y al menos un
             identificador como una signatura.</para>
