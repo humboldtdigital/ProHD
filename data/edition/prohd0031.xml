@@ -4,7 +4,7 @@
             <titleStmt>
                 <title type="main">Estado General de los derechos reales cobrados y debidos cobrar
                     en las Administraciones generales de Rentas de Mar y Tierra</title>
-                <editor>Zarama, Nicolás</editor>
+                <editor><persName><surname>Zarama</surname><forename>Nicolás</forename></persName></editor>
                 <funder ref="https://www.auswaertiges-amt.de/de/">Auswärtiges Amt</funder>
                 <funder ref="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Stiftung</funder>
                 <funder ref="https://www.gerda-henkel-stiftung.de/">Gerda Henkel Stiftung</funder>
@@ -101,8 +101,11 @@
         <body>
             <div>
                 <p>
-                    <pb n="1v" facs="prohd0031_1v.tif"/><fw type="folNum">96</fw></p>
-                <p><choice>
+                    <pb n="1v" facs="prohd0031_1v.tif"/>
+                    <fw type="folNum">96</fw>
+                </p>
+                <p>
+                    <choice>
                         <orig>ESTADO</orig>
                         <reg>Estado</reg>
                     </choice>
@@ -142,13 +145,15 @@
                         <reg>de Mar</reg>
                     </choice>
                     <choice>
-                        <orig>yTier<g ref="#typoHyphen"/><lb break="no"/>ra</orig>
+                        <orig>yTier<g ref="#typoHyphen"/>
+                            <lb break="no"/>ra</orig>
                         <reg>y tierra</reg>
                     </choice>; de las cantidades procedentes de <choice>
                         <orig>Comisos</orig>
                         <reg>comisos</reg>
                     </choice>; de las exigidas para el <choice>
-                        <orig>Ves<g ref="#typoHyphen"/><lb break="no"/>tuario</orig>
+                        <orig>Ves<g ref="#typoHyphen"/>
+                            <lb break="no"/>tuario</orig>
                         <reg>vestuario</reg>
                     </choice> de <choice>
                         <orig>Milicias</orig>
@@ -159,7 +164,8 @@
                     </choice>; de los <choice>
                         <orig>Licores</orig>
                         <reg>licores</reg>
-                    </choice>, <lb/><choice>
+                    </choice>, <lb/>
+                    <choice>
                         <orig>Harinas</orig>
                         <reg>harinas</reg>
                     </choice>, y <choice>
@@ -195,7 +201,8 @@
                             </choice> de <choice>
                                 <orig>Mar</orig>
                                 <reg>mar</reg>
-                            </choice></head>
+                            </choice>
+                        </head>
                         <row>
                             <cell>Cobrados</cell>
                             <cell>"650.157.2.</cell>
@@ -205,7 +212,8 @@
                             <cell>"205.547.2.</cell>
                         </row>
                         <row>
-                            <cell><add place="intralinear">(Total)</add>
+                            <cell>
+                                <add place="intralinear">(Total)</add>
                             </cell>
                             <cell>"851.704.4</cell>
                         </row>
@@ -219,7 +227,8 @@
                             </choice> de <choice>
                                 <orig>Tierra</orig>
                                 <reg>tierra</reg>
-                            </choice></head>
+                            </choice>
+                        </head>
                         <row>
                             <cell>Cobrados</cell>
                             <cell>"478.273.6½</cell>
@@ -229,7 +238,8 @@
                             <cell>"56.643.6</cell>
                         </row>
                         <row>
-                            <cell><add place="intralinear">(Total)</add>
+                            <cell>
+                                <add place="intralinear">(Total)</add>
                             </cell>
                             <cell>"534.913.4½</cell>
                         </row>
@@ -242,18 +252,21 @@
                             <cell>De <choice>
                                     <orig>Mar</orig>
                                     <reg>mar</reg>
-                                </choice></cell>
+                                </choice>
+                            </cell>
                             <cell>"88.457.6½</cell>
                         </row>
                         <row>
                             <cell>De <choice>
                                     <orig>Tierra</orig>
                                     <reg>tierra</reg>
-                                </choice></cell>
+                                </choice>
+                            </cell>
                             <cell>"18.662.3½</cell>
                         </row>
                         <row>
-                            <cell><add place="intralinear">(Total)</add>
+                            <cell>
+                                <add place="intralinear">(Total)</add>
                             </cell>
                             <cell>"107.120.2</cell>
                         </row>
@@ -265,7 +278,8 @@
                             <cell>Vestuario de <choice>
                                     <orig>Milicias</orig>
                                     <reg>milicias</reg>
-                                </choice></cell>
+                                </choice>
+                            </cell>
                             <cell>"82.397."</cell>
                         </row>
                         <row>
@@ -296,7 +310,8 @@
                             <cell>de <choice>
                                     <orig>Vinagre</orig>
                                     <reg>vinagre</reg>
-                                </choice></cell>
+                                </choice>
+                            </cell>
                             <cell>"5.553.5/9</cell>
                         </row>
                         <row>
@@ -325,20 +340,23 @@
                     <table rows="1" cols="2">
                         <head>Salida</head>
                         <row>
-                            <cell><choice>
+                            <cell>
+                                <choice>
                                     <orig>Caxas</orig>
                                     <reg>Cajas</reg>
                                 </choice> de <choice>
                                     <orig>Azucar</orig>
                                     <reg>azúcar</reg>
-                                </choice></cell>
+                                </choice>
+                            </cell>
                             <cell>"158.073.1/4</cell>
                         </row>
                     </table>
                 </p>
                 <p>
                     <table rows="6" cols="4">
-                        <head><choice>
+                        <head>
+                            <choice>
                                 <orig>BUQUES</orig>
                                 <reg>Buques</reg>
                             </choice>.</head>
@@ -380,7 +398,8 @@
                         </row>
                     </table>
                 </p>
-                <p><choice>
+                <p>
+                    <choice>
                         <orig>Havana</orig>
                         <reg>Habana</reg>
                     </choice> 2 de <choice>
