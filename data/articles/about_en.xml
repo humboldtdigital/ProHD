@@ -36,7 +36,7 @@
             <p>
                <hi rendition="#b">Proyecto Humboldt Digital (ProHD)</hi> is an international
                initiative for advanced training in the Digital Humanities at two locations: Havana
-               (Casa Museo Alejandro de Humboldt) and Berlin (Berlin-Brandenburg Academy of Sciences
+               (Oficina del Historiador de la Ciudad de La Habana) and Berlin (Berlin-Brandenburg Academy of Sciences
                and Humanities).</p>
             <p>The project focuses on the study of Cuban scientific and literary culture of the 18th
                and 19th centuries, especially on the exploration of sources relevant to Alexander
@@ -108,8 +108,7 @@
                servers of the Oficina del Historiador de la Ciudad de La Habana; the facsimiles use
                   <ref target="https://iiif.io/">IIIF</ref>'s API.</p>
             <p>The development of the framework ediarum.PROHD.edit and of this web application has
-               been carried out by Antonio Rojas Castro with the collaboration of Violeta López.
-               Technical inquiries can be directed to antonio.rojas-castro at bbaw.de.</p>
+               been carried out by Antonio Rojas Castro with the collaboration of Violeta López.</p>
                <p>Regarding the accessibility of this website, the WCAG 2.1 standard has been taken into account. If you encounter accessibility problems or have suggestions for improvement, please contact us.</p>
          </div>
          <div>
