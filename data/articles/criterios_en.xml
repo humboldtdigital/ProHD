@@ -1,11 +1,13 @@
-<?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+<?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?>
+<?xml-stylesheet type="text/css" href="../../../../../../../Program%20Files/Oxygen%20XML%20Author%2023/frameworks/docbook/css/docbook.css"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
       <title>Editing Guidelines</title>
       <copyright>
          <year>2022-10-25</year>
       </copyright>
       <keywordset>
-         <keyword>Documentación</keyword>
+         <keyword>Documentation</keyword>
       </keywordset>
       <author>
          <personname>
@@ -28,34 +30,33 @@
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
       </publisher>
-      <edition>Versión 4</edition>
+      <edition>Version 4</edition>
    </info>
    <section xml:id="metadatos">
       <title>Metadata</title>
-      <para>The metadata used in ... Los metadatos utilizados en Proyecto Humboldt Digital son descriptivos e identifican <itemizedlist>
+      <para>The descriptive metadata used in Proyecto Humboldt Digital identify the following: <itemizedlist>
             <listitem>
-               <para>la edición digital,</para>
+               <para>the digital edition,</para>
             </listitem>
             <listitem>
-               <para>los responsables de la edición y la publicación,</para>
+               <para>the editors and publishers,</para>
             </listitem>
             <listitem>
-               <para>la fuente de la que deriva el texto,</para>
+               <para>the source from which the text is derived,</para>
             </listitem>
             <listitem>
-               <para>las condiciones relacionadas con la creación y</para>
+               <para>the conditions related to the creation</para>
             </listitem>
             <listitem>
-               <para>la clase de texto mediante categorías.</para>
+               <para>the text type by categories.</para>
             </listitem>
-         </itemizedlist>Estos metadatos han sido aplicados a todo tipo de texto (documento, carta,
+         </itemizedlist>This metadata has been applied to all types of text (documents, letters,
          etc.).</para>
-      <para>La estructura de un encabezado TEI de un documento genérico es la
-         siguiente:</para>
+      <para>The structure of a TEI header of a generic document is as follows:</para>
          <programlisting language="xml">&lt;teiHeader&gt;
         &lt;fileDesc&gt;
             &lt;titleStmt&gt;
-                &lt;title type="main"&gt;[Introducir datos]&lt;/title&gt;
+                &lt;title type="main"&gt;[Enter data]&lt;/title&gt;
                 &lt;funder ref="https://www.auswaertiges-amt.de/de/"&gt;
                   Auswärtiges Amt&lt;/funder&gt;
                 &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&gt;
@@ -64,8 +65,8 @@
                   Gerda Henkel Stiftung&lt;/funder&gt;
                 &lt;editor&gt;
                     &lt;persName&gt;
-                        &lt;surname&gt;[Introducir datos]&lt;/surname&gt;
-                        &lt;forename&gt;[Introducir datos]&lt;/forename&gt;
+                        &lt;surname&gt;[Enter data]&lt;/surname&gt;
+                        &lt;forename&gt;[Enter data]&lt;/forename&gt;
                     &lt;/persName&gt;
                 &lt;/editor&gt;
             &lt;/titleStmt&gt;
@@ -88,27 +89,27 @@
             &lt;sourceDesc&gt;
                 &lt;msDesc rend="manuscript"&gt;
                     &lt;msIdentifier&gt;
-                        &lt;institution&gt;[Introducir datos]&lt;/institution&gt;
-                        &lt;collection&gt;[Introducir datos]&lt;/collection&gt;
+                        &lt;institution&gt;[Enter data]&lt;/institution&gt;
+                        &lt;collection&gt;[Enter data]&lt;/collection&gt;
                         &lt;idno&gt;
-                            &lt;idno type="shelfmark"&gt;[Introducir datos]&lt;/idno&gt;
-                            &lt;idno type="uri"&gt;[Introducir datos]&lt;/idno&gt;
+                            &lt;idno type="shelfmark"&gt;[Enter data]&lt;/idno&gt;
+                            &lt;idno type="uri"&gt;[Enter data]&lt;/idno&gt;
                         &lt;/idno&gt;
                     &lt;/msIdentifier&gt;
-                    &lt;physDesc&gt;&lt;p&gt;[Introducir datos]&lt;/p&gt;&lt;/physDesc&gt;
+                    &lt;physDesc&gt;&lt;p&gt;[Enter data]&lt;/p&gt;&lt;/physDesc&gt;
                 &lt;/msDesc&gt;
             &lt;/sourceDesc&gt;
         &lt;/fileDesc&gt;
         &lt;profileDesc&gt;
-            &lt;creation&gt;[Introducir datos]&lt;/creation&gt;
+            &lt;creation&gt;[Enter data]&lt;/creation&gt;
             &lt;langUsage&gt;
-                &lt;language ident=""&gt;[Introducir datos]&lt;/language&gt;
+                &lt;language ident=""&gt;[Enter data]&lt;/language&gt;
             &lt;/langUsage&gt;
             &lt;abstract xml:lang="es"&gt;
-                &lt;p&gt;[Introducir datos]&lt;/p&gt;
+                &lt;p&gt;[Enter data]&lt;/p&gt;
             &lt;/abstract&gt;
             &lt;abstract xml:lang="de"&gt;
-                &lt;p&gt;[Introducir datos]&lt;/p&gt;
+                &lt;p&gt;[Enter data]&lt;/p&gt;
             &lt;/abstract&gt;
             &lt;textClass&gt;
                 &lt;catRef&gt;&lt;/catRef&gt;
@@ -154,51 +155,47 @@
 &lt;/teiHeader&gt;</programlisting>
 
       <section>
-         <title>Título</title>
-         <para>Todas las ediciones se han identificado con un título principal. El título ha sido
-            normalizado ortográficamente.</para>
-         <para>En <tag>titleStmt</tag>, la codificación del título principal se ha realizado
-            utilizando el elemento <tag>title</tag> y el atributo <tag>@type="main"</tag>. Por
-            ejemplo:</para>
+         <title>Title</title>
+         <para>All editions have been identified by a main title. The title has been
+            orthographically standardised.</para>
+         <para>In <tag>titleStmt</tag>, the encoding of the main title has been done using the title
+            element and the <tag>type="main"</tag> attribute. For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;title type="main"&gt;Carta de consulta al Ayuntamiento
                de La Habana&lt;/title&gt;</programlisting>
-         <para>Tras el título principal, se ha incluido de manera opcional el título en otro idioma,
-            con la ortografía original, un título alternativo o un subtítulo. Con este fin se puede
-            repetir el elemento <tag>title</tag> debajo del título principal y usar el atributo
-               <tag>@type="sub"</tag>:</para>
+         <para>After the main title, the title in another language, with the original spelling, an
+            alternative title or a subtitle is optionally included. For this purpose the
+               <tag>title</tag> element can be repeated below the main title together with the
+            attribute <tag>@type="sub"</tag>:</para>
             <programlisting language="xml" xml:space="preserve">&lt;title type="main"&gt;Carta de Francisco de Arango y Parreño
    a Alexander von Humboldt&lt;/title&gt;
 &lt;title type="sub" xml:lang="fr"&gt;À Monsieur Mr. le Baron
    A. Humboldt&lt;/title&gt;         </programlisting>
-         <para>Se ha utilizado de manera opcional el atributo <tag>@xml:lang</tag> con un código
-            estándar para indicar el idioma del título alternativo: "es" para el español, "fr" para
-            el francés, "de" para el alemán, "en" para el inglés, etc.</para>
+         <para>The <tag>@xml:lang</tag> attribute has been optionally used with a standard code to indicate the language of the alternative title: "es" for Spanish, "fr" for English, "fr" for French.
+            standard code to indicate the language of the alternative title: "es" for Spanish, "fr" for French, "de" for German, "en" for English, etc.
+            for French, "de" for German, "en" for English, etc.</para>
       </section>
       <section>
-         <title>Editores y colaboradores</title>
-         <para>En el elemento <tag>titleStmt</tag>, se han identificado los responsables de la
-            edición con el elemento <tag>editor</tag>. El nombre de la persona se ha codificado con
-               <tag>persName</tag> y los siguientes elementos:</para>
+         <title>Editors and collaborators</title>
+         <para>In the <tag>titleStmt</tag>, the editors have been identified with the <tag>editor</tag> element. The name of the person has been encoded with the element <tag>persName</tag> as it follows:</para>
          <itemizedlist>
             <listitem>
-               <para>Apellido: <tag>surname</tag>
+               <para>Surname: <tag>surname</tag>
                </para>
             </listitem>
             <listitem>
-               <para>Nombre: <tag>forename</tag>
+               <para>Forename: <tag>forename</tag>
                </para>
             </listitem>
          </itemizedlist>
-         <para>Se ha codificado de manera opcional en el atributo <tag>@ref</tag> la referencia a
-            una base de datos externa en forma de URL como, por ejemplo, VIAF u ORCID.</para>
+         <para>An external database in the form of a URL, e.g. VIAF or ORCID, has been optionally encoded in the <tag>@ref</tag> attribute.</para>
             <programlisting language="xml" xml:space="preserve">&lt;editor&gt;
    &lt;persName ref="http://viaf.org/viaf/21973914"&gt;
-     &lt;surname&gt;[Apellido]&lt;/surname&gt;
-     &lt;forename&gt;[Nombre]&lt;/forename&gt;
+     &lt;surname&gt;[Surname]&lt;/surname&gt;
+     &lt;forename&gt;[Forename]&lt;/forename&gt;
    &lt;/persName&gt;
 &lt;/editor&gt;     </programlisting>
-         <para>Si hay más de una editora o editor, se ha repetido el elemento <tag>editor</tag>. Por
-            ejemplo: </para>
+         <para>If there is more than one editor, the <tag>editor</tag> element has been repeated.
+            For example: </para>
             <programlisting language="xml" xml:space="preserve">&lt;editor&gt;
                     &lt;persName&gt;
                         &lt;surname&gt;Tylus&lt;/surname&gt;
@@ -211,28 +208,28 @@
                         &lt;forename&gt;Kathrin&lt;/forename&gt;
                     &lt;/persName&gt;
                 &lt;/editor&gt;</programlisting>
-         <para>Si en la edición han participado otras personas con tareas menores, se ha incluido el
-            nombre de los colaboradores y colaboradoras con el elemento <tag>respStmt</tag>
-               (<quote>statement of responsibility</quote> – declaración de responsabilidad).
-            Nuevamente, el nombre de la persona se ha añadido en el elemento <tag>persName</tag>. En
-            el atributo <tag>@ref</tag> también se ha codificado de manera opcional la referencia a
-            una base de datos externa como VIAF u ORCID en forma de URL.</para>
-         <para>El tipo de colaboración se ha definido detalladamente con el elemento <tag>resp</tag>
-               (<quote>responsibility</quote> – responsabilidad). En un elemento <tag>note</tag> se
-            ha definido el tipo de contribución: colaboración, colaboración editorial,
-            transcripción, comentario o registros. Por ejemplo:</para>
+         <para>If other people have been involved in the edition with minor tasks, the name of the
+            contributors has been included with the element <tag>respStmt</tag> (statement of
+            responsibility). Again, the name of the person has been added in the element
+               <tag>persName</tag>. In the <tag>@ref</tag> attribute, the reference to an external
+            database such as VIAF or ORCID has also been optionally encoded in the form of a
+            URL.</para>
+         <para>The type of collaboration has been defined in detail with the <tag>resp</tag>
+            (responsibility) element. In a <tag>note</tag> element the type of contribution has been
+            defined using the following values: collaboration, editorial collaboration,
+            transcription, commentary or records. For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;respStmt&gt;
    &lt;persName ref="http://viaf.org/viaf/21973914"&gt;
       &lt;surname&gt;[Apellido]&lt;/surname&gt;
       &lt;forename&gt;[Nombre]&lt;/forename&gt;
    &lt;/persName&gt;
    &lt;resp&gt;
-      &lt;note type="remarkResponsibility"&gt;colaboración&lt;/note&gt;
+      &lt;note type="remarkResponsibility"&gt;Collaboration&lt;/note&gt;
    &lt;/resp&gt;
 &lt;/respStmt&gt;</programlisting>
       </section>
       <section>
-         <title>Financiación</title>
+         <title>Funding</title>
          <para>Tras el nombre del editor o editora, se han identificado las tres entidades que
             financian el proyecto: Auswärtiges Amt, Fritz Thyssen Stiftung y Gerda Henkel
             Stiftung.</para>
