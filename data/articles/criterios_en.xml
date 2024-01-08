@@ -306,39 +306,39 @@
       </section>
       <section>
          <title>Textual Source</title>
-         <para>En todas las ediciones del proyecto se ha codificado la fuente de la que deriva el
-            texto, el nombre de la institución en la que se conserva el documento y al menos un
-            identificador como una signatura.</para>
-         <para>La descripción de la fuente se ha codificado con el elemento <tag>msDesc</tag>
-            (manuscript description). Dentro se ha utilizado el elemento <tag>msIdentifier</tag>
-            para proporcionar información sobre la institución que conserva el documento con el
-            elemento <tag>institution</tag> y la signatura con el elemento <tag>idno</tag>, que
-            lleva el atributo <tag>@type</tag> con el valor <tag>shelfmark</tag>. Se ha codificado
-            este elemento <tag>idno</tag> dentro de otro elemento <tag>idno</tag> a fin de repetir
-            tantos elementos <tag>idno</tag> como sea necesario. De manera opcional, se ha incluido
-            información sobre la colección con el elemento <tag>collection</tag> y el nombre o
-            título de la fuente tal y como aparece en el documento mediante el elemento
-               <tag>msName</tag>. Por ejemplo:</para>
+         <para>In all editions of the project, the source from which the text is derived, the name
+            of the institution where the document is held and at least one identifier such as a call
+            number have been encoded.</para>
+         <para>The source description has been encoded with the <tag>msDesc</tag> (manuscript
+            description) element. Inside, the <tag>msIdentifier</tag> element has been used to
+            provide information about the institution holding the document with the
+               <tag>institution</tag> element and the signature with the <tag>idno</tag> element,
+            which contains the <tag>@type</tag> attribute with the value <tag>shelfmark</tag>.
+               This<tag> idno</tag> element has been encoded inside another <tag>idno</tag> element
+            in order to repeat as many idno elements as necessary. Optionally, information about the
+            collection has been included with the <tag>collection</tag> element and the name or
+            title of the source as it appears in the document using the <tag>msName</tag> element.
+            For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;msDesc type="copy"&gt;
    &lt;msIdentifier&gt;
-      &lt;institution&gt;[institución]&lt;/institution&gt;
-      &lt;collection&gt;[colección]&lt;/collection&gt;
+      &lt;institution&gt;[institution]&lt;/institution&gt;
+      &lt;collection&gt;[collection]&lt;/collection&gt;
       &lt;idno&gt;
-         &lt;idno type="shelfmark"&gt;[signatura]&lt;/idno&gt;
+         &lt;idno type="shelfmark"&gt;[signature]&lt;/idno&gt;
       &lt;/idno&gt;
-      &lt;msName&gt;[nombre o título]&lt;/msName&gt;
+      &lt;msName&gt;[name or title of the document]&lt;/msName&gt;
    &lt;/msIdentifier&gt;
 &lt;/msDesc&gt;         </programlisting>
          <tip>
-                <para>Es importante no confundir el nombre o título de la fuente codificado en <tag>msName</tag> con el título de la edición digital, que pueden difererir.</para>
+                <para>It is important not to confuse the name or title of the source encoded in
+                  <tag>msName</tag> with the title of the digital edition, which may differ.</para>
             </tip>
-         <para>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado
-            una edición impresa, se ha codificado la información en <tag>listWit</tag> y se ha
-            utilizado el elemento <tag>witness</tag>. Dentro se ha usado un elemento <tag>bibl</tag>
-            para codificar una referencia bibliográfica. En <tag>bibl</tag> se ha utilizado el
-            atributo <tag>@type</tag> con el valor <tag>print</tag> para distinguirlo de un
-            manuscrito.</para>
-         <para>Por ejemplo:</para>
+         <para>When the source from which the text is derived is a printed document or a printed
+            edition has been consulted, the information has been encoded in <tag>witness</tag>
+            within <tag>listWit</tag>. Inside, a <tag>bibl</tag> element has been used to encode a
+            bibliographic reference using the attribute <tag>@type</tag> with the value print to
+            distinguish it from a manuscript. </para>
+         <para>For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;witness&gt;
    &lt;bibl type="print"&gt;Humboldt, Alexander von: Geografía de la plantas,
    ó Quadro físico de los Andes Equinoxiales, y de los paises
