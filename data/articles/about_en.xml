@@ -79,7 +79,7 @@
                      of the text. </item>
                </list>
             </p>
-            <p>To learn more about text setting and coding in TEI format, please refer to the <ref target="criteria.xml">Editorial principles</ref> section.</p>
+            <p>To learn more about text setting and coding in TEI format, please refer to the <ref target="criterios_en.xml">Editorial principles</ref> section.</p>
          </div>
          <div>
             <head>Technical Aspects</head>
@@ -95,11 +95,12 @@
                   <item>headings and paragraphs,</item>
                   <item>logical divisions of letters,</item>
                   <item>changes in typography, as well as</item>
-                  <item>authorial interventions such as strikethroughs or additions, uncertain
-                     readings, gaps, supplied words, etc.</item>
-               </list> For more details on our TEI markup, please visit <ref target="criterios.xml">Editorial principles</ref>.</p>
+                  <item>authorial interventions such as strikethroughs or additions</item>
+                  <item>other textual phenomena like uncertain
+                     readings, gaps, etc.</item>
+               </list> For more details on our TEI markup, please visit <ref target="criterios_en.xml">Editorial principles</ref>.</p>
             <p>This web application has been built with <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 8.0.0.), <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
-               5.2.0.) and Cantaloupe Image Server (v. 5.3.1).
+               5.3.1.) and Cantaloupe Image Server (v. 5.3.1).
             An ODD (prohd.xml) is used to style
                the editions and static pages and two templates (prohd.html, view-grid-prohd.html)
                are used to build the graphical user interface with web components. A copy of the
@@ -108,7 +109,7 @@
                servers of the Oficina del Historiador de la Ciudad de La Habana; the facsimiles use
                   <ref target="https://iiif.io/">IIIF</ref>'s API.</p>
             <p>The development of the framework ediarum.PROHD.edit and of this web application has
-               been carried out by Antonio Rojas Castro with the collaboration of Violeta López.</p>
+               been carried out by Antonio Rojas Castro with the collaboration of Violeta López. The current version of this website was developed in cooperation with Jinntec during 2023.</p>
                <p>Regarding the accessibility of this website, the WCAG 2.1 standard has been taken into account. If you encounter accessibility problems or have suggestions for improvement, please contact us.</p>
          </div>
          <div>

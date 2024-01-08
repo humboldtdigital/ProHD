@@ -42,7 +42,7 @@
                XVIII y XIX, especialmente en hacer disponibles en línea las fuentes cubanas
                relevantes para estudiar el período en que Alejandro de Humboldt visitó y trabajó
                sobre la sociedad, economía y cultura cubanas (1800–1830).</p>
-            <p>El proyecto se inició en 2019 y está previsto que finalice en 2023. Ha sido
+            <p>El proyecto se inició en 2019 y finalizó en 2023. Ha sido
                financiado gracias a la generosa ayuda del Ministerio Federal de Relaciones
                Exteriores de Alemania, de la Fundación Fritz Thyssen y de la Fundación Gerda
                Henkel.</p>
@@ -82,7 +82,7 @@
                      evidentes a fin de mejorar la legibilidad del texto.</item>
                </list>
             </p>
-            <p>Para saber más sobre el establecimiento de los textos y la codificación en formato TEI, se recomienda consultar la sección <ref target="criterios.xml">Criterios editoriales</ref>.</p>
+            <p>Para saber más sobre el establecimiento de los textos y la codificación en formato TEI, se recomienda consultar la sección <ref target="criterios_es.xml">Criterios editoriales</ref>.</p>
          </div>
          <div>
             <head>Aspectos técnicos</head>
@@ -98,10 +98,11 @@
                   <item>los encabezamientos y párrafos,</item>
                   <item>las divisiones lógicas de las cartas,</item>
                   <item>los cambios de tipografía,</item>
-                  <item>las intervenciones autoriales como tachados o adiciones, lecturas inciertas,
-                     lagunas, palabras suplidas, etc.</item>
+                  <item>las intervenciones autoriales</item>
+                  <item>otros fenómenos textuales como tachados o adiciones, lecturas inciertas,
+                     lagunas, etc.</item>
                </list> Para más detalles sobre la codificación en TEI, se recomienda consultar la
-               sección <ref target="criterios.xml">Criterios editoriales</ref>.</p>
+               sección <ref target="criterios_es.xml">Criterios editoriales</ref>.</p>
             <p>Esta aplicación web ha sido construida con <ref target="https://teipublisher.com/index.html">TEI Publisher</ref> (v. 8.0.0.) y
                   <ref target="http://exist-db.org/exist/apps/homepage/index.html">eXistDB</ref> (v.
                5.3.1.). Se utiliza un ODD (prohd.xml) para dar formato a las ediciones y las páginas
@@ -114,7 +115,7 @@
                Server (v. 5.0.5).</p>
             <p>El desarrollo del <foreign xml:lang="en">framework</foreign> ediarum.PROHD.edit y de
                esta aplicación web ha sido realizado por Antonio Rojas Castro con la colaboración de
-               Violeta López.</p>
+               Violeta López. La versión actual de este sitio web se desarrolló en colaboración con Jinntec durante 2023.</p>
                <p>Sobre la accesibilidad de esta web, se ha tenido en cuenta la norma WCAG 2.1. Si encuentra problemas de accesibilidad o tiene sugerencias de mejora, por favor, póngase en contacto con nosotros.</p>
          </div>
          <div>
