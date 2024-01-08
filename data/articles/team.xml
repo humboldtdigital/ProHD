@@ -52,34 +52,21 @@
                </person>
                <person>
                   <persName>
-                     <hi rendition="#b">
-                        <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda">Linda Kirsten</ref>
-                     </hi>
+                     <hi rendition="#b">Linda Kirsten</hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
                   <occupation>Wissenschaftliche Mitarbeiterin (Projektkoordination)</occupation>
                </person>
                <person>
                   <persName>
-                     <hi rendition="#b">
-                        <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias">Dr. Tobias Kraft</ref>
-                     </hi>
+                     <hi rendition="#b">Dr. Tobias Kraft</hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
                   <occupation>Projektidee und Leitung</occupation>
                </person>
                <person>
                   <persName>
-                     <hi rendition="#b">Daniela Reyes</hi>
-                  </persName>
-                  <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
-                  <occupation>Studentische Hilfskraft</occupation>
-               </person>
-               <person>
-                  <persName>
-                     <hi rendition="#b">
-                        <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio">Dr. Antonio Rojas Castro</ref>
-                     </hi>
+                     <hi rendition="#b">Dr. Antonio Rojas Castro</hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
                   <occupation>Wissenschaftlicher Mitarbeiter (Digital Humanities)</occupation>
@@ -100,13 +87,6 @@
                      Kulturerbe</affiliation>
                   <occupation>Leitung</occupation>
                </person>
-               <person>
-                  <persName>
-                     <hi rendition="#b">Nicolás Zarama</hi>
-                  </persName>
-                  <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
-                  <occupation>Studentische Hilfskraft</occupation>
-               </person>
             </listPerson>
          </div>
          <div>
@@ -121,7 +101,8 @@
                   <note>Juni 2019 bis Januar 2021</note>
                </person>
                <person>
-                  <persName><hi rendition="#b">Juliana Hutai</hi>
+                  <persName>
+                            <hi rendition="#b">Juliana Hutai</hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
                   <occupation>Studentische Hilfskraft</occupation>
@@ -154,11 +135,27 @@
                </person>
                <person>
                   <persName>
+                     <hi rendition="#b">Daniela Reyes</hi>
+                  </persName>
+                  <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
+                  <occupation>Studentische Hilfskraft</occupation>
+                  <note>April 2023 bis Dezember 2023</note>
+               </person>
+               <person>
+                  <persName>
                      <hi rendition="#b">Zora Steiner</hi>
                   </persName>
                   <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
                   <occupation>Studentische Hilfskraft</occupation>
                   <note>Juni 2019 bis Dezember 2019</note>
+               </person>
+               <person>
+                  <persName>
+                     <hi rendition="#b">Nicolás Zarama</hi>
+                  </persName>
+                  <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften</affiliation>
+                  <occupation>Studentische Hilfskraft</occupation>
+                  <note>Januar 2023 bis Dezember 2023</note>
                </person>
             </listPerson>
          </div>
@@ -219,7 +216,8 @@
                </org>
                <org>
                   <orgName>Jinntec</orgName>
-                  <note><ref target="https://jinntec.de/">Jinntect GmbH</ref> hat gelegentlich und
+                  <note>
+                            <ref target="https://jinntec.de/">Jinntect GmbH</ref> hat gelegentlich und
                      auf Konkurrenzbasis Beratung, Schulungen und externe
                      Entwicklungsdienstleistungen durchgeführt.</note>
                </org>

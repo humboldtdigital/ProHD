@@ -51,18 +51,7 @@
                     </person>
                     <person>
                         <persName>
-                            <hi rendition="#b">Juliana Hutai</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Student assistant</occupation>
-                        <note>October 2020 to March 2023</note>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">
-                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda">Linda Kirsten</ref>
-                            </hi>
+                            <hi rendition="#b">Linda Kirsten</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
@@ -70,9 +59,7 @@
                     </person>
                     <person>
                         <persName>
-                            <hi rendition="#b">
-                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias">Dr. Tobias Kraft</ref>
-                            </hi>
+                            <hi rendition="#b">Dr. Tobias Kraft</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
@@ -80,17 +67,7 @@
                     </person>
                     <person>
                         <persName>
-                            <hi rendition="#b">Daniela Reyes</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Student assistant</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">
-                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio">Dr. Antonio Rojas Castro</ref>
-                            </hi>
+                            <hi rendition="#b">Dr. Antonio Rojas Castro</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
@@ -112,14 +89,6 @@
                             Heritage</affiliation>
                         <occupation>Director</occupation>
                     </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Nicolás Zarama</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Student assistant</occupation>
-                    </person>
                 </listPerson>
             </div>
             <div>
@@ -135,7 +104,8 @@
                         <note>June 2019 to January 2021</note>
                     </person>
                     <person>
-                        <persName><hi rendition="#b">Juliana Hutai</hi>
+                        <persName>
+                            <hi rendition="#b">Juliana Hutai</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
@@ -169,6 +139,15 @@
                         <occupation>Student assistant</occupation>
                         <note>December 2019 to September 2020</note>
                     </person>
+                     <person>
+                        <persName>
+                            <hi rendition="#b">Daniela Reyes</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student assistant</occupation>
+                        <note>April 2023 to December 2023</note>
+                    </person>
                     <person>
                         <persName>
                             <hi rendition="#b">Zora Steiner</hi>
@@ -177,6 +156,15 @@
                             Wissenschaften</affiliation>
                         <occupation>Student assistant</occupation>
                         <note>June 2019 to December 2019</note>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Nicolás Zarama</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Student assistant</occupation>
+                        <note>January 2023 to December 2023</note>
                     </person>
                 </listPerson>
             </div>
@@ -240,7 +228,8 @@
                     </org>
                     <org>
                         <orgName>Jinntec</orgName>
-                        <note><ref target="https://jinntec.de/">Jinntect GmbH</ref> has occasionally
+                        <note>
+                            <ref target="https://jinntec.de/">Jinntect GmbH</ref> has occasionally
                             and on a competitive basis offered consulting, training and external
                             development services.</note>
                     </org>

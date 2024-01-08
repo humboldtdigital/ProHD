@@ -51,9 +51,7 @@
                     </person>
                     <person>
                         <persName>
-                            <hi rendition="#b">
-                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kirsten-linda">Linda Kirsten</ref>
-                            </hi>
+                            <hi rendition="#b">Linda Kirsten</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
@@ -61,9 +59,7 @@
                     </person>
                     <person>
                         <persName>
-                            <hi rendition="#b">
-                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/kraft-tobias">Dr. Tobias Kraft</ref>
-                            </hi>
+                            <hi rendition="#b">Dr. Tobias Kraft</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
@@ -71,17 +67,7 @@
                     </person>
                     <person>
                         <persName>
-                            <hi rendition="#b">Daniela Reyes</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Estudiante asistente</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">
-                                <ref target="https://www.bbaw.de/die-akademie/mitarbeiterinnen-mitarbeiter/rojas-castro-antonio">Dr. Antonio Rojas Castro</ref>
-                            </hi>
+                            <hi rendition="#b">Dr. Antonio Rojas Castro</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
@@ -102,14 +88,6 @@
                         <affiliation>Oficina del Historiador de La Ciudad de La Habana - Patrimonio
                             Documental</affiliation>
                         <occupation>Directora</occupation>
-                    </person>
-                    <person>
-                        <persName>
-                            <hi rendition="#b">Nicolás Zarama</hi>
-                        </persName>
-                        <affiliation>Berlin-Brandenburgische Akademie der
-                            Wissenschaften</affiliation>
-                        <occupation>Estudiante asistente</occupation>
                     </person>
                 </listPerson>
             </div>
@@ -163,12 +141,30 @@
                     </person>
                     <person>
                         <persName>
+                            <hi rendition="#b">Daniela Reyes</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Estudiante asistente</occupation>
+                        <note>Abril de 2023 a Diciembre de 2023</note>
+                    </person>
+                    <person>
+                        <persName>
                             <hi rendition="#b">Zora Steiner</hi>
                         </persName>
                         <affiliation>Berlin-Brandenburgische Akademie der
                             Wissenschaften</affiliation>
                         <occupation>Estudiante asistente</occupation>
                         <note>Junio de 2019 a diciembre de 2019</note>
+                    </person>
+                    <person>
+                        <persName>
+                            <hi rendition="#b">Nicolás Zarama</hi>
+                        </persName>
+                        <affiliation>Berlin-Brandenburgische Akademie der
+                            Wissenschaften</affiliation>
+                        <occupation>Estudiante asistente</occupation>
+                        <note>Enero de 2023 a diciembre de 2023</note>
                     </person>
                 </listPerson>
             </div>
@@ -232,7 +228,8 @@
                     </org>
                     <org>
                         <orgName>Jinntec</orgName>
-                        <note><ref target="https://jinntec.de/">Jinntect GmbH</ref> ha ofrecido
+                        <note>
+                            <ref target="https://jinntec.de/">Jinntect GmbH</ref> ha ofrecido
                             ocasionalmente y de forma competitiva servicios de consultoría,
                             formación y desarrollo externo.</note>
                     </org>
