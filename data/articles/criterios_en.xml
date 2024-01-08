@@ -1,6 +1,6 @@
 <?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
-      <title>Encoding Guidelines</title>
+      <title>Editing Guidelines</title>
       <copyright>
          <year>2022-10-25</year>
       </copyright>
@@ -335,7 +335,9 @@
       &lt;msName&gt;[nombre o título]&lt;/msName&gt;
    &lt;/msIdentifier&gt;
 &lt;/msDesc&gt;         </programlisting>
-         <tip><para>Es importante no confundir el nombre o título de la fuente codificado en <tag>msName</tag> con el título de la edición digital, que pueden difererir.</para></tip>
+         <tip>
+                <para>Es importante no confundir el nombre o título de la fuente codificado en <tag>msName</tag> con el título de la edición digital, que pueden difererir.</para>
+            </tip>
          <para>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado
             una edición impresa, se ha codificado la información en <tag>listWit</tag> y se ha
             utilizado el elemento <tag>witness</tag>. Dentro se ha usado un elemento <tag>bibl</tag>
@@ -580,17 +582,22 @@
                <listitem>
                   <para>Fecha exacta:</para>
                </listitem>
-            </itemizedlist><programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes
-   de la Nochebuena del año 1772&lt;/date&gt;        </programlisting><itemizedlist>
+            </itemizedlist>
+                <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes
+   de la Nochebuena del año 1772&lt;/date&gt;        </programlisting>
+                <itemizedlist>
                <listitem>
                   <para>Período de tiempo exacto:</para>
                </listitem>
-            </itemizedlist><programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre
-   de 1731 al 11 de septiembre de 1741&lt;/date&gt;     </programlisting><itemizedlist>
+            </itemizedlist>
+                <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre
+   de 1731 al 11 de septiembre de 1741&lt;/date&gt;     </programlisting>
+                <itemizedlist>
                <listitem>
                   <para>Período aproximado:</para>
                </listitem>
-            </itemizedlist></para>
+            </itemizedlist>
+            </para>
 
             <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
    de mayo de 1804&lt;/date&gt;     </programlisting>
@@ -1845,17 +1852,22 @@ explican en el documento […]</programlisting>
                   <listitem>
                      <para>Fecha exacta: </para>
                   </listitem>
-               </itemizedlist><programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de la
-Nochebuena del año 1772&lt;/date&gt;</programlisting><itemizedlist>
+               </itemizedlist>
+                    <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de la
+Nochebuena del año 1772&lt;/date&gt;</programlisting>
+                    <itemizedlist>
                   <listitem>
                      <para>Período de tiempo exacto:</para>
                   </listitem>
-               </itemizedlist><programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731
-al 11 de septiembre de 1741&lt;/date&gt;</programlisting><itemizedlist>
+               </itemizedlist>
+                    <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731
+al 11 de septiembre de 1741&lt;/date&gt;</programlisting>
+                    <itemizedlist>
                   <listitem>
                      <para>Período aproximado:</para>
                   </listitem>
-               </itemizedlist></para>
+               </itemizedlist>
+                </para>
                <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
 de mayo de 1804&lt;/date&gt;</programlisting>
             <para>Además, de manera opcional, en el atributo <tag>@cert</tag> se ha especificado el
@@ -2219,17 +2231,22 @@ de mayo de 1804&lt;/date&gt;</programlisting>
                <listitem>
                   <para>Fecha exacta:</para>
                </listitem>
-            </itemizedlist><programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de
-la Nochebuena del año 1772&lt;/date&gt;</programlisting><itemizedlist>
+            </itemizedlist>
+                <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de
+la Nochebuena del año 1772&lt;/date&gt;</programlisting>
+                <itemizedlist>
                <listitem>
                   <para>Período de tiempo exacto:</para>
                </listitem>
-            </itemizedlist><programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
-1731 al 11 de septiembre de 1741&lt;/date&gt;</programlisting><itemizedlist>
+            </itemizedlist>
+                <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
+1731 al 11 de septiembre de 1741&lt;/date&gt;</programlisting>
+                <itemizedlist>
                <listitem>
                   <para>Período aproximado:</para>
                </listitem>
-            </itemizedlist></para>
+            </itemizedlist>
+            </para>
             <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
 de mayo de 1804&lt;/date&gt;</programlisting>
          <para>Cuando no se ha podido determinar el emisor, el destinatario o los lugares y las
