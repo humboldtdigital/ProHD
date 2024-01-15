@@ -732,14 +732,14 @@
          <section>
             <title>Párrafos</title>
             <para>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la
-               secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional
+               secuencia de la fuente textual. De manera opcional
                se ha codificado el sangrado de los párrafos si la editora o editor considera dicha
                información relevante.</para>
             <para>Los párrafos se han codificado con el elemento <tag>p</tag> (paragraph).</para>
          </section>
          <section>
-            <title>Rupturas de línea</title>
-            <para>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente
+            <title>Inicios de línea</title>
+            <para>Los inicios de línea se han codificado de manera explícita siguiendo la fuente
                textual con un elemento (vacío) <tag>lb/</tag> (line beginning). El elemento
                <tag>lb/</tag> se ha utilizado al <emphasis role="bold">comienzo</emphasis> de la
                línea, tal y como determinan las directrices TEI.</para>
