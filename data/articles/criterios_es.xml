@@ -529,10 +529,7 @@
             elemento <tag>profileDesc</tag>. Allí, se ha creado un elemento <tag>creation</tag>
             donde se han codificado los datos sobre la creación: autor, lugar de escritura y fecha
             de creación.</para>
-         <para>El nombre del autor se ha codificado con el elemento <tag>persName</tag>.
-            <!-- Tobias: esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades -->
-            En caso de seleccionar el autor del registro de personas del proyecto, el identificador
-            asociado se ha generado en el atributo <tag>@key</tag>, creando un enlace al registro.</para>
+         <para>El nombre del autor se ha codificado con el elemento <tag>persName</tag>. Por ejemplo:</para>
             <programlisting language="xml" xml:space="preserve">&lt;profileDesc&gt;
    &lt;creation&gt;
       &lt;persName key="H0012682"&gt;
@@ -546,7 +543,7 @@
          <para>Cuando el autor es deconocido, se ha empleado el mismo elemento <tag>persName</tag>,
             pero con el contenido "N/A" <emphasis>(Not Available</emphasis>). Por ejemplo:</para>
             <programlisting language="xml" xml:space="preserve">&lt;creation&gt;
-   &lt;persName&gt;N/A.&lt;/persName&gt;
+   &lt;persName&gt;N/A&lt;/persName&gt;
    &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
    &lt;date when="1804-04-10"&gt;10 de abril de 1804&lt;/date&gt;
    &lt;placeName key="https://www.geonames.org/3553478"&gt;La Habana&lt;/placeName&gt;
@@ -559,11 +556,8 @@
          <para>Si se conoce el lugar de escritura, se ha codificado también en el elemento
                <tag>profileDesc</tag>. Allí, si aún no existiera uno, se ha creado un elemento
                <tag>creation</tag>. Dentro de este elemento, se ha utilizado <tag>placeName</tag>
-            para codificar el nombre del lugar.
-            <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades -->
-            Si el lugar de escritura figura en el registro de lugares del proyecto, el identificador
-            asociado se ha incluido en el atributo <tag>@key</tag>. Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;      </programlisting>
+            para codificar el nombre del lugar. De manera opcional, se ha usado el atributo <tag>@key</tag> para proporcionr un identificador externo procedente de GeoNames. Por ejemplo:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;placeName key="https://www.geonames.org/3553478"&gt;La Habana&lt;/placeName&gt;      </programlisting>
          <para>Si no se conoce el lugar de escritura del texto, también se ha usado el mismo
             elemento <tag>placeName</tag>, pero el valor utilizado es "N/A". Por ejemplo:
             <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
