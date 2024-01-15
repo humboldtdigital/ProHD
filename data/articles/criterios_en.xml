@@ -558,58 +558,57 @@
       </section>
       <section>
          <title>Creation date</title>
-         <para>Si se conoce la fecha de creación, se ha codificado con el elemento <tag>date</tag>
-            respetando el formato <tag>AAAA-MM-DD</tag> (o <tag>AA-MM</tag> o <tag>AAAA</tag>,
-            dependiendo de la información disponible) y utilizando los atributos <code>@when</code>,
-               <tag>@from</tag>/<tag>@to</tag> o <tag>@notBefore</tag>/<tag>@notAfter</tag>. Esto
-            permite que la aplicación web utilice estos datos para buscar información en un periodo
-            concreto de tiempo o filtrar los documentos a partir de la fecha estandarizada. <itemizedlist>
+         <para>If the creation date is known, it has been encoded with the <tag>date</tag> element
+            observing the format YYYYY-MM-DD (or YYYY-MM or YYYYY, depending on the information
+            available) and using the attributes <tag>@when</tag>, <tag>@from</tag>/<tag>@to</tag> o
+               <tag>@notBefore</tag>/<tag>@notAfter</tag>. This allows the web application to use
+            this data to search for information in a specific time period or to filter documents
+            based on the standardised date. <itemizedlist>
                <listitem>
-                  <para>Fecha exacta:</para>
+                  <para>Exact date:</para>
                </listitem>
             </itemizedlist>
-                <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes
+            <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes
    de la Nochebuena del año 1772&lt;/date&gt;        </programlisting>
-                <itemizedlist>
+            <itemizedlist>
                <listitem>
-                  <para>Período de tiempo exacto:</para>
+                  <para>Time period:</para>
                </listitem>
             </itemizedlist>
-                <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre
+            <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre
    de 1731 al 11 de septiembre de 1741&lt;/date&gt;     </programlisting>
-                <itemizedlist>
+            <itemizedlist>
                <listitem>
-                  <para>Período aproximado:</para>
+                  <para>Approximate time period:</para>
                </listitem>
             </itemizedlist>
-            </para>
+         </para>
 
             <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
    de mayo de 1804&lt;/date&gt;     </programlisting>
-         <para>Además, de manera opcional, se ha utilizado el atributo <tag>@cert</tag> con los
-            valores <tag>high</tag> y <tag>low</tag> para codificar la certeza con que se sabe si la
-            fecha es correcta.</para>
-         <para>Cuando no se conoce al fecha de creación del texto, también se ha utilizado el
-            elemento <tag>date</tag>, pero con el valor "N/A" (Not available). Por ejemplo:
+         <para>In addition, optionally, the <tag>@cert</tag> attribute with the values
+               <tag>high</tag> and <tag>low</tag> has been used to encode the certainty with which
+            the date is known to be correct.</para>
+         <para>When the creation date is not known, the <tag>date</tag> element has also been used,
+            but with the value "N/A" (Not available). For example:
             <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
 &lt;date&gt;N/A&lt;/date&gt;
-&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;</programlisting> En tal
-            caso, no se ha utilizado ningún atributo en el elemento <tag>date</tag>.</para>
+&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;</programlisting></para>
       </section>
       <section>
          <title>Language</title>
-         <para>En todas las ediciones del proyecto, se ha codificado el idioma principal del texto.
-            En <tag>profileDesc</tag>, se ha utilizado el elemento <tag>langUsage</tag>. Allí se ha
-            anidado el elemento <tag>language</tag> para codificar el idioma o lengua. Por ejemplo:</para>
+         <para>In all editions of the project, the main language of the text has been encoded. In
+               <tag>profileDesc</tag>, the <tag>langUsage</tag> element has been used. There, the
+               <tag>language</tag> element has been nested to encode the language. For
+            example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;langUsage&gt;
    &lt;language ident="es"&gt;Español&lt;/language&gt;
 &lt;/langUsage&gt; </programlisting>
-         <para>Se ha utilizado el atributo <tag>@ident</tag> para identificar con un código
-            estandarizado el idioma: "es" para el español, "de" para el alemán, "en" para el inglés,
-            "fr" para el francés, etc.</para>
-         <para>Si el texto contiene partes sustanciales en otro idioma, se ha repetido elemento
-               <tag>language</tag> para codificar la lengua secundaria. Por
-            ejemplo:</para>
+         <para>The <tag>@ident</tag> attribute has been used to identify the language with a
+            standardised code: "es" for Spanish, "de" for German, "en" for English, "fr" for French,
+            etc.</para>
+         <para>If the text contains substantial parts in another language, a <tag>language</tag>
+            element has been repeated to encode the secondary language. For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;langUsage&gt;
      &lt;language ident="es"&gt;Español&lt;/language&gt;
      &lt;language ident="fr"&gt;Francés&lt;/language&gt;
@@ -617,10 +616,10 @@
       </section>
       <section>
          <title>Abstract</title>
-         <para>En todas las ediciones del proyecto, se ha proporcionado un resumen del contenido
-            intelectual del texto, los temas, las ideas discutidas, etc.</para>
-         <para>El resumen se ha codificado con <tag>profileDesc/abstract</tag> en un elemento
-               <tag>p</tag> de la siguiente manera:</para>
+         <para>In all editions of the project, a summary of the intellectual content of the text,
+            the themes, the ideas discussed, etc. has been provided.</para>
+         <para>The abstract has been encoded with <tag>profileDesc/abstract</tag> in a <tag>p</tag>
+            element as follows:</para>
             <programlisting language="xml" xml:space="preserve">&lt;abstract xml:lang="es"&gt;
    &lt;p&gt;Notas de Humboldt sobre la obra de
    Jean Nicolas Berthe "Précis Historique
@@ -629,17 +628,16 @@
    preparación de su tratado científico sobre la fiebre amarilla.
    La obra de Berthe fue publicada en 1802.&lt;/p&gt;
 &lt;/abstract&gt; </programlisting>
-         <para>Se ha proporcionado el resumen en español y en alemán. Se ha repetido el elemento
-               <tag>abstract</tag> y se ha utilizado el atributo <tag>@xml:lang</tag> con un código
-            estandarizado de dos caracteres: "es" para el español y "de" para el alemán.</para>
+         <para>The abstract has been provided in Spanish and German. The <tag>abstract</tag> element
+            has been repeated and the <tag>@xml:lang</tag> attribute has been used with a
+            standardised two-character code: "es" for Spanish and "de" for German.</para>
       </section>
       <section>
          <title>Categories</title>
-         <para>En <tag>profileDesc</tag> se ha utilizado el elemento <tag>textClass</tag> para
-            incluir distintas categorías con las que clasificar el texto editado. Las categorías
-            utilizadas son: género, forma y materia(s). Para ello, se ha utilizado el elemento
-               <tag>catRef</tag> con los atributos <tag>@scheme</tag> y <tag>@target</tag>. Por
-            ejemplo: </para>
+         <para>In <tag>profileDesc</tag> the <tag>textClass</tag> element has been used to include
+            different categories to classify the edited text. The categories used are: genre, form
+            and subject(s). For this, the <tag>catRef</tag> element has been used with the
+            attributes <tag>@scheme</tag> and <tag>@target</tag>. For example: </para>
             <programlisting language="xml" xml:space="preserve">&lt;textClass&gt;
    &lt;catRef scheme="#genre" target="#notebooks"/&gt;
    &lt;catRef scheme="#form" target="#manuscript"/&gt;
@@ -647,31 +645,26 @@
    &lt;catRef scheme="#subject" target="#geography"/&gt;
    &lt;catRef scheme="#subject" target="#sugar"/&gt;
 &lt;/textClass&gt; </programlisting>
-         <para>Las tres categorías son repetibles y opcionales. Todas las categorías se han definido
-            previamente en la taxonomía del proyecto situada en el elemento
-            <tag>taxonomy</tag>.</para>
-         <para>En la medida de lo posible, se han utilizado términos procedentes de la Library of
-            Congress y de otras bibliotecas nacionales como la Deutsche Nationalbibliothek y la
-            Biblioteca Nacional de España.</para>
+         <para>The three categories are repeatable and optional. All categories have been previously
+            defined in the project taxonomy located in the <tag>taxonomy</tag> element. </para>
+         <para>Where possible, terms from the Library of Congress and other national libraries such
+            as the Deutsche Nationalbibliothek and the Biblioteca Nacional de España have been used. </para>
       </section>
    </section>
    <section xml:id="texto">
-      <title>Texto</title>
-      <para>Los textos editados como parte del proyecto han sido codificados desde un punto de vista
-         estructural. Se han representado de manera explícita con etiquetado TEI todos los párrafos,
-         rupturas de línea, listas, tablas, notas y dibujos. Asimismo, se han codificado la
-         paginación o foliación de la fuente, incluyendo las páginas en blanco, y los cambios en la
-         tipografía como los destacados, los espacios dejados por el autor, las intervenciones
-         autoriales como las eliminaciones, adiciones y sustituciones, y las intervenciones
-         editoriales como las normalizaciones, la resolución de las abreviaturas, las palabras
-         suplidas, las correcciones de errores evidentes, las lecturas inciertas, las omisiones y
-         las palabras en otro idioma. Por último, en la medida de lo posible, se han codificado
-         también las fechas y las entidades nombradas (personas, lugares y organizaciones) en el
-         cuerpo del texto.</para>
+      <title>Text</title>
+      <para>The texts edited as part of the project have been structurally coded. All paragraphs,
+         line breaks, lists, tables, notes and drawings have been explicitly represented with TEI
+         elements. Additional textual phenomena encoded explicitely are the following: the
+         pagination or foliation of the source, including blank pages, and changes in typography
+         such as highlights, spaces left by the author, authorial interventions such as deletions,
+         additions and substitutions, and editorial interventions such as normalisations, resolution
+         of abbreviations, supplied words, corrections of obvious errors, uncertain readings,
+         omissions and words in another language.</para>
       <section xml:id="estructuras-textuales">
-         <title>Estructuras textuales</title>
+         <title>Textual structure</title>
          <section>
-            <title>Foliación y paginación</title>
+            <title>Foliation and pagination</title>
             <para>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o
                paginación, es decir, el lugar en que se inicia un folio nuevo o página nueva.
                Siempre se ha codificado el principio del folio o página, no el final. </para>
