@@ -665,92 +665,87 @@
          <title>Textual structure</title>
          <section>
             <title>Foliation and pagination</title>
-            <para>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o
-               paginación, es decir, el lugar en que se inicia un folio nuevo o página nueva.
-               Siempre se ha codificado el principio del folio o página, no el final. </para>
-            <para>El inicio de folio o página se ha codificado siempre con el elemento vacío
-                  <tag>pb/</tag> (pagebreak). El atributo <tag>@n</tag> contiene el número de página
-               o folio (según la secuencia física del documento o del autor).</para>
+            <para>In all editions of the project, the start of the foliation or pagination, i.e. the
+               place where a new folio or page starts, has been encoded.</para>
+            <para>The beginning of the folio or page has always been encoded with the empty element
+                  <tag>pb/</tag> (pagebreak). The <tag>@n</tag> attribute contains the page or folio
+               number (depending on the physical sequence of the document or author). </para>
                <programlisting language="xml" xml:space="preserve">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano</programlisting>
-            <para>La digitalización del folio o página se ha codificado con el atributo
-                  <tag>@facs</tag> (facsimile). Se ha codificado el nombre del fichero de la imagen
-               digital incluyendo la foliación archivística y la extensión "tif". El nombre del
-               fichero corresponde a un URI, es decir, es único en el dossier digital. Por ejemplo:</para>
+            <para>The digitisation of the folio or page has been encoded with the attribute
+                  <tag>@facs</tag> (facsimile). The file name of the digital image file has been
+               encoded including the archival foliation and the extension "tif". The file name
+               corresponds to a URI, i.e. it is unique in the digital dossier. For example:</para>
                <programlisting language="xml" xml:space="preserve">&lt;pb n="1r" facs="prohd0014_1r.tif"/&gt;</programlisting>
-            <para>Cualquier otra información sobre la numeración o paginación contenida en la fuente
-               se ha codificado con el elemento <tag>fw</tag> (forme work); este elemento lleva el
-               atributo <tag>@type</tag> con el valor <tag>folNum</tag>.</para>
+            <para>Any other numbering or pagination information contained in the source has been
+               encoded with the <tag>fw</tag> (forme work) element; this element carries the
+                  <tag>@type</tag> attribute with the value <tag>folNum</tag>:</para>
                <programlisting language="xml" xml:space="preserve">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</programlisting>
          </section>
          <section>
-            <title>Secciones y encabezados de secciones</title>
-            <para>De manera opcional, en documentos con una estructura lógica interna relevante,
-               como actas y protocolos, se han codificado las secciones mediante el elemento
-                  <tag>div</tag>. Por ejemplo:</para>
+            <title>Sections and headings</title>
+            <para>Optionally, in documents with a relevant internal logical structure, such as
+               minutes and protocols, the sections have been coded using the <tag>div</tag> element.
+               For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;tex&gt;
    &lt;div&gt;
       &lt;div&gt;[Sección o apartado 1]&lt;/div&gt;
       &lt;div&gt;[Sección o apartado 2]&lt;/div&gt;
    &lt;/div&gt;
 &lt;/tex&gt;</programlisting>
-            <para>Esta estructura interna se ha codificado siempre en combinación con la paginación
-               o foliación con <tag>pb</tag> y el uso de <tag>p</tag>.</para>
-            <para>También de manera opcional, en documentos como actas, se han codificado los
-               encabezados de sección con el elemento <tag>head</tag>. </para>
+            <para>This internal structure has always been encoded in combination with pagination or
+               foliation with <tag>pb</tag> and the use of <tag>p</tag>.</para>
+            <para>Also optionally, in documents such as minutes, section headers have been coded
+               with the <tag>head</tag> element.</para>
          </section>
          <section>
-            <title>Páginas en blanco</title>
-            <para>En todas las ediciones del proyecto se han codificado las páginas en blanco de la
-               fuente textual. Además, se ha distinguido entre páginas en blanco, páginas perdidas,
-               espacios en blanco semánticamente significativos y omisiones de los editores.</para>
-            <para>Para poder representar y mostrar la foliación correctamente, se ha codificado cada
-               página (en blanco) individualmente. Aunque se sucedan varias páginas en blanco,
-               siempre se ha introducido un número <quote>1</quote> para cada nueva página en blanco
-               codificada.</para>
-            <para>Las páginas en blanco se han codificado con el elemento (vacío) <tag>gap/</tag>.
-               Este se ha utilizado justo después del salto de página (<tag>pb/</tag>) anterior. Los
-               dos atributos <tag>@unit</tag> y <tag>@quantity</tag> del elemento <tag>gap/</tag>
-               llevan los valores <tag>pages</tag> y <tag>1</tag>. El atributo <tag>@reason</tag>
-               contiene el valor <tag>empty</tag>. Cuando hay más de una página en blanco seguida,
-               se han codificado cada una de ellas individualmente.</para>
+            <title>Blank pages</title>
+            <para>In all editions of the project, the blank pages of the textual source have been
+               coded. In addition, a distinction was made between blank pages, missing pages,
+               semantically significant blank spaces and omissions by the editors.</para>
+            <para>In order to be able to represent and display the foliation correctly, each (blank)
+               page has been coded individually. Even if there is a succession of blank pages, a
+               number <tag>1</tag> has always been entered for each newly coded blank page.</para>
+            <para>Blank pages have been coded with the (empty) <tag>gap/</tag> element. This has
+               been used just after the page break (<tag>pb/</tag>) above. The two attributes
+                  <tag>@unit</tag> and <tag>@quantity </tag>of the <tag>gap/</tag> element carry the
+               values <tag>pages</tag> and <tag>1</tag>. The <tag>@reason</tag> attribute contains
+               the value <tag>empty</tag>. When there is more than one blank page in a row, each
+               page has been encoded individually. </para>
                <programlisting language="xml" xml:space="preserve">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</programlisting>
          </section>
          <section>
-            <title>Párrafos</title>
-            <para>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la
-               secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional
-               se ha codificado el sangrado de los párrafos si la editora o editor considera dicha
-               información relevante.</para>
-            <para>Los párrafos se han codificado con el elemento <tag>p</tag> (paragraph).</para>
+            <title>Paragraphs</title>
+            <para>In all editions of the project, paragraphs have been coded following the sequence
+               of the textual source. Paragraph indentation has been optionally coded if the editor
+               considers this information relevant.</para>
+            <para>Paragraphs have been coded with the element <tag>p</tag> (paragraph).</para>
          </section>
          <section>
-            <title>Rupturas de línea</title>
-            <para>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente
-               textual con un elemento (vacío) <tag>lb/</tag> (line beginning). El elemento
-               <tag>lb/</tag> se ha utilizado al <emphasis role="bold">comienzo</emphasis> de la
-               línea, tal y como determinan las directrices TEI.</para>
-            <para>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
-               atributo <tag>@break</tag> y el valor <tag>no</tag>. En caso de aparecer un separador
-               en la fuente original, no se ha transcrito como tal sino que se ha codificado con el
-               elemento <tag>g</tag> y el atributo <tag>@ref="#typoHyphen"</tag>. Por ejemplo:</para>
+            <title>Line beginnings </title>
+            <para>Line beginnings have been explicitly encoded following the textual source with an
+               (empty) <tag>lb/</tag> (line beginning) element. The <tag>lb/</tag> element has been
+               used at the <emphasis role="bold">beginning</emphasis> of the line, as determined by
+               the TEI guidelines. </para>
+            <para>If a line starts within a word, it has been encoded with the <tag>@break</tag>
+               attribute and the value <tag>no</tag>. If a separator appears in the original source,
+               it has not been transcribed as such but has been encoded with the element
+                  <tag>g</tag> and the attribute <tag>@ref="#typoHyphen"</tag>. For example:</para>
                <programlisting language="xml" xml:space="preserve">y le añadí al propio ti&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</programlisting>
          </section>
          <section>
-            <title>Espacios en blanco</title>
-            <para>El espacio en blanco semánticamente significativo (por ejemplo, a veces los
-               autores dejan un espacio en el texto para complementarlo posteriormente) se ha
-               codificado con el elemento vacío <tag>space</tag>. La reproducción de dichos vacíos
-               en la transcripción se ha distinguido de las omisiones realizadas por los editores,
-               así como de las páginas vacías o perdidas, cada una de las cuales se ha codificado
-               como <tag>gap/</tag>.</para>
-            <para>El alcance de la omisión se ha indicado mediante <tag>@unit</tag> y
-                  <tag>@quantity</tag>. Si el número de líneas (<tag>unit="lines"</tag>), caracteres
-                  (<tag>unit="chars"</tag>) o palabras (<tag>unit="words"</tag>) omitidos no se
-               puede determinar de manera segura, se ha utilizado el valor <tag>1</tag> en
-                  <tag>@quantity</tag>. Por ejemplo:
-               <programlisting language="xml" xml:space="preserve">sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programlisting>
-               De manera opcional, se ha utilizado el atributo <tag>@dim</tag> para indicar si se
-               trata de un espacio en blanco horizontal o vertical.</para>
+            <title>Blank spaces</title>
+            <para>Semantically significant blank space (e.g. authors sometimes leave a space in the
+               text to supplement it later) has been coded with the empty element <tag>space/</tag>.
+               The reproduction of such gaps in the transcription has been distinguished from
+               omissions made by the editors, as well as from empty or missing pages, each of which
+               has been coded as <tag>gap/</tag>.</para>
+            <para>The extent of the omission has been indicated by <tag>@unit</tag> and
+                  <tag>@quantity</tag>. If the number of omitted lines (unit="lines"), characters
+               (unit="chars") or words (unit="words") cannot be reliably determined, the value
+                  <tag>1</tag> has been used in <tag>@quantity</tag>. For example:
+               <programlisting language="xml" xml:space="preserve">sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programlisting>Optionally,
+               the <tag>@dim</tag> attribute has been used to indicate whether it ia horizontal or
+               vertical blank space.</para>
          </section>
          <section>
             <title>Listas</title>
