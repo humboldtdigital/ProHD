@@ -1174,42 +1174,40 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Type of deletion</para>
+                        <para>Value</para>
                      </td>
                      <td>
-                        <para>Value of <tag>@rendition</tag>
-                        </para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>overwritten</para>
+                        <para><tag>#ow</tag>
+                        </para>
+                     </td>
+                     <td>
+                        <para> overwritten </para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>#s </para>
                      </td>
                      <td>
                         <para>
-                           <tag>#ow</tag>
+                           <tag>strikethrough</tag>
                         </para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>strikethrough</para>
+                        <para><tag>#erased</tag></para>
                      </td>
                      <td>
                         <para>
-                           <tag>#s</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>erased</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>#erased</tag>
+                           <tag>erased</tag>
                         </para>
                      </td>
                   </tr>
@@ -1221,7 +1219,7 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Value of @place</para>
+                        <para>Value</para>
                      </td>
                      <td>
                         <para>Definition</para>
@@ -1413,169 +1411,151 @@ explican en el documento […]</programlisting>
                <programlisting language="xml" xml:space="preserve">30 de julio de &lt;supplied cert="high"&gt;18&lt;/supplied&gt;27</programlisting>
          </section>
          <section>
-            <title>Errores y correcciones</title>
-            <para>Los errores evidentes que aparecen en la fuente textual se han codificado con el
-               elemento <tag>choice</tag>. Dentro, la palabra errónea se ha codificado con el
-               elemento <tag>sic</tag> mientras que la corrección se ha codificado con
-                  <tag>corr</tag>. En el elemento <tag>corr</tag>, el atributo <tag>@cert</tag>
-               (certainty) indica la certeza con que se ha corregido:</para>
+            <title>Errors and corrections</title>
+            <para>Obvious errors appearing in the textual source have been coded with the element
+                  <tag>choice</tag>. Inside, the erroneous word has been encoded with the element
+                  <tag>sic</tag> while the correction has been encoded with <tag>corr</tag>. In the
+               corr element, the attribute <tag>@cert</tag> (certainty) indicates the certainty of
+               the correction: </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Certeza</para>
+                        <para>Value</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@cert</tag>
-                        </para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>baja</para>
+                        <para>low</para>
                      </td>
                      <td>
                         <para>
-                           <tag>low</tag>
-                        </para>
+                           <tag>low</tag> certainty</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>media</para>
+                        <para>medium</para>
                      </td>
                      <td>
                         <para>
-                           <tag>medium</tag>
-                        </para>
+                           <tag>medium</tag> certainty</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>alta</para>
+                        <para>high</para>
                      </td>
                      <td>
                         <para>
-                           <tag>high</tag>
-                        </para>
+                           <tag>high</tag> certainty</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+            <para>For example:</para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;sic&gt;Humbold&lt;/sic&gt;
    &lt;corr cert="high"&gt;Humboldt&lt;/corr&gt;
 &lt;/choice&gt;     </programlisting>
-            <para>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha
-               empleado el mismo elemento <tag>choice</tag> para codificar la palabra errónea con
-                  <tag>sic</tag>. Ahora bien, en estos casos no se ha proporcionado una forma
-               corregida sino que se ha utilizado el elemento <tag>corr</tag> y se ha dejado vacío.
-               Además, se ha utilizado el atributo <tag>type</tag> con valor "deleted" para indicar
-               que se ha eliminado una palabra redundante. Por
-               ejemplo:</para>
+            <para>When a word is repeated and it is clear that this is an error, the same
+                  <tag>choice</tag> element has been used to encode the erroneous word with
+                  <tag>sic</tag>. However, in these cases a corrected form has not been provided but
+               the <tag>corr</tag> element has been used and left empty. In addition, the type
+               attribute with value "deleted" has been used to indicate that a redundant word has
+               been removed. For example: </para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;sic&gt;más&lt;/sic&gt;
    &lt;corr type="deleted"/&gt;
 &lt;/choice&gt; cantidad</programlisting>
          </section>
          <section>
-            <title>Lecturas inciertas</title>
-            <para>Las palabras o pasajes que no son fácilmente legibles se han codificado con el
-               elemento <tag>unclear</tag>. Con el atributo <tag>@reason</tag> se ha especificado la
-               razón de la lectura incierta:</para>
+            <title>Unclear text</title>
+            <para>Words or passages that are not easily readable have been encoded with the
+                  <tag>unclear</tag> element. The <tag>@reason</tag> attribute has been used to
+               specify the reason for the unclear reading: </para>
+            <informaltable>
+               <thead>
+                  <tr>
+                     <td>Value</td>
+                     <td>
+                        <para>Reason </para>
+                     </td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>illegible </td>
+                     <td>
+                        <para> unclear text</para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>covered</para>
+                     </td>
+                     <td>
+                        <para> unclear to read because of strikethrough</para>
+                     </td>
+                  </tr>
+               </tbody>
+            </informaltable>
+            <para>With the attribute <tag>@cert </tag>(certainty) the certainty of the intervention
+               has been coded. </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Razón de la lectura incierta</para>
+                        <para>Value</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@reason</tag>
-                        </para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>ilegible</para>
+                        <para>low</para>
                      </td>
                      <td>
                         <para>
-                           <tag>illegible</tag>
-                        </para>
+                           <tag>low</tag> certainty</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>difícil de leer debido a la sobreescritura</para>
+                        <para>high</para>
                      </td>
                      <td>
                         <para>
-                           <tag>covered</tag>
-                        </para>
+                           <tag>high</tag> certainty</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Con el atributo <tag>@cert</tag> (certainty) se ha codificado la certeza de la
-               intervención.</para>
-            <informaltable>
-               <thead>
-                  <tr>
-                     <td>
-                        <para>Certeza</para>
-                     </td>
-                     <td>
-                        <para>Valor para <tag>@cert</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>
-                        <para>baja</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>low</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>alta</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>high</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </tbody>
-            </informaltable>
-            <para>Por ejemplo:</para>
+            <para>For instance:</para>
                <programlisting language="xml" xml:space="preserve">&lt;unclear reason="illegible" cert="high"&gt;año&lt;/unclear&gt;</programlisting>
          </section>
          <section>
-            <title>Texto ilegible</title>
-            <para>Los caracteres o palabras ilegibles en la fuente textual debido a daños materiales
-               o a que la escritura es poco clara se han codificado con el elemento vacío
-                  <tag>gap/</tag>.</para>
-            <para>Con el atributo <tag>@reason</tag> se ha indicado la razón de la
-               ilegibilidad:</para>
+            <title>Illegibility</title>
+            <para>Illegible characters or words in the textual source due to material damage or
+               unclear writing have been encoded with the empty element <tag>gap/</tag>. </para>
+            <para>The <tag>@reason</tag> attribute has been used to indicate the reason for
+               illegibility:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Razón de la ilegibilidad</para>
+                        <para>Reason</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@reason</tag>
+                        <para>Value of <tag>@reason</tag>
                         </para>
                      </td>
                   </tr>
@@ -1583,7 +1563,7 @@ explican en el documento […]</programlisting>
                <tbody>
                   <tr>
                      <td>
-                        <para>destrucción/pérdida</para>
+                        <para>destruction or lost</para>
                      </td>
                      <td>
                         <para>
@@ -1593,7 +1573,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>ilegible</para>
+                        <para>illegible</para>
                      </td>
                      <td>
                         <para>
@@ -1603,7 +1583,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>difícil de leer debido a la sobreescritura</para>
+                        <para> unclear to read because of strikethrough</para>
                      </td>
                      <td>
                         <para>
@@ -1613,16 +1593,16 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Si se conoce el número de líneas, palabras, etc., se han codificado usando
-                  <tag>@unit</tag> (unidad) y <tag>@quantity</tag> (cantidad).</para>
+            <para>If the number of lines, words, etc. are known, they have been coded using
+                  <tag>@unit</tag> and <tag>@quantity</tag>. </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Segmento ilegible</para>
+                        <para>Illegible unit</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@unit</tag>
+                        <para>Value of <tag>@unit</tag>
                         </para>
                      </td>
                   </tr>
@@ -1630,7 +1610,7 @@ explican en el documento […]</programlisting>
                <tbody>
                   <tr>
                      <td>
-                        <para>caracteres</para>
+                        <para>characters</para>
                      </td>
                      <td>
                         <para>
@@ -1640,7 +1620,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>líneas</para>
+                        <para>lines</para>
                      </td>
                      <td>
                         <para>
@@ -1650,7 +1630,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>páginas</para>
+                        <para>pages</para>
                      </td>
                      <td>
                         <para>
@@ -1660,7 +1640,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>palabras</para>
+                        <para>words</para>
                      </td>
                      <td>
                         <para>
@@ -1670,33 +1650,31 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>En el atributo <tag>@quantity</tag>, se ha codificado el número de caracteres,
-               líneas, etc. ilegibles.</para>
+            <para>In the <tag>@quantity</tag> attribute, the number of unreadable characters, lines,
+               etc. has been encoded. </para>
                <programlisting language="xml" xml:space="preserve">&lt;gap reason="illegible" unit="words" quantity="3"/&gt;</programlisting>
-            <para>Si un carácter (o cadena de caracteres) está tachado y no se puede descifrar, se
-               ha codificado tanto con <tag>del</tag> como con <tag>gap/</tag>:</para>
+            <para>If a character (or string of characters) is strikethrough and cannot be read, it
+               has been encoded with both <tag>del</tag> and <tag>gap/</tag>:</para>
                <programlisting language="xml" xml:space="preserve">&lt;del rendition="#s"&gt;
    &lt;gap reason="illegible" unit="chars" quantity="5"/&gt;
 &lt;/del&gt;</programlisting>
-            <para>Por último, también se han codificado individualmente las páginas destruidas o
-               perdidas.</para>
+            <para>Finally, destroyed or missing pages have also been coded individually.</para>
                <programlisting language="xml" xml:space="preserve">&lt;pb n="1r"/&gt;&lt;gap reason="lost" unit="pages" quantity="1"/&gt;</programlisting>
          </section>
          <section>
-            <title>Omisiones</title>
-            <para>Las omisiones se han codificado de manera explícita. Las omisiones de caracteres,
-               palabras, pasajes de texto o páginas enteras por parte de los editores y editoras se
-               han codificado con el elemento vacío <tag>gap/</tag>. Con el atributo
-                  <tag>@unit</tag> se ha especificado el tipo de unidad que la editora o editor ha
-               tenido en cuenta:</para>
+            <title>Omissions</title>
+            <para>Omissions have been explicitly encoded. Omissions of characters, words, text
+               passages or whole pages by editors and publishers have been encoded with the empty
+               element <tag>gap/</tag>. The <tag>@unit</tag> attribute specifies the type of unit
+               taken into account by the editor: </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Segmento omitido</para>
+                        <para>Illegible unit</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@unit</tag>
+                        <para>Value of <tag>@unit</tag>
                         </para>
                      </td>
                   </tr>
@@ -1704,7 +1682,7 @@ explican en el documento […]</programlisting>
                <tbody>
                   <tr>
                      <td>
-                        <para>caracteres</para>
+                        <para>characters</para>
                      </td>
                      <td>
                         <para>
@@ -1714,7 +1692,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>líneas</para>
+                        <para>lines</para>
                      </td>
                      <td>
                         <para>
@@ -1724,7 +1702,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>páginas</para>
+                        <para>pages</para>
                      </td>
                      <td>
                         <para>
@@ -1734,7 +1712,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>palabras</para>
+                        <para>words</para>
                      </td>
                      <td>
                         <para>
@@ -1744,17 +1722,17 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Con el atributo <tag>@quantity</tag>, se ha codificado el número de caracteres,
-               líneas, etc. omitidos mientras que con el atributo <tag>@reason</tag> se ha
-               codificado el motivo de la omisión editorial.</para>
+            <para>With the <tag>@quantity</tag> attribute, the number of characters, lines, etc.
+               omitted has been encoded while with the <tag>@reason</tag> attribute the reason for
+               the editorial omission has been encoded. </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Motivo de la omisión</para>
+                        <para>Reason</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@reason</tag>
+                        <para>Value of <tag>@reason</tag>
                         </para>
                      </td>
                   </tr>
@@ -1762,7 +1740,7 @@ explican en el documento […]</programlisting>
                <tbody>
                   <tr>
                      <td>
-                        <para>texto en idioma extranjero</para>
+                        <para>text in foreign language</para>
                      </td>
                      <td>
                         <para>
@@ -1772,7 +1750,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>el texto no es importante para el corpus</para>
+                        <para>unimportant text for the corpus</para>
                      </td>
                      <td>
                         <para>
@@ -1782,21 +1760,19 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:
-               <programlisting language="xml" xml:space="preserve">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt; entonces de nuevo</programlisting>Para
-               representar y mostrar correctamente la foliación, se ha codificado cada página
-               individualmente. Aunque se omitan varias páginas consecutivas, siempre se ha
-               codificado la omisión con un <quote>1</quote> como número correspondiente a cada
-               página que falta.</para>
+            <para>For instance:
+               <programlisting language="xml" xml:space="preserve">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt; entonces de nuevo</programlisting></para>
+            <para>In order to correctly represent and display the foliation, each page has been
+               coded individually. Even if several consecutive pages are omitted, the omission is
+               always coded with a 1 as the number corresponding to each missing page.</para>
          </section>
          <section>
-            <title>Comentarios</title>
-            <para>Los comentarios editoriales se han codificado con el elemento <tag>seg</tag>
-               (arbitrary segment). A su vez, se han anidado dos elementos: por un lado,
-                  <tag>orig</tag> con el que se ha codificado el pasaje textual comentado; por el
-               otro lado, <tag>note</tag> con el que se ha codificado el comentario editorial en sí.
-               Se ha utilizado el atributo <tag>@type</tag> en <tag>seg</tag> con el valor
-                  <tag>comment</tag>.</para>
+            <title>Comments</title>
+            <para>The editorial comments have been coded with the element <tag>seg</tag> (arbitrary
+               segment). In turn, two elements have been nested: on the one hand, <tag>orig</tag>
+               with which the commented textual passage has been encoded; on the other hand,
+                  <tag>note</tag> with which the editorial comment itself has been encoded. The
+                  <tag>@type</tag> attribute has been used in seg with the value comment.</para>
                <programlisting language="xml" xml:space="preserve">&lt;seg type="comment"&gt;
    &lt;orig&gt;plantarum&lt;/orig&gt;
    &lt;note&gt;Se refiere a "De distributione geographica plantarum secundum
@@ -1804,359 +1780,35 @@ explican en el documento […]</programlisting>
 &lt;/seg&gt;</programlisting>
          </section>
          <section>
-            <title>Referencias</title>
-            <para>Las referencias a otras ediciones o pasajes internos se han codificado con el
-               elemento <tag>ref</tag>, cuyo atributo <tag>@target</tag> contiene el identificador
-               único de la edición o del pasaje de destino. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una referencia]&lt;/ref&gt;</programlisting>
-            <para>Además, en algunas ocasiones, con <tag>ref</tag> se han codificado referencias a
-               sitios web externos, por ejemplo, en algún comentario editorial. En este caso, se ha
-               codificado en el atributo <tag>@target</tag> la URL completa del sitio web:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;seg type="comment"&gt;
-   &lt;orig&gt;el río&lt;/orig&gt;
-   &lt;note&gt;Se refiere al río...&lt;/note&gt;
-&lt;/seg&gt;</programlisting>
-         </section>
-         <section>
-            <title>Fechas</title>
-            <para>Las fechas que aparecen en la fuente textual se han codificado con
-               <tag>date</tag>. Para que las fechas sean legibles por el ordenador se ha seguido el
-               formato <tag>AAAA-MM-DD</tag> en los atributos <tag>@when</tag>, <tag>@from</tag> y
-                  <tag>@to</tag>, así como <tag>@notBefore</tag> y <tag>@notAfter</tag>. <itemizedlist>
+            <title>Dates</title>
+            <para>The dates appearing in the textual source have been encoded with <tag>date</tag>.
+               To make the dates computer-readable, the format YYYYY-MM-DD has been followed in the
+               attributes <tag>@when</tag>, <tag>@from</tag> and <tag>@to</tag>, as well as
+               <tag>@notBefore</tag> and <tag>@notAfter</tag>. <itemizedlist>
                   <listitem>
-                     <para>Fecha exacta: </para>
+                     <para>Exact date:</para>
                   </listitem>
                </itemizedlist>
-                    <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de la
-Nochebuena del año 1772&lt;/date&gt;</programlisting>
-                    <itemizedlist>
+               <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes
+   de la Nochebuena del año 1772&lt;/date&gt;        </programlisting>
+               <itemizedlist>
                   <listitem>
-                     <para>Período de tiempo exacto:</para>
+                     <para>Time period:</para>
                   </listitem>
                </itemizedlist>
-                    <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731
-al 11 de septiembre de 1741&lt;/date&gt;</programlisting>
-                    <itemizedlist>
+               <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre
+   de 1731 al 11 de septiembre de 1741&lt;/date&gt;     </programlisting>
+               <itemizedlist>
                   <listitem>
-                     <para>Período aproximado:</para>
+                     <para>Approximate time period:</para>
                   </listitem>
                </itemizedlist>
-                </para>
-               <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
-de mayo de 1804&lt;/date&gt;</programlisting>
-            <para>Además, de manera opcional, en el atributo <tag>@cert</tag> se ha especificado el
-               nivel de certeza: <tag>high</tag>, <tag>low</tag>.</para>
-            <para>Más ejemplos:</para>
-            <informaltable>
-               <thead>
-                  <tr>
-                     <td>
-                        <para>Fecha en el texto</para>
-                     </td>
-                     <td>
-                        <para>Valores de los atributos</para>
-                     </td>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>
-                        <para>siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>principios del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1719"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>mediados del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1740" notAfter="1759"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>finales del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1780" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Primera mitad del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1749"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Segunda mitad del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1750" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Primer cuarto del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1724"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Segundo cuarto del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1725" notAfter="1749"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Tercer cuarto del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1750" notAfter="1774"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Último cuarto del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1775" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Primer tercio del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1733"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Segundo tercio del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1733" notAfter="1766"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Último tercio del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1766" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td/>
-                     <td/>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>alrededor de 1762</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1757" notAfter="1767"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>1762</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>when="1762"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>5 de enero de 1762</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>when="1762-01-05"</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </tbody>
-            </informaltable>
-            <para>En el contenido del elemento también se ha expresado el nivel de certeza,
-               aproximación, período, etc. mediante lenguaje natural. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;         </programlisting>
-         </section>
-         <section>
-            <title>Palabras en otro idioma</title>
-            <para>Las palabras y pasajes de texto en idioma extranjero se han codificado con el
-               elemento <tag>foreign</tag>. Con el atributo <tag>@xml:lang</tag> se ha codificado el
-               código del idioma extranjero correspondiente:</para>
-            <informaltable>
-               <thead>
-                  <tr>
-                     <td>
-                        <para>Idioma extranjero</para>
-                     </td>
-                     <td>
-                        <para>Valor para <tag>@xml:lang</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>
-                        <para>griego</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>gr</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>latín</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>la</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>hebreo</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>he</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>alemán</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>de</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>francés</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>fr</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>inglés</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>en</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>ruso</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>ru</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>español</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>es</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </tbody>
-            </informaltable>
-            <para>Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">cantidad de 29.000 arrobas, &lt;foreign xml:lang="la"&gt;plus minus&lt;/foreign&gt;</programlisting>
-         </section>
-         <section>
-            <title>Personas, lugares y organizaciones</title>
-            <para>Las personas, los lugares y las organizaciones mencionados con nombres propios en
-               la fuente textual se han codificado de manera explícita. En cambio, la codificación
-               de alusiones o referencias (por ejemplo, anáforas) se ha codificado de manera
-               opcional según el criterio del editor o editora.</para>
-            <para>En ambos casos se han utilizado los elementos siguientes:</para>
-            <itemizedlist>
-               <listitem>
-                  <para>Persona: <tag>persName</tag>
-                  </para>
-               </listitem>
-               <listitem>
-                  <para>Lugar: <tag>placeName</tag>
-                  </para>
-               </listitem>
-               <listitem>
-                  <para>Organización: <tag>orgName</tag>
-                  </para>
-               </listitem>
-            </itemizedlist>
-            <para>Se ha codificado con el atributo <tag>@key</tag> un identificador único (URI)
-               correspondiente al del registro del proyecto o bien al de algún recurso de
-               autoridades externo como VIAF, GND o GeoNames. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve"> Mr. &lt;persName key="H0012737"&gt;James Arnold&lt;/persName&gt;</programlisting>
+            </para>
+            <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
+   de mayo de 1804&lt;/date&gt;     </programlisting>
+            <para>In addition, optionally, the <tag>@cert</tag> attribute with the values
+               <tag>high</tag> and <tag>low</tag> has been used to encode the certainty with which
+               the date is known to be correct.</para>
          </section>
       </section>
    </section>
