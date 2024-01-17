@@ -930,23 +930,22 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
          </section>
       </section>
       <section xml:id="intervenciones-autoriales">
-         <title>Authorial intervetions</title>
-         <para>En todas las ediciones digitales del proyecto se han codificado los cambios de
-            tipografía y las intervenciones autoriales de manera explícita, es decir, con etiquetado
-            TEI.</para>
+         <title>Authorial interventions</title>
+         <para>In all digital editions of the project, changes in typography and authorial
+            interventions have been coded explicitly, i.e. with TEI elements.</para>
          <section>
-            <title>Destacados</title>
-            <para>Los destacados y marcas en el borde del documento se han codificado con el
-               elemento <tag>hi</tag> (highlighted) y el atributo <tag>@rendition</tag> para
-               especificar su apariencia:</para>
+            <title>Highlighted text</title>
+            <para>Highlighted text marginal marks have been coded with the <tag>hi</tag> element
+               (highlighted) and the <tag>@rendition</tag> attribute to specify their
+               appearance:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de destacado</para>
+                        <para>Type of highlight</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@rendition</tag>
+                        <para>Value of <tag>@rendition</tag>
                         </para>
                      </td>
                   </tr>
@@ -964,7 +963,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                   </tr>
                   <tr>
                      <td>
-                        <para>doble</para>
+                        <para>double</para>
                      </td>
                      <td>
                         <para>
@@ -974,7 +973,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                   </tr>
                   <tr>
                      <td>
-                        <para>marcado al margen</para>
+                        <para>marked in the margin</para>
                      </td>
                      <td>
                         <para>
@@ -984,19 +983,18 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">Sucinta noticia de la situación
+            <para>For instance:</para>
+            <programlisting language="xml" xml:space="preserve">Sucinta noticia de la situación
 &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</programlisting>
-            <para>Si un párrafo completo aparece en la fuente destacado con una marca en el margen,
-               se ha codificado con el elemento <tag>p</tag> y el atributo <tag>@rendition</tag> con
-               el valor <tag>#mMM</tag> (marca al borde).</para>
+            <para>If an entire paragraph appears in the highlighted font with a mark in the margin,
+               it has been encoded with the element <tag>p</tag> and the attribute
+                  <tag>@rendition</tag> with the value <tag>#mMM</tag> (border mark).</para>
          </section>
          <section>
             <title>Superscript</title>
-            <para>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto
-               a la línea) en la fuente textual se han codificado con el elemento <tag>hi</tag>
-               (highlighted) y el atributo <tag>@rendition</tag> con valor <tag>#sup</tag>. Por
-               ejemplo:</para>
+            <para>Numbers or letters that appear in superscript (i.e. slightly raised above the
+               line) in the text font have been encoded with the element <tag>hi</tag> (highlighted)
+               and the attribute <tag>@rendition</tag> with value <tag>#sup</tag>. For example: </para>
                <programlisting language="xml" xml:space="preserve">le ofreciera de mi parte
 algunas observaciones &lt;choice&gt;
    &lt;abbr&gt;sob&lt;hi rendition="#sup"&gt;e&lt;/hi&gt;&lt;/abbr&gt;
@@ -1004,19 +1002,19 @@ algunas observaciones &lt;choice&gt;
 &lt;/choice&gt; los&lt;lb/&gt; principales hechos </programlisting>
          </section>
          <section>
-            <title>Eliminaciones</title>
-            <para>Siempre que sea legible y con independencia de si se encuentra en saltos de línea,
-               abreviaturas, normalizaciones y correcciones o adiciones del editor, se ha codificado
-               el texto eliminado con el elemento <tag>del</tag> (deletion) y haciendo uso del
-               atributo <tag>@rendition</tag> para especificar el tipo de eliminación:</para>
+            <title>Deletions</title>
+            <para>As long as it is readable and regardless of whether it is in line breaks,
+               abbreviations, normalisations and editor corrections or additions, the deleted text
+               has been encoded with the del (deletion) element and using the @rendition attribute
+               to specify the type of deletion:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de eliminación</para>
+                        <para>Type of deletion</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@rendition</tag>
+                        <para>Value of <tag>@rendition</tag>
                         </para>
                      </td>
                   </tr>
@@ -1024,7 +1022,7 @@ algunas observaciones &lt;choice&gt;
                <tbody>
                   <tr>
                      <td>
-                        <para>reescritura encima del texto original</para>
+                        <para>overwritten</para>
                      </td>
                      <td>
                         <para>
@@ -1033,9 +1031,7 @@ algunas observaciones &lt;choice&gt;
                      </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>tachado</para>
-                     </td>
+                     <td>strikethrough</td>
                      <td>
                         <para>
                            <tag>#s</tag>
@@ -1044,7 +1040,7 @@ algunas observaciones &lt;choice&gt;
                   </tr>
                   <tr>
                      <td>
-                        <para>borrado</para>
+                        <para>erased</para>
                      </td>
                      <td>
                         <para>
@@ -1054,27 +1050,25 @@ algunas observaciones &lt;choice&gt;
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+            <para>For instance:</para>
                <programlisting language="xml" xml:space="preserve">Conocen ya estos vecinos la esplendidez en la mesa, las viviendas,
 muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</programlisting>
          </section>
          <section>
-            <title>Adiciones</title>
-            <para>En todas las ediciones del proyecto se han codificado las adiciones que el propio
-               autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos
-               realizados por el autor que sólo amplían el texto y se integran
-               sintácticamente.</para>
-            <para>Las adiciones hechas por el autor se han codificado con <tag>add</tag> (addition)
-               utilizando el atributo <tag>@place</tag> para especificar el lugar de la
-               adición:</para>
+            <title>Additions</title>
+            <para>In all editions of the project, the author's own additions to the textual source
+               have been coded. Im contrast to notes, additions only extend the text and are
+               syntactically integrated.</para>
+            <para>Additions made by the author have been coded with <tag>add</tag> (addition) using
+               the <tag>@place</tag> attribute to specify the location of the addition:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Valor</para>
+                        <para>Value of @place</para>
                      </td>
                      <td>
-                        <para>Definición</para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
@@ -1086,7 +1080,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>encima de la línea</para>
+                        <para>above the line</para>
                      </td>
                   </tr>
                   <tr>
@@ -1096,7 +1090,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>debajo de la línea</para>
+                        <para>below the line</para>
                      </td>
                   </tr>
                   <tr>
@@ -1106,7 +1100,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>en la misma línea</para>
+                        <para>in line</para>
                      </td>
                   </tr>
                   <tr>
@@ -1116,7 +1110,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>sobre el texto original</para>
+                        <para>across the text</para>
                      </td>
                   </tr>
                   <tr>
@@ -1126,7 +1120,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>en el margen izquierdo</para>
+                        <para>left margin</para>
                      </td>
                   </tr>
                   <tr>
@@ -1136,7 +1130,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>en el margen derecho</para>
+                        <para>right margin</para>
                      </td>
                   </tr>
                   <tr>
@@ -1146,7 +1140,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>en el margen superior</para>
+                        <para>top margin</para>
                      </td>
                   </tr>
                   <tr>
@@ -1156,34 +1150,34 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>en el margen inferior</para>
+                        <para>bottom margin</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+            <para>For instance:</para>
                <programlisting language="xml" xml:space="preserve">[…] y logré para el Comercio con estranjeros,
 los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se
 explican en el documento […]</programlisting>
-            <para>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado
-               con el elemento <tag>metamark/</tag>. La forma de la marca de inserción (asterisco,
-               número, etc.) no se ha especificado.</para>
+            <para>If there is an insertion mark made by the author in the source, it has been
+               encoded with the <tag>metamark/</tag> element. The form of the insertion mark
+               (asterisk, number, etc.) has not been specified.</para>
          </section>
          <section>
-            <title>Sustituciones</title>
-            <para>Si se elimina una palabra o un pasaje del texto en la fuente y al mismo tiempo se
-               añade una palabra, estos dos fenómenos textuales se han codificado juntos con un
-               elemento <tag>subst</tag> (substitution).</para>
-            <para>La eliminación se ha codificado con el elemento <tag>del</tag> (deletion). El tipo
-               de eliminación se ha especificado en el atributo <tag>@rendition</tag>:</para>
+            <title>Substitutions</title>
+            <para>If a word or a passage of text is deleted in the source and at the same time a
+               word is added, these two textual phenomena have been coded together with a
+                  <tag>subst</tag> (substitution) element.</para>
+            <para>The deletion has been coded with the element <tag>del</tag> (deletion). The type
+               of deletion has been specified in the <tag>@rendition</tag> attribute:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de eliminación</para>
+                        <para>Type of deletion</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@rendition</tag>
+                        <para>Value of <tag>@rendition</tag>
                         </para>
                      </td>
                   </tr>
@@ -1191,7 +1185,7 @@ explican en el documento […]</programlisting>
                <tbody>
                   <tr>
                      <td>
-                        <para>reescritura encima del texto original</para>
+                        <para>overwritten</para>
                      </td>
                      <td>
                         <para>
@@ -1201,7 +1195,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>tachado</para>
+                        <para>strikethrough</para>
                      </td>
                      <td>
                         <para>
@@ -1211,7 +1205,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>borrado</para>
+                        <para>erased</para>
                      </td>
                      <td>
                         <para>
@@ -1227,78 +1221,98 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de adición</para>
+                        <para>Value of @place</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@place</tag>
-                        </para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>encima de la línea</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>superlinear</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>above the line</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>debajo de la línea</para>
-                     </td>
                      <td>
                         <para>
                            <tag>sublinear</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>below the line</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>en la misma línea</para>
-                     </td>
                      <td>
                         <para>
                            <tag>intralinear</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>in line</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>sobre el texto original</para>
-                     </td>
                      <td>
                         <para>
                            <tag>across</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>across the text</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>en el margen izquierdo</para>
-                     </td>
                      <td>
                         <para>
                            <tag>left</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>left margin</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>en el margen derecho</para>
-                     </td>
                      <td>
                         <para>
                            <tag>right</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>right margin</para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>
+                           <tag>mTop</tag>
+                        </para>
+                     </td>
+                     <td>
+                        <para>top margin</para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>
+                           <tag>mBottom</tag>
+                        </para>
+                     </td>
+                     <td>
+                        <para>bottom margin</para>
+                     </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+           
+            <para>For instance:</para>
                <programlisting language="xml" xml:space="preserve">&lt;subst&gt;
    &lt;del rendition="#ow"&gt;6&lt;/del&gt;
    &lt;add place="across"&gt;7&lt;/add&gt;
@@ -1306,26 +1320,26 @@ explican en el documento […]</programlisting>
          </section>
       </section>
       <section xml:id="intervenciones-editoriales">
-         <title>Intervenciones editoriales</title>
-         <para>En todas las ediciones digitales del proyecto se han codificado las intervenciones
-            editoriales de manera explícita.</para>
+         <title>Editorial interventions</title>
+         <para>In all digital editions of the project, editorial interventions have been explicitly
+            coded.</para>
          <section>
-            <title>Normalizaciones</title>
-            <para>La ortografía, puntuación, mayúsculas y separación de las palabras se han
-               normalizado de manera explícita con el elemento <tag>choice</tag> y sus dos elementos
-               hijos <tag>orig</tag> (forma original) y <tag>reg</tag> (forma regularizada). En el
-               elemento <tag>orig</tag> se ha codificado la forma original tal y como aparece en la
-               fuente textual mientras que en el elemento <tag>reg</tag> se ha codificado la forma
-               regularizada, es decir, modernizada a la normal ortográfica actual para facilitar la
-               legibilidad del texto. Por ejemplo:</para>
+            <title>Normalisations</title>
+            <para>Spelling, punctuation, capitalisation and hyphenation have been explicitly
+               normalised with the <tag>choice</tag> element and its two child elements
+                  <tag>orig</tag> (original form) and <tag>reg</tag> (regularised form). In the
+                  <tag>orig</tag> element the original form as it appears in the textual source has
+               been encoded while in the <tag>reg</tag> element the regularised form has been
+               encoded, i.e. modernised to the current orthographic normal to facilitate the
+               readability of the text. For example: </para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;orig&gt;espendiendo&lt;/orig&gt;
    &lt;reg&gt;expendiendo&lt;/reg&gt;
 &lt;/choice&gt;        </programlisting>
-            <para>Siempre se han codificado las palabras enteras aun cuando solamente se regularice
-               una grafía o una tilde tal y como se muestra en el ejemplo anterior.</para>
-            <para>Se ha seguido el mismo método de codificación con la normalización de la
-               mayúscula. Por ejemplo:</para>
+            <para>Whole words have always been encoded even if only one spelling or accent is
+               regularised as shown in the example above.</para>
+            <para>The same coding method has been followed with the normalisation of the
+               capitalisation:</para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;orig&gt;ensayo&lt;/orig&gt;
    &lt;reg&gt;Ensayo&lt;/reg&gt;
@@ -1334,42 +1348,41 @@ explican en el documento […]</programlisting>
    &lt;orig&gt;político&lt;/orig&gt;
    &lt;reg&gt;Político&lt;/reg&gt;
 &lt;/choice&gt;</programlisting>
-            <para>El mismo método de normalización se ha aplicado a contracciones o uniones de
-               palabras. Por ejemplo:</para>
+            <para>The same normalisation method has been applied to contractions or word
+               unions:</para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;orig&gt;dela&lt;/orig&gt;
    &lt;reg&gt;de la&lt;/reg&gt;
 &lt;/choice&gt; </programlisting>
          </section>
          <section>
-            <title>Abreviaturas</title>
-            <para>Las abreviaturas se han codificado con elemento <tag>choice</tag> y sus dos
-               elementos hijo <tag>abbr</tag> (abreviatura) y <tag>expan</tag> (abreviatura
-               resuelta). En el elemento <tag>abbr</tag> se ha conservado la forma abreviada que
-               aparece en la fuente textual mientras que en el elemento <tag>expan</tag> las y los
-               editoras han proporcionado la forma resuelta o expandida para facilitar la
-               legibilidad del texto.</para>
+            <title>Abbreviations</title>
+            <para>Abbreviations have been coded with the <tag>choice</tag> element and its two child
+               elements <tag>abbr</tag> (abbreviation) and <tag>expan</tag> (resolved abbreviation).
+               In the <tag>abbr</tag> element, the abbreviated form that appears in the textual
+               source has been retained, while in the <tag>expan</tag> element, the editors have
+               provided the resolved or expanded form to facilitate the readability of the text. </para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;abbr&gt;q&lt;/abbr&gt;
    &lt;expan&gt;que&lt;/expan&gt;
 &lt;/choice&gt;</programlisting>
-            <para>Las siglas se han codificado como abreviaturas siguiendo el mismo método con
+            <para>Acronyms have been coded as abbreviations following the same method with
                   <tag>choice</tag>.</para>
          </section>
          <section>
-            <title>Palabras, letras o signos de puntuación suplidos</title>
-            <para>Las palabras o signos de puntuación que faltan de manera evidente en la fuente y
-               que han sido suplidas por la editora o editor, se han codificado con el elemento
-                  <tag>supplied</tag>. Con el atributo <tag>@cert</tag> (certainty) se ha codificado
-               la certeza con la que se han suplido los caracteres o palabras:</para>
+            <title>Supplied words, characters and punctuation</title>
+            <para>Words, characters or punctuation marks that are clearly missing in the source and
+               have been supplied (that is, added) by the editor have been encoded with the
+                  <tag>supplied</tag> element. The <tag>@cert </tag>(certainty) attribute has been
+               used to encode the certainty with which the text has been supplied:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Valor</para>
+                        <para>Value</para>
                      </td>
                      <td>
-                        <para>Definición</para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
@@ -1381,7 +1394,7 @@ explican en el documento […]</programlisting>
                         </para>
                      </td>
                      <td>
-                        <para>baja</para>
+                        <para>low certainty</para>
                      </td>
                   </tr>
                   <tr>
@@ -1391,12 +1404,12 @@ explican en el documento […]</programlisting>
                         </para>
                      </td>
                      <td>
-                        <para>alta</para>
+                        <para>high certainty</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+            <para>For instance:</para>
                <programlisting language="xml" xml:space="preserve">30 de julio de &lt;supplied cert="high"&gt;18&lt;/supplied&gt;27</programlisting>
          </section>
          <section>
