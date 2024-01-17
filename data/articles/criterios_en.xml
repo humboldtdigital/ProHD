@@ -4,7 +4,7 @@
    <info>
       <title>Editing Guidelines</title>
       <copyright>
-         <year>2022-10-25</year>
+         <year>2024-01-17</year>
       </copyright>
       <keywordset>
          <keyword>Documentation</keyword>
@@ -30,7 +30,7 @@
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
       </publisher>
-      <edition>Version 4</edition>
+      <edition>5th Version</edition>
    </info>
    <section xml:id="metadatos">
       <title>Metadata</title>

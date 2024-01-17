@@ -2,7 +2,7 @@
    <info>
       <title>Criterios editoriales</title>
       <copyright>
-         <year>2022-10-25</year>
+         <year>2024-01-17</year>
       </copyright>
       <keywordset>
          <keyword>Documentación</keyword>
@@ -28,7 +28,7 @@
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
       </publisher>
-      <edition>Versión 4</edition>
+      <edition>Versión 5</edition>
    </info>
    <section xml:id="metadatos">
       <title>Metadatos</title>
