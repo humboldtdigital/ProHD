@@ -1079,8 +1079,8 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
          <section>
             <title>Adiciones</title>
             <para>En todas las ediciones del proyecto se han codificado las adiciones que el propio
-               autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos
-               realizados por el autor que sólo amplían el texto y se integran
+               autor ha realizado en la fuente textual. A diferencia de las notas, se entiende por adiciones todos los añadidos
+               que sólo amplían el texto y se integran
                sintácticamente.</para>
             <para>Las adiciones hechas por el autor se han codificado con <tag>add</tag> (addition)
                utilizando el atributo <tag>@place</tag> para especificar el lugar de la
@@ -1376,10 +1376,10 @@ explican en el documento […]</programlisting>
          </section>
          <section>
             <title>Palabras, letras o signos de puntuación suplidos</title>
-            <para>Las palabras o signos de puntuación que faltan de manera evidente en la fuente y
+            <para>Las palabras, letras o signos de puntuación que faltan de manera evidente en la fuente y
                que han sido suplidas por la editora o editor, se han codificado con el elemento
                   <tag>supplied</tag>. Con el atributo <tag>@cert</tag> (certainty) se ha codificado
-               la certeza con la que se han suplido los caracteres o palabras:</para>
+               la certeza con la que se ha suplido el texto:</para>
             <informaltable>
                <thead>
                   <tr>
