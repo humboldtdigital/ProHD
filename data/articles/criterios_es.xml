@@ -822,10 +822,7 @@
             <title>Notas</title>
             <para>Las notas del autor o de un editor contemporáneo no se han insertado siguiendo su
                ubicación en el manuscrito, sino en el pasaje del texto al que la nota se refiere
-               realmente (o que el editor supone razonablemente que se refiere). En caso de emplear
-               una marca de inserción (asterisco, número, etc.), se ha utilizado una señal de
-               inserción general (es decir, el elemento vacío <tag>metamark/</tag>) para indicar que
-               el texto ha sido introducido por el autor y no por los editores.</para>
+               realmente (o que el editor supone razonablemente que se refiere).</para>
             <para>Las notas se han codificado con el elemento <tag>note</tag>:</para>
                <programlisting language="xml" xml:space="preserve">En los partidos más remotos una caballería
 &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de
@@ -873,16 +870,6 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                      </td>
                      <td>
                         <para>Desconocido</para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>
-                           <tag>H000000</tag>
-                        </para>
-                     </td>
-                     <td>
-                        <para>ID interno proveniente del registro de personas</para>
                      </td>
                   </tr>
                </tbody>
