@@ -1813,31 +1813,29 @@ explican en el documento […]</programlisting>
       </section>
    </section>
    <section xml:id="cartas">
-      <title>Cartas</title>
-      <para>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos
-         característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han
-         codificado el remitente, el destinatario, el lugar y la fecha de envío y recepción. Por lo
-         que respecta a la estructura, cuando están presente en la fuente, se han codificado la
-         dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones)
-         y el cierre de la carta.</para>
+      <title>Letters</title>
+      <para>In this project, letters have received special treatment due to their characteristic
+         features. In terms of metadata, where possible, the sender, recipient, place and date of
+         sending and receiving have been encoded. As far as the structure is concerned, where
+         present in the source, the postal address, the beginning of the letter, the acts of writing
+         (if there were interruptions) and the closing of the letter have been encoded. </para>
       <section>
-         <title>Remitente, destinatario, lugares y fechas</title>
-         <para>Los metadatos relativos a la correspondencia de una carta se han codificado en el
-            elemento <tag>correspDesc</tag> (correspondence description). Se ha creado un elemento
-               <tag>correspAction</tag> (correspondence action) para el proceso de envío y el de
-            recepción respectivamente. Con el atributo <tag>@type</tag> se ha especificado el tipo
-            del acto de comunicación; los valores permitidos son dos: <tag>sent</tag> o
-               <tag>received</tag>.</para>
+         <title>Sender, recipient, places and dates</title>
+         <para>The metadata relating to the correspondence of a letter has been encoded in the
+            element <tag>correspDesc</tag> (correspondence description). A <tag>correspAction</tag>
+            (correspondence action) element has been created for the sending and receiving process
+            respectively. The <tag>@type</tag> attribute has been used to specify the type of the
+            communication action; two values are allowed: <tag>sent</tag> or <tag>received</tag>. </para>
             <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt;
-   &lt;correspAction type="sent"&gt;[Remitente]&lt;/correspAction&gt;
-   &lt;correspAction type="received"&gt;[Destinatario]&lt;/correspAction&gt;
+   &lt;correspAction type="sent"&gt;[Sender]&lt;/correspAction&gt;
+   &lt;correspAction type="received"&gt;[Recipient]&lt;/correspAction&gt;
 &lt;/correspDesc&gt;</programlisting>
-         <para>Dentro del elemento <tag>correspAction</tag>, se han utilizado los elementos
-               <tag>persName</tag>, <tag>orgName</tag>, <tag>placeName</tag> y <tag>date</tag> para
-            identificar la persona u organización que participa en el intercambio, el lugar en que
-            sucede y la fecha. Siempre que ha sido posible, la información sobre personas,
-            organizaciones y lugares se ha vinculado con el identificador codificado en el atributo
-               <tag>@key</tag>. Esta información puede indicarse para todas las entidades nombradas.</para>
+         <para>Within the <tag>correspAction</tag> element, the elements <tag>persName</tag>,
+               <tag>orgName</tag>, <tag>placeName</tag> and <tag>date</tag> have been used to
+            identify the person or organisation involved in the exchange, the place where it happens
+            and the date. Wherever possible, information on persons, organisations and places has
+            been linked to the identifier encoded in the <tag>@key</tag> attribute. This information
+            can be indicated for all named entities.</para>
             <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt;
    &lt;correspAction type="sent"&gt;
       &lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de&lt;/persName&gt;
@@ -1848,36 +1846,36 @@ explican en el documento […]</programlisting>
       &lt;persName key="H0012069"&gt;Humboldt, Alexander von &lt;/persName&gt;
     &lt;/correspAction&gt;
 &lt;/correspDesc&gt;</programlisting>
-         <para>Las fechas se han codificado con el elemento <tag>date</tag> siguiendo el formato
-               <tag>AAAA-MM-DD</tag> (o <tag>AA-MM</tag> o <tag>AAAA</tag>, dependiendo de la
-            información disponible) en los atributos <tag>@when</tag>,
-               <tag>@from</tag>/<tag>@to</tag> o <tag>@notBefore</tag>/<tag>@notAfter</tag>. Además,
-            en el atributo <tag>@cert</tag> se han utilizado los valores <tag>high</tag> y
-               <tag>low</tag> para indicar la certeza sobre la fecha. Por ejemplo: <itemizedlist>
+         <para>Dates have been encoded with the <tag>date</tag> element following the format
+               <tag>YYYYY-MM-DD</tag> (or <tag>YYYYY-MM</tag> or <tag>YYYYY</tag>, depending on the
+            information available) in the attributes <tag>@when</tag>, <tag>@from/@to</tag> or
+               <tag>@notBefore/@notAfter</tag>. In addition, in the <tag>@cert</tag> attribute, the
+            values <tag>high</tag> and <tag>low</tag> have been used to indicate the certainty about
+            the date. For example: <itemizedlist>
                <listitem>
-                  <para>Fecha exacta:</para>
+                  <para>Exact date:</para>
                </listitem>
             </itemizedlist>
-                <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de
+            <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de
 la Nochebuena del año 1772&lt;/date&gt;</programlisting>
-                <itemizedlist>
+            <itemizedlist>
                <listitem>
-                  <para>Período de tiempo exacto:</para>
+                  <para>Exact time period:</para>
                </listitem>
             </itemizedlist>
-                <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
+            <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
 1731 al 11 de septiembre de 1741&lt;/date&gt;</programlisting>
-                <itemizedlist>
+            <itemizedlist>
                <listitem>
-                  <para>Período aproximado:</para>
+                  <para>Approximate period:</para>
                </listitem>
             </itemizedlist>
-            </para>
+         </para>
             <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
 de mayo de 1804&lt;/date&gt;</programlisting>
-         <para>Cuando no se ha podido determinar el emisor, el destinatario o los lugares y las
-            fechas de envío o recepción, se han utilizado los elementos correspondientes, pero con
-            el valor "N/A" (Not Available). Por ejemplo:</para>
+         <para>When it has not been possible to determine the sender, the addressee or the places
+            and dates of sending or receiving, the corresponding elements have been used, but with
+            the value "N/A" (Not Available). For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt;
    &lt;correspAction type="sent"&gt;
       &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
@@ -1892,10 +1890,11 @@ de mayo de 1804&lt;/date&gt;</programlisting>
 &lt;/correspDesc&gt;    </programlisting>
       </section>
       <section>
-         <title>Dirección postal</title>
-         <para>La dirección postal de una carta se ha codificado en el elemento <tag>opener</tag>
-            (inicio de la carta) o en el <tag>closer</tag> (cierre de la carta). Consta del elemento
-               <tag>address</tag> y uno o varios elementos hijos <tag>addrLine</tag>.</para>
+         <title>Postal address</title>
+         <para>The postal address of a letter has been encoded in the <tag>opener</tag>element
+            (start of the letter) or in the <tag>closer</tag> (close of the letter). It consists of
+            the <tag>address</tag> element and one or more <tag>addrLine</tag> child
+            elements.</para>
             <programlisting language="xml" xml:space="preserve">&lt;opener&gt;
    &lt;address&gt;
       &lt;addrLine&gt;Berlin, Kronenstraße 6&lt;/addrLine&gt;
@@ -1903,88 +1902,89 @@ de mayo de 1804&lt;/date&gt;</programlisting>
 &lt;/opener&gt; </programlisting>
       </section>
       <section>
-         <title>Inicio de la carta</title>
-         <para>El inicio de la carta se ha codificado con el elemento <tag>opener</tag>. Dentro, si
-            los hubiera, se ha codificado la fecha y el saludo con los elementos <tag>dateline</tag>
-            y <tag>salute</tag> respectivamente.</para>
-         <para>En el elemento <tag>dateline</tag> se ha utilizado el atributo <tag>@rend</tag> si la
-            fecha está sangrada o alineada a la derecha. Por ejemplo:</para>
+         <title>Beginning of the letter</title>
+         <para>The beginning of the letter has been encoded with the <tag>opener</tag> element.
+            Inside, if any, the date and salutation have been encoded with the
+            <tag>dateline</tag>and <tag>salute</tag> elements respectively.</para>
+         <para>In the <tag>dateline</tag> element the <tag>@rend</tag> attribute has been used if
+            the date is indented or aligned to the right. For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;opener&gt;
    &lt;dateline rend="align(right)"&gt;30 de julio de 1827&lt;/dateline&gt;
    &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
 &lt;/opener&gt;</programlisting>
       </section>
       <section>
-         <title>Actos de escritura</title>
-         <para>Los actos de escritura se han codificado con el elemento <tag>div</tag> con dos
-            atributos: por un lado, el atributo <tag>@type</tag> debe llevar el valor
-               <tag>writingSession</tag>; por el otro, <tag>@n</tag> debe indicar el número del acto
-            de escritura.</para>
+         <title>Writing sessions</title>
+         <para>The writing sessions have been coded with the <tag>div</tag> element with two
+            attributes: on the one hand, the <tag>@type</tag> attribute must carry the value
+               <tag>writingSession</tag>; on the other hand, <tag>@n</tag> must indicate the number
+            of the writing session.</para>
             <programlisting language="xml" xml:space="preserve">&lt;div type="writingSession"&gt;
-   &lt;p&gt;[Primer acto de escritura]&lt;/p&gt;
+   &lt;p&gt;[First writing session]&lt;/p&gt;
 &lt;/div&gt;
 &lt;div type="writingSession" n="2"&gt;
-   &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt;
+   &lt;p&gt;[Second wrotomg session]&lt;/p&gt;
 &lt;/div&gt;</programlisting>
       </section>
       <section>
-         <title>Cierre de la carta</title>
-         <para>El cierre de la carta se ha codificado en el elemento <tag>closer</tag>. La fórmula
-            de saludo se ha codificado con el elemento <tag>salute</tag> mientras que la firma se ha
-            codificado con el elemento <tag>signed</tag>. Con el atributo <tag>@rend</tag> del
-            elemento <tag>closer</tag> se ha representado la forma o apariencia con que se realizó
-            el cierre de la carta.</para>
-         <informaltable>
-            <thead>
-               <tr>
-                  <td>
-                     <para>Cierre de carta</para>
-                  </td>
-                  <td>
-                     <para>Valor para <tag>@rend</tag>
-                     </para>
-                  </td>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>
-                     <para>párrafo</para>
-                  </td>
-                  <td>
-                     <para>
-                        <tag>paragraph</tag>
-                     </para>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <para>dentro de una línea</para>
-                  </td>
-                  <td>
-                     <para>
-                        <tag>within the line</tag>
-                     </para>
-                  </td>
-               </tr>
-            </tbody>
-         </informaltable>
-         <para>Por ejemplo:</para>
+         <title>Closing of the letter</title>
+         <para>The closing of the letter has been encoded in the <tag>closer</tag> element. The
+            salutation formula has been encoded with the <tag>salute</tag> element while the
+            signature has been encoded with the <tag>signed</tag> element. The <tag>@rend</tag>
+            attribute of the <tag>closer</tag> element represents the form or appearance of the
+            closing of the letter.</para>
+            <informaltable>
+               <thead>
+                  <tr>
+                     <td>
+                        <para>Closing letter</para>
+                     </td>
+                     <td>
+                        <para>Value for <tag>@rend</tag>
+                        </para>
+                     </td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <para>paragraph</para>
+                     </td>
+                     <td>
+                        <para>
+                           <tag>paragraph</tag>
+                        </para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>within a line</para>
+                     </td>
+                     <td>
+                        <para>
+                           <tag>within the line</tag>
+                        </para>
+                     </td>
+                  </tr>
+               </tbody>
+            </informaltable>
+         <para>For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;closer rend="paragraph"&gt;
    &lt;salute&gt;Muchos saludos&lt;/salute&gt;
    &lt;signed&gt;F. E.&lt;/signed&gt;
 &lt;/closer&gt;</programlisting>
-         <para>Si hubiera una fecha en el cierre de la carta, se ha codificado en el elemento
-               <tag>closer</tag> con <tag>dateline</tag>.</para>
+         <para>If there was a date at the close of the letter, it has been encoded in the
+               <tag>closer</tag> element with <tag>dateline</tag>.</para>
             <programlisting language="xml" xml:space="preserve">&lt;closer rend="paragraph"&gt;
    &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt;
    &lt;!-- […] --&gt;
 &lt;/closer&gt;</programlisting>
       </section>
       <section>
-         <title>Posdata</title>
-         <para>La posdata se ha codificado después del <tag>closer</tag> con el elemento
-               <tag>postcript</tag>. La posdata siempre contiene al menos un párrafo (<tag>p</tag>).</para>
+         <title>Postscript</title>
+         <para>The postscript has been encoded after the <tag>closer</tag> with the
+               <tag>postscript</tag> element. The postscript always contains at least one
+               paragraph<tag>(p</tag>).</para>
             <programlisting language="xml" xml:space="preserve">&lt;postscript&gt;
    &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
 &lt;/postscript&gt;</programlisting>
