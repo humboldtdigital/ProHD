@@ -550,7 +550,7 @@
          <para>If the place is unknown, the content of <tag>placeName</tag> should be "N/A" (Not
             Available). For isntance:
             <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
-&lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
+   &lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
 &lt;placeName&gt;N/A&lt;/placeName&gt;    </programlisting> In this case, the
                <tag>@key</tag> attribute has not been used. </para>
       </section>
@@ -590,7 +590,7 @@
          <para>When the creation date is not known, the <tag>date</tag> element has also been used,
             but with the value "N/A" (Not available). For example:
             <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
-&lt;date&gt;N/A&lt;/date&gt;
+   &lt;date&gt;N/A&lt;/date&gt;
 &lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;</programlisting></para>
       </section>
       <section>
