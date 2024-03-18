@@ -1,11 +1,11 @@
-<?teipublisher template="documentation-prohd.html" odd="docbook.odd" view="div"depth="3" view="div" ?><?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+<?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><?xml-stylesheet type="text/css" href="../../../../../../../Program%20Files/Oxygen%20XML%20Author%2023/frameworks/docbook/css/docbook.css"?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
-      <title>Redaktionelle Kriterien</title>
+      <title>Leitlinien für die Bearbeitung</title>
       <copyright>
-         <year>2022-10-25</year>
+         <year>2024-03-18</year>
       </copyright>
       <keywordset>
-         <keyword>Documentación</keyword>
+         <keyword>Dokumentation</keyword>
       </keywordset>
       <author>
          <personname>
@@ -28,34 +28,32 @@
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
       </publisher>
-      <edition>Versión 4</edition>
+      <edition>5. Fassung</edition>
    </info>
    <section xml:id="metadatos">
       <title>Metadaten</title>
-      <para>Los metadatos utilizados en Proyecto Humboldt Digital son descriptivos e identifican <itemizedlist>
+      <para>Die im Rahmen von Proyecto Humboldt Digital verwendeten beschreibenden Metadaten geben Folgendes an: <itemizedlist>
             <listitem>
-               <para>la edición digital,</para>
+               <para>die digitale Ausgabe,</para>
             </listitem>
             <listitem>
-               <para>los responsables de la edición y la publicación,</para>
+               <para>die Herausgeber und Verleger,</para>
             </listitem>
             <listitem>
-               <para>la fuente de la que deriva el texto,</para>
+               <para>die Quelle, aus der der Text stammt,</para>
             </listitem>
             <listitem>
-               <para>las condiciones relacionadas con la creación y</para>
+               <para>die Bedingungen für die Erstellung</para>
             </listitem>
             <listitem>
-               <para>la clase de texto mediante categorías.</para>
+               <para>die Textart nach Kategorien.</para>
             </listitem>
-         </itemizedlist>Estos metadatos han sido aplicados a todo tipo de texto (documento, carta,
-         etc.).</para>
-      <para>La estructura de un encabezado TEI de un documento genérico es la
-         siguiente:</para>
+         </itemizedlist>Diese Metadaten wurden auf alle Arten von Texten (Dokumente, Briefe usw.) angewandt.</para>
+      <para>Die Struktur eines TEI-Headers eines generischen Dokuments ist wie folgt:</para>
          <programlisting language="xml">&lt;teiHeader&gt;
         &lt;fileDesc&gt;
             &lt;titleStmt&gt;
-                &lt;title type="main"&gt;[Introducir datos]&lt;/title&gt;
+                &lt;title type="main"&gt;[Enter data]&lt;/title&gt;
                 &lt;funder ref="https://www.auswaertiges-amt.de/de/"&gt;
                   Auswärtiges Amt&lt;/funder&gt;
                 &lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&gt;
@@ -64,8 +62,8 @@
                   Gerda Henkel Stiftung&lt;/funder&gt;
                 &lt;editor&gt;
                     &lt;persName&gt;
-                        &lt;surname&gt;[Introducir datos]&lt;/surname&gt;
-                        &lt;forename&gt;[Introducir datos]&lt;/forename&gt;
+                        &lt;surname&gt;[Enter data]&lt;/surname&gt;
+                        &lt;forename&gt;[Enter data]&lt;/forename&gt;
                     &lt;/persName&gt;
                 &lt;/editor&gt;
             &lt;/titleStmt&gt;
@@ -88,27 +86,27 @@
             &lt;sourceDesc&gt;
                 &lt;msDesc rend="manuscript"&gt;
                     &lt;msIdentifier&gt;
-                        &lt;institution&gt;[Introducir datos]&lt;/institution&gt;
-                        &lt;collection&gt;[Introducir datos]&lt;/collection&gt;
+                        &lt;institution&gt;[Enter data]&lt;/institution&gt;
+                        &lt;collection&gt;[Enter data]&lt;/collection&gt;
                         &lt;idno&gt;
-                            &lt;idno type="shelfmark"&gt;[Introducir datos]&lt;/idno&gt;
-                            &lt;idno type="uri"&gt;[Introducir datos]&lt;/idno&gt;
+                            &lt;idno type="shelfmark"&gt;[Enter data]&lt;/idno&gt;
+                            &lt;idno type="uri"&gt;[Enter data]&lt;/idno&gt;
                         &lt;/idno&gt;
                     &lt;/msIdentifier&gt;
-                    &lt;physDesc&gt;&lt;p&gt;[Introducir datos]&lt;/p&gt;&lt;/physDesc&gt;
+                    &lt;physDesc&gt;&lt;p&gt;[Enter data]&lt;/p&gt;&lt;/physDesc&gt;
                 &lt;/msDesc&gt;
             &lt;/sourceDesc&gt;
         &lt;/fileDesc&gt;
         &lt;profileDesc&gt;
-            &lt;creation&gt;[Introducir datos]&lt;/creation&gt;
+            &lt;creation&gt;[Enter data]&lt;/creation&gt;
             &lt;langUsage&gt;
-                &lt;language ident=""&gt;[Introducir datos]&lt;/language&gt;
+                &lt;language ident=""&gt;[Enter data]&lt;/language&gt;
             &lt;/langUsage&gt;
             &lt;abstract xml:lang="es"&gt;
-                &lt;p&gt;[Introducir datos]&lt;/p&gt;
+                &lt;p&gt;[Enter data]&lt;/p&gt;
             &lt;/abstract&gt;
             &lt;abstract xml:lang="de"&gt;
-                &lt;p&gt;[Introducir datos]&lt;/p&gt;
+                &lt;p&gt;[Enter data]&lt;/p&gt;
             &lt;/abstract&gt;
             &lt;textClass&gt;
                 &lt;catRef&gt;&lt;/catRef&gt;
@@ -154,51 +152,37 @@
 &lt;/teiHeader&gt;</programlisting>
 
       <section>
-         <title>Título</title>
-         <para>Todas las ediciones se han identificado con un título principal. El título ha sido
-            normalizado ortográficamente.</para>
-         <para>En <tag>titleStmt</tag>, la codificación del título principal se ha realizado
-            utilizando el elemento <tag>title</tag> y el atributo <tag>@type="main"</tag>. Por
-            ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;title type="main"&gt;Carta de consulta al Ayuntamiento
-               de La Habana&lt;/title&gt;</programlisting>
-         <para>Tras el título principal, se ha incluido de manera opcional el título en otro idioma,
-            con la ortografía original, un título alternativo o un subtítulo. Con este fin se puede
-            repetir el elemento <tag>title</tag> debajo del título principal y usar el atributo
-               <tag>@type="sub"</tag>:</para>
+         <title>Titel</title>
+         <para>Alle Ausgaben wurden durch einen Haupttitel gekennzeichnet. Der Titel wurde orthographisch vereinheitlicht.</para>
+         <para>In <tag>titleStmt</tag> wurde die Kodierung des Haupttitels mithilfe des title-Elements und des Attributs <tag>type="main"</tag> vorgenommen. Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;title type="main">Carta de consulta al Ayuntamiento
+               de La Habana&lt;/title></programlisting>
+         <para>Nach dem Haupttitel wird optional der Titel in einer anderen Sprache, mit der Originalschreibweise, ein Alternativtitel oder ein Untertitel eingefügt. Zu diesem Zweck kann das Element <tag>title</tag> unterhalb des Haupttitels zusammen mit dem Attribut <tag>@type="sub"</tag> wiederholt werden:</para>
             <programlisting language="xml" xml:space="preserve">&lt;title type="main"&gt;Carta de Francisco de Arango y Parreño
    a Alexander von Humboldt&lt;/title&gt;
 &lt;title type="sub" xml:lang="fr"&gt;À Monsieur Mr. le Baron
-   A. Humboldt&lt;/title&gt;         </programlisting>
-         <para>Se ha utilizado de manera opcional el atributo <tag>@xml:lang</tag> con un código
-            estándar para indicar el idioma del título alternativo: "es" para el español, "fr" para
-            el francés, "de" para el alemán, "en" para el inglés, etc.</para>
+   A. Humboldt&lt;/title&gt;       </programlisting>
+         <para>Das Attribut <tag>@xml:lang</tag> wurde optional mit einem Standardcode verwendet, um die Sprache des alternativen Titels anzugeben: "es" für Spanisch, "fr" für Englisch, "fr" für Französisch. standard code to indicate the language of the alternative title: "es" für Spanisch, "fr" für Französisch, "de" für Deutsch, "en" für Englisch usw. für Französisch, "de" für Deutsch, "en" für Englisch usw.</para>
       </section>
       <section>
-         <title>Editores y colaboradores</title>
-         <para>En el elemento <tag>titleStmt</tag>, se han identificado los responsables de la
-            edición con el elemento <tag>editor</tag>. El nombre de la persona se ha codificado con
-               <tag>persName</tag> y los siguientes elementos:</para>
+         <title>Redakteure und Mitarbeiter</title>
+         <para>In <tag>titleStmt</tag> wurden die Redakteure mit dem Element <tag>editor</tag> identifiziert. Der Name der Person wurde mit dem Element <tag>persName</tag> wie folgt kodiert:</para>
          <itemizedlist>
             <listitem>
-               <para>Apellido: <tag>surname</tag>
-               </para>
+               <para>Nachname: <tag>Nachname</tag>       </para>
             </listitem>
             <listitem>
-               <para>Nombre: <tag>forename</tag>
-               </para>
+               <para>Vorname: <tag>vorname</tag>      </para>
             </listitem>
          </itemizedlist>
-         <para>Se ha codificado de manera opcional en el atributo <tag>@ref</tag> la referencia a
-            una base de datos externa en forma de URL como, por ejemplo, VIAF u ORCID.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;editor&gt;
-   &lt;persName ref="http://viaf.org/viaf/21973914"&gt;
-     &lt;surname&gt;[Apellido]&lt;/surname&gt;
-     &lt;forename&gt;[Nombre]&lt;/forename&gt;
-   &lt;/persName&gt;
-&lt;/editor&gt;     </programlisting>
-         <para>Si hay más de una editora o editor, se ha repetido el elemento <tag>editor</tag>. Por
-            ejemplo: </para>
+         <para>Eine externe Datenbank in Form einer URL, z. B. VIAF oder ORCID, wurde optional im <tag>@ref-Attribut</tag> kodiert.</para>
+            <programlisting language="xml" xml:space="preserve">&lt;editor>
+   &lt;persName ref="http://viaf.org/viaf/21973914">
+     &lt;surname>[Surname]&lt;/surname>
+     &lt;forename>[Forename]&lt;/forename>
+   &lt;/persName>
+&lt;/editor>    </programlisting>
+         <para>Wenn es mehr als einen Bearbeiter gibt, wurde das <tag>Bearbeiterelement</tag> wiederholt, zum Beispiel: </para>
             <programlisting language="xml" xml:space="preserve">&lt;editor&gt;
                     &lt;persName&gt;
                         &lt;surname&gt;Tylus&lt;/surname&gt;
@@ -211,77 +195,58 @@
                         &lt;forename&gt;Kathrin&lt;/forename&gt;
                     &lt;/persName&gt;
                 &lt;/editor&gt;</programlisting>
-         <para>Si en la edición han participado otras personas con tareas menores, se ha incluido el
-            nombre de los colaboradores y colaboradoras con el elemento <tag>respStmt</tag>
-               (<quote>statement of responsibility</quote> – declaración de responsabilidad).
-            Nuevamente, el nombre de la persona se ha añadido en el elemento <tag>persName</tag>. En
-            el atributo <tag>@ref</tag> también se ha codificado de manera opcional la referencia a
-            una base de datos externa como VIAF u ORCID en forma de URL.</para>
-         <para>El tipo de colaboración se ha definido detalladamente con el elemento <tag>resp</tag>
-               (<quote>responsibility</quote> – responsabilidad). En un elemento <tag>note</tag> se
-            ha definido el tipo de contribución: colaboración, colaboración editorial,
-            transcripción, comentario o registros. Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;respStmt&gt;
-   &lt;persName ref="http://viaf.org/viaf/21973914"&gt;
-      &lt;surname&gt;[Apellido]&lt;/surname&gt;
-      &lt;forename&gt;[Nombre]&lt;/forename&gt;
-   &lt;/persName&gt;
-   &lt;resp&gt;
-      &lt;note type="remarkResponsibility"&gt;colaboración&lt;/note&gt;
-   &lt;/resp&gt;
-&lt;/respStmt&gt;</programlisting>
+         <para>Wenn andere Personen mit kleineren Aufgaben an der Ausgabe beteiligt waren, wurde der Name der Mitwirkenden in das Element <tag>respStmt</tag> (Verantwortlichkeitserklärung) aufgenommen. Auch hier wurde der Name der Person in das Element <tag>persName</tag> eingefügt. Im Attribut <tag>@ref</tag> wurde der Verweis auf eine externe Datenbank wie VIAF oder ORCID ebenfalls optional in Form einer URL kodiert.</para>
+         <para>Die Art der Zusammenarbeit wurde mit dem Element <tag>resp</tag>(responsibility) detailliert definiert. In einem <tag>Notiz-Element</tag> wurde die Art des Beitrags mit den folgenden Werten definiert: Zusammenarbeit, redaktionelle Zusammenarbeit, Transkription, Kommentar oder Aufzeichnungen. Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;respStmt>
+   &lt;persName ref="http://viaf.org/viaf/21973914">
+      &lt;surname>[Apellido]&lt;/surname>
+      &lt;forename>[Nombre]&lt;/forename>
+   &lt;/persName>
+   &lt;resp>
+      &lt;note type="remarkResponsibility">Collaboration&lt;/note>
+   &lt;/resp>
+&lt;/respStmt></programlisting>
       </section>
       <section>
-         <title>Financiación</title>
-         <para>Tras el nombre del editor o editora, se han identificado las tres entidades que
-            financian el proyecto: Auswärtiges Amt, Fritz Thyssen Stiftung y Gerda Henkel
-            Stiftung.</para>
-         <para>En <tag>titleStmt</tag> se ha utilizado el elemento <tag>funder</tag> de la siguiente
-            manera:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;funder ref="https://www.auswaertiges-amt.de/de/"&gt;
+         <title>Finanzierung</title>
+         <para>Nach dem Namen des Herausgebers werden die drei Förderer genannt: Auswärtiges Amt, Fritz Thyssen Stiftung und Gerda Henkel Stiftung.</para>
+         <para>In <tag>titleStmt</tag> wurde das Element funder wie folgt verwendet: </para>
+            <programlisting language="xml" xml:space="preserve">&lt;funder ref="https://www.auswaertiges-amt.de/de/">
    Auswärtiges Amt
-&lt;/funder&gt;
-&lt;funder ref="https://www.fritz-thyssen-stiftung.de/"&gt;
+&lt;/funder>
+&lt;funder ref="https://www.fritz-thyssen-stiftung.de/">
    Fritz Thyssen Stiftung
-&lt;/funder&gt;
-&lt;funder ref="https://www.gerda-henkel-stiftung.de/"&gt;
+&lt;/funder>
+&lt;funder ref="https://www.gerda-henkel-stiftung.de/">
    Gerda Henkel Stiftung
-&lt;/funder&gt;      </programlisting>
-         <para>El elemento <tag>funder</tag> lleva el atributo <tag>@ref</tag> con la URL de la web
-            de las tres entidades financiadoras.</para>
+&lt;/funder> </programlisting>
+         <para>Das Element <tag>funder</tag> enthält das Attribut <tag>@ref</tag> mit der URL der Website der drei Fördereinrichtungen.</para>
       </section>
       <section>
-         <title>Edición</title>
-         <para>Todas las ediciones del proyecto mencionan el Proyecto Humboldt Digital y documentan
-            la fecha de edición. Se ha codificado esta información sobre la edición con los
-            elementos <tag>editionStmt</tag> y <tag>p</tag> de la siguiente manera:</para>
+         <title>Ausgabe</title>
+         <para>Alle Editionen des Projekts erwähnen das Proyecto Humboldt Digital und dokumentieren das Editionsdatum. Diese Ausgabeninformationen wurden mit den Elementen <tag>editionStmt</tag>und <tag>p</tag> wie folgt kodiert: </para>
             <programlisting language="xml" xml:space="preserve">&lt;editionStmt&gt;
    &lt;p&gt;Proyecto Humboldt Digital (&lt;date&gt;2021&lt;/date&gt;)&lt;/p&gt;
 &lt;/editionStmt&gt; </programlisting>
-         <para>La fecha entre paréntesis corresponde al año de creación del documento TEI; es
-            importante no confundir esta fecha con la fecha de creación de la fuente de la que
-            deriva el texto.</para>
+         <para>Das Datum in Klammern entspricht dem Jahr der Erstellung des TEI-Dokuments; es ist wichtig, dieses Datum nicht mit dem Datum der Erstellung der Quelle zu verwechseln.</para>
       </section>
       <section>
-         <title>Publicación y licencia</title>
-         <para>En todas las ediciones se ha codificado información sobre las organizaciones
-            responsables de la distribución y publicación de las ediciones, los lugares de
-            publicación y la licencia.</para>
-         <para>Para ello se ha utilizado el elemento <tag>publicationStmt</tag>. Dentro de este
-            elemento, se han utilizado tres elementos anidados: <itemizedlist>
+         <title>Veröffentlichung und Lizenz</title>
+         <para>Die Angaben zu den für den Vertrieb und die Veröffentlichung der Ausgaben verantwortlichen Organisationen, zu den Veröffentlichungsorten und zur Lizenz sind in allen Ausgaben kodiert.</para>
+         <para>Zu diesem Zweck wurde das Element <tag>publicationStmt</tag> verwendet. Innerhalb dieses Elements wurden drei verschachtelte Elemente verwendet:<itemizedlist>
                <listitem>
                   <para>
-                     <tag>publisher</tag> (entidad que publica la edición), </para>
+                    <tag>publisher</tag> (veröffentlichende Entität), </para>
                </listitem>
                <listitem>
                   <para>
-                     <tag>pubPlace</tag> (lugar de publicación) y</para>
+                    <tag>pubPlace</tag> (Ort der Veröffentlichung),</para>
                </listitem>
                <listitem>
                   <para>
-                     <tag>availability</tag> (disponibilidad).</para>
+                    <tag>availability</tag> (Verfügbarkeit).</para>
                </listitem>
-            </itemizedlist> Por ejemplo:</para>
+            </itemizedlist>Zum Beispiel:</para>
             <programlisting language="xml" xml:space="preserve">&lt;publicationStmt&gt;
    &lt;publisher&gt;
       &lt;ref target="http://www.bbaw.de"&gt;Berlin-Brandenburgische
@@ -296,85 +261,52 @@
       4.0 Internacional (CC BY 4.0) &lt;/licence&gt;
    &lt;/availability&gt;
 &lt;/publicationStmt&gt;</programlisting>
-         <para>De manera opcional, se ha enriquecido la información sobre la entidad responsable de
-            la publicación mediante el elemento <tag>ref</tag> para proporcionar un hipervínculo a
-            la web con el atributo <tag>@target</tag>. Asimismo, de manera opcional, se ha utilizado
-            el atributo <tag>@ref</tag> en el elemento <tag>pubPlace</tag> para identificar el lugar
-            de publicación con un URI procedente de GeoNames.</para>
-         <para>Los elementos <tag>publisher</tag> y <tag>pubPlace</tag> son repetibles, es decir, es
-            posible incluir más de una entidad y lugar de publicación, pero la información sobre la
-            disponibilidad del fichero no es repetible. Así, el elemento <tag>availability</tag>,
-            con un atributo <tag>@status="free"</tag>, contiene a su vez un elemento
-               <tag>licence</tag> con información sobre la licencia de la edición digital; se ha
-            utilizado el atributo <tag>@target</tag> para dar la URL de la licencia.</para>
-         <para>En todas las ediciones del proyecto, se ha utilizado la licencia "Creative Commons
-            Atribución 4.0 Internacional (CC BY 4.0)".</para>
+         <para>Optional wurden die Informationen über die für die Veröffentlichung verantwortliche Stelle mit dem <tag>ref-Element</tag> angereichert, um einen Hyperlink zur Website mit dem <tag>@target-Attribut</tag> bereitzustellen. Optional wurde auch das <tag>@ref-Attribut</tag> im <tag>pubPlace-Element</tag> verwendet, um den Ort der Veröffentlichung mit einer URI von GeoNames zu identifizieren. </para>
+         <para>Die Elemente <tag>publisher</tag> und <tag>pubPlace</tag> sind wiederholbar, d. h. es ist möglich, mehr als eine Entität und einen Veröffentlichungsort anzugeben, aber die Informationen über die Verfügbarkeit der Datei sind nicht wiederholbar. So enthält das <tag>availability-Element</tag>mit dem Attribut <tag>@status="free"</tag> ein <tag>licence-Element</tag>mit Informationen über die Lizenz der digitalen Ausgabe; das Attribut <tag>@target</tag> wurde verwendet, um die URL der Lizenz anzugeben.</para>
+         <para>In allen Ausgaben des Projekts wurde die Lizenz "Creative Commons Atribución 4.0 Internacional (CC BY 4.0)" verwendet.</para>
       </section>
       <section>
-         <title>Fuente textual</title>
-         <para>En todas las ediciones del proyecto se ha codificado la fuente de la que deriva el
-            texto, el nombre de la institución en la que se conserva el documento y al menos un
-            identificador como una signatura.</para>
-         <para>La descripción de la fuente se ha codificado con el elemento <tag>msDesc</tag>
-            (manuscript description). Dentro se ha utilizado el elemento <tag>msIdentifier</tag>
-            para proporcionar información sobre la institución que conserva el documento con el
-            elemento <tag>institution</tag> y la signatura con el elemento <tag>idno</tag>, que
-            lleva el atributo <tag>@type</tag> con el valor <tag>shelfmark</tag>. Se ha codificado
-            este elemento <tag>idno</tag> dentro de otro elemento <tag>idno</tag> a fin de repetir
-            tantos elementos <tag>idno</tag> como sea necesario. De manera opcional, se ha incluido
-            información sobre la colección con el elemento <tag>collection</tag> y el nombre o
-            título de la fuente tal y como aparece en el documento mediante el elemento
-               <tag>msName</tag>. Por ejemplo:</para>
+         <title>Textuelle Quelle</title>
+         <para>In allen Ausgaben des Projekts sind die Quelle, aus der der Text stammt, der Name der Institution, in der das Dokument aufbewahrt wird, und mindestens ein Identifikator wie eine Signatur verschlüsselt worden.</para>
+         <para>Die Quellenbeschreibung wurde mit dem Element <tag>msDesc</tag> (manuscript description) kodiert. Darin wurde das Element <tag>msIdentifier</tag> verwendet, um Informationen über die Institution, die das Dokument besitzt, mit dem Element <tag>institution</tag> und die Signatur mit dem Element <tag>idno</tag> bereitzustellen, das das Attribut <tag>@type</tag> mit dem Wert <tag>shelfmark</tag> enthält. Dieses<tag> idno-Element</tag> wurde innerhalb eines anderen <tag>idno-Elements</tag> kodiert, um so viele idno-Elemente wie nötig zu wiederholen. Optional wurden Informationen über die Sammlung mit dem <tag>collection-Element</tag> und dem Namen oder Titel der Quelle, wie er im Dokument erscheint, mit dem <tag>msName-Element</tag> eingefügt, zum Beispiel:</para>
             <programlisting language="xml" xml:space="preserve">&lt;msDesc type="copy"&gt;
    &lt;msIdentifier&gt;
-      &lt;institution&gt;[institución]&lt;/institution&gt;
-      &lt;collection&gt;[colección]&lt;/collection&gt;
+      &lt;institution&gt;[institution]&lt;/institution&gt;
+      &lt;collection&gt;[collection]&lt;/collection&gt;
       &lt;idno&gt;
-         &lt;idno type="shelfmark"&gt;[signatura]&lt;/idno&gt;
+         &lt;idno type="shelfmark"&gt;[shelfmark]&lt;/idno&gt;
       &lt;/idno&gt;
-      &lt;msName&gt;[nombre o título]&lt;/msName&gt;
+      &lt;msName&gt;[name or title of the document]&lt;/msName&gt;
    &lt;/msIdentifier&gt;
-&lt;/msDesc&gt;         </programlisting>
+&lt;/msDesc&gt; </programlisting>
          <tip>
-                <para>Es importante no confundir el nombre o título de la fuente codificado en <tag>msName</tag> con el título de la edición digital, que pueden difererir.</para>
+                <para>Es ist wichtig, den Namen oder Titel der in <tag>msName</tag> kodierten Quelle nicht mit dem Titel der digitalen Ausgabe zu verwechseln, der unterschiedlich sein kann.</para>
             </tip>
-         <para>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado
-            una edición impresa, se ha codificado la información en <tag>listWit</tag> y se ha
-            utilizado el elemento <tag>witness</tag>. Dentro se ha usado un elemento <tag>bibl</tag>
-            para codificar una referencia bibliográfica. En <tag>bibl</tag> se ha utilizado el
-            atributo <tag>@type</tag> con el valor <tag>print</tag> para distinguirlo de un
-            manuscrito.</para>
-         <para>Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;witness&gt;
-   &lt;bibl type="print"&gt;Humboldt, Alexander von: Geografía de la plantas,
+         <para>Wenn es sich bei der Quelle, aus der der Text stammt, um ein gedrucktes Dokument handelt oder eine gedruckte Ausgabe konsultiert wurde, wurden die Informationen in <tag>listWit</tag> in <tag>witness</tag>kodiert. Darin wurde ein <tag>bibl-Element</tag> verwendet, um eine bibliografische Referenz zu kodieren, wobei das Attribut <tag>@type</tag> mit dem Wert print verwendet wurde, um es von einem Manuskript zu unterscheiden. </para>
+         <para>Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;witness>
+   &lt;bibl type="print">Humboldt, Alexander von: Geografía de la plantas,
    ó Quadro físico de los Andes Equinoxiales, y de los paises
-   vecinos. Semanario del Nuevo Reyno de Granada...&lt;/bibl&gt;
-&lt;/witness&gt;     </programlisting>
+   vecinos. Semanario del Nuevo Reyno de Granada...&lt;/bibl>
+&lt;/witness>   </programlisting>
          <section>
-            <title>URI del registro bibliográfico</title>
-            <para>Las fuentes documentales se identifican tradicionalmente con una signatura. Dado
-               que las signaturas solo pueden ser identificadas parcialmente por máquinas, siempre
-               que sea posible, se ha añadido un URI si se conoce o está disponible. El URI es un
-               identificador de recursos uniforme (del inglés <quote>Uniform Resource
-                  Identifier</quote>). El identificador está estandarizado y es legible por un
-               programa informático, ya que únicamente se compone de ciertos símbolos (por ejemplo,
-               los espacios en blanco no están permitidos).</para>
-            <para>Siempre que ha sido posible se ha utilizado un URI para conectar el texto editado
-               con el registro bibliográfico del repositorio digital del proyecto.</para>
+            <title>URI-Bezeichner des bibliografischen Eintrags</title>
+            <para>Dokumentquellen werden traditionell durch eine Signatur oder eine andere Art von Kennung identifiziert. Da die Signatur nur teilweise maschinell identifiziert werden kann, wurde, wann immer möglich, ein URI<tag>(Uniform Resource Identifier</tag>) hinzugefügt, sofern bekannt oder verfügbar. Der Identifikator ist standardisiert und maschinenlesbar, da er nur aus bestimmten Zeichen und Symbolen besteht (Leerzeichen sind z. B. nicht erlaubt).</para>
+            <para>Wo immer es möglich war, wurde eine URI verwendet, um den bearbeiteten Text mit dem bibliografischen Eintrag im digitalen Repository des Projekts zu verknüpfen. </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Nombre del elemento</para>
+                        <para>Element</para>
                      </td>
                      <td>
-                        <para>Punto de inserción</para>
+                        <para>Einführungsstelle</para>
                      </td>
                      <td>
-                        <para>Atributo</para>
+                        <para>Attribut</para>
                      </td>
                      <td>
-                        <para>Contenido del elemento</para>
+                        <para>Inhalt</para>
                      </td>
                   </tr>
                </thead>
@@ -382,7 +314,7 @@
                   <tr>
                      <td>
                         <para>
-                           <tag>idno</tag>
+                           <tag>keine Ahnung</tag>
                         </para>
                      </td>
                      <td>
@@ -401,57 +333,48 @@
                   </tr>
                </tbody>
             </informaltable>
-            <para>Se ha utilizado el elemento <tag>idno</tag> como parte del elemento
-                  <tag>msIdentifier</tag> y como elemento hijo de otro <tag>idno</tag> utilizando el
-               atributo <tag>@type</tag> con valor "uri" para los enlaces permanentes o bien
-               "URLImages" para los facsímiles. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;idno&gt;
-   &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
-   &lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-1272345&lt;/idno&gt;
-   &lt;idno type="URLImages"&gt;
-   http://resolver.staatsbibliothek-berlin.de/SBB00015CC500000000&lt;/idno&gt;
-&lt;/idno&gt; </programlisting>
+            <para>Das <tag>idno-Element</tag> wurde als Teil des msIdentifier-Elements und als untergeordnetes Element einer anderen idno unter Verwendung des <tag>@type-Attributs</tag> mit dem Wert "uri" für Permalinks oder "URLImages" für Faksimiles verwendet. Zum Beispiel: </para>
+               <programlisting language="xml" xml:space="preserve">&lt;idno>
+   &lt;idno type="shelfmark">Caja pequeña 7b, no. 68&lt;/idno>
+   &lt;idno type="uri">http://kalliope-verbund.info/DE-611-HS-1272345&lt;/idno>
+   &lt;idno type="URLImages">
+   http://resolver.staatsbibliothek-berlin.de/SBB00015CC500000000&lt;/idno>
+&lt;/idno> </programlisting>
          </section>
          <section>
-            <title>Tipo de fuente textual</title>
-            <para>La fuente de la que deriva el texto editado puede ser de diferentes tipos:</para>
+            <title>Art der Textquelle</title>
+            <para>Die Quelle, aus der der bearbeitete Text stammt, kann unterschiedlicher Art sein:</para>
             <itemizedlist>
                <listitem>
-                  <para>Manuscrito</para>
+                  <para>Manuskript</para>
                </listitem>
                <listitem>
-                  <para>Copia</para>
+                  <para>Kopieren</para>
                </listitem>
                <listitem>
-                  <para>Borrador</para>
+                  <para>Entwurf</para>
                </listitem>
                <listitem>
-                  <para>Impreso</para>
+                  <para>Drucken</para>
                </listitem>
             </itemizedlist>
-            <para>Cuando se utilizan más de una fuente textual, se ha seleccionado <emphasis role="bold">un único</emphasis> documento como base textual. Los demás testimonios
-               textuales se han mencionado explícitamente en la edición sólo en los lugares que
-               transmiten variantes mediante un comentario editorial.</para>
-            <para>Si la existencia y el contenido de un documento se han deducido con la ayuda de
-               otros documentos, no hay base textual. En tal caso, en el elemento <tag>msDesc</tag>,
-               se ha codificado el tipo de fuente textual con el atributo <tag>@rend</tag>. Para
-               ello se ha escogido entre los siguientes valores:</para>
+            <para>Wo mehr als eine Textquelle verwendet wird, wurde ein <emphasis role="bold">einziges Dokument</emphasis>als Textgrundlage ausgewählt. Die anderen Textzeugen wurden in der Ausgabe nur dann ausdrücklich erwähnt, wenn sie durch einen redaktionellen Kommentar Varianten vermitteln. </para>
+            <para>Wenn das Vorhandensein und der Inhalt eines Dokuments mit Hilfe anderer Dokumente abgeleitet wurde, gibt es keine textuelle Grundlage. In diesem Fall wurde im <tag>msDesc-Element</tag> die Art der Textquelle mit dem Attribut <tag>@rend</tag> kodiert. Zu diesem Zweck wurden die folgenden Werte gewählt: </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de fuente textual</para>
+                        <para>Art der Quelle </para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@rend</tag>
-                        </para>
+                        <para>Wert von <tag>@rend</tag>    </para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>Desarrollado</para>
+                        <para>Ausführlich</para>
                      </td>
                      <td>
                         <para>
@@ -461,57 +384,54 @@
                   </tr>
                   <tr>
                      <td>
-                        <para>Borrador</para>
+                        <para>Entwurf</para>
                      </td>
                      <td>
                         <para>
-                           <tag>concept</tag>
+                           <tag>Konzept</tag>
                         </para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>Manuscrito</para>
+                        <para>Manuskript</para>
                      </td>
                      <td>
                         <para>
-                           <tag>manuscript</tag>
+                           <tag>Manuskript</tag>
                         </para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>Copia</para>
+                        <para>Kopieren</para>
                      </td>
                      <td>
                         <para>
-                           <tag>copy</tag>
+                           <tag>kopieren.</tag>
                         </para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>Impreso</para>
+                        <para>Drucken</para>
                      </td>
                      <td>
                         <para>
-                           <tag>print</tag>
+                           <tag>drucken</tag>
                         </para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+            <para>Zum Beispiel:</para>
                <programlisting language="xml" xml:space="preserve">&lt;msDesc rend="manuscript"&gt;</programlisting>
          </section>
       </section>
       <section>
-         <title>Descripción del documento</title>
-         <para>De manera opcional, se han descrito las características físicas (papel, formato,
-            número de páginas, etc.) de la fuente textual de la que deriva la edición.</para>
-         <para>La descripción del documento se ha codificado con el elemento <tag>physDesc</tag>
-               (<quote>physical description</quote>, en español: descripción física). La descripción
-            ha sido proporcionada como texto en un elemento <tag>p</tag>:</para>
+         <title>Beschreibung des Dokuments</title>
+         <para>Optional werden die physischen Merkmale (Papier, Format, Seitenzahl usw.) der Textquelle, aus der die Ausgabe stammt, beschrieben.</para>
+         <para>Die Beschreibung des Dokuments wurde mit dem Element <tag>physDesc</tag>(physical description) kodiert. Die Beschreibung wurde als Text in einem <tag>p-Element</tag> bereitgestellt:</para>
             <programlisting language="xml" xml:space="preserve">&lt;physDesc&gt;
    &lt;p&gt;Manuscrito autógrafo de autor desconocido en buen estado
    de conservación y de seis páginas de extensión. Forma parte del
@@ -524,118 +444,89 @@
 &lt;/physDesc&gt;</programlisting>
       </section>
       <section>
-         <title>Autor del texto</title>
-         <para>Si se conoce quién es autor del texto, esta información se ha codificado en el
-            elemento <tag>profileDesc</tag>. Allí, se ha creado un elemento <tag>creation</tag>
-            donde se han codificado los datos sobre la creación: autor, lugar de escritura y fecha
-            de creación.</para>
-         <para>El nombre del autor se ha codificado con el elemento <tag>persName</tag>.
-            <!-- Tobias: esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades -->
-            En caso de seleccionar el autor del registro de personas del proyecto, el identificador
-            asociado se ha generado en el atributo <tag>@key</tag>, creando un enlace al registro.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;profileDesc&gt;
-   &lt;creation&gt;
-      &lt;persName key="H0012682"&gt;
-      Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
-   &lt;/creation&gt;
-&lt;/profileDesc&gt;</programlisting>
-         <para>Se ha respetado siempre el siguiente orden: primero el apellido y luego el nombre,
-            separados por una coma. Si se conoce la fecha de nacimiento y fallecimiento, se ha
-            incluido seguida del nombre y entre paréntesis como se muestra en el ejemplo
-            anterior.</para>
-         <para>Cuando el autor es deconocido, se ha empleado el mismo elemento <tag>persName</tag>,
-            pero con el contenido "N/A" <emphasis>(Not Available</emphasis>). Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;creation&gt;
-   &lt;persName&gt;N/A.&lt;/persName&gt;
-   &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
-   &lt;date when="1804-04-10"&gt;10 de abril de 1804&lt;/date&gt;
-   &lt;placeName key="https://www.geonames.org/3553478"&gt;La Habana&lt;/placeName&gt;
-&lt;/creation&gt;</programlisting>
-         <para>Siempre que han participado más de una persona en la creación del texto se ha
-            repetido el elemento <tag>persName</tag>.</para>
+         <title>Autor</title>
+         <para>Wenn der Autor des Textes bekannt ist, wurde diese Information im <tag>profileDesc-Element</tag> kodiert. Dort wurde ein <tag>creation-Element</tag> erstellt, in dem die Informationen über die Erstellung kodiert wurden: Autor, Ort der Erstellung und Datum der Erstellung. </para>
+         <para>Der Name des Autors wurde mit dem Element <tag>persName</tag> kodiert. Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;profileDesc>
+   &lt;creation>
+      &lt;persName>Arango y Parreño, Francisco de (1765-1837)&lt;/persName>
+   &lt;/creation>
+&lt;/profileDesc></programlisting>
+         <para>Es wurde immer die folgende Reihenfolge eingehalten: zuerst der Nachname und dann der Vorname, getrennt durch ein Komma. Wenn das Geburts- und Sterbedatum bekannt ist, wurde es gefolgt vom Vornamen und in Klammern angegeben, wie im obigen Beispiel. </para>
+         <para>Wenn der Autor unbekannt ist, wird das gleiche <tag>persName-Element</tag> verwendet, jedoch mit dem Inhalt "N/A" (Not Available). Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;creation>
+   &lt;persName>N/A&lt;/persName>
+   &lt;persName key="H0012069">Humboldt, Alexander von (1769-1859)&lt;/persName>
+   &lt;date when="1804-04-10">10 de abril de 1804&lt;/date>
+   &lt;placeName key="https://www.geonames.org/3553478">La Habana&lt;/placeName>
+&lt;/creation></programlisting>
+         <para>Immer wenn mehr als eine Person an der Erstellung des Textes beteiligt war, wurde das Element <tag>persName</tag> wiederholt.</para>
       </section>
       <section>
-         <title>Lugar de escritura</title>
-         <para>Si se conoce el lugar de escritura, se ha codificado también en el elemento
-               <tag>profileDesc</tag>. Allí, si aún no existiera uno, se ha creado un elemento
-               <tag>creation</tag>. Dentro de este elemento, se ha utilizado <tag>placeName</tag>
-            para codificar el nombre del lugar.
-            <!-- esta frase la tenemos que tener en mente, porque depende de lo que al final hacemos en cuanto al Register/anotación de entidades -->
-            Si el lugar de escritura figura en el registro de lugares del proyecto, el identificador
-            asociado se ha incluido en el atributo <tag>@key</tag>. Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;      </programlisting>
-         <para>Si no se conoce el lugar de escritura del texto, también se ha usado el mismo
-            elemento <tag>placeName</tag>, pero el valor utilizado es "N/A". Por ejemplo:
-            <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
-&lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
-&lt;placeName&gt;N/A&lt;/placeName&gt;    </programlisting> En tal caso, no se ha
-            utilizado el atributo <tag>@key</tag>. </para>
+         <title>Ort der Erstellung</title>
+         <para>Wenn der Erstellungsort bekannt ist, wurde er auch im <tag>profileDesc-Element</tag> kodiert. Bei der <tag>Erstellung</tag> wurde ein <tag>placeName</tag>verwendet, um den Namen des Ortes zu kodieren. Optional wurde ein Attribut <tag>@key</tag>verwendet, um einen externen Bezeichner von Geonames bereitzustellen. Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;placeName key="https://www.geonames.org/3553478"&gt;La Habana&lt;/placeName&gt;      </programlisting>
+         <para>Wenn der Ort unbekannt ist, sollte der Inhalt von <tag>placeName</tag> "N/A" (Not
+            Available) sein. Zum Beispiel:
+            <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012069">Humboldt, Alexander von (1769-1859)&lt;/persName>
+   &lt;date notBefore="1802">No antes de 1802&lt;/date>
+&lt;placeName>N/A&lt;/placeName>     </programlisting> In diesem Fall wurde das Attribut
+               <tag>@key</tag> nicht verwendet. </para>
       </section>
       <section>
-         <title>Fechas</title>
-         <para>Si se conoce la fecha de creación, se ha codificado con el elemento <tag>date</tag>
-            respetando el formato <tag>AAAA-MM-DD</tag> (o <tag>AA-MM</tag> o <tag>AAAA</tag>,
-            dependiendo de la información disponible) y utilizando los atributos <code>@when</code>,
-               <tag>@from</tag>/<tag>@to</tag> o <tag>@notBefore</tag>/<tag>@notAfter</tag>. Esto
-            permite que la aplicación web utilice estos datos para buscar información en un periodo
-            concreto de tiempo o filtrar los documentos a partir de la fecha estandarizada. <itemizedlist>
+         <title>Datum der Erstellung</title>
+         <para>Wenn das Erstellungsdatum bekannt ist, wurde es mit dem <tag>Datumselement</tag>
+            unter Einhaltung des Formats JJJJ-MM-TT (oder JJJJ-MM oder JJJJ, je nach den verfügbaren
+            Informationen) und unter Verwendung der Attribute <tag>@when</tag>, <tag>@from/@to</tag>
+            oder <tag>@notBefore/@notAfter</tag> kodiert. So kann die Webanwendung diese Daten
+            nutzen, um nach Informationen in einem bestimmten Zeitraum zu suchen oder Dokumente auf
+            der Grundlage des standardisierten Datums zu filtern. <itemizedlist>
                <listitem>
-                  <para>Fecha exacta:</para>
+                  <para>Genaues Datum:</para>
                </listitem>
             </itemizedlist>
-                <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes
-   de la Nochebuena del año 1772&lt;/date&gt;        </programlisting>
-                <itemizedlist>
+            <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes
+   de la Nochebuena del año 1772&lt;/date&gt; </programlisting>
+            <itemizedlist>
                <listitem>
-                  <para>Período de tiempo exacto:</para>
+                  <para>Zeitabschnitt:</para>
                </listitem>
             </itemizedlist>
-                <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre
-   de 1731 al 11 de septiembre de 1741&lt;/date&gt;     </programlisting>
-                <itemizedlist>
+            <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11">del 11 de noviembre
+   de 1731 al 11 de septiembre de 1741&lt;/date>  </programlisting>
+            <itemizedlist>
                <listitem>
-                  <para>Período aproximado:</para>
+                  <para>Ungefähre Zeitspanne:</para>
                </listitem>
             </itemizedlist>
-            </para>
+         </para>
 
-            <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
-   de mayo de 1804&lt;/date&gt;     </programlisting>
-         <para>Además, de manera opcional, se ha utilizado el atributo <tag>@cert</tag> con los
-            valores <tag>high</tag> y <tag>low</tag> para codificar la certeza con que se sabe si la
-            fecha es correcta.</para>
-         <para>Cuando no se conoce al fecha de creación del texto, también se ha utilizado el
-            elemento <tag>date</tag>, pero con el valor "N/A" (Not available). Por ejemplo:
+            <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16">Primera mitad
+   de mayo de 1804&lt;/date>    </programlisting>
+         <para>Darüber hinaus wurde optional das Attribut <tag>@cert</tag> mit den Werten <tag>hoch</tag> und <tag>niedrig</tag> verwendet, um die Sicherheit zu kodieren, mit der das Datum als korrekt bekannt ist.</para>
+         <para>Wenn das Erstellungsdatum nicht bekannt ist, wird auch das <tag>Datumselement</tag>
+            verwendet, allerdings mit dem Wert "N/A" (Not available). Zum Beispiel:
             <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
-&lt;date&gt;N/A&lt;/date&gt;
-&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;</programlisting> En tal
-            caso, no se ha utilizado ningún atributo en el elemento <tag>date</tag>.</para>
+   &lt;date&gt;N/A&lt;/date&gt;
+&lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;</programlisting></para>
       </section>
       <section>
-         <title>Idioma</title>
-         <para>En todas las ediciones del proyecto, se ha codificado el idioma principal del texto.
-            En <tag>profileDesc</tag>, se ha utilizado el elemento <tag>langUsage</tag>. Allí se ha
-            anidado el elemento <tag>language</tag> para codificar el idioma o lengua. Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;langUsage&gt;
-   &lt;language ident="es"&gt;Español&lt;/language&gt;
-&lt;/langUsage&gt; </programlisting>
-         <para>Se ha utilizado el atributo <tag>@ident</tag> para identificar con un código
-            estandarizado el idioma: "es" para el español, "de" para el alemán, "en" para el inglés,
-            "fr" para el francés, etc.</para>
-         <para>Si el texto contiene partes sustanciales en otro idioma, se ha repetido elemento
-               <tag>language</tag> para codificar la lengua secundaria. Por
-            ejemplo:</para>
+         <title>Sprache</title>
+         <para>In allen Ausgaben des Projekts wurde die Hauptsprache des Textes kodiert. In <tag>profileDesc</tag> wurde das <tag>langUsage-Element</tag> verwendet. Dort wurde das Element <tag>language</tag> verschachtelt, um die Sprache zu kodieren. Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;langUsage>
+   &lt;language ident="es">Español&lt;/language>
+&lt;/langUsage></programlisting>
+         <para>Das Attribut <tag>@ident</tag> wurde verwendet, um die Sprache mit einem standardisierten Code zu kennzeichnen: "es" für Spanisch, "de" für Deutsch, "en" für Englisch, "fr" für Französisch, usw.</para>
+         <para>Wenn der Text wesentliche Teile in einer anderen Sprache enthält, wurde ein <tag>Sprachelement</tag>wiederholt, um die zweite Sprache zu kodieren. Zum Beispiel:</para>
             <programlisting language="xml" xml:space="preserve">&lt;langUsage&gt;
      &lt;language ident="es"&gt;Español&lt;/language&gt;
      &lt;language ident="fr"&gt;Francés&lt;/language&gt;
 &lt;/langUsage&gt;</programlisting>
       </section>
       <section>
-         <title>Resumen</title>
-         <para>En todas las ediciones del proyecto, se ha proporcionado un resumen del contenido
-            intelectual del texto, los temas, las ideas discutidas, etc.</para>
-         <para>El resumen se ha codificado con <tag>profileDesc/abstract</tag> en un elemento
-               <tag>p</tag> de la siguiente manera:</para>
+         <title>Abstrakt</title>
+         <para>In allen Ausgaben des Projekts wurde eine Zusammenfassung des intellektuellen Inhalts des Textes, der Themen, der diskutierten Ideen usw. gegeben.</para>
+         <para>Die Zusammenfassung wurde mit <tag>profileDesc/abstract</tag> in einem <tag>p-Element</tag>wie folgt kodiert:</para>
             <programlisting language="xml" xml:space="preserve">&lt;abstract xml:lang="es"&gt;
    &lt;p&gt;Notas de Humboldt sobre la obra de
    Jean Nicolas Berthe "Précis Historique
@@ -644,211 +535,130 @@
    preparación de su tratado científico sobre la fiebre amarilla.
    La obra de Berthe fue publicada en 1802.&lt;/p&gt;
 &lt;/abstract&gt; </programlisting>
-         <para>Se ha proporcionado el resumen en español y en alemán. Se ha repetido el elemento
-               <tag>abstract</tag> y se ha utilizado el atributo <tag>@xml:lang</tag> con un código
-            estandarizado de dos caracteres: "es" para el español y "de" para el alemán.</para>
+         <para>Die Zusammenfassung wurde in Spanisch und Deutsch verfasst. Das <tag>abstract-Element</tag> wurde wiederholt und das <tag>@xml:lang-Attribut</tag> wurde mit einem standardisierten zweistelligen Code verwendet: "es" für Spanisch und "de" für Deutsch.</para>
       </section>
       <section>
-         <title>Categorización</title>
-         <para>En <tag>profileDesc</tag> se ha utilizado el elemento <tag>textClass</tag> para
-            incluir distintas categorías con las que clasificar el texto editado. Las categorías
-            utilizadas son: género, forma y materia(s). Para ello, se ha utilizado el elemento
-               <tag>catRef</tag> con los atributos <tag>@scheme</tag> y <tag>@target</tag>. Por
-            ejemplo: </para>
-            <programlisting language="xml" xml:space="preserve">&lt;textClass&gt;
-   &lt;catRef scheme="#genre" target="#notebooks"/&gt;
-   &lt;catRef scheme="#form" target="#manuscript"/&gt;
-   &lt;catRef scheme="#subject" target="#slavery"/&gt;
-   &lt;catRef scheme="#subject" target="#geography"/&gt;
-   &lt;catRef scheme="#subject" target="#sugar"/&gt;
-&lt;/textClass&gt; </programlisting>
-         <para>Las tres categorías son repetibles y opcionales. Todas las categorías se han definido
-            previamente en la taxonomía del proyecto situada en el elemento
-            <tag>taxonomy</tag>.</para>
-         <para>En la medida de lo posible, se han utilizado términos procedentes de la Library of
-            Congress y de otras bibliotecas nacionales como la Deutsche Nationalbibliothek y la
-            Biblioteca Nacional de España.</para>
+         <title>Kategorien</title>
+         <para>In <tag>profileDesc</tag> wurde das <tag>textClass-Element</tag> verwendet, um verschiedene Kategorien zur Klassifizierung des bearbeiteten Textes aufzunehmen. Die verwendeten Kategorien sind: Genre, Form und Thema(n). Hierfür wurde das Element <tag>catRef</tag> mit den Attributen <tag>@scheme</tag> und <tag>@target</tag> verwendet. Zum Beispiel: </para>
+            <programlisting language="xml" xml:space="preserve">&lt;textClass>
+   &lt;catRef scheme="#genre" target="#notebooks"/>
+   &lt;catRef scheme="#form" target="#manuscript"/>
+   &lt;catRef scheme="#subject" target="#slavery"/>
+   &lt;catRef scheme="#subject" target="#geography"/>
+   &lt;catRef scheme="#subject" target="#sugar"/>
+&lt;/textClass></programlisting>
+         <para>Die drei Kategorien sind wiederholbar und optional. Alle Kategorien wurden zuvor in der Projekttaxonomie definiert, die sich im <tag>Taxonomie-Element</tag> befindet. </para>
+         <para>Soweit möglich, wurden Begriffe aus der Library of Congress und anderen Nationalbibliotheken wie der Deutschen Nationalbibliothek und der Biblioteca Nacional de España verwendet. </para>
       </section>
    </section>
    <section xml:id="texto">
-      <title>Texto</title>
-      <para>Los textos editados como parte del proyecto han sido codificados desde un punto de vista
-         estructural. Se han representado de manera explícita con etiquetado TEI todos los párrafos,
-         rupturas de línea, listas, tablas, notas y dibujos. Asimismo, se han codificado la
-         paginación o foliación de la fuente, incluyendo las páginas en blanco, y los cambios en la
-         tipografía como los destacados, los espacios dejados por el autor, las intervenciones
-         autoriales como las eliminaciones, adiciones y sustituciones, y las intervenciones
-         editoriales como las normalizaciones, la resolución de las abreviaturas, las palabras
-         suplidas, las correcciones de errores evidentes, las lecturas inciertas, las omisiones y
-         las palabras en otro idioma. Por último, en la medida de lo posible, se han codificado
-         también las fechas y las entidades nombradas (personas, lugares y organizaciones) en el
-         cuerpo del texto.</para>
+      <title>Text</title>
+      <para>Die im Rahmen des Projekts bearbeiteten Texte wurden strukturell kodiert. Alle Absätze, Zeilenumbrüche, Listen, Tabellen, Notizen und Zeichnungen wurden explizit mit TEI-Elementen dargestellt. Weitere explizit kodierte Textphänomene sind: die Paginierung oder Foliierung der Quelle, einschließlich leerer Seiten, und Veränderungen in der Typografie wie Hervorhebungen, vom Autor belassene Leerzeichen, Eingriffe des Autors wie Streichungen, Ergänzungen und Ersetzungen sowie redaktionelle Eingriffe wie Normalisierungen, Auflösung von Abkürzungen, gelieferte Wörter, Korrekturen offensichtlicher Fehler, unsichere Lesarten, Auslassungen und Wörter in einer anderen Sprache.</para>
       <section xml:id="estructuras-textuales">
-         <title>Estructuras textuales</title>
+         <title>Textliche Struktur</title>
          <section>
-            <title>Foliación y paginación</title>
-            <para>En todas las ediciones del proyecto se ha codificado el inicio de la foliación o
-               paginación, es decir, el lugar en que se inicia un folio nuevo o página nueva.
-               Siempre se ha codificado el principio del folio o página, no el final. </para>
-            <para>El inicio de folio o página se ha codificado siempre con el elemento vacío
-                  <tag>pb/</tag> (pagebreak). El atributo <tag>@n</tag> contiene el número de página
-               o folio (según la secuencia física del documento o del autor).</para>
+            <title>Foliierung und Paginierung</title>
+            <para>In allen Ausgaben des Projekts wurde der Beginn der Foliierung oder Paginierung, d. h. die Stelle, an der ein neues Folio oder eine neue Seite beginnt, kodiert.</para>
+            <para>Der Anfang des Folios oder der Seite wurde immer mit dem leeren Element <tag>pb/</tag> (Seitenumbruch) kodiert. Das Attribut <tag>@n</tag> enthält die Seiten- oder Folionummer (je nach der physischen Reihenfolge des Dokuments oder des Autors). </para>
                <programlisting language="xml" xml:space="preserve">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano</programlisting>
-            <para>La digitalización del folio o página se ha codificado con el atributo
-                  <tag>@facs</tag> (facsimile). Se ha codificado el nombre del fichero de la imagen
-               digital incluyendo la foliación archivística y la extensión "tif". El nombre del
-               fichero corresponde a un URI, es decir, es único en el dossier digital. Por ejemplo:</para>
+            <para>Die Digitalisierung des Blattes oder der Seite wurde mit dem Attribut <tag>@facs</tag> (Faksimile) kodiert. Der Dateiname der digitalen Bilddatei wurde mit der archivischen Foliierung und der Erweiterung "tif" kodiert. Der Dateiname entspricht einem URI, d. h. er ist im digitalen Dossier eindeutig. Zum Beispiel:</para>
                <programlisting language="xml" xml:space="preserve">&lt;pb n="1r" facs="prohd0014_1r.tif"/&gt;</programlisting>
-            <para>Cualquier otra información sobre la numeración o paginación contenida en la fuente
-               se ha codificado con el elemento <tag>fw</tag> (forme work); este elemento lleva el
-               atributo <tag>@type</tag> con el valor <tag>folNum</tag>.</para>
+            <para>Alle anderen in der Quelle enthaltenen Nummerierungs- oder Paginierungsinformationen wurden mit dem Element <tag>fw</tag> (forme work) kodiert; dieses Element trägt das Attribut <tag>@type</tag> mit dem Wert <tag>folNum</tag>:</para>
                <programlisting language="xml" xml:space="preserve">&lt;fw type="folNum"&gt;34&lt;/fw&gt;</programlisting>
          </section>
          <section>
-            <title>Secciones y encabezados de secciones</title>
-            <para>De manera opcional, en documentos con una estructura lógica interna relevante,
-               como actas y protocolos, se han codificado las secciones mediante el elemento
-                  <tag>div</tag>. Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;tex&gt;
-   &lt;div&gt;
-      &lt;div&gt;[Sección o apartado 1]&lt;/div&gt;
-      &lt;div&gt;[Sección o apartado 2]&lt;/div&gt;
-   &lt;/div&gt;
-&lt;/tex&gt;</programlisting>
-            <para>Esta estructura interna se ha codificado siempre en combinación con la paginación
-               o foliación con <tag>pb</tag> y el uso de <tag>p</tag>.</para>
-            <para>También de manera opcional, en documentos como actas, se han codificado los
-               encabezados de sección con el elemento <tag>head</tag>. </para>
+            <title>Abschnitte und Überschriften</title>
+            <para>Bei Dokumenten mit einer entsprechenden internen logischen Struktur, wie z. B. Protokollen, wurden die Abschnitte optional mit dem <tag>div-Element</tag> kodiert, zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;tex>
+   &lt;div>
+      &lt;div>[Sección o apartado 1]&lt;/div>
+      &lt;div>[Sección o apartado 2]&lt;/div>
+   &lt;/div>
+&lt;/tex></programlisting>
+            <para>Diese interne Struktur wurde immer in Verbindung mit einer Paginierung oder Foliierung mit <tag>pb</tag> und der Verwendung von <tag>p</tag> kodiert.</para>
+            <para>Optional können in Dokumenten wie Protokollen auch Abschnittsüberschriften mit dem Element <tag>head</tag> kodiert werden.</para>
          </section>
          <section>
-            <title>Páginas en blanco</title>
-            <para>En todas las ediciones del proyecto se han codificado las páginas en blanco de la
-               fuente textual. Además, se ha distinguido entre páginas en blanco, páginas perdidas,
-               espacios en blanco semánticamente significativos y omisiones de los editores.</para>
-            <para>Para poder representar y mostrar la foliación correctamente, se ha codificado cada
-               página (en blanco) individualmente. Aunque se sucedan varias páginas en blanco,
-               siempre se ha introducido un número <quote>1</quote> para cada nueva página en blanco
-               codificada.</para>
-            <para>Las páginas en blanco se han codificado con el elemento (vacío) <tag>gap/</tag>.
-               Este se ha utilizado justo después del salto de página (<tag>pb/</tag>) anterior. Los
-               dos atributos <tag>@unit</tag> y <tag>@quantity</tag> del elemento <tag>gap/</tag>
-               llevan los valores <tag>pages</tag> y <tag>1</tag>. El atributo <tag>@reason</tag>
-               contiene el valor <tag>empty</tag>. Cuando hay más de una página en blanco seguida,
-               se han codificado cada una de ellas individualmente.</para>
+            <title>Leere Seiten</title>
+            <para>In allen Editionen des Projekts wurden die Leerseiten der Textquelle kodiert. Darüber hinaus wurde zwischen Leerseiten, fehlenden Seiten, semantisch bedeutsamen Leerstellen und Auslassungen durch die Herausgeber unterschieden.</para>
+            <para>Um die Foliierung korrekt darstellen und anzeigen zu können, wurde jede (leere) Seite einzeln kodiert. Auch bei einer Abfolge von Leerseiten wurde für jede neu kodierte Leerseite immer eine Nummer <tag>1</tag> eingetragen.</para>
+            <para>Leere Seiten wurden mit dem Element (leer) <tag>gap/</tag> kodiert. Dieses wurde direkt nach dem obigen Seitenumbruch<tag>(pb/</tag>) verwendet. Die beiden Attribute <tag>@unit</tag> und <tag>@quantity </tag>des <tag>gap/-Elements</tag> tragen die Werte <tag>pages</tag> und <tag>1</tag>. Das Attribut <tag>@reason</tag> enthält den Wert <tag>empty</tag>. Wenn es mehr als eine leere Seite in einer Zeile gibt, wurde jede Seite einzeln kodiert. </para>
                <programlisting language="xml" xml:space="preserve">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</programlisting>
          </section>
          <section>
-            <title>Párrafos</title>
-            <para>En todas las ediciones del proyecto se han codificado los párrafos siguiendo la
-               secuencia de la fuente textual (sea un manuscrito o un impreso). De manera opcional
-               se ha codificado el sangrado de los párrafos si la editora o editor considera dicha
-               información relevante.</para>
-            <para>Los párrafos se han codificado con el elemento <tag>p</tag> (paragraph).</para>
+            <title>Paragraphen</title>
+            <para>In allen Ausgaben des Projekts wurden die Absätze entsprechend der Reihenfolge der Textquelle kodiert. Die Einrückung von Absätzen wurde optional kodiert, wenn der Redakteur diese Information für relevant hält.</para>
+            <para>Die Absätze wurden mit dem Element <tag>p</tag> (paragraph) kodiert.</para>
          </section>
          <section>
-            <title>Rupturas de línea</title>
-            <para>Las rupturas de línea se han codificado de manera explícita siguiendo la fuente
-               textual con un elemento (vacío) <tag>lb/</tag> (line beginning). El elemento
-               <tag>lb/</tag> se ha utilizado al <emphasis role="bold">comienzo</emphasis> de la
-               línea, tal y como determinan las directrices TEI.</para>
-            <para>Si el salto de línea ocurre dentro de una palabra, se ha codificado con el
-               atributo <tag>@break</tag> y el valor <tag>no</tag>. En caso de aparecer un separador
-               en la fuente original, no se ha transcrito como tal sino que se ha codificado con el
-               elemento <tag>g</tag> y el atributo <tag>@ref="#typoHyphen"</tag>. Por ejemplo:</para>
+            <title>Anfänge der Linie </title>
+            <para>Zeilenanfänge wurden explizit im Anschluss an die Textquelle mit einem (leeren) <tag>lb/-Element</tag> (Zeilenanfang) kodiert. Das <tag>lb/-Element</tag> wurde gemäß den TEI-Richtlinien am <emphasis role="bold">Anfang</emphasis> der Zeile verwendet. </para>
+            <para>Wenn eine Zeile innerhalb eines Wortes beginnt, wurde sie mit dem Attribut <tag>@break</tag>und dem Wert <tag>no</tag> kodiert. Wenn in der Originalquelle ein Trennzeichen erscheint, wurde es nicht als solches transkribiert, sondern mit dem Element <tag>g</tag> und dem Attribut <tag>@ref="#typoHyphen"</tag> kodiert. Zum Beispiel:</para>
                <programlisting language="xml" xml:space="preserve">y le añadí al propio ti&lt;g ref="#typoHyphen"/&gt;&lt;lb/&gt;empo</programlisting>
          </section>
          <section>
-            <title>Espacios en blanco</title>
-            <para>El espacio en blanco semánticamente significativo (por ejemplo, a veces los
-               autores dejan un espacio en el texto para complementarlo posteriormente) se ha
-               codificado con el elemento vacío <tag>space</tag>. La reproducción de dichos vacíos
-               en la transcripción se ha distinguido de las omisiones realizadas por los editores,
-               así como de las páginas vacías o perdidas, cada una de las cuales se ha codificado
-               como <tag>gap/</tag>.</para>
-            <para>El alcance de la omisión se ha indicado mediante <tag>@unit</tag> y
-                  <tag>@quantity</tag>. Si el número de líneas (<tag>unit="lines"</tag>), caracteres
-                  (<tag>unit="chars"</tag>) o palabras (<tag>unit="words"</tag>) omitidos no se
-               puede determinar de manera segura, se ha utilizado el valor <tag>1</tag> en
-                  <tag>@quantity</tag>. Por ejemplo:
-               <programlisting language="xml" xml:space="preserve">sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur...            </programlisting>
-               De manera opcional, se ha utilizado el atributo <tag>@dim</tag> para indicar si se
-               trata de un espacio en blanco horizontal o vertical.</para>
+            <title>Leere Stellen</title>
+            <para>Semantisch bedeutsame Leerstellen (z. B. lassen Autoren manchmal eine Lücke im Text, um ihn später zu ergänzen) wurden mit dem leeren Element <tag>space/</tag> kodiert. Die Wiedergabe solcher Lücken in der Transkription wurde von Auslassungen durch die Redakteure sowie von leeren oder fehlenden Seiten unterschieden, die jeweils mit <tag>gap/</tag> kodiert wurden.</para>
+            <para>Das Ausmaß der Auslassung wurde durch <tag>@unit</tag> und <tag>@quantity</tag> angegeben. Wenn die Anzahl der ausgelassenen Zeilen (unit="lines"), Zeichen (unit="chars") oder Wörter (unit="words") nicht zuverlässig bestimmt werden kann, wurde in <tag>@quantity</tag> der Wert <tag>1</tag> verwendet. Zum Beispiel: <programlisting language="xml" xml:space="preserve">sur une longueur de plus de &lt;space quantity="1" unit="words"/&gt;. Sa largeur... </programlisting>           Optional wurde das Attribut <tag>@dim</tag> verwendet, um anzugeben, ob es sich um einen horizontalen oder vertikalen Leerraum handelt.</para>
          </section>
          <section>
-            <title>Listas</title>
-            <para>Las listas se han codificado con el elemento <tag>list</tag>. Los puntos o líneas
-               individuales se han transcrito en un elemento <tag>item</tag>. La numeración
-               existente (también con letras) no se ha codificado de manera independiente, sino que
-               se ha transcrito dentro del elemento <tag>item</tag>.</para>
-               <programlisting language="xml" xml:space="preserve">&lt;list&gt;
-   &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt;
-   &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;
-   mais quand le Capucin est islado = 10750 mètres.&lt;/item&gt;
-   &lt;item&gt;Orinoco près du Baraguan 889 t.&lt;/item&gt;
-   &lt;item&gt;Orinoco près de urbano 2674 t. &lt;lb/&gt;
-   jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/&gt;
-   &lt;lb break="no"/&gt;na et de I. vieja de Montica.&lt;/item&gt;
-&lt;/list&gt;</programlisting>
+            <title>Verzeichnisse</title>
+            <para>Aufzählungen wurden mit dem <tag>Listenelement</tag> kodiert. Jeder Aufzählungspunkt wurde in ein <tag>item-Element</tag> umgeschrieben. Vorhandene Nummerierungen wurden nicht unabhängig kodiert, sondern direkt in das Element <tag>item</tag> übertragen. </para>
+               <programlisting language="xml" xml:space="preserve">&lt;list>
+   &lt;item>Le Rio Apure près de S. Fernando 206 t.&lt;/item>
+   &lt;item>Orinoco à la bocca Apure 1905 t.&lt;lb/>
+   mais quand le Capucin est islado = 10750 mètres.&lt;/item>
+   &lt;item>Orinoco près du Baraguan 889 t.&lt;/item>
+   &lt;item>Orinoco près de urbano 2674 t. &lt;lb/>
+   jusqu’au delà de l’Isle de Urba&lt;g ref="#typoHyphen"/>
+   &lt;lb break="no"/>na et de I. vieja de Montica.&lt;/item>
+&lt;/list></programlisting>
          </section>
          <section>
-            <title>Tablas</title>
-            <para>Las tablas contenidas en la fuente se han transcrito como tal, haciendo distinción
-               entre tablas explícitas e implícitas. Se ha considerado como tablas explícitas
-               aquellas dibujadas por el autor, mientras que las implícitas son reconocibles sólo
-               por la disposición de sus contenidos. Se ha distinguido entre tablas y enumeraciones
-               que se asemejan a listas.</para>
-            <para>Las tablas se han codificado con el elemento <tag>table</tag>. Se ha asignado a la
-               primera fila de la tabla el atributo <tag>@role="label"</tag> para que se considere
-               un encabezado. Por ejemplo:</para>
+            <title>Tabellen</title>
+            <para>Die in der Quelle enthaltenen Tabellen wurden als solche transkribiert, wobei zwischen expliziten und impliziten Tabellen unterschieden wird. Als explizite Tabellen gelten solche, die vom Autor erstellt wurden, während implizite Tabellen nur an der Anordnung ihres Inhalts zu erkennen sind. Es wurde zwischen Tabellen und Aufzählungen, die Listen ähneln, unterschieden. </para>
+            <para>Die Tabellen wurden mit dem <tag>table-Element</tag> kodiert. Der ersten Zeile der Tabelle wurde das Attribut <tag>@role="label"</tag> zugewiesen, um als Überschrift zu gelten. Zum Beispiel:</para>
 
-               <programlisting language="xml" xml:space="preserve">&lt;table rows="3" cols="2"&gt;
+               <programlisting language="xml" xml:space="preserve">&lt;t&lt;table rows="3" cols="2"&gt;
    &lt;head&gt;Tabla&lt;/head&gt;
       &lt;row role="label"&gt;
-         &lt;cell&gt;[Encabezado columna 1]&lt;/cell&gt;
-         &lt;cell&gt;[Encabezado columna 2]&lt;/cell&gt;
+         &lt;cell&gt;[Header column 1]&lt;/cell&gt;
+         &lt;cell&gt;[Header column 2]&lt;/cell&gt;
       &lt;/row&gt;
       &lt;row&gt;
-         &lt;cell&gt;[Columna 1/ Fila 1]&lt;/cell&gt;
-         &lt;cell&gt;[Columna 2/ Fila 1]&lt;/cell&gt;
+         &lt;cell&gt;[Column 1/ Row 1]&lt;/cell&gt;
+         &lt;cell&gt;[Column 2/ Row 2]&lt;/cell&gt;
       &lt;/row&gt; …
 &lt;/table&gt;</programlisting>
          </section>
          <section>
-            <title>Firmas</title>
-            <para>De manera opcional, en documentos como actas y protocolos, se ha codificado en el
-               elemento <tag>closer</tag> la firma de los participantes en la sesión. Para ello, se
-               ha utilizado el elemento <tag>signed</tag>. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;closer&gt;
-   &lt;signed&gt; Benigno Duque &lt;choice&gt;
-             &lt;orig&gt;deHeredia&lt;/orig&gt;
-             &lt;reg&gt;de Heredia&lt;/reg&gt;
-           &lt;/choice&gt;&lt;/signed&gt;
-   &lt;signed&gt;Ylincheta&lt;/signed&gt;
-&lt;/closer&gt;                 </programlisting>
+            <title>Unterschriften</title>
+            <para>Optional wurde in Dokumenten wie Protokollen die Unterschrift der Sitzungsteilnehmer in dem Element <tag>closer</tag> kodiert. Zu diesem Zweck wurde jede Unterschrift mit dem Element <tag>signiert</tag> kodiert. Zum Beispiel:</para>
+               <programlisting language="xml" xml:space="preserve">&lt;closer>
+   &lt;signed> Benigno Duque &lt;choice>
+             &lt;orig>deHeredia&lt;/orig>
+             &lt;reg>de Heredia&lt;/reg>
+           &lt;/choice>&lt;/signed>
+   &lt;signed>Ylincheta&lt;/signed>
+&lt;/closer>               </programlisting>
          </section>
          <section>
-            <title>Notas</title>
-            <para>Las notas del autor o de un editor contemporáneo no se han insertado siguiendo su
-               ubicación en el manuscrito, sino en el pasaje del texto al que la nota se refiere
-               realmente (o que el editor supone razonablemente que se refiere). En caso de emplear
-               una marca de inserción (asterisco, número, etc.), se ha utilizado una señal de
-               inserción general (es decir, el elemento vacío <tag>metamark/</tag>) para indicar que
-               el texto ha sido introducido por el autor y no por los editores.</para>
-            <para>Las notas se han codificado con el elemento <tag>note</tag>:</para>
+            <title>Anmerkungen</title>
+            <para>Anmerkungen des Autors oder eines zeitgenössischen Redakteurs wurden nicht nach ihrer Position im Manuskript eingefügt, sondern an der Textstelle, auf die sich die Anmerkung tatsächlich bezieht (oder von der der Redakteur vernünftigerweise annimmt, dass sie sich darauf bezieht). </para>
+            <para>Die Notizen wurden mit dem Element <tag>note</tag> kodiert</para>
                <programlisting language="xml" xml:space="preserve">En los partidos más remotos una caballería
-&lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de
-tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra
+&lt;note place="mBottom" hand="#author">La caballería es una superficie de
+tierra de quatro cientas treinta y dos varas en quadro.&lt;/note> de tierra
 montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</programlisting>
-            <para>Cuando es posible identificar al autor de la nota, se ha codificado esta
-               información con el atributo <tag>@hand</tag>:</para>
+            <para>Wo es möglich ist, den Verfasser der Notiz zu identifizieren, wurde diese Information mit dem Attribut <tag>@hand</tag> kodiert: </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Valor</para>
+                        <para>Wert</para>
                      </td>
                      <td>
-                        <para>Definición</para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
@@ -860,7 +670,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                         </para>
                      </td>
                      <td>
-                        <para>Autor del texto</para>
+                        <para>Autor des Textes</para>
                      </td>
                   </tr>
                   <tr>
@@ -870,40 +680,30 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                         </para>
                      </td>
                      <td>
-                        <para>Destinatario de esta carta</para>
+                        <para>Adressat dieses Schreibens</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <para>
-                           <tag>#unknown</tag>
+                           <tag>#unkown</tag>
                         </para>
                      </td>
                      <td>
-                        <para>Desconocido</para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>
-                           <tag>H000000</tag>
-                        </para>
-                     </td>
-                     <td>
-                        <para>ID interno proveniente del registro de personas</para>
+                        <para>Unbekannt</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>El lugar de la nota se ha codificado con el atributo <tag>@place</tag>:</para>
+            <para>Der Ort der Notiz wurde mit dem Attribut <tag>@place</tag>kodiert:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Valor</para>
+                        <para>Wert</para>
                      </td>
                      <td>
-                        <para>Definición</para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
@@ -915,7 +715,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                         </para>
                      </td>
                      <td>
-                        <para>margen izquierdo</para>
+                        <para>linker Rand</para>
                      </td>
                   </tr>
                   <tr>
@@ -925,7 +725,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                         </para>
                      </td>
                      <td>
-                        <para>margen derecho</para>
+                        <para>rechter Rand</para>
                      </td>
                   </tr>
                   <tr>
@@ -935,7 +735,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                         </para>
                      </td>
                      <td>
-                        <para>parte superior</para>
+                        <para>oberer Rand</para>
                      </td>
                   </tr>
                   <tr>
@@ -945,7 +745,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                         </para>
                      </td>
                      <td>
-                        <para>parte inferior</para>
+                        <para>unterer Rand</para>
                      </td>
                   </tr>
                   <tr>
@@ -955,45 +755,36 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                         </para>
                      </td>
                      <td>
-                        <para>dentro de la línea</para>
+                        <para>im Einklang</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Si el autor utiliza una marca de inserción, se ha codificado con el elemento vacío
-                  <tag>metamark/</tag>. La apariencia de la marca de inserción (asterisco, número,
-               etc.) no se ha hecho explícita.</para>
-            <para>Se ha diferenciado entre las notas y las adiciones: las adiciones complementan el
-               texto principal y se integran sintácticamente en él. Las notas son unidades de texto
-               independientes.</para>
+            <para>Wenn der Autor eine Einfügemarke verwendet, wurde diese mit dem leeren Element <tag>metamark/</tag> kodiert. Das Aussehen der Einfügemarke (Sternchen, Zahl usw.) wurde nicht explizit angegeben. </para>
+            <para>Es wird zwischen Anmerkungen und Zusätzen unterschieden: Zusätze ergänzen den Haupttext und sind syntaktisch in ihn integriert. Anmerkungen sind eigenständige Texteinheiten.</para>
          </section>
       </section>
       <section xml:id="intervenciones-autoriales">
-         <title>Intervenciones autoriales</title>
-         <para>En todas las ediciones digitales del proyecto se han codificado los cambios de
-            tipografía y las intervenciones autoriales de manera explícita, es decir, con etiquetado
-            TEI.</para>
+         <title>Autorielle Interventionen</title>
+         <para>In allen digitalen Editionen des Projekts wurden Änderungen der Typografie und Eingriffe des Autors explizit, d. h. mit TEI-Elementen, kodiert.</para>
          <section>
-            <title>Destacados</title>
-            <para>Los destacados y marcas en el borde del documento se han codificado con el
-               elemento <tag>hi</tag> (highlighted) y el atributo <tag>@rendition</tag> para
-               especificar su apariencia:</para>
+            <title>Hervorgehobener Text</title>
+            <para>Hervorgehobene Textrandmarkierungen wurden mit dem <tag>hi-Element</tag> (highlighted) und dem <tag>@rendition-Attribut</tag> kodiert, um ihr Aussehen zu bestimmen:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de destacado</para>
+                        <para>Art der Hervorhebung</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@rendition</tag>
-                        </para>
+                        <para>Wert von <tag>@rendition</tag>         </para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>simple</para>
+                        <para>einfach</para>
                      </td>
                      <td>
                         <para>
@@ -1003,7 +794,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                   </tr>
                   <tr>
                      <td>
-                        <para>doble</para>
+                        <para>doppelt</para>
                      </td>
                      <td>
                         <para>
@@ -1013,29 +804,23 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                   </tr>
                   <tr>
                      <td>
-                        <para>marcado al margen</para>
+                        <para>am Rande vermerkt</para>
                      </td>
                      <td>
                         <para>
-                           <tag>#mMM</tag>
+                           <tag>#(*)</tag>
                         </para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">Sucinta noticia de la situación
-&lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</programlisting>
-            <para>Si un párrafo completo aparece en la fuente destacado con una marca en el margen,
-               se ha codificado con el elemento <tag>p</tag> y el atributo <tag>@rendition</tag> con
-               el valor <tag>#mMM</tag> (marca al borde).</para>
+            <para>Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">Sucinta noticia de la situación &lt;hi rendition="#uu"&gt;presente de esta colonia. Agosto de 800''&lt;/hi&gt;</programlisting>
+            <para>Wenn ein ganzer Absatz in der hervorgehobenen Schrift mit einer Markierung am Rand erscheint, wurde er mit dem Element <tag>p</tag> und dem Attribut <tag>@rendition</tag> mit dem Wert <tag>#mMM</tag> (Randmarkierung) kodiert.</para>
          </section>
          <section>
-            <title>Superscript</title>
-            <para>Los números o letras que aparecen volados (es decir, ligeramente elevados respecto
-               a la línea) en la fuente textual se han codificado con el elemento <tag>hi</tag>
-               (highlighted) y el atributo <tag>@rendition</tag> con valor <tag>#sup</tag>. Por
-               ejemplo:</para>
+            <title>Hochgestellt</title>
+            <para>Zahlen oder Buchstaben, die im Textfont hochgestellt (d.h. leicht erhöht über der Zeile) erscheinen, wurden mit dem Element <tag>hi</tag> (hervorgehoben) und dem Attribut <tag>@rendition</tag> mit dem Wert <tag>#sup</tag> kodiert. Zum Beispiel: </para>
                <programlisting language="xml" xml:space="preserve">le ofreciera de mi parte
 algunas observaciones &lt;choice&gt;
    &lt;abbr&gt;sob&lt;hi rendition="#sup"&gt;e&lt;/hi&gt;&lt;/abbr&gt;
@@ -1043,27 +828,23 @@ algunas observaciones &lt;choice&gt;
 &lt;/choice&gt; los&lt;lb/&gt; principales hechos </programlisting>
          </section>
          <section>
-            <title>Eliminaciones</title>
-            <para>Siempre que sea legible y con independencia de si se encuentra en saltos de línea,
-               abreviaturas, normalizaciones y correcciones o adiciones del editor, se ha codificado
-               el texto eliminado con el elemento <tag>del</tag> (deletion) y haciendo uso del
-               atributo <tag>@rendition</tag> para especificar el tipo de eliminación:</para>
+            <title>Löschungen</title>
+            <para>Solange er lesbar ist und unabhängig davon, ob es sich um Zeilenumbrüche, Abkürzungen, Normalisierungen und redaktionelle Korrekturen oder Ergänzungen handelt, wurde der gelöschte Text mit dem Element del (deletion) kodiert, wobei das Attribut @rendition zur Angabe der Art der Löschung verwendet wurde:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de eliminación</para>
+                        <para>Art der Löschung</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@rendition</tag>
-                        </para>
+                        <para>Wert von <tag>@rendition</tag>         </para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>reescritura encima del texto original</para>
+                        <para>überschrieben</para>
                      </td>
                      <td>
                         <para>
@@ -1072,9 +853,7 @@ algunas observaciones &lt;choice&gt;
                      </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>tachado</para>
-                     </td>
+                     <td>durchgestrichen</td>
                      <td>
                         <para>
                            <tag>#s</tag>
@@ -1083,7 +862,7 @@ algunas observaciones &lt;choice&gt;
                   </tr>
                   <tr>
                      <td>
-                        <para>borrado</para>
+                        <para>Gelöscht</para>
                      </td>
                      <td>
                         <para>
@@ -1093,27 +872,22 @@ algunas observaciones &lt;choice&gt;
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+            <para>Zum Beispiel:</para>
                <programlisting language="xml" xml:space="preserve">Conocen ya estos vecinos la esplendidez en la mesa, las viviendas,
-muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</programlisting>
+muebles, &lt;del rendition="#s">y&lt;/del> vestidos y tren de calle.</programlisting>
          </section>
          <section>
-            <title>Adiciones</title>
-            <para>En todas las ediciones del proyecto se han codificado las adiciones que el propio
-               autor ha realizado en la fuente textual. Se entiende por adiciones todos los añadidos
-               realizados por el autor que sólo amplían el texto y se integran
-               sintácticamente.</para>
-            <para>Las adiciones hechas por el autor se han codificado con <tag>add</tag> (addition)
-               utilizando el atributo <tag>@place</tag> para especificar el lugar de la
-               adición:</para>
+            <title>Ergänzungen</title>
+            <para>In allen Ausgaben des Projekts wurden die eigenen Ergänzungen des Autors zur Textquelle kodiert. Im Gegensatz zu den Notizen erweitern die Ergänzungen den Text nur und sind syntaktisch integriert.</para>
+            <para>Hinzufügungen des Autors wurden mit <tag>add</tag> (addition) codiert, wobei das Attribut <tag>@place</tag> den Ort der Hinzufügung angibt:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Valor</para>
+                        <para>Wert von @place</para>
                      </td>
                      <td>
-                        <para>Definición</para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
@@ -1125,7 +899,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>encima de la línea</para>
+                        <para>oberhalb der Linie</para>
                      </td>
                   </tr>
                   <tr>
@@ -1135,7 +909,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>debajo de la línea</para>
+                        <para>unter dem Strich</para>
                      </td>
                   </tr>
                   <tr>
@@ -1145,37 +919,37 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>en la misma línea</para>
+                        <para>im Einklang</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <para>
-                           <tag>across</tag>
+                           <tag>über</tag>
                         </para>
                      </td>
                      <td>
-                        <para>sobre el texto original</para>
+                        <para>quer durch den Text</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <para>
-                           <tag>left</tag>
+                           <tag>links</tag>
                         </para>
                      </td>
                      <td>
-                        <para>en el margen izquierdo</para>
+                        <para>linker Rand</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <para>
-                           <tag>right</tag>
+                           <tag>rechts</tag>
                         </para>
                      </td>
                      <td>
-                        <para>en el margen derecho</para>
+                        <para>rechter Rand</para>
                      </td>
                   </tr>
                   <tr>
@@ -1185,7 +959,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>en el margen superior</para>
+                        <para>oberer Rand</para>
                      </td>
                   </tr>
                   <tr>
@@ -1195,220 +969,214 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
                         </para>
                      </td>
                      <td>
-                        <para>en el margen inferior</para>
+                        <para>unterer Rand</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+            <para>Zum Beispiel:</para>
                <programlisting language="xml" xml:space="preserve">[…] y logré para el Comercio con estranjeros,
-los &lt;add place="intralinear"&gt;ensanches&lt;/add&gt; que se
+los &lt;add place="intralinear">ensanches&lt;/add> que se
 explican en el documento […]</programlisting>
-            <para>Si hay una marca de inserción hecha por el autor en la fuente, se ha codificado
-               con el elemento <tag>metamark/</tag>. La forma de la marca de inserción (asterisco,
-               número, etc.) no se ha especificado.</para>
+            <para>Wenn der Autor in der Quelle eine Einfügemarke gesetzt hat, wurde diese mit dem Element <tag>metamark/</tag> kodiert. Die Form der Einfügemarke (Sternchen, Nummer usw.) wurde nicht angegeben.</para>
          </section>
          <section>
-            <title>Sustituciones</title>
-            <para>Si se elimina una palabra o un pasaje del texto en la fuente y al mismo tiempo se
-               añade una palabra, estos dos fenómenos textuales se han codificado juntos con un
-               elemento <tag>subst</tag> (substitution).</para>
-            <para>La eliminación se ha codificado con el elemento <tag>del</tag> (deletion). El tipo
-               de eliminación se ha especificado en el atributo <tag>@rendition</tag>:</para>
+            <title>Vertretungen</title>
+            <para>Wird in der Quelle ein Wort oder eine Textpassage gestrichen und gleichzeitig ein Wort hinzugefügt, so wurden diese beiden Textphänomene zusammen mit dem Element <tag>subst</tag> (Substitution) kodiert.</para>
+            <para>Die Löschung wurde mit dem Element <tag>del</tag> (Löschung) kodiert. Die Art der Löschung wurde mit dem Attribut <tag>@rendition</tag> angegeben:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de eliminación</para>
+                        <para>Wert</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@rendition</tag>
-                        </para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>reescritura encima del texto original</para>
+                        <para><tag>#ow</tag>
+                        </para>
+                     </td>
+                     <td>
+                        <para> überschrieben </para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>#s </para>
                      </td>
                      <td>
                         <para>
-                           <tag>#ow</tag>
+                           <tag>durchgestrichen</tag>
                         </para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>tachado</para>
+                        <para><tag>#erased</tag></para>
                      </td>
                      <td>
                         <para>
-                           <tag>#s</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>borrado</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>#erased</tag>
+                           <tag>gelöscht</tag>
                         </para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>La adición se ha codificado con el elemento <tag>add</tag> (addition). El lugar de
-               la adición se ha especificado con el atributo <tag>@place</tag>:</para>
+            <para>Die Hinzufügung ist mit dem Element  <tag>add</tag> (Hinzufügung) kodiert worden.
+               Der Ort der Hinzufügung wurde mit dem Attribut <tag>@place</tag> spezifiziert:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de adición</para>
+                        <para>Wert</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@place</tag>
-                        </para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
-                     <td>
-                        <para>encima de la línea</para>
-                     </td>
                      <td>
                         <para>
                            <tag>superlinear</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>oberhalb der Linie</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>debajo de la línea</para>
-                     </td>
                      <td>
                         <para>
                            <tag>sublinear</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>unter dem Strich</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>en la misma línea</para>
-                     </td>
                      <td>
                         <para>
                            <tag>intralinear</tag>
                         </para>
                      </td>
-                  </tr>
-                  <tr>
                      <td>
-                        <para>sobre el texto original</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>across</tag>
-                        </para>
+                        <para>im Einklang</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>en el margen izquierdo</para>
+                        <para>
+                           <tag>über</tag>
+                        </para>
                      </td>
                      <td>
-                        <para>
-                           <tag>left</tag>
-                        </para>
+                        <para>quer durch den Text</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>en el margen derecho</para>
+                        <para>
+                           <tag>links</tag>
+                        </para>
                      </td>
                      <td>
+                        <para>linker Rand</para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <para>
-                           <tag>right</tag>
+                           <tag>rechts</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>rechter Rand</para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>
+                           <tag>mTop</tag>
+                        </para>
+                     </td>
+                     <td>
+                        <para>oberer Rand</para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>
+                           <tag>mBottom</tag>
+                        </para>
+                     </td>
+                     <td>
+                        <para>unterer Rand</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;subst&gt;
-   &lt;del rendition="#ow"&gt;6&lt;/del&gt;
-   &lt;add place="across"&gt;7&lt;/add&gt;
-&lt;/subst&gt;,4 pesos</programlisting>
+           
+            <para>Zum Beispiel:</para>
+               <programlisting language="xml" xml:space="preserve">&lt;subst>
+   &lt;del rendition="#ow">6&lt;/del>
+   &lt;add place="across">7&lt;/add>
+&lt;/subst>,4 pesos</programlisting>
          </section>
       </section>
       <section xml:id="intervenciones-editoriales">
-         <title>Intervenciones editoriales</title>
-         <para>En todas las ediciones digitales del proyecto se han codificado las intervenciones
-            editoriales de manera explícita.</para>
+         <title>Redaktionelle Eingriffe</title>
+         <para>In allen digitalen Ausgaben des Projekts wurden die redaktionellen Eingriffe explizit kodiert.</para>
          <section>
-            <title>Normalizaciones</title>
-            <para>La ortografía, puntuación, mayúsculas y separación de las palabras se han
-               normalizado de manera explícita con el elemento <tag>choice</tag> y sus dos elementos
-               hijos <tag>orig</tag> (forma original) y <tag>reg</tag> (forma regularizada). En el
-               elemento <tag>orig</tag> se ha codificado la forma original tal y como aparece en la
-               fuente textual mientras que en el elemento <tag>reg</tag> se ha codificado la forma
-               regularizada, es decir, modernizada a la normal ortográfica actual para facilitar la
-               legibilidad del texto. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
-   &lt;orig&gt;espendiendo&lt;/orig&gt;
-   &lt;reg&gt;expendiendo&lt;/reg&gt;
-&lt;/choice&gt;        </programlisting>
-            <para>Siempre se han codificado las palabras enteras aun cuando solamente se regularice
-               una grafía o una tilde tal y como se muestra en el ejemplo anterior.</para>
-            <para>Se ha seguido el mismo método de codificación con la normalización de la
-               mayúscula. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
-   &lt;orig&gt;ensayo&lt;/orig&gt;
-   &lt;reg&gt;Ensayo&lt;/reg&gt;
-&lt;/choice&gt;
-&lt;choice&gt;
-   &lt;orig&gt;político&lt;/orig&gt;
-   &lt;reg&gt;Político&lt;/reg&gt;
-&lt;/choice&gt;</programlisting>
-            <para>El mismo método de normalización se ha aplicado a contracciones o uniones de
-               palabras. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
-   &lt;orig&gt;dela&lt;/orig&gt;
-   &lt;reg&gt;de la&lt;/reg&gt;
-&lt;/choice&gt; </programlisting>
+            <title>Normalisierungen</title>
+            <para>Rechtschreibung, Zeichensetzung, Großschreibung und Silbentrennung wurden mit dem Element <tag>choice</tag> und seinen beiden untergeordneten Elementen <tag>orig</tag> (ursprüngliche Form) und <tag>reg</tag> (regularisierte Form) ausdrücklich normalisiert. Im <tag>orig-Element</tag> wurde die ursprüngliche Form, wie sie in der Textquelle vorkommt, kodiert, während im <tag>reg-Element</tag> die regularisierte Form kodiert wurde, d. h. sie wurde an die aktuelle orthografische Norm angepasst, um die Lesbarkeit des Textes zu erleichtern. Zum Beispiel: </para>
+               <programlisting language="xml" xml:space="preserve">&lt;choice>
+   &lt;orig>espendiendo&lt;/orig>
+   &lt;reg>expendiendo&lt;/reg>
+&lt;/choice>      </programlisting>
+            <para>Es wurden immer ganze Wörter kodiert, auch wenn nur eine Schreibweise oder ein Akzent reguliert wurde, wie im obigen Beispiel.</para>
+            <para>Die gleiche Kodierungsmethode wurde auch bei der Normalisierung der Großschreibung angewandt:</para>
+               <programlisting language="xml" xml:space="preserve">&lt;choice>
+   &lt;orig>ensayo&lt;/orig>
+   &lt;reg>Ensayo&lt;/reg>
+&lt;/choice>
+&lt;choice>
+   &lt;orig>político&lt;/orig>
+   &lt;reg>Político&lt;/reg>
+&lt;/choice></programlisting>
+            <para>Die gleiche Normalisierungsmethode wurde auch auf Zusammenziehungen oder Wortverbindungen angewandt:</para>
+               <programlisting language="xml" xml:space="preserve">&lt;choice>
+   &lt;orig>dela&lt;/orig>
+   &lt;reg>de la&lt;/reg>
+&lt;/choice> </programlisting>
          </section>
          <section>
-            <title>Abreviaturas</title>
-            <para>Las abreviaturas se han codificado con elemento <tag>choice</tag> y sus dos
-               elementos hijo <tag>abbr</tag> (abreviatura) y <tag>expan</tag> (abreviatura
-               resuelta). En el elemento <tag>abbr</tag> se ha conservado la forma abreviada que
-               aparece en la fuente textual mientras que en el elemento <tag>expan</tag> las y los
-               editoras han proporcionado la forma resuelta o expandida para facilitar la
-               legibilidad del texto.</para>
-               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
-   &lt;abbr&gt;q&lt;/abbr&gt;
-   &lt;expan&gt;que&lt;/expan&gt;
-&lt;/choice&gt;</programlisting>
-            <para>Las siglas se han codificado como abreviaturas siguiendo el mismo método con
-                  <tag>choice</tag>.</para>
+            <title>Abkürzungen</title>
+            <para>Abkürzungen wurden mit dem <tag>choice-Element</tag> und seinen beiden untergeordneten Elementen <tag>abbr</tag> (Abkürzung) und <tag>expan</tag> (aufgelöste Abkürzung) kodiert. Im <tag>abbr-Element</tag> wurde die abgekürzte Form, die in der Textquelle erscheint, beibehalten, während die Redakteure im <tag>expan-Element</tag> die aufgelöste oder erweiterte Form bereitgestellt haben, um die Lesbarkeit des Textes zu erleichtern. </para>
+               <programlisting language="xml" xml:space="preserve">&lt;choice>
+   &lt;abbr>q&lt;/abbr>
+   &lt;expan>que&lt;/expan>
+&lt;/choice></programlisting>
+            <para>Akronyme wurden als Abkürzungen kodiert, wobei die gleiche Methode wie bei der <tag>Auswahl</tag> angewandt wurde.</para>
          </section>
          <section>
-            <title>Palabras, letras o signos de puntuación suplidos</title>
-            <para>Las palabras o signos de puntuación que faltan de manera evidente en la fuente y
-               que han sido suplidas por la editora o editor, se han codificado con el elemento
-                  <tag>supplied</tag>. Con el atributo <tag>@cert</tag> (certainty) se ha codificado
-               la certeza con la que se han suplido los caracteres o palabras:</para>
+            <title>Mitgelieferte Wörter, Zeichen und Interpunktion</title>
+            <para>Wörter, Zeichen oder Satzzeichen, die in der Quelle eindeutig fehlen und vom Redakteur geliefert (d. h. hinzugefügt) wurden, wurden mit dem <tag>gelieferten</tag> Element kodiert. Das Attribut <tag>@cert </tag>(certainty) wurde verwendet, um die Gewissheit zu kodieren, mit der der Text geliefert wurde:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Valor</para>
+                        <para>Wert</para>
                      </td>
                      <td>
-                        <para>Definición</para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
@@ -1420,7 +1188,7 @@ explican en el documento […]</programlisting>
                         </para>
                      </td>
                      <td>
-                        <para>baja</para>
+                        <para>geringe Gewissheit</para>
                      </td>
                   </tr>
                   <tr>
@@ -1430,233 +1198,198 @@ explican en el documento […]</programlisting>
                         </para>
                      </td>
                      <td>
-                        <para>alta</para>
+                        <para>hohe Gewissheit</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
+            <para>Zum Beispiel:</para>
                <programlisting language="xml" xml:space="preserve">30 de julio de &lt;supplied cert="high"&gt;18&lt;/supplied&gt;27</programlisting>
          </section>
          <section>
-            <title>Errores y correcciones</title>
-            <para>Los errores evidentes que aparecen en la fuente textual se han codificado con el
-               elemento <tag>choice</tag>. Dentro, la palabra errónea se ha codificado con el
-               elemento <tag>sic</tag> mientras que la corrección se ha codificado con
-                  <tag>corr</tag>. En el elemento <tag>corr</tag>, el atributo <tag>@cert</tag>
-               (certainty) indica la certeza con que se ha corregido:</para>
+            <title>Fehler und Berichtigungen</title>
+            <para>Offensichtliche Fehler, die in der Textquelle auftreten, wurden mit dem Element <tag>choice</tag> kodiert. Im Inneren wurde das fehlerhafte Wort mit dem Element <tag>sic</tag> kodiert, während die Korrektur mit <tag>corr</tag> kodiert wurde. Im Element corr gibt das Attribut <tag>@cert</tag> (certainty) an, wie sicher die Korrektur ist: </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Certeza</para>
+                        <para>Wert</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@cert</tag>
-                        </para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>baja</para>
+                        <para>low</para>
                      </td>
                      <td>
                         <para>
-                           <tag>low</tag>
-                        </para>
+                          <tag>geringe</tag> Gewissheit</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>media</para>
+                        <para>medium</para>
                      </td>
                      <td>
                         <para>
-                           <tag>medium</tag>
-                        </para>
+                          <tag>mittlere</tag> Gewissheit</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>alta</para>
+                        <para>high</para>
                      </td>
                      <td>
                         <para>
-                           <tag>high</tag>
-                        </para>
+                          <tag>hohe</tag> Gewissheit</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
-   &lt;sic&gt;Humbold&lt;/sic&gt;
-   &lt;corr cert="high"&gt;Humboldt&lt;/corr&gt;
-&lt;/choice&gt;     </programlisting>
-            <para>Cuando una palabra aparece repetida y es evidente que se trata de un error, se ha
-               empleado el mismo elemento <tag>choice</tag> para codificar la palabra errónea con
-                  <tag>sic</tag>. Ahora bien, en estos casos no se ha proporcionado una forma
-               corregida sino que se ha utilizado el elemento <tag>corr</tag> y se ha dejado vacío.
-               Además, se ha utilizado el atributo <tag>type</tag> con valor "deleted" para indicar
-               que se ha eliminado una palabra redundante. Por
-               ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
-   &lt;sic&gt;más&lt;/sic&gt;
-   &lt;corr type="deleted"/&gt;
-&lt;/choice&gt; cantidad</programlisting>
+            <para>Zum Beispiel:</para>
+               <programlisting language="xml" xml:space="preserve">&lt;choice>
+   &lt;sic>Humbold&lt;/sic>
+   &lt;corr cert="high">Humboldt&lt;/corr>
+&lt;/choice>    </programlisting>
+            <para>Wenn ein Wort wiederholt wird und es klar ist, dass es sich um einen Fehler handelt, wurde das gleiche Element <tag>choice</tag> verwendet, um das fehlerhafte Wort mit <tag>sic</tag> zu kodieren. In diesen Fällen wurde jedoch keine korrigierte Form angegeben, sondern das Element <tag>corr</tag> verwendet und leer gelassen. Außerdem wurde das Attribut type mit dem Wert "deleted" verwendet, um anzuzeigen, dass ein überflüssiges Wort entfernt wurde. Zum Beispiel: </para>
+               <programlisting language="xml" xml:space="preserve">&lt;choice>
+   &lt;sic>más&lt;/sic>
+   &lt;corr type="deleted"/>
+&lt;/choice> cantidad</programlisting>
          </section>
          <section>
-            <title>Lecturas inciertas</title>
-            <para>Las palabras o pasajes que no son fácilmente legibles se han codificado con el
-               elemento <tag>unclear</tag>. Con el atributo <tag>@reason</tag> se ha especificado la
-               razón de la lectura incierta:</para>
+            <title>Unklarer Text</title>
+            <para>Wörter oder Passagen, die nicht leicht lesbar sind, wurden mit dem Element <tag>unclear</tag> kodiert. Das Attribut <tag>@reason</tag> wurde verwendet, um den Grund für die unklare Lesung anzugeben: </para>
+            <informaltable>
+               <thead>
+                  <tr>
+                     <td>Wert</td>
+                     <td>
+                        <para>Grund </para>
+                     </td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>illegible </td>
+                     <td>
+                        <para> unklarer Text</para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>covered</para>
+                     </td>
+                     <td>
+                        <para> unklar zu lesen wegen der Durchstreichung</para>
+                     </td>
+                  </tr>
+               </tbody>
+            </informaltable>
+            <para>Mit dem Attribut <tag>@cert </tag>(certainty) wurde die Sicherheit der Intervention kodiert. </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Razón de la lectura incierta</para>
+                        <para>Wert</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@reason</tag>
-                        </para>
+                        <para>Definition</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>ilegible</para>
+                        <para>low</para>
                      </td>
                      <td>
                         <para>
-                           <tag>illegible</tag>
-                        </para>
+                          <tag>geringe</tag> Gewissheit</para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>difícil de leer debido a la sobreescritura</para>
+                        <para>high</para>
                      </td>
                      <td>
                         <para>
-                           <tag>covered</tag>
-                        </para>
+                          <tag>hohe</tag> Gewissheit</para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Con el atributo <tag>@cert</tag> (certainty) se ha codificado la certeza de la
-               intervención.</para>
-            <informaltable>
-               <thead>
-                  <tr>
-                     <td>
-                        <para>Certeza</para>
-                     </td>
-                     <td>
-                        <para>Valor para <tag>@cert</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>
-                        <para>baja</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>low</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>alta</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>high</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </tbody>
-            </informaltable>
-            <para>Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;unclear reason="illegible" cert="high"&gt;año&lt;/unclear&gt;</programlisting>
+            <para>Zum Beispiel:</para>
+               <programlisting language="xml" xml:space="preserve">&lt;unclear reason="illegible" cert="high">año&lt;/unclear></programlisting>
          </section>
          <section>
-            <title>Texto ilegible</title>
-            <para>Los caracteres o palabras ilegibles en la fuente textual debido a daños materiales
-               o a que la escritura es poco clara se han codificado con el elemento vacío
-                  <tag>gap/</tag>.</para>
-            <para>Con el atributo <tag>@reason</tag> se ha indicado la razón de la
-               ilegibilidad:</para>
+            <title>Unlesbarkeit</title>
+            <para>Unleserliche Zeichen oder Wörter in der Textquelle aufgrund von Materialschäden oder unklarer Schrift wurden mit dem leeren Element <tag>gap/</tag> kodiert. </para>
+            <para>Das Attribut <tag>@reason</tag> wurde verwendet, um den Grund für die Unlesbarkeit anzugeben:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Razón de la ilegibilidad</para>
+                        <para>Grund</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@reason</tag>
-                        </para>
+                        <para>Wert von <tag>@reason</tag>      </para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>destrucción/pérdida</para>
+                        <para>Zerstörung oder Verlust</para>
                      </td>
                      <td>
                         <para>
-                           <tag>lost</tag>
+                           <tag>verloren</tag>
                         </para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>ilegible</para>
+                        <para>unleserlich</para>
                      </td>
                      <td>
                         <para>
-                           <tag>illegible</tag>
+                           <tag>unleserlich</tag>
                         </para>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <para>difícil de leer debido a la sobreescritura</para>
+                        <para> unklar zu lesen, da durchgestrichen</para>
                      </td>
                      <td>
                         <para>
-                           <tag>covered</tag>
+                           <tag>überdacht</tag>
                         </para>
                      </td>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Si se conoce el número de líneas, palabras, etc., se han codificado usando
-                  <tag>@unit</tag> (unidad) y <tag>@quantity</tag> (cantidad).</para>
+            <para>Wenn die Anzahl der Zeilen, Wörter usw. bekannt ist, wurden sie mit <tag>@unit</tag> und <tag>@quantity</tag> kodiert. </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Segmento ilegible</para>
+                        <para>Unleserliche Einheit</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@unit</tag>
-                        </para>
+                        <para>Wert der <tag>@Einheit</tag>       </para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>caracteres</para>
+                        <para>Zeichen</para>
                      </td>
                      <td>
                         <para>
@@ -1666,7 +1399,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>líneas</para>
+                        <para>Zeilen</para>
                      </td>
                      <td>
                         <para>
@@ -1676,7 +1409,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>páginas</para>
+                        <para>Seiten</para>
                      </td>
                      <td>
                         <para>
@@ -1686,7 +1419,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>palabras</para>
+                        <para>Wörter</para>
                      </td>
                      <td>
                         <para>
@@ -1696,41 +1429,33 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>En el atributo <tag>@quantity</tag>, se ha codificado el número de caracteres,
-               líneas, etc. ilegibles.</para>
+            <para>Im Attribut <tag>@quantity</tag> wurde die Anzahl der nicht lesbaren Zeichen, Zeilen usw. verschlüsselt. </para>
                <programlisting language="xml" xml:space="preserve">&lt;gap reason="illegible" unit="words" quantity="3"/&gt;</programlisting>
-            <para>Si un carácter (o cadena de caracteres) está tachado y no se puede descifrar, se
-               ha codificado tanto con <tag>del</tag> como con <tag>gap/</tag>:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;del rendition="#s"&gt;
-   &lt;gap reason="illegible" unit="chars" quantity="5"/&gt;
-&lt;/del&gt;</programlisting>
-            <para>Por último, también se han codificado individualmente las páginas destruidas o
-               perdidas.</para>
-               <programlisting language="xml" xml:space="preserve">&lt;pb n="1r"/&gt;&lt;gap reason="lost" unit="pages" quantity="1"/&gt;</programlisting>
+            <para>Wenn ein Zeichen (oder eine Zeichenkette) durchgestrichen ist und nicht gelesen werden kann, wurde es sowohl mit <tag>del</tag> als auch mit <tag>gap/</tag> kodiert:</para>
+               <programlisting language="xml" xml:space="preserve">&lt;del rendition="#s">
+   &lt;gap reason="illegible" unit="chars" quantity="5"/>
+&lt;/del></programlisting>
+            <para>Schließlich wurden auch zerstörte oder fehlende Seiten einzeln kodiert.</para>
+               <programlisting language="xml" xml:space="preserve">&lt;pb n="1r"/>&lt;gap reason="lost" unit="pages" quantity="1"/></programlisting>
          </section>
          <section>
-            <title>Omisiones</title>
-            <para>Las omisiones se han codificado de manera explícita. Las omisiones de caracteres,
-               palabras, pasajes de texto o páginas enteras por parte de los editores y editoras se
-               han codificado con el elemento vacío <tag>gap/</tag>. Con el atributo
-                  <tag>@unit</tag> se ha especificado el tipo de unidad que la editora o editor ha
-               tenido en cuenta:</para>
+            <title>Auslassungen</title>
+            <para>Auslassungen wurden explizit kodiert. Auslassungen von Zeichen, Wörtern, Textpassagen oder ganzen Seiten durch Redakteure und Verleger wurden mit dem leeren Element <tag>gap/</tag> kodiert. Das Attribut <tag>@unit</tag> gibt die Art der Einheit an, die der Herausgeber berücksichtigt: </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Segmento omitido</para>
+                        <para>Unleserliche Einheit</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@unit</tag>
-                        </para>
+                        <para>Wert der <tag>@Einheit</tag>       </para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>caracteres</para>
+                        <para>Zeichen</para>
                      </td>
                      <td>
                         <para>
@@ -1740,7 +1465,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>líneas</para>
+                        <para>Zeilen</para>
                      </td>
                      <td>
                         <para>
@@ -1750,7 +1475,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>páginas</para>
+                        <para>Seiten</para>
                      </td>
                      <td>
                         <para>
@@ -1760,7 +1485,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>palabras</para>
+                        <para>Wörter</para>
                      </td>
                      <td>
                         <para>
@@ -1770,25 +1495,22 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Con el atributo <tag>@quantity</tag>, se ha codificado el número de caracteres,
-               líneas, etc. omitidos mientras que con el atributo <tag>@reason</tag> se ha
-               codificado el motivo de la omisión editorial.</para>
+            <para>Mit dem Attribut <tag>@quantity</tag> wird die Anzahl der ausgelassenen Zeichen, Zeilen usw. kodiert, während mit dem Attribut <tag>@reason</tag> der Grund für die redaktionelle Auslassung kodiert wird. </para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Motivo de la omisión</para>
+                        <para>Grund</para>
                      </td>
                      <td>
-                        <para>Valor para <tag>@reason</tag>
-                        </para>
+                        <para>Wert von <tag>@reason</tag>      </para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>texto en idioma extranjero</para>
+                        <para>Text in Fremdsprache</para>
                      </td>
                      <td>
                         <para>
@@ -1798,7 +1520,7 @@ explican en el documento […]</programlisting>
                   </tr>
                   <tr>
                      <td>
-                        <para>el texto no es importante para el corpus</para>
+                        <para>Unwichtiger Text für den Korpus</para>
                      </td>
                      <td>
                         <para>
@@ -1808,560 +1530,192 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>Por ejemplo:
-               <programlisting language="xml" xml:space="preserve">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt; entonces de nuevo</programlisting>Para
-               representar y mostrar correctamente la foliación, se ha codificado cada página
-               individualmente. Aunque se omitan varias páginas consecutivas, siempre se ha
-               codificado la omisión con un <quote>1</quote> como número correspondiente a cada
-               página que falta.</para>
+            <para>Zum Beispiel: <programlisting language="xml" xml:space="preserve">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt; entonces de nuevo</programlisting></para>
+            <para>Um die Foliierung korrekt darzustellen und anzuzeigen, wurde jede Seite einzeln kodiert. Selbst wenn mehrere aufeinanderfolgende Seiten ausgelassen werden, wird die fehlende Seite immer mit einer 1 als Nummer kodiert, die der fehlenden Seite entspricht.</para>
          </section>
          <section>
-            <title>Comentarios</title>
-            <para>Los comentarios editoriales se han codificado con el elemento <tag>seg</tag>
-               (arbitrary segment). A su vez, se han anidado dos elementos: por un lado,
-                  <tag>orig</tag> con el que se ha codificado el pasaje textual comentado; por el
-               otro lado, <tag>note</tag> con el que se ha codificado el comentario editorial en sí.
-               Se ha utilizado el atributo <tag>@type</tag> en <tag>seg</tag> con el valor
-                  <tag>comment</tag>.</para>
-               <programlisting language="xml" xml:space="preserve">&lt;seg type="comment"&gt;
-   &lt;orig&gt;plantarum&lt;/orig&gt;
-   &lt;note&gt;Se refiere a "De distributione geographica plantarum secundum
-    coeli temperiem et altitudinem montium".&lt;/note&gt;
-&lt;/seg&gt;</programlisting>
+            <title>Kommentare</title>
+            <para>Die redaktionellen Kommentare wurden mit dem Element <tag>seg</tag> (arbitrary segment) kodiert. Im Gegenzug wurden zwei Elemente verschachtelt: einerseits <tag>orig</tag>, mit dem die kommentierte Textpassage kodiert wurde; andererseits <tag>note</tag>, mit dem der redaktionelle Kommentar selbst kodiert wurde. Das Attribut <tag>@type</tag> wurde in Verbindung mit dem Wert comment verwendet.</para>
+               <programlisting language="xml" xml:space="preserve">&lt;seg type="comment">
+   &lt;orig>plantarum&lt;/orig>
+   &lt;note>Se refiere a "De distributione geographica plantarum secundum
+    coeli temperiem et altitudinem montium".&lt;/note>
+&lt;/seg></programlisting>
          </section>
          <section>
-            <title>Referencias</title>
-            <para>Las referencias a otras ediciones o pasajes internos se han codificado con el
-               elemento <tag>ref</tag>, cuyo atributo <tag>@target</tag> contiene el identificador
-               único de la edición o del pasaje de destino. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;ref target="BTEST/#start_b3k_pyf_cy"&gt;[una referencia]&lt;/ref&gt;</programlisting>
-            <para>Además, en algunas ocasiones, con <tag>ref</tag> se han codificado referencias a
-               sitios web externos, por ejemplo, en algún comentario editorial. En este caso, se ha
-               codificado en el atributo <tag>@target</tag> la URL completa del sitio web:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;seg type="comment"&gt;
-   &lt;orig&gt;el río&lt;/orig&gt;
-   &lt;note&gt;Se refiere al río...&lt;/note&gt;
-&lt;/seg&gt;</programlisting>
-         </section>
-         <section>
-            <title>Fechas</title>
-            <para>Las fechas que aparecen en la fuente textual se han codificado con
-               <tag>date</tag>. Para que las fechas sean legibles por el ordenador se ha seguido el
-               formato <tag>AAAA-MM-DD</tag> en los atributos <tag>@when</tag>, <tag>@from</tag> y
-                  <tag>@to</tag>, así como <tag>@notBefore</tag> y <tag>@notAfter</tag>. <itemizedlist>
+            <title>Daten</title>
+            <para>Um die Datumsangaben computerlesbar zu machen, wurde in den Attributen
+                  <tag>@when</tag>, <tag>@from</tag> und <tag>@to</tag> sowie <tag>@notBefore</tag>
+               und <tag>@notAfter</tag> das Format JJJJJ-MM-TT verwendet. <itemizedlist>
                   <listitem>
-                     <para>Fecha exacta: </para>
+                     <para>Genaues Datum:</para>
                   </listitem>
                </itemizedlist>
-                    <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de la
-Nochebuena del año 1772&lt;/date&gt;</programlisting>
-                    <itemizedlist>
+               <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes
+   de la Nochebuena del año 1772&lt;/date&gt;   </programlisting>
+               <itemizedlist>
                   <listitem>
-                     <para>Período de tiempo exacto:</para>
+                     <para>Zeitspanne:</para>
                   </listitem>
                </itemizedlist>
-                    <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de 1731
-al 11 de septiembre de 1741&lt;/date&gt;</programlisting>
-                    <itemizedlist>
+               <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre
+   de 1731 al 11 de septiembre de 1741&lt;/date&gt; </programlisting>
+               <itemizedlist>
                   <listitem>
-                     <para>Período aproximado:</para>
+                     <para>Ungefähre Zeitspanne:</para>
                   </listitem>
                </itemizedlist>
-                </para>
-               <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
-de mayo de 1804&lt;/date&gt;</programlisting>
-            <para>Además, de manera opcional, en el atributo <tag>@cert</tag> se ha especificado el
-               nivel de certeza: <tag>high</tag>, <tag>low</tag>.</para>
-            <para>Más ejemplos:</para>
-            <informaltable>
-               <thead>
-                  <tr>
-                     <td>
-                        <para>Fecha en el texto</para>
-                     </td>
-                     <td>
-                        <para>Valores de los atributos</para>
-                     </td>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>
-                        <para>siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>principios del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1719"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>mediados del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1740" notAfter="1759"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>finales del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1780" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Primera mitad del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1749"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Segunda mitad del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1750" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Primer cuarto del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1724"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Segundo cuarto del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1725" notAfter="1749"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Tercer cuarto del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1750" notAfter="1774"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Último cuarto del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1775" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Primer tercio del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1700" notAfter="1733"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Segundo tercio del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1733" notAfter="1766"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>Último tercio del siglo XVIII/18</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1766" notAfter="1799"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td/>
-                     <td/>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>alrededor de 1762</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>notBefore="1757" notAfter="1767"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>1762</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>when="1762"</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>5 de enero de 1762</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>when="1762-01-05"</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </tbody>
-            </informaltable>
-            <para>En el contenido del elemento también se ha expresado el nivel de certeza,
-               aproximación, período, etc. mediante lenguaje natural. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;         </programlisting>
-         </section>
-         <section>
-            <title>Palabras en otro idioma</title>
-            <para>Las palabras y pasajes de texto en idioma extranjero se han codificado con el
-               elemento <tag>foreign</tag>. Con el atributo <tag>@xml:lang</tag> se ha codificado el
-               código del idioma extranjero correspondiente:</para>
-            <informaltable>
-               <thead>
-                  <tr>
-                     <td>
-                        <para>Idioma extranjero</para>
-                     </td>
-                     <td>
-                        <para>Valor para <tag>@xml:lang</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>
-                        <para>griego</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>gr</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>latín</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>la</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>hebreo</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>he</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>alemán</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>de</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>francés</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>fr</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>inglés</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>en</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>ruso</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>ru</tag>
-                        </para>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <para>español</para>
-                     </td>
-                     <td>
-                        <para>
-                           <tag>es</tag>
-                        </para>
-                     </td>
-                  </tr>
-               </tbody>
-            </informaltable>
-            <para>Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve">cantidad de 29.000 arrobas, &lt;foreign xml:lang="la"&gt;plus minus&lt;/foreign&gt;</programlisting>
-         </section>
-         <section>
-            <title>Personas, lugares y organizaciones</title>
-            <para>Las personas, los lugares y las organizaciones mencionados con nombres propios en
-               la fuente textual se han codificado de manera explícita. En cambio, la codificación
-               de alusiones o referencias (por ejemplo, anáforas) se ha codificado de manera
-               opcional según el criterio del editor o editora.</para>
-            <para>En ambos casos se han utilizado los elementos siguientes:</para>
-            <itemizedlist>
-               <listitem>
-                  <para>Persona: <tag>persName</tag>
-                  </para>
-               </listitem>
-               <listitem>
-                  <para>Lugar: <tag>placeName</tag>
-                  </para>
-               </listitem>
-               <listitem>
-                  <para>Organización: <tag>orgName</tag>
-                  </para>
-               </listitem>
-            </itemizedlist>
-            <para>Se ha codificado con el atributo <tag>@key</tag> un identificador único (URI)
-               correspondiente al del registro del proyecto o bien al de algún recurso de
-               autoridades externo como VIAF, GND o GeoNames. Por ejemplo:</para>
-               <programlisting language="xml" xml:space="preserve"> Mr. &lt;persName key="H0012737"&gt;James Arnold&lt;/persName&gt;</programlisting>
+            </para>
+            <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
+   de mayo de 1804&lt;/date&gt;       </programlisting>
+            <para>Darüber hinaus wurde optional das Attribut <tag>@cert</tag> mit den Werten <tag>hoch</tag> und <tag>niedrig</tag> verwendet, um die Sicherheit zu kodieren, mit der das Datum als korrekt bekannt ist.</para>
          </section>
       </section>
    </section>
    <section xml:id="cartas">
-      <title>Cartas</title>
-      <para>En este proyecto las cartas han recibido un tratamiento especial debido a sus rasgos
-         característicos. En lo que respecta a los metadatos, siempre que ha sido posible, se han
-         codificado el remitente, el destinatario, el lugar y la fecha de envío y recepción. Por lo
-         que respecta a la estructura, cuando están presente en la fuente, se han codificado la
-         dirección postal, el inicio de la carta, los actos de escritura (si hubiera interrupciones)
-         y el cierre de la carta.</para>
+      <title>Briefe</title>
+      <para>In diesem Projekt wurden Briefe aufgrund ihrer charakteristischen Merkmale besonders behandelt. Was die Metadaten betrifft, so wurden, soweit möglich, der Absender, der Empfänger, der Ort und das Datum des Versands und des Empfangs kodiert. Was die Struktur anbelangt, so wurden, soweit in der Quelle vorhanden, die Postanschrift, der Beginn des Briefes, die Schreibhandlungen (falls es Unterbrechungen gab) und der Schluss des Briefes kodiert. </para>
       <section>
-         <title>Remitente, destinatario, lugares y fechas</title>
-         <para>Los metadatos relativos a la correspondencia de una carta se han codificado en el
-            elemento <tag>correspDesc</tag> (correspondence description). Se ha creado un elemento
-               <tag>correspAction</tag> (correspondence action) para el proceso de envío y el de
-            recepción respectivamente. Con el atributo <tag>@type</tag> se ha especificado el tipo
-            del acto de comunicación; los valores permitidos son dos: <tag>sent</tag> o
-               <tag>received</tag>.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt;
-   &lt;correspAction type="sent"&gt;[Remitente]&lt;/correspAction&gt;
-   &lt;correspAction type="received"&gt;[Destinatario]&lt;/correspAction&gt;
-&lt;/correspDesc&gt;</programlisting>
-         <para>Dentro del elemento <tag>correspAction</tag>, se han utilizado los elementos
-               <tag>persName</tag>, <tag>orgName</tag>, <tag>placeName</tag> y <tag>date</tag> para
-            identificar la persona u organización que participa en el intercambio, el lugar en que
-            sucede y la fecha. Siempre que ha sido posible, la información sobre personas,
-            organizaciones y lugares se ha vinculado con el identificador codificado en el atributo
-               <tag>@key</tag>. Esta información puede indicarse para todas las entidades nombradas.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt;
-   &lt;correspAction type="sent"&gt;
-      &lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de&lt;/persName&gt;
-      &lt;placeName key="H0006819"&gt;La Habana&lt;/placeName&gt;
-      &lt;date when="1827-07-30"&gt;30 de julio de 1827&lt;/date&gt;
-   &lt;/correspAction&gt;
-   &lt;correspAction type="received"&gt;
-      &lt;persName key="H0012069"&gt;Humboldt, Alexander von &lt;/persName&gt;
-    &lt;/correspAction&gt;
-&lt;/correspDesc&gt;</programlisting>
-         <para>Las fechas se han codificado con el elemento <tag>date</tag> siguiendo el formato
-               <tag>AAAA-MM-DD</tag> (o <tag>AA-MM</tag> o <tag>AAAA</tag>, dependiendo de la
-            información disponible) en los atributos <tag>@when</tag>,
-               <tag>@from</tag>/<tag>@to</tag> o <tag>@notBefore</tag>/<tag>@notAfter</tag>. Además,
-            en el atributo <tag>@cert</tag> se han utilizado los valores <tag>high</tag> y
-               <tag>low</tag> para indicar la certeza sobre la fecha. Por ejemplo: <itemizedlist>
+         <title>Absender, Empfänger, Orte und Daten</title>
+         <para>Die Metadaten, die sich auf die Korrespondenz eines Briefes beziehen, wurden im Element <tag>correspDesc</tag> (Korrespondenzbeschreibung) kodiert. Für den Sende- und Empfangsprozess wurde jeweils ein Element <tag>correspAction</tag>(correspondence action) erstellt. Das Attribut <tag>@type</tag> wurde verwendet, um die Art der Kommunikationsaktion zu spezifizieren; zwei Werte sind zulässig: <tag>gesendet</tag> oder <tag>empfangen</tag>. </para>
+            <programlisting language="xml" xml:space="preserve">&lt;correspDesc>
+   &lt;correspAction type="sent">[Sender]&lt;/correspAction>
+   &lt;correspAction type="received">[Recipient]&lt;/correspAction>
+&lt;/correspDesc></programlisting>
+         <para>Innerhalb des <tag>correspAction-Elements</tag> wurden die Elemente <tag>persName</tag>, <tag>orgName</tag>, <tag>placeName</tag> und <tag>date</tag> verwendet, um die an dem Austausch beteiligte Person oder Organisation, den Ort und das Datum zu identifizieren. Wo immer möglich, wurden die Angaben zu Personen, Organisationen und Orten mit dem im <tag>@key-Attribut</tag> kodierten Identifikator verknüpft. Diese Informationen können für alle benannten Entitäten angegeben werden.</para>
+            <programlisting language="xml" xml:space="preserve">&lt;correspDesc>
+   &lt;correspAction type="sent">
+      &lt;persName key="H0012682">Arango y Parreño, Francisco de&lt;/persName>
+      &lt;placeName key="H0006819">La Habana&lt;/placeName>
+      &lt;date when="1827-07-30">30 de julio de 1827&lt;/date>
+   &lt;/correspAction>
+   &lt;correspAction type="received">
+      &lt;persName key="H0012069">Humboldt, Alexander von &lt;/persName>
+    &lt;/correspAction>
+&lt;/correspDesc></programlisting>
+         <para>Datumsangaben wurden mit dem <tag>Datumselement</tag> im Format <tag>JJJJ-MM-TT</tag>
+            (oder <tag>JJJJ-MM</tag> oder <tag>JJJJ</tag>, je nach den verfügbaren Informationen) in
+            den Attributen <tag>@when</tag>, <tag>@from/@to</tag> oder
+               <tag>@notBefore/@notAfter</tag> kodiert. Darüber hinaus wurden im Attribut
+               <tag>@cert</tag> die Werte <tag>high</tag> und <tag>low</tag> verwendet, um die
+            Sicherheit des Datums anzugeben. Zum Beispiel: <itemizedlist>
                <listitem>
-                  <para>Fecha exacta:</para>
+                  <para>Genaues Datum:</para>
                </listitem>
             </itemizedlist>
-                <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21"&gt;tres días antes de
-la Nochebuena del año 1772&lt;/date&gt;</programlisting>
-                <itemizedlist>
+            <programlisting language="xml" xml:space="preserve">&lt;date when="1772-12-21">tres días antes de
+la Nochebuena del año 1772&lt;/date></programlisting>
+            <itemizedlist>
                <listitem>
-                  <para>Período de tiempo exacto:</para>
+                  <para>Genaue Zeitspanne:</para>
                </listitem>
             </itemizedlist>
-                <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11"&gt;del 11 de noviembre de
-1731 al 11 de septiembre de 1741&lt;/date&gt;</programlisting>
-                <itemizedlist>
+            <programlisting language="xml" xml:space="preserve">&lt;date from="1731-11-11" to="1741-09-11">del 11 de noviembre de
+1731 al 11 de septiembre de 1741&lt;/date></programlisting>
+            <itemizedlist>
                <listitem>
-                  <para>Período aproximado:</para>
+                  <para>Ungefährer Zeitraum:</para>
                </listitem>
             </itemizedlist>
-            </para>
+         </para>
             <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
 de mayo de 1804&lt;/date&gt;</programlisting>
-         <para>Cuando no se ha podido determinar el emisor, el destinatario o los lugares y las
-            fechas de envío o recepción, se han utilizado los elementos correspondientes, pero con
-            el valor "N/A" (Not Available). Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;correspDesc&gt;
-   &lt;correspAction type="sent"&gt;
-      &lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
-      &lt;date&gt;N/A&lt;/date&gt;
-      &lt;placeName&gt;N/A&lt;/placeName&gt;
-   &lt;/correspAction&gt;
-   &lt;correspAction type="received"&gt;
-      &lt;persName key="H0004321"&gt;Lapie, Pierre (1779-1850)&lt;/persName&gt;
-      &lt;date&gt;N/A&lt;/date&gt;
-      &lt;placeName&gt;N/A&lt;/placeName&gt;
-   &lt;/correspAction&gt;
-&lt;/correspDesc&gt;    </programlisting>
+         <para>Wenn es nicht möglich war, den Absender, den Empfänger oder die Orte und Daten der Absendung oder des Empfangs zu bestimmen, wurden die entsprechenden Elemente verwendet, jedoch mit dem Wert "N/A" (Not Available). Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;correspDesc>
+   &lt;correspAction type="sent">
+      &lt;persName key="H0012069">Humboldt, Alexander von (1769-1859)&lt;/persName>
+      &lt;date>N/A&lt;/date>
+      &lt;placeName>N/A&lt;/placeName>
+   &lt;/correspAction>
+   &lt;correspAction type="received">
+      &lt;persName key="H0004321">Lapie, Pierre (1779-1850)&lt;/persName>
+      &lt;date>N/A&lt;/date>
+      &lt;placeName>N/A&lt;/placeName>
+   &lt;/correspAction>
+&lt;/correspDesc>      </programlisting>
       </section>
       <section>
-         <title>Dirección postal</title>
-         <para>La dirección postal de una carta se ha codificado en el elemento <tag>opener</tag>
-            (inicio de la carta) o en el <tag>closer</tag> (cierre de la carta). Consta del elemento
-               <tag>address</tag> y uno o varios elementos hijos <tag>addrLine</tag>.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;opener&gt;
-   &lt;address&gt;
-      &lt;addrLine&gt;Berlin, Kronenstraße 6&lt;/addrLine&gt;
-   &lt;/address&gt;
-&lt;/opener&gt; </programlisting>
+         <title>Postanschrift</title>
+         <para>Die Postanschrift eines Briefes wurde im <tag>openerelement</tag>(Anfang des Briefes) oder im <tag>closer</tag> (Ende des Briefes) kodiert. Sie besteht aus dem <tag>address-Element</tag> und einem oder mehreren <tag>addrLine-Kinderelementen</tag>.</para>
+            <programlisting language="xml" xml:space="preserve">&lt;opener>
+   &lt;address>
+      &lt;addrLine>Berlin, Kronenstraße 6&lt;/addrLine>
+   &lt;/address>
+&lt;/opener> </programlisting>
       </section>
       <section>
-         <title>Inicio de la carta</title>
-         <para>El inicio de la carta se ha codificado con el elemento <tag>opener</tag>. Dentro, si
-            los hubiera, se ha codificado la fecha y el saludo con los elementos <tag>dateline</tag>
-            y <tag>salute</tag> respectivamente.</para>
-         <para>En el elemento <tag>dateline</tag> se ha utilizado el atributo <tag>@rend</tag> si la
-            fecha está sangrada o alineada a la derecha. Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;opener&gt;
-   &lt;dateline rend="align(right)"&gt;30 de julio de 1827&lt;/dateline&gt;
-   &lt;salute&gt;Mi muy apreciable amigo y señor:&lt;/salute&gt;
-&lt;/opener&gt;</programlisting>
+         <title>Anfang des Schreibens</title>
+         <para>Der Anfang des Briefes wurde mit dem Element <tag>opener</tag> kodiert, das Datum und die Anrede wurden mit den Elementen <tag>dateline und</tag> <tag>salute</tag> kodiert.</para>
+         <para>Im <tag>dateline-Element</tag> wurde das <tag>@rend-Attribut</tag> verwendet, wenn das Datum eingerückt oder rechtsbündig ist. Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;opener>
+   &lt;dateline rend="align(right)">30 de julio de 1827&lt;/dateline>
+   &lt;salute>Mi muy apreciable amigo y señor:&lt;/salute>
+&lt;/opener></programlisting>
       </section>
       <section>
-         <title>Actos de escritura</title>
-         <para>Los actos de escritura se han codificado con el elemento <tag>div</tag> con dos
-            atributos: por un lado, el atributo <tag>@type</tag> debe llevar el valor
-               <tag>writingSession</tag>; por el otro, <tag>@n</tag> debe indicar el número del acto
-            de escritura.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;div type="writingSession"&gt;
-   &lt;p&gt;[Primer acto de escritura]&lt;/p&gt;
-&lt;/div&gt;
-&lt;div type="writingSession" n="2"&gt;
-   &lt;p&gt;[Segundo acto de escritura]&lt;/p&gt;
-&lt;/div&gt;</programlisting>
+         <title>Schreibsitzungen</title>
+         <para>Die Schreibsitzungen wurden mit dem <tag>div-Element</tag> mit zwei Attributen kodiert: Zum einen muss das Attribut <tag>@type</tag> den Wert <tag>writingSession</tag> tragen; zum anderen muss <tag>@n</tag> die Nummer der Schreibsitzung angeben.</para>
+            <programlisting language="xml" xml:space="preserve">&lt;div type="writingSession">
+   &lt;p>[First writing session]&lt;/p>
+&lt;/div>
+&lt;div type="writingSession" n="2">
+   &lt;p>[Second wrotomg session]&lt;/p>
+&lt;/div></programlisting>
       </section>
       <section>
-         <title>Cierre de la carta</title>
-         <para>El cierre de la carta se ha codificado en el elemento <tag>closer</tag>. La fórmula
-            de saludo se ha codificado con el elemento <tag>salute</tag> mientras que la firma se ha
-            codificado con el elemento <tag>signed</tag>. Con el atributo <tag>@rend</tag> del
-            elemento <tag>closer</tag> se ha representado la forma o apariencia con que se realizó
-            el cierre de la carta.</para>
-         <informaltable>
-            <thead>
-               <tr>
-                  <td>
-                     <para>Cierre de carta</para>
-                  </td>
-                  <td>
-                     <para>Valor para <tag>@rend</tag>
-                     </para>
-                  </td>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>
-                     <para>párrafo</para>
-                  </td>
-                  <td>
-                     <para>
+         <title>Schluss des Schreibens</title>
+         <para>Der Schluss des Briefes wurde im Element <tag>closer</tag> kodiert. Die Anredeformel wurde mit dem Element <tag>salute</tag> kodiert, während die Unterschrift mit dem Element <tag>signed</tag> kodiert wurde. Das <tag>@rend-Attribut</tag>des <tag>closer-Elements</tag> stellt die Form oder das Aussehen des Briefschlusses dar.</para>
+            <informaltable>
+               <thead>
+                  <tr>
+                     <td>
+                        <para>Abschlussschreiben</para>
+                     </td>
+                     <td>
+                        <para>Wert für <tag>@rend</tag>    </para>
+                     </td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <para>Absatz</para>
+                     </td>
+                     <td>
+                        <para>
                         <tag>paragraph</tag>
                      </para>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <para>dentro de una línea</para>
-                  </td>
-                  <td>
-                     <para>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <para>innerhalb einer Linie</para>
+                     </td>
+                     <td>
+                        <para>
                         <tag>within the line</tag>
                      </para>
-                  </td>
-               </tr>
-            </tbody>
-         </informaltable>
-         <para>Por ejemplo:</para>
-            <programlisting language="xml" xml:space="preserve">&lt;closer rend="paragraph"&gt;
-   &lt;salute&gt;Muchos saludos&lt;/salute&gt;
-   &lt;signed&gt;F. E.&lt;/signed&gt;
-&lt;/closer&gt;</programlisting>
-         <para>Si hubiera una fecha en el cierre de la carta, se ha codificado en el elemento
-               <tag>closer</tag> con <tag>dateline</tag>.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;closer rend="paragraph"&gt;
-   &lt;dateline&gt;4 de enero de 1886&lt;/dateline&gt;
-   &lt;!-- […] --&gt;
-&lt;/closer&gt;</programlisting>
+                     </td>
+                  </tr>
+               </tbody>
+            </informaltable>
+         <para>Zum Beispiel:</para>
+            <programlisting language="xml" xml:space="preserve">&lt;closer rend="paragraph">
+   &lt;salute>Muchos saludos&lt;/salute>
+   &lt;signed>F. E.&lt;/signed>
+&lt;/closer></programlisting>
+         <para>Wenn es am Ende des Briefes ein Datum gab, wurde es im <tag>engeren</tag> Element mit <tag>Datumszeile</tag> kodiert.</para>
+            <programlisting language="xml" xml:space="preserve">&lt;closer rend="paragraph">
+   &lt;dateline>4 de enero de 1886&lt;/dateline>
+   &lt;!-- […] -->
+&lt;/closer></programlisting>
       </section>
       <section>
-         <title>Posdata</title>
-         <para>La posdata se ha codificado después del <tag>closer</tag> con el elemento
-               <tag>postcript</tag>. La posdata siempre contiene al menos un párrafo (<tag>p</tag>).</para>
-            <programlisting language="xml" xml:space="preserve">&lt;postscript&gt;
-   &lt;p&gt;Para Barón von Humboldt&lt;/p&gt;
-&lt;/postscript&gt;</programlisting>
+         <title>Nachtrag</title>
+         <para>Das Postscript wurde nach dem <tag>Closer</tag> mit dem <tag>Postscript-Element</tag> kodiert. Das Postscript enthält immer mindestens einen Absatz<tag>(p</tag>).</para>
+            <programlisting language="xml" xml:space="preserve">&lt;postscript>
+   &lt;p>Para Barón von Humboldt&lt;/p>
+&lt;/postscript></programlisting>
       </section>
    </section>
 </article>
