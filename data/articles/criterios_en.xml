@@ -1000,49 +1000,49 @@ algunas observaciones &lt;choice&gt;
          </section>
          <section>
             <title>Deletions</title>
-            <para>As long as it is readable and regardless of whether it is in line breaks,
+            <para>As long as it is readable and regardless of whether it is in line beginnings,
                abbreviations, normalisations and editor corrections or additions, the deleted text
-               has been encoded with the del (deletion) element and using the @rendition attribute
-               to specify the type of deletion:</para>
+               has been encoded with the <tag>del</tag> (deletion) element and using the
+                  <tag>@rendition</tag> attribute to specify the type of deletion:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Type of deletion</para>
-                     </td>
-                     <td>
                         <para>Value of <tag>@rendition</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Type of deletion</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>overwritten</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>#ow</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>overwritten</para>
+                     </td>
                   </tr>
-                  <tr>
-                     <td>strikethrough</td>
+                  <tr>  
                      <td>
                         <para>
                            <tag>#s</tag>
                         </para>
                      </td>
+                     <td>strikethrough</td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>erased</para>
-                     </td>
                      <td>
                         <para>
                            <tag>#erased</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>erased</para>
                      </td>
                   </tr>
                </tbody>
@@ -1054,7 +1054,7 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
          <section>
             <title>Additions</title>
             <para>In all editions of the project, the author's own additions to the textual source
-               have been encoded. Im contrast to notes, additions only extend the text and are
+               have been encoded. In contrast to notes, additions only extend the text and are
                syntactically integrated.</para>
             <para>Additions made by the author have been encoded with <tag>add</tag> (addition)
                using the <tag>@place</tag> attribute to specify the location of the addition:</para>
@@ -1210,8 +1210,9 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>La adición se ha codificado con el elemento <tag>add</tag> (addition). El lugar de
-               la adición se ha especificado con el atributo <tag>@place</tag>:</para>
+            <para>The addition has been encoded with the <tag>add</tag> element (addition). The
+               location of the addition has been specified with the attribute
+               <tag>@place</tag>:</para>
             <informaltable>
                <thead>
                   <tr>
@@ -1325,7 +1326,7 @@ explican en el documento […]</programlisting>
                   <tag>orig</tag> (original form) and <tag>reg</tag> (regularised form). In the
                   <tag>orig</tag> element the original form as it appears in the textual source has
                been encoded while in the <tag>reg</tag> element the regularised form has been
-               encoded, i.e. modernised to the current orthographic normal to facilitate the
+               encoded, i.e. modernised to the current orthographic norm to facilitate the
                readability of the text. For example: </para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;orig&gt;espendiendo&lt;/orig&gt;
@@ -1413,8 +1414,8 @@ explican en el documento […]</programlisting>
             <para>Obvious errors appearing in the textual source have been encoded with the element
                   <tag>choice</tag>. Inside, the erroneous word has been encoded with the element
                   <tag>sic</tag> while the correction has been encoded with <tag>corr</tag>. In the
-               corr element, the attribute <tag>@cert</tag> (certainty) indicates the certainty of
-               the correction: </para>
+                  <tag>corr</tag> element, the attribute <tag>@cert</tag> (certainty) indicates the
+               certainty of the correction: </para>
             <informaltable>
                <thead>
                   <tr>
@@ -1464,9 +1465,9 @@ explican en el documento […]</programlisting>
             <para>When a word is repeated and it is clear that this is an error, the same
                   <tag>choice</tag> element has been used to encode the erroneous word with
                   <tag>sic</tag>. However, in these cases a corrected form has not been provided but
-               the <tag>corr</tag> element has been used and left empty. In addition, the type
-               attribute with value "deleted" has been used to indicate that a redundant word has
-               been removed. For example: </para>
+               the <tag>corr</tag> element has been used and left empty. In addition, the
+                  <tag>type</tag> attribute with value "deleted" has been used to indicate that a
+               redundant word has been removed. For example: </para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;sic&gt;más&lt;/sic&gt;
    &lt;corr type="deleted"/&gt;
@@ -1550,43 +1551,43 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Reason</para>
-                     </td>
-                     <td>
                         <para>Value of <tag>@reason</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Reason</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>destruction or lost</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>lost</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>destruction or lost</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>illegible</para>
-                     </td>
                      <td>
                         <para>
                            <tag>illegible</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>illegible</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para> unclear to read because of strikethrough</para>
-                     </td>
                      <td>
                         <para>
                            <tag>covered</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para> unclear to read because of strikethrough</para>
                      </td>
                   </tr>
                </tbody>
@@ -1597,53 +1598,53 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Illegible unit</para>
-                     </td>
-                     <td>
                         <para>Value of <tag>@unit</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Illegible unit</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>characters</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>chars</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>characters</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>lines</para>
-                     </td>
                      <td>
                         <para>
                            <tag>lines</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>lines</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>pages</para>
-                     </td>
                      <td>
                         <para>
                            <tag>pages</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>pages</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>words</para>
-                     </td>
                      <td>
                         <para>
                            <tag>words</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>words</para>
                      </td>
                   </tr>
                </tbody>
@@ -1669,53 +1670,53 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Illegible unit</para>
-                     </td>
-                     <td>
                         <para>Value of <tag>@unit</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Illegible unit</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>characters</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>chars</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>characters</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>lines</para>
-                     </td>
                      <td>
                         <para>
                            <tag>lines</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>lines</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>pages</para>
-                     </td>
                      <td>
                         <para>
                            <tag>pages</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>pages</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>words</para>
-                     </td>
                      <td>
                         <para>
                            <tag>words</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>words</para>
                      </td>
                   </tr>
                </tbody>
@@ -1727,33 +1728,33 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Reason</para>
-                     </td>
-                     <td>
                         <para>Value of <tag>@reason</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Reason</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>text in foreign language</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>fm</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>text in foreign language</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>unimportant text for the corpus</para>
-                     </td>
                      <td>
                         <para>
                            <tag>insignificant</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>unimportant text for the corpus</para>
                      </td>
                   </tr>
                </tbody>
@@ -1889,7 +1890,7 @@ de mayo de 1804&lt;/date&gt;</programlisting>
       </section>
       <section>
          <title>Postal address</title>
-         <para>The postal address of a letter has been encoded in the <tag>opener</tag>element
+         <para>The postal address of a letter has been encoded in the <tag>opener</tag> element
             (start of the letter) or in the <tag>closer</tag> (close of the letter). It consists of
             the <tag>address</tag> element and one or more <tag>addrLine</tag> child
             elements.</para>
@@ -1902,8 +1903,8 @@ de mayo de 1804&lt;/date&gt;</programlisting>
       <section>
          <title>Beginning of the letter</title>
          <para>The beginning of the letter has been encoded with the <tag>opener</tag> element.
-            Inside, if any, the date and salutation have been encoded with the
-            <tag>dateline</tag>and <tag>salute</tag> elements respectively.</para>
+            Inside, if any, the date and salutation have been encoded with the <tag>dateline</tag>
+            and <tag>salute</tag> elements respectively.</para>
          <para>In the <tag>dateline</tag> element the <tag>@rend</tag> attribute has been used if
             the date is indented or aligned to the right. For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;opener&gt;
@@ -1914,14 +1915,14 @@ de mayo de 1804&lt;/date&gt;</programlisting>
       <section>
          <title>Writing sessions</title>
          <para>The writing sessions have been encoded with the <tag>div</tag> element with two
-            attributes: on the one hand, the <tag>@type</tag> attribute must carry the value
-               <tag>writingSession</tag>; on the other hand, <tag>@n</tag> must indicate the number
-            of the writing session.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;div type="writingSession"&gt;
+            attributes: on the one hand, the <tag>@type</tag> attribute contains the value
+               <tag>writingSession</tag>; on the other hand, <tag>@n</tag> indicates the number of
+            the writing session.</para>
+            <programlisting language="xml" xml:space="preserve">&lt;div type="writingSession" n="1"&gt;
    &lt;p&gt;[First writing session]&lt;/p&gt;
 &lt;/div&gt;
 &lt;div type="writingSession" n="2"&gt;
-   &lt;p&gt;[Second wrotomg session]&lt;/p&gt;
+   &lt;p&gt;[Second writing session]&lt;/p&gt;
 &lt;/div&gt;</programlisting>
       </section>
       <section>
@@ -1935,33 +1936,33 @@ de mayo de 1804&lt;/date&gt;</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Closing letter</para>
-                     </td>
-                     <td>
                         <para>Value for <tag>@rend</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Closing letter</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>paragraph</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>paragraph</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>paragraph</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>within a line</para>
-                     </td>
                      <td>
                         <para>
                            <tag>within the line</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>within the line</para>
                      </td>
                   </tr>
                </tbody>
