@@ -2,7 +2,7 @@
    <info>
       <title>Editing Guidelines</title>
       <copyright>
-         <year>2024-01-17</year>
+         <year>2024-03-27</year>
       </copyright>
       <keywordset>
          <keyword>Documentation</keyword>
@@ -28,7 +28,7 @@
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
       </publisher>
-      <edition>5th Version</edition>
+      <edition>6th Version</edition>
    </info>
    <section xml:id="metadatos">
       <title>Metadata</title>
@@ -154,7 +154,7 @@
 
       <section>
          <title>Title</title>
-         <para>All editions have been identified by a main title. The title has been
+         <para>All editions have been identified with a main title. The title has been
             orthographically standardised.</para>
          <para>In <tag>titleStmt</tag>, the encoding of the main title has been done using the title
             element and the <tag>type="main"</tag> attribute. For example:</para>
@@ -168,9 +168,10 @@
    a Alexander von Humboldt&lt;/title&gt;
 &lt;title type="sub" xml:lang="fr"&gt;À Monsieur Mr. le Baron
    A. Humboldt&lt;/title&gt;         </programlisting>
-         <para>The <tag>@xml:lang</tag> attribute has been optionally used with a standard code to indicate the language of the alternative title: "es" for Spanish, "fr" for English, "fr" for French.
-            standard code to indicate the language of the alternative title: "es" for Spanish, "fr" for French, "de" for German, "en" for English, etc.
-            for French, "de" for German, "en" for English, etc.</para>
+         <para>The <tag>@xml:lang</tag> attribute has been optionally used with a standard code to
+            indicate the language of the alternative title: "es" for Spanish, "fr" for French, "de"
+            for German, "en" for English, etc. for French, "de" for German, "en" for English,
+            etc.</para>
       </section>
       <section>
          <title>Editors and collaborators</title>
@@ -257,7 +258,7 @@
       <section>
          <title>Publication and licence</title>
          <para>Information on the organisations responsible for the distribution and publication of
-            the editions, the places of publication and the licence has been coded in all
+            the editions, the places of publication and the licence has been encoded in all
             editions.</para>
          <para>For this purpose, the <tag>publicationStmt</tag> element has been used. Within this
             element, three nested elements have been used:<itemizedlist>
@@ -305,18 +306,18 @@
       <section>
          <title>Textual source</title>
          <para>In all editions of the project, the source from which the text is derived, the name
-            of the institution where the document is held and at least one identifier such as a call
-            number have been encoded.</para>
+            of the institution where the document is held and at least one identifier such as a
+            shelfmark have been encoded.</para>
          <para>The source description has been encoded with the <tag>msDesc</tag> (manuscript
-            description) element. Inside, the <tag>msIdentifier</tag> element has been used to
-            provide information about the institution holding the document with the
-               <tag>institution</tag> element and the sheflmark with the <tag>idno</tag> element,
-            which contains the <tag>@type</tag> attribute with the value <tag>shelfmark</tag>.
-               This<tag> idno</tag> element has been encoded inside another <tag>idno</tag> element
-            in order to repeat as many idno elements as necessary. Optionally, information about the
-            collection has been included with the <tag>collection</tag> element and the name or
-            title of the source as it appears in the document using the <tag>msName</tag> element.
-            For example:</para>
+            description) element. Inside, the <tag>msIdentifier</tag> element provides information
+            about the institution holding the document with the <tag>institution</tag> element and
+            the sheflmark with the <tag>idno</tag> element, which contains the <tag>@type</tag>
+            attribute with the value <tag>shelfmark</tag>. This <tag>idno</tag> element has been
+            encoded inside another <tag>idno</tag> element in order to repeat as many
+               <tag>idno</tag> elements as necessary. Optionally, information about the collection
+            has been included with the <tag>collection</tag> element and the name or title of the
+            source as it appears in the document using the <tag>msName</tag> element. For
+            example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;msDesc type="copy"&gt;
    &lt;msIdentifier&gt;
       &lt;institution&gt;[institution]&lt;/institution&gt;
@@ -331,11 +332,11 @@
                 <para>It is important not to confuse the name or title of the source encoded in
                   <tag>msName</tag> with the title of the digital edition, which may differ.</para>
             </tip>
-         <para>When the source from which the text is derived is a printed document or a printed
-            edition has been consulted, the information has been encoded in <tag>witness</tag>
-            within <tag>listWit</tag>. Inside, a <tag>bibl</tag> element has been used to encode a
-            bibliographic reference using the attribute <tag>@type</tag> with the value print to
-            distinguish it from a manuscript. </para>
+         <para>When the source is a printed document or a printed edition has been consulted, the
+            information has been encoded in <tag>witness</tag> within <tag>listWit</tag>. Inside, a
+               <tag>bibl</tag> element has been used to encode a bibliographic reference using the
+            attribute <tag>@type</tag> with the value <tag>print</tag> to distinguish it from a
+            manuscript. </para>
          <para>For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;witness&gt;
    &lt;bibl type="print"&gt;Humboldt, Alexander von: Geografía de la plantas,
@@ -391,9 +392,9 @@
                   </tr>
                </tbody>
             </informaltable>
-            <para>The <tag>idno</tag> element has been used as part of the msIdentifier element and
-               as a child element of another idno using the <tag>@type</tag> attribute with value
-               "uri" for permalinks or "URLImages" for facsimiles. For example: </para>
+            <para>The <tag>idno</tag> element has been used as part of the <tag>msIdentifier</tag>
+               element and as a child element of another <tag>idno</tag> using the <tag>@type</tag>
+               attribute with value "uri" for permalinks or "URLImages" for facsimiles. For example: </para>
                <programlisting language="xml" xml:space="preserve">&lt;idno&gt;
    &lt;idno type="shelfmark"&gt;Caja pequeña 7b, no. 68&lt;/idno&gt;
    &lt;idno type="uri"&gt;http://kalliope-verbund.info/DE-611-HS-1272345&lt;/idno&gt;
@@ -430,53 +431,53 @@
                <thead>
                   <tr>
                      <td>
-                        <para>Type of source </para>
-                     </td>
-                     <td>
                         <para>Value of <tag>@rend</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Type of source </para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>Elaborated</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>notExtant</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>Elaborated</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>Draft</para>
-                     </td>
                      <td>
                         <para>
                            <tag>concept</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>Draft</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>Manuscript</para>
-                     </td>
                      <td>
                         <para>
                            <tag>manuscript</tag>
                         </para>
                      </td>
-                  </tr>
-                  <tr>
                      <td>
-                        <para>Copy</para>
+                        <para>Manuscript</para>
                      </td>
+                  </tr>
+                  <tr>  
                      <td>
                         <para>
                            <tag>copy</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Copy</para>
                      </td>
                   </tr>
                   <tr>
@@ -497,11 +498,11 @@
       </section>
       <section>
          <title>Description of the document</title>
-         <para>Optionally, the physical characteristics (paper, format, number of pages, etc.) of
-            the textual source from which the edition is derived have been described.</para>
+         <para>The physical characteristics (paper, format, number of pages, etc.) of the textual
+            source have been optionally described.</para>
          <para>The description of the document has been encoded with the <tag>physDesc</tag>
-            (physical description) element. The description has been provided as text in a
-               <tag>p</tag> element:</para>
+            (physical description) element. The description is encoded as text in a <tag>p</tag>
+            element:</para>
             <programlisting language="xml" xml:space="preserve">&lt;physDesc&gt;
    &lt;p&gt;Manuscrito autógrafo de autor desconocido en buen estado
    de conservación y de seis páginas de extensión. Forma parte del
@@ -516,9 +517,8 @@
       <section>
          <title>Author</title>
          <para>If the author of the text is known, this information has been encoded in the
-               <tag>profileDesc</tag> element. There, a <tag>creation</tag> element has been created
-            where the information about the creation has been encoded: author, place of writing and
-            date of creation. </para>
+               <tag>profileDesc</tag> element. There, a <tag>creation</tag> element has been added
+            to provide metadata about the author, place of writing and date of creation. </para>
          <para>The author's name has been encoded with the <tag>persName</tag> element. For
             example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;profileDesc&gt;
@@ -548,7 +548,7 @@
             has been used to provide an external identifier from Geonames. For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;placeName key="https://www.geonames.org/3553478"&gt;La Habana&lt;/placeName&gt;      </programlisting>
          <para>If the place is unknown, the content of <tag>placeName</tag> should be "N/A" (Not
-            Available). For isntance:
+            Available). For instance:
             <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
    &lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
 &lt;placeName&gt;N/A&lt;/placeName&gt;    </programlisting> In this case, the
@@ -558,7 +558,7 @@
          <title>Creation date</title>
          <para>If the creation date is known, it has been encoded with the <tag>date</tag> element
             observing the format YYYYY-MM-DD (or YYYY-MM or YYYYY, depending on the information
-            available) and using the attributes <tag>@when</tag>, <tag>@from</tag>/<tag>@to</tag> o
+            available) and using the attributes <tag>@when</tag>, <tag>@from</tag>/<tag>@to</tag> or
                <tag>@notBefore</tag>/<tag>@notAfter</tag>. This allows the web application to use
             this data to search for information in a specific time period or to filter documents
             based on the standardised date. <itemizedlist>
@@ -584,9 +584,8 @@
 
             <programlisting language="xml" xml:space="preserve">&lt;date notBefore="1804-05-01" notAfter="1804-05-16"&gt;Primera mitad
    de mayo de 1804&lt;/date&gt;     </programlisting>
-         <para>In addition, optionally, the <tag>@cert</tag> attribute with the values
-               <tag>high</tag> and <tag>low</tag> has been used to encode the certainty with which
-            the date is known to be correct.</para>
+         <para>In addition, the <tag>@cert</tag> attribute has been optionally used to encode the
+            certainty of the date with the values <tag>high</tag> and <tag>low</tag> .</para>
          <para>When the creation date is not known, the <tag>date</tag> element has also been used,
             but with the value "N/A" (Not available). For example:
             <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012682"&gt;Arango y Parreño, Francisco de (1765-1837)&lt;/persName&gt;
@@ -651,14 +650,14 @@
    </section>
    <section xml:id="texto">
       <title>Text</title>
-      <para>The texts edited as part of the project have been structurally coded. All paragraphs,
+      <para>The logical structure of the edited texts have been encoded explicitely. All paragraphs,
          line breaks, lists, tables, notes and drawings have been explicitly represented with TEI
          elements. Additional textual phenomena encoded explicitely are the following: the
          pagination or foliation of the source, including blank pages, and changes in typography
          such as highlights, spaces left by the author, authorial interventions such as deletions,
          additions and substitutions, and editorial interventions such as normalisations, resolution
          of abbreviations, supplied words, corrections of obvious errors, uncertain readings,
-         omissions and words in another language.</para>
+         omissions and words in a foreign language.</para>
       <section xml:id="estructuras-textuales">
          <title>Textual structure</title>
          <section>
@@ -670,9 +669,9 @@
                number (depending on the physical sequence of the document or author). </para>
                <programlisting language="xml" xml:space="preserve">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano</programlisting>
             <para>The digitisation of the folio or page has been encoded with the attribute
-                  <tag>@facs</tag> (facsimile). The file name of the digital image file has been
-               encoded including the archival foliation and the extension "tif". The file name
-               corresponds to a URI, i.e. it is unique in the digital dossier. For example:</para>
+                  <tag>@facs</tag> (facsimile). The file name of the digital image file includes the
+               archival foliation and the extension "tif". The file name corresponds to a URI, i.e.
+               it is unique in the digital dossier. For example:</para>
                <programlisting language="xml" xml:space="preserve">&lt;pb n="1r" facs="prohd0014_1r.tif"/&gt;</programlisting>
             <para>Any other numbering or pagination information contained in the source has been
                encoded with the <tag>fw</tag> (forme work) element; this element carries the
@@ -681,9 +680,9 @@
          </section>
          <section>
             <title>Sections and headings</title>
-            <para>Optionally, in documents with a relevant internal logical structure, such as
-               minutes and protocols, the sections have been coded using the <tag>div</tag> element.
-               For example:</para>
+            <para>In documents with a relevant internal logical structure, such as minutes and
+               protocols, the sections have been optionally encoded using the <tag>div</tag>
+               element. For example:</para>
             <programlisting language="xml" xml:space="preserve">&lt;tex&gt;
    &lt;div&gt;
       &lt;div&gt;[Sección o apartado 1]&lt;/div&gt;
@@ -692,31 +691,31 @@
 &lt;/tex&gt;</programlisting>
             <para>This internal structure has always been encoded in combination with pagination or
                foliation with <tag>pb</tag> and the use of <tag>p</tag>.</para>
-            <para>Also optionally, in documents such as minutes, section headers have been coded
-               with the <tag>head</tag> element.</para>
+            <para>In such documents section headers have been encoded with the <tag>head</tag>
+               element.</para>
          </section>
          <section>
             <title>Blank pages</title>
             <para>In all editions of the project, the blank pages of the textual source have been
-               coded. In addition, a distinction was made between blank pages, missing pages,
-               semantically significant blank spaces and omissions by the editors.</para>
-            <para>In order to be able to represent and display the foliation correctly, each (blank)
-               page has been coded individually. Even if there is a succession of blank pages, a
-               number <tag>1</tag> has always been entered for each newly coded blank page.</para>
-            <para>Blank pages have been coded with the (empty) <tag>gap/</tag> element. This has
-               been used just after the page break (<tag>pb/</tag>) above. The two attributes
-                  <tag>@unit</tag> and <tag>@quantity </tag>of the <tag>gap/</tag> element carry the
-               values <tag>pages</tag> and <tag>1</tag>. The <tag>@reason</tag> attribute contains
-               the value <tag>empty</tag>. When there is more than one blank page in a row, each
-               page has been encoded individually. </para>
-               <programlisting language="xml" xml:space="preserve">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</programlisting>
+               encoded explicitely. In addition, a distinction was made between blank pages, missing
+               pages, semantically significant blank spaces and omissions by the editors.</para>
+            <para>In order to represent and display the foliation correctly, each (blank) page has
+               been encoded individually. Even if there is a succession of blank pages, a number
+                  <tag>1</tag> has always been entered for each newly encoded blank page.</para>
+            <para>Blank pages have been encoded with the (empty) <tag>gap/</tag> element. </para>
+            <programlisting language="xml" xml:space="preserve">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</programlisting>
+            <para>This has been used just after the page break (<tag>pb/</tag>) above. The two
+               attributes <tag>@unit</tag> and <tag>@quantity </tag>of the <tag>gap/</tag> element
+               carry the values <tag>pages</tag> and <tag>1</tag>. The <tag>@reason</tag> attribute
+               contains the value <tag>empty</tag>. When there is more than one blank page in a row,
+               each page has been encoded individually. </para>   
          </section>
          <section>
             <title>Paragraphs</title>
-            <para>In all editions of the project, paragraphs have been coded following the sequence
-               of the textual source. Paragraph indentation has been optionally coded if the editor
-               considers this information relevant.</para>
-            <para>Paragraphs have been coded with the element <tag>p</tag> (paragraph).</para>
+            <para>In all editions of the project, paragraphs have been encoded following the
+               sequence of the textual source. Paragraph indentation has been optionally encoded if
+               the editor considers this information relevant.</para>
+            <para>Paragraphs have been encoded with the element <tag>p</tag> (paragraph).</para>
          </section>
          <section>
             <title>Line beginnings </title>
@@ -733,10 +732,10 @@
          <section>
             <title>Blank spaces</title>
             <para>Semantically significant blank space (e.g. authors sometimes leave a space in the
-               text to supplement it later) has been coded with the empty element <tag>space/</tag>.
-               The reproduction of such gaps in the transcription has been distinguished from
-               omissions made by the editors, as well as from empty or missing pages, each of which
-               has been coded as <tag>gap/</tag>.</para>
+               text to supplement it later) has been encoded with the empty element
+                  <tag>space/</tag>. The reproduction of such gaps in the transcription has been
+               distinguished from omissions made by the editors, as well as from empty or missing
+               pages, each of which has been encoded as <tag>gap/</tag>.</para>
             <para>The extent of the omission has been indicated by <tag>@unit</tag> and
                   <tag>@quantity</tag>. If the number of omitted lines (unit="lines"), characters
                (unit="chars") or words (unit="words") cannot be reliably determined, the value
@@ -747,9 +746,9 @@
          </section>
          <section>
             <title>Lists</title>
-            <para>Lists have been coded with the <tag>list</tag> element. Each bullet point has been
-               transcribed into an <tag>item</tag> element. Existing numbering has not been encoded
-               independently, but transcribed directly into the <tag>item</tag> element. </para>
+            <para>Lists have been encoded with the <tag>list</tag> element. Each bullet point has
+               been transcribed into an <tag>item</tag> element. Existing numbering has not been
+               encoded independently, but transcribed directly into the <tag>item</tag> element. </para>
                <programlisting language="xml" xml:space="preserve">&lt;list&gt;
    &lt;item&gt;Le Rio Apure près de S. Fernando 206 t.&lt;/item&gt;
    &lt;item&gt;Orinoco à la bocca Apure 1905 t.&lt;lb/&gt;
@@ -767,7 +766,7 @@
                be those drawn by the author, while implicit tables are recognisable only by the
                arrangement of their contents. A distinction has been made between tables and
                enumerations that resemble lists. </para>
-            <para>Tables have been coded with the <tag>table</tag> element. The first row of the
+            <para>Tables have been encoded with the <tag>table</tag> element. The first row of the
                table has been assigned the attribute <tag>@role="label"</tag> to be considered as a
                header. For example:</para>
 
@@ -802,7 +801,7 @@
             <para>Notes by the author or a contemporary editor have not been inserted following
                their location in the manuscript, but in the passage of text to which the note
                actually refers (or which the editor reasonably assumes it refers to). </para>
-            <para>The notes have been coded with the <tag>note</tag> element</para>
+            <para>The notes have been encoded with the <tag>note</tag> element</para>
                <programlisting language="xml" xml:space="preserve">En los partidos más remotos una caballería
 &lt;note place="mBottom" hand="#author"&gt;La caballería es una superficie de
 tierra de quatro cientas treinta y dos varas en quadro.&lt;/note&gt; de tierra
@@ -930,53 +929,53 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
       <section xml:id="intervenciones-autoriales">
          <title>Authorial interventions</title>
          <para>In all digital editions of the project, changes in typography and authorial
-            interventions have been coded explicitly, i.e. with TEI elements.</para>
+            interventions have been encoded explicitly, i.e. with TEI elements.</para>
          <section>
             <title>Highlighted text</title>
-            <para>Highlighted text marginal marks have been coded with the <tag>hi</tag> element
+            <para>Highlighted text marginal marks have been encoded with the <tag>hi</tag> element
                (highlighted) and the <tag>@rendition</tag> attribute to specify their
                appearance:</para>
             <informaltable>
                <thead>
                   <tr>
                      <td>
-                        <para>Type of highlight</para>
-                     </td>
-                     <td>
                         <para>Value of <tag>@rendition</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Type of highlight</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>simple</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>#u</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>simple</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>double</para>
-                     </td>
                      <td>
                         <para>
                            <tag>#uu</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>double</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>marked in the margin</para>
-                     </td>
                      <td>
                         <para>
                            <tag>#mMM</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>marked in the margin</para>
                      </td>
                   </tr>
                </tbody>
@@ -1055,10 +1054,10 @@ muebles, &lt;del rendition="#s"&gt;y&lt;/del&gt; vestidos y tren de calle.</prog
          <section>
             <title>Additions</title>
             <para>In all editions of the project, the author's own additions to the textual source
-               have been coded. Im contrast to notes, additions only extend the text and are
+               have been encoded. Im contrast to notes, additions only extend the text and are
                syntactically integrated.</para>
-            <para>Additions made by the author have been coded with <tag>add</tag> (addition) using
-               the <tag>@place</tag> attribute to specify the location of the addition:</para>
+            <para>Additions made by the author have been encoded with <tag>add</tag> (addition)
+               using the <tag>@place</tag> attribute to specify the location of the addition:</para>
             <informaltable>
                <thead>
                   <tr>
@@ -1164,9 +1163,9 @@ explican en el documento […]</programlisting>
          <section>
             <title>Substitutions</title>
             <para>If a word or a passage of text is deleted in the source and at the same time a
-               word is added, these two textual phenomena have been coded together with a
+               word is added, these two textual phenomena have been encoded together with a
                   <tag>subst</tag> (substitution) element.</para>
-            <para>The deletion has been coded with the element <tag>del</tag> (deletion). The type
+            <para>The deletion has been encoded with the element <tag>del</tag> (deletion). The type
                of deletion has been specified in the <tag>@rendition</tag> attribute:</para>
             <informaltable>
                <thead>
@@ -1318,7 +1317,7 @@ explican en el documento […]</programlisting>
       <section xml:id="intervenciones-editoriales">
          <title>Editorial interventions</title>
          <para>In all digital editions of the project, editorial interventions have been explicitly
-            coded.</para>
+            encoded.</para>
          <section>
             <title>Normalisations</title>
             <para>Spelling, punctuation, capitalisation and hyphenation have been explicitly
@@ -1353,16 +1352,17 @@ explican en el documento […]</programlisting>
          </section>
          <section>
             <title>Abbreviations</title>
-            <para>Abbreviations have been coded with the <tag>choice</tag> element and its two child
-               elements <tag>abbr</tag> (abbreviation) and <tag>expan</tag> (resolved abbreviation).
-               In the <tag>abbr</tag> element, the abbreviated form that appears in the textual
-               source has been retained, while in the <tag>expan</tag> element, the editors have
-               provided the resolved or expanded form to facilitate the readability of the text. </para>
+            <para>Abbreviations have been encoded with the <tag>choice</tag> element and its two
+               child elements <tag>abbr</tag> (abbreviation) and <tag>expan</tag> (resolved
+               abbreviation). In the <tag>abbr</tag> element, the abbreviated form that appears in
+               the textual source has been retained, while in the <tag>expan</tag> element, the
+               editors have provided the resolved or expanded form to facilitate the readability of
+               the text. </para>
                <programlisting language="xml" xml:space="preserve">&lt;choice&gt;
    &lt;abbr&gt;q&lt;/abbr&gt;
    &lt;expan&gt;que&lt;/expan&gt;
 &lt;/choice&gt;</programlisting>
-            <para>Acronyms have been coded as abbreviations following the same method with
+            <para>Acronyms have been encoded as abbreviations following the same method with
                   <tag>choice</tag>.</para>
          </section>
          <section>
@@ -1410,7 +1410,7 @@ explican en el documento […]</programlisting>
          </section>
          <section>
             <title>Errors and corrections</title>
-            <para>Obvious errors appearing in the textual source have been coded with the element
+            <para>Obvious errors appearing in the textual source have been encoded with the element
                   <tag>choice</tag>. Inside, the erroneous word has been encoded with the element
                   <tag>sic</tag> while the correction has been encoded with <tag>corr</tag>. In the
                corr element, the attribute <tag>@cert</tag> (certainty) indicates the certainty of
@@ -1504,7 +1504,7 @@ explican en el documento […]</programlisting>
                </tbody>
             </informaltable>
             <para>With the attribute <tag>@cert </tag>(certainty) the certainty of the intervention
-               has been coded. </para>
+               has been encoded. </para>
             <informaltable>
                <thead>
                   <tr>
@@ -1591,7 +1591,7 @@ explican en el documento […]</programlisting>
                   </tr>
                </tbody>
             </informaltable>
-            <para>If the number of lines, words, etc. are known, they have been coded using
+            <para>If the number of lines, words, etc. are known, they have been encoded using
                   <tag>@unit</tag> and <tag>@quantity</tag>. </para>
             <informaltable>
                <thead>
@@ -1656,7 +1656,7 @@ explican en el documento […]</programlisting>
                <programlisting language="xml" xml:space="preserve">&lt;del rendition="#s"&gt;
    &lt;gap reason="illegible" unit="chars" quantity="5"/&gt;
 &lt;/del&gt;</programlisting>
-            <para>Finally, destroyed or missing pages have also been coded individually.</para>
+            <para>Finally, destroyed or missing pages have also been encoded individually.</para>
                <programlisting language="xml" xml:space="preserve">&lt;pb n="1r"/&gt;&lt;gap reason="lost" unit="pages" quantity="1"/&gt;</programlisting>
          </section>
          <section>
@@ -1761,16 +1761,16 @@ explican en el documento […]</programlisting>
             <para>For instance:
                <programlisting language="xml" xml:space="preserve">a menudo &lt;gap unit="words" quantity="1" reason="fm"/&gt; entonces de nuevo</programlisting></para>
             <para>In order to correctly represent and display the foliation, each page has been
-               coded individually. Even if several consecutive pages are omitted, the omission is
-               always coded with a 1 as the number corresponding to each missing page.</para>
+               encoded individually. Even if several consecutive pages are omitted, the omission is
+               always encoded with a 1 as the number corresponding to each missing page.</para>
          </section>
          <section>
             <title>Comments</title>
-            <para>The editorial comments have been coded with the element <tag>seg</tag> (arbitrary
-               segment). In turn, two elements have been nested: on the one hand, <tag>orig</tag>
-               with which the commented textual passage has been encoded; on the other hand,
-                  <tag>note</tag> with which the editorial comment itself has been encoded. The
-                  <tag>@type</tag> attribute has been used in seg with the value comment.</para>
+            <para>The editorial comments have been encoded with the element <tag>seg</tag>
+               (arbitrary segment). In turn, two elements have been nested: on the one hand,
+                  <tag>orig</tag> with which the commented textual passage has been encoded; on the
+               other hand, <tag>note</tag> with which the editorial comment itself has been encoded.
+               The <tag>@type</tag> attribute has been used in seg with the value comment.</para>
                <programlisting language="xml" xml:space="preserve">&lt;seg type="comment"&gt;
    &lt;orig&gt;plantarum&lt;/orig&gt;
    &lt;note&gt;Se refiere a "De distributione geographica plantarum secundum
@@ -1913,7 +1913,7 @@ de mayo de 1804&lt;/date&gt;</programlisting>
       </section>
       <section>
          <title>Writing sessions</title>
-         <para>The writing sessions have been coded with the <tag>div</tag> element with two
+         <para>The writing sessions have been encoded with the <tag>div</tag> element with two
             attributes: on the one hand, the <tag>@type</tag> attribute must carry the value
                <tag>writingSession</tag>; on the other hand, <tag>@n</tag> must indicate the number
             of the writing session.</para>
