@@ -1,8 +1,8 @@
-<?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+<?xml-model href="https://docbook.org/xml/5.0/xsd/docbook.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema" ?><?xml-stylesheet type="text/css" href="../../../../../../../Program%20Files/Oxygen%20XML%20Author%2023/frameworks/docbook/css/docbook.css"?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
    <info>
       <title>Criterios editoriales</title>
       <copyright>
-         <year>2024-01-17</year>
+         <year>2024-03-27</year>
       </copyright>
       <keywordset>
          <keyword>Documentación</keyword>
@@ -28,7 +28,7 @@
       <publisher>
          <publishername>Proyecto Humboldt Digital</publishername>
       </publisher>
-      <edition>Versión 5</edition>
+      <edition>Versión 6</edition>
    </info>
    <section xml:id="metadatos">
       <title>Metadatos</title>
@@ -338,11 +338,11 @@
          <tip>
                 <para>Es importante no confundir el nombre o título de la fuente codificado en <tag>msName</tag> con el título de la edición digital, que pueden difererir.</para>
             </tip>
-         <para>Cuando la fuente de la que deriva el texto es un documento impreso o se ha consultado
-            una edición impresa, se ha codificado la información en <tag>listWit</tag> y se ha
-            utilizado el elemento <tag>witness</tag>. Dentro se ha usado un elemento <tag>bibl</tag>
-            para codificar una referencia bibliográfica. En <tag>bibl</tag> se ha utilizado el
-            atributo <tag>@type</tag> con el valor <tag>print</tag> para distinguirlo de un
+         <para>Cuando la fuente es un documento impreso o se ha consultado una edición impresa, se
+            ha codificado la información en <tag>listWit</tag> y se ha utilizado el elemento
+               <tag>witness</tag>. Dentro se ha usado un elemento <tag>bibl</tag> para codificar una
+            referencia bibliográfica. En <tag>bibl</tag> se ha utilizado el atributo
+               <tag>@type</tag> con el valor <tag>print</tag> para distinguirlo de un
             manuscrito.</para>
          <para>Por ejemplo:</para>
             <programlisting language="xml" xml:space="preserve">&lt;witness&gt;
@@ -440,63 +440,63 @@
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de fuente textual</para>
-                     </td>
-                     <td>
                         <para>Valor para <tag>@rend</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Tipo de fuente textual</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>Desarrollado</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>notExtant</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>Desarrollado</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>Borrador</para>
-                     </td>
                      <td>
                         <para>
                            <tag>concept</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>Borrador</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>Manuscrito</para>
-                     </td>
                      <td>
                         <para>
                            <tag>manuscript</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>Manuscrito</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>Copia</para>
-                     </td>
                      <td>
                         <para>
                            <tag>copy</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>Copia</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>Impreso</para>
-                     </td>
                      <td>
                         <para>
                            <tag>print</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Impreso</para>
                      </td>
                   </tr>
                </tbody>
@@ -511,7 +511,7 @@
             número de páginas, etc.) de la fuente textual de la que deriva la edición.</para>
          <para>La descripción del documento se ha codificado con el elemento <tag>physDesc</tag>
                (<quote>physical description</quote>, en español: descripción física). La descripción
-            ha sido proporcionada como texto en un elemento <tag>p</tag>:</para>
+            se ha codificado como texto en un elemento <tag>p</tag>:</para>
             <programlisting language="xml" xml:space="preserve">&lt;physDesc&gt;
    &lt;p&gt;Manuscrito autógrafo de autor desconocido en buen estado
    de conservación y de seis páginas de extensión. Forma parte del
@@ -526,9 +526,8 @@
       <section>
          <title>Autor del texto</title>
          <para>Si se conoce quién es autor del texto, esta información se ha codificado en el
-            elemento <tag>profileDesc</tag>. Allí, se ha creado un elemento <tag>creation</tag>
-            donde se han codificado los datos sobre la creación: autor, lugar de escritura y fecha
-            de creación.</para>
+            elemento <tag>profileDesc</tag>. Allí, se ha incluido un elemento <tag>creation</tag>
+            con metadatos sobre el autor, lugar de escritura y fecha de creación.</para>
          <para>El nombre del autor se ha codificado con el elemento <tag>persName</tag>. Por ejemplo:</para>
             <programlisting language="xml" xml:space="preserve">&lt;profileDesc&gt;
    &lt;creation&gt;
@@ -561,7 +560,7 @@
          <para>Si no se conoce el lugar de escritura del texto, también se ha usado el mismo
             elemento <tag>placeName</tag>, pero el valor utilizado es "N/A". Por ejemplo:
             <programlisting language="xml" xml:space="preserve">&lt;persName key="H0012069"&gt;Humboldt, Alexander von (1769-1859)&lt;/persName&gt;
-&lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
+   &lt;date notBefore="1802"&gt;No antes de 1802&lt;/date&gt;
 &lt;placeName&gt;N/A&lt;/placeName&gt;    </programlisting> En tal caso, no se ha
             utilizado el atributo <tag>@key</tag>. </para>
       </section>
@@ -666,15 +665,15 @@
    </section>
    <section xml:id="texto">
       <title>Texto</title>
-      <para>Los textos editados como parte del proyecto han sido codificados desde un punto de vista
-         estructural. Se han representado de manera explícita con etiquetado TEI todos los párrafos,
-         rupturas de línea, listas, tablas, notas y dibujos. Asimismo, se han codificado la
-         paginación o foliación de la fuente, incluyendo las páginas en blanco, y los cambios en la
-         tipografía como los destacados, los espacios dejados por el autor, las intervenciones
-         autoriales como las eliminaciones, adiciones y sustituciones, y las intervenciones
-         editoriales como las normalizaciones, la resolución de las abreviaturas, las palabras
-         suplidas, las correcciones de errores evidentes, las lecturas inciertas, las omisiones y
-         las palabras en otro idioma.</para>
+      <para>Los textos han sido codificados desde un punto de vista estructural. Se han representado
+         de manera explícita con etiquetado TEI todos los párrafos, rupturas de línea, listas,
+         tablas, notas y dibujos. Asimismo, se han codificado la paginación o foliación de la
+         fuente, incluyendo las páginas en blanco, y los cambios en la tipografía como los
+         destacados, los espacios dejados por el autor, las intervenciones autoriales como las
+         eliminaciones, adiciones y sustituciones, y las intervenciones editoriales como las
+         normalizaciones, la resolución de las abreviaturas, las palabras suplidas, las correcciones
+         de errores evidentes, las lecturas inciertas, las omisiones y las palabras en otro
+         idioma.</para>
       <section xml:id="estructuras-textuales">
          <title>Estructuras textuales</title>
          <section>
@@ -684,7 +683,7 @@
                Siempre se ha codificado el principio del folio o página, no el final. </para>
             <para>El inicio de folio o página se ha codificado siempre con el elemento vacío
                   <tag>pb/</tag> (pagebreak). El atributo <tag>@n</tag> contiene el número de página
-               o folio (según la secuencia física del documento o del autor).</para>
+               o folio (según la secuencia física del documento o del autor). Por ejemplo:</para>
                <programlisting language="xml" xml:space="preserve">distinta de las demás&lt;pb n="3v"/&gt;colonias del continente Americano</programlisting>
             <para>La digitalización del folio o página se ha codificado con el atributo
                   <tag>@facs</tag> (facsimile). Se ha codificado el nombre del fichero de la imagen
@@ -717,17 +716,17 @@
             <para>En todas las ediciones del proyecto se han codificado las páginas en blanco de la
                fuente textual. Además, se ha distinguido entre páginas en blanco, páginas perdidas,
                espacios en blanco semánticamente significativos y omisiones de los editores.</para>
-            <para>Para poder representar y mostrar la foliación correctamente, se ha codificado cada
+            <para>Para representar y mostrar la foliación correctamente, se ha codificado cada
                página (en blanco) individualmente. Aunque se sucedan varias páginas en blanco,
                siempre se ha introducido un número <quote>1</quote> para cada nueva página en blanco
                codificada.</para>
-            <para>Las páginas en blanco se han codificado con el elemento (vacío) <tag>gap/</tag>.
-               Este se ha utilizado justo después del salto de página (<tag>pb/</tag>) anterior. Los
-               dos atributos <tag>@unit</tag> y <tag>@quantity</tag> del elemento <tag>gap/</tag>
-               llevan los valores <tag>pages</tag> y <tag>1</tag>. El atributo <tag>@reason</tag>
-               contiene el valor <tag>empty</tag>. Cuando hay más de una página en blanco seguida,
-               se han codificado cada una de ellas individualmente.</para>
-               <programlisting language="xml" xml:space="preserve">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</programlisting>
+            <para>Las páginas en blanco se han codificado con el elemento (vacío) <tag>gap/</tag>: </para>
+            <programlisting language="xml" xml:space="preserve">&lt;pb n="132v"/&gt;&lt;gap unit="pages" quantity="1" reason="empty"/&gt;</programlisting>
+            <para>Este se ha utilizado justo después del salto de página (<tag>pb/</tag>) anterior.
+               Los dos atributos <tag>@unit</tag> y <tag>@quantity</tag> del elemento
+                  <tag>gap/</tag> llevan los valores <tag>pages</tag> y <tag>1</tag>. El atributo
+                  <tag>@reason</tag> contiene el valor <tag>empty</tag>. Cuando hay más de una
+               página en blanco seguida, se han codificado cada una de ellas individualmente.</para>
          </section>
          <section>
             <title>Párrafos</title>
@@ -950,7 +949,7 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
       <section xml:id="intervenciones-autoriales">
          <title>Intervenciones autoriales</title>
          <para>En todas las ediciones digitales del proyecto se han codificado los cambios de
-            tipografía y las intervenciones autoriales de manera explícita, es decir, con etiquetado
+            tipografía y las intervenciones autoriales de manera explícita con etiquetado
             TEI.</para>
          <section>
             <title>Destacados</title>
@@ -961,43 +960,43 @@ montuosa se paga en el día a quinientos pesos fuertes al contado,[…]</program
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de destacado</para>
-                     </td>
-                     <td>
                         <para>Valor para <tag>@rendition</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Tipo de destacado</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>simple</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>#u</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>simple</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>doble</para>
-                     </td>
                      <td>
                         <para>
                            <tag>#uu</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>doble</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>marcado al margen</para>
-                     </td>
                      <td>
                         <para>
                            <tag>#mMM</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>marcado al margen</para>
                      </td>
                   </tr>
                </tbody>
@@ -1031,43 +1030,43 @@ algunas observaciones &lt;choice&gt;
                <thead>
                   <tr>
                      <td>
-                        <para>Tipo de eliminación</para>
-                     </td>
-                     <td>
                         <para>Valor para <tag>@rendition</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Tipo de eliminación</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>reescritura encima del texto original</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>#ow</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>reescritura encima del texto original</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>tachado</para>
-                     </td>
                      <td>
                         <para>
                            <tag>#s</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>tachado</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>borrado</para>
-                     </td>
                      <td>
                         <para>
                            <tag>#erased</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>borrado</para>
                      </td>
                   </tr>
                </tbody>
@@ -1495,33 +1494,33 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Razón de la lectura incierta</para>
-                     </td>
-                     <td>
                         <para>Valor para <tag>@reason</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Razón de la lectura incierta</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>ilegible</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>illegible</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>ilegible</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>difícil de leer debido a la sobreescritura</para>
-                     </td>
                      <td>
                         <para>
                            <tag>covered</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>difícil de leer debido a la sobreescritura</para>
                      </td>
                   </tr>
                </tbody>
@@ -1532,33 +1531,33 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Certeza</para>
-                     </td>
-                     <td>
                         <para>Valor para <tag>@cert</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Certeza</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>baja</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>low</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>baja</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>alta</para>
-                     </td>
                      <td>
                         <para>
                            <tag>high</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>alta</para>
                      </td>
                   </tr>
                </tbody>
@@ -1577,43 +1576,43 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Razón de la ilegibilidad</para>
-                     </td>
-                     <td>
                         <para>Valor para <tag>@reason</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Razón de la ilegibilidad</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>destrucción/pérdida</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>lost</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>destrucción/pérdida</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>ilegible</para>
-                     </td>
                      <td>
                         <para>
                            <tag>illegible</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>ilegible</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>difícil de leer debido a la sobreescritura</para>
-                     </td>
                      <td>
                         <para>
                            <tag>covered</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>difícil de leer debido a la sobreescritura</para>
                      </td>
                   </tr>
                </tbody>
@@ -1624,53 +1623,53 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Segmento ilegible</para>
-                     </td>
-                     <td>
                         <para>Valor para <tag>@unit</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Segmento ilegible</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>caracteres</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>chars</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>caracteres</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>líneas</para>
-                     </td>
                      <td>
                         <para>
                            <tag>lines</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>líneas</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>páginas</para>
-                     </td>
                      <td>
                         <para>
                            <tag>pages</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>páginas</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>palabras</para>
-                     </td>
                      <td>
                         <para>
                            <tag>words</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>palabras</para>
                      </td>
                   </tr>
                </tbody>
@@ -1698,53 +1697,53 @@ explican en el documento […]</programlisting>
                <thead>
                   <tr>
                      <td>
-                        <para>Segmento omitido</para>
-                     </td>
-                     <td>
                         <para>Valor para <tag>@unit</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Segmento omitido</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>caracteres</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>chars</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>caracteres</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>líneas</para>
-                     </td>
                      <td>
                         <para>
                            <tag>lines</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>líneas</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>páginas</para>
-                     </td>
                      <td>
                         <para>
                            <tag>pages</tag>
                         </para>
                      </td>
-                  </tr>
-                  <tr>
                      <td>
-                        <para>palabras</para>
+                        <para>páginas</para>
                      </td>
+                  </tr>
+                  <tr> 
                      <td>
                         <para>
                            <tag>words</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>palabras</para>
                      </td>
                   </tr>
                </tbody>
@@ -1754,35 +1753,35 @@ explican en el documento […]</programlisting>
                codificado el motivo de la omisión editorial.</para>
             <informaltable>
                <thead>
-                  <tr>
-                     <td>
-                        <para>Motivo de la omisión</para>
-                     </td>
+                  <tr> 
                      <td>
                         <para>Valor para <tag>@reason</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>Motivo de la omisión</para>
                      </td>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>
-                        <para>texto en idioma extranjero</para>
-                     </td>
-                     <td>
                         <para>
                            <tag>fm</tag>
                         </para>
                      </td>
+                     <td>
+                        <para>texto en idioma extranjero</para>
+                     </td>
                   </tr>
                   <tr>
-                     <td>
-                        <para>el texto no es importante para el corpus</para>
-                     </td>
                      <td>
                         <para>
                            <tag>insignificant</tag>
                         </para>
+                     </td>
+                     <td>
+                        <para>el texto no es importante para el corpus</para>
                      </td>
                   </tr>
                </tbody>
@@ -1945,10 +1944,10 @@ de mayo de 1804&lt;/date&gt;</programlisting>
       <section>
          <title>Actos de escritura</title>
          <para>Los actos de escritura se han codificado con el elemento <tag>div</tag> con dos
-            atributos: por un lado, el atributo <tag>@type</tag> debe llevar el valor
-               <tag>writingSession</tag>; por el otro, <tag>@n</tag> debe indicar el número del acto
-            de escritura.</para>
-            <programlisting language="xml" xml:space="preserve">&lt;div type="writingSession"&gt;
+            atributos: por un lado, el atributo <tag>@type</tag> lleva el valor
+               <tag>writingSession</tag>; por el otro, <tag>@n</tag> indica el número del acto de
+            escritura.</para>
+            <programlisting language="xml" xml:space="preserve">&lt;div type="writingSession" n="1"&gt;
    &lt;p&gt;[Primer acto de escritura]&lt;/p&gt;
 &lt;/div&gt;
 &lt;div type="writingSession" n="2"&gt;
@@ -1966,33 +1965,33 @@ de mayo de 1804&lt;/date&gt;</programlisting>
             <thead>
                <tr>
                   <td>
-                     <para>Cierre de carta</para>
-                  </td>
-                  <td>
                      <para>Valor para <tag>@rend</tag>
                      </para>
+                  </td>
+                  <td>
+                     <para>Cierre de carta</para>
                   </td>
                </tr>
             </thead>
             <tbody>
                <tr>
                   <td>
-                     <para>párrafo</para>
-                  </td>
-                  <td>
                      <para>
                         <tag>paragraph</tag>
                      </para>
                   </td>
+                  <td>
+                     <para>párrafo</para>
+                  </td>
                </tr>
                <tr>
-                  <td>
-                     <para>dentro de una línea</para>
-                  </td>
                   <td>
                      <para>
                         <tag>within the line</tag>
                      </para>
+                  </td>
+                  <td>
+                     <para>en la misma línea</para>
                   </td>
                </tr>
             </tbody>
